@@ -2,66 +2,24 @@
 //
 // Logline: Dispatches CLI arguments to search engine, statistics, and interactive REPL.
 //
-// Setup: Granted FsReadCap to load canonical JSONL corpus; parses all CLI flags.
+// Setup: Granted FsReadCap to seed relational database and route queries through db contract.
 //
 // Beats:
-//   1. Load canonical corpus from data/ahamkara_corpus.jsonl via repo_load_all.
-//   2. Parse CLI flags: --search, --entity, --category, --quote, --stats,
-//      --interactive, --limit, --help, --version, and subcommands.
-//   3. Dispatch to engine_print_stats, cli_run_interactive, or engine_search.
-//   4. Format and render matching records with card borders.
+//   1. Initialize DbTable via db_contract_init and seed via repo_seed_table.
+//   2. Hydrate records via db_contract_select_all.
+//   3. Parse CLI flags: --search, --entity, --category, --quote, --stats,
+//      --interactive, --limit, --id, --theme, --chronology, --help, --version.
+//   4. Dispatch to engine_print_stats, cli_run_interactive, or engine_search.
+//   5. Format and render matching records with card borders.
 
 import "model/record.oo";
 import "model/query.oo";
 import "repo/loader.oo";
+import "repo/db_contract.oo";
 import "engine/search.oo";
 import "engine/stats.oo";
 import "cli/format.oo";
 import "cli/interactive.oo";
-
-fn parse_int(s: String) -> Int {
-    let n: Int = chars_len(s);
-    let mut v: Int = 0;
-    let mut i: Int = 0;
-    let mut is_neg: Bool = false;
-    while i < n && (char_at(s, i) == " " || char_at(s, i) == "\t") {
-        i = i + 1;
-    }
-    if i < n && char_at(s, i) == "-" {
-        is_neg = true;
-        i = i + 1;
-    }
-    while i < n {
-        let c: String = char_at(s, i);
-        if c == "0" { v = v * 10 + 0; }
-        else if c == "1" { v = v * 10 + 1; }
-        else if c == "2" { v = v * 10 + 2; }
-        else if c == "3" { v = v * 10 + 3; }
-        else if c == "4" { v = v * 10 + 4; }
-        else if c == "5" { v = v * 10 + 5; }
-        else if c == "6" { v = v * 10 + 6; }
-        else if c == "7" { v = v * 10 + 7; }
-        else if c == "8" { v = v * 10 + 8; }
-        else if c == "9" { v = v * 10 + 9; }
-        i = i + 1;
-    }
-    if is_neg {
-        return 0 - v;
-    }
-    return v;
-}
-
-fn has_digit(s: String) -> Bool {
-    let n: Int = chars_len(s);
-    let mut i: Int = 0;
-    while i < n {
-        let c: String = char_at(s, i);
-        if c == "0" || c == "1" || c == "2" || c == "3" || c == "4" { return true; }
-        if c == "5" || c == "6" || c == "7" || c == "8" || c == "9" { return true; }
-        i = i + 1;
-    }
-    return false;
-}
 
 fn print_usage() {
     println("Ahamkara Lore Query Engine (openOODA)");
@@ -72,6 +30,9 @@ fn print_usage() {
     println("  -e, --entity <name>    Filter by entity (Riven, Taranis, Hefnd, etc.)");
     println("  -c, --category <cat>   Filter by category (exotics, raid_armor, etc.)");
     println("  -q, --quote            Filter to records with whisper quotations");
+    println("      --id <id>          Lookup record by exact unique identifier");
+    println("      --theme <theme>    Filter records by theme");
+    println("      --chronology <chr> Filter records by chronology or era");
     println("      --limit <num>      Limit maximum number of results displayed");
     println("      --stats            Display corpus analytics and distribution");
     println("  -i, --interactive      Launch interactive lore exploration REPL");
@@ -84,12 +45,13 @@ pub fn dispatch_cli(records: List[AhamkaraRecord], args: List[String]) -> Result
     if n_args == 0 {
         println("Ahamkara Lore Query Engine (openOODA)");
         println("Usage: ahamkara [--search <term>] [--entity <name>] [--category <cat>] [--quote] [--stats] [--interactive] [--limit <num>] [--help] [--version]");
-        let total: Int = list_len(records);
+        let total: Int = db_contract_count(records);
         println("Loaded " + total.to_string() + " canonical lore entries.");
         return Ok(0);
     }
 
     let mut f: QueryFilter = filter_default();
+    let mut target_id: String = "";
     let mut show_stats: Bool = false;
     let mut run_inter: Bool = false;
     let mut show_help: Bool = false;
@@ -99,32 +61,29 @@ pub fn dispatch_cli(records: List[AhamkaraRecord], args: List[String]) -> Result
     while i < n_args {
         let arg: String = list_get(args, i);
         if arg == "--search" || arg == "-s" || arg == "--keyword" {
-            if i + 1 < n_args {
-                f.keyword = list_get(args, i + 1);
-                i = i + 2;
-            } else {
-                println("Error: missing argument for " + arg);
-                print_usage();
-                return Ok(2);
-            }
+            if i + 1 < n_args { f.keyword = list_get(args, i + 1); i = i + 2; }
+            else { println("Error: missing argument for " + arg); print_usage(); return Ok(2); }
         } else if arg == "--entity" || arg == "-e" {
-            if i + 1 < n_args {
-                f.entity = list_get(args, i + 1);
-                i = i + 2;
-            } else {
-                println("Error: missing argument for " + arg);
-                print_usage();
-                return Ok(2);
-            }
+            if i + 1 < n_args { f.entity = list_get(args, i + 1); i = i + 2; }
+            else { println("Error: missing argument for " + arg); print_usage(); return Ok(2); }
         } else if arg == "--category" || arg == "-c" {
+            if i + 1 < n_args { f.category = list_get(args, i + 1); i = i + 2; }
+            else { println("Error: missing argument for " + arg); print_usage(); return Ok(2); }
+        } else if arg == "--id" {
+            if i + 1 < n_args { target_id = list_get(args, i + 1); i = i + 2; }
+            else { println("Error: missing argument for --id"); print_usage(); return Ok(2); }
+        } else if arg == "--theme" {
             if i + 1 < n_args {
-                f.category = list_get(args, i + 1);
+                let thm: String = list_get(args, i + 1);
+                if chars_len(f.category) == 0 { f.category = thm; } else { f.keyword = thm; }
                 i = i + 2;
-            } else {
-                println("Error: missing argument for " + arg);
-                print_usage();
-                return Ok(2);
-            }
+            } else { println("Error: missing argument for --theme"); print_usage(); return Ok(2); }
+        } else if arg == "--chronology" {
+            if i + 1 < n_args {
+                let chr: String = list_get(args, i + 1);
+                if chars_len(f.keyword) == 0 { f.keyword = chr; } else { f.category = chr; }
+                i = i + 2;
+            } else { println("Error: missing argument for --chronology"); print_usage(); return Ok(2); }
         } else if arg == "--quote" || arg == "-q" {
             f.has_quote = true;
             i = i + 1;
@@ -166,9 +125,7 @@ pub fn dispatch_cli(records: List[AhamkaraRecord], args: List[String]) -> Result
             print_usage();
             return Ok(2);
         } else {
-            if chars_len(f.keyword) == 0 && chars_len(arg) > 0 {
-                f.keyword = arg;
-            }
+            if chars_len(f.keyword) == 0 && chars_len(arg) > 0 { f.keyword = arg; }
             i = i + 1;
         }
     }
@@ -178,7 +135,7 @@ pub fn dispatch_cli(records: List[AhamkaraRecord], args: List[String]) -> Result
         return Ok(0);
     }
     if show_ver {
-        println("ahamkara 1.0.0 (openOODA)");
+        println("ahamkara 1.1.0 (openOODA)");
         return Ok(0);
     }
     if show_stats {
@@ -188,6 +145,20 @@ pub fn dispatch_cli(records: List[AhamkaraRecord], args: List[String]) -> Result
     if run_inter {
         cli_run_interactive(records);
         return Ok(0);
+    }
+    if chars_len(target_id) > 0 {
+        let opt: Option[AhamkaraRecord] = db_contract_find_by_id(records, target_id);
+        match opt {
+            Some(r) => {
+                println("Found 1 matching records.\n");
+                print_record_card(r);
+                return Ok(0);
+            },
+            None => {
+                println("Found 0 matching records.\n");
+                return Ok(0);
+            }
+        };
     }
 
     let results: List[AhamkaraRecord] = engine_search(records, f);
@@ -208,14 +179,8 @@ pub fn main(fs: &FsReadCap, args: List[String]) -> Result[Int, String] {
     let mut check_idx: Int = 0;
     while check_idx < n_args {
         let a: String = list_get(args, check_idx);
-        if a == "--help" || a == "-h" || a == "help" {
-            print_usage();
-            return Ok(0);
-        }
-        if a == "--version" || a == "-v" || a == "version" {
-            println("ahamkara 1.0.0 (openOODA)");
-            return Ok(0);
-        }
+        if a == "--help" || a == "-h" || a == "help" { print_usage(); return Ok(0); }
+        if a == "--version" || a == "-v" || a == "version" { println("ahamkara 1.1.0 (openOODA)"); return Ok(0); }
         check_idx = check_idx + 1;
     }
 
@@ -225,9 +190,11 @@ pub fn main(fs: &FsReadCap, args: List[String]) -> Result[Int, String] {
             corpus_path = "../data/ahamkara_corpus.jsonl";
         }
     }
-    let load_res: Result[List[AhamkaraRecord], String] = repo_load_all(fs, corpus_path);
-    if load_res.is_err() {
-        let err_msg: String = match load_res {
+
+    let mut db: DbTable = db_contract_init();
+    let seed_res: Result[Int, String] = repo_seed_table(fs, &mut db, corpus_path);
+    if seed_res.is_err() {
+        let err_msg: String = match seed_res {
             Ok(_) => "",
             Err(e) => e
         };
@@ -235,12 +202,6 @@ pub fn main(fs: &FsReadCap, args: List[String]) -> Result[Int, String] {
         return Err(err_msg);
     }
 
-    match load_res {
-        Ok(records) => {
-            return dispatch_cli(records, args);
-        },
-        Err(e) => {
-            return Err(e);
-        }
-    };
+    let records: List[AhamkaraRecord] = db_contract_select_all(&mut db);
+    return dispatch_cli(records, args);
 }

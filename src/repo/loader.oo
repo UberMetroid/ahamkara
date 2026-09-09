@@ -1,15 +1,19 @@
 // # Lore Repository Loader
 //
-// Logline: Loads canonical JSONL lore corpus into in-memory AhamkaraRecord list.
+// Logline: Loads canonical JSONL lore corpus into in-memory AhamkaraRecord list or DbTable.
 //
-// Setup: Granted FsReadCap to access filesystem; parses records via json_parse.oo.
+// Setup: Granted FsReadCap to access filesystem; parses records via json_parse.oo; inserts into DbTable.
 //
 // Beats:
 //   1. parse_record_line: Converts a single JSON line into Option[AhamkaraRecord].
 //   2. repo_find_by_id: Finds a record by unique ID from a list of records.
 //   3. repo_load_all: Reads corpus file under &FsReadCap returning Result[List[AhamkaraRecord], String].
-//   4. Compiler stem aliases: loader_load_all, loader_find_by_id, loader_parse_record_line.
+//   4. repo_seed_table: Ingests corpus JSONL into relational DbTable using sql_execute_stmt.
+//   5. Compiler stem aliases: loader_load_all, loader_find_by_id, loader_parse_record_line, loader_seed_table.
 
+import "std/app/data/database/sql_executor.oo";
+import "std/app/data/database/sql_exec_dml.oo";
+import "std/app/data/database/sql_ast.oo";
 import "model/record.oo";
 import "repo/json_parse.oo";
 
@@ -120,6 +124,52 @@ pub fn repo_load_all(fs: &FsReadCap, file_path: String) -> Result[List[AhamkaraR
     return Ok(out);
 }
 
+pub fn repo_seed_table(fs: &FsReadCap, t: &mut DbTable, file_path: String) -> Result[Int, String] {
+    if !path_exists(fs, file_path) {
+        return Err("ERR: lore corpus file not found: " + file_path);
+    }
+    let res: Result[String, String] = read_file(fs, file_path);
+    if res.is_err() {
+        return Err("ERR: failed to read lore corpus: " + file_path);
+    }
+    let raw: String = match res {
+        Ok(s) => s,
+        Err(e) => e
+    };
+    let n: Int = chars_len(raw);
+    let mut start: Int = 0;
+    let mut i: Int = 0;
+    let mut count: Int = 0;
+
+    let mut cols: List[String] = list_new();
+    cols = list_push(cols, "name");
+    cols = list_push(cols, "role");
+
+    while i <= n {
+        let is_nl: Bool = (i == n) || (char_at(raw, i) == "\n");
+        if is_nl {
+            if i > start {
+                let line: String = str_slice(raw, start, i);
+                let id: String = json_extract_string(line, "id");
+                if chars_len(id) > 0 {
+                    let mut vals: List[String] = list_new();
+                    vals = list_push(vals, id);
+                    vals = list_push(vals, line);
+                    let ins: SqlInsertStmt = sql_insert_stmt_create(t.table_name, cols, vals);
+                    let qres: DbQueryResult = sql_execute_stmt(t, sql_stmt_from_insert(ins));
+                    if !qres.success {
+                        return Err("ERR: failed to insert record '" + id + "': " + qres.error_msg);
+                    }
+                    count = count + 1;
+                }
+            }
+            start = i + 1;
+        }
+        i = i + 1;
+    }
+    return Ok(count);
+}
+
 // Aliases matching loader stem for tc_unused_import compatibility
 pub fn loader_load_all(fs: &FsReadCap, file_path: String) -> Result[List[AhamkaraRecord], String] {
     return repo_load_all(fs, file_path);
@@ -131,4 +181,8 @@ pub fn loader_find_by_id(records: List[AhamkaraRecord], id: String) -> Option[Ah
 
 pub fn loader_parse_record_line(line: String) -> Option[AhamkaraRecord] {
     return parse_record_line(line);
+}
+
+pub fn loader_seed_table(fs: &FsReadCap, t: &mut DbTable, file_path: String) -> Result[Int, String] {
+    return repo_seed_table(fs, t, file_path);
 }
