@@ -115,7 +115,7 @@ CANONICAL_CATALOG = [
         },
         "entity": ["General Ahamkara"],
         "speaker": "Skull of Dire Ahamkara",
-        "tags": ["exotic", "armor", "warlock", "helmet", "fourth-wall", "o [reader] mine", "o-reader-mine", "o bearer mine", "whispers", "anthem-anatheme"],
+        "tags": ["exotic", "armor", "warlock", "helmet", "fourth-wall", "o [reader] mine", "o-reader-mine", "o bearer mine", "whispers", "anthem-anatheme", "dragon", "wish-dragon"],
         "chronology": "Dark Age & Early City Age",
         "theme": "Fourth-Wall Transcendence (\"O [Reader] Mine\")"
     },
@@ -134,7 +134,7 @@ CANONICAL_CATALOG = [
         },
         "entity": ["General Ahamkara"],
         "speaker": "Ahamkara Spine",
-        "tags": ["exotic", "armor", "hunter", "gauntlets", "bones", "whispers"],
+        "tags": ["exotic", "armor", "hunter", "gauntlets", "bones", "whispers", "dragon", "wish-dragon"],
         "chronology": "The Great Ahamkara Hunt",
         "theme": "Deathless Bones & Parasitic Whispers"
     },
@@ -153,7 +153,7 @@ CANONICAL_CATALOG = [
         },
         "entity": ["General Ahamkara"],
         "speaker": "Claws of Ahamkara",
-        "tags": ["exotic", "armor", "warlock", "gauntlets", "feathers", "whispers"],
+        "tags": ["exotic", "armor", "warlock", "gauntlets", "feathers", "whispers", "dragon", "wish-dragon"],
         "chronology": "The Great Ahamkara Hunt",
         "theme": "Deathless Bones & Parasitic Whispers"
     },
@@ -172,7 +172,7 @@ CANONICAL_CATALOG = [
         },
         "entity": ["General Ahamkara"],
         "speaker": "Sealed Ahamkara Grasps",
-        "tags": ["exotic", "armor", "hunter", "gauntlets", "silver", "prophecy"],
+        "tags": ["exotic", "armor", "hunter", "gauntlets", "silver", "prophecy", "dragon", "wish-dragon"],
         "chronology": "The Great Ahamkara Hunt",
         "theme": "Deathless Bones & Parasitic Whispers"
     },
@@ -191,7 +191,7 @@ CANONICAL_CATALOG = [
         },
         "entity": ["Eao"],
         "speaker": None,
-        "tags": ["exotic", "armor", "hunter", "boots", "eao", "extinction"],
+        "tags": ["exotic", "armor", "hunter", "boots", "eao", "extinction", "dragon", "wish-dragon"],
         "chronology": "Dark Age & Early City Age",
         "theme": "Anthem Anatheme & Wish-Bargains"
     },
@@ -1000,7 +1000,7 @@ CANONICAL_CATALOG = [
         "entity": ["Taranis"],
         "speaker": "Taranis",
         "tags": ["lore-book", "gifts-and-bargains", "taranis", "black-garden", "solitude", "clutch"],
-        "chronology": "Pre-Collapse & Ancient Origins",
+        "chronology": "Season of the Wish & The Final Shape",
         "theme": "Parentage & The Uncorrupted Clutch"
     },
     {
@@ -1019,7 +1019,7 @@ CANONICAL_CATALOG = [
         "entity": ["Taranis", "Riven"],
         "speaker": "Taranis",
         "tags": ["lore-book", "gifts-and-bargains", "taranis", "riven", "mating", "courtship"],
-        "chronology": "Pre-Collapse & Ancient Origins",
+        "chronology": "Season of the Wish & The Final Shape",
         "theme": "Parentage & The Uncorrupted Clutch"
     },
     {
@@ -1038,7 +1038,7 @@ CANONICAL_CATALOG = [
         "entity": ["Taranis", "Riven"],
         "speaker": "Taranis",
         "tags": ["lore-book", "gifts-and-bargains", "taranis", "riven", "separation", "clutch"],
-        "chronology": "Reef Golden Age & The Dreaming City",
+        "chronology": "Season of the Wish & The Final Shape",
         "theme": "Parentage & The Uncorrupted Clutch"
     },
     {
@@ -1057,7 +1057,7 @@ CANONICAL_CATALOG = [
         "entity": ["Taranis"],
         "speaker": "Taranis",
         "tags": ["lore-book", "gifts-and-bargains", "taranis", "self-sacrifice", "wish", "eggs"],
-        "chronology": "Forsaken & The Dreaming City Curse",
+        "chronology": "Season of the Wish & The Final Shape",
         "theme": "Parentage & The Uncorrupted Clutch"
     },
     {
@@ -1382,7 +1382,7 @@ CANONICAL_CATALOG = [
         "entity": ["Riven"],
         "speaker": "Riven of a Thousand Voices",
         "tags": ["wall-of-wishes", "fifteenth-wish", "cherish", "pale-heart", "last-wish", "curse"],
-        "chronology": "Season of the Wish & The Final Shape",
+        "chronology": "Forsaken & The Dreaming City Curse",
         "theme": "The Wall of Wishes & Coded Desire"
     },
 

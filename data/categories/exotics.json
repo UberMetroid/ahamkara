@@ -25,7 +25,9 @@
       "o-reader-mine",
       "o bearer mine",
       "whispers",
-      "anthem-anatheme"
+      "anthem-anatheme",
+      "dragon",
+      "wish-dragon"
     ],
     "chronology": "Dark Age & Early City Age",
     "theme": "Fourth-Wall Transcendence (\"O [Reader] Mine\")"
@@ -52,7 +54,9 @@
       "hunter",
       "gauntlets",
       "bones",
-      "whispers"
+      "whispers",
+      "dragon",
+      "wish-dragon"
     ],
     "chronology": "The Great Ahamkara Hunt",
     "theme": "Deathless Bones & Parasitic Whispers"
@@ -79,7 +83,9 @@
       "warlock",
       "gauntlets",
       "feathers",
-      "whispers"
+      "whispers",
+      "dragon",
+      "wish-dragon"
     ],
     "chronology": "The Great Ahamkara Hunt",
     "theme": "Deathless Bones & Parasitic Whispers"
@@ -106,7 +112,9 @@
       "hunter",
       "gauntlets",
       "silver",
-      "prophecy"
+      "prophecy",
+      "dragon",
+      "wish-dragon"
     ],
     "chronology": "The Great Ahamkara Hunt",
     "theme": "Deathless Bones & Parasitic Whispers"
@@ -133,7 +141,9 @@
       "hunter",
       "boots",
       "eao",
-      "extinction"
+      "extinction",
+      "dragon",
+      "wish-dragon"
     ],
     "chronology": "Dark Age & Early City Age",
     "theme": "Anthem Anatheme & Wish-Bargains"
