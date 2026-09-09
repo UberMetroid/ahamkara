@@ -514,12 +514,8 @@ if [[ "${RUN_DATA}" -eq 1 ]]; then
             VAL_ARGS+=(--quiet)
         fi
 
-        VAL_OUT=$("${VAL_ARGS[@]}" 2>&1 || true)
-        VAL_RET=$?
-        if [[ -n "${VAL_OUT}" && "${VAL_OUT}" =~ "\[FAIL\]" ]]; then
-            VAL_RET=1
-        fi
-        if [[ "${VAL_RET}" -eq 0 ]]; then
+        VAL_OUT=$("${VAL_ARGS[@]}" 2>&1) && VAL_RET=0 || VAL_RET=$?
+        if [[ "${VAL_RET}" -eq 0 && ! "${VAL_OUT}" =~ \[FAIL\] ]]; then
             log_pass "Python corpus semantic validator (scripts/validate_corpus.py --strict)" "50/50 checks passed"
             if [[ "${VERBOSE}" -eq 1 && "${QUIET}" -eq 0 ]]; then
                 echo "${VAL_OUT}"
@@ -661,8 +657,7 @@ if [[ "${RUN_TEST}" -eq 1 ]]; then
         ACTIVE_TEST_BIN="${PROJECT_ROOT}/bin/test_main"
         log_pass "Reusing validated test binary (in E2E harness)" "${ACTIVE_TEST_BIN}"
     else
-        BUILD_OUT=$("${OODA_COMPILER}" build --backend c "${TEST_SOURCE}" -o "${TMP_TEST_BIN}" 2>&1)
-        BUILD_RET=$?
+        BUILD_OUT=$("${OODA_COMPILER}" build --backend c "${TEST_SOURCE}" -o "${TMP_TEST_BIN}" 2>&1) && BUILD_RET=0 || BUILD_RET=$?
         if [[ "${BUILD_RET}" -eq 0 && -x "${TMP_TEST_BIN}" ]]; then
             log_pass "Native compilation of tests/test_main.oo" "Compiled binary: ${TMP_TEST_BIN}"
             ACTIVE_TEST_BIN="${TMP_TEST_BIN}"
@@ -675,8 +670,7 @@ if [[ "${RUN_TEST}" -eq 1 ]]; then
     fi
 
     TOTAL_CHECKS=$((TOTAL_CHECKS + 1))
-    TEST_OUT=$(OODA_NO_JAIL=1 "${ACTIVE_TEST_BIN}" 2>&1 || true)
-    TEST_RET=$?
+    TEST_OUT=$(OODA_NO_JAIL=1 "${ACTIVE_TEST_BIN}" 2>&1) && TEST_RET=0 || TEST_RET=$?
     rm -f "${TMP_TEST_BIN}" 2>/dev/null || true
 
     if [[ "${TEST_RET}" -eq 0 && "${TEST_OUT}" =~ ALL_TESTS_PASSED ]]; then
@@ -707,8 +701,8 @@ if [[ "${RUN_TEST}" -eq 1 ]]; then
     if [[ "${REBUILD_CLI}" -eq 1 ]]; then
         mkdir -p "${PROJECT_ROOT}/bin"
         rm -f "${CLI_BIN}"
-        CLI_BUILD_OUT=$("${OODA_COMPILER}" build --backend c "${PROJECT_ROOT}/src/main.oo" -o "${CLI_BIN}" 2>&1) || true
-        if [[ $? -eq 0 && -x "${CLI_BIN}" ]]; then
+        CLI_BUILD_OUT=$("${OODA_COMPILER}" build --backend c "${PROJECT_ROOT}/src/main.oo" -o "${CLI_BIN}" 2>&1) && CLI_BUILD_RET=0 || CLI_BUILD_RET=$?
+        if [[ "${CLI_BUILD_RET}" -eq 0 && -x "${CLI_BIN}" ]]; then
             log_pass "CLI standalone binary built successfully" "${CLI_BIN}"
         else
             log_fail "CLI standalone binary compilation" "${CLI_BUILD_OUT}"
@@ -722,8 +716,8 @@ if [[ "${RUN_TEST}" -eq 1 ]]; then
     # 3. CLI Smoke & Semantic Query Invocations
     # Operation: --version
     TOTAL_CHECKS=$((TOTAL_CHECKS + 1))
-    VER_OUT=$(OODA_NO_JAIL=1 "${CLI_BIN}" --version 2>&1) || true
-    if [[ $? -eq 0 && "${VER_OUT}" =~ ahamkara\ [0-9]+\.[0-9]+\.[0-9]+ ]]; then
+    VER_OUT=$(OODA_NO_JAIL=1 "${CLI_BIN}" --version 2>&1) && VER_RET=0 || VER_RET=$?
+    if [[ "${VER_RET}" -eq 0 && "${VER_OUT}" =~ ahamkara\ [0-9]+\.[0-9]+\.[0-9]+ ]]; then
         log_pass "CLI --version output matches semver format" "${VER_OUT}"
     else
         log_fail "CLI --version output matches semver format" "${VER_OUT}"
@@ -733,8 +727,8 @@ if [[ "${RUN_TEST}" -eq 1 ]]; then
 
     # Operation: --help
     TOTAL_CHECKS=$((TOTAL_CHECKS + 1))
-    HELP_OUT=$(OODA_NO_JAIL=1 "${CLI_BIN}" --help 2>&1) || true
-    if [[ $? -eq 0 && "${HELP_OUT}" =~ Usage: ]]; then
+    HELP_OUT=$(OODA_NO_JAIL=1 "${CLI_BIN}" --help 2>&1) && HELP_RET=0 || HELP_RET=$?
+    if [[ "${HELP_RET}" -eq 0 && "${HELP_OUT}" =~ Usage: ]]; then
         log_pass "CLI --help displays usage guide" "Exit 0"
     else
         log_fail "CLI --help displays usage guide" "${HELP_OUT}"
@@ -744,8 +738,8 @@ if [[ "${RUN_TEST}" -eq 1 ]]; then
 
     # Operation: --stats
     TOTAL_CHECKS=$((TOTAL_CHECKS + 1))
-    STATS_OUT=$(OODA_NO_JAIL=1 "${CLI_BIN}" --stats 2>&1) || true
-    if [[ $? -eq 0 && "${STATS_OUT}" =~ "Total records: 84" && "${STATS_OUT}" =~ "Total quotes/whispers: 79" ]]; then
+    STATS_OUT=$(OODA_NO_JAIL=1 "${CLI_BIN}" --stats 2>&1) && STATS_RET=0 || STATS_RET=$?
+    if [[ "${STATS_RET}" -eq 0 && "${STATS_OUT}" =~ "Total records: 84" && "${STATS_OUT}" =~ "Total quotes/whispers: 79" ]]; then
         log_pass "CLI --stats aggregations verified" "84 records, 79 whispers"
     else
         log_fail "CLI --stats aggregations verified" "${STATS_OUT}"
@@ -755,8 +749,8 @@ if [[ "${RUN_TEST}" -eq 1 ]]; then
 
     # Operation: --entity Riven (43 records)
     TOTAL_CHECKS=$((TOTAL_CHECKS + 1))
-    RIVEN_OUT=$(OODA_NO_JAIL=1 "${CLI_BIN}" --entity Riven 2>&1) || true
-    if [[ $? -eq 0 && "${RIVEN_OUT}" =~ "Found 43 matching records" ]]; then
+    RIVEN_OUT=$(OODA_NO_JAIL=1 "${CLI_BIN}" --entity Riven 2>&1) && RIVEN_RET=0 || RIVEN_RET=$?
+    if [[ "${RIVEN_RET}" -eq 0 && "${RIVEN_OUT}" =~ "Found 43 matching records" ]]; then
         log_pass "CLI query by entity (--entity Riven)" "Found 43 matching records"
     else
         log_fail "CLI query by entity (--entity Riven)" "${RIVEN_OUT}"
@@ -766,8 +760,8 @@ if [[ "${RUN_TEST}" -eq 1 ]]; then
 
     # Operation: --search "O [Reader] Mine" (1 record)
     TOTAL_CHECKS=$((TOTAL_CHECKS + 1))
-    SEARCH1_OUT=$(OODA_NO_JAIL=1 "${CLI_BIN}" --search "O [Reader] Mine" 2>&1) || true
-    if [[ $? -eq 0 && "${SEARCH1_OUT}" =~ "Found 1 matching records" ]]; then
+    SEARCH1_OUT=$(OODA_NO_JAIL=1 "${CLI_BIN}" --search "O [Reader] Mine" 2>&1) && SEARCH1_RET=0 || SEARCH1_RET=$?
+    if [[ "${SEARCH1_RET}" -eq 0 && "${SEARCH1_OUT}" =~ "Found 1 matching records" ]]; then
         log_pass "CLI search phrase with punctuation (--search 'O [Reader] Mine')" "Found 1 matching records"
     else
         log_fail "CLI search phrase with punctuation (--search 'O [Reader] Mine')" "${SEARCH1_OUT}"
@@ -777,8 +771,8 @@ if [[ "${RUN_TEST}" -eq 1 ]]; then
 
     # Operation: --search "extinction" (9 records)
     TOTAL_CHECKS=$((TOTAL_CHECKS + 1))
-    SEARCH2_OUT=$(OODA_NO_JAIL=1 "${CLI_BIN}" --search "extinction" 2>&1) || true
-    if [[ $? -eq 0 && "${SEARCH2_OUT}" =~ "Found 9 matching records" ]]; then
+    SEARCH2_OUT=$(OODA_NO_JAIL=1 "${CLI_BIN}" --search "extinction" 2>&1) && SEARCH2_RET=0 || SEARCH2_RET=$?
+    if [[ "${SEARCH2_RET}" -eq 0 && "${SEARCH2_OUT}" =~ "Found 9 matching records" ]]; then
         log_pass "CLI case-insensitive search (--search 'extinction')" "Found 9 matching records"
     else
         log_fail "CLI case-insensitive search (--search 'extinction')" "${SEARCH2_OUT}"
@@ -804,9 +798,8 @@ if [[ "${RUN_E2E}" -eq 1 ]]; then
             E2E_ARGS+=(-v)
         fi
         export AHAMKARA_E2E_ACTIVE=1
-        E2E_OUT=$("${E2E_ARGS[@]}" 2>&1 || true)
-        E2E_RET=0
-        if [[ ! "${E2E_OUT}" =~ "All Executed Tiers Passed Successfully" ]]; then
+        E2E_OUT=$("${E2E_ARGS[@]}" 2>&1) && E2E_RET=0 || E2E_RET=$?
+        if [[ "${E2E_RET}" -ne 0 || ! "${E2E_OUT}" =~ "All Executed Tiers Passed Successfully" ]]; then
             E2E_RET=1
         fi
         if [[ "${E2E_RET}" -eq 0 ]]; then
