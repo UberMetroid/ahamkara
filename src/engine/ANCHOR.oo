@@ -1,0 +1,13 @@
+// # Engine Module Anchor
+//
+// Logline: Root module anchor for openOODA Ahamkara query and analytics engine.
+//
+// Setup: Pure data processing. Strictly 0 I/O imports.
+
+pub fn engine_version() -> String {
+    return "0.4.0";
+}
+
+pub fn engine_anchor() -> String {
+    return "src/engine";
+}

@@ -12,6 +12,5 @@
 //   5. test_repo.oo: Tests corpus file loading and record hydration.
 
 pub fn tests_version() -> String {
-    return "0.3.0";
+    return "0.4.0";
 }
-

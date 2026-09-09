@@ -326,7 +326,7 @@ else
 fi
 
 test_start "T4-SC06-02" "CI/CD Verifier audits compiler line limits (<= 256 lines per .oo file)"
-VIOLATIONS=$(find "${PROJECT_ROOT}/src" -name "*.oo" 2>/dev/null | xargs wc -l 2>/dev/null | awk '$1 > 256 { print $2 }' || echo "")
+VIOLATIONS=$(find "${PROJECT_ROOT}/src" -name "*.oo" 2>/dev/null | xargs wc -l 2>/dev/null | awk '$2 != "total" && $1 > 256 { print $2 }' || echo "")
 if [[ -z "${VIOLATIONS}" ]]; then
     test_pass "T4-SC06-02" "Zero files exceed compiler 256-line limit"
 else

@@ -1,0 +1,97 @@
+// # Terminal Formatting and Lore Card Presentation
+//
+// Logline: Pretty-prints Ahamkara lore cards, quotations, and result summaries.
+//
+// Setup: Pure terminal presentation. Strictly 0 I/O capabilities required.
+//
+// Beats:
+//   1. print_record_card: Render full lore card with border, whisper, and text.
+//   2. format_record_summary: Single-line summary representation.
+//   3. print_record_summary: Print concise record summary.
+//   4. print_results_summary: Print search result count and bounds.
+//   5. print_whisper_card: Compact quote card for paracausal whispers.
+
+import "model/record.oo";
+
+pub fn format_border() -> String {
+    return "============================================================";
+}
+
+pub fn format_divider() -> String {
+    return "------------------------------------------------------------";
+}
+
+pub fn format_record_summary(r: AhamkaraRecord) -> String {
+    let id: String = r.id;
+    let title: String = r.title;
+    let ent: String = r.entity;
+    let cat: String = r.category;
+    return "[" + id + "] " + title + " (" + ent + " | " + cat + ")";
+}
+
+pub fn print_record_summary(r: AhamkaraRecord) {
+    let line: String = format_record_summary(r);
+    println(line);
+}
+
+pub fn print_record_card(r: AhamkaraRecord) {
+    let bar: String = "============================================================";
+    println(bar);
+
+    let id: String = r.id;
+    let title: String = r.title;
+    println("[" + id + "] " + title);
+
+    let ent: String = r.entity;
+    let cat: String = r.category;
+    let src: String = r.source;
+    println("Entity: " + ent + " | Category: " + cat + " | Source: " + src);
+
+    if chars_len(r.quote) > 0 {
+        let q: String = r.quote;
+        println("Whisper: \"" + q + "\"");
+    }
+
+    println("--- Lore ---");
+    let txt: String = r.lore_text;
+    println(txt);
+
+    let n_tags: Int = list_len(r.tags);
+    if n_tags > 0 {
+        let mut tag_str: String = "Tags: ";
+        let mut ti: Int = 0;
+        while ti < n_tags {
+            if ti > 0 {
+                tag_str = tag_str + ", ";
+            }
+            tag_str = tag_str + list_get(r.tags, ti);
+            ti = ti + 1;
+        }
+        println(tag_str);
+    }
+
+    println(bar);
+}
+
+pub fn print_whisper_card(r: AhamkaraRecord) {
+    if chars_len(r.quote) == 0 {
+        return;
+    }
+    let bar: String = "============================================================";
+    println(bar);
+    let q: String = r.quote;
+    println("  \"" + q + "\"");
+    println("------------------------------------------------------------");
+    let title: String = r.title;
+    let ent: String = r.entity;
+    println("  — " + title + " (" + ent + ")");
+    println(bar);
+}
+
+pub fn print_results_summary(total: Int, limit: Int) {
+    if limit > 0 && limit < total {
+        println("Showing " + limit.to_string() + " of " + total.to_string() + " matching records.");
+    } else {
+        println("Found " + total.to_string() + " matching records.");
+    }
+}

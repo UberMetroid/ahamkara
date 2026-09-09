@@ -1,0 +1,104 @@
+// # CLI & Formatting Unit Test Suite
+//
+// Logline: Comprehensive unit tests for CLI card formatting and interactive evaluation.
+//
+// Setup: Exercises format_border, format_record_summary, print_whisper_card, and cli_interactive_eval.
+
+import "src/model/record.oo";
+import "src/cli/format.oo";
+import "src/cli/interactive.oo";
+
+pub fn make_cli_mock_record() -> AhamkaraRecord {
+    let mut tags: List[String] = list_new();
+    tags = list_push(tags, "exotic");
+    tags = list_push(tags, "skull");
+    return record_new(
+        "exotic-skull-of-dire-ahamkara",
+        "Skull of Dire Ahamkara",
+        "exotic_armor",
+        "General Ahamkara",
+        "Destiny 2",
+        "O BEARER MINE.",
+        "What kind of talking skull would address its host that way?",
+        tags
+    );
+}
+
+pub fn test_format_border_and_divider() -> Bool {
+    let b: String = format_border();
+    if chars_len(b) != 60 { return false; }
+    let d: String = format_divider();
+    if chars_len(d) != 60 { return false; }
+    return true;
+}
+
+pub fn test_format_record_summary() -> Bool {
+    let r: AhamkaraRecord = make_cli_mock_record();
+    let s: String = format_record_summary(r);
+    if !str_contains(s, "[exotic-skull-of-dire-ahamkara]") { return false; }
+    if !str_contains(s, "Skull of Dire Ahamkara") { return false; }
+    if !str_contains(s, "General Ahamkara") { return false; }
+    return true;
+}
+
+pub fn test_print_renderers() -> Bool {
+    let r: AhamkaraRecord = make_cli_mock_record();
+    print_record_summary(r);
+    print_record_card(r);
+    print_whisper_card(r);
+    print_results_summary(84, 10);
+    print_results_summary(5, 0);
+    return true;
+}
+
+pub fn test_interactive_eval_commands() -> Bool {
+    let mut recs: List[AhamkaraRecord] = list_new();
+    recs = list_push(recs, make_cli_mock_record());
+
+    // Exit commands return false
+    if cli_interactive_eval(recs, "quit") { return false; }
+    if cli_interactive_eval(recs, "exit") { return false; }
+
+    // Other commands return true
+    if !cli_interactive_eval(recs, "") { return false; }
+    if !cli_interactive_eval(recs, "help") { return false; }
+    if !cli_interactive_eval(recs, "stats") { return false; }
+    if !cli_interactive_eval(recs, "whisper") { return false; }
+    if !cli_interactive_eval(recs, "list") { return false; }
+    if !cli_interactive_eval(recs, "search skull") { return false; }
+    if !cli_interactive_eval(recs, "find skull") { return false; }
+    if !cli_interactive_eval(recs, "entity General") { return false; }
+    if !cli_interactive_eval(recs, "category exotic") { return false; }
+    if !cli_interactive_eval(recs, "unknown_command") { return false; }
+
+    return true;
+}
+
+pub fn run_all_cli_tests() -> Bool {
+    if !test_format_border_and_divider() {
+        println("FAIL: test_format_border_and_divider");
+        return false;
+    }
+    if !test_format_record_summary() {
+        println("FAIL: test_format_record_summary");
+        return false;
+    }
+    if !test_print_renderers() {
+        println("FAIL: test_print_renderers");
+        return false;
+    }
+    if !test_interactive_eval_commands() {
+        println("FAIL: test_interactive_eval_commands");
+        return false;
+    }
+    return true;
+}
+
+pub fn test_cli_main() -> Bool {
+    if !run_all_cli_tests() {
+        println("ERR: test_cli assertions failed");
+        return false;
+    }
+    println("OK: test_cli passed all test cases");
+    return true;
+}

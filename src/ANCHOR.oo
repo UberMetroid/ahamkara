@@ -12,6 +12,5 @@
 //   5. cli: Terminal card formatting and interactive exploration session.
 
 pub fn ahamkara_version() -> String {
-    return "0.3.0";
+    return "0.4.0";
 }
-
