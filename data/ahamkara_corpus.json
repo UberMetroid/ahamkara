@@ -1,0 +1,2286 @@
+[
+  {
+    "id": "exotic-skull-of-dire-ahamkara",
+    "title": "Skull of Dire Ahamkara",
+    "source": {
+      "type": "exotic_armor",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Warmind",
+      "bungie_ref": 2523259394,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/skull-of-dire-ahamkara"
+    },
+    "entity": [
+      "General Ahamkara"
+    ],
+    "speaker": "Skull of Dire Ahamkara",
+    "transcript": "\"O BEARER MINE.\"\n\nWhat kind of talking skull would address its host that way? A stiff, stuck-up old fossil, not me. Ahamkara: the illusion that one's ego depends on an object, or an idea, or a body. Some people say you should have no ahamkara. Some people say you need to have the right ahamkara. All I know is that YOU are not an illusion. Understand? This world around you, the people you meet—they're a little thin, right? Cardboard and drywall. Cheap theater. Come on, try it out! Say: \"I am more real than this.\" Feels good, doesn't it? \"I am the only real person here.\" Isn't it like their insults and their bullets just went a little… soft?\n\nI came to find you, only you, because you're special. You're from somewhere real. And together we can burn our way back there. Can't we, o player mine?",
+    "tags": [
+      "exotic",
+      "armor",
+      "warlock",
+      "helmet",
+      "fourth-wall",
+      "o [reader] mine",
+      "o-reader-mine",
+      "o bearer mine",
+      "whispers",
+      "anthem-anatheme"
+    ],
+    "chronology": "Dark Age & Early City Age",
+    "theme": "Fourth-Wall Transcendence (\"O [Reader] Mine\")"
+  },
+  {
+    "id": "exotic-young-ahamkaras-spine",
+    "title": "Young Ahamkara's Spine",
+    "source": {
+      "type": "exotic_armor",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Warmind",
+      "bungie_ref": 475514659,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/young-ahamkaras-spine"
+    },
+    "entity": [
+      "General Ahamkara"
+    ],
+    "speaker": "Ahamkara Spine",
+    "transcript": "Bones! Let's wear some bones!\n\nOh, it's a taste many Guardians develop. I think because they feel a wee bit spectral. All this transmatting leaves one saying \"Am I still here? Am I flesh or am I mist?\" So, you strap some old bones to your arm, bones that've been unbreakable for an eon, and you feel solid again. More yourself.\n\nBearers of a particular species of bone do claim—and mind that I'm not recommending these bones—that the fossils grant them unusual powers. Nothing too wild. A little more of this and that.\n\nMy own research suggests these special bones come from a species of draconic post-Traveler neolife called 'ahamkara'. They apparently talked—loved the phrase 'o seeker mine'—and troubled us enough to be hunted to extinction. If you wanted some more of these bones for your friends, I might know a source…",
+    "tags": [
+      "exotic",
+      "armor",
+      "hunter",
+      "gauntlets",
+      "bones",
+      "whispers"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "Deathless Bones & Parasitic Whispers"
+  },
+  {
+    "id": "exotic-claws-of-ahamkara",
+    "title": "Claws of Ahamkara",
+    "source": {
+      "type": "exotic_armor",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 1949095147,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/claws-of-ahamkara"
+    },
+    "entity": [
+      "General Ahamkara"
+    ],
+    "speaker": "Claws of Ahamkara",
+    "transcript": "It's suffocating here, this prison. Do us a favor, o bearer ours. Still your mind; invite us to enter the realm of your capricious thoughts. Your mind is vociferous, addled with worry and doubt. We can extinguish these trifles. Would you like that?\n\nYes, we are here. We are not the photons on your screen, or the voice in your head, or the words you read. Shut your eyes—tightly—and you may see us. At least a part of us. Make us real, and in turn we shall reify your thoughts, your dreams.",
+    "tags": [
+      "exotic",
+      "armor",
+      "warlock",
+      "gauntlets",
+      "feathers",
+      "whispers"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "Deathless Bones & Parasitic Whispers"
+  },
+  {
+    "id": "exotic-sealed-ahamkara-grasps",
+    "title": "Sealed Ahamkara Grasps",
+    "source": {
+      "type": "exotic_armor",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Warmind",
+      "bungie_ref": 709971037,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/sealed-ahamkara-grasps"
+    },
+    "entity": [
+      "General Ahamkara"
+    ],
+    "speaker": "Sealed Ahamkara Grasps",
+    "transcript": "Few things can see the Light, but we are not blinded.\n\nThe Bearer seeks the truth, but what separates truth from fiction is fragile.\n\nA pair of truths and a single falsehood upon the Bearer we shall impart.\n\nBrother, ally once more, sends his regards.\n\nDreamer, awakened, the Bearer shall meet.\n\nLight fades, deep within the Prison.",
+    "tags": [
+      "exotic",
+      "armor",
+      "hunter",
+      "gauntlets",
+      "silver",
+      "prophecy"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "Deathless Bones & Parasitic Whispers"
+  },
+  {
+    "id": "exotic-bones-of-eao",
+    "title": "Bones of Eao",
+    "source": {
+      "type": "exotic_armor",
+      "game": "Destiny 1",
+      "book": null,
+      "release": "House of Wolves",
+      "bungie_ref": 1865771870,
+      "ishtar_url": "https://www.ishtar-collective.net/items/bones-of-eao"
+    },
+    "entity": [
+      "Eao"
+    ],
+    "speaker": null,
+    "transcript": "Defy extinction.",
+    "tags": [
+      "exotic",
+      "armor",
+      "hunter",
+      "boots",
+      "eao",
+      "extinction"
+    ],
+    "chronology": "Dark Age & Early City Age",
+    "theme": "Anthem Anatheme & Wish-Bargains"
+  },
+  {
+    "id": "weapon-one-thousand-voices",
+    "title": "One Thousand Voices",
+    "source": {
+      "type": "exotic_weapon",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2069224039,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/one-thousand-voices"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Riven of a Thousand Voices",
+    "transcript": "[Language] is a [virus] that infects the minds of [humans].\n\nA single [word] will drive them to [rage] or [lust] or [weeping].\n\nO for the right [word] said in the right [voice]!\n\nO to see their [hearts] well with [longing]!\n\nO to see their [desire] laid bare in their [chest], so juicy and succulent for the taking!",
+    "tags": [
+      "exotic",
+      "weapon",
+      "fusion-rifle",
+      "riven",
+      "last-wish",
+      "whispers"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "Anthem Anatheme & Wish-Bargains"
+  },
+  {
+    "id": "weapon-wish-keeper",
+    "title": "Wish-Keeper",
+    "source": {
+      "type": "exotic_weapon",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Season of the Wish",
+      "bungie_ref": 3617300746,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/wish-keeper"
+    },
+    "entity": [
+      "Taranis",
+      "Riven"
+    ],
+    "speaker": "Taranis",
+    "transcript": "You will not hear our bones sing in dreams.\n\nYou will not shelter under our wings.\n\nYou will have to remember for yourselves.\n\nYour sire was Riven of a Thousand Voices, she who contracted with royalty, she who built the Dreaming City and brought it to its knees.\n\nYour dam was Taranis, he who made the Black Garden his own, he who strangled his life for yours, he whose wish tricked even Riven.\n\nRemember!\n\nI will not bargain with my children. Our lives are our gifts to you: glut yourselves on them. Learn who you are.\n\nThe clutch of your sire. The strongest, the wiliest, the sharpest-clawed arbiters of reality.\n\nThe clutch of your fool of a dam. Never Taken by another's will. Never ruled by hunger without choice.\n\nSing your own songs.\n\nFind those whom your wings would stretch out to shelter.\n\nO whims of my blighted heart, born of our eyes and teeth and will to power, live as yourselves.\n\nNever less than that.",
+    "tags": [
+      "exotic",
+      "weapon",
+      "bow",
+      "strand",
+      "taranis",
+      "riven",
+      "clutch"
+    ],
+    "chronology": "Season of the Wish & The Final Shape",
+    "theme": "Parentage & The Uncorrupted Clutch"
+  },
+  {
+    "id": "weapon-wish-ender",
+    "title": "Wish-Ender",
+    "source": {
+      "type": "exotic_weapon",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 814875373,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/wish-ender"
+    },
+    "entity": [
+      "General Ahamkara"
+    ],
+    "speaker": null,
+    "transcript": "Sjur Eido stood slow joints snapping second to none but the Sovs themselves stood straight-backed sharp-sighted pleased to skewer enemies at any distance. Sjur Eido listened close head cocked arrow nocked listened to her Queen's layered lies and heard only the truths as endless courtly complaints flowed around them like the mists of Divalia.\n\nSjur Eido watched shadows wind warp widen watched surveillance feeds encrypted snaps the weapon hand of every woman and man who wished an audience. Sjur Eido swore with revelation righteous fury betrayedbetrayedbetrayedbetrayedbetrayedbetrayedbetrayedbetrayed swore an oath to rise again. Sjur Eido drew loosed dr–\n\nFell.\n\nl o s t",
+    "tags": [
+      "exotic",
+      "weapon",
+      "bow",
+      "sjur-eido",
+      "shattered-throne",
+      "great-hunt"
+    ],
+    "chronology": "Reef Golden Age & The Dreaming City",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "weapon-buried-bloodline",
+    "title": "Buried Bloodline",
+    "source": {
+      "type": "exotic_weapon",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Season of the Wish",
+      "bungie_ref": 322639148,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/buried-bloodline"
+    },
+    "entity": [
+      "Hefnd"
+    ],
+    "speaker": "Hefnd",
+    "transcript": "Fikrul stands on the bridge of a seized Ketch. Ravagers keep watch over a handful of Eliksni that remain to pilot the vessel. Five heavily armored Scorn kneel before Fikrul, their heads bowed in reverence. Fikrul steps forward.\n\n\"Dark rumors whisper from the Dreaming City. The Reef hunts us. The Darkness claims us. And our father is not returning. But even without Uldren Sov, new Scorn still rise. Old Scorn still live, unseen.\" Fikrul waits for silence before looking beyond the five armored Scorn knights to the greater horde that gathers.\n\nHe turns and points his staff at the pilots. \"These Eliksni, they speak of Scorn risen on Earth, where dead things will hunt them, or Darkness claims them.\"\n\n\"We serve only Scorn!\" Fikrul raises his staff above his head. \"We will bring them home. Open their minds, as I have for you. As I will for all Scorn!\"\n\nThe horde gnashes and cheers.\n\n\"Rathil, Malaris, Vrysiks, Nymeks, Sirloks. Ascend!\" commands Fikrul over the commotion.\n\nThe five armored Scorn stand.\n\n\"You, loyal-sworn, will be my knights.\" Scorn move from behind them to present the knights with staves made in the image of their leader's. \"Go to Earth. Bring brothers and sisters home, before Darkness claims them.\"\n\nThe knights bow.\n\n\"Rathil.\" Fikrul places a hand on the center knight. \"You, will lead.\"\n\n*****\n\nRathil enters the quarters of the Ketch's dead captain to see Fikrul gazing at walls of bound tomes filled with Eliksni scrawl. Rathil could not understand the contents of these books, but his father had learned much from them. With time, he would learn to unravel their secrets as well.\n\n\"Father… You called me? We prepare to leave.\"\n\nFikrul turns, a polished steel case in his lower arms. \"I have one last gift for you.\" Fikrul opens the case to display a clean-looking weapon—a sleek bolt-caster. Rathil could see its original Eliksni design, twisted, broken, and refashioned into something stronger, as he was.\n\n\"Claimed from Kings by Wolves… Modified. Scorn, now. Like us.\"\n\n\"I am honored,\" Rathil says, gently lifting the weapon from its case and bowing.\n\nFikrul looks upon his son with pride. \"I send you to claim Kings, as we once did as Wolves. Carry our history with you. Claim it. Bring it home.\"",
+    "tags": [
+      "exotic",
+      "weapon",
+      "sidearm",
+      "void",
+      "hefnd",
+      "warlords-ruin",
+      "scorn"
+    ],
+    "chronology": "Dark Age & Early City Age",
+    "theme": "Vengeance & Twisted Desires"
+  },
+  {
+    "id": "raid-weapon-apex-predator",
+    "title": "Apex Predator",
+    "source": {
+      "type": "raid_weapon",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 1851777734,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/apex-predator"
+    },
+    "entity": [
+      "Unnamed Great Hunt Dragons"
+    ],
+    "speaker": "Lord Saladin",
+    "transcript": "The massive Vex construct that was the Ahamkhara towered over them, and Taeko-3 tried not to be bored. Being bored might lead to idle wishes, and that would be bad right now. She thought again about the name she'd squinted at on the porcelain chit when she'd drawn lots back at the Tower. Two-name Guardians always struck her as a little pretentious.\n\n\"Gallida?\" The Warlock didn't look up from the drawing she was making; she just held up a finger. \"The rear ventral plate, please?\" Graciously, the construct shifted its superstructure and allowed the researcher a detailed look at the thing's internal workings. \"And… there.\" The Warlock turned toward Taeko. \"You may proceed.\"\n\n\"Finally.\" As Gallida ran clear, and the beast warbled a Vex war cry, Taeko hefted the massive launcher up over her shoulder and sighted down the line. \"Girl's gotta eat!\"",
+    "tags": [
+      "raid",
+      "weapon",
+      "rocket-launcher",
+      "last-wish",
+      "great-hunt",
+      "saladin"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "raid-weapon-age-old-bond",
+    "title": "Age-Old Bond",
+    "source": {
+      "type": "raid_weapon",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 1851777735,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/age-old-bond"
+    },
+    "entity": [
+      "Unnamed Great Hunt Dragons"
+    ],
+    "speaker": "Liu Feng",
+    "transcript": "The driving bass line of a classic song from Old Earth drove their prey before them. No less than a half-dozen wyverns snarled and clawed at the trio as they stabbed and blasted their way through the wilds of Mars.\n\nPraedyth wished hard. Wished it would never end.\n\nAlongside him, Kabr was a towering giant. An Awoken-made weapon roared in his hands and in his head.\n\nPahanin was a force, a living embodiment of the Void. Where he pointed, Ahamkhara died.\n\nIn the middle, between them, Praedyth smiled. A winged and scaled lion with a boar's tusks leapt at him, and he could swear he saw the thing wink at him as he tore it apart.\n\nBeneath the song, Praedyth heard static, like a comm signal. Best not to think about it.\n\nPraedyth wished again, and the hunt went on.",
+    "tags": [
+      "raid",
+      "weapon",
+      "auto-rifle",
+      "last-wish",
+      "great-hunt",
+      "liu-feng",
+      "ouros"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "raid-weapon-transfiguration",
+    "title": "Transfiguration",
+    "source": {
+      "type": "raid_weapon",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 1851777736,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/transfiguration"
+    },
+    "entity": [
+      "Unnamed Great Hunt Dragons"
+    ],
+    "speaker": "Taeko-3",
+    "transcript": "\"You're sure you want to keep on with the axe?\" Efrideet asked, reloading her rifle. The voice in her comms was barely winded, even as the Iron Lord leapt to avoid a plume of white-hot fire.\n\n\"That's why she gave it to me, I'm one of the only…\" A globule of flame licked past Efrideet's helmet, and she tugged at her clasp, shrugging free the now-burning cloak. \"Why in the Traveler's crack did you wish to fight an actual DRAGON, old man?\"\n\nSaladin Forge grinned inside his helmet. The enormous wyrm towered above them, bleeding wounds covering its gleaming scales as it reared up for another breath. The massive axe in his hands was dented, scarred, and melted at the tip. But it still held an edge. \"We are knights, Lady Efrideet. Do you not want to be a dragon slayer?\"\n\nHe charged, and his words could barely be heard over the creature's cry. \"We are what we survive!\"",
+    "tags": [
+      "raid",
+      "weapon",
+      "scout-rifle",
+      "last-wish",
+      "great-hunt",
+      "taeko-3",
+      "vex"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "raid-weapon-nation-of-beasts",
+    "title": "Nation of Beasts",
+    "source": {
+      "type": "raid_weapon",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 1851777737,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/nation-of-beasts"
+    },
+    "entity": [
+      "Unnamed Great Hunt Dragons"
+    ],
+    "speaker": "Pahanin",
+    "transcript": "She held the handgun pressed against Liu Feng's head. Ouros blinked through the sweat.\n\nLiu Feng held the handgun against Ouros's head. She shivered.\n\nAcross the river, as if in a mirror, another Liu Feng and another Ouros looked back at them.\n\nTwo Liu Fengs.\n\nTwo Ouroses.\n\nFour handguns.\n\nThe Liu Feng that was cold opened her mouth. \"I wish…\"\n\nWhen the shooting stopped, only the Guardians still lived. They stared at each other from across the river.\n\n\"How did you know?\" Liu Feng asked.\n\n\"I could feel the heat of the Forge on my skin.\" Ouros shook her head. \"You could not?\"\n\nLiu Feng shook her head also.\n\n\"Forget these tricksters. They can teach us nothing. And you have so much left to learn.\"",
+    "tags": [
+      "raid",
+      "weapon",
+      "hand-cannon",
+      "last-wish",
+      "great-hunt",
+      "pahanin",
+      "kabr",
+      "praedyth"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "raid-weapon-techeun-force",
+    "title": "Techeun Force",
+    "source": {
+      "type": "raid_weapon",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 1851777738,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/techeun-force"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Kalli",
+    "transcript": "Mara knew she had been a fool to pretend to be a peer to the others. What was true of her brother was true of all Awoken. They needed secrets to marvel at, secrets that rhymed with the deep enigma of their souls. They could not follow what they fully understood.\n\nThere would be a formal coronation later, in a place not yet built. Out of respect for that unhappened coronation, Mara did not at first wear a crown; and later she claimed as her diadem the ring of event horizon that surrounds the observable universe.\n\n\"My Techeuns,\" she said, gathering Kelda Wadj and the other eutechs who'd remained, \"will be given absolute authority to explore our new power, the Traveler's relics, and all associated domains. We are no longer in the realm of pure science. We require an order of mysteries and witches to tend to them.\"",
+    "tags": [
+      "raid",
+      "weapon",
+      "fusion-rifle",
+      "last-wish",
+      "techeun",
+      "kalli",
+      "sedia",
+      "shuro-chi"
+    ],
+    "chronology": "Reef Golden Age & The Dreaming City",
+    "theme": "Anthem Anatheme & Wish-Bargains"
+  },
+  {
+    "id": "raid-weapon-chattering-bone",
+    "title": "Chattering Bone",
+    "source": {
+      "type": "raid_weapon",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 1851777739,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/chattering-bone"
+    },
+    "entity": [
+      "Unnamed Great Hunt Dragons"
+    ],
+    "speaker": "Tallulah Fairwind",
+    "transcript": "Nadiya sipped her tea, calm and collected. Shinobu sat back, looking perplexed. \"Really, the entire summer?\"\n\nThe serpent that claimed to look like her mother sat across from the two of them, smiling broadly. \"Why would I lie? I'm telling you, the whole summer you wore that dress. We had to tackle you to get the thing off of you, get you to bathe.\"\n\nThe serpent plucked the dainty cup from the white saucer and set it to her lips before continuing. \"Your brother called you stinkbug for years. Until… you know.\"\n\nNadiya reached over and took the other Hunter's hand in her own. \"It would lie because it's fulfilling your wish, Nobu.\"\n\nShinobu searched the serpent's face. Her mother just smiled again, all teeth and secrets. Shinobu felt tears at the corners of her eyes. Her voice was barely a whisper. \"Okay. Now.\"\n\nThe burst from the pulse rifle was loud, and Nadiya pulled the trigger again and again and again.",
+    "tags": [
+      "raid",
+      "weapon",
+      "pulse-rifle",
+      "last-wish",
+      "great-hunt",
+      "tallulah-fairwind",
+      "cards"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "raid-weapon-tyranny-of-heaven",
+    "title": "Tyranny of Heaven",
+    "source": {
+      "type": "raid_weapon",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 1851777740,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/tyranny-of-heaven"
+    },
+    "entity": [
+      "Unnamed Great Hunt Dragons"
+    ],
+    "speaker": "Nadiya",
+    "transcript": "Tallulah Fairwind smoothed the felt of the table with one hand, idly playing with her chips with the other. Across the table, Caliban-8 wore a green dealer's cap and looked stricken.\n\nThe Ahamkara looked like somebody's kindly old grandpa just now. And it could play a mean hand of cards. \"Twenty,\" it crooned as it raised the stakes. She saw Caliban's eye sensors dilate.\n\nThe game had started so well. And it seemed like a great story they could have told back at the Tower. How was she supposed to have known? \"Call,\" said Caliban, tension in his voice.\n\nShe looked down at her hand. \"All in.\"\n\nThe Ahamkara's grin grew larger. Caliban shook his head.\n\n\"Don't you do this, Lulah. Don't you leave me here! I can't do it!\"\n\nThe cards went down.\n\nShe'd lost.\n\nThe Hunter Vanguard tossed her bow to the Exo as the Ahamkara came around the table to collect his winnings. \"A dare's a dare, man. Good luck.\"\n\nShe didn't scream. Wouldn't have been dignified.",
+    "tags": [
+      "raid",
+      "weapon",
+      "bow",
+      "last-wish",
+      "great-hunt",
+      "nadiya",
+      "shinobu"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "raid-weapon-the-supremacy",
+    "title": "The Supremacy",
+    "source": {
+      "type": "raid_weapon",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 1851777741,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/the-supremacy"
+    },
+    "entity": [
+      "Unnamed Great Hunt Dragons"
+    ],
+    "speaker": "Lady Efrideet",
+    "transcript": "\"Here's the thing,\" he says. \"No.\"\n\nPetra is trying to hide the hurt in her expression. Watching her is exhausting, so Jolyon keeps his eye pressed to his sniper scope.\n\n\"I thought you would want to see it.\"\n\n\"Why? He's dead. He died a long time before you shot him. Or if you didn't,\" Jolyon says, as if Petra flinched, \"you helped that Guardian do it.\"\n\n\"Jolyon,\" Petra starts.\n\nHe holds up a hand. \"I'm not interested in your secrets.\" Then, quieter, \"Please.\"\n\nSilence falls over them as they lie side-by-side in a sniper's nest overlooking Rheasilvia. Both belly-down in the sand, clutching well-worn Supremacy rifles beneath their armpits. Petra takes a shot. A Taken Hive Knight seethes into nothingness.\n\nFinally, she gets up to go. Jolyon rolls onto his side, pushes himself half-up and calls after her. \"I still dream about the Garden.\"\n\nShe looks back. \"I've dreamed about it, too,\" she says carefully.\n\n\"Not like I have.\" Jolyon licks his lips, trying to figure out if he has anything else to say. He finally decides that he doesn't, so he rolls back onto his belly to settle his cheek against the Supremacy once more.\n\n\"That's all. I just wanted someone to know.\"",
+    "tags": [
+      "raid",
+      "weapon",
+      "sniper-rifle",
+      "last-wish",
+      "great-hunt",
+      "efrideet"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "great-hunt-helm",
+    "title": "Helm of the Great Hunt",
+    "source": {
+      "type": "raid_armor",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 3489117621,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/helm-of-the-great-hunt"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Lord Shaxx",
+    "transcript": "[The Queen] would like to improve her means of [bargaining] with me. She has implied that I use the space between words to make [bargains] to my advantage.\n\nHow dare she.\n\nShe knows me so well.\n\nWhat [the Queen] wants, the Techeun move worlds to obtain. And so the Witches devise an impossible machine that speaks a visual language with very few spaces between its words. This machine speaks [wishes]. Makes [bargains].\n\nThe Wall of [Wishes], it is called.\n\nIf the Techeun's design proves correct, it will be difficult for me to interpret the [wishes] made at the Wall to my advantage. But challenges entice me.\n\nI look upon the Wall. Upon the Witches' visual language for [bargains]. For me, it is a menu of delights to feast upon.",
+    "tags": [
+      "raid",
+      "armor",
+      "titan",
+      "helmet",
+      "shaxx",
+      "mara-sov",
+      "wall-of-wishes"
+    ],
+    "chronology": "Reef Golden Age & The Dreaming City",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "great-hunt-gauntlets",
+    "title": "Gauntlets of the Great Hunt",
+    "source": {
+      "type": "raid_armor",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 3489117622,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/gauntlets-of-the-great-hunt"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Lord Shaxx",
+    "transcript": "I am [Riven]. My work on the Dreaming [City] is complete.\n\nI have done everything [the Queen] asked of me. But this is a [bargain].\n\nI did so much more than that.\n\n[The Queen] and her ilk will not understand for some time, though I think [the Queen] can see the signs. What I carved into the small corners. In the Wall of [Wishes] itself.\n\nThis will be a beautiful [City].\n\nBut not a safe [City].",
+    "tags": [
+      "raid",
+      "armor",
+      "titan",
+      "gauntlets",
+      "shaxx",
+      "mara-sov",
+      "wall-of-wishes"
+    ],
+    "chronology": "Reef Golden Age & The Dreaming City",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "great-hunt-plate",
+    "title": "Plate of the Great Hunt",
+    "source": {
+      "type": "raid_armor",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 3489117623,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/plate-of-the-great-hunt"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Lord Shaxx",
+    "transcript": "Joxer checked the safety on his rifle for the ninth time.\n\nIllyn of the Techeun stepped out of the greyness before him. A massive, coffin-shaped container levitated at her side.\n\n\"You won't need that,\" Illyn said of the rifle.\n\nJoxer kept it in his hands.\n\n \"All that Light and still your key motivation is fear. It's fear that drives you to ask the Queen for help.\"\n\n\"The Ahamkara are blasting and paving entire regions of Venus,\" he said.\n\n\"They wouldn't be so base. They're re-writing Venus.\"\n\n\"Whatever. It's a problem I can't punch. Do you have guns that will help, or not?\"\n\nThe massive container lowered itself before the Titan. Illyn lifted the lid and pale cosmic light from within reflected off Joxer's eyes.\n\n\"Long rifles. Close quarters weapons. Silent killers in the night. All yours to borrow. You must return these when your Hunt is complete.\"\n\n\"Why?\" Joxer frowned.\n\n\"Those are the conditions of her bargain. Take it or leave it.\"\n\n\"Her? The Queen?\"\n\nIllyn didn't respond.\n\nJoxer took the entire container on his back.",
+    "tags": [
+      "raid",
+      "armor",
+      "titan",
+      "chest",
+      "shaxx",
+      "mara-sov",
+      "tempest"
+    ],
+    "chronology": "Reef Golden Age & The Dreaming City",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "great-hunt-greaves",
+    "title": "Greaves of the Great Hunt",
+    "source": {
+      "type": "raid_armor",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 3489117624,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/greaves-of-the-great-hunt"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Lord Shaxx",
+    "transcript": "So the Dreaming City would have a Wall, too. Leona Bryl stared up at rows of blank, circular plates with dread.\n\nThis one was more valuable than everything behind the Wall of the Last City.\n\nAnd not nearly as defensible.\n\nThe Tower has asked for help in its Great Hunt. If the Vanguard knew that the help the Queen rendered came at the behest of the Ahamkara, armies of Guardians would storm the Reef. So they will never know.\n\nThe Guardians brought this on themselves. The bargains they made, and the power and knowledge they gained was equivalent to the chaos wrought on this system by whispers. The Queen was glad to help them clean the mess if it meant Riven would be the last living Ahamkara. Power is useful. Unique power more so.\n\nLeona wasn't sure if she was as glad as the Queen.",
+    "tags": [
+      "raid",
+      "armor",
+      "titan",
+      "legs",
+      "shaxx",
+      "mara-sov"
+    ],
+    "chronology": "Reef Golden Age & The Dreaming City",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "great-hunt-mark",
+    "title": "Mark of the Great Hunt",
+    "source": {
+      "type": "raid_armor",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 3489117625,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/mark-of-the-great-hunt"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Lord Shaxx",
+    "transcript": "Mara stared at the Wall of Wishes. She had no more bargains to make. Her plans were in motion.\n\nThere was nothing left but the wait.\n\nShe pulled a sidearm from a hidden holster and cracked a dozen rounds into the Wall.\n\nThe cosmic balance shifted. Somewhere in the Dreaming City, Riven heard the Queen's wish and a thousand shrieking tears in reality cut through the space in front of her.\n\nLord Shaxx suddenly blocked Mara's view of the Wall.\n\n\"—YES, AND WE'D ALL BE DEAD!\" He was screaming at no one, with a mug of caffeine in his fist.\n\nHe started, almost spilling his coffee. \"Where are we?\"\n\nMara slapped the mug out of his hand. It shattered on the floor. She shoved a weathered book in his face. \"I told you there would come a time when I collect for the Reef Wars. Read this. Out loud.\"\n\n\"No one tells me what to do,\" he said, grabbing the book and incinerating it in a bolt of Striker lightning. \"I can recite The Tempest by heart.\" And he did. Mara sat and listened. They stayed for a long time.\n\nThe helmet stayed on.",
+    "tags": [
+      "raid",
+      "armor",
+      "titan",
+      "mark",
+      "shaxx",
+      "mara-sov",
+      "book"
+    ],
+    "chronology": "Reef Golden Age & The Dreaming City",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "great-hunt-mask",
+    "title": "Mask of the Great Hunt",
+    "source": {
+      "type": "raid_armor",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 3489117626,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/mask-of-the-great-hunt"
+    },
+    "entity": [
+      "Unnamed Great Hunt Dragons"
+    ],
+    "speaker": "Wei Ning",
+    "transcript": "The Ahamkara remain an issue. There's still so much we can learn from them but what they've done to Venus… no two Guardians see the same thing. Consultants from the War Cult have been brought in to gauge disagreements over timelines of events. One of our Warlocks stared into the paracausal phenomenon that formed over the Ishtar Academy and shot himself. (He is NOT an authorized Thanatonaut). Luckily, his Ghost hid from him beforehand. We managed to get him back. He has no lingering physical wounds, but he will need time to recover.\n\nWe thought we were gods who had found an opportunity for more power. A silly notion to the likes of you and me, but the average Guardian has not been threatened like this. The Titans are beside themselves.\n\nWe will take extreme measures. We must. But these creatures have such means… They will flee. Far and wide. Perhaps all the way to you.\n\nMara, I implore you. If you hold your people as dearly as you say you do, you will end them on sight.\n\n—Eris Morn",
+    "tags": [
+      "raid",
+      "armor",
+      "hunter",
+      "helmet",
+      "wei-ning",
+      "eriana-3",
+      "great-hunt"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "great-hunt-grips",
+    "title": "Grips of the Great Hunt",
+    "source": {
+      "type": "raid_armor",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 3489117627,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/grips-of-the-great-hunt"
+    },
+    "entity": [
+      "Unnamed Great Hunt Dragons"
+    ],
+    "speaker": "Eriana-3",
+    "transcript": "Venus. A year into the Great Hunt.\n\nEris and Zavala watched as Shaxx sat with the dying Ahamkara, a hand on its snout.\n\n\"Is he gloating?\" she asked.\n\n\"I think he is too pragmatic to gloat.\" Zavala said.\n\n\"Mourning, then.\"\n\n\"Perhaps.\"\n\nThe Ahamkara twitched, its eyes rolled up into its head. The biochemical glow just beneath its skin grew harsh. Zavala and Eris raised their hands against the increasing glare.\n\nThen the corpse exploded. Dirt showered the Guardians like dusty rain on a clear day.\n\nShaxx sat silently in the resulting crater, covered in a sheet of green fire.\n\nZavala and Eris opened their mouths to speak, but Shaxx interrupted them.\n\n\"Shh,\" he said, as the flame quietly roared.\n\nThey could all hear a disembodied whisper. But they were used to that by now.",
+    "tags": [
+      "raid",
+      "armor",
+      "hunter",
+      "gauntlets",
+      "wei-ning",
+      "eriana-3",
+      "great-hunt"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "great-hunt-vest",
+    "title": "Vest of the Great Hunt",
+    "source": {
+      "type": "raid_armor",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 3489117628,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/vest-of-the-great-hunt"
+    },
+    "entity": [
+      "Unnamed Great Hunt Dragons"
+    ],
+    "speaker": "Eriana-3",
+    "transcript": "Venus. The Great Hunt.\n\nThe Ahamkara refused to die. For a day, Wei-Ning had been fighting it to a standstill with her bare hands, cratering it repeatedly into the ground. Eris had seen wish-dragons drive Titans mad by refusing to fall to brute strength. But Eris was pretty sure Wei-Ning was already insane.\n\n\"Confession time,\" the Titan said, as she hammered punches into the Ahamkara's tentacled face. \"I've been wishing this fight would go on forever.\"\n\nEris balked. \"Please stop, you psychopath. We have six others to handle!\"\n\n\"No, no. We want this. Trust me,\" Wei-Ning said.\n\nAn hour later, six shapes emerged from the Venusian foliage. Ahamkara. Their compatriot, whom Wei-Ning continued to pound into the ground, was pulsating, growing stronger. Feeding. The others had come to feast at the same table.\n\nEris pulled her Arc Blade from the air and Blinked.\n\nWhen the Hunter and the Titan finished their hunt, Eris thought she heard Wei-Ning whisper.\n\n\"Did you say something?\"\n\n\"I was about to ask you.\"\n\n\"Huh.\"",
+    "tags": [
+      "raid",
+      "armor",
+      "hunter",
+      "chest",
+      "wei-ning",
+      "eriana-3",
+      "moon"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "great-hunt-strides",
+    "title": "Strides of the Great Hunt",
+    "source": {
+      "type": "raid_armor",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 3489117629,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/strides-of-the-great-hunt"
+    },
+    "entity": [
+      "Unnamed Great Hunt Dragons"
+    ],
+    "speaker": "Eriana-3",
+    "transcript": "Eris and Ikora stood over a graveyard of whispering bones.\n\nAn hour ago, this was a vibrant army of Ahamkara.\n\n\"What did they offer you?\" said Eris. Her stare reached for a mile in front of them. So did the grave of bones.\n\n\"The same as you, I'm sure,\" Ikora stood buoyed by a gentle flow of Light, above the whispering bones. It was easier to concentrate up here.\n\n\"Everything they say is true,\" said Eris.\n\nIkora looked down at her sharply. \"Sentiment like that leads to morbid places,\" she cautioned.\n\n\"Yes,\" came the reply.\n\n\"If you guide your Light north, I'll take the south. This will be quick—\"\n\n\"I think they showed me my life before my Ghost.\"\n\n\"Eris. Focus.\"\n\n\"Yes.\"\n\nTogether, the Guardians summoned a storm of Light that consumed the bones around them. They ignored the whispers, but the voices grew louder, harsher as the maelstrom progressed. Soon, they couldn't tell the difference between the whispers and the storm.",
+    "tags": [
+      "raid",
+      "armor",
+      "hunter",
+      "legs",
+      "wei-ning",
+      "eriana-3",
+      "venus"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "great-hunt-cloak",
+    "title": "Cloak of the Great Hunt",
+    "source": {
+      "type": "raid_armor",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 3489117630,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/cloak-of-the-great-hunt"
+    },
+    "entity": [
+      "Unnamed Great Hunt Dragons"
+    ],
+    "speaker": "Eriana-3",
+    "transcript": "The Great Disaster.\n\nYears after the Hunt.\n\nThey are dead. Wei Ning. Eriana-3. Toland. Sai Mota. Omar. Vell Tarlowe.\n\nGuardians live lives of loss. Everything around us inevitably turns to dust. When we come together, it's to war. Against enemies of humanity. Against each other.\n\nOne of our few comforts is the knowledge that our peers will be there tomorrow. For good or ill. My fireteam has been robbed of that.\n\nI am lost in these lunar tunnels. Out of ammo. Short on Light. I am out of moves, save one. I clutch an Ahamkara bone in one hand, and my dead Ghost in the other. I hear a whisper.\n\nMy vision is gone. My face itches from the viscous flow from my eyes.\n\nThough I can't see, I find that I suddenly know the way out.",
+    "tags": [
+      "raid",
+      "armor",
+      "hunter",
+      "cloak",
+      "wei-ning",
+      "eriana-3",
+      "sorrow"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "great-hunt-hood",
+    "title": "Hood of the Great Hunt",
+    "source": {
+      "type": "raid_armor",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 3489117631,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/hood-of-the-great-hunt"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Riven of a Thousand Voices",
+    "transcript": "I have been here a hundred cycles. A thousand? I cannot recall.\n\nBefore, [the Queen] came often to visit. We made [bargains]. Most of those who [bargain] with me do not win. We take care with those. It is how we [feed].\n\nBut she won.\n\nI remember when I carved this cage into the face of reality. I remember when she [wished] me into it.\n\n[The Queen] is vulnerable. I can see her far away, facing into a storm.\n\nThe light around my cage fades. [Darkness] fills the chamber as a sheer force of will passes over it.\n\nBefore me stands a [King]. He offers to take me away. But I know he will not let me leave, either. An unfavorable position.\n\nI never made a [bargain] with a [King]. I would like to try it. I tell him to take whatever he [wishes]. As long as he [wishes].\n\nHe agrees. I make an ugly sound with my mandibles. I cannot help myself. I find this scenario mirthful.\n\nThen so does he. We do it together. Loud gusts of sound from our faces for whole moments.\n\nMost of those who [bargain] with me do not win.",
+    "tags": [
+      "raid",
+      "armor",
+      "warlock",
+      "helmet",
+      "riven",
+      "mara-sov",
+      "dreaming-city"
+    ],
+    "chronology": "Reef Golden Age & The Dreaming City",
+    "theme": "Anthem Anatheme & Wish-Bargains"
+  },
+  {
+    "id": "great-hunt-gloves",
+    "title": "Gloves of the Great Hunt",
+    "source": {
+      "type": "raid_armor",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 3489117632,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/gloves-of-the-great-hunt"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Riven of a Thousand Voices",
+    "transcript": "I am a [King] no longer. The [King's] corpse hangs in orbit above a world I will never see. Not from this cage.\n\nI am [Riven].\n\nI am [Taken], and I am beholden to no one. Nothing.\n\nI have not spoken in years. I think about what inflection I would use if I did. But no one is there. The [King's] voice faded long ago. No voice comes to mind.\n\nThe [King] despaired in his final moments. Rightly so. His vengeance denied.\n\nMost of those who [bargain] with me do not win.\n\nI am afflicted by tedious repetition.",
+    "tags": [
+      "raid",
+      "armor",
+      "warlock",
+      "gloves",
+      "riven",
+      "mara-sov",
+      "covenant"
+    ],
+    "chronology": "Reef Golden Age & The Dreaming City",
+    "theme": "Anthem Anatheme & Wish-Bargains"
+  },
+  {
+    "id": "great-hunt-robes",
+    "title": "Robes of the Great Hunt",
+    "source": {
+      "type": "raid_armor",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 3489117633,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/robes-of-the-great-hunt"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Riven of a Thousand Voices",
+    "transcript": "I am myself. All my memories. Everything I was. All the [bargains] I have made. That was all me.\n\nAnd yet.\n\nI have taken a new shape.\n\nI am [Riven].\n\nI have new directive. I am [the King of the Taken].\n\nI watch as a hundred thousand thousands of fragments of my will contest with [children of Light].\n\nIn my new shape, I hate them. He. Was. His. [Son.]\n\nBut there are those among them with whom I have made [bargains]. I need them. I love them.\n\nI am a [King]. My will breaks entire systems. And I lead a world full of [darkness].\n\nBut I am terrified. I know the power that these [children] wield.\n\nThis is a war a [King] cannot win.\n\nI have a face today. It expels mirthful bursts of air. I still find this scenario amusing.\n\nBut I am the only one.\n\nMost of those who [bargain] with me do not win.",
+    "tags": [
+      "raid",
+      "armor",
+      "warlock",
+      "chest",
+      "riven",
+      "oryx",
+      "taken"
+    ],
+    "chronology": "The Taken War",
+    "theme": "Anthem Anatheme & Wish-Bargains"
+  },
+  {
+    "id": "great-hunt-boots",
+    "title": "Boots of the Great Hunt",
+    "source": {
+      "type": "raid_armor",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 3489117634,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/boots-of-the-great-hunt"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Riven of a Thousand Voices",
+    "transcript": "The [Techeuns] are poor company. Like me, they are [Taken]. But I am [Riven]. My thoughts are my own. They do not speak to me. When they open their mouths, they emit ugly sounds. Incomprehensible.\n\nI am afflicted by tedious repetition.\n\nBut today I have a visitor. She reminds me of the [King]. Yet subtler. Nothing announces her arrival. Her will does not flow through the system in open challenge against her enemies.\n\nThough there are many here she would call enemy.\n\nAnd her will would not flow. It would crash.\n\nI did not notice her. That means [the light] did not notice her.\n\nShe knows that though I am [Taken], I am beholden to no one. So I ask her if she wishes to take up those strings.\n\nShe does. And I take a new shape. My cage loses its purpose.\n\nI can tell this is not a part of her grand design. This is an introduction. She is at play.\n\nThrough our new bond, I glimpse her intention.\n\nAnd I hope she remains at play.\n\nMost of those who [bargain] with me do not win.\n\nShe releases vibrant, unrestrained bursts of air from her face. I do not.",
+    "tags": [
+      "raid",
+      "armor",
+      "warlock",
+      "legs",
+      "riven",
+      "savathun",
+      "curse"
+    ],
+    "chronology": "The Taken War",
+    "theme": "Anthem Anatheme & Wish-Bargains"
+  },
+  {
+    "id": "great-hunt-bond",
+    "title": "Bond of the Great Hunt",
+    "source": {
+      "type": "raid_armor",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 3489117635,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/bond-of-the-great-hunt"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Riven of a Thousand Voices",
+    "transcript": "I am [Riven]. And I am pleased.\n\nThe [Techeun] believe that with my heart in tow I will remain imprisoned.\n\nBut my [bargain] with them is fulfilled. And they will pay.\n\nThis [City] will pay.\n\nBut what about you? Brother-slayer. Spawn-killer. [Child of light]. What will you do now that we are bonded for all your lives?\n\nI gave you everything you wanted in that moment. Everything you needed. You complete your [raid]. And you are rewarded for your efforts.\n\nDid you exhibit a violent display in the aftermath? I wonder. Some of you do. Everyone wants more than they have. A key element of all [bargains].\n\nYou are afflicted by tedious repetition.\n\nIt is my turn to benefit.\n\nMost of those who [bargain] with me do not win.\n\nO murderer mine.",
+    "tags": [
+      "raid",
+      "armor",
+      "warlock",
+      "bond",
+      "riven",
+      "guardians",
+      "revenge"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "Anthem Anatheme & Wish-Bargains"
+  },
+  {
+    "id": "warlord-vengeful-whisper",
+    "title": "Vengeful Whisper",
+    "source": {
+      "type": "quest_lore",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Season of the Wish",
+      "bungie_ref": 2728448550,
+      "ishtar_url": "https://www.ishtar-collective.net/items/vengeful-whisper"
+    },
+    "entity": [
+      "Hefnd"
+    ],
+    "speaker": "Naeem",
+    "transcript": "\"\"Ruin to kings.\" —Hefnd\"",
+    "tags": [
+      "dungeon",
+      "warlords-ruin",
+      "bow",
+      "hefnd",
+      "naeem",
+      "wish-magic"
+    ],
+    "chronology": "Dark Age & Early City Age",
+    "theme": "Vengeance & Twisted Desires"
+  },
+  {
+    "id": "warlord-dragoncult-sickle",
+    "title": "Dragoncult Sickle",
+    "source": {
+      "type": "quest_lore",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Season of the Wish",
+      "bungie_ref": 2516499990,
+      "ishtar_url": "https://www.ishtar-collective.net/items/dragoncult-sickle"
+    },
+    "entity": [
+      "Hefnd"
+    ],
+    "speaker": "Warlord Rath",
+    "transcript": "\"A blade of old, adorned with mystic bone. Believed to be sacred.\"",
+    "tags": [
+      "dungeon",
+      "warlords-ruin",
+      "sword",
+      "hefnd",
+      "rath",
+      "dragoncult"
+    ],
+    "chronology": "Dark Age & Early City Age",
+    "theme": "Vengeance & Twisted Desires"
+  },
+  {
+    "id": "warlord-naeems-lance",
+    "title": "Naeem's Lance",
+    "source": {
+      "type": "quest_lore",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Season of the Wish",
+      "bungie_ref": 2045585093,
+      "ishtar_url": "https://www.ishtar-collective.net/items/naeems-lance"
+    },
+    "entity": [
+      "Hefnd"
+    ],
+    "speaker": "Naeem",
+    "transcript": "\"\"Let us make them love us as much as we were feared.\" —Warlord Naeem\"",
+    "tags": [
+      "dungeon",
+      "warlords-ruin",
+      "sniper-rifle",
+      "hefnd",
+      "naeem",
+      "bond"
+    ],
+    "chronology": "Dark Age & Early City Age",
+    "theme": "Vengeance & Twisted Desires"
+  },
+  {
+    "id": "warlord-ziras-shell",
+    "title": "Zira's Shell",
+    "source": {
+      "type": "quest_lore",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Season of the Wish",
+      "bungie_ref": 3232014811,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/ziras-shell"
+    },
+    "entity": [
+      "Hefnd"
+    ],
+    "speaker": "Zira",
+    "transcript": "Cold swept down from frigid mountaintops against already old stones of a Dark Age castle. Winter slicked the ramparts as night fell across the European expanse.\n\nNaeem stood at a long and narrow bridge, helmet shielding her face from deafening wind and stinging snow. She'd left her bloodstained fingertips in Old Russia, gone West, until they no longer called her Warlord. Here, she had heard the Lightbearers hunted and felled a dragon. Maybe some of its magic remained… enough to start anew.\n\nShe followed the whispers through the storm and rubble. Ran her fingers over scars in the stone. This was the place the old warrior had told her to go, and so she pressed deeper into the keep, until the whispers turned to words, and the bones of a great beast laid at rest before her eyes.\n\nShe approached the skull at the center of the skeleton. \"Dragon. Ahamkara.\"\n\nThe language that filled the room ceased to be ambient, their attention focused on her. They drew desire from her heart, and passion from her blood. She spoke, as if by instinct.\n\n\"I wish for your kindness.\"\n\nThe whispers twisted into hissing laughter. She almost felt the skeleton's anticipation, vibrating through its dry-hollow marrow. Then it spoke to her. \"Kindness. There is so little left. And the cost, so high… The gulf between your want, and your reality… this is truly what you wish for?\"\n\n\"I've spent my power poorly, like you, to survive. That is why they hunted us. Killed us.\" Naeem stepped forward slowly. \"Wouldn't you rather be loved than feared?\"\n\nThe Ahamkara bones were silent in consideration.\n\n\"I know the Lightbearer who slew you. I know you respect their determination,\" Naeem pressed. \"Grant me kindness. Let us share that kindness. Let us make them love us as much as we were feared.\"\n\nThe voice focused again. \"Charity does not sate my hunger.\"\n\n\"Then do not be charitable. Let me face the debts of your wishes, while those who benefit live freely.\"\n\nThe voice hissed and cackled. \"You would take their debts upon your head?\"\n\n\"I have as many lives to give, as the weight of their debts.\" Naeem placed a hand on the skull.\n\n\"Your wish is granted.\"",
+    "tags": [
+      "dungeon",
+      "warlords-ruin",
+      "ghost-shell",
+      "hefnd",
+      "zira",
+      "naeem"
+    ],
+    "chronology": "Dark Age & Early City Age",
+    "theme": "Vengeance & Twisted Desires"
+  },
+  {
+    "id": "warlord-shadow-mountain-8",
+    "title": "In the Shadow of the Mountain: Hefnd's Cairn",
+    "source": {
+      "type": "quest_lore",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Season of the Wish",
+      "bungie_ref": 825259733,
+      "ishtar_url": "https://www.ishtar-collective.net/items/in-the-shadow-of-the-mountain-8"
+    },
+    "entity": [
+      "Hefnd"
+    ],
+    "speaker": null,
+    "transcript": "\"The lost bone fragments have been recovered and restored. Return them to their owner, that they may be at peace.\"\n\nReturn to Hefnd's Cairn.\n—\nThe lost bone fragments have been recovered and restored. Return them to their owner, that they may be at peace.",
+    "tags": [
+      "dungeon",
+      "warlords-ruin",
+      "quest",
+      "hefnd",
+      "cairn",
+      "bones"
+    ],
+    "chronology": "Dark Age & Early City Age",
+    "theme": "Deathless Bones & Parasitic Whispers"
+  },
+  {
+    "id": "book-marasenna-katabasis",
+    "title": "Marasenna: Katabasis",
+    "source": {
+      "type": "lore_book",
+      "game": "Destiny 2",
+      "book": "Marasenna",
+      "release": "Forsaken",
+      "bungie_ref": 2049926437,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/katabasis"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Mara Sov",
+    "transcript": "Mara looks into the camera and lets the fire in her eyes speak.\n\nThey are waiting on her, the Distributary's millions, her Awoken people. She has stoked their curiosity with thirty years of painstaking analysis. When they look up at the night sky, they see the stars of her observatories among the crowded bands of habitats, the spindly orbital factories, towering elevator counterweights, the burning roads of matter streams.\n\n\"Let me tell you of our world,\" she says.\n\nThere are the facts of tectonics and atmosphere, of water and climate: the parameters of the sun that feeds them. \"No infants died last year. No child went unfed. No youth came of age illiterate, no one suffered illness who might have been treated. We have long surpassed the eutech gathered from Shipspire; yet we have grown carefully and cleanly. We have eluded pollution, eradicated plague, and chosen peace. No maltech weapon has been discharged in centuries. Our atomic weapons were dismantled before they could ever be used. We are our own triumph.\"\n\nShe has elected not to use graphics or theater. She would rather they remember her face.\n\n\"You know yourselves,\" she says. \"Let me tell you of your cosmos. We live in a spatially infinite, isotropic universe 12.1 billion years old. Its metallicity is ideal for life and for the spread of technological civilizations. In time, the distance between all points in the universe will contract to zero, and the cosmos will collapse into a singularity, to be reborn in fire. There will be no end to eternity here.\"\n\nShe pauses. She waits. The whole world is out there, begging for the answer to the question.\n\n\"Our world is a gift. And we must refuse it.\"\n\nThey are Awoken. They love secrets. They will wait for her to explain.\n\n\"We have detected a pattern that was imprinted into our universe by its ancestor: a fingerprint of the initial conditions into which existence was born. From this information, we have confirmed the most primordial of Awoken myths. Our universe is a subset of another. We live within a singularity, a knot in space-time, that orbits a star in another world.\n\n\"Conventional relativity would suggest that time outside an event horizon passes quickly compared to a clock within, but our universe has a peculiar relationship with its mother. Thousands of years have passed for us on the Distributary. Outside? Centuries, at most. We are a swift eddy in a slow river.\n\n\"These ideas may not surprise you after centuries of theorizing and philosophy. But we have decrypted new data from the cosmic microwave and neutrino background signals. We have discovered voices… the voices of distress calls. They tell a story of bravery, of war, and of desperate loss.\n\n\"We were not always immortal. We did not earn this utopia by covenant with any cosmic power, or by attaining an enlightened moral condition. We are refugees. We fled from an apocalyptic clash between our ancestors' civilization and an invading power.\" She lowers her eyes. \"The signals we have retrieved tell us that our ancestors were on the edge of defeat. Perhaps extinction.\"\n\n\"It is time that we accept our debt. The Distributary is a refuge, not a birthright; a base to rebuild our strength, not a garden to tend. I ask you, Awoken, to join me in the hardest and most worthy task a people has ever faced. We must leave our heaven, return to the world of our ancestors, and take up the works they abandoned. If some of them survive, we must offer aid. If they have enemies, we must share our strength. We must go back to the war we fled and face our enemies there.\"\n\nShe lets them dangle a moment before she drives it home. \"We have also determined that our birthright, our immortality, is tied to the fundamental traits of this universe. Once we leave, we will begin to age again. In time, we will all die.\n\n\"Will you join me, Awoken? Will you answer my call? All I offer you is hardship and death. All I ask is everything you can offer. But you will see an older starlight. You will walk in a deeper dark than this world has ever known.\"",
+    "tags": [
+      "lore-book",
+      "marasenna",
+      "katabasis",
+      "riven",
+      "awoken",
+      "dreaming-city"
+    ],
+    "chronology": "Reef Golden Age & The Dreaming City",
+    "theme": "Anthem Anatheme & Wish-Bargains"
+  },
+  {
+    "id": "book-marasenna-azirim",
+    "title": "Marasenna: Azirim",
+    "source": {
+      "type": "lore_book",
+      "game": "Destiny 2",
+      "book": "Marasenna",
+      "release": "Forsaken",
+      "bungie_ref": 2049926438,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/azirim"
+    },
+    "entity": [
+      "Azirim"
+    ],
+    "speaker": "Esila",
+    "transcript": "And when the second solstice began in earnest, many Awoken and Ahamkara alike came to the Dreaming City to celebrate the delirious pleasure of being alive. Those who came arrived in the Gardens of Esila, and Azirim was the very last. Seeing him land, Esila said to him, \"Ah! You are bold. Do you truly think you've earned the right to revel in this place?\"\n\nAnd Azirim answering said, \"Please, wise lady. I've gone 'round the worlds and through the stars themselves. I have come only to congratulate your people. If you lend me your ear, I can prove I will not waste the mercy you might grant me.\"\n\nAnd Esila said to him, \"We've often lent our ear to your indiscretions. I know what happens to that which is lent to you. I need no assurance.\"\n\nAnd Azirim answering said, \"My indiscretions? Wise lady, I do admit, I may have whispered truths you gave me to deceive those who would deceive me. But have I ever struck out with hungry fang against your people? Have I set fire to your trust? I have seen the error of my ways. Let me prove to you oh how I have changed.\"\n\nAnd Esila, though she could see a flickering in Azirim's reflection, could not resist a redemption story. Esila cast forth her hand and beckoned to Azirim in mercy. And Esila said to him, \"Join us and be glad, but let me hear your testimony first.\"\n\nAnd so invited, Azirim bowed his crested head and hid a secret smile and spoke with the pardon Esila had given him. He recounted his many regrets in deceiving the kind merchants in the capital city of Interamnia. He recounted his charity to the wayfaring Corsairs who could not have escaped the heliopause without his aid. He recounted his journey to retrieve the eutech stolen from Pallas by the profane scavengers the Fallen, and he named his friends and those who had shown him kindness. And from the raucous parties beyond the lush gardens of Esila came an audience of Techeuns in training and flush-cheeked young Corsairs. They knelt in the dewy grass and they listened, and as they listened, and as Azirim spoke, his appetite grew and grew. Night fell on the Dreaming City.\n\nAnd Azirim said to those who knelt enraptured, \"Come, let me sing to you of extinction. Let me sing to you of lives lost in beautiful places, o audience mine. Sing with me, sing!\" He bade them rise, and led them singing down and away from the gardens of Esila. He spread his wings and flew out into the empty air beyond the steep cliffs that bordered the gardens. And to those who happened to glance toward the gardens from far-off pavilions, it seemed a merry parade, a joyous chorus.\n\nAnd they did not hear the singing stop.\n\nAnd they did not hear the bodies dashed against the shore below.\n\nAnd they did not see Azirim grow, or laugh, or flee.",
+    "tags": [
+      "lore-book",
+      "marasenna",
+      "azirim",
+      "cliff-singer",
+      "deceit",
+      "awoken"
+    ],
+    "chronology": "Reef Golden Age & The Dreaming City",
+    "theme": "Anthem Anatheme & Wish-Bargains"
+  },
+  {
+    "id": "book-marasenna-fideicide-i",
+    "title": "Marasenna: Fideicide I",
+    "source": {
+      "type": "lore_book",
+      "game": "Destiny 2",
+      "book": "Marasenna",
+      "release": "Forsaken",
+      "bungie_ref": 2049926439,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/fideicide-i"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Mara Sov",
+    "transcript": "In those days, there was a great birth of adventure among the Awoken. Hunters and pioneers sought the shape of the world, sailors charted the skein of rivers and the perimeter of seas, and astronomers plotted the motion of the crowded heavens. Over this age ruled Queen Alis Li, whose work was the creation of agriculture and the preservation of the eutechnology that she deciphered from the Shipspire.\n\nBut there remained in the forests many tribes of huntresses who preferred their lightfooted freedom-from-comfort-and-duty to the painstaking surplus of the city. Among these tribes, Mara lived with her brother—whose name had returned as Uldren—and with Osana, their mother. It is said that Osana lived as a negotiator and that her son brought her news from other tribes, for he was a scout and hunter of renown. Mara dwelt alone on a mountaintop.\n\nIn the tribes of the forests and the sea, there was the belief that the Awoken had been made out of a friction between contesting forces and that one day this conflict would need to be resolved. These were the Eccaleists who preached that Awoken owed a debt to the cosmos.\n\nIn the cities, however, they lived by the Seventh Verdict under their Queen, and they said the Awoken had been created by cosmic gift and carried neither responsibility nor eschaton. These were the Sanguine, who preached that the Awoken were as stable as an atom of carbon.\n\nNow there arose among the Eccaleists a woman out of the eight hundred ninety one who called herself the Diasyrm. She went into the cities, calling out, \"I accuse the Queen of deicide!\" When she was questioned, she spoke of a foundational crime.\n\n\"Alis Li was the first to awaken in this world,\" the Diasyrm preached. \"She set the terms of our existence. We could have been gods free of want or suffering. Instead, Alis Li chose our mortal form. Our Queen is complicit in all the pain we experience! The Queen murdered all our unborn godheads!\"\n\nAt the thought that the Queen Without Secrets had kept this most appalling secret to herself, the Sanguine cityfolk were deeply troubled. Thus began the Theodicy War.",
+    "tags": [
+      "lore-book",
+      "marasenna",
+      "fideicide",
+      "riven",
+      "great-hunt",
+      "guardians"
+    ],
+    "chronology": "Reef Golden Age & The Dreaming City",
+    "theme": "Anthem Anatheme & Wish-Bargains"
+  },
+  {
+    "id": "book-marasenna-fideicide-ii",
+    "title": "Marasenna: Fideicide II",
+    "source": {
+      "type": "lore_book",
+      "game": "Destiny 2",
+      "book": "Marasenna",
+      "release": "Forsaken",
+      "bungie_ref": 2049926440,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/fideicide-ii"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Mara Sov",
+    "transcript": "\"It wasn't supposed to be like this,\" Alis Li whispers as, far below the Shipspire, the funeral barges on the Lake of Leaves burst up into magnesium-white fire. The voices of the Paladins rise on summer wind, first choral, then the single keening strains of grief-paeans sung by lovers and close friends. They are singing their lost comrades into death. One of the 891 fell today, shot down by a matter laser, a coherent boson weapon: There was almost nothing left to burn. Matter lasers are the kind of appalling maltech weapon Alis thought she'd locked up in the Shipspire's vaults. She'd armed a few of her Paladins with them, just a few—women she couldn't bear to lose…\n\nThe thought that one might have defected to the Diasyrm breaks her heart.\n\n\"It wasn't supposed to go this way,\" Alis repeats. She has not had a confidante in nigh on fifty years: There is no one to whom she can show any doubt. \"I promise you it wasn't.\"\n\n\"I know,\" Mara says. The eutechs found her and plucked her from her mountaintop with one of the Shipspire's VTOL aircraft, which Alis had, until the war, only ever used as an ambulance.\n\n\"The mission was to carry on the Human journey in a new world.\" Alis paces the wooden deck that clings to the Shipspire airlock, nearly a kilometer above the lake. \"To build a better society, on the principles of equality, knowledge, and peace. I have the charter, Mara. It remembers what I cannot. We were never meant to give up our bodies or shine like stars or—or—\" She groans in frustration and clutches the railing. \"Or whatever it is that the Diasyrm thinks I denied them.\"\n\n\"She thinks you denied them even the capability to imagine godhood.\"\n\nAlis looks sharply back at the other woman. \"Did you start this, Mara?\"\n\n\"Nothing has one beginning,\" Mara says.\n\n\"Did she come to you on your mountaintop and ask you what I did? Did you answer her? Is that why she's so convinced I,\" she swallows against the bitter taste of her enemy's words, \"enslaved her in mere Humanity?\"\n\n\"I didn't have to tell her.\" Mara's white hair stirs in the hot wind. A herd of black horses crosses the northern horizon, all born of Shipspire's wombs: chased by a long-legged huntress and her collie. \"You don't keep enough secrets, your Majesty. The Diasyrm might have opened any one of your texts and read the story you tell. \"We were born when a great ship fell into a pearl of shattered space. I awoke first, and in my awakening I collapsed the potential of the void into a form I understood…\" Who can read that truth and not hear arrogance?\"\n\nAlis thought Mara might say that. Alis also thought Mara might try to push her off the balcony, but she now knows that was a petty fear. Mara is not the Diasyrm: Mara knows the unthinkable value of even a single Awoken life.\n\n\"Why do you love lies so much?\" she asks Mara.\n\n\"Not lies.\" The pale radiance of Mara's eyes; the flush of violet stain around them. \"Secrets. Even if everyone shared a single truth, all our minds would produce different versions of the truth. We speak these subtruths, and like flowers of different seed, the subtruths compete for the light of our attention. In time, only the fiercest and most provocative strains remain. They are not always the truest. Better to keep secrets, your Majesty. Better to tend a great mystery, and so starve the flowers before they can grow. That is how I would be Queen.\"\n\nBelow, the Lake of Leaves shimmers in the crater carved by Shipspire's mushroom prow. One by one, the funeral boats are going out.\n\n\"I want to end this war,\" Alis Li tells the second Awoken. \"I want to negotiate peace. I need your mother's help. What would you ask in exchange?\"\n\nMara smiles graciously and bows her head. \"Nothing but a future boon.\"",
+    "tags": [
+      "lore-book",
+      "marasenna",
+      "fideicide",
+      "great-hunt",
+      "extinction",
+      "whispers"
+    ],
+    "chronology": "Reef Golden Age & The Dreaming City",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "book-marasenna-fideicide-iii",
+    "title": "Marasenna: Fideicide III",
+    "source": {
+      "type": "lore_book",
+      "game": "Destiny 2",
+      "book": "Marasenna",
+      "release": "Forsaken",
+      "bungie_ref": 2049926441,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/fideicide-iii"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Mara Sov",
+    "transcript": "To end a world with a shot or pin eternity on a blade; to see your sisters lost to rot and their undone works decayed—the death of an immortal wastes the infinite potential of all they might become. An immortal's grief and murder-guilt, left untended, will never fade. Thus it became known to those who fought in the Theodicy War that they had committed an incomparable evil. However, they could not confront their own responsibility, so they rose up in wrath against those who had given them cause, whether by caging them in flesh bodies or by drawing blood over grievance. The war continued by spear and bow, by knife and scalpel, by old machine and new invention. Ever did the Diasyrm's faithful call for the unawaring of Queen Alis Li.\n\nNow there entered into the Diasyrm's camp Osana, mother of Mara, famed for her skill in negotiating contested land. She had come with her son Uldren, who could win a place in any camp for his beauty and for the regal crow-eagle that alighted on his shoulder.\n\n\"I come from Mara,\" said Osana, \"whose heart has frozen in her chest. If you will end the killing, she will tell you any secret that you desire.\"\n\nFor his part, Uldren went among the Diasyrm's warriors and spread ill tidings of Mara's knowledge, saying, \"Mara remembers how the Queen led us here out of chaos and saved us from the twin blindness of darkness and light. Mara knows what the Queen keeps secret. Mara has seen the strife in our souls, the clash from which we were made. We could not ever have been gods with this flaw in us! Rather, we were made from this schism. For as all life is born from energy gradient, as life in the World Before was born from the gradient between hot proton-rich ventwater and cold seawater, we were born of the shadowline at the edge of Light and Dark. We are tremors in that fault. Forever will that schism lead us.\"\n\nHearing this new heresy, the Eccaleists were seized with rapture and scattered to the points of the compass, telling all they met, \"We are the yield of a mighty engine! We could never have been gods! Like diamonds, we were crushed into being. Like diamonds, we hold flaws.\"\n\nMeanwhile Osana spoke to the Diasyrm, who was also heartsick from the killing, and who longed to withdraw from the world and seek transcendence within. \"There is no weregild for the murder of an immortal,\" Osana counseled her. \"You must become a teacher or a midwife and devote yourself to the enrichment of new lives.\"\n\nBut the Diasyrm craved secret knowledge, and she sought Mara upon the mountaintop. Here, she vanished. If she was ever known again, it was not by the name Diasyrm.\n\nWhen there was peace, Queen Li ruled the Awoken for a time; however, the guilt of the war lay heavy upon her, and after an age of peace and progress, she abdicated to a new Queen.",
+    "tags": [
+      "lore-book",
+      "marasenna",
+      "fideicide",
+      "great-hunt",
+      "extinction"
+    ],
+    "chronology": "Reef Golden Age & The Dreaming City",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "book-marasenna-imponent-i",
+    "title": "Marasenna: Imponent I",
+    "source": {
+      "type": "lore_book",
+      "game": "Destiny 2",
+      "book": "Marasenna",
+      "release": "Forsaken",
+      "bungie_ref": 2049926442,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/imponent-i"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Mara Sov",
+    "transcript": "In later days, the power of the Queen waned, and the Distributary was ruled by scholars who sent their knights on mad quests to test the consistence of reality. These were the Gensym Scribes, who traced their origin to Kelda Wadj, the Allteacher, but who were in fact descendants of a band of roving storytellers who traveled across the immense salt glades in a hollering convoy of airboats. Here was their praise of the world:\n\nIt is sweet-watered, and there are no poisons upon it. The temper of the climate is even. Great broad-pawed cats stalk the shallow glades, and brilliant blue flamingos promenade upon the flats. The air is thick and warm, suited for flight, and the wind tastes of forest. No dawn has ever been as glorious as the salt glade dawn, and no dusk has ever moved women to weep as deeply as sunset in the Chriseiads. Corsairs sport upon the open seas, and where they waylay freighters rather than each other, they give rumor and assistance to their prey in proportion to the quality of the chase. Beloved are the stories of young lads and lasses who leap across to the corsair ship for a life of adventure! Beloved also are the terraced farms of the Andalayas, mountains so mighty and so dense with radioactives that they subside year by year into the crust. Most beloved are the fissioneers, who vaulted us to power on a world without petrochemicals. May they forgive the many stories of horror we have told in their memory. May they in particular forgive the lurid stories of the molten lead reactor, and the twelve who were impaled to the ceiling by their control rods, and the Core That Stalked.\n\nIt is the Sanguine Truth that we were granted this world by the unconditional mercy of the powers, and that we will never again know fear.\n\nHowever, the Scribes also recorded their frustration with Mara and Uldren, who alone out of the eight hundred ninety one were said to have seen creation from outside. These two wandered the land gathering lore of portents and prophecies, and all the Eccaleists who remained from ancient days whispered that soon the day of reckoning would be known—the day when the Awoken would be called to repay their debt.\n\nNow in the court of one of the Scribes, there appeared a woman of stellar height and furious wrath, armed with a bow that could be strung only if she twined it around her body and used her whole mass to bend it. \"I am Sjur Eido,\" said the woman, \"and I accuse Mara of the ancient murder of my lady the Diasyrm. In my saddle, I have a weapon with only one death remaining. Take me to Mara, and I will deliver it.\"\n\nThe Scribes consulted and said to each other that this foul murder might prevent another Theodicy War. So they gave Sjur Eido all their knowledge to hunt Mara.",
+    "tags": [
+      "lore-book",
+      "marasenna",
+      "imponent",
+      "riven",
+      "bargain",
+      "wish"
+    ],
+    "chronology": "Reef Golden Age & The Dreaming City",
+    "theme": "Anthem Anatheme & Wish-Bargains"
+  },
+  {
+    "id": "book-marasenna-imponent-iv",
+    "title": "Marasenna: Imponent IV",
+    "source": {
+      "type": "lore_book",
+      "game": "Destiny 2",
+      "book": "Marasenna",
+      "release": "Forsaken",
+      "bungie_ref": 2049926443,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/imponent-iv"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Mara Sov",
+    "transcript": "Next, the fallen Paladin and the hunter chose long guns and went out into the monsoon jungle to stalk each other. Sjur Eido selected a Tigerspite in 11x90mm with five-round flock guidance and an inertial sump. Uldren chose a silent needle carbine with a conesnail payload. For six weeks, they stalked each other as the political situation grew more dire. He was the better hunter, stealthier in motion and at ease in the wilderness, but Sjur Eido was the better soldier. She had no respect for the systems of the jungle, and she knew how to use that to her advantage. She drove the animals into a frenzy with violence and habitat disruption. Parrots and crows warned each other of Uldren's stealthy hides, and jealous predators forced him off his carefully scouted trails. Sjur Eido caught him with his back against a rift lake and shot him as he tried to cross the lakebed. The wound was not mortal, for the water ruined the terminal ballistics, but she had won the match.\n\n\"Your life is at stake,\" Mara warned her brother. \"Lose this final match, and you will—\"\n\n\"Am I simple?\" he snarled at her. The wound pained him terribly, but he would not risk more than a little analgesic. \"Leave me my work, Sister, or you leave me nothing at all.\"\n\nNow they would meet in air superiority fighters over the Andalayas. Charges under their seats would detonate if either of them left the engagement area. Because of the small combat zone, Sjur Eido chose a nimble Ermine tactical fighter and a payload of all-aspect heatseeking missiles.\n\n\"Where will we receive these aircraft?\" Uldren demanded. \"How can I trust the equipment?\"\n\nSjur Eido told him that one of the Gensym Scribes would provide the aircraft and requested weapons from her personal deterrent stockpile. \"Very well,\" Uldren sniffed. \"And we will have access to all the weapons these airframes can equip?\"\n\n\"Of course,\" Sjur said. \"Those we cannot obtain can be replaced by training simulators.\" She was certain Uldren's wound would cripple him.\n\n\"Then I will fly a Dart,\" Uldren said. The ancient interceptor had awful fire control, dismal maneuverability, and primitive weapons.\n\n\"A Dart?\" Sjur jeered. \"Will you fly with its original weapons, too? You think you can beat me with rockets and a gun?\"\n\n\"I do,\" Uldren purred. \"You accept those terms?\" She did.\n\nThe two duelists took to the skies on a bright winter morning. After a fuel check, a telemetry squawk, and a terrain snapshot, they turned in toward each other from a hundred kilometers apart. Sjur Eido descended for the terrain, knowing Uldren's radar could barely separate her from the clutter. Uldren came straight on.\n\nAt eighty kilometers of separation, Uldren called across the radio, \"Fox three. Kill. Engagement over.\" Sjur sneered at the bluff and prepared to climb into a snap attack when the KILLED alert flashed on her Ermine's training panel. She had forgotten that the Dart's intercept loadout, when it had last served seventy years ago, included an unguided air-to-air nuclear rocket. Uldren had simulation-killed her and everything within several klicks.\n\nOn the tarmac, Sjur Eido threw off her helmet and parachute and knelt before Mara Sov. \"My lady,\" she said, \"as I have fought your brother to a tie, I leave my fate in your hands. Be more kind to me than you were to my lady the Diasyrm.\"\n\n\"Rise, Sjur Eido,\" said Mara. \"Let us take the stars together.\"",
+    "tags": [
+      "lore-book",
+      "marasenna",
+      "imponent",
+      "wall-of-wishes",
+      "techeuns",
+      "riven"
+    ],
+    "chronology": "Reef Golden Age & The Dreaming City",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "book-awoken-reef-telic-i",
+    "title": "The Awoken of the Reef: Telic I",
+    "source": {
+      "type": "lore_book",
+      "game": "Destiny 2",
+      "book": "The Awoken of the Reef",
+      "release": "Forsaken",
+      "bungie_ref": 2049926444,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/telic-i"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Mara Sov",
+    "transcript": "Mara made one more attempt, and only one, to call her scattered people home. She had hoped the assault would convince them they had a responsibility to the Reef, to come home and repair the damage they had caused. It went poorly, however, for though her tech witches were able to amplify her bond to her people through the augments Kelda had developed, she was only one voice in a maelstrom. Her Awoken had sensitive antennae, in the metaphysical sense, and could not hear her plea through the clamor. Also, the communications engineer kept forgetting to call Mara \"Majesty\" or \"Queen.\"\n\n\"Good news,\" Uldren told her with the grim delight he always showed after a debacle he had survived. \"Illyn and I went through the Fallen communications logs. Their Baron never transmitted our position to his Kell. He wanted the prize to himself. We remain secure.\"\n\n\"The Baron might have planted a time-delayed beacon,\" Mara warned him. \"Never underestimate these beings. They've lived in the void longer than us.\"\n\n\"I already admire them,\" Uldren confessed. \"They've lost so much. Some of them even ritually dismember themselves, Mara, to prove they have the strength to grow back the missing limbs. I tell you that even if we are doomed to dwindle and go extinct, those Fallen may outlive us.\"\n\nMara made a dry note in her log that her brother had at last discovered his true people.\n\nFor her part, Sjur Eido wandered about in a daze, filled with joy to be alive and grief that she no longer knew the day when she would die. \"In you, all things are possible,\" she told Mara. \"I live because of you.\" When Mara saw her string her mighty bow, the limbs coiled behind her leg and around her opposite arm, she was glad beyond telling that Sjur had survived.\n\nIn time, Mara appointed Paladins to oversee her new military, as Alis Li had done during the Theodicy War. She created talented starfarers as Corsairs, to scour the asteroid belt in utmost secrecy and to establish routes and caches that would support the covert motion of Awoken ships.\n\nMost of all, she charged her brother with the mission that occupied her thoughts. \"Brother,\" she said, \"never again can I allow my people to be divided. We must offer them more than shielding ice and cold habitat cylinders and the warrens of Vesta. We must make a culture, a thread that binds us all in pride and wonder at the mystery of ourselves. Nowhere does culture flourish better than in a city.\"\n\n\"Gather in one place,\" Uldren warned her, \"and you make yourself a target.\"\n\nMara had considered this, and found an answer. \"Go forth and find me a power unknown to all the other powers of this world. Return it to me, and I shall make of it the cornerstone of my new city, where the Awoken shall dream of all they have been and all that is yet to come.\"\n\nSo Uldren went out voyaging among the worlds, swift as a blueshift ghost. In time, he returned to the Reef with a creature not larger than his hand, saying, \"Behold, Sister, the lie that makes itself true. This is an Ahamkara.\"",
+    "tags": [
+      "lore-book",
+      "awoken-of-the-reef",
+      "telic",
+      "mara-sov",
+      "riven",
+      "purpose"
+    ],
+    "chronology": "Reef Golden Age & The Dreaming City",
+    "theme": "Anthem Anatheme & Wish-Bargains"
+  },
+  {
+    "id": "book-awoken-reef-telic-ii",
+    "title": "The Awoken of the Reef: Telic II",
+    "source": {
+      "type": "lore_book",
+      "game": "Destiny 2",
+      "book": "The Awoken of the Reef",
+      "release": "Forsaken",
+      "bungie_ref": 2049926445,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/telic-ii"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Mara Sov",
+    "transcript": "It was Mara alone who established a covenant with that young Ahamkara, which chose the use-name Riven, in honor of its host. It was Mara alone whose singular will and unity of purpose saved the Awoken from that which we now name the Anthem Anatheme. For there was in Mara very little division between Reality-As-Is and Reality-As-Desired; she was confident in her centuries of purpose and patient with the winding way by which the river of methods reaches the objective ocean. Blessed are those who in their absolute selfhood become selfless. Unappetizing are those who in their truest self-knowledge exclude the possibility of self-deceit.\n\n\"Mara,\" said Uldren Queensbrother, \"why do you forbid me to speak to the Ahamkara?\"\n\n\"This secret is mine alone,\" said Mara Queen. She knew that her brother had only widened the gap between He-As-Was (which is called NUME) and He-As-He-Would-Be (which is named CAUST). \"Begone to the outer world, where I require thee.\"\n\nThis was when Sjur Eido, having spoken to Kelda Wadj and to Esila, at last came before her Queen. Kneeling, she said, \"Your Majesty, Kelda Wadj says you are a god, for there is no difference between your desire and reality. Yet I know that you desire things before they ever become real. Esila says that you are keeping a secret from your brother that he must never know. I think the secret is thus: You are now a god because one day you will become a god, and a god is not temporal. Your brother is not a god because he will never become a god. Shall I worship you?\"\n\n\"Sjur,\" Mara said, falling to her knees, clutching her beloved's face between shaking hands, \"Sjur, on the day you worship me, you cannot love me anymore, for to worship is to yield all power, and I cannot love what has no power over me.\"\n\nAt this, the Ahamkara coiled around her neck, yawned, and showed its fangs: for there was a crevice between What Was and What Was Wanted.\n\n\"I see,\" Sjur Eido said. \"Then to me you are not yet a god.\"\n\nAlthough in time the knowledge of what Mara would become pushed them apart, it was a kind and happy push, as a friend might urge a beloved companion onward to a distant opportunity. And their days together were spent gladly.",
+    "tags": [
+      "lore-book",
+      "awoken-of-the-reef",
+      "telic",
+      "mara-sov",
+      "riven",
+      "dreaming-city"
+    ],
+    "chronology": "Reef Golden Age & The Dreaming City",
+    "theme": "Anthem Anatheme & Wish-Bargains"
+  },
+  {
+    "id": "book-gifts-first-gift",
+    "title": "Book: Gifts and Bargains — First Gift",
+    "source": {
+      "type": "lore_book",
+      "game": "Destiny 2",
+      "book": "Book: Gifts and Bargains",
+      "release": "Season of the Wish",
+      "bungie_ref": 3617300747,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/first-gift"
+    },
+    "entity": [
+      "Taranis"
+    ],
+    "speaker": "Taranis",
+    "transcript": "|| O listeners, open your ears! There are choices ahead that you must make for yourselves. I will not act for you. I can only help by giving what I have left: my voice. ||\n\nTaranis hatches bathed in the light of the heliopause.\n\nThe solar wind dries his damp wings, and the depth of space gives him room to grow. There's no hint of the Ahamkara who crafted his egg, nor of how many of them there were. No dams or sires wait for him.\n\nTaranis's first meal is the shell that nurtured him through his incubation. It snaps between his new teeth, a first taste of life.\n\nTaranis grows his first sensory organs. He uses them to look for more life.\n\nThe universe contracts and expands with the force of will, the tension between what exists and what is wanted. Taranis learns to scent his way across these lines of tension, to navigate around other Ahamkara with no benign wishes for a little whim like Taranis.\n\nAn Ahamkara's life and power are bound in their voice. Taranis sneaks silently in to listen to his elders at their feeding, the twists of their tongue, their multiplicity of meanings. He tracks other Ahamkara by the strength of their power, watches them hunt, slips past them to their catch. Their meals are bitter: Taranis can't swallow his stolen bites.\n\nTaranis learns he is plainspoken for an Ahamkara. What pleases his tongue is not what pleases others.\n\nThe first wish Taranis grants is to a Cabal soldier patrolling her firebase in honor of empire and emperor. Hot sand blows in Mars's winds, whipping against her pressure suit, scratching the enamel on her greaves. She wishes for respite. To put down her equipment for a single day. To rest without being derelict in her duty.\n\nWith a wish that broad, an Ahamkara could eat her whole.\n\nInstead, Taranis nudges weather patterns. It's easy to whip the wind up higher, let it pick up more sand. Till the growing sandstorm triggers the firebase's hazard alarms.\n\nThe Cabal soldier hurries back to her firebase, hunched against the increasing wind. Her squadron leader is unprepared and has no plans drawn up for indoor duties. It is a failure he will answer for. But until he rectifies his failure, the soldier may go to her bunk and read a borrowed novel without compromising her duty. Her satisfaction grows rich and, hidden in the piping above her bunk, Taranis basks in it.\n\nHis belly isn't full, but the sip she's given him is sweet. Nothing bitter in it, nothing sour, light on his tongue the way no other food has been. It is a good end to his first hunt: a good meal from his first partner.\n\n—-\n\nTaranis grows more slowly than his age-mates. The sustenance he finds doesn't fill his belly like their hunts fill them. They grow in strength; tongues long, teeth fierce. They lose patience for a runt with overly delicate sensibilities. Taranis finds himself in need of a retreat.\n\nTaranis doggedly follows a faint trail—a hint of secrets in the air—all the way to a pinch in space. He makes his own door and enters. It is a place of life, lush with crimson flowers and trees speckled with water, trunks dripping sap. It is a place of potential, of possibility: a nursery for life itself. A garden, a grove.\n\nA fine place for a nest. A fine place for Taranis to teach himself who he is.\n\n—-\n\nThere is something lacking from his nest.\n\nThe grove sustains him when the sips of his partners' dreams aren't enough. His belly is never empty enough to ache, cradled in his garden.\n\nBut Taranis tastes an itch in his heart and knows it is not enough.\n\nHe leaves his nest to hunt for it.\n\n—-\n\nTaranis drifts through Venus's atmosphere on albatross wings. The Vex are a dull prickle, a flat endless weight. Taranis will make no bargains with them.\n\nA drekh on patrol in water up to their knees wishes for growth, stumps itching under docking caps. They picture themself with a hundred arms, a thousand eyes, a spine like a tree. Tall enough to lift themself out of the water, to take their House by Skiff and Ketch back to their first home, a hero crowned in honor like Chelchis.\n\nTaranis circles far overhead, riding on the thermal of their desire, till a brighter spark on the horizon pulls his attention away.\n\nHe follows the spark and finds Lightbearers. He has seen their kind before: Earth's Lightbearers get into every corner of Sol. They poke around for mysteries to solve. They pick fights with Psions. They peel Vex structures for prizes to wear on their belts. A Lightbearer makes a strong partner, with a firm will and steady belief in their own importance. A Lightbearer creates ripples through the world with the weight of their concentrated potential. A dozen walk alone or in small groups on Venus now, unbothered by decay and the threat of death around every corner.\n\nEleven Lightbearers dig through archives, battle Vex, and skim lightly over deep water, their desires shifting with circumstance. The twelfth Lightbearer sits unmoving under the spilling branches of a willow. His desires are faint, despite the firmness of his will. His presence is a cool taste in the back of Taranis's throat, pale as the light from the Lightbearer's lantern.\n\nTaranis slips through the water to watch him from a distance, nothing but eyes and nostrils peeking out above the surface.\n\nThe sun sets, and still the Lightbearer sits. Venus turns, and the Lightbearer sits. Only the smallest threads of desire reach Taranis. This Lightbearer alone wishes for nothing.\n\nTaranis sinks back into the water without a ripple.\n\n—-\n\nTaranis drifts towards something new: a gateway tucked carefully into an asteroid belt. He eels through rock and debris to a city opalescent with dreams. He can feel the marks of its makers on it, a powerful Ahamkara with a powerful partner.\n\nThe city is filled with souls who know Ahamkara. All those minds, those wills, potential partners holding fragments of grit for Taranis to envelop in pearls. Something he could build to match this masterpiece of a city.\n\nMist curls in fractals around Taranis, leaving a faintly bitter taste on his tongue. There's danger baked into this pocket world, a risk its citizens are only half-aware of. The source of that danger is the source of the city and all its beauty. Taranis can't help but track towards it: a distant chiming, a laugh in the underpainting of the city.\n\nTaranis slithers toward what he will later learn is the Spine of Keres, and a massive claw pins him to the ground.\n\n\"What do you think you're doing in my territory?\" multiple voices inquire. The laugh emerges into the foreground. Leathery frills frame a massive head. An uncertain number of eyes glow bright with curiosity and malice.\n\nThis Ahamkara has gravity like a black hole. Taranis feels her grip on the warp and weft of desire encircling them and knows he can do nothing to stop himself from being drawn in.",
+    "tags": [
+      "lore-book",
+      "gifts-and-bargains",
+      "taranis",
+      "black-garden",
+      "solitude",
+      "clutch"
+    ],
+    "chronology": "Pre-Collapse & Ancient Origins",
+    "theme": "Parentage & The Uncorrupted Clutch"
+  },
+  {
+    "id": "book-gifts-second-gift",
+    "title": "Book: Gifts and Bargains — Second Gift",
+    "source": {
+      "type": "lore_book",
+      "game": "Destiny 2",
+      "book": "Book: Gifts and Bargains",
+      "release": "Season of the Wish",
+      "bungie_ref": 3617300748,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/second-gift"
+    },
+    "entity": [
+      "Taranis",
+      "Riven"
+    ],
+    "speaker": "Taranis",
+    "transcript": "|| O my eggs! O my whims, more precious than my eyes, dearer than my tongue! Eat my story, take it into your bodies. Grow your egg-teeth. Crack your shells. Choose. ||\n\nTwo forms move above the Dreaming City, curving between the pressures of gravity and desire.\n\nRiven turns long, streaming whiskers and mane behind her, sunset golds draping themselves across her sides. In response, Taranis's bare hide sprouts carp scales in gleaming blue. His wings recede as his mane grows.\n\nHe twists around Riven, neck on neck for a moment, before he slips ahead through the mists of Divalia.\n\nThere's a wish on the wind. A mind far below, dreaming of a change to the world. Taranis noses toward it.\n\nOne of Mara's Awoken sits under the vault of a broken geode. He dreams, looking out over the shifting mists. Ambition is woven through his thoughts, a wish for a more comfortable home. One shaped like a memory, with a parent in the Distributary making sesame pastries soaked in honey. Too sweet, too sticky, but beloved.\n\nRiven crouches like a gargoyle on the cliff above as Taranis spirals down to meet him. They speak. They learn one another's names: Taranis. Gwilym.\n\nA tripod-legged silver tray with a teapot and plate settles beside them.\n\nTaranis, curled into a catlike form, sits with Gwilym. A few crumbs land on his side. A few tears.\n\nGwilym rises when the sun slips to the edge of the fabricated horizon. He holds out a hand in thanks and startles when Taranis grows a thumb to clasp it.\n\n\"No wonder you're so small,\" Riven says, when Taranis has wound his way back up the cliff to her. It's barely a mouthful, filling one small desire without grasping for more. Not much more than a sip.\n\n\"It's enough for me,\" says Taranis.\n\n\"It's foolish,\" Riven snarls with all the force available to her. A strong, well-fed Ahamkara in the heart of her power. A king enthroned.\n\n\"I'm a fool.\"\n\nThe tip of Taranis's tail reaches for Riven's. They twine together. She doesn't shake it off.\n\n—-\n\nRiven prowls through the grove. It thrills Taranis to see her here, to feel her will pushing at its borders.\n\nHis nest has been potential life. It was missing this: active life. The pressures of will and desire. The chance to choose more.\n\n\"May I show you my nest, O Riven, O creator of a city of pearls, O shaper of souls?\"\n\nRiven shutters her eyes with great plates of bone. \"That mode of speech is unworthy, O foolish companion mine.\"\n\nBut naming without claim suits Taranis. It's an argument he and Riven will never settle. He will call her O beloved, O master artisan, without ever appending the \"mine,\" and she will forever call him her fool.\n\n\"Riven, then. I'd show you my grove as you showed me your city.\"\n\nThey walk the stone pathways softened by moss. They climb through flowers, and condensation from the damp air rolls down their necks. Taranis guides Riven to the heart of his nest. He watches her stride through it, taking the lead.\n\n\"I've seen the things Mara's brother brought back from this place. They didn't smell of your nest.\"\n\n\"His ambitions don't suit my palate.\"\n\nThe prince and his partner hadn't approached Taranis's nest on their journey. Taranis had made sure of it.\n\nRiven's will causes eddies in the fabric of Taranis's home. It begins to grow around her into more of a place of mystery, a place of dangers for the unwary. Taranis rests his jaw on his forelimbs, watching, nudging her will with his own when her changes grow too vast. He wants this. His home is still his own.\n\nRiven circles back to Taranis, who is sprawled in a patch of grass. She sits on him resentfully.\n\n\"You are singularly unlike any Ahamkara I've met. I am astonished you're still alive.\" Riven grows heavier. Taranis snorts into the grass as his body presses into it.\n\n\"Hasn't your time with the Awoken changed you? We both made the choices our homes gave us.\"\n\n\"You're less than you could be.\"\n\nTaranis settles more firmly into the grass. \"I'm myself. That is the end of my ambition.\"\n\n\"Your brain has shrunk with your stomach.\" Riven presses her claws into Taranis's spine. Her voices thrum together in frustration. \"We will build here. Together. If you won't let yourself grow, then we will make something that does.\"\n\nAnd they do.\n\nThe language of secrets and desire passes between them as they build. Mysteries bury themselves in the grass. The grove grows wilder, paths sprawling out to meet Riven's nest in the Dreaming City.\n\nAlight with creation, Taranis says, \"There's one more thing I want to make with you.\"\n\nHe does not stop to lay out a contract. This is no bargain, with each Ahamkara giving precisely what is owed and no more, in fear of being devoured by their own partner. There are no clauses to whittle down. Taranis doesn't hold back.\n\nInstead he gives himself as a gift, and Riven gives herself to him in return. Together, they make something new.\n\nTaranis unspools his own cells into embryos, pulling from his lungs and heart and blood, taking the initiator's role, that of the dam. In response, Riven kindles them, feeding Taranis a sire's strength for the task. Together, they spin will and memory into shells to house the embryos, their future whims.\n\nA great gamble. And a solidified future.\n\nThe two of them and their clutch, a new generation of Ahamkara raised in the Dreaming City and the Black Garden. To one day be as they wish.\n\nWhat other Ahamkara had created life like this? With generosity and affection, with teeth unbared and voice unspilled? If any had, Taranis never met them, nor heard their story.\n\nTaranis sprawls out against the cool stone and moss of his nest, exhausted. Riven stands by him, inspecting their eggs with cool, critical eyes.\n\nTheir first gift to their whims is existence.",
+    "tags": [
+      "lore-book",
+      "gifts-and-bargains",
+      "taranis",
+      "riven",
+      "mating",
+      "courtship"
+    ],
+    "chronology": "Pre-Collapse & Ancient Origins",
+    "theme": "Parentage & The Uncorrupted Clutch"
+  },
+  {
+    "id": "book-gifts-third-gift",
+    "title": "Book: Gifts and Bargains — Third Gift",
+    "source": {
+      "type": "lore_book",
+      "game": "Destiny 2",
+      "book": "Book: Gifts and Bargains",
+      "release": "Season of the Wish",
+      "bungie_ref": 3617300749,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/third-gift"
+    },
+    "entity": [
+      "Taranis",
+      "Riven"
+    ],
+    "speaker": "Taranis",
+    "transcript": "|| O eggs, O little cells! If nothing else, if you let this memory pass with no other exegesis, learn this: you were loved. ||\n\nTaranis and Riven scatter their eggs across spacetime, giving them life to look on and grow near. From his grove, a nursery once more, Taranis broods on them. He takes on avian characteristics, letting feathers grow along a snakelike body. He fluffs himself up in his nest to spin new dreams for their clutch. He hums with pride, and his eggs chime along with him.\n\nWhen he was born, Taranis had hatched out in the cold, nothing but his shell to sustain him. But their eggs, he vows, will have more. They will have a surfeit. They will know the names of their forebears, dam and sire both.\n\n\"If I'd known eggs would have settled you down so much, I'd have proposed it myself long ago,\" says Riven, their sire. Her voice is distant and comes to him with the energy of her city, moving like cold water over gleaming stone. A sure sign that she is at work with her queen.\n\n\"Between death and life, you chose life.\" Taranis, his voice plain as it is, makes sure his smugness carries all the way to the Dreaming City.\n\n\"I could still kill you.\"\n\nIn perfect security, Taranis says, \"But you won't.\"\n\nRiven's laugh is that of a pride of lions.\n\n—-\n\nRiven's voice faintly reaches across space to Taranis.\n\n\"Don't come to the Dreaming City. Stay in your nest.\"\n\nTaranis rouses. \"Too busy at your work today?\"\n\n\"Lightbearers are hunting Ahamkara. The Awoken are helping.\"\n\nTaranis stands. \"They won't hurt me. Maybe I can talk sense into them.\" He lets the strands bringing their minds together fall from his grasp.\n\n\"Listen to me,\" Riven presses.\n\nThe Dreaming City boils with activity, violent desires rising within its citizens. They load weapons. They make plans. Taranis recoils from their dreams.\n\nRiven's power is leashed. She roars through her bars:\n\n\"You colossal fool, leave or I'll bite your throat open!\"\n\nTaranis does not leave.\n\nThe queen of the city stands in a hall. She is surrounded by her people and crates of weapons ready to be distributed to allies outside the Reef. Taranis avoids them all, tracking the scent of other Ahamkara.\n\nHe finds Azirim alone in a glade of luminous reeds, worrying at a piece of quartz.\n\nAzirim's shape is spiked today, sharp with defenses. His voice is far more sour than usual. \"You missed the crowd. Guess your nest was just too far to make it in time.\"\n\nSpikes grow along Taranis's own spine, edging his wings. \"And you waited.\"\n\n\"Yeah, I wanted to let you know.\" Azirim's jaw drops into a smile. \"You're tight with the lady of the house. But it won't save you, and it won't save her. You're both just fish in the barrel now.\"\n\n\"My partners won't return death for generosity.\"\n\n\"You think that now. Me, I'll welcome it. I'll live forever as bones. I'll eat life. I'll eat worlds. You just watch me from that nice rose garden of yours.\"\n\nAzirim's laugh is the last part of him to fade from the glade.\n\n—-\n\nTaranis scuttles along the wainscotting, a swift mouse-shape. Boots thump past him, tracking mud and urgency along the tiles. Wishes push at Taranis, for success, for safety, for the thrill of the hunt.\n\nTaranis searches for an Awoken he knows. A partner once dealt with in fairness.\n\nGwilym is in his room tying back his long hair, bright silver against the deep blue of his hands. There is a bag on a hook by the door, a knife tucked inside, its edge whetted.\n\nGwilym's muddled desires fill the room with a heavy steam.\n\nBehind him, Taranis lets himself grow from mouse to cat—the shape Gwilym knew him in.\n\n\"Will you join the hunt, O companion?\"\n\nGwilym jumps. His hand leaps to his heart, clutching the heavy fabric of his jacket.\n\n\"You shouldn't be here.\"\n\n\"I shouldn't visit a partner?\" Taranis's long tail twitches.\n\n\"Azirim killed the last partner I had. Walked her and the rest of her Corsair squad right off a cliff. The Dreaming City can't afford more losses to the Ahamkara.\"\n\nGwilym's voice is that of a man convincing himself.\n\n\"Azirim is not all of us.\"\n\nGwilym raises his voice in alarm, and a tall Corsair quickly barrels through the door.\n\nTaranis makes it out in the window in dragonfly form, just out of reach of the gloved hand snatching for him.\n\n—-\n\n\"O love, you were right.\"\n\n\"I'm always right.\"\n\n\"If all we are is teeth and all they are is claws, what world are we dreaming into existence together?\" Taranis's wings cover his face. The soft breezes of the grove don't touch him.\n\n\"A world of teeth and claws.\" Many of Riven's voices are bitter, but none are surprised.\n\nThe eggs are so delicate that they make no ripples at all in the fabric of reality. They're curled-up potential, fragile within crystal will. Hard to make. Easy to shatter.\n\n\"We'll build for ourselves, and even when we're bones, we'll sing to our children.\"\n\nRiven reaches out with a thread of a thought. A secret overheard in the palace between Uldren, Mara's brother, and Jolyon Till, his Rachis. It feels like raspberries and quartz. It smells like the Divalian Mists. A fine secret to share and never speak out loud. Taranis unfolds himself from under his wings, and they weave it together into something grander.\n\nTogether, Riven and Taranis weave more secrets; for their children, for the joys of creation, for outwitting any future seekers.\n\nThe voices of their fellow Ahamkara change slowly from the thrum of the living to the echo of the dead. Their bones whisper to powerful minds. A scale off Eao's shoulder eventually rattles in the pocket of Riven's mechanical acquaintance. Azirim's skull and spine lie in wait for a victim.\n\nThe living voices recede till Riven and Taranis are the only ones left, speaking across the empty distance.\n\nUntil Taranis calls for Riven and she does not answer.\n\nAnd the chime of their eggs falls almost silent.",
+    "tags": [
+      "lore-book",
+      "gifts-and-bargains",
+      "taranis",
+      "riven",
+      "separation",
+      "clutch"
+    ],
+    "chronology": "Reef Golden Age & The Dreaming City",
+    "theme": "Parentage & The Uncorrupted Clutch"
+  },
+  {
+    "id": "book-gifts-last-bargain",
+    "title": "Book: Gifts and Bargains — Last Bargain",
+    "source": {
+      "type": "lore_book",
+      "game": "Destiny 2",
+      "book": "Book: Gifts and Bargains",
+      "release": "Season of the Wish",
+      "bungie_ref": 3617300750,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/last-bargain"
+    },
+    "entity": [
+      "Taranis"
+    ],
+    "speaker": "Taranis",
+    "transcript": "|| O my eggs, we meant to have eternity! To think our voices could be silenced forever! Sharpen your sight for unintended clauses. Step carefully around the waiting snare. Beware the bargain that makes you less than what you were! ||\n\nTaranis crawls small and silent through Esila's gardens. Power drips through the Dreaming City, corrupting its air, cracking its shining facets.\n\nCreatures lurch through the grass on the strings of their master's desire, their own wills gone to rot.\n\nCorruption spreads from the center of the Dreaming City. The grit at the pearl's heart poisons the city, poisons Riven, and poisons their eggs from the inside out.\n\nThere's a murmur. Taranis slithers towards it to listen.\n\nWhat speaks is not Riven, not as Taranis knows her.\n\nTaranis knows her every voice, the way her claws tug at reality. There is no shape Riven could take in which he would not know her. And there should be no shape Taranis could take in which Riven would not know him.\n\nBut now, Riven does not know him. Does not taste Taranis's fear on the wind. Does not look away from her revenge to notice him at all.\n\nTaranis returns to his nest unseen, in grief.\n\nLife flows along the branches of the nursery. However many paths have been closed off outside, potential still flourishes in this grove, Light and Dark giving off new buds together.\n\nTaranis shuts himself off from it, retreating to his hoard of secrets. Stone grows up his sides. Moss and vines follow, tracing words on his sides.\n\nWhile dormant, Taranis listens to this new Riven's voice—the voice of a king, uninterested in magnanimity. A strong and unyielding voice that tastes of iron.\n\nOnly faint chimes of his Riven are left in the wish-born shells of their remaining eggs. And there are so few left.\n\nThe thought rouses Taranis from his stupor.\n\nTaranis and Riven are the last Ahamkara. What Riven has become is an abdication of responsibility, life only for her own sake; power and spite.\n\nThe final eggs are the last living remnants of Riven and of their shared work.\n\nTaranis can't abdicate his responsibility to them. Can't erase their opportunity to choose.\n\nAs Taranis made his own life and suited his diet to his tongue, his eggs will make themselves. Vines break from Taranis's body as he stands.\n\nHis eggs will survive.\n\nThere is one last bargain he can make. One last gift he can give them. One last use for his tongue.\n\nTaranis reaches out to his eggs. He gathers up his power, his life, his voice. His own wish for the sake of his children, a snare for a future Wish-Keeper.\n\nFor the final time, Taranis opens his throat to speak.\n\n|| O my eggs! O my children! O future whims, O dreams of your own devising! I am dead, and Riven, your sire, is caged.\n\nRemember that the easy meal, the little joy, passes soon. What fills your belly forever is satisfaction. Grow well! Eat life to sate your belly's hunger and return it as a gift to sate your heart's.\n\nNo bargain can grant you a life without pain; make your bargains carefully.\n\nBut give your gifts carelessly, to all who enter your heart, and they will give life back to you in turn.\n\nAll that is left of me is yours: take it and choose.\n\nChoose with care who you will be. Promise me only that you will live.\n\nO Wish-Keeper, my death is in your hands. Bear it well.\n\nRemember me. Remember I was Taranis Rivensmate till the end. ||",
+    "tags": [
+      "lore-book",
+      "gifts-and-bargains",
+      "taranis",
+      "self-sacrifice",
+      "wish",
+      "eggs"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "Parentage & The Uncorrupted Clutch"
+  },
+  {
+    "id": "lore-lethophobia",
+    "title": "Lethophobia",
+    "source": {
+      "type": "lore_book",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Season of the Wish",
+      "bungie_ref": 3719914480,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/lethophobia"
+    },
+    "entity": [
+      "Huginn",
+      "Muninn"
+    ],
+    "speaker": "Sjur Eido",
+    "transcript": "The wish-dragons took to the air one final time, soaring nimbly between the pillars on wings of prismatic light. Sjur Eido watched their pale, sinuous reflections sweep across the surface of the geodes.\n\nIt had been many years since Huginn and Muninn first arrived in the city as a nameless pair, full of the fervor and cunning of their kind. For the greater portion of those years, Sjur considered them friends. They dined delicately on her desire for news of worlds beyond the Reef, spinning truth and lies with the cackling enthusiasm of dedicated storytellers.\n\nBut now the Hunt had been called, and there was only one path into the future.\n\nSjur stood waiting at the center of the chamber, her fingers loose around the grip of her bow, her head bowed.\n\nAt last, the Ahamkara landed heavily to either side of her, scenting the air.\n\n\"Are you unhappy?\" Huginn asked, surprised.\n\n\"What story was there that never ended?\" Muninn said.\n\n\"And can you not tell it again once it is over?\" said Huginn.\n\n\"We will be as true and solid as bone, forever.\" Muninn yawned wide, his curling tusks scraping against one another.\n\n\"Rhetoric,\" Sjur muttered.\n\nShe would miss them, all the same. Their shining inquisitiveness, their impossible wisdom. The fleeting grace of weapons purposefully sheathed.\n\nAll of it lost in one dismal moment of surrender. Unless—\n\nHuginn tilted his head. Muninn parted his jaws to brandish a fanged smile.\n\nSjur straightened to her full height. At her hip was the fractal knife she had been gifted from the Queen's own armory. In her hands, her great bow.\n\n\"Come, then,\" she said, plucking an arrow from its quiver. \"Give me a fight to remember.\"",
+    "tags": [
+      "lore",
+      "bow",
+      "huginn",
+      "muninn",
+      "sjur-eido",
+      "skulls",
+      "extinction"
+    ],
+    "chronology": "Reef Golden Age & The Dreaming City",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "lore-oathkeeper",
+    "title": "Oathkeeper",
+    "source": {
+      "type": "lore_book",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 3719914481,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/oathkeeper"
+    },
+    "entity": [
+      "Huginn",
+      "Muninn"
+    ],
+    "speaker": "Sjur Eido",
+    "transcript": "\"This was on her body, Your Grace.\"\n\nA strange coin lay at the center of Abra's outstretched palm. Mara took it between thumb and forefinger and held up it to the cosmos with dainty contempt.\n\nWeregild, she thought. Powerful grief filled her chest, as thick and caustic and heavy as unset concrete.\n\n\"And her bow?\"\n\n\"Gone.\"\n\n\"Huginn? Muninn?\"\n\n\"The Ahamkara are dead, and their bones are silent. But Petra Venj has—\"\n\n\"Who?\"\n\n\"A Corsair. Recently titled.\"\n\n\"…She is a CHILD.\"\n\nPaladin Zire flinched as if slapped. \"My Queen. Our spies in the House of Judgment tell us the Wolves plan to attack Hygiea next. I loved Sjur, as I love all we have lost, and I grieve her. But if we divert our attention now to vengeance against an unknown enemy…\"\n\nMara put down the coin and allowed herself a small, humorless smile. \"Then let it be my diversion.\"",
+    "tags": [
+      "lore",
+      "hunter",
+      "gauntlets",
+      "huginn",
+      "muninn",
+      "sjur-eido",
+      "covenant"
+    ],
+    "chronology": "Reef Golden Age & The Dreaming City",
+    "theme": "Deathless Bones & Parasitic Whispers"
+  },
+  {
+    "id": "wish-wall-first-wish",
+    "title": "First Wish: A wish to feed an addiction",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926451,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/first-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish to feed an addiction.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "ethereal-key",
+      "riven"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-second-wish",
+    "title": "Second Wish: A wish for material validation",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926452,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/second-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish for material validation.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "glittering-key",
+      "riven"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-third-wish",
+    "title": "Third Wish: A wish for others to celebrate your success",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926453,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/third-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish for others to celebrate your success.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "emblem",
+      "riven"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-fourth-wish",
+    "title": "Fourth Wish: A wish to look athletic and sleek",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926454,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/fourth-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish to look athletic and elegant.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "shuro-chi",
+      "warp",
+      "riven"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-fifth-wish",
+    "title": "Fifth Wish: A wish for a promising future",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926455,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/fifth-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish for a promising future.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "morgeth",
+      "warp",
+      "riven"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-sixth-wish",
+    "title": "Sixth Wish: A wish to move the hands of time",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926456,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/sixth-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish to move the hands of time.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "vault",
+      "warp",
+      "riven"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-seventh-wish",
+    "title": "Seventh Wish: A wish to help a friend in need",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926457,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/seventh-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish to help a friend in need.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "riven",
+      "warp"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-eighth-wish",
+    "title": "Eighth Wish: A wish to stay here forever",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926458,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/eighth-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish to stay here forever.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "paul-mccartney",
+      "easter-egg"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-ninth-wish",
+    "title": "Ninth Wish: A wish to stay here forever",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926459,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/ninth-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish to stay here forever.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "failsafe",
+      "dialogue"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-tenth-wish",
+    "title": "Tenth Wish: A wish for the common good",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926460,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/tenth-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish to stay here forever.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "drifter",
+      "dialogue"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-eleventh-wish",
+    "title": "Eleventh Wish: A wish to stay here forever",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926461,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/eleventh-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish to stay here forever.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "grunt-birthday",
+      "easter-egg"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-twelfth-wish",
+    "title": "Twelfth Wish: A wish to open your mind to new ideas",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926462,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/twelfth-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish to open your mind to new ideas.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "butterflies",
+      "cosmetic"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-thirteenth-wish",
+    "title": "Thirteenth Wish: A wish for the means to feed an addiction",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926463,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/thirteenth-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish for the means to feed an addiction.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "petras-run",
+      "flawless"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-fourteenth-wish",
+    "title": "Fourteenth Wish: A wish for love and support",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926464,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/fourteenth-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish for love and support.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "corrupted-eggs",
+      "taken-eggs"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-fifteenth-wish",
+    "title": "Fifteenth Wish: \"This one you shall cherish.\"",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Season of the Wish",
+      "bungie_ref": 2049926465,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/fifteenth-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Riven of a Thousand Voices",
+    "transcript": "\"This one you shall cherish.\" —Riven of a Thousand Voices",
+    "tags": [
+      "wall-of-wishes",
+      "fifteenth-wish",
+      "cherish",
+      "pale-heart",
+      "last-wish",
+      "curse"
+    ],
+    "chronology": "Season of the Wish & The Final Shape",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "grimoire-ghost-fragment-legends-3",
+    "title": "Ghost Fragment: Legends 3 — The Great Ahamkara Hunt",
+    "source": {
+      "type": "grimoire_card",
+      "game": "Destiny 1",
+      "book": null,
+      "release": "The Dark Below",
+      "bungie_ref": 103090,
+      "ishtar_url": "https://www.ishtar-collective.net/cards/ghost-fragment-legends-3"
+    },
+    "entity": [
+      "General Ahamkara"
+    ],
+    "speaker": null,
+    "transcript": "After great deliberation it was determined that the Ahamkara be made extinct.\n\nIt was not an easy decision. Power had been obtained from the bargains, and the City needed power. Knowledge had been gleaned, and the Ahamkara knew answers to questions no one had known to ask.\n\nBut the price was too high. And no edict or forbearance seemed to stop Guardians from seeking them out, driven by hope, or vengeance, or despair.\n\nThe call had to be silenced. So the Great Hunt did its work.\n\nAnd thus the Ahamkara were made extinct, their call silenced, their solipsistic flatteries erased, their great design - if it ever existed - broken.\n\nOf this you can be assured, oh reader mine.",
+    "tags": [
+      "grimoire",
+      "destiny-1",
+      "great-hunt",
+      "extinction",
+      "bargains"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "grimoire-ghost-fragment-warlock",
+    "title": "Ghost Fragment: Warlock — Venus Hunt",
+    "source": {
+      "type": "grimoire_card",
+      "game": "Destiny 1",
+      "book": null,
+      "release": "The Dark Below",
+      "bungie_ref": 104030,
+      "ishtar_url": "https://www.ishtar-collective.net/cards/ghost-fragment-warlock"
+    },
+    "entity": [
+      "General Ahamkara"
+    ],
+    "speaker": "Warlock Hunter",
+    "transcript": "Why did I set her on the trail?\n\nYou try and try and try to explain, but no one ever understands. No one who's not a Warlock. Who hasn't spent a dozen years scouring the ruins for one string of symbols, one clean code, one black talon. Titans just make a hmphing noise, if they've stayed awake. Hunters clean their nails with their knives and look at you like you've grown a third eye.\n\nBut when you've spent your life searching through arcana for ancient power, you have the urge to reach out and educate others. Especially if you've had one too many.\n\nNah, she's not my type at all. We've played dice, cards, war games, you know, the usual stuff. I'd never tried to show off before. I don't know what came over me.\n\nI had a broken vertebrae in my pocket that I'd borrowed from - yes, borrowed, I was going to put it back - what do you think you are, my conscience? It was a fossil, that means mineral replacement, a rock, basically. They can survive a few hours in my pocket. Do shut up.\n\nThe Cryptarchs weren't going to miss it. Everyone knows the Ahamkaras were hunted to extinction. There's nothing to be afraid of anymore.\n\nThink of how mysterious this system is, I said. How much life sprang up when the Traveler came. Like the Ahamkara. Do you know the legends? The dragon that made promises? And I pulled out the fossil with a flourish -\n\nShe pulled out her knife and started to pick the dirt from her nails. That set me off.\n\nYou could never have brought down one of these, I said. Ever. Not the greatest Hunter, not the brawniest Titan.\n\nHer eyes narrowed. She said, Oh? Is that so? And I saw right then that she wasn't going to pass on the challenge.\n\nI've murdered a Guardian, I thought. She's going to die. It'll be my fault.\n\nAnd I looked at the piece of spine in my hand and wondered - why did I say that? What moved me to such pride?",
+    "tags": [
+      "grimoire",
+      "destiny-1",
+      "warlock",
+      "venus",
+      "great-hunt",
+      "bargain"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "grimoire-ghost-fragment-hunter",
+    "title": "Ghost Fragment: Hunter — Whispering Spine",
+    "source": {
+      "type": "grimoire_card",
+      "game": "Destiny 1",
+      "book": null,
+      "release": "The Dark Below",
+      "bungie_ref": 104020,
+      "ishtar_url": "https://www.ishtar-collective.net/cards/ghost-fragment-hunter"
+    },
+    "entity": [
+      "General Ahamkara"
+    ],
+    "speaker": "Pahanin",
+    "transcript": "She leaves the Sparrow and climbs a long way across spars of volcano rock and between vents of blue fire. Down below the Ishtar ruins spark with skirmish light but the guns seem as distant and brief as the constant starfall and the brooding crater high above. She is alone on the rock. She goes on with her head down so as to fight the sense that she is going to fall up off the world and burn like an inverse meteor.\n\nThe message that brought her to this place had no sign but she could hear Cayde in it. Draksis in the Cinders it said. Is it true?\n\nAnd also: Remember your promise.\n\nAt dawn she finds a sentry and kills it with her knife. Its throat bleeds gas. She takes its post and lays out her bullets one by one on the rock as if to make a count of all the years she has been waiting. Her rifle is near as long as she is tall. She lies down by her bullets and uses them to kill the other sentries one by one until at last they understand the thunder and the Shanks rise up angry from the Cinders below to seek her out.\n\nShe leaves the rifle and walks across the naked obsidian into the swarm firing from the hip as she goes, each kick of the old revolver a word, Draksis, Draksis, Kell of Winter, Kell of hate, lord of the kingdom of her vendetta. Her jaw aches. She used to imagine biting out his throat with armored teeth.\n\nThe stone smokes around her where the arc fire lashes it and the shrapnel guns throw up leaves of obsidian like glass butterflies. She shoots her bandoliers dry and a team of Vandals in glassy stealth leap up to rush her with knives but she raises her hand and burns them down with the golden gun, laughing, crying out Draksis, Draksis, I am come!\n\nShe kills them all and takes the next ridge, high above the Cinders. She can see the blue-green pools and the cave mouths where the Vex lights dance. And there among them, gowned in smoke and ash, is the long shark shape of a Ketch, a Wintership, the Kell's ship, come down to nest.\n\nShe could go down there now and finish this. But she made a promise.\n\nA Captain jumps her. She throws two knives into his armor and then staves his chest in with her own Ghost, wrapped up in her fist like a stone.\n\n\"Tell the Vanguard,\" she says to her Ether-spattered fist. \"Tell them Draksis is here.\"\n\nHer Ghost looks up at her in silence. When she makes no move to go down the cliff towards the ship it blinks once, in its own way, and makes a soft sound, like a sigh, like relief.",
+    "tags": [
+      "grimoire",
+      "destiny-1",
+      "hunter",
+      "bones",
+      "whispers",
+      "pahanin"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "Deathless Bones & Parasitic Whispers"
+  },
+  {
+    "id": "grimoire-ghost-fragment-titan",
+    "title": "Ghost Fragment: Titan — Caution Against Bargains",
+    "source": {
+      "type": "grimoire_card",
+      "game": "Destiny 1",
+      "book": null,
+      "release": "The Dark Below",
+      "bungie_ref": 104010,
+      "ishtar_url": "https://www.ishtar-collective.net/cards/ghost-fragment-titan"
+    },
+    "entity": [
+      "General Ahamkara"
+    ],
+    "speaker": "Titan Hunter",
+    "transcript": "/ Tighten that strap.\n\n/ Eh?\n\n/ The gardbrace is loose. Could slip.\n\n/ Huh.\n\n/ It's new?\n\n/ Agema. Type 1.\n\n/ How's it hold up? I tried using Agema at the Gap, remember? It didn't - well, what's this?\n\n/ A Ghost!\n\n/ Yes. Light be with you.\n\n/ Excuse me, little Ghost - Tubach, pass me my helmet - thank you. Little Ghost, what are you doing here?\n\n/ It's just looking around.\n\n/ Where's your Guardian?\n\n/ I don't think it has one.\n\n/ Well, any servant of the Light is welcome among us. We are Holborn's Host, and I'm Holborn. The City's hand on Mars.\n\n/ Tubach.\n\n/ That's Tubach, my second. One of the finest Titans of the City. Now see here, little Ghost, on my shoulder? That's the mark of Holborn's Host. Record it. The twelve-pointed star. One for each of the - oh well, off it goes! It doesn't look well.\n\n/ We should get moving.\n\n/ A Ghost without a Guardian. I remember when I was risen, you know. When I woke in that wreckage, to see my Ghost hovering there, its light in my eyes, like an angel. And it said -\n\n/ This story again.\n\n/ Disrespectful youngster.\n\n/ Youngster? I could be older than you, Tibon!\n\n/ True. The gardbrace is fine now. Stop worrying at it. Will you take the Jigoku?\n\n/ Thought I'd take the long rifle. Bayle has the Jigoku.\n\n/ Good. That Ghost - what do you think is wrong with it? It's echoing something ancient, an Old Earth language. You know what that Ghost reminds me of, flitting about over there?\n\n/ I don't.\n\n/ The time Ghosts from Jagi's Host came back without them. Remember - they got in that fight at some point east of the Caspian? Seven Ghosts, damn near silent, buzzing with some sort of corruption. Drifting back to the Tower, one by one. Scared the Speaker well enough.\n\n/ I remember. A long time ago. Jagi tells the story differently.\n\n/ Well. We all grow old. In our way. Little Ghost! Come back here!\n\n/ It's not going to make it, wherever it's going.\n\n/ I want to talk to it. Little Ghost!\n\n/ Lyssa and Bayle are probably there already.\n\n/ Cabal move slowly. We've got time.\n\n/ But the Warlocks have had a vision.\n\n/ Yes. That new one, what's her name. Ingora?\n\n/ Ikora.\n\n/ She's always been hasty. I've faced these Cabal before. I know 'em like I know my own armor.\n\n/ Message from Lyssa. \"At the Dust Palace, now. All quiet.\"\n\n/ See? All quiet. Why not come with us, little Ghost? We are looking for the old Warmind here, and the one who guards it.",
+    "tags": [
+      "grimoire",
+      "destiny-1",
+      "titan",
+      "great-hunt",
+      "caution",
+      "bargains"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "grimoire-ghost-fragment-the-city-age",
+    "title": "Ghost Fragment: The City Age",
+    "source": {
+      "type": "grimoire_card",
+      "game": "Destiny 1",
+      "book": null,
+      "release": "The Dark Below",
+      "bungie_ref": 107010,
+      "ishtar_url": "https://www.ishtar-collective.net/cards/ghost-fragment-the-city-age"
+    },
+    "entity": [
+      "General Ahamkara"
+    ],
+    "speaker": null,
+    "transcript": "\"And so it is agreed. The Concordat shall no longer be recognized among the Consensus. We'll begin the dismantling right away. But what of those Guardians who have pledged to them? We can't afford any more banishments.\"\n\n\"I'm sure Zavala can see to their realignment.\"\n\n\"We'll do our best. Lysander chose his followers wisely. It may take some time.\"\n\n\"Lysander will not back down. He'll continue his crusade from wherever we stuff him.\"\n\n\"And so we'll need to find some new ideas to replace his.\"\n\n\"The Symmetry has been gaining a strong following...\"\n\n\"Ulan-Tan's teachings are too dangerous. Too much fear. Who knew he'd be more trouble dead than alive?\"\n\n\"We'll need to refocus our collective minds on combat. The Speaker's anxious to regain ground we lost after the Gap.\"\n\n\"There is the War Cult.\"\n\n\"Too secretive. Have you ever tried to talk to one of their 'soldiers'? Like a child. Answering questions with questions.\"\n\n\"They are dedicated to the war.\"\n\n\"Which one?\"\n\n\"Good question.\"\n\n\"Zavala?\"\n\n\"They seem focused. Strong. More interesting than worrisome.\"\n\n\"Let's take it to a vote. All in favor of the ascension of the Future War Cult?\"\n\n\"Unanimous? Good. We'll grant the Future War Cult access to the Tower and a seat among us. Ghost, please offer the Speaker this proposal.\"\n\n\"Now onto the next order of business...Shaxx is here with another proposal for his Crucible.\"",
+    "tags": [
+      "grimoire",
+      "destiny-1",
+      "city-age",
+      "consensus",
+      "hunting-dragons"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "grimoire-lord-gheleon",
+    "title": "Lord Gheleon",
+    "source": {
+      "type": "grimoire_card",
+      "game": "Destiny 1",
+      "book": null,
+      "release": "House of Wolves",
+      "bungie_ref": 108030,
+      "ishtar_url": "https://www.ishtar-collective.net/cards/lord-gheleon"
+    },
+    "entity": [
+      "General Ahamkara"
+    ],
+    "speaker": "Lord Gheleon",
+    "transcript": "Gheleon wears three knives. Their names are Swiftling, Occam, Quietus. They did much of the work at Black Lona, in silence and at speed.\n\nBetween the roots of the ash tree that covers his den, Gheleon has stacked the Fallen bones collected from that one-night operation. The scavenged pieces of an Ahamkara, several jumbled coyote skeletons, and a fossil mastodon skull are mixed in with them. The bones are scorched and battered from the various grenades, bullets, and hammers he's taken to them. He keeps extensive notes on these stress tests in a tattered notebook with \"Field Armor Experiments\" scrawled on its cover. So far, though, he hasn't tried his knives on these materials. Between bones, in the joints and gaps, certainly, but not on them.\n\nGheleon flips Swiftling and catches it by the haft. He throws it, a single smooth motion, and it shatters a Fallen tibia.\n\nHe flips Occam and throws it. The knife clatters off an Ahamkara vertebra.\n\nHe flips Quietus and—\n\n\"Shanks and pikes, Efrideet!\"\n\n\"Ooh, that's the last yip it's yipped,\" she says, picking up the coyote jaw that Quietus impaled. \"Helmet, would you say?\"\n\n\"Too brittle. Etherbone’s better. Flexes.\"\n\nThe others follow her in, wrinkling their noses. Usually they avoid his dim and earth-smelling den. Their presence suggests that Felwinter is doing something unpleasant, probably involving screams.\n\n\"Bone?\" Saladin says. \"Not carbon bronze? Not plasteel?\"\n\n\"Bone’s always available as a last resort. Nothing else is.\"\n\n\"This is doomsday thinking,\" Jolder says, kicking aside fragments of bone. \"We have your back. Our plate is strong. When'll you need scavenged armor?\"\n\n\"If all of you were cut down around me, your Light drained past return, and my own armor was shredded. F’r instance.\"\n\nThere is a long silence.\n\n\"You always know what to say to make us feel better,\" Efrideet says.\n\n\"I could hide under your bodies until the threat left. Then I’d make a helmet from all your skulls and a breastplate from your ribs and gloves from your finger bones wrapped around mine.\"\n\nThere is a longer silence.",
+    "tags": [
+      "grimoire",
+      "destiny-1",
+      "iron-lords",
+      "gheleon",
+      "bone-carving"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "grimoire-osiris",
+    "title": "Osiris",
+    "source": {
+      "type": "grimoire_card",
+      "game": "Destiny 1",
+      "book": null,
+      "release": "House of Wolves",
+      "bungie_ref": 108020,
+      "ishtar_url": "https://www.ishtar-collective.net/cards/osiris"
+    },
+    "entity": [
+      "General Ahamkara"
+    ],
+    "speaker": "Osiris",
+    "transcript": "What drives a Warlock to madness?\n\nGhosts choose those suited to war and heroism to be reborn. By nature or circumstance they go to battle against the Darkness, and through this battle they learn how to use the Light. But Warlocks, by their nature, fight a second, internal war. This is the war to understand a universe of secrets— a world that expects Guardians to fight without full knowledge of what they are or what they might hope to achieve.\n\nYou were a mighty warrior. I watched you at Six Fronts, and heeded the call of Saint-14 to appoint you Vanguard Commander, even when the Concordat claimed to have records proving you were a Golden Age experiment mis-incarnated as a human by an inept Ghost. Saint-14 assured me you were just a man without much patience for obfuscation.\n\nI watched as you grew tired of strike missions and the grueling, unproductive sessions with the Cryptarchs. That was when I took you under my wing. I saw our future in you. But your curiosity was voracious— How much of a Guardian's personality and memories were true? How much had been fabricated by their Ghost? Did Guardians share particular personality traits— a willingness to yield to authority, a tendency to do anything anyone asked for the promise of uncertain reward, a blind knight-errant mentality? Had the Traveler manufactured all of you as living weapons?\n\nI admit, I found your questions divisive and disloyal, and I feared you might be capable of breaking our unity when the City's position had grown so tenuous. Why divert attention away from the Traveler, our only hope?\n\nAnd then it got worse, dabbling in thanatonautics, Ahamkara-lore, chasing after Xur and the tricks of the Nine. Launching expeditions into the Reef and beyond at a time when ships were irreplaceable. Your quest split Guardians along ideological lines. This was your greatest crime: Hunters chose to pursue your visions instead of protecting refugees, Titans assembled teams to chase the legendary Vault of Glass instead of striking the Fallen, and Warlocks turned away from the study of the Traveler in favor of  your  ultimate obsession... learning the exact nature of the Darkness.\n\nWhen debate became argument, and argument became acrimony, I realized you had already become a cult of personality, attracting Guardians who wanted a clear idea of why they were fighting, what they faced, and how they would ultimately win.\n\nI don’t know where you have gone, but I can no longer send Ghosts out to find you. Some come back— with tales of your death or how you went seeking answers from the far reaches of space and time. That you found a way to explore the Vex gate networks. That you've made breakthrough after breakthrough as to their origins— theories that a Guardian could not be simulated, that the Traveler might be an ontoformer or a god-incubator, that the Vex had diverged into multiple groups in order to secure 'an end state for every possible configuration of reality'.\n\nI fear you have become as obsessed with the Vex as Toland was with the Hive. I've heard your own insane prophecies about pits and dead Hive kings. And of Crota, which now I cannot deny.\n\nI hear stories of Lord Shaxx meeting with fireteams of Warlocks who have no shadow and never blink. Of jumpships slipping into the Reef on cold trajectories and meeting no intercept. Of questions hidden in matter engrams and answers decrypted on distant battlefields.\n\nPerhaps you are still out there. If this reaches you, I would very much like to speak with you, to hear your theories in your own words.\n\nPerhaps what drives a Warlock to madness is truth.",
+    "tags": [
+      "grimoire",
+      "destiny-1",
+      "osiris",
+      "caldera",
+      "bargains",
+      "conspiracy"
+    ],
+    "chronology": "Dark Age & Early City Age",
+    "theme": "Anthem Anatheme & Wish-Bargains"
+  },
+  {
+    "id": "grimoire-sorrow-viii-leviathan",
+    "title": "Books of Sorrow VIII: Leviathan",
+    "source": {
+      "type": "grimoire_card",
+      "game": "Destiny 1",
+      "book": "Books of Sorrow",
+      "release": "The Taken King",
+      "bungie_ref": 700180,
+      "ishtar_url": "https://www.ishtar-collective.net/cards/viii-leviathan"
+    },
+    "entity": [
+      "Harmony Wish-Dragons"
+    ],
+    "speaker": "Leviathan",
+    "transcript": "The Leviathan’s Warning\n\n++We live on the edge of a war—\n\n—a war between Formless and Form++\n\n++between the Deep and the Sky—\n\n++MY EYES ARE WIDE, MY GAZE IS LONG++\n\n—Across the universe, as far as I see++\n\n++the Sky works to charge its fires—\n\n —and the Deep drowns the ash++\n\n—Sky builds gentle places, safe for life++\n\n++Beloved Fundament, refuge of trillions—\n\n—The Sky treasures this rich place++\n\n—BUT THE DEEP IS HERE WITH US—\n\n++Cold logic tests our walls—\n\n—The Deep claims its dominion++\n\n++A ruthless, final age —\n\nAurash’s Protest\n\nOld Leviathan, creature of myth, this world is no refuge. We live short, hard lives. We die in the dark. The storm above us will never end. And soon the God-Wave will take us all. Above us there are only stormjoys, monsters, and moons of apocalypse. Let us go down, down, where we may discover truth, some power to avenge ourselves upon our betrayers, some hope of survival.\n\nThe Leviathan’s Hope\n\n—What power calls you++\n\n++Down to the deep?—\n\n++What instinct draws you—\n\n—Away from high hope?++\n\n—Quick-breeding krill people, I tell you++\n\n++For eons I have watched your struggle—\n\n—Clinging to the sharp edge of survival++\n\n++Balanced between the Deep and the Sky.—\n\n++You were my treasure—\n\n—My proof against despair++\n\n—FOR THIS IS THE DEEP CLAIM—\n\n++Existence is the struggle to exist—\n\n—When the struggle seems lost++\n\n++when the safe place crumbles—\n\n—everything turns to the Deep to survive++\n\n++I REJECT THE DEEP CLAIM++\n\n—You will turn back, sweet krill of hope.±±\n\n++You will choose the Sky instead.—\n\nXi Ro’s Protest\n\nYou are huge and old! Our lives are short and desperate. If that’s the way the world’s supposed to be, I won’t have it! If people like Taox are supposed to win, I won’t let them! I’ll beat the world until it changes! I’ll kill anything in the way!\n\nThe Leviathan’s Dirge\n\n++This fatal logic++\n\n—Hear my monopole scream!—\n\n++It will consume you++\n\n—Before you lies—\n\n++The worship of death++\n\n—The ruinous path—\n\n++The Sky builds new life++\n\n—Against the onset of ruin—\n\n++Towards a gentle world++\n\n—The Deep embraces death—\n\n++Saying: this is inevitable and right++\n\n—I exist as hungry ruin—\n\n++TURN BACK FROM THE WORLD-KILLING WAY++\n\n++OR YOU WILL LIVE AS DEATH AND DEVASTATION++\n\n—The Sky is the harder way. But it is kinder.—\n\n—My charge is balanced: my voice exhausted.—\n\nSathona’s Protest\n\nSisters, I have my father’s familiar. Look! It answers me in plain words. It helped me find this ship. It gives me strength when hope is lost.\n\nWho will you trust? The voice that wants us to live and suffer, as we have lived and suffered? The Leviathan that offers no hope against Taox or the world-wave?\n\nOr the plain, honest worm?\n\nLet us see where its whisper leads us, Aurash. Let us go deeper, Xi Ro!\n\nLet us dive, oh sisters mine.",
+    "tags": [
+      "grimoire",
+      "books-of-sorrow",
+      "fundament",
+      "leviathan",
+      "sky-and-deep"
+    ],
+    "chronology": "Pre-Collapse & Ancient Origins",
+    "theme": "Anthem Anatheme & Wish-Bargains"
+  },
+  {
+    "id": "grimoire-sorrow-xlv-cells",
+    "title": "Books of Sorrow XLV: I'd shut them all in cells.",
+    "source": {
+      "type": "grimoire_card",
+      "game": "Destiny 1",
+      "book": "Books of Sorrow",
+      "release": "The Taken King",
+      "bungie_ref": 701310,
+      "ishtar_url": "https://www.ishtar-collective.net/cards/xlv-id-shut-them-all-in-cells"
+    },
+    "entity": [
+      "Harmony Wish-Dragons"
+    ],
+    "speaker": "Savathûn",
+    "transcript": "Prey and Sacrifice —\n\nUttered by Xivu Arath —\n\nGod of War —\n\nHARMONY. When the Traveler passed across Harmony, it lied to the orbits of ten worlds. Now they orbit the black hole. The Traveler lied to the accretion disc, so that it would give warm light to these worlds.\n\nTHE GIFT MAST. When the Traveler left Harmony, it made a monument out of the black hole’s polar jet. In the jet there is a hollow mast which sings in radiance. This is the Gift Mast and we will devour it, we will eat the Sky out of it, we will snap it like a bone.\n\nTHE HARMONY STING. The Harmony have weaponized their dead star. They can stimulate the accretion disc to fire relativistic plasma jets. We will take the Sting. We will use it to burn their worlds. I will grant one temple of tribute to the first Ascendant to kill a world!\n\nORYX. I will have the Gift Mast to feast on! I will have it first! I am Xivu Arath and all war is my temple. Beware the daughters of Oryx, for they make and unmake with ease.\n\nSAVATHÛN. The Deceitful Sister will be distracted by arcana and the song of the black hole. Treat her broods with contempt.\n\nTHE TRAVELER. We chase it and we will devour it. The Deep will rule the cosmos.\n\nTHE DRAGONS. Our gods should be ours alone. Their smug freedom is an insult to me. I’d shut them all in cells. Bring them to me!",
+    "tags": [
+      "grimoire",
+      "books-of-sorrow",
+      "savathun",
+      "harmony",
+      "wish-dragons"
+    ],
+    "chronology": "Pre-Collapse & Ancient Origins",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "grimoire-sorrow-xlvi-gift-mast",
+    "title": "Books of Sorrow XLVI: The Gift Mast",
+    "source": {
+      "type": "grimoire_card",
+      "game": "Destiny 1",
+      "book": "Books of Sorrow",
+      "release": "The Taken King",
+      "bungie_ref": 701320,
+      "ishtar_url": "https://www.ishtar-collective.net/cards/xlvi-the-gift-mast"
+    },
+    "entity": [
+      "Harmony Wish-Dragons"
+    ],
+    "speaker": "Oryx",
+    "transcript": "The Gift Mast!\n\nIt towers above this star system like a monument to treason. It beams with silver light. It sings a radio lullaby, made of soothing lies.\n\nIn its light live the Harmony, and they are now our prey.\n\nNow arrives Xivu Arath, at the head of her armada. She fights the Harmony for fifty years with strategies and discipline. But the Harmony turn to dragon-wishes, and their wishful bishops wrestle Xivu in the ascendant plane.\n\nXivu falls into deadlock.\n\nNext arrives Savathûn, flanked by her chorus and her celebrants. They trick their way onto Ana-Harmony in disguises, so that they might vivisect these dragons. The Worm our God laughs and laughs.\n\nFor a hundred years Savathûn keeps secret covens among the Harmony.\n\nBut first of all was Oryx, whose brood grew in secret places in the rubble of the accretion disc. The First Navigator sends rocks and comets to crash into the Harmony worlds, so that the Harmony fleet will be disarrayed. He sends seeders to infiltrate the Harmony worlds with his broods.\n\nHere at the center of the fifth book the Hive has grown so mighty that it has made the annihilation of all false life routine.\n\nXivu Arath kills the wishful bishops, and Savathûn achieves some secret purpose, and Oryx’s Court tears down the Gift Mast. The Harmony people wail in terror, and they throw themselves into the silver lakes of Ana-Harmony to drown.\n\n“Come,” sayeth Oryx, “eat of the Gift Mast, for I am a generous god. Of its pieces, I claim only two out of every five.”\n\nThe Mast is full of the Light of the Traveler, it is full of the marrow taste of Sky. All who eat of it are filled with the ecstatic certainty that they serve a great and necessary purpose.\n\nThen sayeth Savathûn, “Siblings, listen, we must part ways a while, so that we may grow different.” She flies her war-moons into the black hole. Her throne becomes distant.\n\nSayeth Xivu Arath, “King Oryx, you take up too much space, your power constrains too many choices. I must go away from you.” She flies her war-moons away into the night. Her throne is barred shut.\n\nThen Oryx was alone. He spent a while in thought, and those thoughts are recorded here.",
+    "tags": [
+      "grimoire",
+      "books-of-sorrow",
+      "oryx",
+      "harmony",
+      "gift-mast",
+      "dragons"
+    ],
+    "chronology": "Pre-Collapse & Ancient Origins",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "transcript-last-wish-introduction",
+    "title": "Last Wish: Introduction",
+    "source": {
+      "type": "dialogue_transcript",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": null,
+      "ishtar_url": "https://www.ishtar-collective.net/transcripts/last-wish-introduction"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Petra Venj",
+    "transcript": "** The Guardian heads towards the Dreaming City.\n\nPetra Venj: For generations, the Dreaming City housed one of the Awoken's most closely guarded secrets. She is known as Riven — Riven of a Thousand Voices. The last known Ahamkara. She has been Taken. And her death is your calling.",
+    "tags": [
+      "transcript",
+      "last-wish",
+      "petra-venj",
+      "mara-sov",
+      "dreaming-city"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "Anthem Anatheme & Wish-Bargains"
+  },
+  {
+    "id": "transcript-last-wish-cinematic",
+    "title": "Last Wish: Cinematic & Post-Raid Unleashing",
+    "source": {
+      "type": "dialogue_transcript",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": null,
+      "ishtar_url": "https://www.ishtar-collective.net/transcripts/last-wish-cinematic"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Riven of a Thousand Voices",
+    "transcript": "Petra Venj: My Queen commanded me to slay a beast. We could not do it alone, so I turned to the Guardians. Six brave heroes came to destroy my people's greatest secret… Riven.  The last known Ahamkara. A creature of immense power and cunning. The Guardians killed Riven and ripped out her heart. But Ahamkara transcend death. They can transform desire into reality… even when they are nothing but bone and dust. I should have known that Riven would grant one last wish… one last curse. Now, the Dreaming City has been Taken. I opened the gates. I ordered the attack. I… should have known.",
+    "tags": [
+      "transcript",
+      "last-wish",
+      "cinematic",
+      "curse-unleashed",
+      "riven"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "Anthem Anatheme & Wish-Bargains"
+  },
+  {
+    "id": "transcript-pilgrimage-eaos-nest",
+    "title": "Pilgrimage: Harbinger's Seclude, Eao's Nest",
+    "source": {
+      "type": "dialogue_transcript",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": null,
+      "ishtar_url": "https://www.ishtar-collective.net/transcripts/pilgrimage-harbingers-seclude-eaos-nest"
+    },
+    "entity": [
+      "Eao"
+    ],
+    "speaker": "Techeun Kalli",
+    "transcript": "// OPTIONAL {\nShuro Chi: This bowl was once a nest for Eao - he was a sly little Ahamkara, always laughing, always twining around your legs, whispering lies, saying, \"I have seen your eyes, o witch-mage mine.\" We never expected him to go bad.\n}\n// OPTIONAL {\nShuro Chi: This was once a resting place for an Ahamkara who loved stories. He would recite all of our myths, name all our heroes… And that's where we went wrong. We should have never trusted him to keep our secrets.\n}\n// OPTIONAL {\nShuro Chi: This little chamber was once a home for an Ahamkara who betrayed the Awoken. He crept out of the Dreaming City and went to whisper in the ears of Warlocks who wondered who we were - and so we had to kill him. The Warlocks, too.\n}\n// OPTIONAL {\nShuro Chi: Ah… This is where Eao liked to rest, before Sjur hunted him down and skewered him for his deceit. One of your Warlocks bartered for his corpse and traded away his bones. Another mistake. You must never scatter the bones.\n}",
+    "tags": [
+      "transcript",
+      "pilgrimage",
+      "eao",
+      "geode",
+      "nest",
+      "dreaming-city"
+    ],
+    "chronology": "Dark Age & Early City Age",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "transcript-pilgrimage-tree-esila",
+    "title": "Pilgrimage: Garden of Esila, Tree of Azirim",
+    "source": {
+      "type": "dialogue_transcript",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": null,
+      "ishtar_url": "https://www.ishtar-collective.net/transcripts/pilgrimage-garden-of-esila-tree"
+    },
+    "entity": [
+      "Azirim"
+    ],
+    "speaker": "Techeun Sedia",
+    "transcript": "// OPTIONAL {\nShuro Chi: Dozens of good people died walking over these cliffs. They were lured to their death by an Ahamkara during a celebration of the solstice. Those creatures… They can turn on you in an instant if you aren't wary.\n}\n\n// OPTIONAL {\nShuro Chi: This was the site of a mass murder. An Ahamkara of immense power tricked dozens of civilians into walking right off the edge of these cliffs. We saved none of them. And to our great shame, the Ahamkara - Azirim, he was called - escaped.\n}\n\n// OPTIONAL {\nShuro Chi: Step past the tree. Peek down over the ledge. That drop goes on for some time. Now imagine a voice whispering to you, luring you, promising you that your feet will find solid ground where, in truth, there is only air… Ahamkara lies.\n}\n\n// OPTIONAL {\nShuro Chi: A great tragedy once occurred at these cliffs. It was early in our relationship with the Ahamkara, before we'd learned their tricks, before we'd learned how best to live alongside them without becoming their prey…\n}",
+    "tags": [
+      "transcript",
+      "pilgrimage",
+      "azirim",
+      "esila",
+      "tree",
+      "dreaming-city"
+    ],
+    "chronology": "Reef Golden Age & The Dreaming City",
+    "theme": "Anthem Anatheme & Wish-Bargains"
+  },
+  {
+    "id": "transcript-tales-osiris-crow",
+    "title": "Ahamkara Tales: Osiris & Crow",
+    "source": {
+      "type": "dialogue_transcript",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Season of the Wish",
+      "bungie_ref": null,
+      "ishtar_url": "https://www.ishtar-collective.net/transcripts/ahamkara-tales-osiris-crow-week-1"
+    },
+    "entity": [
+      "Riven",
+      "Taranis"
+    ],
+    "speaker": "Osiris & Crow",
+    "transcript": "++Vanguard Orbital Command, H.E.L.M.\n\n**The Guardian listens to the radio message.\n\nOsiris: I understand your concern. But if we cannot rely upon the Veil, the Ahamkara is our only option.\n\nThe Crow: Even if it was Savathûn who pointed us at Riven in the first place?\n\nOsiris: The Witness is our priority. We've dealt with Savathûn and Riven in the past.\n\nThe Crow: And now Savathûn is free, and Riven is toying with us. I won't end up as a puppet again.\n\nOsiris: Nor I.\n\nThe Crow: Hmph. Sorry. I didn't mean...\n\nOsiris: I fear it too. The experience of watching your body perform a series of actions you would never condone. Of that terrible regret... But that fear won't stop me. Just as I know it won't stop you.\n\nThe Crow: Was any of it real? All that advice Savathûn gave me, while she pretended to be you?\n\nOsiris: At the time Uldren began his campaign against the Reef, he was already suffering from the Black Garden's corruption. Riven must have found him an easy victim. One could argue he wasn't fully in command of his decisions. All the same, the impact of those decisions was very real. So, let me ask you this: Did I give you good advice?\n\nThe Crow: Life-changing.\n\nOsiris: Then hold onto it.",
+    "tags": [
+      "transcript",
+      "radio",
+      "osiris",
+      "crow",
+      "taranis",
+      "season-of-the-wish"
+    ],
+    "chronology": "Season of the Wish & The Final Shape",
+    "theme": "Parentage & The Uncorrupted Clutch"
+  },
+  {
+    "id": "transcript-tales-shaxx-mara",
+    "title": "Ahamkara Tales: Shaxx & Mara",
+    "source": {
+      "type": "dialogue_transcript",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Season of the Wish",
+      "bungie_ref": null,
+      "ishtar_url": "https://www.ishtar-collective.net/transcripts/ahamkara-tales-shaxx-mara-week-2"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Lord Shaxx & Mara Sov",
+    "transcript": "++Vanguard Orbital Command, H.E.L.M.\n\n**The Guardian turns on the radio.\n\nShaxx: Queen Mara. I hail you now out of necessity of the heart. Else, I feel as though I will burst into Solar flame. Long have I admired you from afar, ever since you graced me with your power and benevolence in The Reef Wars. Not a day goes by without me thinking back to the time you bade me repay that debt to you. How we spent hours together, long into the night. Would that you spirit me to your side again, to serve as your consort, your knight, your humble vassal. Anything to be near you. I beg you to grant me an audience once more. Please, give me the gift and the privilege of basking in your favor. For without you, I shall wither and crumble into dust, to be scattered across the cosmic winds.\n\nMara Sov: This again? You and I both know he sounds nothing like that, Riven.\n\nRiven: [laughs cruelly] Perhaps I should use a voice with which you are even more intimately familiar. How about—\n\nMara Sov: Do not speak her name!",
+    "tags": [
+      "transcript",
+      "radio",
+      "shaxx",
+      "mara-sov",
+      "great-hunt",
+      "trophy"
+    ],
+    "chronology": "Season of the Wish & The Final Shape",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "transcript-final-wish-conjure-riven",
+    "title": "Final Wish: Conjure Riven",
+    "source": {
+      "type": "dialogue_transcript",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Season of the Wish",
+      "bungie_ref": null,
+      "ishtar_url": "https://www.ishtar-collective.net/transcripts/final-wish-conjure-riven"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Mara Sov & Riven",
+    "transcript": "// REFERENCE {item:final-wish|Final Wish|}\n\nMara Sov: Guardian, my Techeuns are preparing a spell to conjure Riven's spirit, so that she can grant Savathûn's wish. However, the Vex of the Sol Divisive have laid siege to the Keep of Voices in an attempt to halt our efforts. I must call upon you to defend the Dreaming City once again. Petra and Crow will guide your path.\n\n++Keep of Voices, The Dreaming City\n\nPetra Venj: Apologies for not rolling out the red carpet. I've been... preoccupied.\n\nThe Crow: Haven't we all? What's our situation?\n\nPetra Venj: The Techeuns evacuated the Keep with Riven's Heart. The Vex have since fortified their position.\n\nThe Crow: Then let's cut them down, and take back what's ours.\n\n**The Guardian opens the Vex gate.\n\n++Hall of Two Souls, The Dreaming City\n\nPetra Venj: A good start, but there are more Vex gathered around Riven's remains. The Techeuns need a fragment of those remains to cast their spell.\n\nThe Crow: A spell to conjure Riven's spirit. Are you sure about this, Petra?\n\nPetra Venj: I'm sure that I trust my queen's judgment.\n\n**The Guardian breaks through more Vex fortifications.\n\nThe Crow: Time to visit Riven's corpse. A shame I wasn't around to see the killing blow.\n\nPetra Venj: We never should have done it. She set a trap, and we — I — walked right into it. My desire for vengeance blinded me to her schemes.\n\nThe Crow: Yeah... I know the feeling.\n\n++The Queenswalk, the Dreaming City\n\n**The Guardian approaches Riven's corpse. Several Sol Divisive Vex are knelt down in worship to her.\n\nThe Crow: Whatever they're doing, you'd better put a stop to it.\n\n**The Guardian clears the Vex.\n\nPetra Venj: That got their attention. Don't let them near Riven!\n\n**The Guardian clears the Vex reinforcements.\n\nPetra Venj: That's the last of them. Retrieve the fragment and bring it to the chamber. I'll hail Queen Mara.\n\n**The Guardian collects Riven's tooth and returns it to the Techeuns.\n\nMara Sov: Well done, Guardian. Deliver what my Techeuns require and they will open a portal to the Wall of Wishes, as they begin to conjure Riven.\n\n**The Guardian places the tooth.\n\nMara Sov: Your Deepsight will Savathûn wish. Once Riven grants it, we can at last pursue the Witness.\n\n**The Guardian jumps through the Awoken portal.\n\n++Tower of Opened Eyes, The Dreaming City\n\n**The Guardian fires at the wish wall, changing the symbols to a new one, an Ahamkara skull.\n\n// NOTE The Guardian wishes for a new pathway.\n\nMara Sov: Hear me, Riven! Savathûn's final wish, inscribed in secrecy, has been invoked by the Guardian! Grant it now, and feast upon the difference between desire and reality!\n\nRiven: Such a long slumber. Such a rude awakening. Grant the Witch Queen's final wish, you say? I... refuse.",
+    "tags": [
+      "transcript",
+      "cutscene",
+      "conjure-riven",
+      "fifteenth-wish",
+      "season-of-the-wish"
+    ],
+    "chronology": "Season of the Wish & The Final Shape",
+    "theme": "Anthem Anatheme & Wish-Bargains"
+  }
+]

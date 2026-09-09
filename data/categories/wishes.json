@@ -1,0 +1,396 @@
+[
+  {
+    "id": "wish-wall-first-wish",
+    "title": "First Wish: A wish to feed an addiction",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926451,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/first-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish to feed an addiction.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "ethereal-key",
+      "riven"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-second-wish",
+    "title": "Second Wish: A wish for material validation",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926452,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/second-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish for material validation.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "glittering-key",
+      "riven"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-third-wish",
+    "title": "Third Wish: A wish for others to celebrate your success",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926453,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/third-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish for others to celebrate your success.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "emblem",
+      "riven"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-fourth-wish",
+    "title": "Fourth Wish: A wish to look athletic and sleek",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926454,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/fourth-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish to look athletic and elegant.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "shuro-chi",
+      "warp",
+      "riven"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-fifth-wish",
+    "title": "Fifth Wish: A wish for a promising future",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926455,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/fifth-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish for a promising future.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "morgeth",
+      "warp",
+      "riven"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-sixth-wish",
+    "title": "Sixth Wish: A wish to move the hands of time",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926456,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/sixth-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish to move the hands of time.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "vault",
+      "warp",
+      "riven"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-seventh-wish",
+    "title": "Seventh Wish: A wish to help a friend in need",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926457,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/seventh-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish to help a friend in need.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "riven",
+      "warp"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-eighth-wish",
+    "title": "Eighth Wish: A wish to stay here forever",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926458,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/eighth-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish to stay here forever.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "paul-mccartney",
+      "easter-egg"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-ninth-wish",
+    "title": "Ninth Wish: A wish to stay here forever",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926459,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/ninth-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish to stay here forever.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "failsafe",
+      "dialogue"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-tenth-wish",
+    "title": "Tenth Wish: A wish for the common good",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926460,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/tenth-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish to stay here forever.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "drifter",
+      "dialogue"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-eleventh-wish",
+    "title": "Eleventh Wish: A wish to stay here forever",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926461,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/eleventh-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish to stay here forever.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "grunt-birthday",
+      "easter-egg"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-twelfth-wish",
+    "title": "Twelfth Wish: A wish to open your mind to new ideas",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926462,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/twelfth-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish to open your mind to new ideas.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "butterflies",
+      "cosmetic"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-thirteenth-wish",
+    "title": "Thirteenth Wish: A wish for the means to feed an addiction",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926463,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/thirteenth-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish for the means to feed an addiction.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "petras-run",
+      "flawless"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-fourteenth-wish",
+    "title": "Fourteenth Wish: A wish for love and support",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2049926464,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/fourteenth-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "The Wall of Wishes",
+    "transcript": "A wish for love and support.",
+    "tags": [
+      "wall-of-wishes",
+      "last-wish",
+      "plate",
+      "corrupted-eggs",
+      "taken-eggs"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "The Wall of Wishes & Coded Desire"
+  },
+  {
+    "id": "wish-wall-fifteenth-wish",
+    "title": "Fifteenth Wish: \"This one you shall cherish.\"",
+    "source": {
+      "type": "wall_of_wishes",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Season of the Wish",
+      "bungie_ref": 2049926465,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/fifteenth-wish"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Riven of a Thousand Voices",
+    "transcript": "\"This one you shall cherish.\" —Riven of a Thousand Voices",
+    "tags": [
+      "wall-of-wishes",
+      "fifteenth-wish",
+      "cherish",
+      "pale-heart",
+      "last-wish",
+      "curse"
+    ],
+    "chronology": "Season of the Wish & The Final Shape",
+    "theme": "The Wall of Wishes & Coded Desire"
+  }
+]

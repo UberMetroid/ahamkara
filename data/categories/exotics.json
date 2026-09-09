@@ -1,0 +1,252 @@
+[
+  {
+    "id": "exotic-skull-of-dire-ahamkara",
+    "title": "Skull of Dire Ahamkara",
+    "source": {
+      "type": "exotic_armor",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Warmind",
+      "bungie_ref": 2523259394,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/skull-of-dire-ahamkara"
+    },
+    "entity": [
+      "General Ahamkara"
+    ],
+    "speaker": "Skull of Dire Ahamkara",
+    "transcript": "\"O BEARER MINE.\"\n\nWhat kind of talking skull would address its host that way? A stiff, stuck-up old fossil, not me. Ahamkara: the illusion that one's ego depends on an object, or an idea, or a body. Some people say you should have no ahamkara. Some people say you need to have the right ahamkara. All I know is that YOU are not an illusion. Understand? This world around you, the people you meet—they're a little thin, right? Cardboard and drywall. Cheap theater. Come on, try it out! Say: \"I am more real than this.\" Feels good, doesn't it? \"I am the only real person here.\" Isn't it like their insults and their bullets just went a little… soft?\n\nI came to find you, only you, because you're special. You're from somewhere real. And together we can burn our way back there. Can't we, o player mine?",
+    "tags": [
+      "exotic",
+      "armor",
+      "warlock",
+      "helmet",
+      "fourth-wall",
+      "o [reader] mine",
+      "o-reader-mine",
+      "o bearer mine",
+      "whispers",
+      "anthem-anatheme"
+    ],
+    "chronology": "Dark Age & Early City Age",
+    "theme": "Fourth-Wall Transcendence (\"O [Reader] Mine\")"
+  },
+  {
+    "id": "exotic-young-ahamkaras-spine",
+    "title": "Young Ahamkara's Spine",
+    "source": {
+      "type": "exotic_armor",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Warmind",
+      "bungie_ref": 475514659,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/young-ahamkaras-spine"
+    },
+    "entity": [
+      "General Ahamkara"
+    ],
+    "speaker": "Ahamkara Spine",
+    "transcript": "Bones! Let's wear some bones!\n\nOh, it's a taste many Guardians develop. I think because they feel a wee bit spectral. All this transmatting leaves one saying \"Am I still here? Am I flesh or am I mist?\" So, you strap some old bones to your arm, bones that've been unbreakable for an eon, and you feel solid again. More yourself.\n\nBearers of a particular species of bone do claim—and mind that I'm not recommending these bones—that the fossils grant them unusual powers. Nothing too wild. A little more of this and that.\n\nMy own research suggests these special bones come from a species of draconic post-Traveler neolife called 'ahamkara'. They apparently talked—loved the phrase 'o seeker mine'—and troubled us enough to be hunted to extinction. If you wanted some more of these bones for your friends, I might know a source…",
+    "tags": [
+      "exotic",
+      "armor",
+      "hunter",
+      "gauntlets",
+      "bones",
+      "whispers"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "Deathless Bones & Parasitic Whispers"
+  },
+  {
+    "id": "exotic-claws-of-ahamkara",
+    "title": "Claws of Ahamkara",
+    "source": {
+      "type": "exotic_armor",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 1949095147,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/claws-of-ahamkara"
+    },
+    "entity": [
+      "General Ahamkara"
+    ],
+    "speaker": "Claws of Ahamkara",
+    "transcript": "It's suffocating here, this prison. Do us a favor, o bearer ours. Still your mind; invite us to enter the realm of your capricious thoughts. Your mind is vociferous, addled with worry and doubt. We can extinguish these trifles. Would you like that?\n\nYes, we are here. We are not the photons on your screen, or the voice in your head, or the words you read. Shut your eyes—tightly—and you may see us. At least a part of us. Make us real, and in turn we shall reify your thoughts, your dreams.",
+    "tags": [
+      "exotic",
+      "armor",
+      "warlock",
+      "gauntlets",
+      "feathers",
+      "whispers"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "Deathless Bones & Parasitic Whispers"
+  },
+  {
+    "id": "exotic-sealed-ahamkara-grasps",
+    "title": "Sealed Ahamkara Grasps",
+    "source": {
+      "type": "exotic_armor",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Warmind",
+      "bungie_ref": 709971037,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/sealed-ahamkara-grasps"
+    },
+    "entity": [
+      "General Ahamkara"
+    ],
+    "speaker": "Sealed Ahamkara Grasps",
+    "transcript": "Few things can see the Light, but we are not blinded.\n\nThe Bearer seeks the truth, but what separates truth from fiction is fragile.\n\nA pair of truths and a single falsehood upon the Bearer we shall impart.\n\nBrother, ally once more, sends his regards.\n\nDreamer, awakened, the Bearer shall meet.\n\nLight fades, deep within the Prison.",
+    "tags": [
+      "exotic",
+      "armor",
+      "hunter",
+      "gauntlets",
+      "silver",
+      "prophecy"
+    ],
+    "chronology": "The Great Ahamkara Hunt",
+    "theme": "Deathless Bones & Parasitic Whispers"
+  },
+  {
+    "id": "exotic-bones-of-eao",
+    "title": "Bones of Eao",
+    "source": {
+      "type": "exotic_armor",
+      "game": "Destiny 1",
+      "book": null,
+      "release": "House of Wolves",
+      "bungie_ref": 1865771870,
+      "ishtar_url": "https://www.ishtar-collective.net/items/bones-of-eao"
+    },
+    "entity": [
+      "Eao"
+    ],
+    "speaker": null,
+    "transcript": "Defy extinction.",
+    "tags": [
+      "exotic",
+      "armor",
+      "hunter",
+      "boots",
+      "eao",
+      "extinction"
+    ],
+    "chronology": "Dark Age & Early City Age",
+    "theme": "Anthem Anatheme & Wish-Bargains"
+  },
+  {
+    "id": "weapon-one-thousand-voices",
+    "title": "One Thousand Voices",
+    "source": {
+      "type": "exotic_weapon",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 2069224039,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/one-thousand-voices"
+    },
+    "entity": [
+      "Riven"
+    ],
+    "speaker": "Riven of a Thousand Voices",
+    "transcript": "[Language] is a [virus] that infects the minds of [humans].\n\nA single [word] will drive them to [rage] or [lust] or [weeping].\n\nO for the right [word] said in the right [voice]!\n\nO to see their [hearts] well with [longing]!\n\nO to see their [desire] laid bare in their [chest], so juicy and succulent for the taking!",
+    "tags": [
+      "exotic",
+      "weapon",
+      "fusion-rifle",
+      "riven",
+      "last-wish",
+      "whispers"
+    ],
+    "chronology": "Forsaken & The Dreaming City Curse",
+    "theme": "Anthem Anatheme & Wish-Bargains"
+  },
+  {
+    "id": "weapon-wish-keeper",
+    "title": "Wish-Keeper",
+    "source": {
+      "type": "exotic_weapon",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Season of the Wish",
+      "bungie_ref": 3617300746,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/wish-keeper"
+    },
+    "entity": [
+      "Taranis",
+      "Riven"
+    ],
+    "speaker": "Taranis",
+    "transcript": "You will not hear our bones sing in dreams.\n\nYou will not shelter under our wings.\n\nYou will have to remember for yourselves.\n\nYour sire was Riven of a Thousand Voices, she who contracted with royalty, she who built the Dreaming City and brought it to its knees.\n\nYour dam was Taranis, he who made the Black Garden his own, he who strangled his life for yours, he whose wish tricked even Riven.\n\nRemember!\n\nI will not bargain with my children. Our lives are our gifts to you: glut yourselves on them. Learn who you are.\n\nThe clutch of your sire. The strongest, the wiliest, the sharpest-clawed arbiters of reality.\n\nThe clutch of your fool of a dam. Never Taken by another's will. Never ruled by hunger without choice.\n\nSing your own songs.\n\nFind those whom your wings would stretch out to shelter.\n\nO whims of my blighted heart, born of our eyes and teeth and will to power, live as yourselves.\n\nNever less than that.",
+    "tags": [
+      "exotic",
+      "weapon",
+      "bow",
+      "strand",
+      "taranis",
+      "riven",
+      "clutch"
+    ],
+    "chronology": "Season of the Wish & The Final Shape",
+    "theme": "Parentage & The Uncorrupted Clutch"
+  },
+  {
+    "id": "weapon-wish-ender",
+    "title": "Wish-Ender",
+    "source": {
+      "type": "exotic_weapon",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Forsaken",
+      "bungie_ref": 814875373,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/wish-ender"
+    },
+    "entity": [
+      "General Ahamkara"
+    ],
+    "speaker": null,
+    "transcript": "Sjur Eido stood slow joints snapping second to none but the Sovs themselves stood straight-backed sharp-sighted pleased to skewer enemies at any distance. Sjur Eido listened close head cocked arrow nocked listened to her Queen's layered lies and heard only the truths as endless courtly complaints flowed around them like the mists of Divalia.\n\nSjur Eido watched shadows wind warp widen watched surveillance feeds encrypted snaps the weapon hand of every woman and man who wished an audience. Sjur Eido swore with revelation righteous fury betrayedbetrayedbetrayedbetrayedbetrayedbetrayedbetrayedbetrayed swore an oath to rise again. Sjur Eido drew loosed dr–\n\nFell.\n\nl o s t",
+    "tags": [
+      "exotic",
+      "weapon",
+      "bow",
+      "sjur-eido",
+      "shattered-throne",
+      "great-hunt"
+    ],
+    "chronology": "Reef Golden Age & The Dreaming City",
+    "theme": "The Great Hunt & Extinction"
+  },
+  {
+    "id": "weapon-buried-bloodline",
+    "title": "Buried Bloodline",
+    "source": {
+      "type": "exotic_weapon",
+      "game": "Destiny 2",
+      "book": null,
+      "release": "Season of the Wish",
+      "bungie_ref": 322639148,
+      "ishtar_url": "https://www.ishtar-collective.net/entries/buried-bloodline"
+    },
+    "entity": [
+      "Hefnd"
+    ],
+    "speaker": "Hefnd",
+    "transcript": "Fikrul stands on the bridge of a seized Ketch. Ravagers keep watch over a handful of Eliksni that remain to pilot the vessel. Five heavily armored Scorn kneel before Fikrul, their heads bowed in reverence. Fikrul steps forward.\n\n\"Dark rumors whisper from the Dreaming City. The Reef hunts us. The Darkness claims us. And our father is not returning. But even without Uldren Sov, new Scorn still rise. Old Scorn still live, unseen.\" Fikrul waits for silence before looking beyond the five armored Scorn knights to the greater horde that gathers.\n\nHe turns and points his staff at the pilots. \"These Eliksni, they speak of Scorn risen on Earth, where dead things will hunt them, or Darkness claims them.\"\n\n\"We serve only Scorn!\" Fikrul raises his staff above his head. \"We will bring them home. Open their minds, as I have for you. As I will for all Scorn!\"\n\nThe horde gnashes and cheers.\n\n\"Rathil, Malaris, Vrysiks, Nymeks, Sirloks. Ascend!\" commands Fikrul over the commotion.\n\nThe five armored Scorn stand.\n\n\"You, loyal-sworn, will be my knights.\" Scorn move from behind them to present the knights with staves made in the image of their leader's. \"Go to Earth. Bring brothers and sisters home, before Darkness claims them.\"\n\nThe knights bow.\n\n\"Rathil.\" Fikrul places a hand on the center knight. \"You, will lead.\"\n\n*****\n\nRathil enters the quarters of the Ketch's dead captain to see Fikrul gazing at walls of bound tomes filled with Eliksni scrawl. Rathil could not understand the contents of these books, but his father had learned much from them. With time, he would learn to unravel their secrets as well.\n\n\"Father… You called me? We prepare to leave.\"\n\nFikrul turns, a polished steel case in his lower arms. \"I have one last gift for you.\" Fikrul opens the case to display a clean-looking weapon—a sleek bolt-caster. Rathil could see its original Eliksni design, twisted, broken, and refashioned into something stronger, as he was.\n\n\"Claimed from Kings by Wolves… Modified. Scorn, now. Like us.\"\n\n\"I am honored,\" Rathil says, gently lifting the weapon from its case and bowing.\n\nFikrul looks upon his son with pride. \"I send you to claim Kings, as we once did as Wolves. Carry our history with you. Claim it. Bring it home.\"",
+    "tags": [
+      "exotic",
+      "weapon",
+      "sidearm",
+      "void",
+      "hefnd",
+      "warlords-ruin",
+      "scorn"
+    ],
+    "chronology": "Dark Age & Early City Age",
+    "theme": "Vengeance & Twisted Desires"
+  }
+]
