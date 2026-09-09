@@ -9,7 +9,7 @@
 //   2. interactive.oo: Terminal REPL session, interactive command dispatch, and discovery.
 
 pub fn cli_version() -> String {
-    return "0.5.0";
+    return "0.5.1";
 }
 
 pub fn cli_anchor() -> String {

@@ -1,7 +1,7 @@
 // # Ahamkara Core — Anchor for Agents
 //
 // Logline: Root module hub for the openOODA Ahamkara query engine.
-// Version: 0.5.0
+// Version: 0.5.1
 //
 // Setup: FsReadCap required for lore loading; pure in-memory search and formatting.
 //
@@ -13,5 +13,5 @@
 //   5. cli: Terminal card formatting and interactive exploration session.
 
 pub fn ahamkara_version() -> String {
-    return "0.5.0";
+    return "0.5.1";
 }

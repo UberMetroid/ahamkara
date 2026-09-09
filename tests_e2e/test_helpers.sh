@@ -34,6 +34,7 @@ SKIPPED_TESTS=0
 # Determine project root directory
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+export OODA_NO_JAIL=1
 
 # Verbosity flag
 VERBOSE="${VERBOSE:-0}"

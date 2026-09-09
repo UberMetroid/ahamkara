@@ -133,7 +133,7 @@ pub fn dispatch_cli(records: List[AhamkaraRecord], args: List[String]) -> Result
         return Ok(0);
     }
     if show_ver {
-        println("ahamkara 0.5.0 (openOODA)");
+        println("ahamkara 0.5.1 (openOODA)");
         return Ok(0);
     }
     if show_stats {

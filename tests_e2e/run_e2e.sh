@@ -9,6 +9,7 @@ set -o pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(cd "${SCRIPT_DIR}/.." && pwd)"
+export OODA_NO_JAIL=1
 
 # ANSI color codes
 if [[ -t 1 ]] || [[ -n "${FORCE_COLOR:-}" ]]; then
