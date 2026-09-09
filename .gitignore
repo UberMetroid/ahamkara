@@ -1,0 +1,40 @@
+# ==========================================
+# openOODA build caches and artifacts
+# ==========================================
+.ooda-cache/
+bin/
+*.oo.bin
+*.concat.oo
+*.oo.concat.oo
+*.o
+*.a
+*.so
+*.dylib
+*.bin
+*.out
+
+# ==========================================
+# Local environment and symlinks
+# ==========================================
+std
+.agents/
+
+# ==========================================
+# Test and runtime outputs
+# ==========================================
+test_*.out
+test_*.err
+*.log
+
+# ==========================================
+# Editor, OS, and temporary files
+# ==========================================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.env
+.env.*

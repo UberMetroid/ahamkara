@@ -1,0 +1,20 @@
+// # Main Entry Point for ahamkara
+//
+// Logline: CLI query engine entry point for Destiny 1 & 2 Ahamkara lore.
+//
+// Setup: Granted FsReadCap to load canonical JSONL lore corpus.
+//
+// Beats:
+//   1. Print welcome banner and argument status.
+
+pub fn main(fs: &FsReadCap, args: List[String]) -> Result[Int, String] {
+    println("Ahamkara Lore Query Engine (openOODA)");
+    println("Status: Scaffolding initialized.");
+    let count: Int = list_len(args);
+    if count > 0 {
+        println("Arguments received: " + count.to_string());
+    } else {
+        println("Usage: ahamkara [--search <term>] [--entity <name>] [--category <cat>] [--quote] [--stats] [--interactive]");
+    }
+    return Ok(0);
+}

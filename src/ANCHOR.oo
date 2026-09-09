@@ -1,0 +1,16 @@
+// # Ahamkara Core — Anchor for Agents
+//
+// Logline: Root module hub for the openOODA Ahamkara query engine.
+//
+// Setup: FsReadCap required for lore loading; pure in-memory search and formatting.
+//
+// Beats:
+//   1. main.oo: CLI argument parser, query router, and REPL entry point.
+//   2. model: Domain types for canonical Ahamkara lore records and query filters.
+//   3. repo: Streaming JSONL data access and decoupled database contract.
+//   4. engine: Case-insensitive search, multi-attribute filtering, and corpus analytics.
+//   5. cli: Terminal card formatting and interactive exploration session.
+
+pub fn ahamkara_version() -> String {
+    return "0.1.0";
+}
