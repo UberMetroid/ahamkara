@@ -80,10 +80,10 @@ pub fn json_extract_array(line: String, key: String) -> List[String] {
             }
             if j < n && char_at(line, j) == ":" {
                 j = j + 1;
-                while j < n && char_at(line, j) != "[" {
+                while j < n && char_at(line, j) != "[" && char_at(line, j) != "," && char_at(line, j) != "}" {
                     j = j + 1;
                 }
-                if j >= n { return out; }
+                if j >= n || char_at(line, j) != "[" { return out; }
                 j = j + 1;
                 let mut in_str: Bool = false;
                 let mut escaped: Bool = false;

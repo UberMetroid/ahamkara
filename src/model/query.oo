@@ -14,7 +14,8 @@ pub type QueryFilter = struct {
     entity: String,
     category: String,
     has_quote: Bool,
-    limit: Int
+    limit: Int,
+    has_explicit_limit: Bool
 };
 
 pub type SearchResult = struct {
@@ -29,7 +30,8 @@ pub fn filter_default() -> QueryFilter {
         entity: "",
         category: "",
         has_quote: false,
-        limit: 0
+        limit: 0,
+        has_explicit_limit: false
     };
 }
 
@@ -53,7 +55,8 @@ pub fn query_filter_new(
         entity: entity,
         category: category,
         has_quote: has_quote,
-        limit: limit
+        limit: limit,
+        has_explicit_limit: true
     };
 }
 
@@ -62,7 +65,7 @@ pub fn query_has_filter(f: QueryFilter) -> Bool {
     if chars_len(f.entity) > 0 { return true; }
     if chars_len(f.category) > 0 { return true; }
     if f.has_quote { return true; }
-    if f.limit > 0 { return true; }
+    if f.has_explicit_limit || f.limit > 0 { return true; }
     return false;
 }
 

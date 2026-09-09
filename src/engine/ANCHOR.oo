@@ -5,7 +5,7 @@
 // Setup: Pure data processing. Strictly 0 I/O imports.
 
 pub fn engine_version() -> String {
-    return "0.5.2";
+    return "1.0.0";
 }
 
 pub fn engine_anchor() -> String {

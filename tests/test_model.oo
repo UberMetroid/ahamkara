@@ -112,6 +112,7 @@ pub fn test_filter_default() -> Bool {
     if f.category != "" { return false; }
     if f.has_quote != false { return false; }
     if f.limit != 0 { return false; }
+    if f.has_explicit_limit != false { return false; }
     return true;
 }
 
@@ -122,12 +123,14 @@ pub fn test_filter_custom() -> Bool {
     f.category = "Exotic Armor";
     f.has_quote = true;
     f.limit = 10;
+    f.has_explicit_limit = true;
 
     if f.keyword != "O [Reader] Mine" { return false; }
     if f.entity != "Riven" { return false; }
     if f.category != "Exotic Armor" { return false; }
     if !f.has_quote { return false; }
     if f.limit != 10 { return false; }
+    if !f.has_explicit_limit { return false; }
     return true;
 }
 

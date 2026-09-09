@@ -85,6 +85,13 @@ pub fn test_search_execution() -> Bool {
     let res_lim: List[AhamkaraRecord] = engine_search(recs, f_lim);
     if list_len(res_lim) != 1 { return false; }
 
+    // Explicit zero limit returns 0
+    let mut f_zero: QueryFilter = filter_default();
+    f_zero.limit = 0;
+    f_zero.has_explicit_limit = true;
+    let res_zero: List[AhamkaraRecord] = engine_search(recs, f_zero);
+    if list_len(res_zero) != 0 { return false; }
+
     // Convenience helpers
     let res_tar: List[AhamkaraRecord] = search_entity(recs, "Taranis");
     if list_len(res_tar) != 1 { return false; }

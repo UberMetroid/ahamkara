@@ -63,6 +63,10 @@ pub fn test_extract_tags() -> Bool {
     let empty_line: String = "{\"tags\": []}";
     let empty_tags: List[String] = json_extract_tags(empty_line);
     if list_len(empty_tags) != 0 { return false; }
+
+    let null_line: String = "{\"tags\": null, \"other\": [\"leaked_tag\"]}";
+    let null_tags: List[String] = json_extract_tags(null_line);
+    if list_len(null_tags) != 0 { return false; }
     return true;
 }
 

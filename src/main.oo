@@ -23,6 +23,14 @@ fn parse_int(s: String) -> Int {
     let n: Int = chars_len(s);
     let mut v: Int = 0;
     let mut i: Int = 0;
+    let mut is_neg: Bool = false;
+    while i < n && (char_at(s, i) == " " || char_at(s, i) == "\t") {
+        i = i + 1;
+    }
+    if i < n && char_at(s, i) == "-" {
+        is_neg = true;
+        i = i + 1;
+    }
     while i < n {
         let c: String = char_at(s, i);
         if c == "0" { v = v * 10 + 0; }
@@ -37,7 +45,22 @@ fn parse_int(s: String) -> Int {
         else if c == "9" { v = v * 10 + 9; }
         i = i + 1;
     }
+    if is_neg {
+        return 0 - v;
+    }
     return v;
+}
+
+fn has_digit(s: String) -> Bool {
+    let n: Int = chars_len(s);
+    let mut i: Int = 0;
+    while i < n {
+        let c: String = char_at(s, i);
+        if c == "0" || c == "1" || c == "2" || c == "3" || c == "4" { return true; }
+        if c == "5" || c == "6" || c == "7" || c == "8" || c == "9" { return true; }
+        i = i + 1;
+    }
+    return false;
 }
 
 fn print_usage() {
@@ -80,31 +103,49 @@ pub fn dispatch_cli(records: List[AhamkaraRecord], args: List[String]) -> Result
                 f.keyword = list_get(args, i + 1);
                 i = i + 2;
             } else {
-                i = i + 1;
+                println("Error: missing argument for " + arg);
+                print_usage();
+                return Ok(2);
             }
         } else if arg == "--entity" || arg == "-e" {
             if i + 1 < n_args {
                 f.entity = list_get(args, i + 1);
                 i = i + 2;
             } else {
-                i = i + 1;
+                println("Error: missing argument for " + arg);
+                print_usage();
+                return Ok(2);
             }
         } else if arg == "--category" || arg == "-c" {
             if i + 1 < n_args {
                 f.category = list_get(args, i + 1);
                 i = i + 2;
             } else {
-                i = i + 1;
+                println("Error: missing argument for " + arg);
+                print_usage();
+                return Ok(2);
             }
         } else if arg == "--quote" || arg == "-q" {
             f.has_quote = true;
             i = i + 1;
         } else if arg == "--limit" {
             if i + 1 < n_args {
-                f.limit = parse_int(list_get(args, i + 1));
+                let lim_str: String = list_get(args, i + 1);
+                if has_digit(lim_str) {
+                    let lim_val: Int = parse_int(lim_str);
+                    if lim_val < 0 {
+                        println("Error: limit must be a non-negative integer: " + lim_str);
+                        print_usage();
+                        return Ok(2);
+                    }
+                    f.limit = lim_val;
+                    f.has_explicit_limit = true;
+                }
                 i = i + 2;
             } else {
-                i = i + 1;
+                println("Error: missing argument for --limit");
+                print_usage();
+                return Ok(2);
             }
         } else if arg == "--stats" || arg == "stats" {
             show_stats = true;
@@ -120,8 +161,12 @@ pub fn dispatch_cli(records: List[AhamkaraRecord], args: List[String]) -> Result
             i = i + 1;
         } else if arg == "query" {
             i = i + 1;
+        } else if chars_len(arg) > 0 && char_at(arg, 0) == "-" {
+            println("Unrecognized option: " + arg);
+            print_usage();
+            return Ok(2);
         } else {
-            if chars_len(f.keyword) == 0 && chars_len(arg) > 0 && char_at(arg, 0) != "-" {
+            if chars_len(f.keyword) == 0 && chars_len(arg) > 0 {
                 f.keyword = arg;
             }
             i = i + 1;
@@ -133,7 +178,7 @@ pub fn dispatch_cli(records: List[AhamkaraRecord], args: List[String]) -> Result
         return Ok(0);
     }
     if show_ver {
-        println("ahamkara 0.5.2 (openOODA)");
+        println("ahamkara 1.0.0 (openOODA)");
         return Ok(0);
     }
     if show_stats {
@@ -159,6 +204,21 @@ pub fn dispatch_cli(records: List[AhamkaraRecord], args: List[String]) -> Result
 }
 
 pub fn main(fs: &FsReadCap, args: List[String]) -> Result[Int, String] {
+    let n_args: Int = list_len(args);
+    let mut check_idx: Int = 0;
+    while check_idx < n_args {
+        let a: String = list_get(args, check_idx);
+        if a == "--help" || a == "-h" || a == "help" {
+            print_usage();
+            return Ok(0);
+        }
+        if a == "--version" || a == "-v" || a == "version" {
+            println("ahamkara 1.0.0 (openOODA)");
+            return Ok(0);
+        }
+        check_idx = check_idx + 1;
+    }
+
     let mut corpus_path: String = "data/ahamkara_corpus.jsonl";
     if !path_exists(fs, corpus_path) {
         if path_exists(fs, "../data/ahamkara_corpus.jsonl") {

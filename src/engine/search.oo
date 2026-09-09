@@ -117,6 +117,9 @@ pub fn record_matches_filter(r: AhamkaraRecord, f: QueryFilter) -> Bool {
 
 pub fn engine_search(records: List[AhamkaraRecord], f: QueryFilter) -> List[AhamkaraRecord] {
     let mut out: List[AhamkaraRecord] = list_new();
+    if f.has_explicit_limit && f.limit == 0 {
+        return out;
+    }
     let n: Int = list_len(records);
     let mut i: Int = 0;
     while i < n {

@@ -1,5 +1,5 @@
 name=ahamkara
-version=0.5.2
+version=1.0.0
 min_pin=v0.210.0
 deps=
 caps=FsRead

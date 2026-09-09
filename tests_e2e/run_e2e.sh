@@ -35,12 +35,13 @@ usage() {
     echo "Usage: $0 [OPTIONS]"
     echo ""
     echo "Options:"
-    echo "  --all              Run all 4 tiers sequentially (default if no tier specified)"
-    echo "  --tier <1|2|3|4>   Run a specific test tier:"
+    echo "  --all              Run all tiers sequentially (default if no tier specified)"
+    echo "  --tier <1-5>       Run a specific test tier:"
     echo "                       Tier 1: Feature Coverage (21 features, >=105 checks)"
     echo "                       Tier 2: Boundary & Corner Cases (>=105 checks)"
     echo "                       Tier 3: Cross-Feature Combinations (>=30 tests)"
     echo "                       Tier 4: Real-World Application Scenarios (6 scenarios)"
+    echo "                       Tier 5: Adversarial Coverage Hardening (35 checks)"
     echo "  -v, --verbose      Enable verbose diagnostic reporting"
     echo "  -h, --help         Display this help message and exit"
     echo ""
@@ -66,8 +67,8 @@ while [[ $# -gt 0 ]]; do
             shift
             ;;
         --tier)
-            if [[ -z "${2:-}" || ! "$2" =~ ^[1-4]$ ]]; then
-                echo -e "${COLOR_RED}Error: --tier requires an argument between 1 and 4.${COLOR_RESET}" >&2
+            if [[ -z "${2:-}" || ! "$2" =~ ^[1-5]$ ]]; then
+                echo -e "${COLOR_RED}Error: --tier requires an argument between 1 and 5.${COLOR_RESET}" >&2
                 usage
                 exit 2
             fi
@@ -106,6 +107,7 @@ run_tier() {
         2) script_name="tier2_boundary_tests.sh" ;;
         3) script_name="tier3_combination_tests.sh" ;;
         4) script_name="tier4_scenario_tests.sh" ;;
+        5) script_name="tier5_adversarial_tests.sh" ;;
     esac
 
     local script_path="${SCRIPT_DIR}/${script_name}"
@@ -141,6 +143,7 @@ else
     run_tier 2
     run_tier 3
     run_tier 4
+    run_tier 5
 fi
 
 # Print final master summary
