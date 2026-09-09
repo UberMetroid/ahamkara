@@ -1,24 +1,38 @@
-// # Test Suite for ahamkara
+// # Master Test Runner Suite
 //
-// Logline: Starter unit tests for ahamkara.
+// Logline: Orchestrates all openOODA unit tests for the Ahamkara query engine.
 //
-// Setup: Verifies basic test assertion infrastructure.
+// Setup: Executes test suites from test_model.oo and test_repo.oo.
 //
 // Beats:
-//   1. Run basic assertions.
+//   1. Run test_model suite.
+//   2. Run test_repo suite (pure and file-loaded).
 
-pub fn test_basic_addition() -> Bool {
-    let sum: Int = 2 + 2;
-    if sum == 4 {
-        return true;
-    }
-    return false;
-}
+import "tests/test_model.oo";
+import "tests/test_repo.oo";
 
-pub fn main() {
-    if !test_basic_addition() {
-        println("FAIL: basic test");
+pub fn main(fs: &FsReadCap) {
+    println("Running Ahamkara Unit Test Suites...");
+
+    if !run_all_model_tests() {
+        println("FAIL: model test suite failed");
         process_exit(1);
     }
+    println("PASS: model test suite");
+
+    if !run_pure_repo_tests() {
+        println("FAIL: pure repo test suite failed");
+        process_exit(1);
+    }
+    if !test_repo_load_missing_file(fs) {
+        println("FAIL: test_repo_load_missing_file failed");
+        process_exit(1);
+    }
+    if !test_repo_load_corpus(fs) {
+        println("FAIL: test_repo_load_corpus failed");
+        process_exit(1);
+    }
+    println("PASS: repo test suite");
+
     println("OK: ALL_TESTS_PASSED");
 }

@@ -1,0 +1,88 @@
+// # Domain Model for Ahamkara Lore Records
+//
+// Logline: Canonical Ahamkara record struct, constructors, and validation.
+//
+// Setup: Pure domain types. Strictly 0 I/O imports.
+//
+// Beats:
+//   1. AhamkaraRecord: Primary domain model for preserved lore entries.
+//   2. RecordStats: Aggregated corpus statistics.
+//   3. Constructors and validation primitives.
+
+pub type AhamkaraRecord = struct {
+    id: String,
+    title: String,
+    category: String,
+    entity: String,
+    source: String,
+    quote: String,
+    lore_text: String,
+    tags: List[String]
+};
+
+pub type RecordStats = struct {
+    total_records: Int,
+    total_quotes: Int,
+    entity_count: Int,
+    category_count: Int
+};
+
+pub fn record_new(
+    id: String,
+    title: String,
+    category: String,
+    entity: String,
+    source: String,
+    quote: String,
+    lore_text: String,
+    tags: List[String]
+) -> AhamkaraRecord {
+    return AhamkaraRecord {
+        id: id,
+        title: title,
+        category: category,
+        entity: entity,
+        source: source,
+        quote: quote,
+        lore_text: lore_text,
+        tags: tags
+    };
+}
+
+pub fn record_is_valid(r: AhamkaraRecord) -> Bool {
+    if chars_len(r.id) == 0 { return false; }
+    if chars_len(r.title) == 0 { return false; }
+    if chars_len(r.lore_text) == 0 { return false; }
+    return true;
+}
+
+pub fn record_empty() -> AhamkaraRecord {
+    let empty_tags: List[String] = list_new();
+    return AhamkaraRecord {
+        id: "",
+        title: "",
+        category: "",
+        entity: "",
+        source: "",
+        quote: "",
+        lore_text: "",
+        tags: empty_tags
+    };
+}
+
+pub fn record_has_quote(r: AhamkaraRecord) -> Bool {
+    return chars_len(r.quote) > 0;
+}
+
+pub fn record_tag_count(r: AhamkaraRecord) -> Int {
+    return list_len(r.tags);
+}
+
+pub fn record_stats_default() -> RecordStats {
+    return RecordStats {
+        total_records: 0,
+        total_quotes: 0,
+        entity_count: 0,
+        category_count: 0
+    };
+}

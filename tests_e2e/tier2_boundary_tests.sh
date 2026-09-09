@@ -588,7 +588,7 @@ test_start "T2-F10-01" "Loader checks path_exists before reading"
 assert_file_contains "T2-F10-01" "${PROJECT_ROOT}/src/repo/loader.oo" "path_exists" "Loader verifies path_exists"
 
 test_start "T2-F10-02" "Loader returns Err on missing file"
-assert_file_contains "T2-F10-02" "${PROJECT_ROOT}/src/repo/loader.oo" "Err(" "Loader returns Err on failure"
+assert_file_contains "T2-F10-02" "${PROJECT_ROOT}/src/repo/loader.oo" "Err\(" "Loader returns Err on failure"
 
 test_start "T2-F10-03" "Loader passes &FsReadCap to read_file"
 assert_file_contains "T2-F10-03" "${PROJECT_ROOT}/src/repo/loader.oo" "read_file\(fs," "read_file capability passed"

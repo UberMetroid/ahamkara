@@ -443,7 +443,7 @@ assert_file_exists "T1-F19-05" "${PROJECT_ROOT}/tests_e2e/tier4_scenario_tests.s
 # Feature 20: Adversarial Coverage Hardening
 # ------------------------------------------------------------------------------
 test_start "T1-F20-01" "Every .oo file obeys strict 256-line limit"
-OVERSIZED_LINES=$(find "${PROJECT_ROOT}/src" -name "*.oo" 2>/dev/null | xargs wc -l 2>/dev/null | awk '$1 > 256 { print $2 ": " $1 }' || echo "")
+OVERSIZED_LINES=$(find "${PROJECT_ROOT}/src" -name "*.oo" 2>/dev/null | xargs wc -l 2>/dev/null | awk '$2 != "total" && $1 > 256 { print $2 ": " $1 }' || echo "")
 if [[ -z "${OVERSIZED_LINES}" ]]; then
     test_pass "T1-F20-01" "Every .oo file obeys strict 256-line limit"
 else

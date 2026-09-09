@@ -1,0 +1,47 @@
+// # Database Storage Contract (Future ooda db migration adapter)
+//
+// Logline: Decoupled interface contract anticipating ooda db backend.
+//
+// Setup: Abstract repository contract decoupling storage representation from domain models.
+// Current implementation operates over in-memory / JSONL record collections.
+// Future implementation will plug into the upcoming ooda db standard library.
+//
+// Beats:
+//   1. db_contract_version: Contract version identifier for storage compatibility.
+//   2. db_contract_validate_record: Storage validation assertion for records.
+//   3. db_contract_find_by_id: Lookup record by primary key (id).
+//   4. db_contract_count: Aggregation count of stored records.
+
+import "model/record.oo";
+
+pub fn db_contract_version() -> String {
+    return "ooda-db-contract/0.1";
+}
+
+pub fn db_contract_name() -> String {
+    return "AhamkaraLoreRepository";
+}
+
+// Contract: Validate that a record satisfies storage integrity constraints.
+pub fn db_contract_validate_record(record: AhamkaraRecord) -> Bool {
+    return record_is_valid(record);
+}
+
+// Contract: Lookup record by primary key in collection.
+pub fn db_contract_find_by_id(records: List[AhamkaraRecord], id: String) -> Option[AhamkaraRecord] {
+    let n: Int = list_len(records);
+    let mut i: Int = 0;
+    while i < n {
+        let r: AhamkaraRecord = list_get(records, i);
+        if r.id == id {
+            return Some(r);
+        }
+        i = i + 1;
+    }
+    return None;
+}
+
+// Contract: Total count of active records in repository.
+pub fn db_contract_count(records: List[AhamkaraRecord]) -> Int {
+    return list_len(records);
+}

@@ -22,9 +22,11 @@ std
 # ==========================================
 # Test and runtime outputs
 # ==========================================
+test_main
 test_*.out
 test_*.err
 *.log
+
 
 # ==========================================
 # Editor, OS, and temporary files

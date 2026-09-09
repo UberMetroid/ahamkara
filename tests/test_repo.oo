@@ -1,0 +1,172 @@
+// # Test Suite — openOODA Repository & JSON Parsing (Features 9, 10, 11)
+//
+// Logline: Comprehensive unit tests for JSON parser, loader, and db contract.
+//
+// Setup: Validates json_extract_string, json_extract_tags, parse_record_line, and repo_load_all.
+//
+// Beats:
+//   1. test_extract_string_basic: Simple key-value string extraction.
+//   2. test_extract_string_escapes: Handles escaped quotes, newlines, backslashes.
+//   3. test_extract_string_missing: Returns empty string for missing keys.
+//   4. test_extract_tags: Extracts array of tags from JSON array.
+//   5. test_parse_record_line_valid: Parses valid JSONL record line.
+//   6. test_parse_record_line_invalid: Rejects invalid or empty lines.
+//   7. test_db_contract: Validates db_contract interface and version.
+//   8. test_repo_load_missing_file: Asserts Err on missing file path.
+//   9. test_repo_load_corpus: Gated file loading of data/ahamkara_corpus.jsonl.
+//   10. main: Test runner entry point.
+
+import "src/model/record.oo";
+import "src/repo/json_parse.oo";
+import "src/repo/loader.oo";
+import "src/repo/db_contract.oo";
+
+pub fn test_extract_string_basic() -> Bool {
+    let line: String = "{\"id\": \"exotic-skull\", \"title\": \"Skull of Dire Ahamkara\"}";
+    let id: String = json_extract_string(line, "id");
+    let title: String = json_extract_string(line, "title");
+    if id != "exotic-skull" { return false; }
+    if title != "Skull of Dire Ahamkara" { return false; }
+    return true;
+}
+
+pub fn test_extract_string_escapes() -> Bool {
+    let line_q: String = "{\"quote\": \"\\\"O BEARER MINE.\\\"\"}";
+    let q: String = json_extract_string(line_q, "quote");
+    if q != "\"O BEARER MINE.\"" { return false; }
+
+    let line_nl: String = "{\"text\": \"Line one\\nLine two\"}";
+    let txt: String = json_extract_string(line_nl, "text");
+    if txt != "Line one\nLine two" { return false; }
+
+    let line_bs: String = "{\"path\": \"folder\\\\file\"}";
+    let p: String = json_extract_string(line_bs, "path");
+    if p != "folder\\file" { return false; }
+    return true;
+}
+
+pub fn test_extract_string_missing() -> Bool {
+    let line: String = "{\"id\": \"rec-01\"}";
+    let missing: String = json_extract_string(line, "nonexistent_key");
+    return chars_len(missing) == 0;
+}
+
+pub fn test_extract_tags() -> Bool {
+    let line: String = "{\"tags\": [\"exotic\", \"armor\", \"warlock\", \"helmet\"]}";
+    let tags: List[String] = json_extract_tags(line);
+    if list_len(tags) != 4 { return false; }
+    if list_get(tags, 0) != "exotic" { return false; }
+    if list_get(tags, 1) != "armor" { return false; }
+    if list_get(tags, 2) != "warlock" { return false; }
+    if list_get(tags, 3) != "helmet" { return false; }
+
+    let empty_line: String = "{\"tags\": []}";
+    let empty_tags: List[String] = json_extract_tags(empty_line);
+    if list_len(empty_tags) != 0 { return false; }
+    return true;
+}
+
+pub fn test_parse_record_line_valid() -> Bool {
+    let line: String = "{\"id\": \"exotic-bones-of-eao\", \"title\": \"Bones of Eao\", \"category\": \"exotic_armor\", \"entity\": \"Eao\", \"source\": \"Destiny 1\", \"quote\": \"\", \"lore_text\": \"Defy extinction.\", \"tags\": [\"exotic\", \"boots\"]}";
+    let opt: Option[AhamkaraRecord] = parse_record_line(line);
+    match opt {
+        Some(r) => {
+            if r.id != "exotic-bones-of-eao" { return false; }
+            if r.title != "Bones of Eao" { return false; }
+            if r.lore_text != "Defy extinction." { return false; }
+            if r.entity != "Eao" { return false; }
+            if list_len(r.tags) != 2 { return false; }
+            return true;
+        },
+        None => { return false; }
+    };
+}
+
+pub fn test_parse_record_line_invalid() -> Bool {
+    let opt_empty: Option[AhamkaraRecord] = parse_record_line("");
+    if opt_empty.is_some() { return false; }
+
+    let opt_noid: Option[AhamkaraRecord] = parse_record_line("{\"title\": \"No ID\"}");
+    if opt_noid.is_some() { return false; }
+
+    let opt_nolore: Option[AhamkaraRecord] = parse_record_line("{\"id\": \"bad-rec\", \"title\": \"No Lore\"}");
+    if opt_nolore.is_some() { return false; }
+    return true;
+}
+
+pub fn test_db_contract() -> Bool {
+    let ver: String = db_contract_version();
+    if chars_len(ver) == 0 { return false; }
+    return str_contains(ver, "db_contract") || str_contains(ver, "contract");
+}
+
+pub fn test_repo_load_missing_file(fs: &FsReadCap) -> Bool {
+    let res: Result[List[AhamkaraRecord], String] = repo_load_all(fs, "data/nonexistent_file.jsonl");
+    return res.is_err();
+}
+
+pub fn test_repo_load_corpus(fs: &FsReadCap) -> Bool {
+    let res: Result[List[AhamkaraRecord], String] = repo_load_all(fs, "data/ahamkara_corpus.jsonl");
+    if res.is_err() { return false; }
+    let mut ok_len: Bool = false;
+    match res {
+        Ok(recs) => {
+            let count: Int = db_contract_count(recs);
+            if count >= 65 {
+                ok_len = true;
+            }
+        },
+        Err(_) => {}
+    };
+    return ok_len;
+}
+
+pub fn run_pure_repo_tests() -> Bool {
+    if !test_extract_string_basic() {
+        println("FAIL: test_extract_string_basic");
+        return false;
+    }
+    if !test_extract_string_escapes() {
+        println("FAIL: test_extract_string_escapes");
+        return false;
+    }
+    if !test_extract_string_missing() {
+        println("FAIL: test_extract_string_missing");
+        return false;
+    }
+    if !test_extract_tags() {
+        println("FAIL: test_extract_tags");
+        return false;
+    }
+    if !test_parse_record_line_valid() {
+        println("FAIL: test_parse_record_line_valid");
+        return false;
+    }
+    if !test_parse_record_line_invalid() {
+        println("FAIL: test_parse_record_line_invalid");
+        return false;
+    }
+    if !test_db_contract() {
+        println("FAIL: test_db_contract");
+        return false;
+    }
+    return true;
+}
+
+pub fn test_repo_main(fs: &FsReadCap) -> Bool {
+    if !run_pure_repo_tests() {
+        println("ERR: pure repo tests failed");
+        return false;
+    }
+    if !test_repo_load_missing_file(fs) {
+        println("FAIL: test_repo_load_missing_file");
+        return false;
+    }
+    if !test_repo_load_corpus(fs) {
+        println("FAIL: test_repo_load_corpus");
+        return false;
+    }
+    println("OK: test_repo passed all 9 test cases");
+    return true;
+}
+

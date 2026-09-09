@@ -1,0 +1,17 @@
+// # Domain Model Module Anchor
+//
+// Logline: Root module anchor for openOODA Ahamkara domain models.
+//
+// Setup: Pure data structures. No I/O imports.
+//
+// Beats:
+//   1. record.oo: AhamkaraRecord, RecordStats, constructor, and validation.
+//   2. query.oo: QueryFilter, SearchResult, and default filter factories.
+
+pub fn model_version() -> String {
+    return "0.3.0";
+}
+
+pub fn model_anchor() -> String {
+    return "src/model";
+}
