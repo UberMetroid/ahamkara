@@ -1,6 +1,7 @@
 // # Test Suite — Anchor for Agents
 //
 // Logline: Root test runner and verification suite for Ahamkara query engine.
+// Version: 0.5.0
 //
 // Setup: Exercises domain models, repository parsers, search engine, and CLI formatters.
 //
@@ -12,5 +13,5 @@
 //   5. test_repo.oo: Tests corpus file loading and record hydration.
 
 pub fn tests_version() -> String {
-    return "0.4.0";
+    return "0.5.0";
 }
