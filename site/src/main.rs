@@ -67,6 +67,13 @@ const NAV: &[(&str, &str, &str)] = &[
 
 const SIGIL: &str = r##"<svg class="sigil" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="20" cy="20" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="20" cy="20" r="2.5" fill="currentColor"/><path d="M20 3v6M20 31v6M3 20h6M31 20h6" stroke="currentColor" stroke-width="1.5"/></svg>"##;
 
+fn version() -> String {
+    let root = Path::new(env!("CARGO_MANIFEST_DIR")).join("..");
+    fs::read_to_string(root.join("VERSION"))
+        .map(|v| v.trim().to_string())
+        .unwrap_or_else(|_| "0.0.0".to_string())
+}
+
 fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, &str)) -> String {
     let nav_items = NAV
         .iter()
@@ -104,6 +111,7 @@ fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, &str
   <p class="foot-whisper">&ldquo;{}&rdquo; <cite>&mdash; {}</cite></p>
   <p class="extinction">The Ahamkara are extinct. <span class="lie">The Ahamkara are lying.</span></p>
   <p class="fine">A fan-made lore archive. Not affiliated with Bungie. Primary sources linked to the Ishtar Collective where available.</p>
+  <p class="fine">archive v{ver} &middot; licensed under <a href="https://github.com/studio2201/Ahamkara/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">the Bargain License</a> &mdash; you get a wish, the dragon feeds on the wish</p>
 </footer>
 <script id="whisper-data" type="application/json">{{}}</script>
 <script defer src="app.js"></script>
@@ -113,7 +121,8 @@ fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, &str
         esc(whisper.0),
         esc(whisper.1),
         title = esc(title),
-        desc = esc(desc)
+        desc = esc(desc),
+        ver = version()
     )
 }
 

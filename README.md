@@ -64,4 +64,4 @@ Each record contains 9 structured attributes:
 
 ## License
 
-Dual-licensed under MIT or Apache 2.0. See [LICENSE](LICENSE) for details.
+Licensed under [The Bargain License](LICENSE) (Ahamkara License v1.0) — you get a wish; the dragon feeds on the wish. The wish is granted in full; the price is folded into the wording. *O bearer mine.*
