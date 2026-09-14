@@ -1,216 +1,240 @@
 /**
- * wyrm_entity.ts — State machine, landmark perching, feeding growth, and interaction.
+ * wyrm_entity.ts — State machine, wish-awakening, feeding growth, and 2D kinematics.
  */
 
 import {
-  BONE, DEFAULT_WYRM_CONFIG, HaloRing, Particle, Point,
-  RIVEN_VIOLET, Segment, TAKEN_TEAL, WhisperFloat, WISH_PINK,
-  WyrmConfig, WyrmState,
+  DEFAULT_WYRM_CONFIG,
+  HaloRing,
+  Particle,
+  Point,
+  Segment,
+  WhisperFloat,
+  WHISPERS_AWAKEN,
+  WHISPERS_FEED,
+  WHISPERS_PET,
+  WyrmConfig,
+  WyrmDirection,
+  WyrmState,
 } from "./wyrm_types.js";
-import { calculateGaze, distance, solveKinematics } from "./wyrm_math.js";
-import { pick, whispers } from "./env.js";
-
-const SESSION_KEY = "ahamkara_wyrm_segments";
-
-function getStoredSegments(fallback = 6): number {
-  try {
-    const v = parseInt(sessionStorage.getItem(SESSION_KEY) || "", 10);
-    if (!isNaN(v) && v >= 6 && v <= 20) return v;
-  } catch { /* sandboxed fallback */ }
-  return fallback;
-}
-
-function storeSegments(count: number): void {
-  try {
-    sessionStorage.setItem(SESSION_KEY, String(count));
-  } catch { /* sandboxed fallback */ }
-}
+import { distance, solveKinematics } from "./wyrm_math.js";
+import { pick } from "./env.js";
 
 export class WyrmEntity {
   segments: Segment[] = [];
-  state: WyrmState = "roaming";
+  state: WyrmState = "unsummoned";
+  direction: WyrmDirection = "right";
   particles: Particle[] = [];
   rings: HaloRing[] = [];
   whispers: WhisperFloat[] = [];
   target: Point = { x: 200, y: 200 };
-  flareTimer = 0;
-  gazeAngle = 0;
   dwellTimer = 0;
   waveTimer = 0;
+  feedTimer = 0;
+  animTime = 0;
   config: WyrmConfig;
 
   constructor(cfg: WyrmConfig = DEFAULT_WYRM_CONFIG) {
     this.config = cfg;
-    const count = getStoredSegments(cfg.baseSegments);
-    const startX = typeof window !== "undefined" ? window.innerWidth - 120 : 300;
-    const startY = 160;
+    this.state = "unsummoned";
+    this.segments = [];
+  }
 
+  get isSummoned(): boolean {
+    return this.state !== "unsummoned";
+  }
+
+  private spawnAt(x: number, y: number, count: number): void {
+    this.segments = [];
     for (let i = 0; i < count; i++) {
       this.segments.push({
-        x: startX - i * cfg.segmentLength,
-        y: startY,
+        x: x - i * this.config.segmentLength,
+        y,
         angle: 0,
-        size: Math.max(2, 6 - i * 0.2),
+        size: Math.max(2, 8 - i * 0.25),
       });
     }
+    this.target = { x, y };
+  }
+
+  awaken(originX: number, originY: number): void {
+    const count = this.config.baseSegments;
+    this.spawnAt(originX, originY, count);
+    this.state = "hunting";
+    this.direction = "right";
+    this.spawnHalo(originX, originY, "#ff6ea0");
+    this.spawnBurst(originX, originY, 36);
+    this.say(pick(WHISPERS_AWAKEN), originX, originY - 30);
     this.pickNextTarget();
   }
 
-  private findLandmarkPoint(): Point | null {
-    if (typeof document === "undefined") return null;
-    const selectors = [".bargain-box", ".hero-title", ".brand", "main h1", "main h2", ".seal"];
-    for (const sel of selectors) {
-      const el = document.querySelector(sel);
-      if (el) {
-        const r = el.getBoundingClientRect();
-        if (r.width > 0 && r.height > 0 && r.top < window.innerHeight && r.bottom > 0) {
-          const placeRight = r.right + 44 < window.innerWidth - 30;
-          return {
-            x: placeRight ? r.right + 28 : Math.max(30, r.left - 28),
-            y: Math.max(40, r.top + r.height * 0.4),
-          };
-        }
-      }
+  feed(originX: number, originY: number): void {
+    if (!this.isSummoned) {
+      this.awaken(originX, originY);
+      return;
     }
-    return null;
-  }
-
-  pickNextTarget(): void {
-    const landmark = Math.random() < 0.65 ? this.findLandmarkPoint() : null;
-    if (landmark) {
-      this.target = landmark;
-      this.state = "seeking_perch";
-    } else {
-      const w = window.innerWidth;
-      const h = window.innerHeight;
-      const onRight = Math.random() < 0.5;
-      const x = onRight ? w - Math.random() * 120 - 30 : Math.random() * 120 + 30;
-      const y = Math.random() * (h - 140) + 70;
-      this.target = { x, y };
-      this.state = "roaming";
-    }
-    this.dwellTimer = this.config.perchDwellMs + Math.random() * 2000;
-  }
-
-  dock(x = window.innerWidth - 60, y = window.innerHeight - 60): void {
-    this.state = "docked";
-    this.target = { x, y };
-    for (let i = 0; i < this.segments.length; i++) {
-      const curl = i * 0.35;
-      this.segments[i].x = x - Math.cos(curl) * (i * 5);
-      this.segments[i].y = y - Math.sin(curl) * (i * 5);
-      this.segments[i].angle = curl + Math.PI;
-    }
-  }
-
-  feed(): void {
-    this.flareTimer = 60;
     this.state = "feeding";
-    if (this.segments.length < this.config.maxSegments) {
-      const last = this.segments[this.segments.length - 1];
-      this.segments.push({ x: last.x, y: last.y, angle: last.angle, size: 2 });
-      storeSegments(this.segments.length);
-    }
-    this.spawnBurst(this.segments[0].x, this.segments[0].y, 16, WISH_PINK);
-    this.spawnRing(this.segments[0].x, this.segments[0].y, WISH_PINK);
-    this.spawnWhisper("Hunger satisfied... for a moment.");
+    this.feedTimer = 2200;
+    this.target = { x: originX, y: originY - 24 };
+    this.direction = originX < this.segments[0].x ? "left" : "right";
+    this.addSegment();
+    this.spawnHalo(originX, originY, "#8fe3d0");
+    this.spawnBurst(originX, originY, 28);
+    this.say(pick(WHISPERS_FEED), originX, originY - 36);
+  }
+
+  addSegment(): void {
+    if (this.segments.length >= this.config.maxSegments) return;
+    const last = this.segments[this.segments.length - 1];
+    this.segments.push({
+      x: last.x,
+      y: last.y,
+      angle: last.angle,
+      size: Math.max(2, last.size - 0.2),
+    });
+  }
+
+  say(text: string, x?: number, y?: number): void {
+    const head = this.segments[0] || { x: 200, y: 200 };
+    this.whispers.push({
+      text,
+      x: x ?? head.x,
+      y: y ?? head.y - 30,
+      life: 3200,
+      maxLife: 3200,
+      vy: -0.22,
+    });
   }
 
   interact(): void {
-    if (this.segments.length === 0) return;
+    if (!this.isSummoned) return;
     const head = this.segments[0];
-    this.spawnBurst(head.x, head.y, 12, TAKEN_TEAL);
-    this.spawnRing(head.x, head.y, RIVEN_VIOLET);
-
-    const pool = whispers();
-    const quote = pool.length > 0 ? pick(pool).q : "O bearer mine...";
-    this.spawnWhisper(quote);
-    if (this.state === "perched") this.dwellTimer = 2000;
+    this.spawnHalo(head.x, head.y, "#c77dff");
+    this.spawnBurst(head.x, head.y, 22);
+    this.say(pick(WHISPERS_PET));
+    this.pickNextTarget();
   }
 
-  spawnBurst(x: number, y: number, count: number, color: string): void {
-    for (let i = 0; i < count; i++) {
-      const angle = (i / count) * Math.PI * 2 + Math.random() * 0.5;
-      const spd = 1.2 + Math.random() * 2.5;
+  dock(): void {
+    if (!this.isSummoned) return;
+    this.state = "docked";
+    const x = window.innerWidth - 80;
+    const y = window.innerHeight - 80;
+    this.target = { x, y };
+    for (let i = 0; i < this.segments.length; i++) {
+      this.segments[i].x = x - i * 4;
+      this.segments[i].y = y;
+    }
+  }
+
+  private pickHuntingTarget(): Point {
+    const candidates: Point[] = [];
+    // Priority 1: Bargain box ("hunting for more wishes")
+    const wishBox = document.querySelector(".bargain-box");
+    if (wishBox) {
+      const r = wishBox.getBoundingClientRect();
+      if (r.width > 0 && r.height > 0) {
+        candidates.push({ x: r.left + r.width * 0.5, y: Math.max(60, r.top - 36) });
+        candidates.push({ x: r.left + r.width * 0.2, y: Math.max(60, r.top - 18) });
+        candidates.push({ x: r.left + r.width * 0.8, y: Math.max(60, r.top - 18) });
+      }
+    }
+    // Priority 2: Page headings and hero quote
+    const landmarks = document.querySelectorAll(".hero-title, .featured blockquote, h2");
+    landmarks.forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.width > 0 && r.height > 0 && r.top >= 0 && r.bottom <= window.innerHeight) {
+        candidates.push({ x: r.left + r.width * 0.5, y: Math.max(50, r.top - 24) });
+      }
+    });
+
+    if (candidates.length > 0 && Math.random() < 0.6) {
+      return candidates[Math.floor(Math.random() * candidates.length)];
+    }
+
+    const w = window.innerWidth;
+    const h = window.innerHeight;
+    const pad = 70;
+    return {
+      x: Math.random() * (w - pad * 2) + pad,
+      y: Math.random() * (h - pad * 2) + pad,
+    };
+  }
+
+  pickNextTarget(): void {
+    this.target = this.pickHuntingTarget();
+    this.dwellTimer = 2500 + Math.random() * 3000;
+  }
+
+  spawnBurst(x: number, y: number, n = 20): void {
+    const colors = ["#8fe3d0", "#c77dff", "#ece5d3", "#ff6ea0"];
+    for (let i = 0; i < n; i++) {
+      const a = Math.random() * Math.PI * 2;
+      const sp = 0.5 + Math.random() * 2.8;
       this.particles.push({
-        x, y,
-        vx: Math.cos(angle) * spd,
-        vy: Math.sin(angle) * spd,
-        life: 25 + Math.random() * 15,
-        maxLife: 40,
-        color: Math.random() < 0.4 ? BONE : color,
+        x,
+        y,
+        vx: Math.cos(a) * sp,
+        vy: Math.sin(a) * sp - 0.4,
+        life: 50 + Math.random() * 40,
+        maxLife: 90,
+        color: pick(colors),
         size: Math.random() < 0.5 ? 2 : 3,
       });
     }
   }
 
-  spawnRing(x: number, y: number, color: string): void {
-    this.rings.push({ x, y, radius: 4, maxRadius: 36, life: 28, maxLife: 28, color });
+  spawnHalo(x: number, y: number, color = "#8fe3d0"): void {
+    this.rings.push({ x, y, radius: 4, maxRadius: 36, life: 40, maxLife: 40, color });
   }
 
-  spawnWhisper(text: string): void {
-    if (this.segments.length === 0) return;
-    const head = this.segments[0];
-    this.whispers.push({
-      text: `“${text}”`,
-      x: head.x,
-      y: head.y - 18,
-      life: 140,
-      maxLife: 140,
-      vy: -0.35,
-    });
-  }
-
-  update(dt: number, pointer: Point | null, isReducedMotion: boolean): boolean {
-    if (isReducedMotion) {
-      if (this.state !== "docked") this.dock();
+  update(dt: number, pointer: Point | null, reduced: boolean): boolean {
+    if (!this.isSummoned) return false;
+    this.animTime += dt * 0.001;
+    if (reduced) {
+      this.dock();
       return false;
     }
 
     this.waveTimer += dt;
-    if (this.flareTimer > 0) this.flareTimer--;
+    if (this.feedTimer > 0) {
+      this.feedTimer -= dt;
+      if (this.feedTimer <= 0 && this.state === "feeding") {
+        this.state = "hunting";
+        this.pickNextTarget();
+      }
+    }
 
     const head = this.segments[0];
-    this.gazeAngle = calculateGaze(head, pointer);
-
-    const distToTarget = distance(head, this.target);
-    const isSwimming = distToTarget > 6;
-
-    if (this.state === "seeking_perch" && distToTarget <= 10) {
-      this.state = "perched";
-    }
-
-    if (this.state === "perched" || this.state === "feeding") {
+    if (distance(head, this.target) < 32) {
       this.dwellTimer -= dt;
-      if (this.dwellTimer <= 0) this.pickNextTarget();
+      if (this.dwellTimer <= 0 && this.state !== "feeding") {
+        this.pickNextTarget();
+      }
     }
 
-    solveKinematics(this.segments, this.target, this.config.segmentLength, this.waveTimer, isSwimming);
+    if (Math.abs(this.target.x - head.x) > 4) {
+      this.direction = this.target.x > head.x ? "right" : "left";
+    }
+
+    solveKinematics(this.segments, this.target, this.config.segmentLength, this.waveTimer, true);
 
     for (let i = this.particles.length - 1; i >= 0; i--) {
       const p = this.particles[i];
-      p.x += p.vx; p.y += p.vy;
-      p.vx *= 0.94; p.vy *= 0.94;
-      p.life--;
-      if (p.life <= 0) this.particles.splice(i, 1);
+      p.x += p.vx;
+      p.y += p.vy;
+      p.vx *= 0.98;
+      p.vy *= 0.98;
+      if (--p.life <= 0) this.particles.splice(i, 1);
     }
-
     for (let i = this.rings.length - 1; i >= 0; i--) {
-      const r = this.rings[i];
-      r.life--;
-      if (r.life <= 0) this.rings.splice(i, 1);
+      if (--this.rings[i].life <= 0) this.rings.splice(i, 1);
     }
-
     for (let i = this.whispers.length - 1; i >= 0; i--) {
       const w = this.whispers[i];
       w.y += w.vy;
-      w.life--;
+      w.life -= dt;
       if (w.life <= 0) this.whispers.splice(i, 1);
     }
-
-    const hasFx = this.particles.length > 0 || this.rings.length > 0 ||
-                  this.whispers.length > 0 || this.flareTimer > 0;
-    const isMoving = isSwimming || Math.abs(this.gazeAngle) > 0.05;
-    return hasFx || isMoving;
+    return true;
   }
 }

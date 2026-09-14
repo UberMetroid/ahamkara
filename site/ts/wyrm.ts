@@ -17,7 +17,12 @@ let lastTime = 0;
 let isSuspended = false;
 
 function updateHitbox(): void {
-  if (!hitbox || !entity || entity.segments.length === 0) return;
+  if (!hitbox) return;
+  if (!entity || !entity.isSummoned || entity.segments.length === 0) {
+    hitbox.style.display = "none";
+    return;
+  }
+  hitbox.style.display = "block";
   const head = entity.segments[0];
   hitbox.style.transform = `translate(${Math.round(head.x)}px, ${Math.round(head.y)}px)`;
 }
@@ -26,13 +31,26 @@ function renderStaticFrame(): void {
   if (!entity || !ctx || !canvas) return;
   const dpr = Math.min(window.devicePixelRatio || 1, 2);
   ctx.clearRect(0, 0, canvas.width / dpr, canvas.height / dpr);
-  renderWyrm(ctx, entity.segments, 0, 0);
+  if (entity.isSummoned) {
+    renderWyrm(
+      ctx,
+      entity.segments,
+      entity.state,
+      entity.direction,
+      entity.animTime,
+      entity.config.pixelScale
+    );
+  }
   updateHitbox();
 }
 
 function loop(now: number): void {
   rafId = 0;
   if (isSuspended || !entity || !ctx || !canvas) return;
+  if (!entity.isSummoned) {
+    updateHitbox();
+    return;
+  }
 
   const dt = Math.min(64, now - (lastTime || now));
   lastTime = now;
@@ -42,7 +60,14 @@ function loop(now: number): void {
   const dpr = Math.min(window.devicePixelRatio || 1, 2);
   ctx.clearRect(0, 0, canvas.width / dpr, canvas.height / dpr);
 
-  renderWyrm(ctx, entity.segments, entity.flareTimer, entity.gazeAngle);
+  renderWyrm(
+    ctx,
+    entity.segments,
+    entity.state,
+    entity.direction,
+    entity.animTime,
+    entity.config.pixelScale
+  );
   renderHaloRings(ctx, entity.rings);
   renderParticles(ctx, entity.particles);
   renderWhispers(ctx, entity.whispers);
@@ -55,6 +80,7 @@ function loop(now: number): void {
 }
 
 export function wake(): void {
+  if (!entity || !entity.isSummoned) return;
   if (reducedMotion()) {
     renderStaticFrame();
     return;
@@ -64,9 +90,24 @@ export function wake(): void {
   rafId = requestAnimationFrame(loop);
 }
 
-export function feedWyrm(): void {
+export function feedWyrm(x?: number, y?: number): void {
   if (!entity) return;
-  entity.feed();
+  let cx = typeof x === "number" ? x : window.innerWidth / 2;
+  let cy = typeof y === "number" ? y : window.innerHeight / 2;
+  if (typeof x !== "number" || typeof y !== "number") {
+    const el = document.querySelector(".bargain-box");
+    if (el) {
+      const r = el.getBoundingClientRect();
+      cx = r.left + r.width / 2;
+      cy = r.top + r.height / 2;
+    }
+  }
+
+  if (!entity.isSummoned) {
+    entity.awaken(cx, cy);
+  } else {
+    entity.feed(cx, cy);
+  }
   wake();
 }
 
@@ -83,7 +124,7 @@ function resize(): void {
   if (reducedMotion()) {
     entity?.dock();
     renderStaticFrame();
-  } else {
+  } else if (entity?.isSummoned) {
     wake();
   }
 }
@@ -109,6 +150,7 @@ export function initWyrm(): void {
   hitbox.className = "wyrm-hitbox";
   hitbox.type = "button";
   hitbox.setAttribute("aria-label", "Ahamkara wish-dragon");
+  hitbox.style.display = "none";
   if (!hitbox.parentElement) {
     document.body.appendChild(hitbox);
   }
@@ -124,7 +166,7 @@ export function initWyrm(): void {
     "pointermove",
     (e) => {
       pointer = { x: e.clientX, y: e.clientY };
-      wake();
+      if (entity?.isSummoned) wake();
     },
     { passive: true }
   );
@@ -144,11 +186,14 @@ export function initWyrm(): void {
       }
     } else {
       isSuspended = false;
-      wake();
+      if (entity?.isSummoned) wake();
     }
   });
 
-  window.addEventListener("ahamkara:wish", () => feedWyrm());
+  window.addEventListener("ahamkara:wish", (e: Event) => {
+    const custom = e as CustomEvent<{ x?: number; y?: number }>;
+    feedWyrm(custom.detail?.x, custom.detail?.y);
+  });
 
   const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
   mq.addEventListener?.("change", () => {
@@ -159,7 +204,7 @@ export function initWyrm(): void {
       }
       entity?.dock();
       renderStaticFrame();
-    } else {
+    } else if (entity?.isSummoned) {
       wake();
     }
   });

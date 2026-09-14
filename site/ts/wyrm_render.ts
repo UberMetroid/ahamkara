@@ -1,163 +1,114 @@
 /**
- * wyrm_render.ts — Low-res integer pixel-art renderer for the Ahamkara Wyrm.
+ * wyrm_render.ts — True 2D Pixel-Art Renderer for the Ahamkara Wish Dragon.
+ * Uses discrete pixel matrices, integer block scaling, and zero vector rotation.
  */
 
 import {
-  BONE,
-  BONE_DARK,
-  HaloRing,
-  Particle,
-  RIVEN_VIOLET,
-  Segment,
-  TAKEN_TEAL,
-  VOID_BLACK,
-  WhisperFloat,
-  WISH_PINK,
-} from "./wyrm_types.js";
+  PALETTE,
+  SPRITE_BODY_SEGMENT,
+  SPRITE_HEAD_FEED,
+  SPRITE_HEAD_RIGHT,
+  SPRITE_TAIL_FLAME,
+  SPRITE_TAIL_SEGMENT,
+  SPRITE_WING_DOWN,
+  SPRITE_WING_MID,
+  SPRITE_WING_UP,
+} from "./wyrm_sprites.js";
+import { HaloRing, Particle, Segment, WhisperFloat, WyrmDirection } from "./wyrm_types.js";
 
 /**
- * Draws crisp integer pixel rects in local coordinate space.
+ * Draws a discrete 2D pixel matrix with crisp integer scaling.
  */
-function px(ctx: CanvasRenderingContext2D, x: number, y: number, w = 1, h = 1): void {
-  ctx.fillRect(Math.round(x), Math.round(y), w, h);
-}
-
-/**
- * Renders the Ahamkara dragon skull with branching antler horns and glowing eyes.
- */
-function renderSkull(
+export function drawPixelMatrix(
   ctx: CanvasRenderingContext2D,
-  head: Segment,
-  flareTimer: number,
-  gazeAngle: number
+  matrix: string[],
+  x: number,
+  y: number,
+  scale = 3,
+  flipX = false
 ): void {
-  ctx.save();
-  ctx.translate(Math.round(head.x), Math.round(head.y));
-  ctx.rotate(head.angle);
+  const height = matrix.length;
+  if (height === 0) return;
+  const width = matrix[0].length;
 
-  const S = 2; // Pixel grid unit
-
-  // 1. Antler horns (branching backward from crown)
-  ctx.fillStyle = flareTimer > 0 ? WISH_PINK : BONE;
-  // Left antler main beam
-  px(ctx, -2 * S, -3 * S, S, S);
-  px(ctx, -4 * S, -5 * S, S, S);
-  px(ctx, -6 * S, -7 * S, S, S);
-  px(ctx, -8 * S, -9 * S, S, S);
-  px(ctx, -10 * S, -10 * S, S, S);
-  // Left antler tine (outward branch)
-  px(ctx, -4 * S, -7 * S, S, S);
-  px(ctx, -5 * S, -9 * S, S, S);
-
-  // Right antler main beam
-  px(ctx, -2 * S, 3 * S, S, S);
-  px(ctx, -4 * S, 5 * S, S, S);
-  px(ctx, -6 * S, 7 * S, S, S);
-  px(ctx, -8 * S, 9 * S, S, S);
-  px(ctx, -10 * S, 10 * S, S, S);
-  // Right antler tine
-  px(ctx, -4 * S, 7 * S, S, S);
-  px(ctx, -5 * S, 9 * S, S, S);
-
-  // Shaded antler bases
-  ctx.fillStyle = BONE_DARK;
-  px(ctx, -3 * S, -4 * S, S, S);
-  px(ctx, -3 * S, 4 * S, S, S);
-
-  // 2. Cranium / Head Plate (predatory bone structure)
-  ctx.fillStyle = BONE;
-  px(ctx, -1 * S, -3 * S, 4 * S, 6 * S);
-  px(ctx, 3 * S, -2 * S, 5 * S, 4 * S);
-  // Snout & upper jaw tapering forward
-  px(ctx, 8 * S, -1 * S, 3 * S, 2 * S);
-  px(ctx, 11 * S, 0, S, S);
-
-  // Bone shadows / contours
-  ctx.fillStyle = BONE_DARK;
-  px(ctx, 0, -3 * S, S, 6 * S);
-  px(ctx, 2 * S, -2 * S, S, 4 * S);
-
-  // 3. Ocular orbits (eye sockets)
-  ctx.fillStyle = VOID_BLACK;
-  px(ctx, 3 * S, -3 * S, 2 * S, 2 * S);
-  px(ctx, 3 * S, 1 * S, 2 * S, 2 * S);
-
-  // 4. Glowing pupils with directional gaze
-  const gazeX = Math.round(Math.cos(gazeAngle) * 0.7);
-  const gazeY = Math.round(Math.sin(gazeAngle) * 0.7);
-  const eyeColor = flareTimer > 0 ? WISH_PINK : gazeAngle !== 0 ? TAKEN_TEAL : RIVEN_VIOLET;
-
-  ctx.fillStyle = eyeColor;
-  px(ctx, (3 + gazeX) * S, (-3 + gazeY) * S, S, S);
-  px(ctx, (3 + gazeX) * S, (1 + gazeY) * S, S, S);
-
-  // Eye ethereal flare/glint
-  ctx.fillStyle = flareTimer > 0 ? "#ffffff" : TAKEN_TEAL;
-  px(ctx, (3 + gazeX) * S, (-2 + gazeY) * S, 1, 1);
-  px(ctx, (3 + gazeX) * S, (2 + gazeY) * S, 1, 1);
-
-  ctx.restore();
-}
-
-/**
- * Renders the sinuous trailing spine vertebrae and ribs.
- */
-function renderSpine(
-  ctx: CanvasRenderingContext2D,
-  segments: Segment[],
-  flareTimer: number
-): void {
-  const total = segments.length;
-  // Render from tail to neck so head and front overlap rear
-  for (let i = total - 1; i >= 1; i--) {
-    const seg = segments[i];
-    ctx.save();
-    ctx.translate(Math.round(seg.x), Math.round(seg.y));
-    ctx.rotate(seg.angle);
-
-    // Tapering profile: neck narrow, mid-body wider, tail slender
-    const t = i / total;
-    const ribSpan = Math.max(1, Math.round(Math.sin(t * Math.PI) * 7));
-    const isOdd = i % 2 === 1;
-
-    // Chromatic flare ripple traveling down the spine
-    let ribColor = isOdd ? TAKEN_TEAL : RIVEN_VIOLET;
-    if (flareTimer > 0) {
-      const ripple = Math.sin(flareTimer * 0.2 - i * 0.4);
-      if (ripple > 0.3) ribColor = WISH_PINK;
-      else if (ripple > -0.2) ribColor = TAKEN_TEAL;
+  for (let r = 0; r < height; r++) {
+    const rowStr = matrix[r];
+    for (let c = 0; c < width; c++) {
+      const char = rowStr[c];
+      if (char === " " || !char) continue;
+      const col = flipX ? width - 1 - c : c;
+      const px = Math.round(x + col * scale);
+      const py = Math.round(y + r * scale);
+      ctx.fillStyle = PALETTE[char] || "#ece5d3";
+      ctx.fillRect(px, py, scale, scale);
     }
-
-    // Rib tines (transverse wings)
-    ctx.fillStyle = ribColor;
-    px(ctx, 0, -ribSpan * 2, 2, ribSpan * 2);
-    px(ctx, 0, 1, 2, ribSpan * 2);
-
-    // Central vertebra body
-    ctx.fillStyle = flareTimer > 0 ? WISH_PINK : BONE;
-    const vSize = t > 0.8 ? 2 : 3;
-    px(ctx, -1, -Math.floor(vSize / 2), vSize, vSize);
-
-    ctx.restore();
   }
 }
 
 /**
- * Renders the full wyrm entity onto the pixel canvas.
+ * Renders the 2D pixel art Ahamkara dragon entity.
  */
 export function renderWyrm(
   ctx: CanvasRenderingContext2D,
   segments: Segment[],
-  flareTimer: number,
-  gazeAngle: number
+  state: string,
+  direction: WyrmDirection,
+  animTime: number,
+  scale = 3
 ): void {
-  if (segments.length === 0) return;
-  renderSpine(ctx, segments, flareTimer);
-  renderSkull(ctx, segments[0], flareTimer, gazeAngle);
+  if (segments.length === 0 || state === "unsummoned") return;
+
+  const flip = direction === "left";
+  const total = segments.length;
+
+  // 1. Draw Tail Tip Flame (Frame animated 0-2)
+  if (total > 2) {
+    const tail = segments[total - 1];
+    const flameFrame = Math.floor((animTime * 6) % 3);
+    const flameSprite = SPRITE_TAIL_FLAME[flameFrame];
+    const fx = tail.x - 4 * scale;
+    const fy = tail.y - 5 * scale;
+    drawPixelMatrix(ctx, flameSprite, fx, fy, scale, flip);
+  }
+
+  // 2. Draw Trailing Sinuous Body Segments (tail to neck)
+  for (let i = total - 2; i >= 1; i--) {
+    const seg = segments[i];
+    if (i >= total - 3) {
+      const sx = seg.x - 3 * scale;
+      const sy = seg.y - 3 * scale;
+      drawPixelMatrix(ctx, SPRITE_TAIL_SEGMENT, sx, sy, scale, flip);
+    } else {
+      const sx = seg.x - 4 * scale;
+      const sy = seg.y - 4 * scale;
+      drawPixelMatrix(ctx, SPRITE_BODY_SEGMENT, sx, sy, scale, flip);
+    }
+  }
+
+  // 3. Draw Flapping Wings (attached near shoulders behind head)
+  const head = segments[0];
+  const wingCycle = Math.floor((animTime * 8) % 4);
+  const wingMatrix =
+    wingCycle === 0
+      ? SPRITE_WING_UP
+      : wingCycle === 2
+      ? SPRITE_WING_DOWN
+      : SPRITE_WING_MID;
+
+  const wingX = flip ? head.x - 4 * scale : head.x - 12 * scale;
+  const wingY = head.y - 10 * scale;
+  drawPixelMatrix(ctx, wingMatrix, wingX, wingY, scale, flip);
+
+  // 4. Draw Ahamkara Head (Facing left or right, normal or feeding)
+  const isFeeding = state === "feeding";
+  const headMatrix = isFeeding ? SPRITE_HEAD_FEED : SPRITE_HEAD_RIGHT;
+  const hx = flip ? head.x - 18 * scale : head.x - 4 * scale;
+  const hy = head.y - 7 * scale;
+  drawPixelMatrix(ctx, headMatrix, hx, hy, scale, flip);
 }
 
 /**
- * Renders ocular flare particles and burst embers.
+ * Renders ocular flare particles and wish dust motes.
  */
 export function renderParticles(ctx: CanvasRenderingContext2D, particles: Particle[]): void {
   for (const p of particles) {
@@ -165,7 +116,7 @@ export function renderParticles(ctx: CanvasRenderingContext2D, particles: Partic
     ctx.save();
     ctx.globalAlpha = alpha;
     ctx.fillStyle = p.color;
-    px(ctx, p.x, p.y, p.size, p.size);
+    ctx.fillRect(Math.round(p.x), Math.round(p.y), p.size, p.size);
     ctx.restore();
   }
 }
@@ -180,7 +131,7 @@ export function renderHaloRings(ctx: CanvasRenderingContext2D, rings: HaloRing[]
     ctx.save();
     ctx.globalAlpha = Math.max(0, r.life / r.maxLife);
     ctx.strokeStyle = r.color;
-    ctx.lineWidth = 1.5;
+    ctx.lineWidth = 2;
     ctx.beginPath();
     ctx.arc(Math.round(r.x), Math.round(r.y), Math.round(currentRadius), 0, Math.PI * 2);
     ctx.stroke();
@@ -189,19 +140,32 @@ export function renderHaloRings(ctx: CanvasRenderingContext2D, rings: HaloRing[]
 }
 
 /**
- * Renders ephemeral floating whisper phrases dissolving into the void.
+ * Renders floating whisper speech balloons / phrases.
  */
 export function renderWhispers(ctx: CanvasRenderingContext2D, whispers: WhisperFloat[]): void {
   for (const w of whispers) {
-    const alpha = Math.max(0, Math.min(1, w.life / (w.maxLife * 0.4)));
+    const alpha = Math.max(0, Math.min(1, w.life / (w.maxLife * 0.35)));
     ctx.save();
-    ctx.globalAlpha = alpha * 0.85;
-    ctx.font = "italic 13px Georgia, 'Cinzel Decorative', serif";
-    ctx.fillStyle = TAKEN_TEAL;
-    ctx.shadowColor = RIVEN_VIOLET;
-    ctx.shadowBlur = 8;
+    ctx.globalAlpha = alpha;
+
+    ctx.font = "italic 600 13px Georgia, serif";
+    const tw = ctx.measureText(w.text).width;
+    const pad = 8;
+    const bx = Math.round(w.x - tw / 2 - pad);
+    const by = Math.round(w.y - 20);
+    const bw = Math.round(tw + pad * 2);
+    const bh = 24;
+
+    ctx.fillStyle = "#0b0a10";
+    ctx.fillRect(bx, by, bw, bh);
+    ctx.strokeStyle = "#8fe3d0";
+    ctx.lineWidth = 1.5;
+    ctx.strokeRect(bx, by, bw, bh);
+
+    ctx.fillStyle = "#ece5d3";
     ctx.textAlign = "center";
-    ctx.fillText(w.text, Math.round(w.x), Math.round(w.y));
+    ctx.textBaseline = "middle";
+    ctx.fillText(w.text, Math.round(w.x), by + bh / 2);
     ctx.restore();
   }
 }

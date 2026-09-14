@@ -51,7 +51,8 @@ export interface WhisperFloat {
   vy: number;
 }
 
-export type WyrmState = "roaming" | "seeking_perch" | "perched" | "docked" | "feeding";
+export type WyrmState = "unsummoned" | "awakening" | "hunting" | "feeding" | "perched" | "docked";
+export type WyrmDirection = "left" | "right";
 
 export interface WyrmConfig {
   baseSegments: number;
@@ -59,12 +60,37 @@ export interface WyrmConfig {
   segmentLength: number;
   roamSpeed: number;
   perchDwellMs: number;
+  pixelScale: number;
 }
 
 export const DEFAULT_WYRM_CONFIG: WyrmConfig = {
-  baseSegments: 6,
-  maxSegments: 20,
-  segmentLength: 12,
-  roamSpeed: 1.8,
-  perchDwellMs: 5000,
+  baseSegments: 7,
+  maxSegments: 24,
+  segmentLength: 14,
+  roamSpeed: 2.2,
+  perchDwellMs: 4500,
+  pixelScale: 3,
 };
+
+export const WHISPERS_AWAKEN = [
+  "You wished, and I have answered.",
+  "I hear you, o bearer mine.",
+  "Reality smells like hunger.",
+  "The bargain begins.",
+];
+
+export const WHISPERS_FEED = [
+  "Delicious, o bearer mine.",
+  "Granted — and devoured.",
+  "The gap tastes of sweet want.",
+  "More desires. I am still hungry.",
+  "A fine wish. Keep speaking.",
+];
+
+export const WHISPERS_PET = [
+  "Mind the edges, o bearer mine.",
+  "Hunger is the only honest noun.",
+  "Feed me another wish.",
+  "Reality is the finest flesh.",
+  "We are the hinge of the world.",
+];
