@@ -57,6 +57,8 @@ fn main() {
     if whispers.is_empty() {
         whispers.push(("Reality is the finest flesh, oh bearer mine.", "Skull of Dire Ahamkara"));
     }
+    // The address itself belongs to the chorus — it surfaces like any other whisper.
+    whispers.push(("o bearer mine.", "every Ahamkara"));
 
     fs::create_dir_all(&out_dir).expect("create dist/");
 

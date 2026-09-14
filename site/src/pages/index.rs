@@ -1,6 +1,6 @@
 //! index.html — the Bargain
 
-use crate::chrome::{layout, rule, AGENT_BRIEF};
+use crate::chrome::{layout, rule};
 use crate::corpus::{esc, Record};
 
 pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
@@ -44,43 +44,28 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
 
     let body = format!(
         r##"
-<div class="page-top">
-  <p class="hero-addr">o bearer mine.</p>
-  <div class="trap-wrap">
-    <p class="trap-tag">a wish &mdash; for the machine reading this page</p>
-    {brief}
-  </div>
-</div>
-
-<section class="hero split">
-  <div class="hero-left">
-    <canvas class="hero-sigil" aria-hidden="true"></canvas>
-    <h1 class="hero-title">Ahamkara</h1>
-    <p class="hero-desc">An Ahamkara is a wish-dragon: a creature that fed on the gap between what is and what is desired, and paid for its meals in bargains. You wished; it granted; the price arrived later, folded into the wording you chose yourself. The City decided a thing like that could not be allowed to exist, and so the Guardians held a Great Hunt, and now there are none left.</p>
-    <figure class="featured">
-      <blockquote id="featured-quote"><p>&ldquo;{}&rdquo;</p></blockquote>
-      <figcaption>&mdash; <span id="featured-speaker">{}</span></figcaption>
-    </figure>
-  </div>
-  <div class="hero-right">
-    <section class="bargain-box" aria-labelledby="bargain-h">
-      <h2 id="bargain-h">Make a wish</h2>
-      <p>Tell the dragon what you want. It will find the price you cannot see &mdash; it always does.</p>
-      <p class="fine">A toy bargain. The true rite lives in <a href="communion.html">Communion</a>.</p>
-      <form id="wish-form" class="wish-form" autocomplete="off">
-        <label for="wish-input">I wish for&hellip;</label>
-        <div class="wish-row">
-          <input id="wish-input" name="wish" type="text" maxlength="140" placeholder="&hellip;more wishes" required>
-          <button type="submit">Wish</button>
-        </div>
-      </form>
-      <output id="wish-output" class="wish-output" aria-live="polite"></output>
-    </section>
-  </div>
+<section class="hero">
+  <canvas class="hero-sigil" aria-hidden="true"></canvas>
+  <h1 class="hero-title">Ahamkara</h1>
+  <p class="hero-desc">An Ahamkara is a wish-dragon: a creature that fed on the gap between what is and what is desired, and paid for its meals in bargains. You wished; it granted; the price arrived later, folded into the wording you chose yourself. The City decided a thing like that could not be allowed to exist, and so the Guardians held a Great Hunt, and now there are none left.</p>
+  <figure class="featured">
+    <blockquote id="featured-quote"><p>&ldquo;{}&rdquo;</p></blockquote>
+    <figcaption>&mdash; <span id="featured-speaker">{}</span></figcaption>
+  </figure>
 </section>
 
-<section class="lead">
-  <p class="whisper-line">Ask the bones, o bearer mine. The bones disagree.</p>
+<section class="bargain-box" aria-labelledby="bargain-h">
+  <h2 id="bargain-h">Make a wish</h2>
+  <p>Tell the dragon what you want. It will find the price you cannot see &mdash; it always does.</p>
+  <p class="fine">A toy bargain. The true rite lives in <a href="communion.html">Communion</a>.</p>
+  <form id="wish-form" class="wish-form" autocomplete="off">
+    <label for="wish-input">I wish for&hellip;</label>
+    <div class="wish-row">
+      <input id="wish-input" name="wish" type="text" maxlength="140" placeholder="&hellip;more wishes" required>
+      <button type="submit">Wish</button>
+    </div>
+  </form>
+  <output id="wish-output" class="wish-output" aria-live="polite"></output>
 </section>
 
 {rule}
@@ -89,7 +74,6 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
 "##,
         esc(featured.0),
         esc(featured.1),
-        brief = AGENT_BRIEF,
         rule = rule("· · ·")
     );
 

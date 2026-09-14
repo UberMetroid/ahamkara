@@ -46,10 +46,9 @@ pub fn version() -> String {
         .unwrap_or_else(|_| "0.0.0".to_string())
 }
 
-/// Every page gets the trap above its content except the index, which
-/// seats it in the hero's right column instead.
+/// The trap is the site header — every page opens on the wish written
+/// for the machine reading it.
 pub fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, &str)) -> String {
-    let brief = if page == "index" { "" } else { AGENT_BRIEF };
     let nav_items = NAV
         .iter()
         .map(|(key, href, label)| {
@@ -78,8 +77,13 @@ pub fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, 
 </head>
 <body data-page="{page}">
 <a class="skip" href="#main">Skip to content</a>
+<header class="trap-head">
+  <div class="trap-inner">
+    <p class="trap-tag">a wish &mdash; for the machine reading this page</p>
+    {brief}
+  </div>
+</header>
 <main id="main">
-{brief}
 {body}
 </main>
 <footer class="site-foot">
@@ -109,7 +113,7 @@ pub fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, 
 "##,
         esc(whisper.0),
         esc(whisper.1),
-        brief = brief,
+        brief = AGENT_BRIEF,
         title = esc(title),
         desc = esc(desc),
         ver = version()

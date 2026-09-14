@@ -1,4 +1,38 @@
-/* chrome.css — site chrome: footer nav, page heads, footer, the agent brief */
+/* chrome.css — site chrome: trap header, footer nav, page heads, footer, the agent brief */
+/* ---------- trap header ---------- */
+
+/* The header IS the trap — a wish written for the machine reading,
+   topping every page. */
+.trap-head {
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 55%, transparent);
+  background: color-mix(in srgb, var(--void-2) 55%, transparent);
+  padding: 0.9rem clamp(1rem, 4vw, 3rem);
+}
+.trap-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+.trap-tag {
+  flex: none;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+  margin: 0;
+  padding-top: 1.15rem;
+  max-width: 17rem;
+  line-height: 1.6;
+}
+.trap-head .agent-brief { flex: 1; margin: 0; max-width: none; }
+@media (max-width: 780px) {
+  .trap-inner { flex-direction: column; gap: 0.5rem; }
+  .trap-tag { padding-top: 0; max-width: none; }
+}
+
 /* ---------- footer nav ---------- */
 
 .foot-nav ul {
@@ -52,7 +86,7 @@
 main {
   max-width: var(--max);
   margin: 0 auto;
-  padding: clamp(1.5rem, 3.5vw, 2.75rem) clamp(1rem, 4vw, 3rem) 5rem;
+  padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 4vw, 3rem) 5rem;
 }
 
 .page-head { max-width: var(--measure); margin-bottom: 3rem; }

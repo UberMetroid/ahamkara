@@ -1,51 +1,14 @@
 /* content.css — hero, rules, bargain widget, featured quote, tiles */
 /* ---------- hero ---------- */
 
-.hero { text-align: center; padding: clamp(1.5rem, 6vw, 4rem) 0 2rem; }
-
-/* Masthead: the address on the left, the wishing apparatus on the right.
-   Both columns start at the same top edge; a hairline separates the
-   masthead from the body of the page. */
-.hero.split {
-  display: grid;
-  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
-  gap: clamp(2rem, 5vw, 4rem);
-  align-items: stretch;
-  text-align: left;
-  padding-bottom: clamp(2rem, 4vw, 3rem);
-  margin-bottom: clamp(2.5rem, 5vw, 4rem);
-  border-bottom: 1px solid color-mix(in srgb, var(--line) 55%, transparent);
-}
-/* The top band: the address on the left, the trap (for the machine)
-   on the right — it occupies the space above the masthead. */
-.page-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 2rem;
-  margin-bottom: clamp(1.5rem, 4vw, 3rem);
-}
-.page-top .hero-addr { margin: 0; flex: none; padding-top: 0.35rem; }
-.trap-wrap { flex: 0 1 32rem; }
-.trap-tag {
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--accent-2);
-  margin: 0 0 0.45rem;
-  text-align: right;
-}
-.page-top .agent-brief { margin: 0; max-width: none; width: 100%; }
-
-.hero-left { min-width: 0; display: flex; flex-direction: column; position: relative; }
+.hero { text-align: left; padding: clamp(1.5rem, 5vw, 3.5rem) 0 2rem; position: relative; }
 
 /* A wish-plate sigil smoldering beside the title — the living
    wall leaking into the masthead. */
 .hero-sigil {
   position: absolute;
-  right: -1rem;
-  top: -3rem;
+  right: clamp(0rem, 6vw, 6rem);
+  top: -2rem;
   width: clamp(11rem, 22vw, 18rem);
   aspect-ratio: 1;
   height: auto;
@@ -54,36 +17,7 @@
   filter: drop-shadow(0 0 14px color-mix(in srgb, var(--accent) 55%, transparent));
 }
 
-.hero.split .hero-title { font-size: clamp(2.8rem, 7.5vw, 6rem); margin: 0 0 1.1rem; position: relative; }
-.hero-desc { max-width: var(--measure); margin: 0; color: var(--bone); position: relative; }
-
-/* The rotating whisper anchors the bottom of the left column — a
-   pull-quote that closes the masthead. */
-.hero-left .featured { margin: auto 0 0; text-align: left; }
-.hero-left .featured blockquote p { font-size: 1.2rem; line-height: 1.5; color: var(--accent); }
-.hero-left .featured figcaption { margin-top: 0.5rem; }
-
-/* The right column is one rail: the trap (for the machine) sits above
-   the bargain (for the bearer). Two wishes, one altar. */
-.hero-right { display: flex; flex-direction: column; gap: 1rem; }
-.hero-right .bargain-box { margin: 0; max-width: none; }
-
-@media (max-width: 780px) {
-  .page-top { flex-direction: column; gap: 1rem; }
-  .trap-wrap { flex: none; width: 100%; }
-  .trap-tag { text-align: left; }
-  .hero.split { grid-template-columns: 1fr; }
-  .hero-left .featured { margin-top: 1.5rem; }
-}
-
-.hero-title { filter: url(#warp); } /* reality breathes */
-.hero-addr {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
-  color: var(--accent);
-  margin: 1.25rem 0 0;
-}
+.hero-title { filter: url(#warp); position: relative; } /* reality breathes */
 .hero-title {
   font-family: var(--font-display);
   font-weight: 600;
@@ -91,17 +25,21 @@
   line-height: 0.95;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin: 0.25rem 0 1.25rem;
+  margin: 0 0 1.25rem;
   background: linear-gradient(115deg, var(--bone) 30%, var(--accent) 55%, var(--accent-2) 75%, var(--bone) 95%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
-.hero-sub { max-width: 46ch; margin: 0 auto; color: var(--bone-dim); }
+.hero-desc { max-width: var(--measure); margin: 0 0 1.75rem; color: var(--bone); position: relative; font-size: 1.08em; }
+.gone { text-align: center; }
 .gone .hero-title { background: none; color: var(--bone-dim); }
+.gone .hero-desc { margin-left: auto; margin-right: auto; }
 
-.lead { max-width: var(--measure); margin: 0; font-size: 1.08em; }
-.lead p { margin: 0 0 1rem; }
+/* The rotating whisper under the masthead — "o bearer mine." is one of them. */
+.hero .featured { max-width: var(--measure); margin: 0 0 0.5rem; text-align: left; }
+.hero .featured blockquote p { font-size: 1.25rem; line-height: 1.5; color: var(--accent); }
+.hero .featured figcaption { margin-top: 0.5rem; }
 
 .back { font-family: var(--font-mono); }
 
@@ -121,7 +59,7 @@
 
 .bargain-box {
   max-width: var(--measure);
-  margin: 0 auto;
+  margin: 0 0 1rem;
   border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line));
   border-radius: 12px;
   padding: clamp(1.25rem, 3vw, 2rem);

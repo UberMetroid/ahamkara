@@ -2,8 +2,7 @@
 /* ---------- the trip — chromatic aberration pulses ---------- */
 
 body.tripping .hero-title,
-body.tripping .page-head h1,
-body.tripping .hero-addr {
+body.tripping .page-head h1 {
   animation: rgb-split 0.75s ease-in-out infinite;
 }
 @keyframes rgb-split {
