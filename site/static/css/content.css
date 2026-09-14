@@ -1,7 +1,7 @@
 /* content.css — hero, rules, bargain widget, featured quote, tiles */
 /* ---------- hero ---------- */
 
-.hero { text-align: center; padding: clamp(1.5rem, 5vw, 3.5rem) 0 2rem; }
+.hero { text-align: center; padding: clamp(1rem, 3vw, 2rem) 0 2rem; }
 
 .hero-title { filter: url(#warp); position: relative; } /* reality breathes */
 .hero-title {

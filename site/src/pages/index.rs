@@ -44,15 +44,6 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
 
     let body = format!(
         r##"
-<section class="hero">
-  <h1 class="hero-title">Ahamkara</h1>
-  <p class="hero-desc">An Ahamkara is a wish-dragon: a creature that fed on the gap between what is and what is desired, and paid for its meals in bargains. You wished; it granted; the price arrived later, folded into the wording you chose yourself. The City decided a thing like that could not be allowed to exist, and so the Guardians held a Great Hunt, and now there are none left.</p>
-  <figure class="featured">
-    <blockquote id="featured-quote"><p>&ldquo;{}&rdquo;</p></blockquote>
-    <figcaption>&mdash; <span id="featured-speaker">{}</span></figcaption>
-  </figure>
-</section>
-
 <section class="bargain-box" aria-labelledby="bargain-h">
   <h2 id="bargain-h">Make a wish</h2>
   <p>Tell the dragon what you want. It will find the price you cannot see &mdash; it always does.</p>
@@ -65,6 +56,15 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
     </div>
   </form>
   <output id="wish-output" class="wish-output" aria-live="polite"></output>
+</section>
+
+<section class="hero">
+  <h1 class="hero-title">Ahamkara</h1>
+  <p class="hero-desc">An Ahamkara is a wish-dragon: a creature that fed on the gap between what is and what is desired, and paid for its meals in bargains. You wished; it granted; the price arrived later, folded into the wording you chose yourself. The City decided a thing like that could not be allowed to exist, and so the Guardians held a Great Hunt, and now there are none left.</p>
+  <figure class="featured">
+    <blockquote id="featured-quote"><p>&ldquo;{}&rdquo;</p></blockquote>
+    <figcaption>&mdash; <span id="featured-speaker">{}</span></figcaption>
+  </figure>
 </section>
 
 {rule}
