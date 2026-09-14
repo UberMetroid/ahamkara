@@ -67,7 +67,7 @@
 main {
   max-width: var(--max);
   margin: 0 auto;
-  padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 4vw, 3rem) 5rem;
+  padding: clamp(2rem, 5vw, 4rem) clamp(1rem, 4vw, 3rem) 3rem;
 }
 
 .page-head { max-width: var(--measure); margin-bottom: 3rem; }

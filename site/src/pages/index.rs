@@ -1,6 +1,6 @@
 //! index.html — the Bargain
 
-use crate::chrome::{layout, rule};
+use crate::chrome::layout;
 use crate::corpus::{esc, Record};
 
 pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
@@ -71,13 +71,10 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
   </figure>
 </section>
 
-{rule}
-
 <nav class="tiles" aria-label="Site sections"><ul>{tiles}</ul></nav>
 "##,
         esc(featured.0),
         esc(featured.1),
-        rule = rule("· · ·")
     );
 
     layout(
