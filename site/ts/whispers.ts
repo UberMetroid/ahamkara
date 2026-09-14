@@ -39,8 +39,11 @@ export function initWhispers(): void {
     }, 5000 + Math.random() * 4000);
   };
 
-  window.setInterval(spawn, 9000 + Math.random() * 6000);
-  window.setTimeout(spawn, 2500);
+  const scheduleSpawn = (): void => {
+    spawn();
+    window.setTimeout(scheduleSpawn, 9000 + Math.random() * 6000);
+  };
+  window.setTimeout(scheduleSpawn, 2500);
 }
 
 /* ------------------------------------------------------------------ */

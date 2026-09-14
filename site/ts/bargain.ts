@@ -3,7 +3,8 @@
  */
 
 import { pick } from "./env.js";
-import { fxBurst, fxRing, grantFlash } from "./fx.js";
+import { fxBurst, fxRing } from "./fx.js";
+import { grantFlash } from "./flash.js";
 
 export function initBargain(): void {
   const form = document.getElementById("wish-form") as HTMLFormElement | null;

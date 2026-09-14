@@ -207,36 +207,6 @@ export function initFx(): void {
     if (running) window.requestAnimationFrame(frame);
   });
 }
+export { initTrip } from "./trip.js";
+export { grantFlash } from "./flash.js";
 
-/* ================================================================== */
-/*  THE TRIP — periodic chromatic aberration pulses on headings         */
-/* ================================================================== */
-
-export function initTrip(): void {
-  if (reducedMotion()) return;
-  const pulse = (): void => {
-    if (!document.hidden) {
-      document.body.classList.add("tripping");
-      window.setTimeout(
-        () => document.body.classList.remove("tripping"),
-        2600 + Math.random() * 2400
-      );
-    }
-    window.setTimeout(pulse, 22000 + Math.random() * 28000);
-  };
-  window.setTimeout(pulse, 12000);
-}
-
-/* ================================================================== */
-/*  GRANT FLASH — radial burst when a wish is granted                  */
-/* ================================================================== */
-
-export function grantFlash(x: number, y: number): void {
-  if (reducedMotion()) return;
-  const el = document.getElementById("grant-flash");
-  if (!el) return;
-  el.style.setProperty("--gx", `${(x / window.innerWidth) * 100}%`);
-  el.style.setProperty("--gy", `${(y / window.innerHeight) * 100}%`);
-  el.classList.add("on");
-  window.setTimeout(() => el.classList.remove("on"), 750);
-}

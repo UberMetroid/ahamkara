@@ -3,7 +3,8 @@
  * the site reads fully without it.
  */
 
-import { initFx, initTrip } from "./fx.js";
+import { initFx } from "./fx.js";
+import { initTrip } from "./trip.js";
 import { initSigils } from "./sigils.js";
 import { initFeatured, initWhispers } from "./whispers.js";
 import { initFilters } from "./archive.js";

@@ -50,11 +50,15 @@ export function initFilters(): void {
   });
 
   // Deep links: open the <details> that matches the URL fragment.
-  if (location.hash.length > 1) {
-    const target = document.getElementById(location.hash.slice(1));
-    if (target?.tagName === "DETAILS") {
-      (target as HTMLDetailsElement).open = true;
-      target.scrollIntoView({ block: "start" });
+  const openHash = (): void => {
+    if (location.hash.length > 1) {
+      const target = document.getElementById(location.hash.slice(1));
+      if (target?.tagName === "DETAILS") {
+        (target as HTMLDetailsElement).open = true;
+        target.scrollIntoView({ block: "start" });
+      }
     }
-  }
+  };
+  openHash();
+  window.addEventListener("hashchange", openHash);
 }

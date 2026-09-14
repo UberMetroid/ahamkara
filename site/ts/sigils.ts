@@ -34,7 +34,7 @@ const PRIMS: Prim[] = [
 function accentProbe(): () => string[] {
   let accents = ["rgb(143,227,208)", "rgb(199,125,255)"];
   const probe = document.createElement("span");
-  probe.style.cssText = "position:absolute;visibility:hidden";
+  probe.style.cssText = "position:absolute;visibility:hidden;pointer-events:none";
   document.body.appendChild(probe);
   const sample = (): void => {
     const a: string[] = [];
@@ -46,7 +46,7 @@ function accentProbe(): () => string[] {
     if (a.length === 2) accents = a;
   };
   sample();
-  window.setInterval(sample, 1200);
+  window.setInterval(sample, 2500);
   return () => accents;
 }
 

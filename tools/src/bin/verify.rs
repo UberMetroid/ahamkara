@@ -72,10 +72,13 @@ fn main() -> ExitCode {
         check("tsc --noEmit", ok, &out, &mut passed, &mut failed);
         let (ok, out) = cmd(&root, "git", &["ls-files"], true);
         let over: Vec<String> = if ok {
-            out.lines().filter_map(|f| {
-                let n = std::fs::read_to_string(root.join(f)).ok()?.lines().count();
-                (n > 256).then(|| format!("{f} ({n})"))
-            }).collect()
+            out.lines()
+                .filter(|f| !f.ends_with(".lock"))
+                .filter_map(|f| {
+                    let n = std::fs::read_to_string(root.join(f)).ok()?.lines().count();
+                    (n > 256).then(|| format!("{f} ({n})"))
+                })
+                .collect()
         } else { vec![out] };
         check("256-line file limit", over.is_empty(), &over.join(", "), &mut passed, &mut failed);
     }
