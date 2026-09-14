@@ -10,6 +10,7 @@ import { initFeatured, initWhispers } from "./whispers.js";
 import { initFilters } from "./archive.js";
 import { initCopy } from "./copy.js";
 import { initBargain } from "./bargain.js";
+import { initWyrm } from "./wyrm.js";
 
 initFx();
 initTrip();
@@ -19,3 +20,4 @@ initFeatured();
 initFilters();
 initCopy();
 initBargain();
+initWyrm();

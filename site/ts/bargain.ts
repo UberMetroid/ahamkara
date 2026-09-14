@@ -5,6 +5,7 @@
 import { pick } from "./env.js";
 import { fxBurst, fxRing } from "./fx.js";
 import { grantFlash } from "./flash.js";
+import { feedWyrm } from "./wyrm.js";
 
 export function initBargain(): void {
   const form = document.getElementById("wish-form") as HTMLFormElement | null;
@@ -33,6 +34,10 @@ export function initBargain(): void {
     fxBurst(r.left + r.width / 2, r.top + r.height / 2, 44); // the wish detonates
     fxRing(r.left + r.width / 2, r.top + r.height / 2);
     grantFlash(r.left + r.width / 2, r.top + r.height / 2);
+    feedWyrm();
+    window.dispatchEvent(
+      new CustomEvent("ahamkara:wish", { detail: { wish: cleaned } })
+    );
     input.value = "";
     if (window.innerWidth > 720) input.focus();
   });
