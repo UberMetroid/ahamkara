@@ -71,43 +71,6 @@ body.tripping .page-head h1 {
 }
 .grant-flash.on { opacity: 1; }
 
-/* ---------- ahamkara wish-dragon wyrm overlay ---------- */
-
-#wyrm-canvas {
-  position: fixed;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  z-index: 77;
-  image-rendering: pixelated;
-  image-rendering: crisp-edges;
-}
-
-.wyrm-hitbox {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 44px;
-  height: 44px;
-  margin-left: -22px;
-  margin-top: -22px;
-  padding: 0;
-  border: none;
-  background: transparent;
-  pointer-events: auto;
-  cursor: pointer;
-  opacity: 0;
-  z-index: 77;
-  touch-action: manipulation;
-}
-
-.wyrm-hitbox:focus-visible {
-  opacity: 0.65;
-  outline: 2px dashed var(--accent);
-  outline-offset: 4px;
-  border-radius: 50%;
-}
 
 
 /* ---------- ambient whispers (JS enhancement) ---------- */
