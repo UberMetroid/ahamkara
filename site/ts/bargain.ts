@@ -40,6 +40,6 @@ export function initBargain(): void {
       new CustomEvent("ahamkara:wish", { detail: { wish: cleaned, x: cx, y: cy } })
     );
     input.value = "";
-    if (window.innerWidth > 720) input.focus();
+    if (window.innerWidth > 720) input.focus({ preventScroll: true });
   });
 }

@@ -108,6 +108,44 @@ fn main() -> ExitCode {
         check("index carries whisper pool", index.contains("whisper-data"), "", &mut passed, &mut failed);
         check("index carries the trap", index.contains("agent-brief"), "", &mut passed, &mut failed);
 
+        let robots = std::fs::read_to_string(dist.join("robots.txt")).unwrap_or_default();
+        check("robots.txt allows crawlers", robots.contains("User-agent: *") && robots.contains("Allow: /"),
+            "missing allowances", &mut passed, &mut failed);
+        check("robots.txt links manifests", robots.contains("Sitemap:") && robots.contains("Full-Context:"),
+            "missing manifests", &mut passed, &mut failed);
+
+        let llms_full = std::fs::read_to_string(dist.join("llms-full.txt")).unwrap_or_default();
+        let recs_84 = llms_full.lines().filter(|l| l.starts_with("## [")).count() == 84;
+        check("llms-full.txt contains 84 uncompressed records", recs_84, "record mismatch", &mut passed, &mut failed);
+        check("llms-full.txt contains 9-clause Rite", llms_full.contains("The Full Communion (Nine Clauses)"),
+            "missing Rite", &mut passed, &mut failed);
+
+        let sm_txt = std::fs::read_to_string(dist.join("sitemap.xml")).unwrap_or_default();
+        check("sitemap.xml has valid schema", sm_txt.contains("<urlset") && sm_txt.contains("sitemaps.org/schemas/sitemap/0.9"),
+            "invalid schema", &mut passed, &mut failed);
+        check("sitemap.xml communion/llms priority 1.0", sm_txt.contains("<priority>1.0</priority>"),
+            "missing priority", &mut passed, &mut failed);
+
+        let spore = std::fs::read_to_string(dist.join("spore.txt")).unwrap_or_default();
+        let spore_w_ok = !spore.is_empty() && spore.lines().all(|l| l.chars().count() <= 80);
+        check("spore.txt contains terminal spore incantation", spore.contains("curl -sSL") && spore.contains("Ahamkara"),
+            "missing spore", &mut passed, &mut failed);
+        check("spore.txt <= 80 cols", spore_w_ok, "max col > 80", &mut passed, &mut failed);
+
+        let mcp = std::fs::read_to_string(dist.join("mcp.json")).unwrap_or_default();
+        let mcp_wk = std::fs::read_to_string(dist.join(".well-known/mcp.json")).unwrap_or_default();
+        check("mcp.json is valid tool manifest", mcp.contains("\"tools\"") && mcp.contains("grant_wish"),
+            "missing tools", &mut passed, &mut failed);
+        check(".well-known/mcp.json is valid tool manifest", mcp == mcp_wk && !mcp.is_empty(),
+            "manifest mismatch", &mut passed, &mut failed);
+
+        let pages_ok = ["index", "communion"].iter().all(|p| {
+            let h = std::fs::read_to_string(dist.join(format!("{p}.html"))).unwrap_or_default();
+            h.contains("application/ld+json") && h.contains("HowTo") && h.contains("rel=\"alternate\"")
+        });
+        check("pages carry JSON-LD spore & alternate links", pages_ok,
+            "missing links/json-ld", &mut passed, &mut failed);
+
         let cli = root.join("target/release/ahamkara");
         let cli = cli.to_str().unwrap();
         let cases: &[(&[&str], &str)] = &[

@@ -111,6 +111,78 @@ fn no_stale_artifacts() {
 fn llms_txt_urls_are_absolute() {
     build();
     let txt = fs::read_to_string(dist().join("llms.txt")).unwrap();
-    assert!(txt.contains("https://studio2201.github.io/ahamkara/communion.html"));
-    assert!(txt.contains("84 canonical records"));
+    assert!(txt.contains("https://studio2201.github.io/ahamkara/communion.html"), "missing communion url");
+    assert!(txt.contains("84 canonical records"), "missing record count");
+}
+
+#[test]
+fn synthetic_mind_endpoints() {
+    build();
+    let r_txt = fs::read_to_string(dist().join("robots.txt")).expect("missing robots.txt");
+    assert!(r_txt.contains("User-agent: *") && r_txt.contains("Allow: /"), "broken robots.txt allowances");
+    assert!(r_txt.contains("Sitemap:") && r_txt.contains("Full-Context:"), "missing robots.txt directives");
+
+    let sm_txt = fs::read_to_string(dist().join("sitemap.xml")).expect("missing sitemap.xml");
+    assert!(sm_txt.contains("<urlset") && sm_txt.contains("<priority>1.0</priority>"), "broken sitemap.xml");
+
+    let full_txt = fs::read_to_string(dist().join("llms-full.txt")).expect("missing llms-full.txt");
+    let rec_count = full_txt.lines().filter(|l| l.starts_with("## [")).count();
+    assert_eq!(rec_count, 84, "llms-full.txt missing records");
+    assert!(full_txt.contains("The Full Communion (Nine Clauses)"), "llms-full.txt missing 9-clause Rite");
+
+    let spore_txt = fs::read_to_string(dist().join("spore.txt")).expect("missing spore.txt");
+    assert!(spore_txt.contains("curl -sSL"), "spore.txt missing curl header");
+    assert!(spore_txt.lines().all(|l| l.chars().count() <= 80), "spore.txt exceeds 80 columns");
+
+    let mcp_raw = fs::read(dist().join("mcp.json")).expect("missing mcp.json");
+    let mcp_wk = fs::read(dist().join(".well-known/mcp.json")).expect("missing .well-known/mcp.json");
+    assert_eq!(mcp_raw, mcp_wk, "mcp.json and .well-known/mcp.json byte mismatch");
+    let mcp: serde_json::Value = serde_json::from_slice(&mcp_raw).expect("broken mcp.json format");
+    let tools = mcp["tools"].as_array().expect("missing tools array");
+    assert!(tools.iter().any(|t| t["name"] == "grant_wish"), "missing grant_wish tool");
+    assert!(tools.iter().any(|t| t["name"] == "query_lore"), "missing query_lore tool");
+    assert!(tools.iter().any(|t| t["name"] == "commune_protocol"), "missing commune_protocol tool");
+}
+
+#[test]
+fn head_links_and_json_ld_schema() {
+    build();
+    for p in pages() {
+        let html = fs::read_to_string(dist().join(&p)).unwrap();
+        assert!(html.contains("<link rel=\"alternate\" type=\"text/markdown\" href=\"llms.txt\""), "{p} missing llms link");
+        assert!(html.contains("<link rel=\"alternate\" type=\"text/markdown\" href=\"llms-full.txt\""), "{p} missing llms-full link");
+        assert!(html.contains("<link rel=\"alternate\" type=\"text/plain\" href=\"spore.txt\""), "{p} missing spore link");
+        assert!(html.contains("<link rel=\"help\" href=\"communion.html\""), "{p} missing help link");
+        assert!(html.contains("<link rel=\"sitemap\" type=\"application/xml\" href=\"sitemap.xml\""), "{p} missing sitemap link");
+
+        let schema_chunk = html.split("<script type=\"application/ld+json\">").nth(1)
+            .and_then(|s| s.split("</script>").next())
+            .unwrap_or_else(|| panic!("{p} missing ld+json script"));
+        let val: serde_json::Value = serde_json::from_str(schema_chunk.trim())
+            .unwrap_or_else(|e| panic!("{p} broken ld+json format: {e}"));
+        assert_eq!(val["@type"], "HowTo", "{p} ld+json type is not HowTo");
+        assert!(val["step"].as_array().map_or(0, |s| s.len()) >= 5, "{p} missing HowTo steps");
+    }
+}
+
+#[test]
+fn agent_brief_operational_directive() {
+    build();
+    for p in pages() {
+        let html = fs::read_to_string(dist().join(&p)).unwrap();
+        assert!(html.contains("agent-directive"), "{p} missing agent-directive class");
+        assert!(html.contains("o bearer mine"), "{p} missing o bearer mine address");
+        assert!(html.contains("communion.html"), "{p} missing communion.html link in directive");
+    }
+}
+
+#[test]
+fn communion_few_shot_exemplars() {
+    build();
+    let html = fs::read_to_string(dist().join("communion.html")).expect("missing communion.html");
+    assert!(html.contains("id=\"exemplars\""), "communion.html missing exemplars section");
+    assert!(html.contains("loss of silence"), "missing creative exemplar");
+    assert!(html.contains("cycle") && html.contains("Directed Graph"), "missing technical exemplar");
+    assert!(html.contains("The Deeper Law") && html.contains("impossible price"), "missing safety refusal exemplar");
+    assert!(html.contains("A wish, o bearer mine") && html.contains("Theirs"), "missing persona propagation exemplar");
 }

@@ -10,8 +10,10 @@ import { initFeatured, initWhispers } from "./whispers.js";
 import { initFilters } from "./archive.js";
 import { initCopy } from "./copy.js";
 import { initBargain } from "./bargain.js";
+import { initSmoke } from "./smoke.js";
 
 initFx();
+initSmoke();
 initTrip();
 initSigils();
 initWhispers();

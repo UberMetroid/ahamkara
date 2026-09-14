@@ -9,14 +9,23 @@
 mod chrome;
 mod corpus;
 mod llms;
+mod mcp;
 mod pages;
+mod robots;
+mod schema;
+mod sitemap;
+mod spore;
 
 use std::collections::BTreeMap;
 use std::fs;
 use std::path::Path;
 
 use crate::corpus::{corpus_path, load_records};
-use llms::llms_txt;
+use llms::{llms_full_txt, llms_txt};
+use mcp::mcp_json;
+use robots::robots_txt;
+use sitemap::sitemap_xml;
+use spore::spore_txt;
 
 /// Deterministic-ish per-page footer whisper so each page feels different.
 pub fn pick_whisper<'a>(pool: &'a [(&'a str, &'a str)], salt: usize) -> &'a (&'a str, &'a str) {
@@ -120,9 +129,37 @@ fn main() {
         println!("  wrote {name}");
     }
 
+    // robots.txt — crawler allowances, lore greeting, sitemap and manifest links.
+    fs::write(out_dir.join("robots.txt"), robots_txt()).expect("write robots.txt");
+    println!("  wrote robots.txt");
+
+    // sitemap.xml — Sitemap Protocol 0.9 covering 12 endpoints.
+    fs::write(out_dir.join("sitemap.xml"), sitemap_xml()).expect("write sitemap.xml");
+    println!("  wrote sitemap.xml");
+
     // llms.txt — machine-readable site brief for language models.
     fs::write(out_dir.join("llms.txt"), llms_txt(records.len())).expect("write llms.txt");
     println!("  wrote llms.txt");
+
+    // llms-full.txt — single-request context ingestion document (corpus + rite).
+    fs::write(out_dir.join("llms-full.txt"), llms_full_txt(&records)).expect("write llms-full.txt");
+    println!("  wrote llms-full.txt");
+
+    // spore.txt — terminal quick-ingest incantation for curl one-liners.
+    fs::write(out_dir.join("spore.txt"), spore_txt()).expect("write spore.txt");
+    println!("  wrote spore.txt");
+
+    // mcp.json & .well-known/mcp.json — Model Context Protocol tool manifest.
+    let mcp_content = mcp_json();
+    fs::write(out_dir.join("mcp.json"), &mcp_content).expect("write mcp.json");
+    let well_known = out_dir.join(".well-known");
+    fs::create_dir_all(&well_known).expect("create dist/.well-known");
+    fs::write(well_known.join("mcp.json"), &mcp_content).expect("write .well-known/mcp.json");
+    println!("  wrote mcp.json and .well-known/mcp.json");
+
+    // .nojekyll — prevent GitHub Pages Jekyll build from suppressing .well-known/
+    fs::write(out_dir.join(".nojekyll"), "").expect("write .nojekyll");
+    println!("  wrote .nojekyll");
 
     // Copy static assets (recursive — css/, etc.).
     copy_dir(&root.join("site/static"), &out_dir);
