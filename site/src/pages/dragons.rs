@@ -18,8 +18,8 @@ const PROFILES: &[Profile] = &[
     },
     Profile {
         name: "Taranis",
-        epithet: "the Scatter",
-        blurb: "An elder dragon who made his own ending into a bargain. Taranis scattered himself across his gifts so that no single death could be final — a self divided, a persistence purchased. The Gifts and Bargains lore book is his voice, and the bow Wish-Keeper is carved from his memory.",
+        epithet: "the gentle mate · keeper of the clutch",
+        blurb: "Mate to Riven and keeper of the uncorrupted clutch in the Black Garden. Unlike his kin, Taranis granted wishes out of genuine care without extracting cruel tolls. When the clutch was endangered, he made the ultimate sacrifice: an Ahamkara cannot wish upon themselves without dying, yet he wished upon himself to scatter and shield their eggs across the stars. The exotic bow Wish-Keeper was carved from his marrow.",
     },
     Profile {
         name: "Hefnd",
@@ -28,23 +28,23 @@ const PROFILES: &[Profile] = &[
     },
     Profile {
         name: "Azirim",
-        epithet: "the tempter of the early City",
-        blurb: "In the first age of the City, Azirim walked the wilds beyond the walls offering bargains to the desperate. The Marasenna remembers him; the Dreaming City planted him a tree in the Gardens of Esila, which is either honor or containment.",
+        epithet: "the song of Esila · tempter of the Reef",
+        blurb: "In the early days of the Reef, Azirim preyed upon the Awoken with honeyed song and false fellowship. The Marasenna records how he lured twenty Awoken dancers into an ecstatic trance over the sheer precipice of the Gardens of Esila, feasting upon their falling terror. A cursed tree in Esila marks his treacherous legacy.",
     },
     Profile {
         name: "Huginn",
-        epithet: "thought, in service to the Witch Queen",
-        blurb: "One of two dragons bound to Savathûn's designs — named, like his sister, for the ravens of an older myth. He appears in the records of Oathkeeper and Lethophobia, where memory is a thing that can be owned.",
+        epithet: "thought · companion of Sjur Eido",
+        blurb: "One of twin Ahamkara kept by Queen's Wrath Sjur Eido in the Reef. Sjur herself slew Huginn during the Great Hunt to honor the Vanguard decree, enshrining his skull in Harbinger's Seclude. In death, Huginn's skull continues to bargain, trading Queensfoil tinctures to any Lightbearer seeking to pierce the Ascendant veil.",
     },
     Profile {
         name: "Muninn",
-        epithet: "memory, in service to the Witch Queen",
-        blurb: "The second of Savathûn's pair. Where Huginn is thought, Muninn is memory — the keeping of things that should have been let go. Her records are the same two texts, which is its own kind of omen.",
+        epithet: "memory · companion of Sjur Eido",
+        blurb: "Brother to Huginn and companion to Sjur Eido, recognized by his curling tusks in Lethophobia. Slayed alongside his brother in the Great Hunt, Muninn's horned skull rests beside Huginn deep in Harbinger's Seclude, bartering Charges of Light for the Blind Well.",
     },
     Profile {
         name: "Eao",
         epithet: "the defier",
-        blurb: "'Defy extinction.' That is the whole of Eao's surviving testament, set into a pair of Hunter gauntlets and proved correct: the Bones of Eao still whisper, and his nest still waits at Harbinger's Seclude.",
+        blurb: "'Defy extinction.' That is the whole of Eao's surviving testament, set into a pair of exotic Hunter boots and proved correct: the Bones of Eao still whisper across time, urging Hunters to leap beyond the sky, while his aerie still echoes at Harbinger's Seclude.",
     },
     Profile {
         name: "Harmony Wish-Dragons",

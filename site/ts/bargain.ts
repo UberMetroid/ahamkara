@@ -34,6 +34,6 @@ export function initBargain(): void {
     fxRing(r.left + r.width / 2, r.top + r.height / 2);
     grantFlash(r.left + r.width / 2, r.top + r.height / 2);
     input.value = "";
-    input.focus();
+    if (window.innerWidth > 720) input.focus();
   });
 }

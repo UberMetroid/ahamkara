@@ -55,8 +55,8 @@ pub fn page_lore(records: &[Record], whispers: &[(&str, &str)]) -> String {
             r.title,
             speaker_txt,
             r.entity.join(" "),
-            r.transcript,
-            r.tags.join(" ")
+            r.tags.join(" "),
+            r.theme
         )
         .to_lowercase());
         entries.push_str(&format!(
@@ -105,13 +105,13 @@ pub fn page_lore(records: &[Record], whispers: &[(&str, &str)]) -> String {
     <div><label for="f-era">Era</label><select id="f-era"><option value="">all eras</option>{}</select></div>
     <div><label for="f-kind">Source</label><select id="f-kind"><option value="">all sources</option>{}</select></div>
   </div>
-  <p class="f-count"><span id="f-count">{n}</span> records <button type="button" id="f-clear" class="linklike" hidden>clear filters</button></p>
+  <p class="f-count"><span id="f-count" role="status" aria-live="polite">{n}</span> records <button type="button" id="f-clear" class="linklike" hidden>clear filters</button></p>
 </form>
 
-<section class="entries" id="entries" aria-live="polite">
+<section class="entries" id="entries">
 {entries}
 </section>
-<p id="f-empty" class="f-empty" hidden>No records match. The dragon suggests wishing for something else.</p>
+<p id="f-empty" class="f-empty" role="status" aria-live="polite" hidden>No records match. The dragon suggests wishing for something else.</p>
 "##,
         opts(&entities),
         opts(&eras),

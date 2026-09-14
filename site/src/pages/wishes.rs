@@ -18,8 +18,8 @@ const WISH_EFFECTS: &[(&str, &str)] = &[
     ("wish-wall-ninth-wish", "Failsafe narrates your progress"),
     ("wish-wall-tenth-wish", "the Drifter narrates your progress"),
     ("wish-wall-eleventh-wish", "precision kills detonate the target"),
-    ("wish-wall-twelfth-wish", "opens a hidden passage — the fine print is still argued over"),
-    ("wish-wall-thirteenth-wish", "begins Petra's Run — the flawless, timed challenge"),
+    ("wish-wall-twelfth-wish", "adds cosmetic butterfly and flower crowns to fireteam members"),
+    ("wish-wall-thirteenth-wish", "activates Petra's Run — deathless raid run (any death wipes to orbit)"),
     ("wish-wall-fourteenth-wish", "scatters Corrupted Eggs through the raid"),
     ("wish-wall-fifteenth-wish", "undecoded for years — the community's white whale"),
 ];
@@ -60,9 +60,9 @@ pub fn page_wishes(records: &[Record], whispers: &[(&str, &str)]) -> String {
 <header class="page-head">
   <p class="kicker">coded desire</p>
   <h1>The Wall of Wishes</h1>
-  <p class="lede">In the Last Wish raid there is a wall of sixteen plates, and a pattern of them is a sentence, and a sentence is a wish. Fifteen were found. The dragons count differently than we do.</p>
+  <p class="lede">In the Last Wish raid there is a wall of twenty plates arranged in a 4&times;5 grid, cycling through sixteen distinct glyphs. A specific arrangement of plates forms a sentence, and a sentence is a wish. Fifteen wishes were recorded. The dragons count differently than we do.</p>
   <p class="fine">Effects below are documented by player scholars as in-raid mechanics. The corpus preserves the wishes; the wall keeps the syntax.</p>
-  <canvas class="wish-wall" role="img" aria-label="The Wall of Wishes: sixteen coded plates, drawn live. Clicking a plate makes the dragon notice."></canvas>
+  <canvas class="wish-wall" role="region" tabindex="0" aria-label="The Wall of Wishes: sixteen interactive plates. Activate plates with touch or Enter/Space."></canvas>
 </header>
 <ol class="wishlist">{items}</ol>
 "##

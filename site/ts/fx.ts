@@ -50,6 +50,15 @@ export function initFx(): void {
   resize();
   window.addEventListener("resize", resize);
 
+  let running = true;
+  let animating = false;
+  const wake = (): void => {
+    if (!animating && running) {
+      animating = true;
+      window.requestAnimationFrame(frame);
+    }
+  };
+
   const burst = (x: number, y: number, n = 30): void => {
     for (let i = 0; i < n; i++) {
       if (particles.length >= MAXP) particles.shift();
@@ -65,10 +74,12 @@ export function initFx(): void {
         c: pick(PALETTE),
       });
     }
+    wake();
   };
   const ring = (x: number, y: number): void => {
     if (rings.length >= MAXR) rings.shift();
     rings.push({ x, y, r: 5, life: 0, max: 50 + Math.random() * 24 });
+    wake();
   };
   fxBurst = burst;
   fxRing = ring;
@@ -99,6 +110,7 @@ export function initFx(): void {
         size: 1.2 + Math.random() * 1.8,
         c: pick(PALETTE),
       });
+      wake();
     },
     { passive: true }
   );
@@ -129,15 +141,23 @@ export function initFx(): void {
         y += 18 + Math.random() * 34;
       }
       tears.push({ pts, life: 0, max: 60 + Math.random() * 40 });
+      wake();
     }
     window.setTimeout(tear, 15000 + Math.random() * 20000);
   };
   window.setTimeout(tear, 10000);
 
-  /* Render loop — parks itself while the tab is hidden. */
-  let running = true;
+  /* Render loop — parks itself when idle or while tab is hidden. */
   const frame = (): void => {
-    if (!running) return;
+    if (!running) {
+      animating = false;
+      return;
+    }
+    if (particles.length === 0 && rings.length === 0 && tears.length === 0) {
+      ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
+      animating = false;
+      return;
+    }
     ctx.clearRect(0, 0, window.innerWidth, window.innerHeight);
     for (let i = particles.length - 1; i >= 0; i--) {
       const p = particles[i];
@@ -201,10 +221,11 @@ export function initFx(): void {
     ctx.globalAlpha = 1;
     window.requestAnimationFrame(frame);
   };
-  window.requestAnimationFrame(frame);
   document.addEventListener("visibilitychange", () => {
     running = !document.hidden;
-    if (running) window.requestAnimationFrame(frame);
+    if (running && (particles.length > 0 || rings.length > 0 || tears.length > 0)) {
+      wake();
+    }
   });
 }
 export { initTrip } from "./trip.js";

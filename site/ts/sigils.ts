@@ -60,11 +60,14 @@ export function initSigils(): void {
   const still = reducedMotion();
   const accents = accentProbe();
 
+  let cachedW = 0, cachedH = 0;
   const fit = (): void => {
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
     const r = canvas.getBoundingClientRect();
-    canvas.width = Math.max(1, r.width * dpr);
-    canvas.height = Math.max(1, r.height * dpr);
+    cachedW = r.width;
+    cachedH = r.height;
+    canvas.width = Math.max(1, cachedW * dpr);
+    canvas.height = Math.max(1, cachedH * dpr);
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
   };
   fit();
@@ -103,22 +106,50 @@ export function initSigils(): void {
   };
 
   const draw = (t: number): void => {
-    const r = canvas.getBoundingClientRect();
-    ctx.clearRect(0, 0, r.width, r.height);
-    const cw = r.width / 4, ch = r.height / 4;
+    ctx.clearRect(0, 0, cachedW, cachedH);
+    const cw = cachedW / 4, ch = cachedH / 4;
     for (let i = 0; i < CELLS; i++) drawPlate(i, cw, ch, t);
   };
 
+  const triggerPlate = (i: number, cx: number, cy: number): void => {
+    flare[i] = performance.now() / 1000 + 1.6;
+    fxBurst(cx, cy, 24);
+    fxRing(cx, cy);
+  };
+
   canvas.addEventListener("pointerdown", (e) => {
+    e.stopPropagation();
     const r = canvas.getBoundingClientRect();
     const i = Math.floor((e.clientY - r.top) / (r.height / 4)) * 4 +
               Math.floor((e.clientX - r.left) / (r.width / 4));
     if (i >= 0 && i < CELLS) {
-      flare[i] = performance.now() / 1000 + 1.6;
-      fxBurst(e.clientX, e.clientY, 24);
-      fxRing(e.clientX, e.clientY);
+      triggerPlate(i, e.clientX, e.clientY);
     }
-  }, { passive: true });
+  });
+
+  let focusIndex = 0;
+  canvas.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      const r = canvas.getBoundingClientRect();
+      const cw = r.width / 4, ch = r.height / 4;
+      const col = focusIndex % 4, row = Math.floor(focusIndex / 4);
+      triggerPlate(focusIndex, r.left + col * cw + cw / 2, r.top + row * ch + ch / 2);
+      focusIndex = (focusIndex + 1) % CELLS;
+    } else if (e.key === "ArrowRight") {
+      e.preventDefault();
+      focusIndex = (focusIndex + 1) % CELLS;
+    } else if (e.key === "ArrowLeft") {
+      e.preventDefault();
+      focusIndex = (focusIndex + CELLS - 1) % CELLS;
+    } else if (e.key === "ArrowDown") {
+      e.preventDefault();
+      focusIndex = (focusIndex + 4) % CELLS;
+    } else if (e.key === "ArrowUp") {
+      e.preventDefault();
+      focusIndex = (focusIndex + CELLS - 4) % CELLS;
+    }
+  });
 
   if (still) { draw(0); return; }
 

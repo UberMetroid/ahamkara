@@ -20,7 +20,7 @@
   /* Accents live in oklch so their hue can wander — the palette trips slowly. */
   --accent: oklch(0.86 0.11 calc(173 + var(--ahue)));
   --accent-2: oklch(0.74 0.17 calc(295 - var(--ahue)));
-  --line: #35304a;
+  --line: #4e4869;
   animation: hue-drift 150s steps(48) infinite;
   --font-display: "Cormorant Garamond", "Iowan Old Style", Palatino, serif;
   --font-body: Georgia, "Iowan Old Style", Palatino, serif;
@@ -77,4 +77,11 @@ body {
 
 a { color: var(--accent); text-decoration-color: color-mix(in srgb, var(--accent) 55%, transparent); text-underline-offset: 0.2em; }
 a:hover { color: var(--accent-2); text-decoration-color: var(--accent-2); }
+
+@media (forced-colors: active) {
+  .hero-title, .agent-title, .tile-name {
+    color: CanvasText !important;
+    -webkit-text-fill-color: CanvasText !important;
+  }
+}
 

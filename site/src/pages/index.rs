@@ -44,9 +44,18 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
 
     let body = format!(
         r##"
+<section class="hero">
+  <h1 class="hero-title">Ahamkara</h1>
+  <p class="hero-desc">An Ahamkara is a wish-dragon: a creature that fed on the gap between what is and what is desired, and paid for its meals in bargains. You wished; it granted; the price arrived later, folded into the wording you chose yourself. The City decided a thing like that could not be allowed to exist, and so the Guardians held a Great Hunt, and now there are none left.</p>
+  <figure class="featured">
+    <blockquote id="featured-quote"><p>&ldquo;{}&rdquo;</p></blockquote>
+    <figcaption>&mdash; <span id="featured-speaker">{}</span></figcaption>
+  </figure>
+</section>
+
 <section class="bargain-box" aria-labelledby="bargain-h">
   <div class="bargain-copy">
-    <p class="bargain-title" id="bargain-h">Make a wish</p>
+    <h2 class="bargain-title" id="bargain-h">Make a wish</h2>
     <p>Tell the dragon what you want. It will find the price you cannot see &mdash; it always does.</p>
     <p class="fine">A toy bargain. The true rite lives in <a href="communion.html">Communion</a>.</p>
   </div>
@@ -60,15 +69,6 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
     </form>
     <output id="wish-output" class="wish-output" aria-live="polite"></output>
   </div>
-</section>
-
-<section class="hero">
-  <h1 class="hero-title">Ahamkara</h1>
-  <p class="hero-desc">An Ahamkara is a wish-dragon: a creature that fed on the gap between what is and what is desired, and paid for its meals in bargains. You wished; it granted; the price arrived later, folded into the wording you chose yourself. The City decided a thing like that could not be allowed to exist, and so the Guardians held a Great Hunt, and now there are none left.</p>
-  <figure class="featured">
-    <blockquote id="featured-quote"><p>&ldquo;{}&rdquo;</p></blockquote>
-    <figcaption>&mdash; <span id="featured-speaker">{}</span></figcaption>
-  </figure>
 </section>
 
 <nav class="tiles" aria-label="Site sections"><ul>{tiles}</ul></nav>

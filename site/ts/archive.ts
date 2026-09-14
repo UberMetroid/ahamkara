@@ -20,19 +20,27 @@ export function initFilters(): void {
     const ent = fEntity.value;
     const era = fEra.value;
     const kind = fKind.value;
+    const isFiltering = Boolean(needle || ent || era || kind);
     let shown = 0;
     for (const e of entries) {
       const ok =
-        (!needle || (e.dataset.search ?? "").includes(needle)) &&
+        (!needle || (e.dataset.search ?? "").includes(needle) || (e.textContent ?? "").toLowerCase().includes(needle)) &&
         (!ent || (e.dataset.entities ?? "").split(", ").includes(ent)) &&
         (!era || e.dataset.era === era) &&
         (!kind || (e.dataset.kind ?? "").replace(/_/g, " ") === kind);
       e.hidden = !ok;
-      if (ok) shown++;
+      if (ok) {
+        shown++;
+        if (isFiltering && e.tagName === "DETAILS") {
+          (e as HTMLDetailsElement).open = true;
+        }
+      } else if (e.tagName === "DETAILS") {
+        (e as HTMLDetailsElement).open = false;
+      }
     }
     count.textContent = String(shown);
     empty.hidden = shown !== 0;
-    clear.hidden = !(needle || ent || era || kind);
+    clear.hidden = !isFiltering;
   };
 
   form.addEventListener("submit", (e) => e.preventDefault());
@@ -45,6 +53,11 @@ export function initFilters(): void {
     fEntity.value = "";
     fEra.value = "";
     fKind.value = "";
+    for (const e of entries) {
+      if (e.tagName === "DETAILS") {
+        (e as HTMLDetailsElement).open = false;
+      }
+    }
     apply();
     q.focus();
   });

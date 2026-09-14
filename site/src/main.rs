@@ -32,7 +32,7 @@ fn json_str(s: &str) -> String {
 /// quotes and renders the speaker separately.
 fn clean_whisper(t: &str) -> &str {
     let q = t.trim().trim_matches('"').trim();
-    let q = match q.rsplit_once(" —") {
+    match q.rsplit_once(" —") {
         Some((a, tail))
             if tail.split_whitespace().count() <= 6
                 && tail.chars().next().is_some_and(|c| c.is_uppercase()) =>
@@ -40,11 +40,6 @@ fn clean_whisper(t: &str) -> &str {
             a.trim().trim_matches('"').trim()
         }
         _ => q,
-    };
-    if q.len() == t.len() {
-        t
-    } else {
-        Box::leak(q.to_string().into_boxed_str())
     }
 }
 

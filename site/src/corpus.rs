@@ -8,6 +8,7 @@ pub fn esc(s: &str) -> String {
         .replace('<', "&lt;")
         .replace('>', "&gt;")
         .replace('"', "&quot;")
+        .replace('\'', "&#39;")
 }
 
 /// Render a transcript as paragraphs (blank-line separated, like the corpus).

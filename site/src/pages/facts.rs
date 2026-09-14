@@ -39,9 +39,9 @@ pub fn page_facts(records: &[Record], whispers: &[(&str, &str)]) -> String {
         ("The fourth wall",
          "The Skull of Dire Ahamkara does not speak to your Guardian. It speaks to you — 'o player mine' — calls the game thin cardboard and cheap theater, and invites you to be the only real person in it. Ahamkara are the only beings in the setting confirmed to know it is a game. It does not seem to trouble them."),
         ("Not only ours",
-         "The Books of Sorrow record that the Harmony — a species destroyed by the Hive — kept wish-dragons of their own, and that the Hive ate their wishes at the Gift Mast. Savathûn later bound two ahamkara, Huginn and Muninn, thought and memory, into her designs."),
+         "The Books of Sorrow record that the Harmony — a civilization conquered by the Hive — kept wish-dragons of their own, and that the Hive devoured their wishes at the Gift Mast. In Sol, Queen's Wrath Sjur Eido bonded with twin dragons, Huginn and Muninn, whose skulls still barter in Harbinger's Seclude."),
         ("The fifteenth wish",
-         "Fourteen wishes on the Wall were decoded within weeks. The fifteenth — 'this one you shall cherish,' per Riven — resisted for years. Season of the Wish revealed what it was for: not a cheat code, but the clutch. A wish spent to carry the species' eggs beyond everything hunting them."),
+         "Fourteen wishes on the Wall were discovered during Forsaken. The elusive 15th Wish remained ungranted for over five years until Season of the Wish, where Guardians secured Riven's uncorrupted clutch in exchange for one final bargain: a passage through the Veil into the Pale Heart of the Traveler."),
     ];
 
     let fact_html = facts
