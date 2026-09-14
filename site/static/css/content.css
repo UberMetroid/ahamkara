@@ -3,6 +3,21 @@
 
 .hero { text-align: center; padding: clamp(1.5rem, 6vw, 4rem) 0 2rem; }
 
+/* Split hero: the address on the left, the trap on the right. */
+.hero.split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  align-items: center;
+  text-align: left;
+}
+.hero-left .hero-addr { margin-top: 0; }
+.hero-left .hero-sub { margin: 0; }
+.hero-right .agent-brief { margin: 0; max-width: none; }
+@media (max-width: 780px) {
+  .hero.split { grid-template-columns: 1fr; }
+}
+
 .hero-title { filter: url(#warp); } /* reality breathes */
 .hero-addr {
   font-family: var(--font-display);
