@@ -1,0 +1,30 @@
+{
+  "id": "transcript-pilgrimage-eaos-nest",
+  "api_path": "/transcripts/pilgrimage-harbingers-seclude-eaos-nest",
+  "doc_type": "transcript",
+  "data": {
+    "ishtar_ref": "pilgrimage-harbingers-seclude-eaos-nest",
+    "name": "Pilgrimage: Harbinger’s Seclude, Eao’s Nest",
+    "ishtar_url": "https://www.ishtar-collective.net/transcripts/pilgrimage-harbingers-seclude-eaos-nest",
+    "api_url": "https://api.ishtar-collective.net/transcripts/pilgrimage-harbingers-seclude-eaos-nest",
+    "short_summary": "// OPTIONAL {\nShuro Chi: This bowl was once a nest for Eao - he was a sly little Ahamkara, always laughing, always twining around your legs, whispering lies, saying, \"I have seen your eyes, o witch-mage mine.\" We never expected him to go bad.\n}\n// OPTIONAL {\nShuro Chi: This was once a resting place for an Ahamkara who loved stories. He would recite all of our myths, name all our heroes… And that's where we went wrong. We should have never trusted him to keep our secrets.\n}\n// OPTIONAL {\nShuro Chi: This little chamber was once a home for an Ahamkara who betrayed the Awoken. He crept out of the Dreaming City and went to whisper in the ears of Warlocks who wondered who we were - and so we had to kill him. The Warlocks, too.\n}\n// OPTIONAL {",
+    "embed_video_url": "https://www.youtube.com/embed/zqNewev-kGo?rel=0&showinfo=0&list=PLuETOCJ3rwAZfC8vGVkaSkxjlS8zukQIs",
+    "description": "// OPTIONAL {\nShuro Chi: This bowl was once a nest for Eao - he was a sly little Ahamkara, always laughing, always twining around your legs, whispering lies, saying, \"I have seen your eyes, o witch-mage mine.\" We never expected him to go bad.\n}\n// OPTIONAL {\nShuro Chi: This was once a resting place for an Ahamkara who loved stories. He would recite all of our myths, name all our heroes… And that's where we went wrong. We should have never trusted him to keep our secrets.\n}\n// OPTIONAL {\nShuro Chi: This little chamber was once a home for an Ahamkara who betrayed the Awoken. He crept out of the Dreaming City and went to whisper in the ears of Warlocks who wondered who we were - and so we had to kill him. The Warlocks, too.\n}\n// OPTIONAL {\nShuro Chi: Ah… This is where Eao liked to rest, before Sjur hunted him down and skewered him for his deceit. One of your Warlocks bartered for his corpse and traded away his bones. Another mistake. You must never scatter the bones.\n}",
+    "categories": [
+      {
+        "ishtar_ref": "pilgrimages",
+        "name": "Pilgrimages",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/pilgrimages",
+        "api_url": "https://api.ishtar-collective.net/categories/pilgrimages",
+        "short_summary": "Let Shuro Chi teach you about the Dreaming City while it still stands."
+      },
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      }
+    ]
+  }
+}

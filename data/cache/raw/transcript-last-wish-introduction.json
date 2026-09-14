@@ -1,0 +1,37 @@
+{
+  "id": "transcript-last-wish-introduction",
+  "api_path": "/transcripts/last-wish-introduction",
+  "doc_type": "transcript",
+  "data": {
+    "ishtar_ref": "last-wish-introduction",
+    "name": "Last Wish Introduction",
+    "ishtar_url": "https://www.ishtar-collective.net/transcripts/last-wish-introduction",
+    "api_url": "https://api.ishtar-collective.net/transcripts/last-wish-introduction",
+    "short_summary": "—— The Guardian heads towards the Dreaming City.\nPetra Venj: For generations, the Dreaming City housed one of the Awoken's most closely guarded secrets. She is known as Riven — Riven of a Thousand Voices. The last known Ahamkara. She has been Taken. And her death is your calling.",
+    "embed_video_url": "https://www.youtube.com/embed/JOvJtoEUxIw?rel=0&showinfo=0",
+    "description": "** The Guardian heads towards the Dreaming City.\n\nPetra Venj: For generations, the Dreaming City housed one of the Awoken's most closely guarded secrets. She is known as Riven — Riven of a Thousand Voices. The last known Ahamkara. She has been Taken. And her death is your calling.",
+    "categories": [
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "riven",
+        "name": "Riven",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/riven",
+        "api_url": "https://api.ishtar-collective.net/categories/riven",
+        "short_summary": "The last known Ahamkara."
+      },
+      {
+        "ishtar_ref": "petra-venj",
+        "name": "Petra Venj",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/petra-venj",
+        "api_url": "https://api.ishtar-collective.net/categories/petra-venj",
+        "short_summary": "The Queen’s Wrath who has also served as the Queen’s Emissary and Regent-Commander of the Reef. "
+      }
+    ]
+  }
+}

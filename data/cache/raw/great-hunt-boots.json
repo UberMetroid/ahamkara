@@ -1,0 +1,147 @@
+{
+  "id": "great-hunt-boots",
+  "api_path": "/entries/boots-of-the-great-hunt",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "boots-of-the-great-hunt",
+    "name": "Boots of the Great Hunt",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/boots-of-the-great-hunt",
+    "api_url": "https://api.ishtar-collective.net/entries/boots-of-the-great-hunt",
+    "short_summary": "I wish to be sure-footed.\n—\nThe [Techeuns] are poor company. Like me, they are [Taken]. But I am [Riven]. My thoughts are my own. They do not speak to me. When they open their mouths, they emit ugly sounds. Incomprehensible.\nI am afflicted by tedious repetition.\nBut today I have a visitor. She reminds me of the [King]. Yet subtler. Nothing announces her arrival. Her will does not flow through the system in open challenge against her enemies.\nThough there are many here she would call enemy.\nAnd her will would not flow. It would crash.",
+    "bungie_ref": "1195800715",
+    "image_url": "/common/destiny2_content/screenshots/726265506.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/726265506.jpg",
+    "subtitle": "I wish to be sure-footed.",
+    "description": "The [Techeuns] are poor company. Like me, they are [Taken]. But I am [Riven]. My thoughts are my own. They do not speak to me. When they open their mouths, they emit ugly sounds. Incomprehensible.\n\nI am afflicted by tedious repetition.\n\nBut today I have a visitor. She reminds me of the [King]. Yet subtler. Nothing announces her arrival. Her will does not flow through the system in open challenge against her enemies.\n\nThough there are many here she would call enemy.\n\nAnd her will would not flow. It would crash.\n\nI did not notice her. That means [the light] did not notice her.\n\nShe knows that though I am [Taken], I am beholden to no one. So I ask her if she wishes to take up those strings.\n\nShe does. And I take a new shape. My cage loses its purpose.\n\nI can tell this is not a part of her grand design. This is an introduction. She is at play.\n\nThrough our new bond, I glimpse her intention.\n\nAnd I hope she remains at play.\n\nMost of those who [bargain] with me do not win.\n\nShe releases vibrant, unrestrained bursts of air from her face. I do not.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "riven",
+        "name": "Riven",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/riven",
+        "api_url": "https://api.ishtar-collective.net/categories/riven",
+        "short_summary": "The last known Ahamkara."
+      },
+      {
+        "ishtar_ref": "the-great-ahamkara-hunt",
+        "name": "The Great Ahamkara Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "api_url": "https://api.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "short_summary": ""
+      },
+      {
+        "ishtar_ref": "great-hunt-suit-warlock",
+        "name": "Great Hunt Suit (Warlock)",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/great-hunt-suit-warlock",
+        "api_url": "https://api.ishtar-collective.net/categories/great-hunt-suit-warlock",
+        "short_summary": ""
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "boots-of-the-great-hunt",
+        "name": "Boots of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/boots-of-the-great-hunt",
+        "api_url": "https://api.ishtar-collective.net/items/boots-of-the-great-hunt",
+        "short_summary": "I wish to be sure-footed.",
+        "bungie_ref": "1195800715",
+        "image_url": "/common/destiny2_content/icons/58b6b1dcdb64322e0d1761c6981bbf55.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/58b6b1dcdb64322e0d1761c6981bbf55.jpg",
+        "flavor_text": "I wish to be sure-footed.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "boots-of-the-great-hunt-4",
+        "name": "Boots of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/boots-of-the-great-hunt-4",
+        "api_url": "https://api.ishtar-collective.net/items/boots-of-the-great-hunt-4",
+        "short_summary": "I wish to be sure-footed.",
+        "bungie_ref": "1890196228",
+        "image_url": "/common/destiny2_content/icons/58b6b1dcdb64322e0d1761c6981bbf55.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/58b6b1dcdb64322e0d1761c6981bbf55.jpg",
+        "flavor_text": "I wish to be sure-footed.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "boots-of-the-great-hunt-3",
+        "name": "Boots of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/boots-of-the-great-hunt-3",
+        "api_url": "https://api.ishtar-collective.net/items/boots-of-the-great-hunt-3",
+        "short_summary": "I wish to be sure-footed.",
+        "bungie_ref": "726265506",
+        "image_url": "/common/destiny2_content/icons/58b6b1dcdb64322e0d1761c6981bbf55.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/58b6b1dcdb64322e0d1761c6981bbf55.jpg",
+        "flavor_text": "I wish to be sure-footed.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "boots-of-the-great-hunt-2",
+        "name": "Boots of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/boots-of-the-great-hunt-2",
+        "api_url": "https://api.ishtar-collective.net/items/boots-of-the-great-hunt-2",
+        "short_summary": "I wish to be sure-footed.",
+        "bungie_ref": "3227674085",
+        "image_url": "/common/destiny2_content/icons/58b6b1dcdb64322e0d1761c6981bbf55.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/58b6b1dcdb64322e0d1761c6981bbf55.jpg",
+        "flavor_text": "I wish to be sure-footed.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "boots-of-the-great-hunt-6",
+        "name": "Boots of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/boots-of-the-great-hunt-6",
+        "api_url": "https://api.ishtar-collective.net/items/boots-of-the-great-hunt-6",
+        "short_summary": "I wish to be sure-footed.",
+        "bungie_ref": "2739012303",
+        "image_url": "/common/destiny2_content/icons/58b6b1dcdb64322e0d1761c6981bbf55.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/58b6b1dcdb64322e0d1761c6981bbf55.jpg",
+        "flavor_text": "I wish to be sure-footed.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "boots-of-the-great-hunt-8",
+        "name": "Boots of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/boots-of-the-great-hunt-8",
+        "api_url": "https://api.ishtar-collective.net/items/boots-of-the-great-hunt-8",
+        "short_summary": "I wish to be sure-footed.",
+        "bungie_ref": "3245192919",
+        "image_url": "/common/destiny2_content/icons/58b6b1dcdb64322e0d1761c6981bbf55.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/58b6b1dcdb64322e0d1761c6981bbf55.jpg",
+        "flavor_text": "I wish to be sure-footed.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "boots-of-the-great-hunt-5",
+        "name": "Boots of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/boots-of-the-great-hunt-5",
+        "api_url": "https://api.ishtar-collective.net/items/boots-of-the-great-hunt-5",
+        "short_summary": "I wish to be sure-footed.",
+        "bungie_ref": "1686643306",
+        "image_url": "/common/destiny2_content/icons/58b6b1dcdb64322e0d1761c6981bbf55.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/58b6b1dcdb64322e0d1761c6981bbf55.jpg",
+        "flavor_text": "I wish to be sure-footed.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "boots-of-the-great-hunt-7",
+        "name": "Boots of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/boots-of-the-great-hunt-7",
+        "api_url": "https://api.ishtar-collective.net/items/boots-of-the-great-hunt-7",
+        "short_summary": "I wish to be sure-footed.",
+        "bungie_ref": "3344935649",
+        "image_url": "/common/destiny2_content/icons/58b6b1dcdb64322e0d1761c6981bbf55.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/58b6b1dcdb64322e0d1761c6981bbf55.jpg",
+        "flavor_text": "I wish to be sure-footed.",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

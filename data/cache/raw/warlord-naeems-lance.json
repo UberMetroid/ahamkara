@@ -1,0 +1,19 @@
+{
+  "id": "warlord-naeems-lance",
+  "api_path": "/items/naeems-lance",
+  "doc_type": "item",
+  "data": {
+    "ishtar_ref": "naeems-lance",
+    "name": "Naeem's Lance",
+    "ishtar_url": "https://www.ishtar-collective.net/items/naeems-lance",
+    "api_url": "https://api.ishtar-collective.net/items/naeems-lance",
+    "short_summary": "\"Let us make them love us as much as we were feared.\" —Warlord Naeem",
+    "bungie_ref": "2806569825",
+    "image_url": "/common/destiny2_content/icons/eb3209b52d9833cdd7d2cf462eb9fb20.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/eb3209b52d9833cdd7d2cf462eb9fb20.jpg",
+    "flavor_text": "\"Let us make them love us as much as we were feared.\" —Warlord Naeem",
+    "description": "",
+    "bungie_deleted": false,
+    "categories": []
+  }
+}

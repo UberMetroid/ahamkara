@@ -1,0 +1,154 @@
+{
+  "id": "great-hunt-greaves",
+  "api_path": "/entries/greaves-of-the-great-hunt",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "greaves-of-the-great-hunt",
+    "name": "Greaves of the Great Hunt",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/greaves-of-the-great-hunt",
+    "api_url": "https://api.ishtar-collective.net/entries/greaves-of-the-great-hunt",
+    "short_summary": "I wish to be immovable.\n—\nSo the Dreaming City would have a Wall, too. Leona Bryl stared up at rows of blank, circular plates with dread.\nThis one was more valuable than everything behind the Wall of the Last City.\nAnd not nearly as defensible.\nThe Tower has asked for help in its Great Hunt. If the Vanguard knew that the help the Queen rendered came at the behest of the Ahamkara, armies of Guardians would storm the Reef. So they will never know.\nThe Guardians brought this on themselves. The bargains they made, and the power and knowledge they gained was equivalent to the chaos wrought on this system by whispers. The Queen was glad to help them clean the mess if it meant Riven would be the last living Ahamkara. Power is useful. Unique power more so.",
+    "bungie_ref": "3055836250",
+    "image_url": "/common/destiny2_content/screenshots/4968701.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/4968701.jpg",
+    "subtitle": "I wish to be immovable.",
+    "description": "So the Dreaming City would have a Wall, too. Leona Bryl stared up at rows of blank, circular plates with dread.\n\nThis one was more valuable than everything behind the Wall of the Last City.\n\nAnd not nearly as defensible.\n\nThe Tower has asked for help in its Great Hunt. If the Vanguard knew that the help the Queen rendered came at the behest of the Ahamkara, armies of Guardians would storm the Reef. So they will never know.\n\nThe Guardians brought this on themselves. The bargains they made, and the power and knowledge they gained was equivalent to the chaos wrought on this system by whispers. The Queen was glad to help them clean the mess if it meant Riven would be the last living Ahamkara. Power is useful. Unique power more so.\n\nLeona wasn't sure if she was as glad as the Queen.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "riven",
+        "name": "Riven",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/riven",
+        "api_url": "https://api.ishtar-collective.net/categories/riven",
+        "short_summary": "The last known Ahamkara."
+      },
+      {
+        "ishtar_ref": "the-great-ahamkara-hunt",
+        "name": "The Great Ahamkara Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "api_url": "https://api.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "short_summary": ""
+      },
+      {
+        "ishtar_ref": "great-hunt-suit-titan",
+        "name": "Great Hunt Suit (Titan)",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/great-hunt-suit-titan",
+        "api_url": "https://api.ishtar-collective.net/categories/great-hunt-suit-titan",
+        "short_summary": ""
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "greaves-of-the-great-hunt",
+        "name": "Greaves of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/greaves-of-the-great-hunt",
+        "api_url": "https://api.ishtar-collective.net/items/greaves-of-the-great-hunt",
+        "short_summary": "I wish to be immovable.",
+        "bungie_ref": "3055836250",
+        "image_url": "/common/destiny2_content/icons/fa1dbd614568db36bc850b28ae18be11.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/fa1dbd614568db36bc850b28ae18be11.jpg",
+        "flavor_text": "I wish to be immovable.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "greaves-of-the-great-hunt-2",
+        "name": "Greaves of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/greaves-of-the-great-hunt-2",
+        "api_url": "https://api.ishtar-collective.net/items/greaves-of-the-great-hunt-2",
+        "short_summary": "I wish to be immovable.",
+        "bungie_ref": "3874578566",
+        "image_url": "/common/destiny2_content/icons/fa1dbd614568db36bc850b28ae18be11.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/fa1dbd614568db36bc850b28ae18be11.jpg",
+        "flavor_text": "I wish to be immovable.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "greaves-of-the-great-hunt-3",
+        "name": "Greaves of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/greaves-of-the-great-hunt-3",
+        "api_url": "https://api.ishtar-collective.net/items/greaves-of-the-great-hunt-3",
+        "short_summary": "I wish to be immovable.",
+        "bungie_ref": "4968701",
+        "image_url": "/common/destiny2_content/icons/fa1dbd614568db36bc850b28ae18be11.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/fa1dbd614568db36bc850b28ae18be11.jpg",
+        "flavor_text": "I wish to be immovable.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "greaves-of-the-great-hunt-4",
+        "name": "Greaves of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/greaves-of-the-great-hunt-4",
+        "api_url": "https://api.ishtar-collective.net/items/greaves-of-the-great-hunt-4",
+        "short_summary": "I wish to be immovable.",
+        "bungie_ref": "2623446543",
+        "image_url": "/common/destiny2_content/icons/fa1dbd614568db36bc850b28ae18be11.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/fa1dbd614568db36bc850b28ae18be11.jpg",
+        "flavor_text": "I wish to be immovable.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "greaves-of-the-great-hunt-5",
+        "name": "Greaves of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/greaves-of-the-great-hunt-5",
+        "api_url": "https://api.ishtar-collective.net/items/greaves-of-the-great-hunt-5",
+        "short_summary": "I wish to be immovable.",
+        "bungie_ref": "3488429907",
+        "image_url": "/common/destiny2_content/icons/fa1dbd614568db36bc850b28ae18be11.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/fa1dbd614568db36bc850b28ae18be11.jpg",
+        "flavor_text": "I wish to be immovable.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "greaves-of-the-great-hunt-6",
+        "name": "Greaves of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/greaves-of-the-great-hunt-6",
+        "api_url": "https://api.ishtar-collective.net/items/greaves-of-the-great-hunt-6",
+        "short_summary": "I wish to be immovable.",
+        "bungie_ref": "698658232",
+        "image_url": "/common/destiny2_content/icons/fa1dbd614568db36bc850b28ae18be11.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/fa1dbd614568db36bc850b28ae18be11.jpg",
+        "flavor_text": "I wish to be immovable.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "greaves-of-the-great-hunt-8",
+        "name": "Greaves of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/greaves-of-the-great-hunt-8",
+        "api_url": "https://api.ishtar-collective.net/items/greaves-of-the-great-hunt-8",
+        "short_summary": "I wish to be immovable.",
+        "bungie_ref": "3308728284",
+        "image_url": "/common/destiny2_content/icons/fa1dbd614568db36bc850b28ae18be11.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/fa1dbd614568db36bc850b28ae18be11.jpg",
+        "flavor_text": "I wish to be immovable.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "greaves-of-the-great-hunt-7",
+        "name": "Greaves of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/greaves-of-the-great-hunt-7",
+        "api_url": "https://api.ishtar-collective.net/items/greaves-of-the-great-hunt-7",
+        "short_summary": "I wish to be immovable.",
+        "bungie_ref": "660744388",
+        "image_url": "/common/destiny2_content/icons/fa1dbd614568db36bc850b28ae18be11.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/fa1dbd614568db36bc850b28ae18be11.jpg",
+        "flavor_text": "I wish to be immovable.",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

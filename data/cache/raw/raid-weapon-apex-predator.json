@@ -1,0 +1,88 @@
+{
+  "id": "raid-weapon-apex-predator",
+  "api_path": "/entries/apex-predator",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "apex-predator",
+    "name": "Apex Predator",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/apex-predator",
+    "api_url": "https://api.ishtar-collective.net/entries/apex-predator",
+    "short_summary": "Is it you or I that tops the food chain, o challenger mine?\n—\nThe massive Vex construct that was the Ahamkhara towered over them, and Taeko-3 tried not to be bored. Being bored might lead to idle wishes, and that would be bad right now. She thought again about the name she'd squinted at on the porcelain chit when she'd drawn lots back at the Tower. Two-name Guardians always struck her as a little pretentious.\n\"Gallida?\" The Warlock didn't look up from the drawing she was making; she just held up a finger. \"The rear ventral plate, please?\" Graciously, the construct shifted its superstructure and allowed the researcher a detailed look at the thing's internal workings. \"And… there.\" The Warlock turned toward Taeko. \"You may proceed.\"\n\"Finally.\" As Gallida ran clear, and the beast warbled a Vex war cry, Taeko hefted the massive launcher up over her shoulder and sighted down the line. \"Girl's gotta eat!\"",
+    "bungie_ref": "2545083870",
+    "image_url": "/common/destiny2_content/screenshots/2545083870.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/2545083870.jpg",
+    "subtitle": "Is it you or I that tops the food chain, o challenger mine?",
+    "description": "The massive Vex construct that was the Ahamkhara towered over them, and Taeko-3 tried not to be bored. Being bored might lead to idle wishes, and that would be bad right now. She thought again about the name she'd squinted at on the porcelain chit when she'd drawn lots back at the Tower. Two-name Guardians always struck her as a little pretentious.\n\n\"Gallida?\" The Warlock didn't look up from the drawing she was making; she just held up a finger. \"The rear ventral plate, please?\" Graciously, the construct shifted its superstructure and allowed the researcher a detailed look at the thing's internal workings. \"And… there.\" The Warlock turned toward Taeko. \"You may proceed.\"\n\n\"Finally.\" As Gallida ran clear, and the beast warbled a Vex war cry, Taeko hefted the massive launcher up over her shoulder and sighted down the line. \"Girl's gotta eat!\"",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "the-great-ahamkara-hunt",
+        "name": "The Great Ahamkara Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "api_url": "https://api.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "short_summary": ""
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "apex-predator",
+        "name": "Apex Predator",
+        "ishtar_url": "https://www.ishtar-collective.net/items/apex-predator",
+        "api_url": "https://api.ishtar-collective.net/items/apex-predator",
+        "short_summary": "Is it you or I that tops the food chain, o challenger mine?",
+        "bungie_ref": "2545083870",
+        "image_url": "/common/destiny2_content/icons/74e3e47ee5478055a662bd4083774119.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/74e3e47ee5478055a662bd4083774119.jpg",
+        "flavor_text": "Is it you or I that tops the food chain, o challenger mine?",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "age-old-bond-2",
+        "name": "Age-Old Bond",
+        "ishtar_url": "https://www.ishtar-collective.net/items/age-old-bond-2",
+        "api_url": "https://api.ishtar-collective.net/items/age-old-bond-2",
+        "short_summary": "Symbiosis. Not predation. Never predation, o wary one mine.",
+        "bungie_ref": "3941935308",
+        "image_url": "/common/destiny2_content/icons/f6bea329c6f50d716e6385d59de7bd4c.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/f6bea329c6f50d716e6385d59de7bd4c.jpg",
+        "flavor_text": "Symbiosis. Not predation. Never predation, o wary one mine.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "age-old-bond-3",
+        "name": "Age-Old Bond",
+        "ishtar_url": "https://www.ishtar-collective.net/items/age-old-bond-3",
+        "api_url": "https://api.ishtar-collective.net/items/age-old-bond-3",
+        "short_summary": "Symbiosis. Not predation. Never predation, o wary one mine.",
+        "bungie_ref": "3521754087",
+        "image_url": "/common/destiny2_content/icons/f6bea329c6f50d716e6385d59de7bd4c.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/f6bea329c6f50d716e6385d59de7bd4c.jpg",
+        "flavor_text": "Symbiosis. Not predation. Never predation, o wary one mine.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "apex-predator-4",
+        "name": "Apex Predator",
+        "ishtar_url": "https://www.ishtar-collective.net/items/apex-predator-4",
+        "api_url": "https://api.ishtar-collective.net/items/apex-predator-4",
+        "short_summary": "Is it you or I that tops the food chain, o challenger mine?",
+        "bungie_ref": "1851777734",
+        "image_url": "/common/destiny2_content/icons/0819f6c7aa9ab0f5b082eee2a24bfb0d.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/0819f6c7aa9ab0f5b082eee2a24bfb0d.jpg",
+        "flavor_text": "Is it you or I that tops the food chain, o challenger mine?",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

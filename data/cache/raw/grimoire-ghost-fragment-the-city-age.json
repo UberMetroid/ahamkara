@@ -1,0 +1,63 @@
+{
+  "id": "grimoire-ghost-fragment-the-city-age",
+  "api_path": "/cards/ghost-fragment-the-city-age",
+  "doc_type": "grimoire_card",
+  "data": {
+    "ishtar_ref": "ghost-fragment-the-city-age",
+    "name": "Ghost Fragment: The City Age",
+    "ishtar_url": "https://www.ishtar-collective.net/cards/ghost-fragment-the-city-age",
+    "api_url": "https://api.ishtar-collective.net/cards/ghost-fragment-the-city-age",
+    "short_summary": "\"And so it is agreed. The Concordat shall no longer be recognized among the Consensus. We'll begin the dismantling right away. But what of those Guardians who have pledged to them? We can't afford any more banishments.\"\n\"I'm sure Zavala can see to their realignment.\"\n\"We'll do our best. Lysander chose his followers wisely. It may take some time.\"\n\"Lysander will not back down. He'll continue his crusade from wherever we stuff him.\"\n\"And so we'll need to find some new ideas to replace his.\" ",
+    "bungie_ref": "403100",
+    "image_url": "/common/destiny_content/grimoire/hr_images/403100_d4e3387b616e094386a16fedf3fa0c1c.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny_content/grimoire/hr_images/403100_d4e3387b616e094386a16fedf3fa0c1c.jpg",
+    "intro": null,
+    "intro_attribution": null,
+    "description": "&quot;And so it is agreed. The Concordat shall no longer be recognized among the Consensus. We&#39;ll begin the dismantling right away. But what of those Guardians who have pledged to them? We can&#39;t afford any more banishments.&quot;<br/><br/>\n&quot;I&#39;m sure Zavala can see to their realignment.&quot;<br/><br/>\n&quot;We&#39;ll do our best. Lysander chose his followers wisely. It may take some time.&quot;<br/><br/>\n&quot;Lysander will not back down. He&#39;ll continue his crusade from wherever we stuff him.&quot;<br/><br/>\n&quot;And so we&#39;ll need to find some new ideas to replace his.&quot; <br/><br/>\n&quot;The Symmetry has been gaining a strong following...&quot;<br/><br/>\n&quot;Ulan-Tan&#39;s teachings are too dangerous. Too much fear. Who knew he&#39;d be more trouble dead than alive?&quot; <br/><br/>\n&quot;We&#39;ll need to refocus our collective minds on combat. The Speaker&#39;s anxious to regain ground we lost after the Gap.&quot;<br/><br/>\n&quot;There is the War Cult.&quot;<br/><br/>\n&quot;Too secretive. Have you ever tried to talk to one of their &#39;soldiers&#39;? Like a child. Answering questions with questions.&quot;<br/><br/>\n&quot;They are dedicated to the war.&quot;<br/><br/>\n&quot;Which one?&quot;<br/><br/>\n&quot;Good question.&quot;<br/><br/>\n&quot;Zavala?&quot;<br/><br/>\n&quot;They seem focused. Strong. More interesting than worrisome.&quot;<br/><br/>\n&quot;Let&#39;s take it to a vote. All in favor of the ascension of the Future War Cult?&quot; <br/><br/>\n&quot;Unanimous? Good. We&#39;ll grant the Future War Cult access to the Tower and a seat among us. Ghost, please offer the Speaker this proposal.&quot;<br/><br/>\n&quot;Now onto the next order of business...Shaxx is here with another proposal for his Crucible.&quot;",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "the-consensus",
+        "name": "The Consensus",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-consensus",
+        "api_url": "https://api.ishtar-collective.net/categories/the-consensus",
+        "short_summary": "The governing body of the City, including representatives of Dead Orbit, the Future War Cult, New Monarchy and the Vanguard."
+      },
+      {
+        "ishtar_ref": "ghost-fragments",
+        "name": "Ghost Fragments",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ghost-fragments",
+        "api_url": "https://api.ishtar-collective.net/categories/ghost-fragments",
+        "short_summary": "Many of these are collected from dead Ghosts found throughout the universe."
+      },
+      {
+        "ishtar_ref": "ulan-tan",
+        "name": "Ulan-tan",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ulan-tan",
+        "api_url": "https://api.ishtar-collective.net/categories/ulan-tan",
+        "short_summary": "A Guardian associated with a City Faction called \"The Symmetry\", who held beliefs that the Vanguard described as dangerous."
+      },
+      {
+        "ishtar_ref": "zavala",
+        "name": "Zavala",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/zavala",
+        "api_url": "https://api.ishtar-collective.net/categories/zavala",
+        "short_summary": "The Titan Vanguard and Vanguard Commander"
+      },
+      {
+        "ishtar_ref": "lysander",
+        "name": "Lysander",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/lysander",
+        "api_url": "https://api.ishtar-collective.net/categories/lysander",
+        "short_summary": "The leader of the Concordat, a City faction."
+      },
+      {
+        "ishtar_ref": "lord-shaxx",
+        "name": "Lord Shaxx",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/lord-shaxx",
+        "api_url": "https://api.ishtar-collective.net/categories/lord-shaxx",
+        "short_summary": "Warlord and Crucible Handler "
+      }
+    ]
+  }
+}

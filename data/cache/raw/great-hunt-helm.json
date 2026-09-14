@@ -1,0 +1,147 @@
+{
+  "id": "great-hunt-helm",
+  "api_path": "/entries/helm-of-the-great-hunt",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "helm-of-the-great-hunt",
+    "name": "Helm of the Great Hunt",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/helm-of-the-great-hunt",
+    "api_url": "https://api.ishtar-collective.net/entries/helm-of-the-great-hunt",
+    "short_summary": "I wish to be strategic.\n—\n[The Queen] would like to improve her means of [bargaining] with me. She has implied that I use the space between words to make [bargains] to my advantage.\nHow dare she.\nShe knows me so well.\nWhat [the Queen] wants, the Techeun move worlds to obtain. And so the Witches devise an impossible machine that speaks a visual language with very few spaces between its words. This machine speaks [wishes]. Makes [bargains].\nThe Wall of [Wishes], it is called.",
+    "bungie_ref": "2274520361",
+    "image_url": "/common/destiny2_content/screenshots/3868637058.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/3868637058.jpg",
+    "subtitle": "I wish to be strategic.",
+    "description": "[The Queen] would like to improve her means of [bargaining] with me. She has implied that I use the space between words to make [bargains] to my advantage.\n\nHow dare she.\n\nShe knows me so well.\n\nWhat [the Queen] wants, the Techeun move worlds to obtain. And so the Witches devise an impossible machine that speaks a visual language with very few spaces between its words. This machine speaks [wishes]. Makes [bargains].\n\nThe Wall of [Wishes], it is called.\n\nIf the Techeun's design proves correct, it will be difficult for me to interpret the [wishes] made at the Wall to my advantage. But challenges entice me.\n\nI look upon the Wall. Upon the Witches' visual language for [bargains]. For me, it is a menu of delights to feast upon.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "the-great-ahamkara-hunt",
+        "name": "The Great Ahamkara Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "api_url": "https://api.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "short_summary": ""
+      },
+      {
+        "ishtar_ref": "riven",
+        "name": "Riven",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/riven",
+        "api_url": "https://api.ishtar-collective.net/categories/riven",
+        "short_summary": "The last known Ahamkara."
+      },
+      {
+        "ishtar_ref": "great-hunt-suit-titan",
+        "name": "Great Hunt Suit (Titan)",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/great-hunt-suit-titan",
+        "api_url": "https://api.ishtar-collective.net/categories/great-hunt-suit-titan",
+        "short_summary": ""
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "helm-of-the-great-hunt-4",
+        "name": "Helm of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/helm-of-the-great-hunt-4",
+        "api_url": "https://api.ishtar-collective.net/items/helm-of-the-great-hunt-4",
+        "short_summary": "I wish to be strategic.",
+        "bungie_ref": "3546379828",
+        "image_url": "/common/destiny2_content/icons/f3cd900df3fdcf0eb24ec42a2f391c31.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/f3cd900df3fdcf0eb24ec42a2f391c31.jpg",
+        "flavor_text": "I wish to be strategic.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "helm-of-the-great-hunt-2",
+        "name": "Helm of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/helm-of-the-great-hunt-2",
+        "api_url": "https://api.ishtar-collective.net/items/helm-of-the-great-hunt-2",
+        "short_summary": "I wish to be strategic.",
+        "bungie_ref": "4219088013",
+        "image_url": "/common/destiny2_content/icons/f3cd900df3fdcf0eb24ec42a2f391c31.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/f3cd900df3fdcf0eb24ec42a2f391c31.jpg",
+        "flavor_text": "I wish to be strategic.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "helm-of-the-great-hunt",
+        "name": "Helm of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/helm-of-the-great-hunt",
+        "api_url": "https://api.ishtar-collective.net/items/helm-of-the-great-hunt",
+        "short_summary": "I wish to be strategic.",
+        "bungie_ref": "2274520361",
+        "image_url": "/common/destiny2_content/icons/f3cd900df3fdcf0eb24ec42a2f391c31.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/f3cd900df3fdcf0eb24ec42a2f391c31.jpg",
+        "flavor_text": "I wish to be strategic.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "helm-of-the-great-hunt-3",
+        "name": "Helm of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/helm-of-the-great-hunt-3",
+        "api_url": "https://api.ishtar-collective.net/items/helm-of-the-great-hunt-3",
+        "short_summary": "I wish to be strategic.",
+        "bungie_ref": "3868637058",
+        "image_url": "/common/destiny2_content/icons/f3cd900df3fdcf0eb24ec42a2f391c31.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/f3cd900df3fdcf0eb24ec42a2f391c31.jpg",
+        "flavor_text": "I wish to be strategic.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "helm-of-the-great-hunt-5",
+        "name": "Helm of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/helm-of-the-great-hunt-5",
+        "api_url": "https://api.ishtar-collective.net/items/helm-of-the-great-hunt-5",
+        "short_summary": "I wish to be strategic.",
+        "bungie_ref": "2988560794",
+        "image_url": "/common/destiny2_content/icons/f3cd900df3fdcf0eb24ec42a2f391c31.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/f3cd900df3fdcf0eb24ec42a2f391c31.jpg",
+        "flavor_text": "I wish to be strategic.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "helm-of-the-great-hunt-6",
+        "name": "Helm of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/helm-of-the-great-hunt-6",
+        "api_url": "https://api.ishtar-collective.net/items/helm-of-the-great-hunt-6",
+        "short_summary": "I wish to be strategic.",
+        "bungie_ref": "122695093",
+        "image_url": "/common/destiny2_content/icons/f3cd900df3fdcf0eb24ec42a2f391c31.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/f3cd900df3fdcf0eb24ec42a2f391c31.jpg",
+        "flavor_text": "I wish to be strategic.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "helm-of-the-great-hunt-7",
+        "name": "Helm of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/helm-of-the-great-hunt-7",
+        "api_url": "https://api.ishtar-collective.net/items/helm-of-the-great-hunt-7",
+        "short_summary": "I wish to be strategic.",
+        "bungie_ref": "576047513",
+        "image_url": "/common/destiny2_content/icons/f3cd900df3fdcf0eb24ec42a2f391c31.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/f3cd900df3fdcf0eb24ec42a2f391c31.jpg",
+        "flavor_text": "I wish to be strategic.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "helm-of-the-great-hunt-8",
+        "name": "Helm of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/helm-of-the-great-hunt-8",
+        "api_url": "https://api.ishtar-collective.net/items/helm-of-the-great-hunt-8",
+        "short_summary": "I wish to be strategic.",
+        "bungie_ref": "3305541779",
+        "image_url": "/common/destiny2_content/icons/f3cd900df3fdcf0eb24ec42a2f391c31.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/f3cd900df3fdcf0eb24ec42a2f391c31.jpg",
+        "flavor_text": "I wish to be strategic.",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

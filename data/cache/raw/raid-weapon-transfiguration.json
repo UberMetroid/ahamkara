@@ -1,0 +1,109 @@
+{
+  "id": "raid-weapon-transfiguration",
+  "api_path": "/entries/transfiguration",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "transfiguration",
+    "name": "Transfiguration",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/transfiguration",
+    "api_url": "https://api.ishtar-collective.net/entries/transfiguration",
+    "short_summary": "Desire becomes reality, o wishbringer mine.\n—\n\"You're sure you want to keep on with the axe?\" Efrideet asked, reloading her rifle. The voice in her comms was barely winded, even as the Iron Lord leapt to avoid a plume of white-hot fire.\n\"That's why she gave it to me, I'm one of the only…\" A globule of flame licked past Efrideet's helmet, and she tugged at her clasp, shrugging free the now-burning cloak. \"Why in the Traveler's crack did you wish to fight an actual DRAGON, old man?\"\nSaladin Forge grinned inside his helmet. The enormous wyrm towered above them, bleeding wounds covering its gleaming scales as it reared up for another breath. The massive axe in his hands was dented, scarred, and melted at the tip. But it still held an edge. \"We are knights, Lady Efrideet. Do you not want to be a dragon slayer?\"\nHe charged, and his words could barely be heard over the creature's cry. \"We are what we survive!\"",
+    "bungie_ref": "3799980700",
+    "image_url": "/common/destiny2_content/screenshots/3799980700.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/3799980700.jpg",
+    "subtitle": "Desire becomes reality, o wishbringer mine.",
+    "description": "\"You're sure you want to keep on with the axe?\" Efrideet asked, reloading her rifle. The voice in her comms was barely winded, even as the Iron Lord leapt to avoid a plume of white-hot fire.\n\n\"That's why she gave it to me, I'm one of the only…\" A globule of flame licked past Efrideet's helmet, and she tugged at her clasp, shrugging free the now-burning cloak. \"Why in the Traveler's crack did you wish to fight an actual DRAGON, old man?\"\n\nSaladin Forge grinned inside his helmet. The enormous wyrm towered above them, bleeding wounds covering its gleaming scales as it reared up for another breath. The massive axe in his hands was dented, scarred, and melted at the tip. But it still held an edge. \"We are knights, Lady Efrideet. Do you not want to be a dragon slayer?\"\n\nHe charged, and his words could barely be heard over the creature's cry. \"We are what we survive!\"",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "lady-efrideet",
+        "name": "Lady Efrideet",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/lady-efrideet",
+        "api_url": "https://api.ishtar-collective.net/categories/lady-efrideet",
+        "short_summary": "A member of the Iron Lords. She disappeared and was presumed dead, until she showed up in the Iron Temple, willing to take Lord Saladin's place as coordinator of the Iron Banner. She talks of a community of civilian Guardians deep in the solar system, so it's likely that is where she has been until now. "
+      },
+      {
+        "ishtar_ref": "lords-of-iron",
+        "name": "Lords of Iron",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/lords-of-iron",
+        "api_url": "https://api.ishtar-collective.net/categories/lords-of-iron",
+        "short_summary": "Before they were called Guardians, those blessed with the Traveler’s Light banded together to try and give some protection to the last remnants of humanity. They called themselves the Iron Lords. "
+      },
+      {
+        "ishtar_ref": "lord-saladin",
+        "name": "Lord Saladin",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/lord-saladin",
+        "api_url": "https://api.ishtar-collective.net/categories/lord-saladin",
+        "short_summary": ""
+      },
+      {
+        "ishtar_ref": "the-great-ahamkara-hunt",
+        "name": "The Great Ahamkara Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "api_url": "https://api.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "short_summary": ""
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "transfiguration",
+        "name": "Transfiguration",
+        "ishtar_url": "https://www.ishtar-collective.net/items/transfiguration",
+        "api_url": "https://api.ishtar-collective.net/items/transfiguration",
+        "short_summary": "Desire becomes reality, o wishbringer mine.",
+        "bungie_ref": "3799980700",
+        "image_url": "/common/destiny2_content/icons/4975d25cd6a8ce48ea04f346ee44b1bf.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/4975d25cd6a8ce48ea04f346ee44b1bf.jpg",
+        "flavor_text": "Desire becomes reality, o wishbringer mine.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "techeun-force-6",
+        "name": "Techeun Force",
+        "ishtar_url": "https://www.ishtar-collective.net/items/techeun-force-6",
+        "api_url": "https://api.ishtar-collective.net/items/techeun-force-6",
+        "short_summary": "Sworn into faithful service to the Queen, the Techeuns of the Reef have long protected the secrets of the Awoken.",
+        "bungie_ref": "1886179439",
+        "image_url": "/common/destiny2_content/icons/f3979aa6240b4ec2049896c0d8125204.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/f3979aa6240b4ec2049896c0d8125204.jpg",
+        "flavor_text": "Sworn into faithful service to the Queen, the Techeuns of the Reef have long protected the secrets of the Awoken.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "techeun-force-7",
+        "name": "Techeun Force",
+        "ishtar_url": "https://www.ishtar-collective.net/items/techeun-force-7",
+        "api_url": "https://api.ishtar-collective.net/items/techeun-force-7",
+        "short_summary": "Sworn into faithful service to the Queen, the Techeuns of the Reef have long protected the secrets of the Awoken.",
+        "bungie_ref": "638728344",
+        "image_url": "/common/destiny2_content/icons/f3979aa6240b4ec2049896c0d8125204.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/f3979aa6240b4ec2049896c0d8125204.jpg",
+        "flavor_text": "Sworn into faithful service to the Queen, the Techeuns of the Reef have long protected the secrets of the Awoken.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "transfiguration-4",
+        "name": "Transfiguration",
+        "ishtar_url": "https://www.ishtar-collective.net/items/transfiguration-4",
+        "api_url": "https://api.ishtar-collective.net/items/transfiguration-4",
+        "short_summary": "Desire becomes reality, o wishbringer mine.",
+        "bungie_ref": "3885259140",
+        "image_url": "/common/destiny2_content/icons/a8e4ad15ecf0dc1ef41e0635eb8a1eb7.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/a8e4ad15ecf0dc1ef41e0635eb8a1eb7.jpg",
+        "flavor_text": "Desire becomes reality, o wishbringer mine.",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

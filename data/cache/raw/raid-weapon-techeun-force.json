@@ -1,0 +1,81 @@
+{
+  "id": "raid-weapon-techeun-force",
+  "api_path": "/entries/techeun-force",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "techeun-force",
+    "name": "Techeun Force",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/techeun-force",
+    "api_url": "https://api.ishtar-collective.net/entries/techeun-force",
+    "short_summary": "Sworn into faithful service to the Queen, the Techeuns of the Reef have long protected the secrets of the Awoken.\n—\nMara knew she had been a fool to pretend to be a peer to the others. What was true of her brother was true of all Awoken. They needed secrets to marvel at, secrets that rhymed with the deep enigma of their souls. They could not follow what they fully understood.\nThere would be a formal coronation later, in a place not yet built. Out of respect for that unhappened coronation, Mara did not at first wear a crown; and later she claimed as her diadem the ring of event horizon that surrounds the observable universe.\n\"My Techeuns,\" she said, gathering Kelda Wadj and the other eutechs who'd remained, \"will be given absolute authority to explore our new power, the Traveler's relics, and all associated domains. We are no longer in the realm of pure science. We require an order of mysteries and witches to tend to them.\"",
+    "bungie_ref": "4094657108",
+    "image_url": "/common/destiny2_content/screenshots/4094657108.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/4094657108.jpg",
+    "subtitle": "Sworn into faithful service to the Queen, the Techeuns of the Reef have long protected the secrets of the Awoken.",
+    "description": "Mara knew she had been a fool to pretend to be a peer to the others. What was true of her brother was true of all Awoken. They needed secrets to marvel at, secrets that rhymed with the deep enigma of their souls. They could not follow what they fully understood.\n\nThere would be a formal coronation later, in a place not yet built. Out of respect for that unhappened coronation, Mara did not at first wear a crown; and later she claimed as her diadem the ring of event horizon that surrounds the observable universe.\n\n\"My Techeuns,\" she said, gathering Kelda Wadj and the other eutechs who'd remained, \"will be given absolute authority to explore our new power, the Traveler's relics, and all associated domains. We are no longer in the realm of pure science. We require an order of mysteries and witches to tend to them.\"",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "queen-mara-sov",
+        "name": "Queen Mara Sov",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/queen-mara-sov",
+        "api_url": "https://api.ishtar-collective.net/categories/queen-mara-sov",
+        "short_summary": "Queen of the Reef and previous Kell of the House of Wolves. "
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "techeun-force-5",
+        "name": "Techeun Force",
+        "ishtar_url": "https://www.ishtar-collective.net/items/techeun-force-5",
+        "api_url": "https://api.ishtar-collective.net/items/techeun-force-5",
+        "short_summary": "Sworn into faithful service to the Queen, the Techeuns of the Reef have long protected the secrets of the Awoken.",
+        "bungie_ref": "4094657108",
+        "image_url": "/common/destiny2_content/icons/3ddbd72bdfefd1475d069c562ef80747.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/3ddbd72bdfefd1475d069c562ef80747.jpg",
+        "flavor_text": "Sworn into faithful service to the Queen, the Techeuns of the Reef have long protected the secrets of the Awoken.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "apex-predator-2",
+        "name": "Apex Predator",
+        "ishtar_url": "https://www.ishtar-collective.net/items/apex-predator-2",
+        "api_url": "https://api.ishtar-collective.net/items/apex-predator-2",
+        "short_summary": "Is it you or I that tops the food chain, o challenger mine?",
+        "bungie_ref": "1517505803",
+        "image_url": "/common/destiny2_content/icons/0819f6c7aa9ab0f5b082eee2a24bfb0d.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/0819f6c7aa9ab0f5b082eee2a24bfb0d.jpg",
+        "flavor_text": "Is it you or I that tops the food chain, o challenger mine?",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "apex-predator-3",
+        "name": "Apex Predator",
+        "ishtar_url": "https://www.ishtar-collective.net/items/apex-predator-3",
+        "api_url": "https://api.ishtar-collective.net/items/apex-predator-3",
+        "short_summary": "Is it you or I that tops the food chain, o challenger mine?",
+        "bungie_ref": "4217170772",
+        "image_url": "/common/destiny2_content/icons/0819f6c7aa9ab0f5b082eee2a24bfb0d.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/0819f6c7aa9ab0f5b082eee2a24bfb0d.jpg",
+        "flavor_text": "Is it you or I that tops the food chain, o challenger mine?",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "techeun-force-8",
+        "name": "Techeun Force",
+        "ishtar_url": "https://www.ishtar-collective.net/items/techeun-force-8",
+        "api_url": "https://api.ishtar-collective.net/items/techeun-force-8",
+        "short_summary": "Sworn into faithful service to the Queen, the Techeuns of the Reef have long protected the secrets of the Awoken.",
+        "bungie_ref": "3591141932",
+        "image_url": "/common/destiny2_content/icons/f3979aa6240b4ec2049896c0d8125204.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/f3979aa6240b4ec2049896c0d8125204.jpg",
+        "flavor_text": "Sworn into faithful service to the Queen, the Techeuns of the Reef have long protected the secrets of the Awoken.",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

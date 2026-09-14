@@ -1,0 +1,19 @@
+{
+  "id": "warlord-dragoncult-sickle",
+  "api_path": "/items/dragoncult-sickle",
+  "doc_type": "item",
+  "data": {
+    "ishtar_ref": "dragoncult-sickle",
+    "name": "Dragoncult Sickle",
+    "ishtar_url": "https://www.ishtar-collective.net/items/dragoncult-sickle",
+    "api_url": "https://api.ishtar-collective.net/items/dragoncult-sickle",
+    "short_summary": "A blade of old, adorned with mystic bone. Believed to be sacred.",
+    "bungie_ref": "3668817296",
+    "image_url": "/common/destiny2_content/icons/827efcc482b67373c1d854670fe861f5.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/827efcc482b67373c1d854670fe861f5.jpg",
+    "flavor_text": "A blade of old, adorned with mystic bone. Believed to be sacred.",
+    "description": "",
+    "bungie_deleted": false,
+    "categories": []
+  }
+}

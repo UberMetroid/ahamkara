@@ -1,0 +1,63 @@
+{
+  "id": "book-awoken-reef-telic-ii",
+  "api_path": "/entries/telic-ii",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "telic-ii",
+    "name": "Telic II",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/telic-ii",
+    "api_url": "https://api.ishtar-collective.net/entries/telic-ii",
+    "short_summary": "—\nIt was Mara alone who established a covenant with that young Ahamkara, which chose the use-name Riven, in honor of its host. It was Mara alone whose singular will and unity of purpose saved the Awoken from that which we now name the Anthem Anatheme. For there was in Mara very little division between Reality-As-Is and Reality-As-Desired; she was confident in her centuries of purpose and patient with the winding way by which the river of methods reaches the objective ocean. Blessed are those who in their absolute selfhood become selfless. Unappetizing are those who in their truest self-knowledge exclude the possibility of self-deceit.\n\"Mara,\" said Uldren Queensbrother, \"why do you forbid me to speak to the Ahamkara?\"\n\"This secret is mine alone,\" said Mara Queen. She knew that her brother had only widened the gap between He-As-Was (which is called NUME) and He-As-He-Would-Be (which is named CAUST). \"Begone to the outer world, where I require thee.\"\nThis was when Sjur Eido, having spoken to Kelda Wadj and to Esila, at last came before her Queen. Kneeling, she said, \"Your Majesty, Kelda Wadj says you are a god, for there is no difference between your desire and reality. Yet I know that you desire things before they ever become real. Esila says that you are keeping a secret from your brother that he must never know. I think the secret is thus: You are now a god because one day you will become a god, and a god is not temporal. Your brother is not a god because he will never become a god. Shall I worship you?\"\n\"Sjur,\" Mara said, falling to her knees, clutching her beloved's face between shaking hands, \"Sjur, on the day you worship me, you cannot love me anymore, for to worship is to yield all power, and I cannot love what has no power over me.\"",
+    "bungie_ref": "69726150",
+    "image_url": "",
+    "full_image_url": "",
+    "subtitle": "",
+    "description": "It was Mara alone who established a covenant with that young Ahamkara, which chose the use-name Riven, in honor of its host. It was Mara alone whose singular will and unity of purpose saved the Awoken from that which we now name the Anthem Anatheme. For there was in Mara very little division between Reality-As-Is and Reality-As-Desired; she was confident in her centuries of purpose and patient with the winding way by which the river of methods reaches the objective ocean. Blessed are those who in their absolute selfhood become selfless. Unappetizing are those who in their truest self-knowledge exclude the possibility of self-deceit.\n\n\"Mara,\" said Uldren Queensbrother, \"why do you forbid me to speak to the Ahamkara?\"\n\n\"This secret is mine alone,\" said Mara Queen. She knew that her brother had only widened the gap between He-As-Was (which is called NUME) and He-As-He-Would-Be (which is named CAUST). \"Begone to the outer world, where I require thee.\"\n\nThis was when Sjur Eido, having spoken to Kelda Wadj and to Esila, at last came before her Queen. Kneeling, she said, \"Your Majesty, Kelda Wadj says you are a god, for there is no difference between your desire and reality. Yet I know that you desire things before they ever become real. Esila says that you are keeping a secret from your brother that he must never know. I think the secret is thus: You are now a god because one day you will become a god, and a god is not temporal. Your brother is not a god because he will never become a god. Shall I worship you?\"\n\n\"Sjur,\" Mara said, falling to her knees, clutching her beloved's face between shaking hands, \"Sjur, on the day you worship me, you cannot love me anymore, for to worship is to yield all power, and I cannot love what has no power over me.\"\n\nAt this, the Ahamkara coiled around her neck, yawned, and showed its fangs: for there was a crevice between What Was and What Was Wanted.\n\n\"I see,\" Sjur Eido said. \"Then to me you are not yet a god.\"\n\nAlthough in time the knowledge of what Mara would become pushed them apart, it was a kind and happy push, as a friend might urge a beloved companion onward to a distant opportunity. And their days together were spent gladly.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "queen-mara-sov",
+        "name": "Queen Mara Sov",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/queen-mara-sov",
+        "api_url": "https://api.ishtar-collective.net/categories/queen-mara-sov",
+        "short_summary": "Queen of the Reef and previous Kell of the House of Wolves. "
+      },
+      {
+        "ishtar_ref": "prince-uldren-sov",
+        "name": "Prince Uldren Sov",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/prince-uldren-sov",
+        "api_url": "https://api.ishtar-collective.net/categories/prince-uldren-sov",
+        "short_summary": "Brother of Queen Mara Sov, former Prince of the Reef and Master of Crows. "
+      },
+      {
+        "ishtar_ref": "book-the-awoken-of-the-reef",
+        "name": "Book: The Awoken of the Reef",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/book-the-awoken-of-the-reef",
+        "api_url": "https://api.ishtar-collective.net/categories/book-the-awoken-of-the-reef",
+        "short_summary": ""
+      },
+      {
+        "ishtar_ref": "riven",
+        "name": "Riven",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/riven",
+        "api_url": "https://api.ishtar-collective.net/categories/riven",
+        "short_summary": "The last known Ahamkara."
+      },
+      {
+        "ishtar_ref": "sjur-eido",
+        "name": "Sjur Eido",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/sjur-eido",
+        "api_url": "https://api.ishtar-collective.net/categories/sjur-eido",
+        "short_summary": ""
+      }
+    ],
+    "items": []
+  }
+}

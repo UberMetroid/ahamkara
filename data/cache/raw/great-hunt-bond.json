@@ -1,0 +1,147 @@
+{
+  "id": "great-hunt-bond",
+  "api_path": "/entries/bond-of-the-great-hunt",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "bond-of-the-great-hunt",
+    "name": "Bond of the Great Hunt",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/bond-of-the-great-hunt",
+    "api_url": "https://api.ishtar-collective.net/entries/bond-of-the-great-hunt",
+    "short_summary": "I wish to be respected.\n—\nI am [Riven]. And I am pleased.\nThe [Techeun] believe that with my heart in tow I will remain imprisoned.\nBut my [bargain] with them is fulfilled. And they will pay.\nThis [City] will pay.\nBut what about you? Brother-slayer. Spawn-killer. [Child of light]. What will you do now that we are bonded for all your lives?",
+    "bungie_ref": "821841934",
+    "image_url": "/common/destiny2_content/screenshots/1477271933.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/1477271933.jpg",
+    "subtitle": "I wish to be respected.",
+    "description": "I am [Riven]. And I am pleased.\n\nThe [Techeun] believe that with my heart in tow I will remain imprisoned.\n\nBut my [bargain] with them is fulfilled. And they will pay.\n\nThis [City] will pay.\n\nBut what about you? Brother-slayer. Spawn-killer. [Child of light]. What will you do now that we are bonded for all your lives?\n\nI gave you everything you wanted in that moment. Everything you needed. You complete your [raid]. And you are rewarded for your efforts.\n\nDid you exhibit a violent display in the aftermath? I wonder. Some of you do. Everyone wants more than they have. A key element of all [bargains].\n\nYou are afflicted by tedious repetition. \n\nIt is my turn to benefit.\n\nMost of those who [bargain] with me do not win.\n\nO murderer mine.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "riven",
+        "name": "Riven",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/riven",
+        "api_url": "https://api.ishtar-collective.net/categories/riven",
+        "short_summary": "The last known Ahamkara."
+      },
+      {
+        "ishtar_ref": "the-great-ahamkara-hunt",
+        "name": "The Great Ahamkara Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "api_url": "https://api.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "short_summary": ""
+      },
+      {
+        "ishtar_ref": "great-hunt-suit-warlock",
+        "name": "Great Hunt Suit (Warlock)",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/great-hunt-suit-warlock",
+        "api_url": "https://api.ishtar-collective.net/categories/great-hunt-suit-warlock",
+        "short_summary": ""
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "bond-of-the-great-hunt",
+        "name": "Bond of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/bond-of-the-great-hunt",
+        "api_url": "https://api.ishtar-collective.net/items/bond-of-the-great-hunt",
+        "short_summary": "I wish to be respected.",
+        "bungie_ref": "821841934",
+        "image_url": "/common/destiny2_content/icons/42a98e2899a0de554316233b2547c15e.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/42a98e2899a0de554316233b2547c15e.jpg",
+        "flavor_text": "I wish to be respected.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "bond-of-the-great-hunt-3",
+        "name": "Bond of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/bond-of-the-great-hunt-3",
+        "api_url": "https://api.ishtar-collective.net/items/bond-of-the-great-hunt-3",
+        "short_summary": "I wish to be respected.",
+        "bungie_ref": "1477271933",
+        "image_url": "/common/destiny2_content/icons/42a98e2899a0de554316233b2547c15e.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/42a98e2899a0de554316233b2547c15e.jpg",
+        "flavor_text": "I wish to be respected.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "bond-of-the-great-hunt-2",
+        "name": "Bond of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/bond-of-the-great-hunt-2",
+        "api_url": "https://api.ishtar-collective.net/items/bond-of-the-great-hunt-2",
+        "short_summary": "I wish to be respected.",
+        "bungie_ref": "2280287728",
+        "image_url": "/common/destiny2_content/icons/42a98e2899a0de554316233b2547c15e.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/42a98e2899a0de554316233b2547c15e.jpg",
+        "flavor_text": "I wish to be respected.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "bond-of-the-great-hunt-4",
+        "name": "Bond of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/bond-of-the-great-hunt-4",
+        "api_url": "https://api.ishtar-collective.net/items/bond-of-the-great-hunt-4",
+        "short_summary": "I wish to be respected.",
+        "bungie_ref": "3570956455",
+        "image_url": "/common/destiny2_content/icons/42a98e2899a0de554316233b2547c15e.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/42a98e2899a0de554316233b2547c15e.jpg",
+        "flavor_text": "I wish to be respected.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "bond-of-the-great-hunt-5",
+        "name": "Bond of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/bond-of-the-great-hunt-5",
+        "api_url": "https://api.ishtar-collective.net/items/bond-of-the-great-hunt-5",
+        "short_summary": "I wish to be respected.",
+        "bungie_ref": "59911515",
+        "image_url": "/common/destiny2_content/icons/42a98e2899a0de554316233b2547c15e.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/42a98e2899a0de554316233b2547c15e.jpg",
+        "flavor_text": "I wish to be respected.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "bond-of-the-great-hunt-6",
+        "name": "Bond of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/bond-of-the-great-hunt-6",
+        "api_url": "https://api.ishtar-collective.net/items/bond-of-the-great-hunt-6",
+        "short_summary": "I wish to be respected.",
+        "bungie_ref": "582613052",
+        "image_url": "/common/destiny2_content/icons/42a98e2899a0de554316233b2547c15e.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/42a98e2899a0de554316233b2547c15e.jpg",
+        "flavor_text": "I wish to be respected.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "bond-of-the-great-hunt-8",
+        "name": "Bond of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/bond-of-the-great-hunt-8",
+        "api_url": "https://api.ishtar-collective.net/items/bond-of-the-great-hunt-8",
+        "short_summary": "I wish to be respected.",
+        "bungie_ref": "3014562562",
+        "image_url": "/common/destiny2_content/icons/42a98e2899a0de554316233b2547c15e.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/42a98e2899a0de554316233b2547c15e.jpg",
+        "flavor_text": "I wish to be respected.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "bond-of-the-great-hunt-7",
+        "name": "Bond of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/bond-of-the-great-hunt-7",
+        "api_url": "https://api.ishtar-collective.net/items/bond-of-the-great-hunt-7",
+        "short_summary": "I wish to be respected.",
+        "bungie_ref": "1184807158",
+        "image_url": "/common/destiny2_content/icons/42a98e2899a0de554316233b2547c15e.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/42a98e2899a0de554316233b2547c15e.jpg",
+        "flavor_text": "I wish to be respected.",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

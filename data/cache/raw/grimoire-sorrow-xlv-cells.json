@@ -1,0 +1,49 @@
+{
+  "id": "grimoire-sorrow-xlv-cells",
+  "api_path": "/cards/xlv-id-shut-them-all-in-cells",
+  "doc_type": "grimoire_card",
+  "data": {
+    "ishtar_ref": "xlv-id-shut-them-all-in-cells",
+    "name": "XLV: I'd shut them all in cells.",
+    "ishtar_url": "https://www.ishtar-collective.net/cards/xlv-id-shut-them-all-in-cells",
+    "api_url": "https://api.ishtar-collective.net/cards/xlv-id-shut-them-all-in-cells",
+    "short_summary": "Verse 5:3 — I'd shut them all in cells.\nPrey and Sacrifice —\nUttered by Xivu Arath —\nGod of War —\nHARMONY. When the Traveler passed across Harmony, it lied to the orbits of ten worlds. Now they orbit the black hole. The Traveler lied to the accretion disc, so that it would give warm light to these worlds.",
+    "bungie_ref": "701120",
+    "image_url": "/common/destiny_content/grimoire/hr_images/701120_fd5832361893827e277ec5b678ce6b22.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny_content/grimoire/hr_images/701120_fd5832361893827e277ec5b678ce6b22.jpg",
+    "intro": "<b>Verse 5:3 — I&#39;d shut them all in cells.</b>",
+    "intro_attribution": null,
+    "description": "Prey and Sacrifice —<br/>\nUttered by Xivu Arath —<br/>\nGod of War —<br/><br/>\nHARMONY. When the Traveler passed across Harmony, it lied to the orbits of ten worlds. Now they orbit the black hole. The Traveler lied to the accretion disc, so that it would give warm light to these worlds.<br/><br/>\nTHE GIFT MAST. When the Traveler left Harmony, it made a monument out of the black hole’s polar jet. In the jet there is a hollow mast which sings in radiance. This is the Gift Mast and we will devour it, we will eat the Sky out of it, we will snap it like a bone.<br/><br/>\nTHE HARMONY STING. The Harmony have weaponized their dead star. They can stimulate the accretion disc to fire relativistic plasma jets. We will take the Sting. We will use it to burn their worlds. I will grant one temple of tribute to the first Ascendant to kill a world!<br/><br/>\nORYX. I will have the Gift Mast to feast on! I will have it first! I am Xivu Arath and all war is my temple. Beware the daughters of Oryx, for they make and unmake with ease.<br/><br/>\nSAVATH&#219;N. The Deceitful Sister will be distracted by arcana and the song of the black hole. Treat her broods with contempt.<br/><br/>\nTHE TRAVELER. We chase it and we will devour it. The Deep will rule the cosmos.<br/><br/>\nTHE DRAGONS. Our gods should be ours alone. Their smug freedom is an insult to me. I’d shut them all in cells. Bring them to me!",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "oryx",
+        "name": "Oryx",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/oryx",
+        "api_url": "https://api.ishtar-collective.net/categories/oryx",
+        "short_summary": "Previously Aurash and then Auryx, a member of the proto-Hive species, the heir to the Osmium throne, the leader of the Hive and the only creature known to be capable of creating the Taken."
+      },
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "books-of-sorrow",
+        "name": "Books of Sorrow",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/books-of-sorrow",
+        "api_url": "https://api.ishtar-collective.net/categories/books-of-sorrow",
+        "short_summary": "A collection of verses compiled by Oryx, the Taken King, and including verses from the Worm Gods and Oryx's sisters, as well as from other civilizations."
+      },
+      {
+        "ishtar_ref": "savathun",
+        "name": "Savathûn",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/savathun",
+        "api_url": "https://api.ishtar-collective.net/categories/savathun",
+        "short_summary": "Hive goddess of trickery and cunning."
+      }
+    ]
+  }
+}

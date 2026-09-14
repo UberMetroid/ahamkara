@@ -1,0 +1,94 @@
+{
+  "id": "exotic-claws-of-ahamkara",
+  "api_path": "/entries/claws-of-ahamkara",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "claws-of-ahamkara",
+    "name": "Claws of Ahamkara",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/claws-of-ahamkara",
+    "api_url": "https://api.ishtar-collective.net/entries/claws-of-ahamkara",
+    "short_summary": "The mind is malleable, filled with transient and fleeting ideas. Let us shape it, so that you may see the infinite splendor of the universe.\n—\nIt's suffocating here, this prison. Do us a favor, o bearer ours. Still your mind; invite us to enter the realm of your capricious thoughts. Your mind is vociferous, addled with worry and doubt. We can extinguish these trifles. Would you like that? \nYes, we are here. We are not the photons on your screen, or the voice in your head, or the words you read. Shut your eyes—tightly—and you may see us. At least a part of us. Make us real, and in turn we shall reify your thoughts, your dreams.",
+    "bungie_ref": "2970800254",
+    "image_url": "/common/destiny2_content/screenshots/2970800254.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/2970800254.jpg",
+    "subtitle": "The mind is malleable, filled with transient and fleeting ideas. Let us shape it, so that you may see the infinite splendor of the universe.",
+    "description": "It's suffocating here, this prison. Do us a favor, o bearer ours. Still your mind; invite us to enter the realm of your capricious thoughts. Your mind is vociferous, addled with worry and doubt. We can extinguish these trifles. Would you like that? \n\nYes, we are here. We are not the photons on your screen, or the voice in your head, or the words you read. Shut your eyes—tightly—and you may see us. At least a part of us. Make us real, and in turn we shall reify your thoughts, your dreams.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "claws-of-ahamkara-4",
+        "name": "Claws of Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/items/claws-of-ahamkara-4",
+        "api_url": "https://api.ishtar-collective.net/items/claws-of-ahamkara-4",
+        "short_summary": "The mind is malleable, filled with transient and fleeting ideas. Let us shape it, so that you may see the infinite splendor of the universe.",
+        "bungie_ref": "3288917178",
+        "image_url": "/common/destiny2_content/icons/76cac5fbab0144f75832a21c50abb96f.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/76cac5fbab0144f75832a21c50abb96f.jpg",
+        "flavor_text": "The mind is malleable, filled with transient and fleeting ideas. Let us shape it, so that you may see the infinite splendor of the universe.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "claws-of-ahamkara-3",
+        "name": "Claws of Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/items/claws-of-ahamkara-3",
+        "api_url": "https://api.ishtar-collective.net/items/claws-of-ahamkara-3",
+        "short_summary": "The mind is malleable, filled with transient and fleeting ideas. Let us shape it, so that you may see the infinite splendor of the universe.",
+        "bungie_ref": "2970800254",
+        "image_url": "/common/destiny2_content/icons/76cac5fbab0144f75832a21c50abb96f.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/76cac5fbab0144f75832a21c50abb96f.jpg",
+        "flavor_text": "The mind is malleable, filled with transient and fleeting ideas. Let us shape it, so that you may see the infinite splendor of the universe.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "claws-of-ahamkara-5",
+        "name": "Claws of Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/items/claws-of-ahamkara-5",
+        "api_url": "https://api.ishtar-collective.net/items/claws-of-ahamkara-5",
+        "short_summary": "The mind is malleable, filled with transient and fleeting ideas. Let us shape it, so that you may see the infinite splendor of the universe.",
+        "bungie_ref": "231864088",
+        "image_url": "/common/destiny2_content/icons/76cac5fbab0144f75832a21c50abb96f.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/76cac5fbab0144f75832a21c50abb96f.jpg",
+        "flavor_text": "The mind is malleable, filled with transient and fleeting ideas. Let us shape it, so that you may see the infinite splendor of the universe.",
+        "description": "",
+        "bungie_deleted": true
+      },
+      {
+        "ishtar_ref": "claws-of-ahamkara-7",
+        "name": "Claws of Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/items/claws-of-ahamkara-7",
+        "api_url": "https://api.ishtar-collective.net/items/claws-of-ahamkara-7",
+        "short_summary": "The mind is malleable, filled with transient and fleeting ideas. Let us shape it, so that you may see the infinite splendor of the universe.",
+        "bungie_ref": "2978078741",
+        "image_url": "/common/destiny2_content/icons/76cac5fbab0144f75832a21c50abb96f.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/76cac5fbab0144f75832a21c50abb96f.jpg",
+        "flavor_text": "The mind is malleable, filled with transient and fleeting ideas. Let us shape it, so that you may see the infinite splendor of the universe.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "claws-of-ahamkara-6",
+        "name": "Claws of Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/items/claws-of-ahamkara-6",
+        "api_url": "https://api.ishtar-collective.net/items/claws-of-ahamkara-6",
+        "short_summary": "The mind is malleable, filled with transient and fleeting ideas. Let us shape it, so that you may see the infinite splendor of the universe.",
+        "bungie_ref": "171695625",
+        "image_url": "/common/destiny2_content/icons/76cac5fbab0144f75832a21c50abb96f.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/76cac5fbab0144f75832a21c50abb96f.jpg",
+        "flavor_text": "The mind is malleable, filled with transient and fleeting ideas. Let us shape it, so that you may see the infinite splendor of the universe.",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

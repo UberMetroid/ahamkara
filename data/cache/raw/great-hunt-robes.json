@@ -1,0 +1,147 @@
+{
+  "id": "great-hunt-robes",
+  "api_path": "/entries/robes-of-the-great-hunt",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "robes-of-the-great-hunt",
+    "name": "Robes of the Great Hunt",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/robes-of-the-great-hunt",
+    "api_url": "https://api.ishtar-collective.net/entries/robes-of-the-great-hunt",
+    "short_summary": "I wish to be ruthless.\n—\nI am myself. All my memories. Everything I was. All the [bargains] I have made. That was all me.\nAnd yet.\nI have taken a new shape.\nI am [Riven].\nI have new directive. I am [the King of the Taken].",
+    "bungie_ref": "3445296383",
+    "image_url": "/common/destiny2_content/screenshots/2550116544.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/2550116544.jpg",
+    "subtitle": "I wish to be ruthless.",
+    "description": "I am myself. All my memories. Everything I was. All the [bargains] I have made. That was all me.\n\nAnd yet.\n\nI have taken a new shape.\n\nI am [Riven].\n\nI have new directive. I am [the King of the Taken].\n\nI watch as a hundred thousand thousands of fragments of my will contest with [children of Light].\n\nIn my new shape, I hate them. He. Was. His. [Son.]\n\nBut there are those among them with whom I have made [bargains]. I need them. I love them.\n\nI am a [King]. My will breaks entire systems. And I lead a world full of [darkness].\n\nBut I am terrified. I know the power that these [children] wield.\n\nThis is a war a [King] cannot win.\n\nI have a face today. It expels mirthful bursts of air. I still find this scenario amusing.\n\nBut I am the only one.\n\nMost of those who [bargain] with me do not win.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "riven",
+        "name": "Riven",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/riven",
+        "api_url": "https://api.ishtar-collective.net/categories/riven",
+        "short_summary": "The last known Ahamkara."
+      },
+      {
+        "ishtar_ref": "the-great-ahamkara-hunt",
+        "name": "The Great Ahamkara Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "api_url": "https://api.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "short_summary": ""
+      },
+      {
+        "ishtar_ref": "great-hunt-suit-warlock",
+        "name": "Great Hunt Suit (Warlock)",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/great-hunt-suit-warlock",
+        "api_url": "https://api.ishtar-collective.net/categories/great-hunt-suit-warlock",
+        "short_summary": ""
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "robes-of-the-great-hunt-3",
+        "name": "Robes of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/robes-of-the-great-hunt-3",
+        "api_url": "https://api.ishtar-collective.net/items/robes-of-the-great-hunt-3",
+        "short_summary": "I wish to be ruthless.",
+        "bungie_ref": "2550116544",
+        "image_url": "/common/destiny2_content/icons/fb10acf6220b725be2444aba354895e0.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/fb10acf6220b725be2444aba354895e0.jpg",
+        "flavor_text": "I wish to be ruthless.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "robes-of-the-great-hunt-4",
+        "name": "Robes of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/robes-of-the-great-hunt-4",
+        "api_url": "https://api.ishtar-collective.net/items/robes-of-the-great-hunt-4",
+        "short_summary": "I wish to be ruthless.",
+        "bungie_ref": "4241329310",
+        "image_url": "/common/destiny2_content/icons/fb10acf6220b725be2444aba354895e0.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/fb10acf6220b725be2444aba354895e0.jpg",
+        "flavor_text": "I wish to be ruthless.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "robes-of-the-great-hunt-2",
+        "name": "Robes of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/robes-of-the-great-hunt-2",
+        "api_url": "https://api.ishtar-collective.net/items/robes-of-the-great-hunt-2",
+        "short_summary": "I wish to be ruthless.",
+        "bungie_ref": "776723133",
+        "image_url": "/common/destiny2_content/icons/fb10acf6220b725be2444aba354895e0.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/fb10acf6220b725be2444aba354895e0.jpg",
+        "flavor_text": "I wish to be ruthless.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "robes-of-the-great-hunt",
+        "name": "Robes of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/robes-of-the-great-hunt",
+        "api_url": "https://api.ishtar-collective.net/items/robes-of-the-great-hunt",
+        "short_summary": "I wish to be ruthless.",
+        "bungie_ref": "3445296383",
+        "image_url": "/common/destiny2_content/icons/fb10acf6220b725be2444aba354895e0.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/fb10acf6220b725be2444aba354895e0.jpg",
+        "flavor_text": "I wish to be ruthless.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "robes-of-the-great-hunt-5",
+        "name": "Robes of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/robes-of-the-great-hunt-5",
+        "api_url": "https://api.ishtar-collective.net/items/robes-of-the-great-hunt-5",
+        "short_summary": "I wish to be ruthless.",
+        "bungie_ref": "1327484940",
+        "image_url": "/common/destiny2_content/icons/fb10acf6220b725be2444aba354895e0.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/fb10acf6220b725be2444aba354895e0.jpg",
+        "flavor_text": "I wish to be ruthless.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "robes-of-the-great-hunt-6",
+        "name": "Robes of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/robes-of-the-great-hunt-6",
+        "api_url": "https://api.ishtar-collective.net/items/robes-of-the-great-hunt-6",
+        "short_summary": "I wish to be ruthless.",
+        "bungie_ref": "2524206659",
+        "image_url": "/common/destiny2_content/icons/fb10acf6220b725be2444aba354895e0.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/fb10acf6220b725be2444aba354895e0.jpg",
+        "flavor_text": "I wish to be ruthless.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "robes-of-the-great-hunt-8",
+        "name": "Robes of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/robes-of-the-great-hunt-8",
+        "api_url": "https://api.ishtar-collective.net/items/robes-of-the-great-hunt-8",
+        "short_summary": "I wish to be ruthless.",
+        "bungie_ref": "4274862443",
+        "image_url": "/common/destiny2_content/icons/fb10acf6220b725be2444aba354895e0.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/fb10acf6220b725be2444aba354895e0.jpg",
+        "flavor_text": "I wish to be ruthless.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "robes-of-the-great-hunt-7",
+        "name": "Robes of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/robes-of-the-great-hunt-7",
+        "api_url": "https://api.ishtar-collective.net/items/robes-of-the-great-hunt-7",
+        "short_summary": "I wish to be ruthless.",
+        "bungie_ref": "1649290953",
+        "image_url": "/common/destiny2_content/icons/fb10acf6220b725be2444aba354895e0.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/fb10acf6220b725be2444aba354895e0.jpg",
+        "flavor_text": "I wish to be ruthless.",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

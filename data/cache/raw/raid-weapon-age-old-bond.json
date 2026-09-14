@@ -1,0 +1,109 @@
+{
+  "id": "raid-weapon-age-old-bond",
+  "api_path": "/entries/age-old-bond",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "age-old-bond",
+    "name": "Age-Old Bond",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/age-old-bond",
+    "api_url": "https://api.ishtar-collective.net/entries/age-old-bond",
+    "short_summary": "Symbiosis. Not predation. Never predation, o wary one mine.\n—\nThe driving bass line of a classic song from Old Earth drove their prey before them. No less than a half-dozen wyverns snarled and clawed at the trio as they stabbed and blasted their way through the wilds of Mars.\nPraedyth wished hard. Wished it would never end.\nAlongside him, Kabr was a towering giant. An Awoken-made weapon roared in his hands and in his head.\nPahanin was a force, a living embodiment of the Void. Where he pointed, Ahamkhara died.\nIn the middle, between them, Praedyth smiled. A winged and scaled lion with a boar's tusks leapt at him, and he could swear he saw the thing wink at him as he tore it apart.",
+    "bungie_ref": "601592879",
+    "image_url": "/common/destiny2_content/screenshots/601592879.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/601592879.jpg",
+    "subtitle": "Symbiosis. Not predation. Never predation, o wary one mine.",
+    "description": "The driving bass line of a classic song from Old Earth drove their prey before them. No less than a half-dozen wyverns snarled and clawed at the trio as they stabbed and blasted their way through the wilds of Mars.\n\nPraedyth wished hard. Wished it would never end.\n\nAlongside him, Kabr was a towering giant. An Awoken-made weapon roared in his hands and in his head.\n\nPahanin was a force, a living embodiment of the Void. Where he pointed, Ahamkhara died.\n\nIn the middle, between them, Praedyth smiled. A winged and scaled lion with a boar's tusks leapt at him, and he could swear he saw the thing wink at him as he tore it apart.\n\nBeneath the song, Praedyth heard static, like a comm signal. Best not to think about it.\n\nPraedyth wished again, and the hunt went on.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "kabr",
+        "name": "Kabr",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/kabr",
+        "api_url": "https://api.ishtar-collective.net/categories/kabr",
+        "short_summary": "A member of the original fireteam to enter the Vault of Glass. He used the last of his Light to create the Aegis, which allowed the next fireteam that entered the Vault to be successful."
+      },
+      {
+        "ishtar_ref": "pahanin",
+        "name": "Pahanin",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/pahanin",
+        "api_url": "https://api.ishtar-collective.net/categories/pahanin",
+        "short_summary": "A Hunter renowned for his writing on various subjects, including advice to other Hunters, collected in a volume known as \"the Pahanin Errata\"."
+      },
+      {
+        "ishtar_ref": "praedyth",
+        "name": "Praedyth",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/praedyth",
+        "api_url": "https://api.ishtar-collective.net/categories/praedyth",
+        "short_summary": "One of the first known Guardians to enter the Vault of Glass."
+      },
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "the-great-ahamkara-hunt",
+        "name": "The Great Ahamkara Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "api_url": "https://api.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "short_summary": ""
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "age-old-bond",
+        "name": "Age-Old Bond",
+        "ishtar_url": "https://www.ishtar-collective.net/items/age-old-bond",
+        "api_url": "https://api.ishtar-collective.net/items/age-old-bond",
+        "short_summary": "Symbiosis. Not predation. Never predation, o wary one mine.",
+        "bungie_ref": "601592879",
+        "image_url": "/common/destiny2_content/icons/bbcfd3be25a188e62ebc82258ec1009e.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/bbcfd3be25a188e62ebc82258ec1009e.jpg",
+        "flavor_text": "Symbiosis. Not predation. Never predation, o wary one mine.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "transfiguration-2",
+        "name": "Transfiguration",
+        "ishtar_url": "https://www.ishtar-collective.net/items/transfiguration-2",
+        "api_url": "https://api.ishtar-collective.net/items/transfiguration-2",
+        "short_summary": "Desire becomes reality, o wishbringer mine.",
+        "bungie_ref": "824826593",
+        "image_url": "/common/destiny2_content/icons/a8e4ad15ecf0dc1ef41e0635eb8a1eb7.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/a8e4ad15ecf0dc1ef41e0635eb8a1eb7.jpg",
+        "flavor_text": "Desire becomes reality, o wishbringer mine.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "transfiguration-3",
+        "name": "Transfiguration",
+        "ishtar_url": "https://www.ishtar-collective.net/items/transfiguration-3",
+        "api_url": "https://api.ishtar-collective.net/items/transfiguration-3",
+        "short_summary": "Desire becomes reality, o wishbringer mine.",
+        "bungie_ref": "3175386398",
+        "image_url": "/common/destiny2_content/icons/a8e4ad15ecf0dc1ef41e0635eb8a1eb7.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/a8e4ad15ecf0dc1ef41e0635eb8a1eb7.jpg",
+        "flavor_text": "Desire becomes reality, o wishbringer mine.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "age-old-bond-4",
+        "name": "Age-Old Bond",
+        "ishtar_url": "https://www.ishtar-collective.net/items/age-old-bond-4",
+        "api_url": "https://api.ishtar-collective.net/items/age-old-bond-4",
+        "short_summary": "Symbiosis. Not predation. Never predation, o wary one mine.",
+        "bungie_ref": "424291879",
+        "image_url": "/common/destiny2_content/icons/f6bea329c6f50d716e6385d59de7bd4c.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/f6bea329c6f50d716e6385d59de7bd4c.jpg",
+        "flavor_text": "Symbiosis. Not predation. Never predation, o wary one mine.",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "id": "warlord-shadow-mountain-8",
+  "api_path": "/items/in-the-shadow-of-the-mountain-8",
+  "doc_type": "item",
+  "data": {
+    "ishtar_ref": "in-the-shadow-of-the-mountain-8",
+    "name": "In the Shadow of the Mountain",
+    "ishtar_url": "https://www.ishtar-collective.net/items/in-the-shadow-of-the-mountain-8",
+    "api_url": "https://api.ishtar-collective.net/items/in-the-shadow-of-the-mountain-8",
+    "short_summary": "Return to Hefnd's Cairn.\n—\nThe lost bone fragments have been recovered and restored. Return them to their owner, that they may be at peace.",
+    "bungie_ref": "825259733",
+    "image_url": "/common/destiny2_content/icons/7abfa8d7b0b23d54ffb345444cb1810f.png",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/7abfa8d7b0b23d54ffb345444cb1810f.png",
+    "flavor_text": "The lost bone fragments have been recovered and restored. Return them to their owner, that they may be at peace.",
+    "description": "Return to Hefnd's Cairn.",
+    "bungie_deleted": false,
+    "categories": []
+  }
+}

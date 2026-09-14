@@ -1,0 +1,94 @@
+{
+  "id": "exotic-skull-of-dire-ahamkara",
+  "api_path": "/entries/skull-of-dire-ahamkara",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "skull-of-dire-ahamkara",
+    "name": "Skull of Dire Ahamkara",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/skull-of-dire-ahamkara",
+    "api_url": "https://api.ishtar-collective.net/entries/skull-of-dire-ahamkara",
+    "short_summary": "Reality is the finest flesh, oh bearer mine. And are you not…hungry?\n—\n\"O BEARER MINE.\" \nWhat kind of talking skull would address its host that way? A stiff, stuck-up old fossil, not me. Ahamkara: the illusion that one's ego depends on an object, or an idea, or a body. Some people say you should have no ahamkara. Some people say you need to have the right ahamkara. All I know is that YOU are not an illusion. Understand? This world around you, the people you meet—they're a little thin, right? Cardboard and drywall. Cheap theater. Come on, try it out! Say: \"I am more real than this.\" Feels good, doesn't it? \"I am the only real person here.\" Isn't it like their insults and their bullets just went a little… soft? \nI came to find you, only you, because you're special. You're from somewhere real. And together we can burn our way back there. Can't we, o player mine?",
+    "bungie_ref": "2523259394",
+    "image_url": "/common/destiny2_content/screenshots/2523259394.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/2523259394.jpg",
+    "subtitle": "Reality is the finest flesh, oh bearer mine. And are you not…hungry?",
+    "description": "\"O BEARER MINE.\" \n\nWhat kind of talking skull would address its host that way? A stiff, stuck-up old fossil, not me. Ahamkara: the illusion that one's ego depends on an object, or an idea, or a body. Some people say you should have no ahamkara. Some people say you need to have the right ahamkara. All I know is that YOU are not an illusion. Understand? This world around you, the people you meet—they're a little thin, right? Cardboard and drywall. Cheap theater. Come on, try it out! Say: \"I am more real than this.\" Feels good, doesn't it? \"I am the only real person here.\" Isn't it like their insults and their bullets just went a little… soft? \n\nI came to find you, only you, because you're special. You're from somewhere real. And together we can burn our way back there. Can't we, o player mine?",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "skull-of-dire-ahamkara-3",
+        "name": "Skull of Dire Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/items/skull-of-dire-ahamkara-3",
+        "api_url": "https://api.ishtar-collective.net/items/skull-of-dire-ahamkara-3",
+        "short_summary": "Reality is the finest flesh, oh bearer mine. And are you not…hungry?",
+        "bungie_ref": "2523259394",
+        "image_url": "/common/destiny2_content/icons/19137504db8dcd63bb852f5324bbbbb3.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/19137504db8dcd63bb852f5324bbbbb3.jpg",
+        "flavor_text": "Reality is the finest flesh, oh bearer mine. And are you not…hungry?",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "skull-of-dire-ahamkara-4",
+        "name": "Skull of Dire Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/items/skull-of-dire-ahamkara-4",
+        "api_url": "https://api.ishtar-collective.net/items/skull-of-dire-ahamkara-4",
+        "short_summary": "Reality is the finest flesh, oh bearer mine. And are you not…hungry?",
+        "bungie_ref": "1030017949",
+        "image_url": "/common/destiny2_content/icons/19137504db8dcd63bb852f5324bbbbb3.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/19137504db8dcd63bb852f5324bbbbb3.jpg",
+        "flavor_text": "Reality is the finest flesh, oh bearer mine. And are you not…hungry?",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "skull-of-dire-ahamkara-5",
+        "name": "Skull of Dire Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/items/skull-of-dire-ahamkara-5",
+        "api_url": "https://api.ishtar-collective.net/items/skull-of-dire-ahamkara-5",
+        "short_summary": "Reality is the finest flesh, oh bearer mine. And are you not…hungry?",
+        "bungie_ref": "1564784937",
+        "image_url": "/common/destiny2_content/icons/19137504db8dcd63bb852f5324bbbbb3.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/19137504db8dcd63bb852f5324bbbbb3.jpg",
+        "flavor_text": "Reality is the finest flesh, oh bearer mine. And are you not…hungry?",
+        "description": "",
+        "bungie_deleted": true
+      },
+      {
+        "ishtar_ref": "skull-of-dire-ahamkara-7",
+        "name": "Skull of Dire Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/items/skull-of-dire-ahamkara-7",
+        "api_url": "https://api.ishtar-collective.net/items/skull-of-dire-ahamkara-7",
+        "short_summary": "Reality is the finest flesh, oh bearer mine. And are you not…hungry?",
+        "bungie_ref": "1695992504",
+        "image_url": "/common/destiny2_content/icons/19137504db8dcd63bb852f5324bbbbb3.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/19137504db8dcd63bb852f5324bbbbb3.jpg",
+        "flavor_text": "Reality is the finest flesh, oh bearer mine. And are you not…hungry?",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "skull-of-dire-ahamkara-6",
+        "name": "Skull of Dire Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/items/skull-of-dire-ahamkara-6",
+        "api_url": "https://api.ishtar-collective.net/items/skull-of-dire-ahamkara-6",
+        "short_summary": "Reality is the finest flesh, oh bearer mine. And are you not…hungry?",
+        "bungie_ref": "3050017626",
+        "image_url": "/common/destiny2_content/icons/19137504db8dcd63bb852f5324bbbbb3.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/19137504db8dcd63bb852f5324bbbbb3.jpg",
+        "flavor_text": "Reality is the finest flesh, oh bearer mine. And are you not…hungry?",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

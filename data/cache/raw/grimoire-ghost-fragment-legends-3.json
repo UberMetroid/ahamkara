@@ -1,0 +1,56 @@
+{
+  "id": "grimoire-ghost-fragment-legends-3",
+  "api_path": "/cards/ghost-fragment-legends-3",
+  "doc_type": "grimoire_card",
+  "data": {
+    "ishtar_ref": "ghost-fragment-legends-3",
+    "name": "Ghost Fragment: Legends 3",
+    "ishtar_url": "https://www.ishtar-collective.net/cards/ghost-fragment-legends-3",
+    "api_url": "https://api.ishtar-collective.net/cards/ghost-fragment-legends-3",
+    "short_summary": "The Great Ahamkara Hunt\nAfter great deliberation it was determined that the Ahamkara be made extinct. \nIt was not an easy decision. Power had been obtained from the bargains, and the City needed power. Knowledge had been gleaned, and the Ahamkara knew answers to questions no one had known to ask.\nBut the price was too high. And no edict or forbearance seemed to stop Guardians from seeking them out, driven by hope, or vengeance, or despair.\nThe call had to be silenced. So the Great Hunt did its work.",
+    "bungie_ref": "106040",
+    "image_url": "/common/destiny_content/grimoire/hr_images/106040_711989464810b96fa210040810eaab0a.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny_content/grimoire/hr_images/106040_711989464810b96fa210040810eaab0a.jpg",
+    "intro": "<b>The Great Ahamkara Hunt</b>",
+    "intro_attribution": null,
+    "description": "After great deliberation it was determined that the Ahamkara be made extinct. <br/><br/>\nIt was not an easy decision. Power had been obtained from the bargains, and the City needed power. Knowledge had been gleaned, and the Ahamkara knew answers to questions no one had known to ask.<br/><br/>\nBut the price was too high. And no edict or forbearance seemed to stop Guardians from seeking them out, driven by hope, or vengeance, or despair.<br/><br/>\nThe call had to be silenced. So the Great Hunt did its work.<br/><br/>\nAnd thus the Ahamkara were made extinct, their call silenced, their solipsistic flatteries erased, their great design - if it ever existed - broken.<br/><br/>\nOf this you can be assured, oh reader mine.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "bray-family",
+        "name": "The Bray Family",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/bray-family",
+        "api_url": "https://api.ishtar-collective.net/categories/bray-family",
+        "short_summary": "Known family members include Clovis Bray, Clovis Bray II, Willa Bray, Alton Bray, Ana Bray, and Elsie Bray."
+      },
+      {
+        "ishtar_ref": "the-consensus",
+        "name": "The Consensus",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-consensus",
+        "api_url": "https://api.ishtar-collective.net/categories/the-consensus",
+        "short_summary": "The governing body of the City, including representatives of Dead Orbit, the Future War Cult, New Monarchy and the Vanguard."
+      },
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "ghost-fragments",
+        "name": "Ghost Fragments",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ghost-fragments",
+        "api_url": "https://api.ishtar-collective.net/categories/ghost-fragments",
+        "short_summary": "Many of these are collected from dead Ghosts found throughout the universe."
+      },
+      {
+        "ishtar_ref": "the-great-ahamkara-hunt",
+        "name": "The Great Ahamkara Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "api_url": "https://api.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "short_summary": ""
+      }
+    ]
+  }
+}

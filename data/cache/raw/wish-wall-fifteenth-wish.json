@@ -1,0 +1,35 @@
+{
+  "id": "wish-wall-fifteenth-wish",
+  "api_path": "/entries/fifteenth-wish",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "fifteenth-wish",
+    "name": "Fifteenth Wish",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/fifteenth-wish",
+    "api_url": "https://api.ishtar-collective.net/entries/fifteenth-wish",
+    "short_summary": "—\n\"This one you shall cherish.\" —Riven of a Thousand Voices",
+    "bungie_ref": "1646244851",
+    "image_url": "",
+    "full_image_url": "",
+    "subtitle": "",
+    "description": "\"This one you shall cherish.\" —Riven of a Thousand Voices",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "book-wall-of-wishes",
+        "name": "Book: Wall of Wishes",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/book-wall-of-wishes",
+        "api_url": "https://api.ishtar-collective.net/categories/book-wall-of-wishes",
+        "short_summary": ""
+      },
+      {
+        "ishtar_ref": "riven",
+        "name": "Riven",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/riven",
+        "api_url": "https://api.ishtar-collective.net/categories/riven",
+        "short_summary": "The last known Ahamkara."
+      }
+    ],
+    "items": []
+  }
+}

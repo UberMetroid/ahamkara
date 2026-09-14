@@ -1,0 +1,147 @@
+{
+  "id": "raid-weapon-chattering-bone",
+  "api_path": "/entries/chattering-bone",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "chattering-bone",
+    "name": "Chattering Bone",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/chattering-bone",
+    "api_url": "https://api.ishtar-collective.net/entries/chattering-bone",
+    "short_summary": "We have so much to discuss, o seeker mine.\n—\nNadiya sipped her tea, calm and collected. Shinobu sat back, looking perplexed. \"Really, the entire summer?\"\nThe serpent that claimed to look like her mother sat across from the two of them, smiling broadly. \"Why would I lie? I'm telling you, the whole summer you wore that dress. We had to tackle you to get the thing off of you, get you to bathe.\"\nThe serpent plucked the dainty cup from the white saucer and set it to her lips before continuing. \"Your brother called you stinkbug for years. Until… you know.\"\nNadiya reached over and took the other Hunter's hand in her own. \"It would lie because it's fulfilling your wish, Nobu.\"\nShinobu searched the serpent's face. Her mother just smiled again, all teeth and secrets. Shinobu felt tears at the corners of her eyes. Her voice was barely a whisper. \"Okay. Now.\"",
+    "bungie_ref": "568515759",
+    "image_url": "/common/destiny2_content/screenshots/568515759.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/568515759.jpg",
+    "subtitle": "We have so much to discuss, o seeker mine.",
+    "description": "Nadiya sipped her tea, calm and collected. Shinobu sat back, looking perplexed. \"Really, the entire summer?\"\n\nThe serpent that claimed to look like her mother sat across from the two of them, smiling broadly. \"Why would I lie? I'm telling you, the whole summer you wore that dress. We had to tackle you to get the thing off of you, get you to bathe.\"\n\nThe serpent plucked the dainty cup from the white saucer and set it to her lips before continuing. \"Your brother called you stinkbug for years. Until… you know.\"\n\nNadiya reached over and took the other Hunter's hand in her own. \"It would lie because it's fulfilling your wish, Nobu.\"\n\nShinobu searched the serpent's face. Her mother just smiled again, all teeth and secrets. Shinobu felt tears at the corners of her eyes. Her voice was barely a whisper. \"Okay. Now.\"\n\nThe burst from the pulse rifle was loud, and Nadiya pulled the trigger again and again and again.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "six-coyotes",
+        "name": "Six Coyotes",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/six-coyotes",
+        "api_url": "https://api.ishtar-collective.net/categories/six-coyotes",
+        "short_summary": ""
+      },
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "the-great-ahamkara-hunt",
+        "name": "The Great Ahamkara Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "api_url": "https://api.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "short_summary": ""
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "chattering-bone",
+        "name": "Chattering Bone",
+        "ishtar_url": "https://www.ishtar-collective.net/items/chattering-bone",
+        "api_url": "https://api.ishtar-collective.net/items/chattering-bone",
+        "short_summary": "We have so much to discuss, o seeker mine.",
+        "bungie_ref": "568515759",
+        "image_url": "/common/destiny2_content/icons/886c1372ece5e30e6aee0fdfebf65bed.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/886c1372ece5e30e6aee0fdfebf65bed.jpg",
+        "flavor_text": "We have so much to discuss, o seeker mine.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "nation-of-beasts-2",
+        "name": "Nation of Beasts",
+        "ishtar_url": "https://www.ishtar-collective.net/items/nation-of-beasts-2",
+        "api_url": "https://api.ishtar-collective.net/items/nation-of-beasts-2",
+        "short_summary": "I can show you how we were in our prime. You need only ask, o student mine.",
+        "bungie_ref": "4152631289",
+        "image_url": "/common/destiny2_content/icons/5463ac2900275ecc8d349076339e56ca.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/5463ac2900275ecc8d349076339e56ca.jpg",
+        "flavor_text": "I can show you how we were in our prime. You need only ask, o student mine.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "nation-of-beasts-3",
+        "name": "Nation of Beasts",
+        "ishtar_url": "https://www.ishtar-collective.net/items/nation-of-beasts-3",
+        "api_url": "https://api.ishtar-collective.net/items/nation-of-beasts-3",
+        "short_summary": "I can show you how we were in our prime. You need only ask, o student mine.",
+        "bungie_ref": "2925298470",
+        "image_url": "/common/destiny2_content/icons/5463ac2900275ecc8d349076339e56ca.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/5463ac2900275ecc8d349076339e56ca.jpg",
+        "flavor_text": "I can show you how we were in our prime. You need only ask, o student mine.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "chattering-bone-4",
+        "name": "Chattering Bone",
+        "ishtar_url": "https://www.ishtar-collective.net/items/chattering-bone-4",
+        "api_url": "https://api.ishtar-collective.net/items/chattering-bone-4",
+        "short_summary": "We have so much to discuss, o seeker mine.",
+        "bungie_ref": "501329015",
+        "image_url": "/common/destiny2_content/icons/34fa2107bfddfbe6c559de876a3aac55.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/34fa2107bfddfbe6c559de876a3aac55.jpg",
+        "flavor_text": "We have so much to discuss, o seeker mine.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "chattering-bone-8",
+        "name": "Chattering Bone",
+        "ishtar_url": "https://www.ishtar-collective.net/items/chattering-bone-8",
+        "api_url": "https://api.ishtar-collective.net/items/chattering-bone-8",
+        "short_summary": "We have so much to discuss, o seeker mine.",
+        "bungie_ref": "830651379",
+        "image_url": "/common/destiny2_content/icons/886c1372ece5e30e6aee0fdfebf65bed.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/886c1372ece5e30e6aee0fdfebf65bed.jpg",
+        "flavor_text": "We have so much to discuss, o seeker mine.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "chattering-bone-9",
+        "name": "Chattering Bone",
+        "ishtar_url": "https://www.ishtar-collective.net/items/chattering-bone-9",
+        "api_url": "https://api.ishtar-collective.net/items/chattering-bone-9",
+        "short_summary": "We have so much to discuss, o seeker mine.",
+        "bungie_ref": "3310605287",
+        "image_url": "/common/destiny2_content/icons/886c1372ece5e30e6aee0fdfebf65bed.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/886c1372ece5e30e6aee0fdfebf65bed.jpg",
+        "flavor_text": "We have so much to discuss, o seeker mine.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "chattering-bone-10",
+        "name": "Chattering Bone",
+        "ishtar_url": "https://www.ishtar-collective.net/items/chattering-bone-10",
+        "api_url": "https://api.ishtar-collective.net/items/chattering-bone-10",
+        "short_summary": "We have so much to discuss, o seeker mine.",
+        "bungie_ref": "4157371152",
+        "image_url": "/common/destiny2_content/icons/ab1cffe71300fa4e8da5593f59df5924.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/ab1cffe71300fa4e8da5593f59df5924.jpg",
+        "flavor_text": "We have so much to discuss, o seeker mine.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "chattering-bone-11",
+        "name": "Chattering Bone",
+        "ishtar_url": "https://www.ishtar-collective.net/items/chattering-bone-11",
+        "api_url": "https://api.ishtar-collective.net/items/chattering-bone-11",
+        "short_summary": "We have so much to discuss, o seeker mine.",
+        "bungie_ref": "831349526",
+        "image_url": "/common/destiny2_content/icons/ab1cffe71300fa4e8da5593f59df5924.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/ab1cffe71300fa4e8da5593f59df5924.jpg",
+        "flavor_text": "We have so much to discuss, o seeker mine.",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

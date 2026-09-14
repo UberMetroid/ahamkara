@@ -1,0 +1,28 @@
+{
+  "id": "wish-wall-fourth-wish",
+  "api_path": "/entries/fourth-wish",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "fourth-wish",
+    "name": "Fourth Wish",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/fourth-wish",
+    "api_url": "https://api.ishtar-collective.net/entries/fourth-wish",
+    "short_summary": "—\nA wish to look athletic and elegant.",
+    "bungie_ref": "1663022445",
+    "image_url": "",
+    "full_image_url": "",
+    "subtitle": "",
+    "description": "A wish to look athletic and elegant.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "book-wall-of-wishes",
+        "name": "Book: Wall of Wishes",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/book-wall-of-wishes",
+        "api_url": "https://api.ishtar-collective.net/categories/book-wall-of-wishes",
+        "short_summary": ""
+      }
+    ],
+    "items": []
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "grimoire-ghost-fragment-titan",
+  "api_path": "/cards/ghost-fragment-titan",
+  "doc_type": "grimoire_card",
+  "data": {
+    "ishtar_ref": "ghost-fragment-titan",
+    "name": "Ghost Fragment: Titan",
+    "ishtar_url": "https://www.ishtar-collective.net/cards/ghost-fragment-titan",
+    "api_url": "https://api.ishtar-collective.net/cards/ghost-fragment-titan",
+    "short_summary": "/ Tighten that strap.\n/ Eh?\n/ The gardbrace is loose. Could slip.\n/ Huh.\n/ It's new?",
+    "bungie_ref": "101060",
+    "image_url": "/common/destiny_content/grimoire/hr_images/101060_7d7c873d619d1f3208336c26ddc8e612.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny_content/grimoire/hr_images/101060_7d7c873d619d1f3208336c26ddc8e612.jpg",
+    "intro": null,
+    "intro_attribution": null,
+    "description": "/ Tighten that strap.<br/>\n/ Eh?<br/>\n/ The gardbrace is loose. Could slip.<br/>\n/ Huh.<br/>\n/ It&#39;s new?<br/>\n/ Agema. Type 1. <br/>\n/ How&#39;s it hold up? I tried using Agema at the Gap, remember? It didn&#39;t - well, what&#39;s this?<br/>\n/ A Ghost!<br/>\n/ Yes. Light be with you.  <br/>\n/ Excuse me, little Ghost - Tubach, pass me my helmet - thank you. Little Ghost, what are you doing here?<br/>\n/ It&#39;s just looking around.<br/>\n/ Where&#39;s your Guardian?<br/>\n/ I don&#39;t think it has one.<br/>\n/ Well, any servant of the Light is welcome among us. We are Holborn&#39;s Host, and I&#39;m Holborn. The City&#39;s hand on Mars.<br/>\n/ Tubach.<br/>\n/ That&#39;s Tubach, my second. One of the finest Titans of the City. Now see here, little Ghost, on my shoulder? That&#39;s the mark of Holborn&#39;s Host. Record it. The twelve-pointed star. One for each of the - oh well, off it goes! It doesn&#39;t look well.<br/>\n/ We should get moving.<br/>\n/ A Ghost without a Guardian. I remember when I was risen, you know. When I woke in that wreckage, to see my Ghost hovering there, its light in my eyes, like an angel. And it said - <br/>\n/ This story again.<br/>\n/ Disrespectful youngster.<br/>\n/ Youngster? I could be older than you, Tibon!<br/>\n/ True. The gardbrace is fine now. Stop worrying at it. Will you take the Jigoku?<br/>\n/ Thought I&#39;d take the long rifle. Bayle has the Jigoku.<br/>\n/ Good. That Ghost - what do you think is wrong with it? It&#39;s echoing something ancient, an Old Earth language. You know what that Ghost reminds me of, flitting about over there? <br/>\n/ I don&#39;t.<br/>\n/ The time Ghosts from Jagi&#39;s Host came back without them. Remember - they got in that fight at some point east of the Caspian? Seven Ghosts, damn near silent, buzzing with some sort of corruption. Drifting back to the Tower, one by one. Scared the Speaker well enough. <br/>\n/ I remember. A long time ago. Jagi tells the story differently.<br/>\n/ Well. We all grow old. In our way. Little Ghost! Come back here!<br/>\n/ It&#39;s not going to make it, wherever it&#39;s going.<br/>\n/ I want to talk to it. Little Ghost! <br/>\n/ Lyssa and Bayle are probably there already. <br/>\n/ Cabal move slowly. We&#39;ve got time. <br/>\n/ But the Warlocks have had a vision.<br/>\n/ Yes. That new one, what&#39;s her name. Ingora?<br/>\n/ Ikora.<br/>\n/ She&#39;s always been hasty. I&#39;ve faced these Cabal before. I know &#39;em like I know my own armor.  <br/>\n/ Message from Lyssa. &quot;At the Dust Palace, now. All quiet.&quot;<br/>\n/ See? All quiet. Why not come with us, little Ghost? We are looking for the old Warmind here, and the one who guards it.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "warminds",
+        "name": "Warminds",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/warminds",
+        "api_url": "https://api.ishtar-collective.net/categories/warminds",
+        "short_summary": "Artificial Intelligence defense networks from the Golden Age."
+      },
+      {
+        "ishtar_ref": "ghost-fragments",
+        "name": "Ghost Fragments",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ghost-fragments",
+        "api_url": "https://api.ishtar-collective.net/categories/ghost-fragments",
+        "short_summary": "Many of these are collected from dead Ghosts found throughout the universe."
+      },
+      {
+        "ishtar_ref": "holborn",
+        "name": "Holborn",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/holborn",
+        "api_url": "https://api.ishtar-collective.net/categories/holborn",
+        "short_summary": "The leader of Holborn’s Host, the City’s hand on Mars. At least one of their missions was to find the old Warmind there; their mark is a 12-pointed star. He is assumed to be a Striker Titan."
+      },
+      {
+        "ishtar_ref": "ikora-rey",
+        "name": "Ikora Rey",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ikora-rey",
+        "api_url": "https://api.ishtar-collective.net/categories/ikora-rey",
+        "short_summary": "The current Warlock Vanguard and leader of the Hidden. "
+      }
+    ]
+  }
+}

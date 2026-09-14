@@ -1,0 +1,49 @@
+{
+  "id": "weapon-buried-bloodline",
+  "api_path": "/entries/buried-bloodline",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "buried-bloodline",
+    "name": "Buried Bloodline",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/buried-bloodline",
+    "api_url": "https://api.ishtar-collective.net/entries/buried-bloodline",
+    "short_summary": "Shallow graves give way to old vendettas and hungry claims.\n—\nFikrul stands on the bridge of a seized Ketch. Ravagers keep watch over a handful of Eliksni that remain to pilot the vessel. Five heavily armored Scorn kneel before Fikrul, their heads bowed in reverence. Fikrul steps forward. \n\"Dark rumors whisper from the Dreaming City. The Reef hunts us. The Darkness claims us. And our father is not returning. But even without Uldren Sov, new Scorn still rise. Old Scorn still live, unseen.\" Fikrul waits for silence before looking beyond the five armored Scorn knights to the greater horde that gathers.  \nHe turns and points his staff at the pilots. \"These Eliksni, they speak of Scorn risen on Earth, where dead things will hunt them, or Darkness claims them.\" \n\"We serve only Scorn!\" Fikrul raises his staff above his head. \"We will bring them home. Open their minds, as I have for you. As I will for all Scorn!\" \nThe horde gnashes and cheers. ",
+    "bungie_ref": "3886719505",
+    "image_url": "/common/destiny2_content/screenshots/3886719505.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/3886719505.jpg",
+    "subtitle": "Shallow graves give way to old vendettas and hungry claims.",
+    "description": "Fikrul stands on the bridge of a seized Ketch. Ravagers keep watch over a handful of Eliksni that remain to pilot the vessel. Five heavily armored Scorn kneel before Fikrul, their heads bowed in reverence. Fikrul steps forward. \n\n\"Dark rumors whisper from the Dreaming City. The Reef hunts us. The Darkness claims us. And our father is not returning. But even without Uldren Sov, new Scorn still rise. Old Scorn still live, unseen.\" Fikrul waits for silence before looking beyond the five armored Scorn knights to the greater horde that gathers.  \n\nHe turns and points his staff at the pilots. \"These Eliksni, they speak of Scorn risen on Earth, where dead things will hunt them, or Darkness claims them.\" \n\n\"We serve only Scorn!\" Fikrul raises his staff above his head. \"We will bring them home. Open their minds, as I have for you. As I will for all Scorn!\" \n\nThe horde gnashes and cheers. \n\n\"Rathil, Malaris, Vrysiks, Nymeks, Sirloks. Ascend!\" commands Fikrul over the commotion. \n\nThe five armored Scorn stand. \n\n\"You, loyal-sworn, will be my knights.\" Scorn move from behind them to present the knights with staves made in the image of their leader's. \"Go to Earth. Bring brothers and sisters home, before Darkness claims them.\" \n\nThe knights bow. \n\n\"Rathil.\" Fikrul places a hand on the center knight. \"You, will lead.\" \n\n***** \n\nRathil enters the quarters of the Ketch's dead captain to see Fikrul gazing at walls of bound tomes filled with Eliksni scrawl. Rathil could not understand the contents of these books, but his father had learned much from them. With time, he would learn to unravel their secrets as well. \n\n\"Father… You called me? We prepare to leave.\" \n\nFikrul turns, a polished steel case in his lower arms. \"I have one last gift for you.\" Fikrul opens the case to display a clean-looking weapon—a sleek bolt-caster. Rathil could see its original Eliksni design, twisted, broken, and refashioned into something stronger, as he was. \n\n\"Claimed from Kings by Wolves… Modified. Scorn, now. Like us.\" \n\n\"I am honored,\" Rathil says, gently lifting the weapon from its case and bowing. \n\nFikrul looks upon his son with pride. \"I send you to claim Kings, as we once did as Wolves. Carry our history with you. Claim it. Bring it home.\"",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "eliksni",
+        "name": "Eliksni",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/eliksni",
+        "api_url": "https://api.ishtar-collective.net/categories/eliksni",
+        "short_summary": "The name of the Fallen before the Whirlwind. They were chosen by the Traveler before humanity. According to Variks, before the Whirlwind the Eliksni were in their own golden age, with advanced technology that was lost and subsequently stolen by other races. The Whirlwind caused the Houses to begin fighting each other and many Houses were slaughtered completely."
+      },
+      {
+        "ishtar_ref": "prince-uldren-sov",
+        "name": "Prince Uldren Sov",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/prince-uldren-sov",
+        "api_url": "https://api.ishtar-collective.net/categories/prince-uldren-sov",
+        "short_summary": "Brother of Queen Mara Sov, former Prince of the Reef and Master of Crows. "
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "buried-bloodline",
+        "name": "Buried Bloodline",
+        "ishtar_url": "https://www.ishtar-collective.net/items/buried-bloodline",
+        "api_url": "https://api.ishtar-collective.net/items/buried-bloodline",
+        "short_summary": "Shallow graves give way to old vendettas and hungry claims.",
+        "bungie_ref": "3886719505",
+        "image_url": "/common/destiny2_content/icons/fcae8edcd35227d35fca0a108d831840.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/fcae8edcd35227d35fca0a108d831840.jpg",
+        "flavor_text": "Shallow graves give way to old vendettas and hungry claims.",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

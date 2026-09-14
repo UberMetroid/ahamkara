@@ -1,0 +1,58 @@
+{
+  "id": "transcript-final-wish-conjure-riven",
+  "api_path": "/transcripts/final-wish-conjure-riven",
+  "doc_type": "transcript",
+  "data": {
+    "ishtar_ref": "final-wish-conjure-riven",
+    "name": "Final Wish - Conjure Riven",
+    "ishtar_url": "https://www.ishtar-collective.net/transcripts/final-wish-conjure-riven",
+    "api_url": "https://api.ishtar-collective.net/transcripts/final-wish-conjure-riven",
+    "short_summary": "// REFERENCE Final Wish (/items/final-wish)\nMara Sov: Guardian, my Techeuns are preparing a spell to conjure Riven's spirit, so that she can grant Savathûn's wish. However, the Vex of the Sol Divisive have laid siege to the Keep of Voices in an attempt to halt our efforts. I must call upon you to defend the Dreaming City once again. Petra and Crow will guide your path. \n++Keep of Voices, The Dreaming City\nPetra Venj: Apologies for not rolling out the red carpet. I've been... preoccupied. \nThe Crow: Haven't we all? What's our situation? ",
+    "embed_video_url": "https://www.youtube.com/embed/FBHWCogpdac?rel=0&showinfo=0",
+    "description": "// REFERENCE {item:final-wish|Final Wish|}\n\nMara Sov: Guardian, my Techeuns are preparing a spell to conjure Riven's spirit, so that she can grant Savathûn's wish. However, the Vex of the Sol Divisive have laid siege to the Keep of Voices in an attempt to halt our efforts. I must call upon you to defend the Dreaming City once again. Petra and Crow will guide your path. \n\n++Keep of Voices, The Dreaming City\n\nPetra Venj: Apologies for not rolling out the red carpet. I've been... preoccupied. \n\nThe Crow: Haven't we all? What's our situation? \n\nPetra Venj: The Techeuns evacuated the Keep with Riven's Heart. The Vex have since fortified their position. \n\nThe Crow: Then let's cut them down, and take back what's ours. \n\n**The Guardian opens the Vex gate.\n\n++Hall of Two Souls, The Dreaming City\n\nPetra Venj: A good start, but there are more Vex gathered around Riven's remains. The Techeuns need a fragment of those remains to cast their spell. \n\nThe Crow: A spell to conjure Riven's spirit. Are you sure about this, Petra?\n\nPetra Venj: I'm sure that I trust my queen's judgment.\n\n**The Guardian breaks through more Vex fortifications.\n\nThe Crow: Time to visit Riven's corpse. A shame I wasn't around to see the killing blow. \n\nPetra Venj: We never should have done it. She set a trap, and we — I — walked right into it. My desire for vengeance blinded me to her schemes. \n\nThe Crow: Yeah... I know the feeling.\n\n++The Queenswalk, the Dreaming City\n\n**The Guardian approaches Riven's corpse. Several Sol Divisive Vex are knelt down in worship to her.\n\nThe Crow: Whatever they're doing, you'd better put a stop to it. \n\n**The Guardian clears the Vex.\n\nPetra Venj: That got their attention. Don't let them near Riven! \n\n**The Guardian clears the Vex reinforcements.\n\nPetra Venj: That's the last of them. Retrieve the fragment and bring it to the chamber. I'll hail Queen Mara. \n\n**The Guardian collects Riven's tooth and returns it to the Techeuns. \n\nMara Sov: Well done, Guardian. Deliver what my Techeuns require and they will open a portal to the Wall of Wishes, as they begin to conjure Riven.\n\n**The Guardian places the tooth.\n\nMara Sov: Your Deepsight will Savathûn wish. Once Riven grants it, we can at last pursue the Witness. \n\n**The Guardian jumps through the Awoken portal.\n\n++Tower of Opened Eyes, The Dreaming City\n\n**The Guardian fires at the wish wall, changing the symbols to a new one, an Ahamkara skull.\n\n// NOTE The Guardian wishes for a new pathway.\n\nMara Sov: Hear me, Riven! Savathûn's final wish, inscribed in secrecy, has been invoked by the Guardian! Grant it now, and feast upon the difference between desire and reality! \n\nRiven: Such a long slumber. Such a rude awakening. Grant the Witch Queen's final wish, you say? I... refuse. \n\n",
+    "categories": [
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "the-crow",
+        "name": "The Crow",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-crow",
+        "api_url": "https://api.ishtar-collective.net/categories/the-crow",
+        "short_summary": "A Hunter once known as Prince Uldren Sov."
+      },
+      {
+        "ishtar_ref": "riven",
+        "name": "Riven",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/riven",
+        "api_url": "https://api.ishtar-collective.net/categories/riven",
+        "short_summary": "The last known Ahamkara."
+      },
+      {
+        "ishtar_ref": "savathun",
+        "name": "Savathûn",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/savathun",
+        "api_url": "https://api.ishtar-collective.net/categories/savathun",
+        "short_summary": "Hive goddess of trickery and cunning."
+      },
+      {
+        "ishtar_ref": "queen-mara-sov",
+        "name": "Queen Mara Sov",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/queen-mara-sov",
+        "api_url": "https://api.ishtar-collective.net/categories/queen-mara-sov",
+        "short_summary": "Queen of the Reef and previous Kell of the House of Wolves. "
+      },
+      {
+        "ishtar_ref": "petra-venj",
+        "name": "Petra Venj",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/petra-venj",
+        "api_url": "https://api.ishtar-collective.net/categories/petra-venj",
+        "short_summary": "The Queen’s Wrath who has also served as the Queen’s Emissary and Regent-Commander of the Reef. "
+      }
+    ]
+  }
+}

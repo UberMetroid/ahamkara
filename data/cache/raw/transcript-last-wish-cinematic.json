@@ -1,0 +1,37 @@
+{
+  "id": "transcript-last-wish-cinematic",
+  "api_path": "/transcripts/last-wish-cinematic",
+  "doc_type": "transcript",
+  "data": {
+    "ishtar_ref": "last-wish-cinematic",
+    "name": "Last Wish Cinematic",
+    "ishtar_url": "https://www.ishtar-collective.net/transcripts/last-wish-cinematic",
+    "api_url": "https://api.ishtar-collective.net/transcripts/last-wish-cinematic",
+    "short_summary": "Petra Venj: My Queen commanded me to slay a beast. We could not do it alone, so I turned to the Guardians. Six brave heroes came to destroy my people's greatest secret… Riven.  The last known Ahamkara. A creature of immense power and cunning. The Guardians killed Riven and ripped out her heart. But Ahamkara transcend death. They can transform desire into reality… even when they are nothing but bone and dust. I should have known that Riven would grant one last wish… one last curse. Now, the Dreaming City has been Taken. I opened the gates. I ordered the attack. I… should have known.",
+    "embed_video_url": "https://www.youtube.com/embed/V8_CT2BzKy4?rel=0&showinfo=0",
+    "description": "Petra Venj: My Queen commanded me to slay a beast. We could not do it alone, so I turned to the Guardians. Six brave heroes came to destroy my people's greatest secret… Riven.  The last known Ahamkara. A creature of immense power and cunning. The Guardians killed Riven and ripped out her heart. But Ahamkara transcend death. They can transform desire into reality… even when they are nothing but bone and dust. I should have known that Riven would grant one last wish… one last curse. Now, the Dreaming City has been Taken. I opened the gates. I ordered the attack. I… should have known.",
+    "categories": [
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "riven",
+        "name": "Riven",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/riven",
+        "api_url": "https://api.ishtar-collective.net/categories/riven",
+        "short_summary": "The last known Ahamkara."
+      },
+      {
+        "ishtar_ref": "petra-venj",
+        "name": "Petra Venj",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/petra-venj",
+        "api_url": "https://api.ishtar-collective.net/categories/petra-venj",
+        "short_summary": "The Queen’s Wrath who has also served as the Queen’s Emissary and Regent-Commander of the Reef. "
+      }
+    ]
+  }
+}

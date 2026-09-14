@@ -1,0 +1,81 @@
+{
+  "id": "raid-weapon-the-supremacy",
+  "api_path": "/entries/the-supremacy",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "the-supremacy",
+    "name": "The Supremacy",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/the-supremacy",
+    "api_url": "https://api.ishtar-collective.net/entries/the-supremacy",
+    "short_summary": "\"He didn't recognize me, at the end.\" —Jolyon Till the Rachis\n—\n\"Here's the thing,\" he says. \"No.\"\nPetra is trying to hide the hurt in her expression. Watching her is exhausting, so Jolyon keeps his eye pressed to his sniper scope.\n\"I thought you would want to see it.\"\n\"Why? He's dead. He died a long time before you shot him. Or if you didn't,\" Jolyon says, as if Petra flinched, \"you helped that Guardian do it.\"\n\"Jolyon,\" Petra starts.",
+    "bungie_ref": "686951703",
+    "image_url": "/common/destiny2_content/screenshots/686951703.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/686951703.jpg",
+    "subtitle": "\"He didn't recognize me, at the end.\" —Jolyon Till the Rachis",
+    "description": "\"Here's the thing,\" he says. \"No.\"\n\nPetra is trying to hide the hurt in her expression. Watching her is exhausting, so Jolyon keeps his eye pressed to his sniper scope.\n\n\"I thought you would want to see it.\"\n\n\"Why? He's dead. He died a long time before you shot him. Or if you didn't,\" Jolyon says, as if Petra flinched, \"you helped that Guardian do it.\"\n\n\"Jolyon,\" Petra starts.\n\nHe holds up a hand. \"I'm not interested in your secrets.\" Then, quieter, \"Please.\"\n\nSilence falls over them as they lie side-by-side in a sniper's nest overlooking Rheasilvia. Both belly-down in the sand, clutching well-worn Supremacy rifles beneath their armpits. Petra takes a shot. A Taken Hive Knight seethes into nothingness.\n\nFinally, she gets up to go. Jolyon rolls onto his side, pushes himself half-up and calls after her. \"I still dream about the Garden.\"\n\nShe looks back. \"I've dreamed about it, too,\" she says carefully.\n\n\"Not like I have.\" Jolyon licks his lips, trying to figure out if he has anything else to say. He finally decides that he doesn't, so he rolls back onto his belly to settle his cheek against the Supremacy once more.\n\n\"That's all. I just wanted someone to know.\"",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "petra-venj",
+        "name": "Petra Venj",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/petra-venj",
+        "api_url": "https://api.ishtar-collective.net/categories/petra-venj",
+        "short_summary": "The Queen’s Wrath who has also served as the Queen’s Emissary and Regent-Commander of the Reef. "
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "the-supremacy-2",
+        "name": "The Supremacy",
+        "ishtar_url": "https://www.ishtar-collective.net/items/the-supremacy-2",
+        "api_url": "https://api.ishtar-collective.net/items/the-supremacy-2",
+        "short_summary": "\"He didn't recognize me, at the end.\" —Jolyon Till the Rachis",
+        "bungie_ref": "686951703",
+        "image_url": "/common/destiny2_content/icons/57e762b0f41575efde3deaa79496f628.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/57e762b0f41575efde3deaa79496f628.jpg",
+        "flavor_text": "\"He didn't recognize me, at the end.\" —Jolyon Till the Rachis",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "tyranny-of-heaven-2",
+        "name": "Tyranny of Heaven",
+        "ishtar_url": "https://www.ishtar-collective.net/items/tyranny-of-heaven-2",
+        "api_url": "https://api.ishtar-collective.net/items/tyranny-of-heaven-2",
+        "short_summary": "It was She that inspired me to imagine your destruction, o jailer mine.",
+        "bungie_ref": "910588426",
+        "image_url": "/common/destiny2_content/icons/b4d39e31c777026b40e6acf2f7c6f720.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/b4d39e31c777026b40e6acf2f7c6f720.jpg",
+        "flavor_text": "It was She that inspired me to imagine your destruction, o jailer mine.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "tyranny-of-heaven-3",
+        "name": "Tyranny of Heaven",
+        "ishtar_url": "https://www.ishtar-collective.net/items/tyranny-of-heaven-3",
+        "api_url": "https://api.ishtar-collective.net/items/tyranny-of-heaven-3",
+        "short_summary": "It was She that inspired me to imagine your destruction, o jailer mine.",
+        "bungie_ref": "3052325065",
+        "image_url": "/common/destiny2_content/icons/b4d39e31c777026b40e6acf2f7c6f720.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/b4d39e31c777026b40e6acf2f7c6f720.jpg",
+        "flavor_text": "It was She that inspired me to imagine your destruction, o jailer mine.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "the-supremacy-5",
+        "name": "The Supremacy",
+        "ishtar_url": "https://www.ishtar-collective.net/items/the-supremacy-5",
+        "api_url": "https://api.ishtar-collective.net/items/the-supremacy-5",
+        "short_summary": "\"He didn't recognize me, at the end.\" —Jolyon Till the Rachis",
+        "bungie_ref": "2884596447",
+        "image_url": "/common/destiny2_content/icons/5f33552daed1a8035a7e19c4bf858078.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/5f33552daed1a8035a7e19c4bf858078.jpg",
+        "flavor_text": "\"He didn't recognize me, at the end.\" —Jolyon Till the Rachis",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

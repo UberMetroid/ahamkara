@@ -1,0 +1,88 @@
+{
+  "id": "raid-weapon-tyranny-of-heaven",
+  "api_path": "/entries/tyranny-of-heaven",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "tyranny-of-heaven",
+    "name": "Tyranny of Heaven",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/tyranny-of-heaven",
+    "api_url": "https://api.ishtar-collective.net/entries/tyranny-of-heaven",
+    "short_summary": "It was She that inspired me to imagine your destruction, o jailer mine.\n—\nTallulah Fairwind smoothed the felt of the table with one hand, idly playing with her chips with the other. Across the table, Caliban-8 wore a green dealer's cap and looked stricken.\nThe Ahamkara looked like somebody's kindly old grandpa just now. And it could play a mean hand of cards. \"Twenty,\" it crooned as it raised the stakes. She saw Caliban's eye sensors dilate.\nThe game had started so well. And it seemed like a great story they could have told back at the Tower. How was she supposed to have known? \"Call,\" said Caliban, tension in his voice.\nShe looked down at her hand. \"All in.\"\nThe Ahamkara's grin grew larger. Caliban shook his head.",
+    "bungie_ref": "2721249463",
+    "image_url": "/common/destiny2_content/screenshots/2721249463.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/2721249463.jpg",
+    "subtitle": "It was She that inspired me to imagine your destruction, o jailer mine.",
+    "description": "Tallulah Fairwind smoothed the felt of the table with one hand, idly playing with her chips with the other. Across the table, Caliban-8 wore a green dealer's cap and looked stricken.\n\nThe Ahamkara looked like somebody's kindly old grandpa just now. And it could play a mean hand of cards. \"Twenty,\" it crooned as it raised the stakes. She saw Caliban's eye sensors dilate.\n\nThe game had started so well. And it seemed like a great story they could have told back at the Tower. How was she supposed to have known? \"Call,\" said Caliban, tension in his voice.\n\nShe looked down at her hand. \"All in.\"\n\nThe Ahamkara's grin grew larger. Caliban shook his head.\n\n\"Don't you do this, Lulah. Don't you leave me here! I can't do it!\"\n\nThe cards went down.\n\nShe'd lost.\n\nThe Hunter Vanguard tossed her bow to the Exo as the Ahamkara came around the table to collect his winnings. \"A dare's a dare, man. Good luck.\"\n\nShe didn't scream. Wouldn't have been dignified.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "the-great-ahamkara-hunt",
+        "name": "The Great Ahamkara Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "api_url": "https://api.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "short_summary": ""
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "tyranny-of-heaven",
+        "name": "Tyranny of Heaven",
+        "ishtar_url": "https://www.ishtar-collective.net/items/tyranny-of-heaven",
+        "api_url": "https://api.ishtar-collective.net/items/tyranny-of-heaven",
+        "short_summary": "It was She that inspired me to imagine your destruction, o jailer mine.",
+        "bungie_ref": "2721249463",
+        "image_url": "/common/destiny2_content/icons/b4d39e31c777026b40e6acf2f7c6f720.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/b4d39e31c777026b40e6acf2f7c6f720.jpg",
+        "flavor_text": "It was She that inspired me to imagine your destruction, o jailer mine.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "the-supremacy-3",
+        "name": "The Supremacy",
+        "ishtar_url": "https://www.ishtar-collective.net/items/the-supremacy-3",
+        "api_url": "https://api.ishtar-collective.net/items/the-supremacy-3",
+        "short_summary": "\"He didn't recognize me, at the end.\" —Jolyon Till the Rachis",
+        "bungie_ref": "2750388336",
+        "image_url": "/common/destiny2_content/icons/5f33552daed1a8035a7e19c4bf858078.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/5f33552daed1a8035a7e19c4bf858078.jpg",
+        "flavor_text": "\"He didn't recognize me, at the end.\" —Jolyon Till the Rachis",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "the-supremacy-4",
+        "name": "The Supremacy",
+        "ishtar_url": "https://www.ishtar-collective.net/items/the-supremacy-4",
+        "api_url": "https://api.ishtar-collective.net/items/the-supremacy-4",
+        "short_summary": "\"He didn't recognize me, at the end.\" —Jolyon Till the Rachis",
+        "bungie_ref": "3307211867",
+        "image_url": "/common/destiny2_content/icons/5f33552daed1a8035a7e19c4bf858078.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/5f33552daed1a8035a7e19c4bf858078.jpg",
+        "flavor_text": "\"He didn't recognize me, at the end.\" —Jolyon Till the Rachis",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "tyranny-of-heaven-4",
+        "name": "Tyranny of Heaven",
+        "ishtar_url": "https://www.ishtar-collective.net/items/tyranny-of-heaven-4",
+        "api_url": "https://api.ishtar-collective.net/items/tyranny-of-heaven-4",
+        "short_summary": "It was She that inspired me to imagine your destruction, o jailer mine.",
+        "bungie_ref": "3388655311",
+        "image_url": "/common/destiny2_content/icons/b4d39e31c777026b40e6acf2f7c6f720.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/b4d39e31c777026b40e6acf2f7c6f720.jpg",
+        "flavor_text": "It was She that inspired me to imagine your destruction, o jailer mine.",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

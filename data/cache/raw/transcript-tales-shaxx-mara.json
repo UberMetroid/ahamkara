@@ -1,0 +1,44 @@
+{
+  "id": "transcript-tales-shaxx-mara",
+  "api_path": "/transcripts/ahamkara-tales-shaxx-mara-week-2",
+  "doc_type": "transcript",
+  "data": {
+    "ishtar_ref": "ahamkara-tales-shaxx-mara-week-2",
+    "name": "Ahamkara Tales - Shaxx & Mara (Week 2)",
+    "ishtar_url": "https://www.ishtar-collective.net/transcripts/ahamkara-tales-shaxx-mara-week-2",
+    "api_url": "https://api.ishtar-collective.net/transcripts/ahamkara-tales-shaxx-mara-week-2",
+    "short_summary": "++Vanguard Orbital Command, H.E.L.M.\n——The Guardian turns on the radio.\nShaxx: Queen Mara. I hail you now out of necessity of the heart. Else, I feel as though I will burst into Solar flame. Long have I admired you from afar, ever since you graced me with your power and benevolence in The Reef Wars. Not a day goes by without me thinking back to the time you bade me repay that debt to you. How we spent hours together, long into the night. Would that you spirit me to your side again, to serve as your consort, your knight, your humble vassal. Anything to be near you. I beg you to grant me an audience once more. Please, give me the gift and the privilege of basking in your favor. For without you, I shall wither and crumble into dust, to be scattered across the cosmic winds. \nMara Sov: This again? You and I both know he sounds nothing like that, Riven.\nRiven: [laughs cruelly] Perhaps I should use a voice with which you are even more intimately familiar. How about—",
+    "embed_video_url": "https://www.youtube.com/embed/lIZ22H8JIy4?rel=0&showinfo=0",
+    "description": "++Vanguard Orbital Command, H.E.L.M.\n\n**The Guardian turns on the radio.\n\nShaxx: Queen Mara. I hail you now out of necessity of the heart. Else, I feel as though I will burst into Solar flame. Long have I admired you from afar, ever since you graced me with your power and benevolence in The Reef Wars. Not a day goes by without me thinking back to the time you bade me repay that debt to you. How we spent hours together, long into the night. Would that you spirit me to your side again, to serve as your consort, your knight, your humble vassal. Anything to be near you. I beg you to grant me an audience once more. Please, give me the gift and the privilege of basking in your favor. For without you, I shall wither and crumble into dust, to be scattered across the cosmic winds. \n\nMara Sov: This again? You and I both know he sounds nothing like that, Riven.\n\nRiven: [laughs cruelly] Perhaps I should use a voice with which you are even more intimately familiar. How about—\n\nMara Sov: Do not speak her name!\n",
+    "categories": [
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "riven",
+        "name": "Riven",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/riven",
+        "api_url": "https://api.ishtar-collective.net/categories/riven",
+        "short_summary": "The last known Ahamkara."
+      },
+      {
+        "ishtar_ref": "lord-shaxx",
+        "name": "Lord Shaxx",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/lord-shaxx",
+        "api_url": "https://api.ishtar-collective.net/categories/lord-shaxx",
+        "short_summary": "Warlord and Crucible Handler "
+      },
+      {
+        "ishtar_ref": "queen-mara-sov",
+        "name": "Queen Mara Sov",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/queen-mara-sov",
+        "api_url": "https://api.ishtar-collective.net/categories/queen-mara-sov",
+        "short_summary": "Queen of the Reef and previous Kell of the House of Wolves. "
+      }
+    ]
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "id": "great-hunt-cloak",
+  "api_path": "/entries/cloak-of-the-great-hunt",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "cloak-of-the-great-hunt",
+    "name": "Cloak of the Great Hunt",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/cloak-of-the-great-hunt",
+    "api_url": "https://api.ishtar-collective.net/entries/cloak-of-the-great-hunt",
+    "short_summary": "I wish to be renowned.\n—\nThe Great Disaster.\nYears after the Hunt.\nThey are dead. Wei Ning. Eriana-3. Toland. Sai Mota. Omar. Vell Tarlowe.\nGuardians live lives of loss. Everything around us inevitably turns to dust. When we come together, it's to war. Against enemies of humanity. Against each other.\nOne of our few comforts is the knowledge that our peers will be there tomorrow. For good or ill. My fireteam has been robbed of that.",
+    "bungie_ref": "1314563129",
+    "image_url": "/common/destiny2_content/screenshots/2112541750.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/2112541750.jpg",
+    "subtitle": "I wish to be renowned.",
+    "description": "The Great Disaster.\n\nYears after the Hunt.\n\nThey are dead. Wei Ning. Eriana-3. Toland. Sai Mota. Omar. Vell Tarlowe.\n\nGuardians live lives of loss. Everything around us inevitably turns to dust. When we come together, it's to war. Against enemies of humanity. Against each other.\n\nOne of our few comforts is the knowledge that our peers will be there tomorrow. For good or ill. My fireteam has been robbed of that.\n\nI am lost in these lunar tunnels. Out of ammo. Short on Light. I am out of moves, save one. I clutch an Ahamkara bone in one hand, and my dead Ghost in the other. I hear a whisper.\n\nMy vision is gone. My face itches from the viscous flow from my eyes.\n\nThough I can't see, I find that I suddenly know the way out.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "omar-agah",
+        "name": "Omar Agah",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/omar-agah",
+        "api_url": "https://api.ishtar-collective.net/categories/omar-agah",
+        "short_summary": "A Hunter who was a member of the first Crota fireteam. He was killed by the Heart of Crota."
+      },
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "the-great-ahamkara-hunt",
+        "name": "The Great Ahamkara Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "api_url": "https://api.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "short_summary": ""
+      },
+      {
+        "ishtar_ref": "the-first-crota-fireteam",
+        "name": "The First Crota fireteam",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-first-crota-fireteam",
+        "api_url": "https://api.ishtar-collective.net/categories/the-first-crota-fireteam",
+        "short_summary": "At Mare Imbrium a host of thousands of Guardians came united to retake the Moon, and were mercilessly slaughtered by the seemingly invincible Crota and his army of Knights."
+      },
+      {
+        "ishtar_ref": "eriana-3",
+        "name": "Eriana-3",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/eriana-3",
+        "api_url": "https://api.ishtar-collective.net/categories/eriana-3",
+        "short_summary": "An Exo Warlock who organized the first fireteam to attempt to kill Crota after he killed thousands of Guardians on the Moon."
+      },
+      {
+        "ishtar_ref": "sai-mota",
+        "name": "Sai Mota",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/sai-mota",
+        "api_url": "https://api.ishtar-collective.net/categories/sai-mota",
+        "short_summary": "A Hunter who was a member of the first Crota fireteam. She was ultimately killed by Omnigul after tearing bones from Acolytes."
+      },
+      {
+        "ishtar_ref": "wei-ning",
+        "name": "Wei Ning",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/wei-ning",
+        "api_url": "https://api.ishtar-collective.net/categories/wei-ning",
+        "short_summary": "A Defender Titan who was killed by Crota during the assault at Mare Imbrium.  "
+      },
+      {
+        "ishtar_ref": "vell-tarlowe",
+        "name": "Vell Tarlowe",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/vell-tarlowe",
+        "api_url": "https://api.ishtar-collective.net/categories/vell-tarlowe",
+        "short_summary": "A Titan of the Pilgrim Guard who was a member of the first Crota fireteam. He was killed by Alak-Hul, the Darkblade."
+      },
+      {
+        "ishtar_ref": "toland-the-shattered",
+        "name": "Toland the Shattered",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/toland-the-shattered",
+        "api_url": "https://api.ishtar-collective.net/categories/toland-the-shattered",
+        "short_summary": "A Guardian known for his obsessive study of the Hive, which led to the creation of the exotic pulse rifle, Bad Juju, and also to his exile from the Tower. He was part of the fireteam that attempted to kill Crota. His current status is unknown."
+      },
+      {
+        "ishtar_ref": "eris-morn",
+        "name": "Eris Morn",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/eris-morn",
+        "api_url": "https://api.ishtar-collective.net/categories/eris-morn",
+        "short_summary": "A Hunter and one of the founding members of the First Crota fireteam."
+      },
+      {
+        "ishtar_ref": "great-hunt-suit-hunter",
+        "name": "Great Hunt Suit (Hunter)",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/great-hunt-suit-hunter",
+        "api_url": "https://api.ishtar-collective.net/categories/great-hunt-suit-hunter",
+        "short_summary": ""
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "cloak-of-the-great-hunt",
+        "name": "Cloak of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/cloak-of-the-great-hunt",
+        "api_url": "https://api.ishtar-collective.net/items/cloak-of-the-great-hunt",
+        "short_summary": "I wish to be renowned.",
+        "bungie_ref": "1314563129",
+        "image_url": "/common/destiny2_content/icons/03aed4195f29dbfa3024b992af09f2ac.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/03aed4195f29dbfa3024b992af09f2ac.jpg",
+        "flavor_text": "I wish to be renowned.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "cloak-of-the-great-hunt-3",
+        "name": "Cloak of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/cloak-of-the-great-hunt-3",
+        "api_url": "https://api.ishtar-collective.net/items/cloak-of-the-great-hunt-3",
+        "short_summary": "I wish to be renowned.",
+        "bungie_ref": "2112541750",
+        "image_url": "/common/destiny2_content/icons/03aed4195f29dbfa3024b992af09f2ac.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/03aed4195f29dbfa3024b992af09f2ac.jpg",
+        "flavor_text": "I wish to be renowned.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "cloak-of-the-great-hunt-2",
+        "name": "Cloak of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/cloak-of-the-great-hunt-2",
+        "api_url": "https://api.ishtar-collective.net/items/cloak-of-the-great-hunt-2",
+        "short_summary": "I wish to be renowned.",
+        "bungie_ref": "1646520469",
+        "image_url": "/common/destiny2_content/icons/03aed4195f29dbfa3024b992af09f2ac.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/03aed4195f29dbfa3024b992af09f2ac.jpg",
+        "flavor_text": "I wish to be renowned.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "cloak-of-the-great-hunt-4",
+        "name": "Cloak of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/cloak-of-the-great-hunt-4",
+        "api_url": "https://api.ishtar-collective.net/items/cloak-of-the-great-hunt-4",
+        "short_summary": "I wish to be renowned.",
+        "bungie_ref": "877968616",
+        "image_url": "/common/destiny2_content/icons/03aed4195f29dbfa3024b992af09f2ac.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/03aed4195f29dbfa3024b992af09f2ac.jpg",
+        "flavor_text": "I wish to be renowned.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "cloak-of-the-great-hunt-5",
+        "name": "Cloak of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/cloak-of-the-great-hunt-5",
+        "api_url": "https://api.ishtar-collective.net/items/cloak-of-the-great-hunt-5",
+        "short_summary": "I wish to be renowned.",
+        "bungie_ref": "2701498878",
+        "image_url": "/common/destiny2_content/icons/03aed4195f29dbfa3024b992af09f2ac.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/03aed4195f29dbfa3024b992af09f2ac.jpg",
+        "flavor_text": "I wish to be renowned.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "cloak-of-the-great-hunt-6",
+        "name": "Cloak of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/cloak-of-the-great-hunt-6",
+        "api_url": "https://api.ishtar-collective.net/items/cloak-of-the-great-hunt-6",
+        "short_summary": "I wish to be renowned.",
+        "bungie_ref": "2050653189",
+        "image_url": "/common/destiny2_content/icons/03aed4195f29dbfa3024b992af09f2ac.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/03aed4195f29dbfa3024b992af09f2ac.jpg",
+        "flavor_text": "I wish to be renowned.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "cloak-of-the-great-hunt-8",
+        "name": "Cloak of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/cloak-of-the-great-hunt-8",
+        "api_url": "https://api.ishtar-collective.net/items/cloak-of-the-great-hunt-8",
+        "short_summary": "I wish to be renowned.",
+        "bungie_ref": "59816779",
+        "image_url": "/common/destiny2_content/icons/03aed4195f29dbfa3024b992af09f2ac.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/03aed4195f29dbfa3024b992af09f2ac.jpg",
+        "flavor_text": "I wish to be renowned.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "cloak-of-the-great-hunt-7",
+        "name": "Cloak of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/cloak-of-the-great-hunt-7",
+        "api_url": "https://api.ishtar-collective.net/items/cloak-of-the-great-hunt-7",
+        "short_summary": "I wish to be renowned.",
+        "bungie_ref": "607075793",
+        "image_url": "/common/destiny2_content/icons/03aed4195f29dbfa3024b992af09f2ac.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/03aed4195f29dbfa3024b992af09f2ac.jpg",
+        "flavor_text": "I wish to be renowned.",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

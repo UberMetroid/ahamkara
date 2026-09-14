@@ -1,0 +1,58 @@
+{
+  "id": "transcript-tales-osiris-crow",
+  "api_path": "/transcripts/ahamkara-tales-osiris-crow-week-1",
+  "doc_type": "transcript",
+  "data": {
+    "ishtar_ref": "ahamkara-tales-osiris-crow-week-1",
+    "name": "Ahamkara Tales - Osiris & Crow (Week 1)",
+    "ishtar_url": "https://www.ishtar-collective.net/transcripts/ahamkara-tales-osiris-crow-week-1",
+    "api_url": "https://api.ishtar-collective.net/transcripts/ahamkara-tales-osiris-crow-week-1",
+    "short_summary": "++Vanguard Orbital Command, H.E.L.M.\n——The Guardian listens to the radio message.\nOsiris: I understand your concern. But if we cannot rely upon the Veil, the Ahamkara is our only option. \nThe Crow: Even if it was Savathûn who pointed us at Riven in the first place?\nOsiris: The Witness is our priority. We've dealt with Savathûn and Riven in the past. ",
+    "embed_video_url": "https://www.youtube.com/embed/2E_rpAw2aWo?rel=0&showinfo=0",
+    "description": "++Vanguard Orbital Command, H.E.L.M.\n\n**The Guardian listens to the radio message.\n\nOsiris: I understand your concern. But if we cannot rely upon the Veil, the Ahamkara is our only option. \n\nThe Crow: Even if it was Savathûn who pointed us at Riven in the first place?\n\nOsiris: The Witness is our priority. We've dealt with Savathûn and Riven in the past. \n\nThe Crow: And now Savathûn is free, and Riven is toying with us. I won't end up as a puppet again.\n\nOsiris: Nor I.\n\nThe Crow: Hmph. Sorry. I didn't mean...\n\nOsiris: I fear it too. The experience of watching your body perform a series of actions you would never condone. Of that terrible regret... But that fear won't stop me. Just as I know it won't stop you.\n\nThe Crow: Was any of it real? All that advice Savathûn gave me, while she pretended to be you?\n\nOsiris: At the time Uldren began his campaign against the Reef, he was already suffering from the Black Garden's corruption. Riven must have found him an easy victim. One could argue he wasn't fully in command of his decisions. All the same, the impact of those decisions was very real. So, let me ask you this: Did I give you good advice?\n\nThe Crow: Life-changing.\n\nOsiris: Then hold onto it. \n",
+    "categories": [
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "the-crow",
+        "name": "The Crow",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-crow",
+        "api_url": "https://api.ishtar-collective.net/categories/the-crow",
+        "short_summary": "A Hunter once known as Prince Uldren Sov."
+      },
+      {
+        "ishtar_ref": "osiris",
+        "name": "Osiris",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/osiris",
+        "api_url": "https://api.ishtar-collective.net/categories/osiris",
+        "short_summary": "A Guardian, once the Warlock Vanguard, whose divisive beliefs led him to leave the City in exile."
+      },
+      {
+        "ishtar_ref": "riven",
+        "name": "Riven",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/riven",
+        "api_url": "https://api.ishtar-collective.net/categories/riven",
+        "short_summary": "The last known Ahamkara."
+      },
+      {
+        "ishtar_ref": "savathun",
+        "name": "Savathûn",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/savathun",
+        "api_url": "https://api.ishtar-collective.net/categories/savathun",
+        "short_summary": "Hive goddess of trickery and cunning."
+      },
+      {
+        "ishtar_ref": "prince-uldren-sov",
+        "name": "Prince Uldren Sov",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/prince-uldren-sov",
+        "api_url": "https://api.ishtar-collective.net/categories/prince-uldren-sov",
+        "short_summary": "Brother of Queen Mara Sov, former Prince of the Reef and Master of Crows. "
+      }
+    ]
+  }
+}

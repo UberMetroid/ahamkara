@@ -1,0 +1,30 @@
+{
+  "id": "transcript-pilgrimage-tree-esila",
+  "api_path": "/transcripts/pilgrimage-garden-of-esila-tree",
+  "doc_type": "transcript",
+  "data": {
+    "ishtar_ref": "pilgrimage-garden-of-esila-tree",
+    "name": "Pilgrimage: Garden of Esila, Tree",
+    "ishtar_url": "https://www.ishtar-collective.net/transcripts/pilgrimage-garden-of-esila-tree",
+    "api_url": "https://api.ishtar-collective.net/transcripts/pilgrimage-garden-of-esila-tree",
+    "short_summary": "// OPTIONAL {\nShuro Chi: Dozens of good people died walking over these cliffs. They were lured to their death by an Ahamkara during a celebration of the solstice. Those creatures… They can turn on you in an instant if you aren't wary.\n}\n// OPTIONAL {\nShuro Chi: This was the site of a mass murder. An Ahamkara of immense power tricked dozens of civilians into walking right off the edge of these cliffs. We saved none of them. And to our great shame, the Ahamkara - Azirim, he was called - escaped.\n}\n// OPTIONAL {\nShuro Chi: Step past the tree. Peek down over the ledge. That drop goes on for some time. Now imagine a voice whispering to you, luring you, promising you that your feet will find solid ground where, in truth, there is only air… Ahamkara lies.",
+    "embed_video_url": "https://www.youtube.com/embed/KWaKixG4a9s?rel=0&showinfo=0&list=PLuETOCJ3rwAZ8soDxzOsgBJydldegevoT",
+    "description": "// OPTIONAL {\nShuro Chi: Dozens of good people died walking over these cliffs. They were lured to their death by an Ahamkara during a celebration of the solstice. Those creatures… They can turn on you in an instant if you aren't wary.\n}\n\n// OPTIONAL {\nShuro Chi: This was the site of a mass murder. An Ahamkara of immense power tricked dozens of civilians into walking right off the edge of these cliffs. We saved none of them. And to our great shame, the Ahamkara - Azirim, he was called - escaped.\n}\n\n// OPTIONAL {\nShuro Chi: Step past the tree. Peek down over the ledge. That drop goes on for some time. Now imagine a voice whispering to you, luring you, promising you that your feet will find solid ground where, in truth, there is only air… Ahamkara lies.\n}\n\n// OPTIONAL {\nShuro Chi: A great tragedy once occurred at these cliffs. It was early in our relationship with the Ahamkara, before we'd learned their tricks, before we'd learned how best to live alongside them without becoming their prey…\n}",
+    "categories": [
+      {
+        "ishtar_ref": "pilgrimages",
+        "name": "Pilgrimages",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/pilgrimages",
+        "api_url": "https://api.ishtar-collective.net/categories/pilgrimages",
+        "short_summary": "Let Shuro Chi teach you about the Dreaming City while it still stands."
+      },
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      }
+    ]
+  }
+}

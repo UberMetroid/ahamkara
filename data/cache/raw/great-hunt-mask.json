@@ -1,0 +1,168 @@
+{
+  "id": "great-hunt-mask",
+  "api_path": "/entries/mask-of-the-great-hunt",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "mask-of-the-great-hunt",
+    "name": "Mask of the Great Hunt",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/mask-of-the-great-hunt",
+    "api_url": "https://api.ishtar-collective.net/entries/mask-of-the-great-hunt",
+    "short_summary": "I wish to be cunning.\n—\nThe Ahamkara remain an issue. There's still so much we can learn from them but what they've done to Venus… no two Guardians see the same thing. Consultants from the War Cult have been brought in to gauge disagreements over timelines of events. One of our Warlocks stared into the paracausal phenomenon that formed over the Ishtar Academy and shot himself. (He is NOT an authorized Thanatonaut). Luckily, his Ghost hid from him beforehand. We managed to get him back. He has no lingering physical wounds, but he will need time to recover.\nWe thought we were gods who had found an opportunity for more power. A silly notion to the likes of you and me, but the average Guardian has not been threatened like this. The Titans are beside themselves.\nWe will take extreme measures. We must. But these creatures have such means… They will flee. Far and wide. Perhaps all the way to you.\nMara, I implore you. If you hold your people as dearly as you say you do, you will end them on sight.\n—Eris Morn",
+    "bungie_ref": "3838639757",
+    "image_url": "/common/destiny2_content/screenshots/1258342944.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/1258342944.jpg",
+    "subtitle": "I wish to be cunning.",
+    "description": "The Ahamkara remain an issue. There's still so much we can learn from them but what they've done to Venus… no two Guardians see the same thing. Consultants from the War Cult have been brought in to gauge disagreements over timelines of events. One of our Warlocks stared into the paracausal phenomenon that formed over the Ishtar Academy and shot himself. (He is NOT an authorized Thanatonaut). Luckily, his Ghost hid from him beforehand. We managed to get him back. He has no lingering physical wounds, but he will need time to recover.\n\nWe thought we were gods who had found an opportunity for more power. A silly notion to the likes of you and me, but the average Guardian has not been threatened like this. The Titans are beside themselves.\n\nWe will take extreme measures. We must. But these creatures have such means… They will flee. Far and wide. Perhaps all the way to you.\n\nMara, I implore you. If you hold your people as dearly as you say you do, you will end them on sight.\n\n—Eris Morn",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "ishtar-collective",
+        "name": "Ishtar Collective",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ishtar-collective",
+        "api_url": "https://api.ishtar-collective.net/categories/ishtar-collective",
+        "short_summary": "“A sprawling Golden Age scientific project” that studied all aspects of the Vex. Most of their facilities were located under the Ishtar Academy on Venus. "
+      },
+      {
+        "ishtar_ref": "eris-morn",
+        "name": "Eris Morn",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/eris-morn",
+        "api_url": "https://api.ishtar-collective.net/categories/eris-morn",
+        "short_summary": "A Hunter and one of the founding members of the First Crota fireteam."
+      },
+      {
+        "ishtar_ref": "queen-mara-sov",
+        "name": "Queen Mara Sov",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/queen-mara-sov",
+        "api_url": "https://api.ishtar-collective.net/categories/queen-mara-sov",
+        "short_summary": "Queen of the Reef and previous Kell of the House of Wolves. "
+      },
+      {
+        "ishtar_ref": "the-great-ahamkara-hunt",
+        "name": "The Great Ahamkara Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "api_url": "https://api.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "short_summary": ""
+      },
+      {
+        "ishtar_ref": "great-hunt-suit-hunter",
+        "name": "Great Hunt Suit (Hunter)",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/great-hunt-suit-hunter",
+        "api_url": "https://api.ishtar-collective.net/categories/great-hunt-suit-hunter",
+        "short_summary": ""
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "mask-of-the-great-hunt",
+        "name": "Mask of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/mask-of-the-great-hunt",
+        "api_url": "https://api.ishtar-collective.net/items/mask-of-the-great-hunt",
+        "short_summary": "I wish to be cunning.",
+        "bungie_ref": "3838639757",
+        "image_url": "/common/destiny2_content/icons/3d7149a61cd354d14f8bf6d2133c01b4.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/3d7149a61cd354d14f8bf6d2133c01b4.jpg",
+        "flavor_text": "I wish to be cunning.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "mask-of-the-great-hunt-3",
+        "name": "Mask of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/mask-of-the-great-hunt-3",
+        "api_url": "https://api.ishtar-collective.net/items/mask-of-the-great-hunt-3",
+        "short_summary": "I wish to be cunning.",
+        "bungie_ref": "1258342944",
+        "image_url": "/common/destiny2_content/icons/3d7149a61cd354d14f8bf6d2133c01b4.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/3d7149a61cd354d14f8bf6d2133c01b4.jpg",
+        "flavor_text": "I wish to be cunning.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "mask-of-the-great-hunt-2",
+        "name": "Mask of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/mask-of-the-great-hunt-2",
+        "api_url": "https://api.ishtar-collective.net/items/mask-of-the-great-hunt-2",
+        "short_summary": "I wish to be cunning.",
+        "bungie_ref": "1190016345",
+        "image_url": "/common/destiny2_content/icons/3d7149a61cd354d14f8bf6d2133c01b4.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/3d7149a61cd354d14f8bf6d2133c01b4.jpg",
+        "flavor_text": "I wish to be cunning.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "mask-of-the-great-hunt-4",
+        "name": "Mask of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/mask-of-the-great-hunt-4",
+        "api_url": "https://api.ishtar-collective.net/items/mask-of-the-great-hunt-4",
+        "short_summary": "I wish to be cunning.",
+        "bungie_ref": "3423279826",
+        "image_url": "/common/destiny2_content/icons/3d7149a61cd354d14f8bf6d2133c01b4.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/3d7149a61cd354d14f8bf6d2133c01b4.jpg",
+        "flavor_text": "I wish to be cunning.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "mask-of-the-great-hunt-5",
+        "name": "Mask of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/mask-of-the-great-hunt-5",
+        "api_url": "https://api.ishtar-collective.net/items/mask-of-the-great-hunt-5",
+        "short_summary": "I wish to be cunning.",
+        "bungie_ref": "3154263904",
+        "image_url": "/common/destiny2_content/icons/3d7149a61cd354d14f8bf6d2133c01b4.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/3d7149a61cd354d14f8bf6d2133c01b4.jpg",
+        "flavor_text": "I wish to be cunning.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "mask-of-the-great-hunt-7",
+        "name": "Mask of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/mask-of-the-great-hunt-7",
+        "api_url": "https://api.ishtar-collective.net/items/mask-of-the-great-hunt-7",
+        "short_summary": "I wish to be cunning.",
+        "bungie_ref": "1598868645",
+        "image_url": "/common/destiny2_content/icons/3d7149a61cd354d14f8bf6d2133c01b4.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/3d7149a61cd354d14f8bf6d2133c01b4.jpg",
+        "flavor_text": "I wish to be cunning.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "mask-of-the-great-hunt-8",
+        "name": "Mask of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/mask-of-the-great-hunt-8",
+        "api_url": "https://api.ishtar-collective.net/items/mask-of-the-great-hunt-8",
+        "short_summary": "I wish to be cunning.",
+        "bungie_ref": "3606008111",
+        "image_url": "/common/destiny2_content/icons/3d7149a61cd354d14f8bf6d2133c01b4.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/3d7149a61cd354d14f8bf6d2133c01b4.jpg",
+        "flavor_text": "I wish to be cunning.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "mask-of-the-great-hunt-6",
+        "name": "Mask of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/mask-of-the-great-hunt-6",
+        "api_url": "https://api.ishtar-collective.net/items/mask-of-the-great-hunt-6",
+        "short_summary": "I wish to be cunning.",
+        "bungie_ref": "309284761",
+        "image_url": "/common/destiny2_content/icons/3d7149a61cd354d14f8bf6d2133c01b4.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/3d7149a61cd354d14f8bf6d2133c01b4.jpg",
+        "flavor_text": "I wish to be cunning.",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

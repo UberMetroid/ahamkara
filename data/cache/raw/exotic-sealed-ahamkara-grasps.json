@@ -1,0 +1,94 @@
+{
+  "id": "exotic-sealed-ahamkara-grasps",
+  "api_path": "/entries/sealed-ahamkara-grasps",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "sealed-ahamkara-grasps",
+    "name": "Sealed Ahamkara Grasps",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/sealed-ahamkara-grasps",
+    "api_url": "https://api.ishtar-collective.net/entries/sealed-ahamkara-grasps",
+    "short_summary": "Plating the Ahamkara bones in silver helps to quiet the auditory hallucinations… o bearer mine.\n—\nFew things can see the Light, but we are not blinded. \nThe Bearer seeks the truth, but what separates truth from fiction is fragile. \nA pair of truths and a single falsehood upon the Bearer we shall impart. \nBrother, ally once more, sends his regards. \nDreamer, awakened, the Bearer shall meet. ",
+    "bungie_ref": "2166230715",
+    "image_url": "/common/destiny2_content/screenshots/2166230715.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/2166230715.jpg",
+    "subtitle": "Plating the Ahamkara bones in silver helps to quiet the auditory hallucinations… o bearer mine.",
+    "description": "Few things can see the Light, but we are not blinded. \n\nThe Bearer seeks the truth, but what separates truth from fiction is fragile. \n\nA pair of truths and a single falsehood upon the Bearer we shall impart. \n\nBrother, ally once more, sends his regards. \n\nDreamer, awakened, the Bearer shall meet. \n\nLight fades, deep within the Prison.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "sealed-ahamkara-grasps-2",
+        "name": "Sealed Ahamkara Grasps",
+        "ishtar_url": "https://www.ishtar-collective.net/items/sealed-ahamkara-grasps-2",
+        "api_url": "https://api.ishtar-collective.net/items/sealed-ahamkara-grasps-2",
+        "short_summary": "Plating the Ahamkara bones in silver helps to quiet the auditory hallucinations… o bearer mine.",
+        "bungie_ref": "2166230715",
+        "image_url": "/common/destiny2_content/icons/159870075afe5423cbf1d8d46e920ccc.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/159870075afe5423cbf1d8d46e920ccc.jpg",
+        "flavor_text": "Plating the Ahamkara bones in silver helps to quiet the auditory hallucinations… o bearer mine.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "sealed-ahamkara-grasps-4",
+        "name": "Sealed Ahamkara Grasps",
+        "ishtar_url": "https://www.ishtar-collective.net/items/sealed-ahamkara-grasps-4",
+        "api_url": "https://api.ishtar-collective.net/items/sealed-ahamkara-grasps-4",
+        "short_summary": "Plating the Ahamkara bones in silver helps to quiet the auditory hallucinations… o bearer mine.",
+        "bungie_ref": "736571395",
+        "image_url": "/common/destiny2_content/icons/159870075afe5423cbf1d8d46e920ccc.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/159870075afe5423cbf1d8d46e920ccc.jpg",
+        "flavor_text": "Plating the Ahamkara bones in silver helps to quiet the auditory hallucinations… o bearer mine.",
+        "description": "",
+        "bungie_deleted": true
+      },
+      {
+        "ishtar_ref": "sealed-ahamkara-grasps-3",
+        "name": "Sealed Ahamkara Grasps",
+        "ishtar_url": "https://www.ishtar-collective.net/items/sealed-ahamkara-grasps-3",
+        "api_url": "https://api.ishtar-collective.net/items/sealed-ahamkara-grasps-3",
+        "short_summary": "Plating the Ahamkara bones in silver helps to quiet the auditory hallucinations… o bearer mine.",
+        "bungie_ref": "1688602431",
+        "image_url": "/common/destiny2_content/icons/159870075afe5423cbf1d8d46e920ccc.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/159870075afe5423cbf1d8d46e920ccc.jpg",
+        "flavor_text": "Plating the Ahamkara bones in silver helps to quiet the auditory hallucinations… o bearer mine.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "sealed-ahamkara-grasps-6",
+        "name": "Sealed Ahamkara Grasps",
+        "ishtar_url": "https://www.ishtar-collective.net/items/sealed-ahamkara-grasps-6",
+        "api_url": "https://api.ishtar-collective.net/items/sealed-ahamkara-grasps-6",
+        "short_summary": "Plating the Ahamkara bones in silver helps to quiet the auditory hallucinations… o bearer mine.",
+        "bungie_ref": "2000707632",
+        "image_url": "/common/destiny2_content/icons/159870075afe5423cbf1d8d46e920ccc.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/159870075afe5423cbf1d8d46e920ccc.jpg",
+        "flavor_text": "Plating the Ahamkara bones in silver helps to quiet the auditory hallucinations… o bearer mine.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "sealed-ahamkara-grasps-5",
+        "name": "Sealed Ahamkara Grasps",
+        "ishtar_url": "https://www.ishtar-collective.net/items/sealed-ahamkara-grasps-5",
+        "api_url": "https://api.ishtar-collective.net/items/sealed-ahamkara-grasps-5",
+        "short_summary": "Plating the Ahamkara bones in silver helps to quiet the auditory hallucinations… o bearer mine.",
+        "bungie_ref": "3987871714",
+        "image_url": "/common/destiny2_content/icons/159870075afe5423cbf1d8d46e920ccc.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/159870075afe5423cbf1d8d46e920ccc.jpg",
+        "flavor_text": "Plating the Ahamkara bones in silver helps to quiet the auditory hallucinations… o bearer mine.",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

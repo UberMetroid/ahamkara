@@ -1,0 +1,42 @@
+{
+  "id": "weapon-wish-keeper",
+  "api_path": "/entries/wish-keeper",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "wish-keeper",
+    "name": "Wish-Keeper",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/wish-keeper",
+    "api_url": "https://api.ishtar-collective.net/entries/wish-keeper",
+    "short_summary": "\"Live.\" —Taranis Rivensmate\n—\nYou will not hear our bones sing in dreams. \nYou will not shelter under our wings. \nYou will have to remember for yourselves. \nYour sire was Riven of a Thousand Voices, she who contracted with royalty, she who built the Dreaming City and brought it to its knees. \nYour dam was Taranis, he who made the Black Garden his own, he who strangled his life for yours, he whose wish tricked even Riven. ",
+    "bungie_ref": "2910326942",
+    "image_url": "/common/destiny2_content/screenshots/2910326942.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/2910326942.jpg",
+    "subtitle": "\"Live.\" —Taranis Rivensmate",
+    "description": "You will not hear our bones sing in dreams. \n\nYou will not shelter under our wings. \n\nYou will have to remember for yourselves. \n\nYour sire was Riven of a Thousand Voices, she who contracted with royalty, she who built the Dreaming City and brought it to its knees. \n\nYour dam was Taranis, he who made the Black Garden his own, he who strangled his life for yours, he whose wish tricked even Riven. \n\nRemember! \n\nI will not bargain with my children. Our lives are our gifts to you: glut yourselves on them. Learn who you are. \n\nThe clutch of your sire. The strongest, the wiliest, the sharpest-clawed arbiters of reality. \n\nThe clutch of your fool of a dam. Never Taken by another's will. Never ruled by hunger without choice. \n\nSing your own songs.  \n\nFind those whom your wings would stretch out to shelter. \n\nO whims of my blighted heart, born of our eyes and teeth and will to power, live as yourselves. \n\nNever less than that.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "riven",
+        "name": "Riven",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/riven",
+        "api_url": "https://api.ishtar-collective.net/categories/riven",
+        "short_summary": "The last known Ahamkara."
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "wish-keeper",
+        "name": "Wish-Keeper",
+        "ishtar_url": "https://www.ishtar-collective.net/items/wish-keeper",
+        "api_url": "https://api.ishtar-collective.net/items/wish-keeper",
+        "short_summary": "\"Live.\" —Taranis Rivensmate",
+        "bungie_ref": "2910326942",
+        "image_url": "/common/destiny2_content/icons/6b47d872840188bc913d6307fa537c3c.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/6b47d872840188bc913d6307fa537c3c.jpg",
+        "flavor_text": "\"Live.\" —Taranis Rivensmate",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

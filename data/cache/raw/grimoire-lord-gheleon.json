@@ -1,0 +1,70 @@
+{
+  "id": "grimoire-lord-gheleon",
+  "api_path": "/cards/lord-gheleon",
+  "doc_type": "grimoire_card",
+  "data": {
+    "ishtar_ref": "lord-gheleon",
+    "name": "Lord Gheleon",
+    "ishtar_url": "https://www.ishtar-collective.net/cards/lord-gheleon",
+    "api_url": "https://api.ishtar-collective.net/cards/lord-gheleon",
+    "short_summary": "Gheleon wears three knives. Their names are Swiftling, Occam, Quietus. They did much of the work at Black Lona, in silence and at speed.\nBetween the roots of the ash tree that covers his den, Gheleon has stacked the Fallen bones collected from that one-night operation. The scavenged pieces of an Ahamkara, several jumbled coyote skeletons, and a fossil mastodon skull are mixed in with them. The bones are scorched and battered from the various grenades, bullets, and hammers he's taken to them. He keeps extensive notes on these stress tests in a tattered notebook with \"Field Armor Experiments\" scrawled on its cover. So far, though, he hasn't tried his knives on these materials. Between bones, in the joints and gaps, certainly, but not on them.\nGheleon flips Swiftling and catches it by the haft. He throws it, a single smooth motion, and it shatters a Fallen tibia.\nHe flips Occam and throws it. The knife clatters off an Ahamkara vertebra.\nHe flips Quietus and—",
+    "bungie_ref": "800413",
+    "image_url": "/common/destiny_content/grimoire/hr_images/800413_055625a837c318accdefe7f406c6eb7b.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny_content/grimoire/hr_images/800413_055625a837c318accdefe7f406c6eb7b.jpg",
+    "intro": null,
+    "intro_attribution": null,
+    "description": "Gheleon wears three knives. Their names are Swiftling, Occam, Quietus. They did much of the work at Black Lona, in silence and at speed.<br/><br/>\nBetween the roots of the ash tree that covers his den, Gheleon has stacked the Fallen bones collected from that one-night operation. The scavenged pieces of an Ahamkara, several jumbled coyote skeletons, and a fossil mastodon skull are mixed in with them. The bones are scorched and battered from the various grenades, bullets, and hammers he&#39;s taken to them. He keeps extensive notes on these stress tests in a tattered notebook with &quot;Field Armor Experiments&quot; scrawled on its cover. So far, though, he hasn&#39;t tried his knives on these materials. Between bones, in the joints and gaps, certainly, but not on them.<br/><br/>\nGheleon flips Swiftling and catches it by the haft. He throws it, a single smooth motion, and it shatters a Fallen tibia.<br/><br/>\nHe flips Occam and throws it. The knife clatters off an Ahamkara vertebra.<br/><br/>\nHe flips Quietus and—<br/><br/>\n&quot;Shanks and pikes, Efrideet!&quot;<br/><br/>\n&quot;Ooh, that&#39;s the last yip it&#39;s yipped,&quot; she says, picking up the coyote jaw that Quietus impaled. &quot;Helmet, would you say?&quot;<br/><br/>\n&quot;Too brittle. Etherbone’s better. Flexes.&quot;<br/><br/>\nThe others follow her in, wrinkling their noses. Usually they avoid his dim and earth-smelling den. Their presence suggests that Felwinter is doing something unpleasant, probably involving screams.<br/><br/>\n&quot;Bone?&quot; Saladin says. &quot;Not carbon bronze? Not plasteel?&quot;<br/><br/>\n&quot;Bone’s always available as a last resort. Nothing else is.&quot;<br/><br/>\n&quot;This is doomsday thinking,&quot; Jolder says, kicking aside fragments of bone. &quot;We have your back. Our plate is strong. When&#39;ll you need scavenged armor?&quot;<br/><br/>\n&quot;If all of you were cut down around me, your Light drained past return, and my own armor was shredded. F’r instance.&quot;<br/><br/>\nThere is a long silence.<br/><br/>\n&quot;You always know what to say to make us feel better,&quot; Efrideet says.<br/><br/>\n&quot;I could hide under your bodies until the threat left. Then I’d make a helmet from all your skulls and a breastplate from your ribs and gloves from your finger bones wrapped around mine.&quot;<br/><br/>\nThere is a longer silence.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "lords-of-iron",
+        "name": "Lords of Iron",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/lords-of-iron",
+        "api_url": "https://api.ishtar-collective.net/categories/lords-of-iron",
+        "short_summary": "Before they were called Guardians, those blessed with the Traveler’s Light banded together to try and give some protection to the last remnants of humanity. They called themselves the Iron Lords. "
+      },
+      {
+        "ishtar_ref": "lady-jolder",
+        "name": "Lady Jolder",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/lady-jolder",
+        "api_url": "https://api.ishtar-collective.net/categories/lady-jolder",
+        "short_summary": "A Titan who was a member of the Iron Lords."
+      },
+      {
+        "ishtar_ref": "lord-gheleon",
+        "name": "Lord Gheleon",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/lord-gheleon",
+        "api_url": "https://api.ishtar-collective.net/categories/lord-gheleon",
+        "short_summary": "A Hunter who was a member of the Iron Lords."
+      },
+      {
+        "ishtar_ref": "lady-efrideet",
+        "name": "Lady Efrideet",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/lady-efrideet",
+        "api_url": "https://api.ishtar-collective.net/categories/lady-efrideet",
+        "short_summary": "A member of the Iron Lords. She disappeared and was presumed dead, until she showed up in the Iron Temple, willing to take Lord Saladin's place as coordinator of the Iron Banner. She talks of a community of civilian Guardians deep in the solar system, so it's likely that is where she has been until now. "
+      },
+      {
+        "ishtar_ref": "lord-felwinter",
+        "name": "Lord Felwinter",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/lord-felwinter",
+        "api_url": "https://api.ishtar-collective.net/categories/lord-felwinter",
+        "short_summary": ""
+      },
+      {
+        "ishtar_ref": "lord-saladin",
+        "name": "Lord Saladin",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/lord-saladin",
+        "api_url": "https://api.ishtar-collective.net/categories/lord-saladin",
+        "short_summary": ""
+      }
+    ]
+  }
+}

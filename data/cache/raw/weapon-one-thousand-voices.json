@@ -1,0 +1,62 @@
+{
+  "id": "weapon-one-thousand-voices",
+  "api_path": "/entries/one-thousand-voices",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "one-thousand-voices",
+    "name": "One Thousand Voices",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/one-thousand-voices",
+    "api_url": "https://api.ishtar-collective.net/entries/one-thousand-voices",
+    "short_summary": "I can be anyone you wish, o murderer mine.\n—\n[Language] is a [virus] that infects the minds of [humans].\nA single [word] will drive them to [rage] or [lust] or [weeping].\nO for the right [word] said in the right [voice]!\nO to see their [hearts] well with [longing]!\nO to see their [desire] laid bare in their [chest], so juicy and succulent for the taking!",
+    "bungie_ref": "2069224589",
+    "image_url": "/common/destiny2_content/screenshots/2069224589.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/2069224589.jpg",
+    "subtitle": "I can be anyone you wish, o murderer mine.",
+    "description": "[Language] is a [virus] that infects the minds of [humans].\n\nA single [word] will drive them to [rage] or [lust] or [weeping].\n\nO for the right [word] said in the right [voice]!\n\nO to see their [hearts] well with [longing]!\n\nO to see their [desire] laid bare in their [chest], so juicy and succulent for the taking!",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "riven",
+        "name": "Riven",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/riven",
+        "api_url": "https://api.ishtar-collective.net/categories/riven",
+        "short_summary": "The last known Ahamkara."
+      },
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "one-thousand-voices",
+        "name": "One Thousand Voices",
+        "ishtar_url": "https://www.ishtar-collective.net/items/one-thousand-voices",
+        "api_url": "https://api.ishtar-collective.net/items/one-thousand-voices",
+        "short_summary": "I can be anyone you wish, o murderer mine.",
+        "bungie_ref": "2069224589",
+        "image_url": "/common/destiny2_content/icons/51c53df606cca474dce3cadbf7d5ce28.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/51c53df606cca474dce3cadbf7d5ce28.jpg",
+        "flavor_text": "I can be anyone you wish, o murderer mine.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "one-thousand-voices-2",
+        "name": "One Thousand Voices",
+        "ishtar_url": "https://www.ishtar-collective.net/items/one-thousand-voices-2",
+        "api_url": "https://api.ishtar-collective.net/items/one-thousand-voices-2",
+        "short_summary": "I can be anyone you wish, o murderer mine.",
+        "bungie_ref": "1555775155",
+        "image_url": "/common/destiny2_content/icons/51c53df606cca474dce3cadbf7d5ce28.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/51c53df606cca474dce3cadbf7d5ce28.jpg",
+        "flavor_text": "I can be anyone you wish, o murderer mine.",
+        "description": "",
+        "bungie_deleted": true
+      }
+    ]
+  }
+}

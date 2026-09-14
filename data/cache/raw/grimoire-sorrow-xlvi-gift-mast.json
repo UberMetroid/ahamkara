@@ -1,0 +1,56 @@
+{
+  "id": "grimoire-sorrow-xlvi-gift-mast",
+  "api_path": "/cards/xlvi-the-gift-mast",
+  "doc_type": "grimoire_card",
+  "data": {
+    "ishtar_ref": "xlvi-the-gift-mast",
+    "name": "XLVI: The Gift Mast",
+    "ishtar_url": "https://www.ishtar-collective.net/cards/xlvi-the-gift-mast",
+    "api_url": "https://api.ishtar-collective.net/cards/xlvi-the-gift-mast",
+    "short_summary": "Verse 5:4 — The Gift Mast\nThe Gift Mast!\nIt towers above this star system like a monument to treason. It beams with silver light. It sings a radio lullaby, made of soothing lies.\nIn its light live the Harmony, and they are now our prey.\nNow arrives Xivu Arath, at the head of her armada. She fights the Harmony for fifty years with strategies and discipline. But the Harmony turn to dragon-wishes, and their wishful bishops wrestle Xivu in the ascendant plane.",
+    "bungie_ref": "701130",
+    "image_url": "/common/destiny_content/grimoire/hr_images/701130_2a2a7341eab4e99c44b4b4f01a951157.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny_content/grimoire/hr_images/701130_2a2a7341eab4e99c44b4b4f01a951157.jpg",
+    "intro": "<b>Verse 5:4 — The Gift Mast</b>",
+    "intro_attribution": null,
+    "description": "The Gift Mast!<br/><br/>\nIt towers above this star system like a monument to treason. It beams with silver light. It sings a radio lullaby, made of soothing lies.<br/><br/>\nIn its light live the Harmony, and they are now our prey.<br/><br/>\nNow arrives Xivu Arath, at the head of her armada. She fights the Harmony for fifty years with strategies and discipline. But the Harmony turn to dragon-wishes, and their wishful bishops wrestle Xivu in the ascendant plane.<br/><br/>\nXivu falls into deadlock.<br/><br/>\nNext arrives Savath&#251;n, flanked by her chorus and her celebrants. They trick their way onto Ana-Harmony in disguises, so that they might vivisect these dragons. The Worm our God laughs and laughs.<br/><br/>\nFor a hundred years Savath&#251;n keeps secret covens among the Harmony.<br/><br/>\nBut first of all was Oryx, whose brood grew in secret places in the rubble of the accretion disc. The First Navigator sends rocks and comets to crash into the Harmony worlds, so that the Harmony fleet will be disarrayed. He sends seeders to infiltrate the Harmony worlds with his broods.<br/><br/>\nHere at the center of the fifth book the Hive has grown so mighty that it has made the annihilation of all false life routine.<br/><br/>\nXivu Arath kills the wishful bishops, and Savath&#251;n achieves some secret purpose, and Oryx’s Court tears down the Gift Mast. The Harmony people wail in terror, and they throw themselves into the silver lakes of Ana-Harmony to drown.<br/><br/>\n“Come,” sayeth Oryx, “eat of the Gift Mast, for I am a generous god. Of its pieces, I claim only two out of every five.”<br/><br/>\nThe Mast is full of the Light of the Traveler, it is full of the marrow taste of Sky. All who eat of it are filled with the ecstatic certainty that they serve a great and necessary purpose.<br/><br/>\nThen sayeth Savath&#251;n, “Siblings, listen, we must part ways a while, so that we may grow different.” She flies her war-moons into the black hole. Her throne becomes distant.<br/><br/>\nSayeth Xivu Arath, “King Oryx, you take up too much space, your power constrains too many choices. I must go away from you.” She flies her war-moons away into the night. Her throne is barred shut.<br/><br/>\nThen Oryx was alone. He spent a while in thought, and those thoughts are recorded here.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "oryx",
+        "name": "Oryx",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/oryx",
+        "api_url": "https://api.ishtar-collective.net/categories/oryx",
+        "short_summary": "Previously Aurash and then Auryx, a member of the proto-Hive species, the heir to the Osmium throne, the leader of the Hive and the only creature known to be capable of creating the Taken."
+      },
+      {
+        "ishtar_ref": "the-worm-gods",
+        "name": "The Worm Gods",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-worm-gods",
+        "api_url": "https://api.ishtar-collective.net/categories/the-worm-gods",
+        "short_summary": "Creatures that lived in the furthest depths of the Fundament."
+      },
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "books-of-sorrow",
+        "name": "Books of Sorrow",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/books-of-sorrow",
+        "api_url": "https://api.ishtar-collective.net/categories/books-of-sorrow",
+        "short_summary": "A collection of verses compiled by Oryx, the Taken King, and including verses from the Worm Gods and Oryx's sisters, as well as from other civilizations."
+      },
+      {
+        "ishtar_ref": "savathun",
+        "name": "Savathûn",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/savathun",
+        "api_url": "https://api.ishtar-collective.net/categories/savathun",
+        "short_summary": "Hive goddess of trickery and cunning."
+      }
+    ]
+  }
+}

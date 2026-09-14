@@ -1,0 +1,80 @@
+/* base.css — tokens, reset, base typography, accessibility scaffolding */
+/* ==========================================================================
+   Ahamkara — the wish-dragons' archive
+   Palette: void, bone, and one iridescent accent.
+   Weird, but the weirdness is decoration — the structure stays accessible.
+   ========================================================================== */
+
+@property --ahue {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0;
+}
+
+:root {
+  --void: #0b0a10;
+  --void-2: #14121c;
+  --bone: #ece5d3;
+  --bone-dim: #b7b0a0;
+  --ahue: 0;
+  /* Accents live in oklch so their hue can wander — the palette trips slowly. */
+  --accent: oklch(0.86 0.11 calc(173 + var(--ahue)));
+  --accent-2: oklch(0.74 0.17 calc(295 - var(--ahue)));
+  --line: #35304a;
+  animation: hue-drift 150s steps(48) infinite;
+  --font-display: "Cormorant Garamond", "Iowan Old Style", Palatino, serif;
+  --font-body: Georgia, "Iowan Old Style", Palatino, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --max: 72rem;
+  --measure: 68ch;
+}
+
+* { box-sizing: border-box; }
+
+html { color-scheme: dark; }
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(120% 90% at 50% -20%, #1b1728 0%, var(--void) 55%) fixed,
+    var(--void);
+  color: var(--bone);
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 0.95rem + 0.3vw, 1.125rem);
+  line-height: 1.65;
+  min-height: 100vh;
+}
+
+::selection { background: var(--accent); color: var(--void); }
+
+@keyframes hue-drift {
+  to { --ahue: 360; }
+}
+
+
+/* ---------- accessibility scaffolding ---------- */
+
+.skip {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--accent);
+  color: var(--void);
+  padding: 0.6rem 1rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  z-index: 100;
+}
+.skip:focus { left: 0.5rem; top: 0.5rem; }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ---------- links ---------- */
+
+a { color: var(--accent); text-decoration-color: color-mix(in srgb, var(--accent) 55%, transparent); text-underline-offset: 0.2em; }
+a:hover { color: var(--accent-2); text-decoration-color: var(--accent-2); }
+

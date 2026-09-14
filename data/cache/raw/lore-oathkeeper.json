@@ -1,0 +1,115 @@
+{
+  "id": "lore-oathkeeper",
+  "api_path": "/entries/oathkeeper",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "oathkeeper",
+    "name": "Oathkeeper",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/oathkeeper",
+    "api_url": "https://api.ishtar-collective.net/entries/oathkeeper",
+    "short_summary": "\"I have not yet met my true death.\" —Sjur Eido, First Queen's Wrath\n—\n\"This was on her body, Your Grace.\"\nA strange coin lay at the center of Abra's outstretched palm. Mara took it between thumb and forefinger and held up it to the cosmos with dainty contempt.\nWeregild, she thought. Powerful grief filled her chest, as thick and caustic and heavy as unset concrete.\n\"And her bow?\"\n\"Gone.\"",
+    "bungie_ref": "1098931324",
+    "image_url": "/common/destiny2_content/screenshots/1098931324.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/1098931324.jpg",
+    "subtitle": "\"I have not yet met my true death.\" —Sjur Eido, First Queen's Wrath",
+    "description": "\"This was on her body, Your Grace.\"\n\nA strange coin lay at the center of Abra's outstretched palm. Mara took it between thumb and forefinger and held up it to the cosmos with dainty contempt.\n\nWeregild, she thought. Powerful grief filled her chest, as thick and caustic and heavy as unset concrete.\n\n\"And her bow?\"\n\n\"Gone.\"\n\n\"Huginn? Muninn?\"\n\n\"The Ahamkara are dead, and their bones are silent. But Petra Venj has—\"\n\n\"Who?\"\n\n\"A Corsair. Recently titled.\"\n\n\"…She is a CHILD.\"\n\nPaladin Zire flinched as if slapped. \"My Queen. Our spies in the House of Judgment tell us the Wolves plan to attack Hygiea next. I loved Sjur, as I love all we have lost, and I grieve her. But if we divert our attention now to vengeance against an unknown enemy…\"\n\nMara put down the coin and allowed herself a small, humorless smile. \"Then let it be my diversion.\"",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "queen-mara-sov",
+        "name": "Queen Mara Sov",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/queen-mara-sov",
+        "api_url": "https://api.ishtar-collective.net/categories/queen-mara-sov",
+        "short_summary": "Queen of the Reef and previous Kell of the House of Wolves. "
+      },
+      {
+        "ishtar_ref": "petra-venj",
+        "name": "Petra Venj",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/petra-venj",
+        "api_url": "https://api.ishtar-collective.net/categories/petra-venj",
+        "short_summary": "The Queen’s Wrath who has also served as the Queen’s Emissary and Regent-Commander of the Reef. "
+      },
+      {
+        "ishtar_ref": "sjur-eido",
+        "name": "Sjur Eido",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/sjur-eido",
+        "api_url": "https://api.ishtar-collective.net/categories/sjur-eido",
+        "short_summary": ""
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "oathkeeper",
+        "name": "Oathkeeper",
+        "ishtar_url": "https://www.ishtar-collective.net/items/oathkeeper",
+        "api_url": "https://api.ishtar-collective.net/items/oathkeeper",
+        "short_summary": "\"I have not yet met my true death.\" —Sjur Eido, First Queen's Wrath",
+        "bungie_ref": "1098931324",
+        "image_url": "/common/destiny2_content/icons/5a3826001ee01b3a28ac26a4ec34eeb5.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/5a3826001ee01b3a28ac26a4ec34eeb5.jpg",
+        "flavor_text": "\"I have not yet met my true death.\" —Sjur Eido, First Queen's Wrath",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "oathkeeper-2",
+        "name": "Oathkeeper",
+        "ishtar_url": "https://www.ishtar-collective.net/items/oathkeeper-2",
+        "api_url": "https://api.ishtar-collective.net/items/oathkeeper-2",
+        "short_summary": "\"I have not yet met my true death.\" —Sjur Eido, First Queen's Wrath",
+        "bungie_ref": "691578978",
+        "image_url": "/common/destiny2_content/icons/5a3826001ee01b3a28ac26a4ec34eeb5.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/5a3826001ee01b3a28ac26a4ec34eeb5.jpg",
+        "flavor_text": "\"I have not yet met my true death.\" —Sjur Eido, First Queen's Wrath",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "oathkeeper-3",
+        "name": "Oathkeeper",
+        "ishtar_url": "https://www.ishtar-collective.net/items/oathkeeper-3",
+        "api_url": "https://api.ishtar-collective.net/items/oathkeeper-3",
+        "short_summary": "\"I have not yet met my true death.\" —Sjur Eido, First Queen's Wrath",
+        "bungie_ref": "3518379440",
+        "image_url": "/common/destiny2_content/icons/5a3826001ee01b3a28ac26a4ec34eeb5.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/5a3826001ee01b3a28ac26a4ec34eeb5.jpg",
+        "flavor_text": "\"I have not yet met my true death.\" —Sjur Eido, First Queen's Wrath",
+        "description": "",
+        "bungie_deleted": true
+      },
+      {
+        "ishtar_ref": "oathkeeper-5",
+        "name": "Oathkeeper",
+        "ishtar_url": "https://www.ishtar-collective.net/items/oathkeeper-5",
+        "api_url": "https://api.ishtar-collective.net/items/oathkeeper-5",
+        "short_summary": "\"I have not yet met my true death.\" —Sjur Eido, First Queen's Wrath",
+        "bungie_ref": "3539478895",
+        "image_url": "/common/destiny2_content/icons/5a3826001ee01b3a28ac26a4ec34eeb5.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/5a3826001ee01b3a28ac26a4ec34eeb5.jpg",
+        "flavor_text": "\"I have not yet met my true death.\" —Sjur Eido, First Queen's Wrath",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "oathkeeper-4",
+        "name": "Oathkeeper",
+        "ishtar_url": "https://www.ishtar-collective.net/items/oathkeeper-4",
+        "api_url": "https://api.ishtar-collective.net/items/oathkeeper-4",
+        "short_summary": "\"I have not yet met my true death.\" —Sjur Eido, First Queen's Wrath",
+        "bungie_ref": "3883286571",
+        "image_url": "/common/destiny2_content/icons/5a3826001ee01b3a28ac26a4ec34eeb5.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/5a3826001ee01b3a28ac26a4ec34eeb5.jpg",
+        "flavor_text": "\"I have not yet met my true death.\" —Sjur Eido, First Queen's Wrath",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

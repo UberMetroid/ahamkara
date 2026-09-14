@@ -1,0 +1,95 @@
+{
+  "id": "raid-weapon-nation-of-beasts",
+  "api_path": "/entries/nation-of-beasts",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "nation-of-beasts",
+    "name": "Nation of Beasts",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/nation-of-beasts",
+    "api_url": "https://api.ishtar-collective.net/entries/nation-of-beasts",
+    "short_summary": "I can show you how we were in our prime. You need only ask, o student mine.\n—\nShe held the handgun pressed against Liu Feng's head. Ouros blinked through the sweat.\nLiu Feng held the handgun against Ouros's head. She shivered.\nAcross the river, as if in a mirror, another Liu Feng and another Ouros looked back at them.\nTwo Liu Fengs.\nTwo Ouroses.",
+    "bungie_ref": "654370424",
+    "image_url": "/common/destiny2_content/screenshots/654370424.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/654370424.jpg",
+    "subtitle": "I can show you how we were in our prime. You need only ask, o student mine.",
+    "description": "She held the handgun pressed against Liu Feng's head. Ouros blinked through the sweat.\n\nLiu Feng held the handgun against Ouros's head. She shivered.\n\nAcross the river, as if in a mirror, another Liu Feng and another Ouros looked back at them.\n\nTwo Liu Fengs.\n\nTwo Ouroses.\n\nFour handguns.\n\nThe Liu Feng that was cold opened her mouth. \"I wish…\"\n\nWhen the shooting stopped, only the Guardians still lived. They stared at each other from across the river.\n\n\"How did you know?\" Liu Feng asked.\n\n\"I could feel the heat of the Forge on my skin.\" Ouros shook her head. \"You could not?\"\n\nLiu Feng shook her head also.\n\n\"Forget these tricksters. They can teach us nothing. And you have so much left to learn.\"",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "sunbreakers",
+        "name": "The Sunbreakers",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/sunbreakers",
+        "api_url": "https://api.ishtar-collective.net/categories/sunbreakers",
+        "short_summary": "A Titan order that predates the City."
+      },
+      {
+        "ishtar_ref": "the-great-ahamkara-hunt",
+        "name": "The Great Ahamkara Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "api_url": "https://api.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "short_summary": ""
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "nation-of-beasts",
+        "name": "Nation of Beasts",
+        "ishtar_url": "https://www.ishtar-collective.net/items/nation-of-beasts",
+        "api_url": "https://api.ishtar-collective.net/items/nation-of-beasts",
+        "short_summary": "I can show you how we were in our prime. You need only ask, o student mine.",
+        "bungie_ref": "654370424",
+        "image_url": "/common/destiny2_content/icons/02c39ef35d21b77989e1a4cd18e1d076.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/02c39ef35d21b77989e1a4cd18e1d076.jpg",
+        "flavor_text": "I can show you how we were in our prime. You need only ask, o student mine.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "chattering-bone-2",
+        "name": "Chattering Bone",
+        "ishtar_url": "https://www.ishtar-collective.net/items/chattering-bone-2",
+        "api_url": "https://api.ishtar-collective.net/items/chattering-bone-2",
+        "short_summary": "We have so much to discuss, o seeker mine.",
+        "bungie_ref": "2168451646",
+        "image_url": "/common/destiny2_content/icons/34fa2107bfddfbe6c559de876a3aac55.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/34fa2107bfddfbe6c559de876a3aac55.jpg",
+        "flavor_text": "We have so much to discuss, o seeker mine.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "chattering-bone-3",
+        "name": "Chattering Bone",
+        "ishtar_url": "https://www.ishtar-collective.net/items/chattering-bone-3",
+        "api_url": "https://api.ishtar-collective.net/items/chattering-bone-3",
+        "short_summary": "We have so much to discuss, o seeker mine.",
+        "bungie_ref": "505671629",
+        "image_url": "/common/destiny2_content/icons/34fa2107bfddfbe6c559de876a3aac55.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/34fa2107bfddfbe6c559de876a3aac55.jpg",
+        "flavor_text": "We have so much to discuss, o seeker mine.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "nation-of-beasts-4",
+        "name": "Nation of Beasts",
+        "ishtar_url": "https://www.ishtar-collective.net/items/nation-of-beasts-4",
+        "api_url": "https://api.ishtar-collective.net/items/nation-of-beasts-4",
+        "short_summary": "I can show you how we were in our prime. You need only ask, o student mine.",
+        "bungie_ref": "70083888",
+        "image_url": "/common/destiny2_content/icons/5463ac2900275ecc8d349076339e56ca.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/5463ac2900275ecc8d349076339e56ca.jpg",
+        "flavor_text": "I can show you how we were in our prime. You need only ask, o student mine.",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

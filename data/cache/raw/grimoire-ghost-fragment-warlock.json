@@ -1,0 +1,35 @@
+{
+  "id": "grimoire-ghost-fragment-warlock",
+  "api_path": "/cards/ghost-fragment-warlock",
+  "doc_type": "grimoire_card",
+  "data": {
+    "ishtar_ref": "ghost-fragment-warlock",
+    "name": "Ghost Fragment: Warlock",
+    "ishtar_url": "https://www.ishtar-collective.net/cards/ghost-fragment-warlock",
+    "api_url": "https://api.ishtar-collective.net/cards/ghost-fragment-warlock",
+    "short_summary": "Why did I set her on the trail?\nYou try and try and try to explain, but no one ever understands. No one who's not a Warlock. Who hasn't spent a dozen years scouring the ruins for one string of symbols, one clean code, one black talon. Titans just make a hmphing noise, if they've stayed awake. Hunters clean their nails with their knives and look at you like you've grown a third eye.\nBut when you've spent your life searching through arcana for ancient power, you have the urge to reach out and educate others. Especially if you've had one too many.\nNah, she's not my type at all. We've played dice, cards, war games, you know, the usual stuff. I'd never tried to show off before. I don't know what came over me.\nI had a broken vertebrae in my pocket that I'd borrowed from - yes, borrowed, I was going to put it back - what do you think you are, my conscience? It was a fossil, that means mineral replacement, a rock, basically. They can survive a few hours in my pocket. Do shut up.",
+    "bungie_ref": "101100",
+    "image_url": "/common/destiny_content/grimoire/hr_images/101100_90ad78a21f598ded5642e47d01f598bd.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny_content/grimoire/hr_images/101100_90ad78a21f598ded5642e47d01f598bd.jpg",
+    "intro": null,
+    "intro_attribution": null,
+    "description": "Why did I set her on the trail?<br/><br/>\nYou try and try and try to explain, but no one ever understands. No one who&#39;s not a Warlock. Who hasn&#39;t spent a dozen years scouring the ruins for one string of symbols, one clean code, one black talon. Titans just make a hmphing noise, if they&#39;ve stayed awake. Hunters clean their nails with their knives and look at you like you&#39;ve grown a third eye.<br/><br/>\nBut when you&#39;ve spent your life searching through arcana for ancient power, you have the urge to reach out and educate others. Especially if you&#39;ve had one too many.<br/><br/>\nNah, she&#39;s not my type at all. We&#39;ve played dice, cards, war games, you know, the usual stuff. I&#39;d never tried to show off before. I don&#39;t know what came over me.<br/><br/>\nI had a broken vertebrae in my pocket that I&#39;d borrowed from - yes, borrowed, I was going to put it back - what do you think you are, my conscience? It was a fossil, that means mineral replacement, a rock, basically. They can survive a few hours in my pocket. Do shut up.<br/><br/>\nThe Cryptarchs weren&#39;t going to miss it. Everyone knows the Ahamkaras were hunted to extinction. There&#39;s nothing to be afraid of anymore.<br/><br/>\nThink of how mysterious this system is, I said. How much life sprang up when the Traveler came. Like the Ahamkara. Do you know the legends? The dragon that made promises? And I pulled out the fossil with a flourish - <br/><br/>\nShe pulled out her knife and started to pick the dirt from her nails. That set me off.<br/><br/>\nYou could never have brought down one of these, I said. Ever. Not the greatest Hunter, not the brawniest Titan.<br/><br/>\nHer eyes narrowed. She said, Oh? Is that so? And I saw right then that she wasn&#39;t going to pass on the challenge.<br/><br/>\nI&#39;ve murdered a Guardian, I thought. She&#39;s going to die. It&#39;ll be my fault.<br/><br/>\nAnd I looked at the piece of spine in my hand and wondered - why did I say that? What moved me to such pride?",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "ghost-fragments",
+        "name": "Ghost Fragments",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ghost-fragments",
+        "api_url": "https://api.ishtar-collective.net/categories/ghost-fragments",
+        "short_summary": "Many of these are collected from dead Ghosts found throughout the universe."
+      }
+    ]
+  }
+}

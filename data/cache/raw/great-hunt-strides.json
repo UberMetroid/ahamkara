@@ -1,0 +1,161 @@
+{
+  "id": "great-hunt-strides",
+  "api_path": "/entries/strides-of-the-great-hunt",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "strides-of-the-great-hunt",
+    "name": "Strides of the Great Hunt",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/strides-of-the-great-hunt",
+    "api_url": "https://api.ishtar-collective.net/entries/strides-of-the-great-hunt",
+    "short_summary": "I wish to be swift.\n—\nEris and Ikora stood over a graveyard of whispering bones.\nAn hour ago, this was a vibrant army of Ahamkara.\n\"What did they offer you?\" said Eris. Her stare reached for a mile in front of them. So did the grave of bones.\n\"The same as you, I'm sure,\" Ikora stood buoyed by a gentle flow of Light, above the whispering bones. It was easier to concentrate up here.\n\"Everything they say is true,\" said Eris.",
+    "bungie_ref": "3494130310",
+    "image_url": "/common/destiny2_content/screenshots/2950533187.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/2950533187.jpg",
+    "subtitle": "I wish to be swift.",
+    "description": "Eris and Ikora stood over a graveyard of whispering bones.\n\nAn hour ago, this was a vibrant army of Ahamkara.\n\n\"What did they offer you?\" said Eris. Her stare reached for a mile in front of them. So did the grave of bones.\n\n\"The same as you, I'm sure,\" Ikora stood buoyed by a gentle flow of Light, above the whispering bones. It was easier to concentrate up here.\n\n\"Everything they say is true,\" said Eris.\n\nIkora looked down at her sharply. \"Sentiment like that leads to morbid places,\" she cautioned.\n\n\"Yes,\" came the reply.\n\n\"If you guide your Light north, I'll take the south. This will be quick—\"\n\n\"I think they showed me my life before my Ghost.\"\n\n\"Eris. Focus.\"\n\n\"Yes.\"\n\nTogether, the Guardians summoned a storm of Light that consumed the bones around them. They ignored the whispers, but the voices grew louder, harsher as the maelstrom progressed. Soon, they couldn't tell the difference between the whispers and the storm.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "eris-morn",
+        "name": "Eris Morn",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/eris-morn",
+        "api_url": "https://api.ishtar-collective.net/categories/eris-morn",
+        "short_summary": "A Hunter and one of the founding members of the First Crota fireteam."
+      },
+      {
+        "ishtar_ref": "ikora-rey",
+        "name": "Ikora Rey",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ikora-rey",
+        "api_url": "https://api.ishtar-collective.net/categories/ikora-rey",
+        "short_summary": "The current Warlock Vanguard and leader of the Hidden. "
+      },
+      {
+        "ishtar_ref": "the-great-ahamkara-hunt",
+        "name": "The Great Ahamkara Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "api_url": "https://api.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "short_summary": ""
+      },
+      {
+        "ishtar_ref": "great-hunt-suit-hunter",
+        "name": "Great Hunt Suit (Hunter)",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/great-hunt-suit-hunter",
+        "api_url": "https://api.ishtar-collective.net/categories/great-hunt-suit-hunter",
+        "short_summary": ""
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "strides-of-the-great-hunt",
+        "name": "Strides of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/strides-of-the-great-hunt",
+        "api_url": "https://api.ishtar-collective.net/items/strides-of-the-great-hunt",
+        "short_summary": "I wish to be swift.",
+        "bungie_ref": "3494130310",
+        "image_url": "/common/destiny2_content/icons/456e19a43cd50d1cc137b44ba5485e7e.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/456e19a43cd50d1cc137b44ba5485e7e.jpg",
+        "flavor_text": "I wish to be swift.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "strides-of-the-great-hunt-2",
+        "name": "Strides of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/strides-of-the-great-hunt-2",
+        "api_url": "https://api.ishtar-collective.net/items/strides-of-the-great-hunt-2",
+        "short_summary": "I wish to be swift.",
+        "bungie_ref": "1444894250",
+        "image_url": "/common/destiny2_content/icons/456e19a43cd50d1cc137b44ba5485e7e.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/456e19a43cd50d1cc137b44ba5485e7e.jpg",
+        "flavor_text": "I wish to be swift.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "strides-of-the-great-hunt-4",
+        "name": "Strides of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/strides-of-the-great-hunt-4",
+        "api_url": "https://api.ishtar-collective.net/items/strides-of-the-great-hunt-4",
+        "short_summary": "I wish to be swift.",
+        "bungie_ref": "2298096557",
+        "image_url": "/common/destiny2_content/icons/456e19a43cd50d1cc137b44ba5485e7e.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/456e19a43cd50d1cc137b44ba5485e7e.jpg",
+        "flavor_text": "I wish to be swift.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "strides-of-the-great-hunt-3",
+        "name": "Strides of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/strides-of-the-great-hunt-3",
+        "api_url": "https://api.ishtar-collective.net/items/strides-of-the-great-hunt-3",
+        "short_summary": "I wish to be swift.",
+        "bungie_ref": "2950533187",
+        "image_url": "/common/destiny2_content/icons/456e19a43cd50d1cc137b44ba5485e7e.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/456e19a43cd50d1cc137b44ba5485e7e.jpg",
+        "flavor_text": "I wish to be swift.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "strides-of-the-great-hunt-5",
+        "name": "Strides of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/strides-of-the-great-hunt-5",
+        "api_url": "https://api.ishtar-collective.net/items/strides-of-the-great-hunt-5",
+        "short_summary": "I wish to be swift.",
+        "bungie_ref": "3449181241",
+        "image_url": "/common/destiny2_content/icons/456e19a43cd50d1cc137b44ba5485e7e.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/456e19a43cd50d1cc137b44ba5485e7e.jpg",
+        "flavor_text": "I wish to be swift.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "strides-of-the-great-hunt-7",
+        "name": "Strides of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/strides-of-the-great-hunt-7",
+        "api_url": "https://api.ishtar-collective.net/items/strides-of-the-great-hunt-7",
+        "short_summary": "I wish to be swift.",
+        "bungie_ref": "3059135944",
+        "image_url": "/common/destiny2_content/icons/456e19a43cd50d1cc137b44ba5485e7e.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/456e19a43cd50d1cc137b44ba5485e7e.jpg",
+        "flavor_text": "I wish to be swift.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "strides-of-the-great-hunt-8",
+        "name": "Strides of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/strides-of-the-great-hunt-8",
+        "api_url": "https://api.ishtar-collective.net/items/strides-of-the-great-hunt-8",
+        "short_summary": "I wish to be swift.",
+        "bungie_ref": "2636978448",
+        "image_url": "/common/destiny2_content/icons/456e19a43cd50d1cc137b44ba5485e7e.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/456e19a43cd50d1cc137b44ba5485e7e.jpg",
+        "flavor_text": "I wish to be swift.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "strides-of-the-great-hunt-6",
+        "name": "Strides of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/strides-of-the-great-hunt-6",
+        "api_url": "https://api.ishtar-collective.net/items/strides-of-the-great-hunt-6",
+        "short_summary": "I wish to be swift.",
+        "bungie_ref": "393981636",
+        "image_url": "/common/destiny2_content/icons/456e19a43cd50d1cc137b44ba5485e7e.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/456e19a43cd50d1cc137b44ba5485e7e.jpg",
+        "flavor_text": "I wish to be swift.",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "exotic-young-ahamkaras-spine",
+  "api_path": "/entries/young-ahamkaras-spine",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "young-ahamkaras-spine",
+    "name": "Young Ahamkara's Spine",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/young-ahamkaras-spine",
+    "api_url": "https://api.ishtar-collective.net/entries/young-ahamkaras-spine",
+    "short_summary": "Give me your arm, oh bearer mine. Let me help you fill the world with teeth.\n—\nBones! Let's wear some bones! \nOh, it's a taste many Guardians develop. I think because they feel a wee bit spectral. All this transmatting leaves one saying \"Am I still here? Am I flesh or am I mist?\" So, you strap some old bones to your arm, bones that've been unbreakable for an eon, and you feel solid again. More yourself. \nBearers of a particular species of bone do claim—and mind that I'm not recommending these bones—that the fossils grant them unusual powers. Nothing too wild. A little more of this and that. \nMy own research suggests these special bones come from a species of draconic post-Traveler neolife called 'ahamkara'. They apparently talked—loved the phrase 'o seeker mine'—and troubled us enough to be hunted to extinction. If you wanted some more of these bones for your friends, I might know a source…",
+    "bungie_ref": "4284305242",
+    "image_url": "/common/destiny2_content/screenshots/4284305242.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/4284305242.jpg",
+    "subtitle": "Give me your arm, oh bearer mine. Let me help you fill the world with teeth.",
+    "description": "Bones! Let's wear some bones! \n\nOh, it's a taste many Guardians develop. I think because they feel a wee bit spectral. All this transmatting leaves one saying \"Am I still here? Am I flesh or am I mist?\" So, you strap some old bones to your arm, bones that've been unbreakable for an eon, and you feel solid again. More yourself. \n\nBearers of a particular species of bone do claim—and mind that I'm not recommending these bones—that the fossils grant them unusual powers. Nothing too wild. A little more of this and that. \n\nMy own research suggests these special bones come from a species of draconic post-Traveler neolife called 'ahamkara'. They apparently talked—loved the phrase 'o seeker mine'—and troubled us enough to be hunted to extinction. If you wanted some more of these bones for your friends, I might know a source…",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "young-ahamkaras-spine-3",
+        "name": "Young Ahamkara's Spine",
+        "ishtar_url": "https://www.ishtar-collective.net/items/young-ahamkaras-spine-3",
+        "api_url": "https://api.ishtar-collective.net/items/young-ahamkaras-spine-3",
+        "short_summary": "Give me your arm, oh bearer mine. Let me help you fill the world with teeth.",
+        "bungie_ref": "4284305242",
+        "image_url": "/common/destiny2_content/icons/e8ebba4e0fbbaf71de4bd188f072fe67.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/e8ebba4e0fbbaf71de4bd188f072fe67.jpg",
+        "flavor_text": "Give me your arm, oh bearer mine. Let me help you fill the world with teeth.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "young-ahamkaras-spine-4",
+        "name": "Young Ahamkara's Spine",
+        "ishtar_url": "https://www.ishtar-collective.net/items/young-ahamkaras-spine-4",
+        "api_url": "https://api.ishtar-collective.net/items/young-ahamkaras-spine-4",
+        "short_summary": "Give me your arm, oh bearer mine. Let me help you fill the world with teeth.",
+        "bungie_ref": "475652357",
+        "image_url": "/common/destiny2_content/icons/e8ebba4e0fbbaf71de4bd188f072fe67.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/e8ebba4e0fbbaf71de4bd188f072fe67.jpg",
+        "flavor_text": "Give me your arm, oh bearer mine. Let me help you fill the world with teeth.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "young-ahamkaras-spine-5",
+        "name": "Young Ahamkara's Spine",
+        "ishtar_url": "https://www.ishtar-collective.net/items/young-ahamkaras-spine-5",
+        "api_url": "https://api.ishtar-collective.net/items/young-ahamkaras-spine-5",
+        "short_summary": "Give me your arm, oh bearer mine. Let me help you fill the world with teeth.",
+        "bungie_ref": "3814033537",
+        "image_url": "/common/destiny2_content/icons/e8ebba4e0fbbaf71de4bd188f072fe67.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/e8ebba4e0fbbaf71de4bd188f072fe67.jpg",
+        "flavor_text": "Give me your arm, oh bearer mine. Let me help you fill the world with teeth.",
+        "description": "",
+        "bungie_deleted": true
+      },
+      {
+        "ishtar_ref": "young-ahamkaras-spine-7",
+        "name": "Young Ahamkara's Spine",
+        "ishtar_url": "https://www.ishtar-collective.net/items/young-ahamkaras-spine-7",
+        "api_url": "https://api.ishtar-collective.net/items/young-ahamkaras-spine-7",
+        "short_summary": "Give me your arm, oh bearer mine. Let me help you fill the world with teeth.",
+        "bungie_ref": "1892687578",
+        "image_url": "/common/destiny2_content/icons/e8ebba4e0fbbaf71de4bd188f072fe67.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/e8ebba4e0fbbaf71de4bd188f072fe67.jpg",
+        "flavor_text": "Give me your arm, oh bearer mine. Let me help you fill the world with teeth.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "young-ahamkaras-spine-6",
+        "name": "Young Ahamkara's Spine",
+        "ishtar_url": "https://www.ishtar-collective.net/items/young-ahamkaras-spine-6",
+        "api_url": "https://api.ishtar-collective.net/items/young-ahamkaras-spine-6",
+        "short_summary": "Give me your arm, oh bearer mine. Let me help you fill the world with teeth.",
+        "bungie_ref": "405059572",
+        "image_url": "/common/destiny2_content/icons/e8ebba4e0fbbaf71de4bd188f072fe67.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/e8ebba4e0fbbaf71de4bd188f072fe67.jpg",
+        "flavor_text": "Give me your arm, oh bearer mine. Let me help you fill the world with teeth.",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

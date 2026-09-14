@@ -1,0 +1,19 @@
+{
+  "id": "warlord-vengeful-whisper",
+  "api_path": "/items/vengeful-whisper",
+  "doc_type": "item",
+  "data": {
+    "ishtar_ref": "vengeful-whisper",
+    "name": "Vengeful Whisper",
+    "ishtar_url": "https://www.ishtar-collective.net/items/vengeful-whisper",
+    "api_url": "https://api.ishtar-collective.net/items/vengeful-whisper",
+    "short_summary": "\"Ruin to kings.\" —Hefnd",
+    "bungie_ref": "839344841",
+    "image_url": "/common/destiny2_content/icons/6e6730467f11f156beace778dc748bce.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/6e6730467f11f156beace778dc748bce.jpg",
+    "flavor_text": "\"Ruin to kings.\" —Hefnd",
+    "description": "",
+    "bungie_deleted": false,
+    "categories": []
+  }
+}

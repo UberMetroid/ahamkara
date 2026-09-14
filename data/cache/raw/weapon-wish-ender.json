@@ -1,0 +1,42 @@
+{
+  "id": "weapon-wish-ender",
+  "api_path": "/entries/wish-ender",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "wish-ender",
+    "name": "Wish-Ender",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/wish-ender",
+    "api_url": "https://api.ishtar-collective.net/entries/wish-ender",
+    "short_summary": "\"Don't fret. It's a simple expedition. We'll be back before lunch.\" —Sjur Eido, First Queen's Wrath\n—\nSjur Eido stood slow joints snapping second to none but the Sovs themselves stood straight-backed sharp-sighted pleased to skewer enemies at any distance. Sjur Eido listened close head cocked arrow nocked listened to her Queen's layered lies and heard only the truths as endless courtly complaints flowed around them like the mists of Divalia.\nSjur Eido watched shadows wind warp widen watched surveillance feeds encrypted snaps the weapon hand of every woman and man who wished an audience. Sjur Eido swore with revelation righteous fury betrayedbetrayedbetrayedbetrayedbetrayedbetrayedbetrayedbetrayed swore an oath to rise again. Sjur Eido drew loosed dr–\nFell.\nl o s t",
+    "bungie_ref": "814876684",
+    "image_url": "/common/destiny2_content/screenshots/814876684.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/814876684.jpg",
+    "subtitle": "\"Don't fret. It's a simple expedition. We'll be back before lunch.\" —Sjur Eido, First Queen's Wrath",
+    "description": "Sjur Eido stood slow joints snapping second to none but the Sovs themselves stood straight-backed sharp-sighted pleased to skewer enemies at any distance. Sjur Eido listened close head cocked arrow nocked listened to her Queen's layered lies and heard only the truths as endless courtly complaints flowed around them like the mists of Divalia.\n\nSjur Eido watched shadows wind warp widen watched surveillance feeds encrypted snaps the weapon hand of every woman and man who wished an audience. Sjur Eido swore with revelation righteous fury betrayedbetrayedbetrayedbetrayedbetrayedbetrayedbetrayedbetrayed swore an oath to rise again. Sjur Eido drew loosed dr–\n\nFell.\n\nl o s t",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "sjur-eido",
+        "name": "Sjur Eido",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/sjur-eido",
+        "api_url": "https://api.ishtar-collective.net/categories/sjur-eido",
+        "short_summary": ""
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "wish-ender",
+        "name": "Wish-Ender",
+        "ishtar_url": "https://www.ishtar-collective.net/items/wish-ender",
+        "api_url": "https://api.ishtar-collective.net/items/wish-ender",
+        "short_summary": "\"Don't fret. It's a simple expedition. We'll be back before lunch.\" —Sjur Eido, First Queen's Wrath",
+        "bungie_ref": "814876684",
+        "image_url": "/common/destiny2_content/icons/8e5d7a68305a0d1e53ccade9398c7e8b.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/8e5d7a68305a0d1e53ccade9398c7e8b.jpg",
+        "flavor_text": "\"Don't fret. It's a simple expedition. We'll be back before lunch.\" —Sjur Eido, First Queen's Wrath",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

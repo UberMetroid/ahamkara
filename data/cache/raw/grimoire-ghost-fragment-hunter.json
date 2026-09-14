@@ -1,0 +1,42 @@
+{
+  "id": "grimoire-ghost-fragment-hunter",
+  "api_path": "/cards/ghost-fragment-hunter",
+  "doc_type": "grimoire_card",
+  "data": {
+    "ishtar_ref": "ghost-fragment-hunter",
+    "name": "Ghost Fragment: Hunter",
+    "ishtar_url": "https://www.ishtar-collective.net/cards/ghost-fragment-hunter",
+    "api_url": "https://api.ishtar-collective.net/cards/ghost-fragment-hunter",
+    "short_summary": "She leaves the Sparrow and climbs a long way across spars of volcano rock and between vents of blue fire. Down below the Ishtar ruins spark with skirmish light but the guns seem as distant and brief as the constant starfall and the brooding crater high above. She is alone on the rock. She goes on with her head down so as to fight the sense that she is going to fall up off the world and burn like an inverse meteor.\nThe message that brought her to this place had no sign but she could hear Cayde in it. Draksis in the Cinders it said. Is it true? \nAnd also: Remember your promise.\nAt dawn she finds a sentry and kills it with her knife. Its throat bleeds gas. She takes its post and lays out her bullets one by one on the rock as if to make a count of all the years she has been waiting. Her rifle is near as long as she is tall. She lies down by her bullets and uses them to kill the other sentries one by one until at last they understand the thunder and the Shanks rise up angry from the Cinders below to seek her out.\nShe leaves the rifle and walks across the naked obsidian into the swarm firing from the hip as she goes, each kick of the old revolver a word, Draksis, Draksis, Kell of Winter, Kell of hate, lord of the kingdom of her vendetta. Her jaw aches. She used to imagine biting out his throat with armored teeth.",
+    "bungie_ref": "101080",
+    "image_url": "/common/destiny_content/grimoire/hr_images/101080_0a7abfe835bf116bfe1ff6ff2f6e33f5.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny_content/grimoire/hr_images/101080_0a7abfe835bf116bfe1ff6ff2f6e33f5.jpg",
+    "intro": null,
+    "intro_attribution": null,
+    "description": "She leaves the Sparrow and climbs a long way across spars of volcano rock and between vents of blue fire. Down below the Ishtar ruins spark with skirmish light but the guns seem as distant and brief as the constant starfall and the brooding crater high above. She is alone on the rock. She goes on with her head down so as to fight the sense that she is going to fall up off the world and burn like an inverse meteor.<br/><br/>\nThe message that brought her to this place had no sign but she could hear Cayde in it. Draksis in the Cinders it said. Is it true? <br/><br/>\nAnd also: Remember your promise.<br/><br/>\nAt dawn she finds a sentry and kills it with her knife. Its throat bleeds gas. She takes its post and lays out her bullets one by one on the rock as if to make a count of all the years she has been waiting. Her rifle is near as long as she is tall. She lies down by her bullets and uses them to kill the other sentries one by one until at last they understand the thunder and the Shanks rise up angry from the Cinders below to seek her out.<br/><br/>\nShe leaves the rifle and walks across the naked obsidian into the swarm firing from the hip as she goes, each kick of the old revolver a word, Draksis, Draksis, Kell of Winter, Kell of hate, lord of the kingdom of her vendetta. Her jaw aches. She used to imagine biting out his throat with armored teeth.<br/><br/>\nThe stone smokes around her where the arc fire lashes it and the shrapnel guns throw up leaves of obsidian like glass butterflies. She shoots her bandoliers dry and a team of Vandals in glassy stealth leap up to rush her with knives but she raises her hand and burns them down with the golden gun, laughing, crying out Draksis, Draksis, I am come!<br/><br/>\nShe kills them all and takes the next ridge, high above the Cinders. She can see the blue-green pools and the cave mouths where the Vex lights dance. And there among them, gowned in smoke and ash, is the long shark shape of a Ketch, a Wintership, the Kell&#39;s ship, come down to nest.<br/><br/>\nShe could go down there now and finish this. But she made a promise.<br/><br/>\nA Captain jumps her. She throws two knives into his armor and then staves his chest in with her own Ghost, wrapped up in her fist like a stone.<br/><br/>\n&quot;Tell the Vanguard,&quot; she says to her Ether-spattered fist. &quot;Tell them Draksis is here.&quot;<br/><br/>\nHer Ghost looks up at her in silence. When she makes no move to go down the cliff towards the ship it blinks once, in its own way, and makes a soft sound, like a sigh, like relief.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "ishtar-collective",
+        "name": "Ishtar Collective",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ishtar-collective",
+        "api_url": "https://api.ishtar-collective.net/categories/ishtar-collective",
+        "short_summary": "“A sprawling Golden Age scientific project” that studied all aspects of the Vex. Most of their facilities were located under the Ishtar Academy on Venus. "
+      },
+      {
+        "ishtar_ref": "ghost-fragments",
+        "name": "Ghost Fragments",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ghost-fragments",
+        "api_url": "https://api.ishtar-collective.net/categories/ghost-fragments",
+        "short_summary": "Many of these are collected from dead Ghosts found throughout the universe."
+      },
+      {
+        "ishtar_ref": "cayde-6",
+        "name": "Cayde-6",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/cayde-6",
+        "api_url": "https://api.ishtar-collective.net/categories/cayde-6",
+        "short_summary": "Cayde-6 was the last Hunter Vanguard, known for his love of loot and quick-witted jokes."
+      }
+    ]
+  }
+}

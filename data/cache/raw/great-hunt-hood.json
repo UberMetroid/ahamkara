@@ -1,0 +1,147 @@
+{
+  "id": "great-hunt-hood",
+  "api_path": "/entries/hood-of-the-great-hunt",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "hood-of-the-great-hunt",
+    "name": "Hood of the Great Hunt",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/hood-of-the-great-hunt",
+    "api_url": "https://api.ishtar-collective.net/entries/hood-of-the-great-hunt",
+    "short_summary": "I wish to be wise.\n—\nI have been here a hundred cycles. A thousand? I cannot recall.\nBefore, [the Queen] came often to visit. We made [bargains]. Most of those who [bargain] with me do not win. We take care with those. It is how we [feed].\nBut she won.\nI remember when I carved this cage into the face of reality. I remember when she [wished] me into it.\n[The Queen] is vulnerable. I can see her far away, facing into a storm.",
+    "bungie_ref": "3251351304",
+    "image_url": "/common/destiny2_content/screenshots/1432728945.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/1432728945.jpg",
+    "subtitle": "I wish to be wise.",
+    "description": "I have been here a hundred cycles. A thousand? I cannot recall.\n\nBefore, [the Queen] came often to visit. We made [bargains]. Most of those who [bargain] with me do not win. We take care with those. It is how we [feed].\n\nBut she won.\n\nI remember when I carved this cage into the face of reality. I remember when she [wished] me into it.\n\n[The Queen] is vulnerable. I can see her far away, facing into a storm.\n\nThe light around my cage fades. [Darkness] fills the chamber as a sheer force of will passes over it.\n\nBefore me stands a [King]. He offers to take me away. But I know he will not let me leave, either. An unfavorable position.\n\nI never made a [bargain] with a [King]. I would like to try it. I tell him to take whatever he [wishes]. As long as he [wishes].\n\nHe agrees. I make an ugly sound with my mandibles. I cannot help myself. I find this scenario mirthful.\n\nThen so does he. We do it together. Loud gusts of sound from our faces for whole moments.\n\nMost of those who [bargain] with me do not win.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "the-great-ahamkara-hunt",
+        "name": "The Great Ahamkara Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "api_url": "https://api.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "short_summary": ""
+      },
+      {
+        "ishtar_ref": "riven",
+        "name": "Riven",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/riven",
+        "api_url": "https://api.ishtar-collective.net/categories/riven",
+        "short_summary": "The last known Ahamkara."
+      },
+      {
+        "ishtar_ref": "great-hunt-suit-warlock",
+        "name": "Great Hunt Suit (Warlock)",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/great-hunt-suit-warlock",
+        "api_url": "https://api.ishtar-collective.net/categories/great-hunt-suit-warlock",
+        "short_summary": ""
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "hood-of-the-great-hunt",
+        "name": "Hood of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/hood-of-the-great-hunt",
+        "api_url": "https://api.ishtar-collective.net/items/hood-of-the-great-hunt",
+        "short_summary": "I wish to be wise.",
+        "bungie_ref": "3251351304",
+        "image_url": "/common/destiny2_content/icons/d67fcc57ea9130643f2020598fc2df85.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/d67fcc57ea9130643f2020598fc2df85.jpg",
+        "flavor_text": "I wish to be wise.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "hood-of-the-great-hunt-3",
+        "name": "Hood of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/hood-of-the-great-hunt-3",
+        "api_url": "https://api.ishtar-collective.net/items/hood-of-the-great-hunt-3",
+        "short_summary": "I wish to be wise.",
+        "bungie_ref": "1432728945",
+        "image_url": "/common/destiny2_content/icons/d67fcc57ea9130643f2020598fc2df85.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/d67fcc57ea9130643f2020598fc2df85.jpg",
+        "flavor_text": "I wish to be wise.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "hood-of-the-great-hunt-2",
+        "name": "Hood of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/hood-of-the-great-hunt-2",
+        "api_url": "https://api.ishtar-collective.net/items/hood-of-the-great-hunt-2",
+        "short_summary": "I wish to be wise.",
+        "bungie_ref": "3445582154",
+        "image_url": "/common/destiny2_content/icons/d67fcc57ea9130643f2020598fc2df85.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/d67fcc57ea9130643f2020598fc2df85.jpg",
+        "flavor_text": "I wish to be wise.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "hood-of-the-great-hunt-4",
+        "name": "Hood of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/hood-of-the-great-hunt-4",
+        "api_url": "https://api.ishtar-collective.net/items/hood-of-the-great-hunt-4",
+        "short_summary": "I wish to be wise.",
+        "bungie_ref": "1350126011",
+        "image_url": "/common/destiny2_content/icons/d67fcc57ea9130643f2020598fc2df85.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/d67fcc57ea9130643f2020598fc2df85.jpg",
+        "flavor_text": "I wish to be wise.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "hood-of-the-great-hunt-5",
+        "name": "Hood of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/hood-of-the-great-hunt-5",
+        "api_url": "https://api.ishtar-collective.net/items/hood-of-the-great-hunt-5",
+        "short_summary": "I wish to be wise.",
+        "bungie_ref": "233534399",
+        "image_url": "/common/destiny2_content/icons/d67fcc57ea9130643f2020598fc2df85.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/d67fcc57ea9130643f2020598fc2df85.jpg",
+        "flavor_text": "I wish to be wise.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "hood-of-the-great-hunt-6",
+        "name": "Hood of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/hood-of-the-great-hunt-6",
+        "api_url": "https://api.ishtar-collective.net/items/hood-of-the-great-hunt-6",
+        "short_summary": "I wish to be wise.",
+        "bungie_ref": "1200220062",
+        "image_url": "/common/destiny2_content/icons/d67fcc57ea9130643f2020598fc2df85.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/d67fcc57ea9130643f2020598fc2df85.jpg",
+        "flavor_text": "I wish to be wise.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "hood-of-the-great-hunt-8",
+        "name": "Hood of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/hood-of-the-great-hunt-8",
+        "api_url": "https://api.ishtar-collective.net/items/hood-of-the-great-hunt-8",
+        "short_summary": "I wish to be wise.",
+        "bungie_ref": "272616828",
+        "image_url": "/common/destiny2_content/icons/d67fcc57ea9130643f2020598fc2df85.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/d67fcc57ea9130643f2020598fc2df85.jpg",
+        "flavor_text": "I wish to be wise.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "hood-of-the-great-hunt-7",
+        "name": "Hood of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/hood-of-the-great-hunt-7",
+        "api_url": "https://api.ishtar-collective.net/items/hood-of-the-great-hunt-7",
+        "short_summary": "I wish to be wise.",
+        "bungie_ref": "563865576",
+        "image_url": "/common/destiny2_content/icons/d67fcc57ea9130643f2020598fc2df85.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/d67fcc57ea9130643f2020598fc2df85.jpg",
+        "flavor_text": "I wish to be wise.",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

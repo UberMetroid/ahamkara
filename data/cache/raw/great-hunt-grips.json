@@ -1,0 +1,168 @@
+{
+  "id": "great-hunt-grips",
+  "api_path": "/entries/grips-of-the-great-hunt",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "grips-of-the-great-hunt",
+    "name": "Grips of the Great Hunt",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/grips-of-the-great-hunt",
+    "api_url": "https://api.ishtar-collective.net/entries/grips-of-the-great-hunt",
+    "short_summary": "I wish to be precise.\n—\nVenus. A year into the Great Hunt.\nEris and Zavala watched as Shaxx sat with the dying Ahamkara, a hand on its snout.\n\"Is he gloating?\" she asked.\n\"I think he is too pragmatic to gloat.\" Zavala said.\n\"Mourning, then.\"",
+    "bungie_ref": "196235132",
+    "image_url": "/common/destiny2_content/screenshots/3119383537.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny2_content/screenshots/3119383537.jpg",
+    "subtitle": "I wish to be precise.",
+    "description": "Venus. A year into the Great Hunt.\n\nEris and Zavala watched as Shaxx sat with the dying Ahamkara, a hand on its snout.\n\n\"Is he gloating?\" she asked.\n\n\"I think he is too pragmatic to gloat.\" Zavala said.\n\n\"Mourning, then.\"\n\n\"Perhaps.\"\n\nThe Ahamkara twitched, its eyes rolled up into its head. The biochemical glow just beneath its skin grew harsh. Zavala and Eris raised their hands against the increasing glare.\n\nThen the corpse exploded. Dirt showered the Guardians like dusty rain on a clear day.\n\nShaxx sat silently in the resulting crater, covered in a sheet of green fire.\n\nZavala and Eris opened their mouths to speak, but Shaxx interrupted them.\n\n\"Shh,\" he said, as the flame quietly roared.\n\nThey could all hear a disembodied whisper. But they were used to that by now.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "eris-morn",
+        "name": "Eris Morn",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/eris-morn",
+        "api_url": "https://api.ishtar-collective.net/categories/eris-morn",
+        "short_summary": "A Hunter and one of the founding members of the First Crota fireteam."
+      },
+      {
+        "ishtar_ref": "zavala",
+        "name": "Zavala",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/zavala",
+        "api_url": "https://api.ishtar-collective.net/categories/zavala",
+        "short_summary": "The Titan Vanguard and Vanguard Commander"
+      },
+      {
+        "ishtar_ref": "the-great-ahamkara-hunt",
+        "name": "The Great Ahamkara Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "api_url": "https://api.ishtar-collective.net/categories/the-great-ahamkara-hunt",
+        "short_summary": ""
+      },
+      {
+        "ishtar_ref": "lord-shaxx",
+        "name": "Lord Shaxx",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/lord-shaxx",
+        "api_url": "https://api.ishtar-collective.net/categories/lord-shaxx",
+        "short_summary": "Warlord and Crucible Handler "
+      },
+      {
+        "ishtar_ref": "great-hunt-suit-hunter",
+        "name": "Great Hunt Suit (Hunter)",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/great-hunt-suit-hunter",
+        "api_url": "https://api.ishtar-collective.net/categories/great-hunt-suit-hunter",
+        "short_summary": ""
+      }
+    ],
+    "items": [
+      {
+        "ishtar_ref": "grips-of-the-great-hunt-2",
+        "name": "Grips of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/grips-of-the-great-hunt-2",
+        "api_url": "https://api.ishtar-collective.net/items/grips-of-the-great-hunt-2",
+        "short_summary": "I wish to be precise.",
+        "bungie_ref": "1127835600",
+        "image_url": "/common/destiny2_content/icons/41a07585959355eab585d13df5583402.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/41a07585959355eab585d13df5583402.jpg",
+        "flavor_text": "I wish to be precise.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "grips-of-the-great-hunt-3",
+        "name": "Grips of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/grips-of-the-great-hunt-3",
+        "api_url": "https://api.ishtar-collective.net/items/grips-of-the-great-hunt-3",
+        "short_summary": "I wish to be precise.",
+        "bungie_ref": "3119383537",
+        "image_url": "/common/destiny2_content/icons/41a07585959355eab585d13df5583402.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/41a07585959355eab585d13df5583402.jpg",
+        "flavor_text": "I wish to be precise.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "grips-of-the-great-hunt",
+        "name": "Grips of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/grips-of-the-great-hunt",
+        "api_url": "https://api.ishtar-collective.net/items/grips-of-the-great-hunt",
+        "short_summary": "I wish to be precise.",
+        "bungie_ref": "196235132",
+        "image_url": "/common/destiny2_content/icons/41a07585959355eab585d13df5583402.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/41a07585959355eab585d13df5583402.jpg",
+        "flavor_text": "I wish to be precise.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "grips-of-the-great-hunt-4",
+        "name": "Grips of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/grips-of-the-great-hunt-4",
+        "api_url": "https://api.ishtar-collective.net/items/grips-of-the-great-hunt-4",
+        "short_summary": "I wish to be precise.",
+        "bungie_ref": "3889633083",
+        "image_url": "/common/destiny2_content/icons/41a07585959355eab585d13df5583402.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/41a07585959355eab585d13df5583402.jpg",
+        "flavor_text": "I wish to be precise.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "grips-of-the-great-hunt-5",
+        "name": "Grips of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/grips-of-the-great-hunt-5",
+        "api_url": "https://api.ishtar-collective.net/items/grips-of-the-great-hunt-5",
+        "short_summary": "I wish to be precise.",
+        "bungie_ref": "2652317759",
+        "image_url": "/common/destiny2_content/icons/41a07585959355eab585d13df5583402.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/41a07585959355eab585d13df5583402.jpg",
+        "flavor_text": "I wish to be precise.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "grips-of-the-great-hunt-6",
+        "name": "Grips of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/grips-of-the-great-hunt-6",
+        "api_url": "https://api.ishtar-collective.net/items/grips-of-the-great-hunt-6",
+        "short_summary": "I wish to be precise.",
+        "bungie_ref": "1610092754",
+        "image_url": "/common/destiny2_content/icons/41a07585959355eab585d13df5583402.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/41a07585959355eab585d13df5583402.jpg",
+        "flavor_text": "I wish to be precise.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "grips-of-the-great-hunt-7",
+        "name": "Grips of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/grips-of-the-great-hunt-7",
+        "api_url": "https://api.ishtar-collective.net/items/grips-of-the-great-hunt-7",
+        "short_summary": "I wish to be precise.",
+        "bungie_ref": "1578798678",
+        "image_url": "/common/destiny2_content/icons/41a07585959355eab585d13df5583402.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/41a07585959355eab585d13df5583402.jpg",
+        "flavor_text": "I wish to be precise.",
+        "description": "",
+        "bungie_deleted": false
+      },
+      {
+        "ishtar_ref": "grips-of-the-great-hunt-8",
+        "name": "Grips of the Great Hunt",
+        "ishtar_url": "https://www.ishtar-collective.net/items/grips-of-the-great-hunt-8",
+        "api_url": "https://api.ishtar-collective.net/items/grips-of-the-great-hunt-8",
+        "short_summary": "I wish to be precise.",
+        "bungie_ref": "1424596150",
+        "image_url": "/common/destiny2_content/icons/41a07585959355eab585d13df5583402.jpg",
+        "full_image_url": "https://www.bungie.net/common/destiny2_content/icons/41a07585959355eab585d13df5583402.jpg",
+        "flavor_text": "I wish to be precise.",
+        "description": "",
+        "bungie_deleted": false
+      }
+    ]
+  }
+}

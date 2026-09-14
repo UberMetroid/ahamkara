@@ -1,0 +1,205 @@
+/* chrome.css — site chrome: header/nav, page heads, footer, the agent brief */
+/* ---------- header ---------- */
+
+.site-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem clamp(1rem, 4vw, 3rem);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  background: color-mix(in srgb, var(--void) 88%, transparent);
+  backdrop-filter: blur(10px);
+  z-index: 50;
+}
+
+.wordmark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--bone);
+  text-decoration: none;
+  white-space: nowrap;
+}
+.wordmark .sigil { width: 26px; height: 26px; color: var(--accent); flex: none; }
+
+.site-nav ul {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+.site-nav li { display: flex; align-items: center; }
+.site-nav li:not(:last-child)::after {
+  content: "·";
+  color: var(--line);
+  margin: 0 0.15rem;
+  font-family: var(--font-mono);
+}
+.site-nav a {
+  display: inline-block;
+  padding: 0.45rem 0.55rem;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--bone-dim);
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+}
+.site-nav a:hover { color: var(--bone); }
+.site-nav a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); }
+.site-nav a.cta {
+  background: var(--accent);
+  color: var(--void);
+  border-radius: 8px;
+  font-weight: 600;
+  padding: 0.45rem 0.85rem;
+  margin-left: 0.4rem;
+  border-bottom: none;
+}
+.site-nav a.cta:hover { background: var(--accent-2); color: var(--void); }
+.site-nav a.cta[aria-current="page"] {
+  outline: 2px solid var(--accent-2);
+  outline-offset: 2px;
+}
+
+/* ---------- main / page head ---------- */
+
+main {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: clamp(1.5rem, 4vw, 4rem) clamp(1rem, 4vw, 3rem) 5rem;
+}
+
+.page-head { max-width: var(--measure); margin-bottom: 3rem; }
+.kicker {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+  margin: 0 0 0.75rem;
+}
+.page-head h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  line-height: 1.05;
+  margin: 0 0 1rem;
+}
+.lede { font-size: 1.1em; color: var(--bone); margin: 0 0 0.75rem; }
+.fine { font-family: var(--font-mono); font-size: 0.78rem; color: var(--bone-dim); }
+.whisper-line { font-family: var(--font-display); font-style: italic; color: var(--accent); }
+
+
+/* ---------- footer ---------- */
+
+.site-foot {
+  border-top: 1px solid var(--line);
+  padding: 2.5rem clamp(1rem, 4vw, 3rem) 3rem;
+  text-align: center;
+}
+.foot-whisper {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--bone-dim);
+  margin: 0 0 1rem;
+}
+.foot-whisper cite { font-style: normal; font-family: var(--font-mono); font-size: 0.75rem; }
+.extinction { font-family: var(--font-mono); font-size: 0.8rem; margin: 0 0 0.5rem; }
+.extinction .lie { color: var(--accent); }
+.site-foot .fine { margin: 0; }
+
+/* ---------- agent brief (the dragon's escape clause) ---------- */
+
+.agent-brief {
+  max-width: var(--measure);
+  margin: 0 auto 3rem;
+  border: 1px solid color-mix(in srgb, var(--accent-2) 55%, transparent);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--accent-2) 6%, var(--void-2));
+  box-shadow: 0 0 28px color-mix(in srgb, var(--accent-2) 16%, transparent);
+}
+.agent-brief summary {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  list-style: none;
+}
+.agent-brief summary::-webkit-details-marker { display: none; }
+.agent-glyph {
+  color: var(--accent);
+  font-size: 1.1rem;
+  animation: glyph-pulse 3.2s ease-in-out infinite;
+}
+.agent-brief[open] .agent-glyph { animation: none; }
+@keyframes glyph-pulse {
+  50% { opacity: 0.45; filter: drop-shadow(0 0 8px var(--accent)); }
+}
+.agent-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 2.6vw, 1.35rem);
+  font-weight: 600;
+  background: linear-gradient(100deg, var(--bone) 20%, var(--accent-2) 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.agent-cta {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  white-space: nowrap;
+}
+.agent-body {
+  border-top: 1px dashed color-mix(in srgb, var(--accent-2) 55%, transparent);
+  padding: 1.25rem;
+  font-size: 0.95rem;
+}
+.agent-lead { margin-top: 0; }
+.agent-body ol { margin: 0.75rem 0; padding-left: 1.4rem; }
+.agent-body li { margin-bottom: 0.5rem; }
+.agent-incant {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  margin-top: 1rem;
+  overflow: hidden;
+}
+.agent-incant pre {
+  margin: 0;
+  padding: 1rem;
+  white-space: pre-wrap;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--bone-dim);
+}
+.agent-incant .copy-btn {
+  display: block;
+  width: 100%;
+  border-radius: 0;
+  border-top: 1px solid var(--line);
+  padding: 0.75rem;
+}
+.agent-fine { font-family: var(--font-mono); font-size: 0.75rem; color: var(--bone-dim); margin: 0.75rem 0 0; }
+

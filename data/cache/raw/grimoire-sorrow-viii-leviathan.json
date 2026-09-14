@@ -1,0 +1,49 @@
+{
+  "id": "grimoire-sorrow-viii-leviathan",
+  "api_path": "/cards/viii-leviathan",
+  "doc_type": "grimoire_card",
+  "data": {
+    "ishtar_ref": "viii-leviathan",
+    "name": "VIII: Leviathan",
+    "ishtar_url": "https://www.ishtar-collective.net/cards/viii-leviathan",
+    "api_url": "https://api.ishtar-collective.net/cards/viii-leviathan",
+    "short_summary": "Verse 1:8 — Leviathan\nThe Leviathan’s Warning\n++We live on the edge of a war—\n—a war between Formless and Form++\n++between the Deep and the Sky—",
+    "bungie_ref": "700750",
+    "image_url": "/common/destiny_content/grimoire/hr_images/700750_d0fd2a087e47a5f2c43857a797ec3b14.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny_content/grimoire/hr_images/700750_d0fd2a087e47a5f2c43857a797ec3b14.jpg",
+    "intro": "<b>Verse 1:8 — Leviathan</b>",
+    "intro_attribution": null,
+    "description": "The Leviathan’s Warning<br/><br/>\n++We live on the edge of a war—<br/>\n—a war between Formless and Form++<br/>\n++between the Deep and the Sky—<br/><br/>\n++MY EYES ARE WIDE, MY GAZE IS LONG++<br/><br/>\n—Across the universe, as far as I see++<br/>\n++the Sky works to charge its fires— <br/>\n —and the Deep drowns the ash++<br/><br/>\n—Sky builds gentle places, safe for life++<br/>\n++Beloved Fundament, refuge of trillions—<br/>\n—The Sky treasures this rich place++<br/><br/>\n—BUT THE DEEP IS HERE WITH US—<br/><br/>\n++Cold logic tests our walls—<br/>\n—The Deep claims its dominion++<br/>\n++A ruthless, final age —<br/><br/>\nAurash’s Protest<br/><br/>\nOld Leviathan, creature of myth, this world is no refuge. We live short, hard lives. We die in the dark. The storm above us will never end. And soon the God-Wave will take us all. Above us there are only stormjoys, monsters, and moons of apocalypse. Let us go down, down, where we may discover truth, some power to avenge ourselves upon our betrayers, some hope of survival.<br/><br/>\nThe Leviathan’s Hope<br/><br/>\n—What power calls you++<br/>\n++Down to the deep?—<br/><br/>\n++What instinct draws you—<br/>\n—Away from high hope?++<br/><br/>\n—Quick-breeding krill people, I tell you++<br/>\n++For eons I have watched your struggle—<br/>\n—Clinging to the sharp edge of survival++<br/>\n++Balanced between the Deep and the Sky.—<br/><br/>\n++You were my treasure—<br/>\n—My proof against despair++<br/><br/>\n—FOR THIS IS THE DEEP CLAIM—<br/><br/>\n++Existence is the struggle to exist—<br/>\n—When the struggle seems lost++<br/>\n++when the safe place crumbles—<br/>\n—everything turns to the Deep to survive++<br/><br/>\n++I REJECT THE DEEP CLAIM++<br/><br/>\n—You will turn back, sweet krill of hope.&#177;&#177;<br/>\n++You will choose the Sky instead.—<br/><br/>\nXi Ro’s Protest<br/><br/>\nYou are huge and old! Our lives are short and desperate. If that’s the way the world’s supposed to be, I won’t have it! If people like Taox are supposed to win, I won’t let them! I’ll beat the world until it changes! I’ll kill anything in the way!<br/><br/>\nThe Leviathan’s Dirge<br/><br/>\n++This fatal logic++<br/>\n—Hear my monopole scream!—<br/>\n++It will consume you++<br/><br/>\n—Before you lies—<br/>\n++The worship of death++<br/>\n—The ruinous path—<br/><br/>\n++The Sky builds new life++<br/>\n—Against the onset of ruin—<br/>\n++Towards a gentle world++<br/><br/>\n—The Deep embraces death—<br/>\n++Saying: this is inevitable and right++<br/>\n—I exist as hungry ruin—<br/><br/>\n++TURN BACK FROM THE WORLD-KILLING WAY++<br/>\n++OR YOU WILL LIVE AS DEATH AND DEVASTATION++<br/>\n—The Sky is the harder way. But it is kinder.—<br/>\n—My charge is balanced: my voice exhausted.—<br/><br/>\nSathona’s Protest<br/><br/>\nSisters, I have my father’s familiar. Look! It answers me in plain words. It helped me find this ship. It gives me strength when hope is lost.<br/><br/>\nWho will you trust? The voice that wants us to live and suffer, as we have lived and suffered? The Leviathan that offers no hope against Taox or the world-wave?<br/><br/>\nOr the plain, honest worm?<br/><br/>\nLet us see where its whisper leads us, Aurash. Let us go deeper, Xi Ro!<br/><br/>\nLet us dive, oh sisters mine.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "the-worm-gods",
+        "name": "The Worm Gods",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-worm-gods",
+        "api_url": "https://api.ishtar-collective.net/categories/the-worm-gods",
+        "short_summary": "Creatures that lived in the furthest depths of the Fundament."
+      },
+      {
+        "ishtar_ref": "the-fundament",
+        "name": "The Fundament",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-fundament",
+        "api_url": "https://api.ishtar-collective.net/categories/the-fundament",
+        "short_summary": "A gas giant within which several solid continents floated, and upon which hundreds of species once lived. One such species were the ancestors of the Hive, henceforth referred to as 'proto-Hive'."
+      },
+      {
+        "ishtar_ref": "books-of-sorrow",
+        "name": "Books of Sorrow",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/books-of-sorrow",
+        "api_url": "https://api.ishtar-collective.net/categories/books-of-sorrow",
+        "short_summary": "A collection of verses compiled by Oryx, the Taken King, and including verses from the Worm Gods and Oryx's sisters, as well as from other civilizations."
+      }
+    ]
+  }
+}

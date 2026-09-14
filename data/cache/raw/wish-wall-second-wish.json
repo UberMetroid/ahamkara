@@ -1,0 +1,28 @@
+{
+  "id": "wish-wall-second-wish",
+  "api_path": "/entries/second-wish",
+  "doc_type": "entry",
+  "data": {
+    "ishtar_ref": "second-wish",
+    "name": "Second Wish",
+    "ishtar_url": "https://www.ishtar-collective.net/entries/second-wish",
+    "api_url": "https://api.ishtar-collective.net/entries/second-wish",
+    "short_summary": "—\nA wish for material validation.",
+    "bungie_ref": "1663022443",
+    "image_url": "",
+    "full_image_url": "",
+    "subtitle": "",
+    "description": "A wish for material validation.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "book-wall-of-wishes",
+        "name": "Book: Wall of Wishes",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/book-wall-of-wishes",
+        "api_url": "https://api.ishtar-collective.net/categories/book-wall-of-wishes",
+        "short_summary": ""
+      }
+    ],
+    "items": []
+  }
+}

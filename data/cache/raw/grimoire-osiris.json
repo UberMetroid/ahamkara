@@ -1,0 +1,84 @@
+{
+  "id": "grimoire-osiris",
+  "api_path": "/cards/osiris",
+  "doc_type": "grimoire_card",
+  "data": {
+    "ishtar_ref": "osiris",
+    "name": "Osiris",
+    "ishtar_url": "https://www.ishtar-collective.net/cards/osiris",
+    "api_url": "https://api.ishtar-collective.net/cards/osiris",
+    "short_summary": "What drives a Warlock to madness?\nGhosts choose those suited to war and heroism to be reborn. By nature or circumstance they go to battle against the Darkness, and through this battle they learn how to use the Light. But Warlocks, by their nature, fight a second, internal war. This is the war to understand a universe of secrets— a world that expects Guardians to fight without full knowledge of what they are or what they might hope to achieve.\nYou were a mighty warrior. I watched you at Six Fronts, and heeded the call of Saint-14 to appoint you Vanguard Commander, even when the Concordat claimed to have records proving you were a Golden Age experiment mis-incarnated as a human by an inept Ghost. Saint-14 assured me you were just a man without much patience for obfuscation.\nI watched as you grew tired of strike missions and the grueling, unproductive sessions with the Cryptarchs. That was when I took you under my wing. I saw our future in you. But your curiosity was voracious— How much of a Guardian's personality and memories were true? How much had been fabricated by their Ghost? Did Guardians share particular personality traits— a willingness to yield to authority, a tendency to do anything anyone asked for the promise of uncertain reward, a blind knight-errant mentality? Had the Traveler manufactured all of you as living weapons?\nI admit, I found your questions divisive and disloyal, and I feared you might be capable of breaking our unity when the City's position had grown so tenuous. Why divert attention away from the Traveler, our only hope?",
+    "bungie_ref": "110012",
+    "image_url": "/common/destiny_content/grimoire/hr_images/110012_5cf70d2549d0aadb5a08d8382bb396df.jpg",
+    "full_image_url": "https://www.bungie.net/common/destiny_content/grimoire/hr_images/110012_5cf70d2549d0aadb5a08d8382bb396df.jpg",
+    "intro": null,
+    "intro_attribution": null,
+    "description": "What drives a Warlock to madness?<br/><br/>\nGhosts choose those suited to war and heroism to be reborn. By nature or circumstance they go to battle against the Darkness, and through this battle they learn how to use the Light. But Warlocks, by their nature, fight a second, internal war. This is the war to understand a universe of secrets— a world that expects Guardians to fight without full knowledge of what they are or what they might hope to achieve.<br/><br/>\nYou were a mighty warrior. I watched you at Six Fronts, and heeded the call of Saint-14 to appoint you Vanguard Commander, even when the Concordat claimed to have records proving you were a Golden Age experiment mis-incarnated as a human by an inept Ghost. Saint-14 assured me you were just a man without much patience for obfuscation.<br/><br/>\nI watched as you grew tired of strike missions and the grueling, unproductive sessions with the Cryptarchs. That was when I took you under my wing. I saw our future in you. But your curiosity was voracious— How much of a Guardian&#39;s personality and memories were true? How much had been fabricated by their Ghost? Did Guardians share particular personality traits— a willingness to yield to authority, a tendency to do anything anyone asked for the promise of uncertain reward, a blind knight-errant mentality? Had the Traveler manufactured all of you as living weapons?<br/><br/>\nI admit, I found your questions divisive and disloyal, and I feared you might be capable of breaking our unity when the City&#39;s position had grown so tenuous. Why divert attention away from the Traveler, our only hope?<br/><br/>\nAnd then it got worse, dabbling in thanatonautics, Ahamkara-lore, chasing after Xur and the tricks of the Nine. Launching expeditions into the Reef and beyond at a time when ships were irreplaceable. Your quest split Guardians along ideological lines. This was your greatest crime: Hunters chose to pursue your visions instead of protecting refugees, Titans assembled teams to chase the legendary Vault of Glass instead of striking the Fallen, and Warlocks turned away from the study of the Traveler in favor of  your  ultimate obsession... learning the exact nature of the Darkness.<br/><br/>\nWhen debate became argument, and argument became acrimony, I realized you had already become a cult of personality, attracting Guardians who wanted a clear idea of why they were fighting, what they faced, and how they would ultimately win.<br/><br/>\nI don’t know where you have gone, but I can no longer send Ghosts out to find you. Some come back— with tales of your death or how you went seeking answers from the far reaches of space and time. That you found a way to explore the Vex gate networks. That you&#39;ve made breakthrough after breakthrough as to their origins— theories that a Guardian could not be simulated, that the Traveler might be an ontoformer or a god-incubator, that the Vex had diverged into multiple groups in order to secure &#39;an end state for every possible configuration of reality&#39;.<br/><br/>\nI fear you have become as obsessed with the Vex as Toland was with the Hive. I&#39;ve heard your own insane prophecies about pits and dead Hive kings. And of Crota, which now I cannot deny. <br/><br/>\nI hear stories of Lord Shaxx meeting with fireteams of Warlocks who have no shadow and never blink. Of jumpships slipping into the Reef on cold trajectories and meeting no intercept. Of questions hidden in matter engrams and answers decrypted on distant battlefields. <br/><br/>\nPerhaps you are still out there. If this reaches you, I would very much like to speak with you, to hear your theories in your own words.<br/><br/>\nPerhaps what drives a Warlock to madness is truth.",
+    "bungie_deleted": false,
+    "categories": [
+      {
+        "ishtar_ref": "ahamkara",
+        "name": "Ahamkara",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/ahamkara",
+        "api_url": "https://api.ishtar-collective.net/categories/ahamkara",
+        "short_summary": "A species first encountered by humans on Venus, said to resemble dragons, they were exterminated by order of the Tower."
+      },
+      {
+        "ishtar_ref": "saint-14",
+        "name": "Saint-14",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/saint-14",
+        "api_url": "https://api.ishtar-collective.net/categories/saint-14",
+        "short_summary": "The first Titan Vanguard, famous for his crusade against the Fallen."
+      },
+      {
+        "ishtar_ref": "six-fronts",
+        "name": "Six Fronts",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/six-fronts",
+        "api_url": "https://api.ishtar-collective.net/categories/six-fronts",
+        "short_summary": "Six Fronts was the first large-scale battle to take place around the Last City, so named because of the six approaches that lead to the City."
+      },
+      {
+        "ishtar_ref": "toland-the-shattered",
+        "name": "Toland the Shattered",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/toland-the-shattered",
+        "api_url": "https://api.ishtar-collective.net/categories/toland-the-shattered",
+        "short_summary": "A Guardian known for his obsessive study of the Hive, which led to the creation of the exotic pulse rifle, Bad Juju, and also to his exile from the Tower. He was part of the fireteam that attempted to kill Crota. His current status is unknown."
+      },
+      {
+        "ishtar_ref": "osiris",
+        "name": "Osiris",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/osiris",
+        "api_url": "https://api.ishtar-collective.net/categories/osiris",
+        "short_summary": "A Guardian, once the Warlock Vanguard, whose divisive beliefs led him to leave the City in exile."
+      },
+      {
+        "ishtar_ref": "the-nine",
+        "name": "The Nine",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-nine",
+        "api_url": "https://api.ishtar-collective.net/categories/the-nine",
+        "short_summary": "A mysterious group based in the Jovians; the worlds beyond the Reef."
+      },
+      {
+        "ishtar_ref": "the-first-crota-fireteam",
+        "name": "The First Crota fireteam",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/the-first-crota-fireteam",
+        "api_url": "https://api.ishtar-collective.net/categories/the-first-crota-fireteam",
+        "short_summary": "At Mare Imbrium a host of thousands of Guardians came united to retake the Moon, and were mercilessly slaughtered by the seemingly invincible Crota and his army of Knights."
+      },
+      {
+        "ishtar_ref": "lysander",
+        "name": "Lysander",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/lysander",
+        "api_url": "https://api.ishtar-collective.net/categories/lysander",
+        "short_summary": "The leader of the Concordat, a City faction."
+      },
+      {
+        "ishtar_ref": "lord-shaxx",
+        "name": "Lord Shaxx",
+        "ishtar_url": "https://www.ishtar-collective.net/categories/lord-shaxx",
+        "api_url": "https://api.ishtar-collective.net/categories/lord-shaxx",
+        "short_summary": "Warlord and Crucible Handler "
+      }
+    ]
+  }
+}

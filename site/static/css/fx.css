@@ -1,0 +1,118 @@
+/* fx.css — wish-magic: trip pulses, canvas overlays, whispers, responsive + motion prefs */
+/* ---------- the trip — chromatic aberration pulses ---------- */
+
+body.tripping .hero-title,
+body.tripping .page-head h1,
+body.tripping .wordmark,
+body.tripping .hero-addr {
+  animation: rgb-split 0.75s ease-in-out infinite;
+}
+@keyframes rgb-split {
+  0%, 100% { text-shadow: none; }
+  35% {
+    text-shadow:
+      -3px 0 rgba(143, 227, 208, 0.9),
+      3px 0 rgba(199, 125, 255, 0.9),
+      0 2px rgba(255, 110, 160, 0.55);
+  }
+  70% {
+    text-shadow:
+      2px -1px rgba(143, 227, 208, 0.85),
+      -2px 1px rgba(199, 125, 255, 0.85),
+      -1px -2px rgba(255, 110, 160, 0.45);
+  }
+}
+
+/* ---------- wish-magic overlays ---------- */
+
+.fx-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+
+#fx {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 78;
+}
+
+.scanlines {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 80;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent 0 3px,
+    rgba(236, 229, 211, 0.022) 3px 4px
+  );
+}
+.scanlines::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    125% 100% at 50% 50%,
+    transparent 55%,
+    rgba(11, 10, 16, 0.55) 100%
+  );
+}
+
+.grant-flash {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 79;
+  opacity: 0;
+  transition: opacity 0.7s ease-out;
+  background: radial-gradient(
+    circle at var(--gx, 50%) var(--gy, 60%),
+    color-mix(in srgb, var(--accent) 38%, transparent),
+    transparent 45%
+  );
+}
+.grant-flash.on { opacity: 1; }
+
+
+/* ---------- ambient whispers (JS enhancement) ---------- */
+
+.whisper-bit {
+  position: fixed;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(0.9rem, 1.6vw, 1.15rem);
+  color: var(--accent);
+  opacity: 0;
+  pointer-events: none;
+  max-width: 34ch;
+  text-align: center;
+  z-index: 5;
+  transition: opacity 2.5s ease-in-out;
+  text-shadow: 0 0 18px color-mix(in srgb, var(--accent) 45%, transparent);
+}
+.whisper-bit.show { opacity: 0.55; }
+
+/* ---------- responsive ---------- */
+
+@media (max-width: 720px) {
+  .site-head { flex-direction: column; align-items: stretch; gap: 0.5rem; padding: 0.75rem 1rem; }
+  .wordmark { justify-content: center; }
+  .site-nav ul { justify-content: flex-start; }
+  .site-nav a { padding: 0.5rem 0.6rem; }
+  .entry summary { flex-direction: column; gap: 0.4rem; }
+  .wish-row { flex-direction: column; }
+  .wish-row button { padding: 0.8rem; }
+}
+
+/* ---------- motion preferences ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .hero-title { filter: none; }
+  #fx, .grant-flash { display: none; }
+}

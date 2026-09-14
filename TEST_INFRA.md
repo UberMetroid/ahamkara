@@ -97,7 +97,7 @@ The following matrix maps every feature defined in `PROJECT.md` to its respectiv
 | 4 | Canonical Entity Preservation | T1, T2, T3, T4 | T1-F04, T2-F04, T3-F04, T4-SC01..05 | Query records for 8 canonical entities: Riven, Taranis, Hefnd, Huginn, Muninn, Azirim, Eao, Great Hunt Dragons | All 8 entities present in corpus; correct entity taxonomy and canonical attributes preserved. |
 | 5 | Canonical Source Ingestion | T1, T2, T3, T4 | T1-F05, T2-F05, T3-F05, T4-SC01..05 | Check 65 canonical items across 9 categories | Minimum 65 entries present: Exotic armor (5), weapons (4), Last Wish (8), Great Hunt (15), Warlord's Ruin (5), Books (12), Wall of Wishes (15), Grimoire (9), Transcripts (7). |
 | 6 | 9-Field Structured Schema | T1, T2 | T1-F06, T2-F06 | Validate every record against the 9-field schema | Every record contains `id`, `title`, `source`, `entity`, `speaker`, `transcript`, `tags`, `chronology`, `theme`. `id` matches kebab-case regex. Non-empty text. |
-| 7 | Multi-Format Lore Archives | T1, T2, T3 | T1-F07, T2-F07, T3-F07 | Check `data/ahamkara_corpus.json`, `data/ahamkara_corpus.jsonl`, `data/categories/*.json` | All formats exist, valid JSON/JSONL syntax, record counts match across formats, partitioned categories match master corpus. |
+| 7 | Canonical JSONL Lore Archives | T1, T2, T3 | T1-F07, T2-F07, T3-F07 | Check `data/ahamkara_corpus.jsonl`, `data/categories/*.jsonl`, `data/cache/raw/` | Canonical JSONL exists, partition files exist, partition records exactly cover the corpus. |
 | 8 | openOODA Domain Models | T1, T2 | T1-F08, T2-F08 | Inspect `src/model/*.oo`, check types and functions | Strongly typed `AhamkaraRecord`, `QueryFilter`, `SearchResult`, `RecordStats`; line counts $\le 256$; file sizes $\le 64$ KiB. |
 | 9 | Safe JSONL Parser | T1, T2, T3 | T1-F09, T2-F09, T3-F09 | Line-by-line string extraction in `src/repo/json_parse.oo` | Extracts string fields, tags list, handles escaped characters (`\"`, `\n`, `\t`, `\\`), no external C dependencies. |
 | 10 | Capability-Gated Loader | T1, T2 | T1-F10, T2-F10 | Verify `repo_load_all` receives `&FsReadCap` | File access is gated by capability; returns `Result[List[AhamkaraRecord], String]`; non-existent file returns `Err`. |
@@ -125,7 +125,7 @@ Verifies that all 21 features exist and function according to specification:
 - **T1-F04**: Corpus contains all 8 canonical entities (Riven, Taranis, Hefnd, Huginn, Muninn, Azirim, Eao, Great Hunt Dragons).
 - **T1-F05**: Corpus contains $\ge 65$ canonical entries across all 9 source categories.
 - **T1-F06**: Records strictly validate against the 9-field schema (`id`, `title`, `source`, `entity`, `speaker`, `transcript`, `tags`, `chronology`, `theme`).
-- **T1-F07**: Archives exist in JSON array (`ahamkara_corpus.json`), JSONL (`ahamkara_corpus.jsonl`), and category partitions (`data/categories/*.json`).
+- **T1-F07**: Canonical archive is JSONL (`ahamkara_corpus.jsonl`) with JSONL category partitions (`data/categories/*.jsonl`) — all files ≤ 256 lines.
 - **T1-F08**: openOODA domain models in `src/model/` conform to $\le 256$ lines rule and $\le 64$ KiB size.
 - **T1-F09**: Safe JSONL parser implementation in `src/repo/json_parse.oo` handles string and array extraction.
 - **T1-F10**: Repository loader in `src/repo/loader.oo` takes `&FsReadCap` and returns `Result[List[AhamkaraRecord], String]`.
