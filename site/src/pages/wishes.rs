@@ -62,7 +62,7 @@ pub fn page_wishes(records: &[Record], whispers: &[(&str, &str)]) -> String {
   <h1>The Wall of Wishes</h1>
   <p class="lede">In the Last Wish raid there is a wall of sixteen plates, and a pattern of them is a sentence, and a sentence is a wish. Fifteen were found. The dragons count differently than we do.</p>
   <p class="fine">Effects below are documented by player scholars as in-raid mechanics. The corpus preserves the wishes; the wall keeps the syntax.</p>
-  <canvas class="wish-wall" aria-label="The Wall of Wishes: sixteen coded plates, drawn live. Clicking a plate makes the dragon notice."></canvas>
+  <canvas class="wish-wall" role="img" aria-label="The Wall of Wishes: sixteen coded plates, drawn live. Clicking a plate makes the dragon notice."></canvas>
 </header>
 <ol class="wishlist">{items}</ol>
 "##

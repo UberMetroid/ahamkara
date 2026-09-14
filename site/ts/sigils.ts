@@ -46,7 +46,7 @@ function accentProbe(): () => string[] {
     if (a.length === 2) accents = a;
   };
   sample();
-  window.setInterval(sample, 400);
+  window.setInterval(sample, 1200);
   return () => accents;
 }
 

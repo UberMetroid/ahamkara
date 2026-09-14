@@ -12,7 +12,7 @@
   max-width: var(--max);
   margin: 0 auto;
 }
-.trap-head .agent-brief { margin: 0; max-width: none; }
+.trap-head .agent-brief { margin: 0; }
 
 /* ---------- footer nav ---------- */
 
@@ -112,9 +112,8 @@ main {
 
 /* ---------- agent brief (the dragon's escape clause) ---------- */
 
+/* The brief only ever lives inside .trap-head — it is the header. */
 .agent-brief {
-  max-width: var(--measure);
-  margin: 0 0 3rem;
   border: 1px solid color-mix(in srgb, var(--accent-2) 55%, transparent);
   border-radius: 12px;
   background: color-mix(in srgb, var(--accent-2) 6%, var(--void-2));

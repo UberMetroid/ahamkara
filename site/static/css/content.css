@@ -3,8 +3,8 @@
 
 .hero { text-align: center; padding: clamp(1rem, 3vw, 2rem) 0 2rem; }
 
-.hero-title { filter: url(#warp); position: relative; } /* reality breathes */
 .hero-title {
+  filter: url(#warp); /* reality breathes */
   font-family: var(--font-display);
   font-weight: 600;
   font-size: clamp(3.4rem, 12vw, 8rem);
@@ -23,14 +23,23 @@
 /* The rotating whisper under the masthead — types out, pulls back,
    walks the whole chorus. "o bearer mine." is one of them. */
 .hero .featured { max-width: var(--measure); margin: 0 auto 0.5rem; text-align: center; min-height: 7rem; }
-.hero .featured blockquote p { font-size: 1.25rem; line-height: 1.5; color: var(--accent); min-height: 3.6em; margin: 0; }
+.hero .featured blockquote { margin: 0; }
+.hero .featured blockquote p {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: var(--accent);
+  min-height: 3.6em;
+  margin: 0;
+}
 .hero .featured blockquote p::after {
   content: "▍";
   color: var(--accent-2);
   animation: caret-blink 1.1s steps(2) infinite;
 }
 @keyframes caret-blink { 50% { opacity: 0; } }
-.hero .featured figcaption { margin-top: 0.5rem; transition: opacity 0.5s; }
+.hero .featured figcaption { font-family: var(--font-mono); font-size: 0.8rem; color: var(--bone-dim); margin-top: 0.5rem; transition: opacity 0.5s; }
 
 .back { font-family: var(--font-mono); }
 
@@ -67,7 +76,7 @@
 .bargain-copy { flex: 1; min-width: 0; }
 .bargain-copy p { margin: 0.4rem 0 0; }
 .bargain-form { flex: 0 0 24rem; min-width: 0; }
-.bargain-box h2 { font-family: var(--font-display); font-size: 1.8rem; margin: 0; }
+.bargain-copy .bargain-title { font-family: var(--font-display); font-size: 1.8rem; font-weight: 600; margin: 0; }
 .wish-form label { font-family: var(--font-display); font-style: italic; font-size: 1.15rem; display: block; margin-bottom: 0.5rem; }
 .wish-row { display: flex; gap: 0.6rem; }
 .wish-row input {
@@ -105,18 +114,6 @@
   min-height: 1.5em;
 }
 .wish-output:empty { display: none; }
-
-/* ---------- featured quote ---------- */
-
-.featured { max-width: var(--measure); margin: 0 auto; text-align: center; }
-.featured blockquote { margin: 0; }
-.featured blockquote p {
-  font-family: var(--font-display);
-  font-size: clamp(1.4rem, 3vw, 1.9rem);
-  font-style: italic;
-  line-height: 1.4;
-}
-.featured figcaption { font-family: var(--font-mono); font-size: 0.8rem; color: var(--bone-dim); margin-top: 0.75rem; }
 
 /* ---------- tiles ---------- */
 

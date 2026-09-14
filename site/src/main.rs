@@ -16,7 +16,7 @@ use std::fs;
 use std::path::Path;
 
 use corpus::load_records;
-use llms::LLMS_TXT;
+use llms::llms_txt;
 
 /// Deterministic-ish per-page footer whisper so each page feels different.
 pub fn pick_whisper<'a>(pool: &'a [(&'a str, &'a str)], salt: usize) -> &'a (&'a str, &'a str) {
@@ -89,6 +89,10 @@ fn main() {
         ("Reality is negotiable. The price is not.", "the bargain"),
     ]);
 
+    // Clean rebuild — stale artifacts (renamed/deleted assets) must not linger.
+    if out_dir.is_dir() {
+        fs::remove_dir_all(&out_dir).expect("clean dist/");
+    }
     fs::create_dir_all(&out_dir).expect("create dist/");
 
     let pages_out: &[(&str, String)] = &[
@@ -121,7 +125,7 @@ fn main() {
     }
 
     // llms.txt — machine-readable site brief for language models.
-    fs::write(out_dir.join("llms.txt"), LLMS_TXT).expect("write llms.txt");
+    fs::write(out_dir.join("llms.txt"), llms_txt(records.len())).expect("write llms.txt");
     println!("  wrote llms.txt");
 
     // Copy static assets (recursive — css/, etc.).

@@ -4,10 +4,10 @@ use crate::chrome::layout;
 use crate::corpus::{esc, paragraphs, Record};
 use crate::pick_whisper;
 
-pub fn opts(values: &[&str]) -> String {
+pub fn opts<S: AsRef<str>>(values: &[S]) -> String {
     values
         .iter()
-        .map(|v| format!(r#"<option value="{v}">{v}</option>"#, v = esc(v)))
+        .map(|v| format!(r#"<option value="{0}">{0}</option>"#, esc(v.as_ref())))
         .collect()
 }
 
@@ -18,7 +18,7 @@ pub fn page_lore(records: &[Record], whispers: &[(&str, &str)]) -> String {
     let mut eras: Vec<&str> = records.iter().map(|r| r.chronology.as_str()).collect();
     eras.sort_unstable();
     eras.dedup();
-    let mut kinds: Vec<&str> = records.iter().map(|r| r.source.kind.as_str()).collect();
+    let mut kinds: Vec<String> = records.iter().map(|r| r.source.kind.replace('_', " ")).collect();
     kinds.sort_unstable();
     kinds.dedup();
 
@@ -50,10 +50,18 @@ pub fn page_lore(records: &[Record], whispers: &[(&str, &str)]) -> String {
             })
             .unwrap_or_default();
         let speaker_txt = r.speaker.as_deref().unwrap_or("unattributed");
-        let search = esc(&format!("{} {} {} {}", r.title, speaker_txt, r.transcript, r.tags.join(" ")).to_lowercase());
+        let search = esc(&format!(
+            "{} {} {} {} {}",
+            r.title,
+            speaker_txt,
+            r.entity.join(" "),
+            r.transcript,
+            r.tags.join(" ")
+        )
+        .to_lowercase());
         entries.push_str(&format!(
             r##"<details class="entry" id="{id}" data-entities="{entities}" data-era="{era}" data-kind="{kind}" data-search="{search}">
-<summary><span class="entry-title">{title}</span><span class="entry-meta"><span class="chip">{speaker}</span><span class="chip kind">{kindh}</span></span></summary>
+<summary><span class="entry-title">{title}</span><span class="entry-meta"><span class="chip">{who}</span><span class="chip kind">{kindh}</span></span></summary>
 <div class="entry-body">
 {body}
 <p class="entry-src"><span>{src}</span> {ishtar}</p>
@@ -68,7 +76,7 @@ pub fn page_lore(records: &[Record], whispers: &[(&str, &str)]) -> String {
             kind = esc(&r.source.kind),
             search = search,
             title = esc(&r.title),
-            speaker = esc(&r.entity.join(" · ")),
+            who = esc(&r.entity.join(" · ")),
             kindh = esc(&r.source.kind.replace('_', " ")),
             body = paragraphs(&r.transcript),
             src = esc(&source_bits),
@@ -107,7 +115,7 @@ pub fn page_lore(records: &[Record], whispers: &[(&str, &str)]) -> String {
 "##,
         opts(&entities),
         opts(&eras),
-        opts(&kinds.iter().map(|k| k.replace('_', " ")).collect::<Vec<_>>().iter().map(String::as_str).collect::<Vec<_>>()),
+        opts(&kinds),
         n = records.len(),
         entries = entries
     );

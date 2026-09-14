@@ -35,6 +35,7 @@ export function initFilters(): void {
     clear.hidden = !(needle || ent || era || kind);
   };
 
+  form.addEventListener("submit", (e) => e.preventDefault());
   for (const el of [q, fEntity, fEra, fKind]) {
     el.addEventListener("input", apply);
     el.addEventListener("change", apply);
@@ -49,10 +50,8 @@ export function initFilters(): void {
   });
 
   // Deep links: open the <details> that matches the URL fragment.
-  if (location.hash) {
-    const target = document.querySelector<HTMLDetailsElement>(
-      `.entry${CSS.escape(location.hash)}`.replace("entry#", "entry#")
-    );
+  if (location.hash.length > 1) {
+    const target = document.getElementById(location.hash.slice(1));
     if (target?.tagName === "DETAILS") {
       (target as HTMLDetailsElement).open = true;
       target.scrollIntoView({ block: "start" });

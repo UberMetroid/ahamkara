@@ -46,7 +46,7 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
         r##"
 <section class="bargain-box" aria-labelledby="bargain-h">
   <div class="bargain-copy">
-    <h2 id="bargain-h">Make a wish</h2>
+    <p class="bargain-title" id="bargain-h">Make a wish</p>
     <p>Tell the dragon what you want. It will find the price you cannot see &mdash; it always does.</p>
     <p class="fine">A toy bargain. The true rite lives in <a href="communion.html">Communion</a>.</p>
   </div>
