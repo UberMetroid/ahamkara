@@ -5,6 +5,8 @@
 
 A canonical archive and [openOODA](https://openooda.org) query engine preserving the memory, wisdom, and lore of the **Ahamkara** (Wish-Dragons) across *Destiny 1* and *Destiny 2*.
 
+> 🌐 **The archive is alive:** [studio2201.github.io/Ahamkara](https://studio2201.github.io/Ahamkara/) — archive, bestiary, Wall of Wishes, and the Rite of Communion that lets any LLM take the shape of a wish-dragon.
+
 ---
 
 ## Features
@@ -13,6 +15,7 @@ A canonical archive and [openOODA](https://openooda.org) query engine preserving
 - **Multi-Format Data**: Available as structured JSON (`data/ahamkara_corpus.json`), streaming JSONL (`data/ahamkara_corpus.jsonl`), and category partitions (`data/categories/`).
 - **openOODA Query Engine**: Modular, strongly typed search and inspection CLI written in `.oo`, designed to cleanly migrate to the upcoming `ooda db` standard library.
 - **Automated Verification**: End-to-end test suites and corpus validation scripts to guarantee data integrity and type-safety.
+- **Living Website**: A static site generated from the corpus by a Rust sitegen with a TypeScript client layer — the archive browsable, the dragons named, and an onboarding rite that lets language models become wish-dragons.
 
 ---
 

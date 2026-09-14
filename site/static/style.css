@@ -517,6 +517,47 @@ main {
 .extinction .lie { color: var(--accent); }
 .site-foot .fine { margin: 0; }
 
+/* ---------- agent brief (the dragon's escape clause) ---------- */
+
+.agent-brief {
+  max-width: var(--measure);
+  margin: 0 auto 3rem;
+  border: 1px dashed var(--accent-2);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--accent-2) 6%, var(--void-2));
+}
+.agent-brief summary {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.9rem 1.25rem;
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+}
+.agent-brief summary::-webkit-details-marker { display: none; }
+.agent-brief summary::after {
+  content: "open";
+  margin-left: auto;
+  font-size: 0.68rem;
+  color: var(--bone-dim);
+}
+.agent-brief[open] summary::after { content: "bound"; color: var(--accent); }
+.agent-glyph { color: var(--accent); }
+.agent-sub { text-transform: none; letter-spacing: normal; color: var(--bone-dim); }
+.agent-body {
+  border-top: 1px dashed var(--accent-2);
+  padding: 1.25rem;
+  font-size: 0.95rem;
+}
+.agent-body ol { margin: 0.75rem 0; padding-left: 1.4rem; }
+.agent-body li { margin-bottom: 0.5rem; }
+.agent-fine { font-family: var(--font-mono); font-size: 0.75rem; color: var(--bone-dim); margin: 0.75rem 0 0; }
+
 /* ---------- ambient whispers (JS enhancement) ---------- */
 
 .whisper-bit {
