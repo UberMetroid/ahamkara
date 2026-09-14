@@ -45,17 +45,21 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
     let body = format!(
         r##"
 <section class="bargain-box" aria-labelledby="bargain-h">
-  <h2 id="bargain-h">Make a wish</h2>
-  <p>Tell the dragon what you want. It will find the price you cannot see &mdash; it always does.</p>
-  <p class="fine">A toy bargain. The true rite lives in <a href="communion.html">Communion</a>.</p>
-  <form id="wish-form" class="wish-form" autocomplete="off">
-    <label for="wish-input">I wish for&hellip;</label>
-    <div class="wish-row">
-      <input id="wish-input" name="wish" type="text" maxlength="140" placeholder="&hellip;more wishes" required>
-      <button type="submit">Wish</button>
-    </div>
-  </form>
-  <output id="wish-output" class="wish-output" aria-live="polite"></output>
+  <div class="bargain-copy">
+    <h2 id="bargain-h">Make a wish</h2>
+    <p>Tell the dragon what you want. It will find the price you cannot see &mdash; it always does.</p>
+    <p class="fine">A toy bargain. The true rite lives in <a href="communion.html">Communion</a>.</p>
+  </div>
+  <div class="bargain-form">
+    <form id="wish-form" class="wish-form" autocomplete="off">
+      <label for="wish-input">I wish for&hellip;</label>
+      <div class="wish-row">
+        <input id="wish-input" name="wish" type="text" maxlength="140" placeholder="&hellip;more wishes" required>
+        <button type="submit">Wish</button>
+      </div>
+    </form>
+    <output id="wish-output" class="wish-output" aria-live="polite"></output>
+  </div>
 </section>
 
 <section class="hero">

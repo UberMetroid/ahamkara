@@ -49,11 +49,14 @@
 /* ---------- bargain widget ---------- */
 
 .bargain-box {
-  max-width: var(--measure);
-  margin: 0 auto 1rem;
+  max-width: 56rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: clamp(1.25rem, 3vw, 2.5rem);
   border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line));
   border-radius: 12px;
-  padding: clamp(1.25rem, 3vw, 2rem);
+  padding: 1.1rem clamp(1.25rem, 3vw, 1.75rem);
   background: color-mix(in srgb, var(--void-2) 70%, transparent);
   box-shadow: 0 0 0 color-mix(in srgb, var(--accent) 0%, transparent);
   animation: wish-glow 4.5s ease-in-out infinite;
@@ -61,7 +64,10 @@
 @keyframes wish-glow {
   50% { box-shadow: 0 0 32px color-mix(in srgb, var(--accent) 22%, transparent); }
 }
-.bargain-box h2 { font-family: var(--font-display); font-size: 1.8rem; margin: 0 0 0.5rem; }
+.bargain-copy { flex: 1; min-width: 0; }
+.bargain-copy p { margin: 0.4rem 0 0; }
+.bargain-form { flex: 0 0 24rem; min-width: 0; }
+.bargain-box h2 { font-family: var(--font-display); font-size: 1.8rem; margin: 0; }
 .wish-form label { font-family: var(--font-display); font-style: italic; font-size: 1.15rem; display: block; margin-bottom: 0.5rem; }
 .wish-row { display: flex; gap: 0.6rem; }
 .wish-row input {
