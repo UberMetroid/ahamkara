@@ -258,10 +258,25 @@ main {
 
 /* ---------- hero ---------- */
 
-.hero { text-align: center; padding: clamp(2rem, 8vw, 6rem) 0 2rem; }
-.hero .sigil { width: clamp(64px, 12vw, 96px); height: auto; color: var(--accent); animation: sigil-turn 40s linear infinite; }
+.hero { text-align: center; padding: clamp(1.5rem, 6vw, 4rem) 0 2rem; }
+.riven {
+  width: clamp(150px, 26vw, 210px);
+  height: auto;
+  color: var(--accent);
+  margin: 0 auto;
+  display: block;
+  filter: drop-shadow(0 0 22px color-mix(in srgb, var(--accent-2) 30%, transparent));
+}
+.riven .horn { fill: color-mix(in srgb, var(--accent) 14%, transparent); stroke: currentColor; stroke-width: 2; }
+.riven .eye {
+  fill: var(--accent-2);
+  filter: drop-shadow(0 0 5px var(--accent-2));
+  animation: eye-glow 4s ease-in-out infinite alternate;
+}
+.riven.gone .eye { animation: none; opacity: 0.22; }
+.riven.gone { opacity: 0.7; }
+@keyframes eye-glow { from { opacity: 0.55; } to { opacity: 1; } }
 .hero-title { filter: url(#warp); } /* reality breathes */
-@keyframes sigil-turn { to { transform: rotate(360deg); } }
 .hero-addr {
   font-family: var(--font-display);
   font-style: italic;

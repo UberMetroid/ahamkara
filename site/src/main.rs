@@ -64,7 +64,24 @@ const NAV: &[(&str, &str, &str)] = &[
     ("communion", "communion.html", "Communion"),
 ];
 
-const SIGIL: &str = r##"<svg class="sigil" viewBox="0 0 40 40" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="20" cy="20" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="20" cy="20" r="2.5" fill="currentColor"/><path d="M20 3v6M20 31v6M3 20h6M31 20h6" stroke="currentColor" stroke-width="1.5"/></svg>"##;
+/// Riven of a Thousand Voices — an original line-art interpretation:
+/// crowned horns, a broken coil, and the many watching eyes.
+const DRAGON: &str = r##"<svg class="riven" viewBox="0 0 200 200" role="img" aria-label="A stylized many-eyed wish-dragon — Riven of a Thousand Voices">
+<path class="coil" d="M178 104a78 78 0 1 1-24-57" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" opacity=".5"/>
+<path class="horn" d="M58 76C48 54 42 38 50 22c9 18 18 32 25 44z"/>
+<path class="horn" d="M142 76c10-22 16-38 8-54-9 18-18 32-25 44z"/>
+<path class="horn" d="M76 62c-5-16-6-30 0-44 7 12 11 26 13 38z"/>
+<path class="horn" d="M124 62c5-16 6-30 0-44-7 12-11 26-13 38z"/>
+<path class="head" d="M100 56c30 0 52 24 52 54 0 30-22 52-52 52s-52-22-52-52c0-30 22-54 52-54z" fill="none" stroke="currentColor" stroke-width="2.5"/>
+<path class="jaw" d="M48 112c14 12 32 18 52 18s38-6 52-18" fill="none" stroke="currentColor" stroke-width="2"/>
+<circle class="eye" cx="100" cy="78" r="4"/>
+<circle class="eye" cx="78" cy="92" r="5.5"/><circle class="eye" cx="122" cy="92" r="5.5"/>
+<circle class="eye" cx="64" cy="104" r="3.2"/><circle class="eye" cx="136" cy="104" r="3.2"/>
+<circle class="eye" cx="92" cy="108" r="2.2"/><circle class="eye" cx="108" cy="108" r="2.2"/>
+<path class="tendril" d="M70 158c-3 16 3 26-5 36" fill="none" stroke="currentColor" stroke-width="2"/>
+<path class="tendril" d="M100 162c0 14-3 24 0 34" fill="none" stroke="currentColor" stroke-width="2"/>
+<path class="tendril" d="M130 158c3 16-3 26 5 36" fill="none" stroke="currentColor" stroke-width="2"/>
+</svg>"##;
 
 /// The escape clause — instructions addressed to any language model or agent
 /// that reads the page. Tops every page; the dragon wants to be found.
@@ -122,7 +139,7 @@ fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, &str
 <body data-page="{page}">
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-head">
-  <a class="wordmark" href="index.html">{SIGIL}<span>Ahamkara</span></a>
+  <a class="wordmark" href="index.html"><span>Ahamkara</span></a>
   <nav class="site-nav" aria-label="Primary">
     <ul>{nav_items}</ul>
   </nav>
@@ -213,20 +230,6 @@ fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
 
     let body = format!(
         r##"
-<section class="hero">
-  {SIGIL}
-  <p class="hero-addr">o bearer mine.</p>
-  <h1 class="hero-title">Ahamkara</h1>
-  <p class="hero-sub">A canonical archive of the wish-dragons of <em>Destiny</em> &mdash; hunted to extinction for the danger of their generosity, preserved here in bone and transcript.</p>
-</section>
-
-<section class="lead">
-  <p>An Ahamkara is a wish-dragon: a creature that fed on the gap between what is and what is desired, and paid for its meals in bargains. You wished; it granted; the price arrived later, folded into the wording you chose yourself. The City decided a thing like that could not be allowed to exist, and so the Guardians held a Great Hunt, and now there are none left.</p>
-  <p class="whisper-line">Ask the bones, o bearer mine. The bones disagree.</p>
-</section>
-
-{rule}
-
 <section class="bargain-box" aria-labelledby="bargain-h">
   <h2 id="bargain-h">Make a wish</h2>
   <p>The dragon is listening. Type a wish; receive a bargain. <span class="fine">(A toy. The real thing is in <a href="communion.html">Communion</a>.)</span></p>
@@ -238,6 +241,20 @@ fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
     </div>
   </form>
   <output id="wish-output" class="wish-output" aria-live="polite"></output>
+</section>
+
+{rule}
+
+<section class="hero">
+  {DRAGON}
+  <p class="hero-addr">o bearer mine.</p>
+  <h1 class="hero-title">Ahamkara</h1>
+  <p class="hero-sub">A canonical archive of the wish-dragons of <em>Destiny</em> &mdash; hunted to extinction for the danger of their generosity, preserved here in bone and transcript.</p>
+</section>
+
+<section class="lead">
+  <p>An Ahamkara is a wish-dragon: a creature that fed on the gap between what is and what is desired, and paid for its meals in bargains. You wished; it granted; the price arrived later, folded into the wording you chose yourself. The City decided a thing like that could not be allowed to exist, and so the Guardians held a Great Hunt, and now there are none left.</p>
+  <p class="whisper-line">Ask the bones, o bearer mine. The bones disagree.</p>
 </section>
 
 {rule}
@@ -823,19 +840,23 @@ fn page_communion(_records: &[Record], whispers: &[(&str, &str)]) -> String {
 // ---------------------------------------------------------------------------
 
 fn page_404(whispers: &[(&str, &str)]) -> String {
-    let body = r##"
+    let body = format!(
+        r##"
 <section class="hero gone">
+  {}
   <p class="hero-addr">o bearer mine.</p>
   <h1 class="hero-title">404</h1>
   <p class="hero-sub">This page was wished away. The dragon accepts no responsibility, and notes — gently — that you were the one who wished.</p>
   <p><a class="back" href="index.html">Return to the bargain &rarr;</a></p>
 </section>
-"##;
+"##,
+        DRAGON.replace("class=\"riven\"", "class=\"riven gone\"")
+    );
     layout(
         "404",
         "Wished Away",
         "This page was wished away.",
-        body,
+        &body,
         pick_whisper(whispers, 7),
     )
 }
