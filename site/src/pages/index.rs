@@ -52,6 +52,7 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
 <section class="hero split">
   <div class="hero-left">
     <h1 class="hero-title">Ahamkara</h1>
+    <p class="hero-desc">An Ahamkara is a wish-dragon: a creature that fed on the gap between what is and what is desired, and paid for its meals in bargains. You wished; it granted; the price arrived later, folded into the wording you chose yourself. The City decided a thing like that could not be allowed to exist, and so the Guardians held a Great Hunt, and now there are none left.</p>
     <figure class="featured">
       <blockquote id="featured-quote"><p>&ldquo;{}&rdquo;</p></blockquote>
       <figcaption>&mdash; <span id="featured-speaker">{}</span></figcaption>
@@ -74,7 +75,6 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
 </section>
 
 <section class="lead">
-  <p>An Ahamkara is a wish-dragon: a creature that fed on the gap between what is and what is desired, and paid for its meals in bargains. You wished; it granted; the price arrived later, folded into the wording you chose yourself. The City decided a thing like that could not be allowed to exist, and so the Guardians held a Great Hunt, and now there are none left.</p>
   <p class="whisper-line">Ask the bones, o bearer mine. The bones disagree.</p>
 </section>
 
