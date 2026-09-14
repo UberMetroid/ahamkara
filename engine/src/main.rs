@@ -21,12 +21,6 @@ fn usage() {
 }
 
 fn version() -> String {
-    for base in [Path::new("."), Path::new(".."), Path::new("../..")] {
-        let v = base.join("VERSION");
-        if let Ok(s) = std::fs::read_to_string(&v) {
-            return s.trim().to_string();
-        }
-    }
     include_str!("../../VERSION").trim().to_string()
 }
 

@@ -3,7 +3,7 @@
 /* ---------- unbox index ---------- */
 body.page-index { background: #07060b; }
 body.page-index main { max-width: 100%; padding: 0; }
-body.page-index .trap-head { background: transparent; border-bottom: none; }
+body.page-index .trap-head { background: transparent; border-bottom: none; padding: 0.25rem clamp(1rem, 4vw, 3rem); }
 
 /* ---------- hero viewport (first fold) ---------- */
 .hero-viewport {
@@ -11,7 +11,7 @@ body.page-index .trap-head { background: transparent; border-bottom: none; }
   width: 100%;
   height: calc(100vh - 3.2rem);
   height: calc(100dvh - 3.2rem);
-  min-height: 34rem;
+  min-height: 24rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -235,4 +235,10 @@ body.page-index .trap-head { background: transparent; border-bottom: none; }
     background: radial-gradient(ellipse 80% 60% at 50% 45%, rgba(199, 125, 255, 0.08) 0%, rgba(143, 227, 208, 0.04) 40%, #07060b 80%) !important;
   }
 }
-
+@media (max-width: 720px) {
+  .hero-viewport {
+    height: calc(100vh - 5.2rem);
+    height: calc(100dvh - 5.2rem);
+    min-height: 20rem;
+  }
+}

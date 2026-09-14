@@ -20,6 +20,23 @@ fn version_is_semver() {
 }
 
 #[test]
+fn version_ignores_foreign_version_file() {
+    let tmp = std::env::temp_dir().join(format!("ahamkara_test_{}", std::process::id()));
+    std::fs::create_dir_all(&tmp).expect("create temp dir");
+    std::fs::write(tmp.join("VERSION"), "99.99.99\n").expect("write foreign VERSION");
+    let out = Command::new(env!("CARGO_BIN_EXE_ahamkara"))
+        .args(&["--version"])
+        .current_dir(&tmp)
+        .output()
+        .expect("spawn ahamkara");
+    let _ = std::fs::remove_dir_all(&tmp);
+    assert!(out.status.success());
+    let s = String::from_utf8_lossy(&out.stdout);
+    assert!(!s.contains("99.99.99"), "ahamkara --version must not read local ./VERSION file");
+    assert!(s.trim().starts_with("ahamkara 2.1."));
+}
+
+#[test]
 fn help_shows_usage() {
     let (ok, out) = run(&["--help"]);
     assert!(ok && out.contains("Usage:"));
