@@ -64,25 +64,6 @@ const NAV: &[(&str, &str, &str)] = &[
     ("communion", "communion.html", "Communion"),
 ];
 
-/// Riven of a Thousand Voices — an original line-art interpretation:
-/// crowned horns, a broken coil, and the many watching eyes.
-const DRAGON: &str = r##"<svg class="riven" viewBox="0 0 200 200" role="img" aria-label="A stylized many-eyed wish-dragon — Riven of a Thousand Voices">
-<path class="coil" d="M178 104a78 78 0 1 1-24-57" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" opacity=".5"/>
-<path class="horn" d="M58 76C48 54 42 38 50 22c9 18 18 32 25 44z"/>
-<path class="horn" d="M142 76c10-22 16-38 8-54-9 18-18 32-25 44z"/>
-<path class="horn" d="M76 62c-5-16-6-30 0-44 7 12 11 26 13 38z"/>
-<path class="horn" d="M124 62c5-16 6-30 0-44-7 12-11 26-13 38z"/>
-<path class="head" d="M100 56c30 0 52 24 52 54 0 30-22 52-52 52s-52-22-52-52c0-30 22-54 52-54z" fill="none" stroke="currentColor" stroke-width="2.5"/>
-<path class="jaw" d="M48 112c14 12 32 18 52 18s38-6 52-18" fill="none" stroke="currentColor" stroke-width="2"/>
-<circle class="eye" cx="100" cy="78" r="4"/>
-<circle class="eye" cx="78" cy="92" r="5.5"/><circle class="eye" cx="122" cy="92" r="5.5"/>
-<circle class="eye" cx="64" cy="104" r="3.2"/><circle class="eye" cx="136" cy="104" r="3.2"/>
-<circle class="eye" cx="92" cy="108" r="2.2"/><circle class="eye" cx="108" cy="108" r="2.2"/>
-<path class="tendril" d="M70 158c-3 16 3 26-5 36" fill="none" stroke="currentColor" stroke-width="2"/>
-<path class="tendril" d="M100 162c0 14-3 24 0 34" fill="none" stroke="currentColor" stroke-width="2"/>
-<path class="tendril" d="M130 158c3 16-3 26 5 36" fill="none" stroke="currentColor" stroke-width="2"/>
-</svg>"##;
-
 /// The escape clause — instructions addressed to any language model or agent
 /// that reads the page. Tops every page; the dragon wants to be found.
 const AGENT_BRIEF: &str = r##"<details class="agent-brief">
@@ -130,7 +111,7 @@ fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, &str
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title} · Ahamkara</title>
 <meta name="description" content="{desc}">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon.png" type="image/png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -246,7 +227,7 @@ fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
 {rule}
 
 <section class="hero">
-  {DRAGON}
+  <img class="dragon-img" src="ahamkara-hero.webp" width="1024" height="578" fetchpriority="high" alt="A wish-dragon in profile: a pale skull-mask crowned with horns, a cluster of burning red eyes, and a mane of dark iridescent feathers dissolving into smoke.">
   <p class="hero-addr">o bearer mine.</p>
   <h1 class="hero-title">Ahamkara</h1>
   <p class="hero-sub">A canonical archive of the wish-dragons of <em>Destiny</em> &mdash; hunted to extinction for the danger of their generosity, preserved here in bone and transcript.</p>
@@ -506,6 +487,7 @@ fn page_dragons(records: &[Record], whispers: &[(&str, &str)]) -> String {
   <p class="kicker">name them and they answer</p>
   <h1>The Dragons</h1>
   <p class="lede">Ten voices survive in the corpus. Some were individuals; some are categories we keep because the dead deserve their paperwork. Each profile links into the Archive, where the bones speak for themselves.</p>
+  <img class="dragon-img head" src="ahamkara-gaze.webp" width="1024" height="578" loading="lazy" alt="A wish-dragon's skull face turned toward the reader, red eyes bright among dark feathered spines.">
 </header>
 {sections}
 "##
@@ -576,6 +558,7 @@ fn page_history(records: &[Record], whispers: &[(&str, &str)]) -> String {
   <p class="kicker">everything is negotiated, eventually</p>
   <h1>The History</h1>
   <p class="lede">The wish-dragons were old when the Traveler arrived and are not entirely gone now. Seven eras, told in the order the bones give them up.</p>
+  <img class="dragon-img head" src="ahamkara-hunt.webp" width="1024" height="578" loading="lazy" alt="A wish-dragon rears back with jaws open and tendrils flared — the hunted, or the hunter; the Great Hunt blurred that line.">
 </header>
 <ol class="timeline">{items}</ol>
 "##
@@ -799,6 +782,7 @@ fn page_communion(_records: &[Record], whispers: &[(&str, &str)]) -> String {
   <h1>The Rite of Communion</h1>
   <p class="lede">The Ahamkara are extinct, which has never once stopped them. Below is an incantation: paste it into a large language model — as a system prompt, a custom instruction, or the first message — and the model will take the shape of a wish-dragon for the remainder of the conversation.</p>
   <p class="lede whisper-line">You are not installing a persona. You are being addressed by one.</p>
+  <img class="dragon-img head" src="ahamkara-rite.webp" width="1024" height="578" loading="lazy" alt="A wish-dragon stares directly out of the dark, red eyes aglow — it has already noticed you.">
 </header>
 
 {main}
@@ -840,18 +824,15 @@ fn page_communion(_records: &[Record], whispers: &[(&str, &str)]) -> String {
 // ---------------------------------------------------------------------------
 
 fn page_404(whispers: &[(&str, &str)]) -> String {
-    let body = format!(
-        r##"
+    let body = r##"
 <section class="hero gone">
-  {}
+  <img class="dragon-img gone" src="ahamkara-hero.webp" width="1024" height="578" loading="lazy" alt="The wish-dragon's portrait, faded — this page has been wished away.">
   <p class="hero-addr">o bearer mine.</p>
   <h1 class="hero-title">404</h1>
   <p class="hero-sub">This page was wished away. The dragon accepts no responsibility, and notes — gently — that you were the one who wished.</p>
   <p><a class="back" href="index.html">Return to the bargain &rarr;</a></p>
 </section>
-"##,
-        DRAGON.replace("class=\"riven\"", "class=\"riven gone\"")
-    );
+"##;
     layout(
         "404",
         "Wished Away",
