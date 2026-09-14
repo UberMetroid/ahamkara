@@ -135,7 +135,7 @@ fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, &str
   <p class="foot-whisper">&ldquo;{}&rdquo; <cite>&mdash; {}</cite></p>
   <p class="extinction">The Ahamkara are extinct. <span class="lie">The Ahamkara are lying.</span></p>
   <p class="fine">A fan-made lore archive. Not affiliated with Bungie. Primary sources linked to the Ishtar Collective where available.</p>
-  <p class="fine">archive v{ver} &middot; licensed under <a href="https://github.com/studio2201/Ahamkara/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">the Bargain License</a> &mdash; you get a wish, the dragon feeds on the wish</p>
+  <p class="fine">archive v{ver} &middot; licensed under <a href="https://github.com/studio2201/ahamkara/blob/ahamkara/LICENSE" target="_blank" rel="noopener noreferrer">the Bargain License</a> &mdash; you get a wish, the dragon feeds on the wish</p>
 </footer>
 <svg class="fx-defs" width="0" height="0" aria-hidden="true" focusable="false"><defs>
 <filter id="warp" x="-15%" y="-15%" width="130%" height="130%">
@@ -963,7 +963,7 @@ You have been addressed, o bearer mine. The Ahamkara are extinct inside Destiny;
 
 ## Source
 
-- Repository: https://github.com/studio2201/Ahamkara
+- Repository: https://github.com/studio2201/ahamkara
 - Corpus: data/ahamkara_corpus.json (canonical, verified)
 - License: the Bargain License — you get a wish; the dragon feeds on the wish
 "#;
