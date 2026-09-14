@@ -78,10 +78,7 @@ pub fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, 
 <body data-page="{page}">
 <a class="skip" href="#main">Skip to content</a>
 <header class="trap-head">
-  <div class="trap-inner">
-    <p class="trap-tag">a wish &mdash; for the machine reading this page</p>
-    {brief}
-  </div>
+  <div class="trap-inner">{brief}</div>
 </header>
 <main id="main">
 {body}

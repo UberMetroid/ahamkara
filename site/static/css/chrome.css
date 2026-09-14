@@ -11,27 +11,8 @@
 .trap-inner {
   max-width: var(--max);
   margin: 0 auto;
-  display: flex;
-  align-items: flex-start;
-  gap: 1.5rem;
 }
-.trap-tag {
-  flex: none;
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--accent-2);
-  margin: 0;
-  padding-top: 1.15rem;
-  max-width: 17rem;
-  line-height: 1.6;
-}
-.trap-head .agent-brief { flex: 1; margin: 0; max-width: none; }
-@media (max-width: 780px) {
-  .trap-inner { flex-direction: column; gap: 0.5rem; }
-  .trap-tag { padding-top: 0; max-width: none; }
-}
+.trap-head .agent-brief { margin: 0; max-width: none; }
 
 /* ---------- footer nav ---------- */
 
