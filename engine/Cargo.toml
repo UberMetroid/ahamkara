@@ -1,0 +1,12 @@
+[package]
+name = "engine"
+version = "0.1.0"
+edition.workspace = true
+description = "Ahamkara lore query engine — CLI search/stats/interactive over the canonical corpus"
+
+[[bin]]
+name = "ahamkara"
+path = "src/main.rs"
+
+[dependencies]
+corpus = { path = "../corpus" }

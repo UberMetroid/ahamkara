@@ -1,0 +1,10 @@
+[workspace]
+resolver = "2"
+members = ["corpus", "site", "engine", "tools"]
+
+[workspace.package]
+edition = "2021"
+license = "LicenseRef-Bargain"
+
+[profile.release]
+opt-level = 2

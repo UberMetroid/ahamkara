@@ -15,7 +15,7 @@ use std::collections::BTreeMap;
 use std::fs;
 use std::path::Path;
 
-use corpus::load_records;
+use crate::corpus::{corpus_path, load_records};
 use llms::llms_txt;
 
 /// Deterministic-ish per-page footer whisper so each page feels different.
@@ -67,7 +67,8 @@ fn main() {
     let root = Path::new(env!("CARGO_MANIFEST_DIR")).join("..");
     let out_dir = root.join("dist");
 
-    let records = load_records(&root);
+    let corpus_file = corpus_path(&root).expect("data/ahamkara_corpus.jsonl not found");
+    let records = load_records(&corpus_file);
 
     // Ambient whisper pool: short, punchy transcripts.
     let mut whispers: Vec<(&str, &str)> = records
