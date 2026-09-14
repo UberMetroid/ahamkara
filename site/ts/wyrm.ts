@@ -100,13 +100,11 @@ export function feedWyrm(x?: number, y?: number): void {
   if (!entity) return;
   let cx = typeof x === "number" ? x : window.innerWidth / 2;
   let cy = typeof y === "number" ? y : window.innerHeight / 2;
-  if (typeof x !== "number" || typeof y !== "number") {
-    const el = document.querySelector(".bargain-box");
-    if (el) {
-      const r = el.getBoundingClientRect();
-      cx = r.left + r.width / 2;
-      cy = r.top + r.height / 2;
-    }
+  const el = document.querySelector(".bargain-box");
+  if (el) {
+    const r = el.getBoundingClientRect();
+    cx = Math.round(r.left + r.width / 2);
+    cy = Math.round(r.top);
   }
 
   if (!entity.isSummoned) {
@@ -182,6 +180,17 @@ export function initWyrm(): void {
   });
 
   window.addEventListener("resize", resize, { passive: true });
+
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (entity?.isSummoned) {
+        entity.onScroll();
+        wake();
+      }
+    },
+    { passive: true }
+  );
 
   document.addEventListener("visibilitychange", () => {
     if (document.hidden) {

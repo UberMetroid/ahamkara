@@ -29,12 +29,13 @@ export function initBargain(): void {
     if (!wish) return;
     const cleaned = wish.replace(/[.!?]+$/, "");
     out.textContent = pick(replies)(cleaned);
-    const r = out.getBoundingClientRect();
-    const cx = r.left + r.width / 2;
-    const cy = r.top + r.height / 2;
-    fxBurst(cx, cy, 44); // the wish detonates
-    fxRing(cx, cy);
-    grantFlash(cx, cy);
+    const box = document.querySelector(".bargain-box") as HTMLElement | null;
+    const boxRect = box ? box.getBoundingClientRect() : form.getBoundingClientRect();
+    const cx = Math.round(boxRect.left + boxRect.width / 2);
+    const cy = Math.round(boxRect.top);
+    fxBurst(cx, Math.round(boxRect.top + boxRect.height / 2), 44);
+    fxRing(cx, Math.round(boxRect.top + boxRect.height / 2));
+    grantFlash(cx, Math.round(boxRect.top + boxRect.height / 2));
     window.dispatchEvent(
       new CustomEvent("ahamkara:wish", { detail: { wish: cleaned, x: cx, y: cy } })
     );

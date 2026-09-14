@@ -50,12 +50,19 @@ export function getPlatforms(): Platform[] {
     const els = document.querySelectorAll(item.sel);
     els.forEach((el) => {
       const r = el.getBoundingClientRect();
-      if (r.width >= 70 && r.top >= 40 && r.top <= winH - 60) {
+      if (r.width >= 60 && r.top >= 20 && r.top <= winH - 30) {
         platforms.push({
           left: Math.max(10, r.left),
           right: Math.min(winW - 10, r.right),
           y: Math.round(r.top),
           isWishBox: item.isWish,
+        });
+      } else if (item.isWish && r.width >= 60) {
+        platforms.push({
+          left: Math.max(10, r.left),
+          right: Math.min(winW - 10, r.right),
+          y: Math.max(25, Math.min(winH - 45, Math.round(r.top))),
+          isWishBox: true,
         });
       }
     });

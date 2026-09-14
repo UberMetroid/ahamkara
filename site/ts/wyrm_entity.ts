@@ -44,16 +44,9 @@ export class WyrmEntity {
 
   constructor(cfg: WyrmConfig = DEFAULT_WYRM_CONFIG) {
     this.config = cfg;
-    const summoned = typeof sessionStorage !== "undefined" &&
-      sessionStorage.getItem(SESSION_KEY) === "true";
-    if (summoned) {
-      const count = parseInt(sessionStorage.getItem(SEGMENTS_KEY) || "", 10) || cfg.baseSegments;
-      this.initSegments(count);
-      this.state = "pacing";
-      this.currentPlatform = getPlatforms()[0];
-      this.x = (this.currentPlatform.left + this.currentPlatform.right) / 2;
-      this.y = this.currentPlatform.y;
-    }
+    this.state = "unsummoned";
+    this.segments = [];
+    try { sessionStorage.removeItem(SESSION_KEY); sessionStorage.removeItem(SEGMENTS_KEY); } catch { /* sandboxed */ }
   }
 
   get isSummoned(): boolean {
@@ -68,18 +61,25 @@ export class WyrmEntity {
   }
 
   awaken(originX: number, originY: number): void {
-    const count = this.config.baseSegments;
-    this.x = originX; this.y = originY;
-    this.initSegments(count);
+    const plats = getPlatforms();
+    this.currentPlatform = plats.find((p) => p.isWishBox) || plats[0];
+    this.x = originX; this.y = this.currentPlatform.y;
+    this.initSegments(this.config.baseSegments);
     this.state = "pacing"; this.direction = "right";
-    this.currentPlatform = getPlatforms().find((p) => p.isWishBox) || getPlatforms()[0];
-    try {
-      sessionStorage.setItem(SESSION_KEY, "true");
-      sessionStorage.setItem(SEGMENTS_KEY, String(count));
-    } catch { /* sandboxed */ }
-    this.spawnHalo(originX, originY, "#ff6ea0");
-    this.spawnBurst(originX, originY, 32);
-    this.say(pick(WHISPERS_AWAKEN), originX, originY - 26);
+    this.spawnHalo(this.x, this.y, "#ff6ea0");
+    this.spawnBurst(this.x, this.y, 32);
+    this.say(pick(WHISPERS_AWAKEN), this.x, this.y - 26);
+  }
+
+  onScroll(): void {
+    if (!this.currentPlatform?.isWishBox) return;
+    const box = document.querySelector(".bargain-box");
+    if (!box) return;
+    const r = box.getBoundingClientRect();
+    this.currentPlatform.y = Math.round(r.top);
+    this.currentPlatform.left = Math.max(10, r.left);
+    this.currentPlatform.right = Math.min(window.innerWidth - 10, r.right);
+    if (this.state === "pacing") this.y = this.currentPlatform.y;
   }
 
   feed(originX: number, originY: number): void {
