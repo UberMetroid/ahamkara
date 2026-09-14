@@ -7,7 +7,7 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
     let featured = whispers
         .iter()
         .copied()
-        .find(|(q, _)| q.contains("Ruin to kings"))
+        .find(|(q, _)| q.contains("Reality is the finest flesh"))
         .unwrap_or(("Reality is the finest flesh, oh bearer mine. And are you not hungry?", "Skull of Dire Ahamkara"));
 
     let n = records.len();
@@ -49,38 +49,32 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
     <p class="hero-addr">o bearer mine.</p>
     <h1 class="hero-title">Ahamkara</h1>
     <p class="hero-sub">A canonical archive of the wish-dragons of <em>Destiny</em> &mdash; hunted to extinction for the danger of their generosity, preserved here in bone and transcript.</p>
+    <figure class="featured">
+      <blockquote id="featured-quote"><p>&ldquo;{}&rdquo;</p></blockquote>
+      <figcaption>&mdash; <span id="featured-speaker">{}</span></figcaption>
+    </figure>
   </div>
   <div class="hero-right">
     {brief}
+    <section class="bargain-box" aria-labelledby="bargain-h">
+      <h2 id="bargain-h">Make a wish</h2>
+      <p>The dragon is listening. Type a wish; receive a bargain. <span class="fine">(A toy. The real thing is in <a href="communion.html">Communion</a>.)</span></p>
+      <form id="wish-form" class="wish-form" autocomplete="off">
+        <label for="wish-input">I wish for&hellip;</label>
+        <div class="wish-row">
+          <input id="wish-input" name="wish" type="text" maxlength="140" placeholder="&hellip;more wishes" required>
+          <button type="submit">Wish</button>
+        </div>
+      </form>
+      <output id="wish-output" class="wish-output" aria-live="polite"></output>
+    </section>
   </div>
 </section>
-
-<section class="bargain-box" aria-labelledby="bargain-h">
-  <h2 id="bargain-h">Make a wish</h2>
-  <p>The dragon is listening. Type a wish; receive a bargain. <span class="fine">(A toy. The real thing is in <a href="communion.html">Communion</a>.)</span></p>
-  <form id="wish-form" class="wish-form" autocomplete="off">
-    <label for="wish-input">I wish for&hellip;</label>
-    <div class="wish-row">
-      <input id="wish-input" name="wish" type="text" maxlength="140" placeholder="&hellip;more wishes" required>
-      <button type="submit">Wish</button>
-    </div>
-  </form>
-  <output id="wish-output" class="wish-output" aria-live="polite"></output>
-</section>
-
-{rule}
 
 <section class="lead">
   <p>An Ahamkara is a wish-dragon: a creature that fed on the gap between what is and what is desired, and paid for its meals in bargains. You wished; it granted; the price arrived later, folded into the wording you chose yourself. The City decided a thing like that could not be allowed to exist, and so the Guardians held a Great Hunt, and now there are none left.</p>
   <p class="whisper-line">Ask the bones, o bearer mine. The bones disagree.</p>
 </section>
-
-{rule}
-
-<figure class="featured">
-  <blockquote id="featured-quote"><p>&ldquo;{}&rdquo;</p></blockquote>
-  <figcaption>&mdash; <span id="featured-speaker">{}</span></figcaption>
-</figure>
 
 {rule}
 

@@ -78,9 +78,6 @@ pub fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, 
 </head>
 <body data-page="{page}">
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-head">
-  <a class="wordmark" href="index.html"><span>Ahamkara</span></a>
-</header>
 <main id="main">
 {brief}
 {body}

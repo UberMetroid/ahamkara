@@ -1,33 +1,5 @@
-/* chrome.css — site chrome: header/nav, page heads, footer, the agent brief */
-/* ---------- header ---------- */
-
-.site-head {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.1rem clamp(1rem, 4vw, 3rem) 0.9rem;
-  border-bottom: 1px solid color-mix(in srgb, var(--line) 55%, transparent);
-  position: sticky;
-  top: 0;
-  background: color-mix(in srgb, var(--void) 82%, transparent);
-  backdrop-filter: blur(10px);
-  z-index: 50;
-}
-
-.wordmark {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  font-family: var(--font-mono);
-  font-weight: 600;
-  font-size: 0.95rem;
-  letter-spacing: 0.35em;
-  text-transform: uppercase;
-  color: var(--bone);
-  text-decoration: none;
-  white-space: nowrap;
-}
-.wordmark .sigil { width: 26px; height: 26px; color: var(--accent); flex: none; }
+/* chrome.css — site chrome: footer nav, page heads, footer, the agent brief */
+/* ---------- footer nav ---------- */
 
 .foot-nav ul {
   display: flex;
@@ -80,7 +52,7 @@
 main {
   max-width: var(--max);
   margin: 0 auto;
-  padding: clamp(1.5rem, 4vw, 4rem) clamp(1rem, 4vw, 3rem) 5rem;
+  padding: clamp(2.5rem, 6vw, 4.5rem) clamp(1rem, 4vw, 3rem) 5rem;
 }
 
 .page-head { max-width: var(--measure); margin-bottom: 3rem; }
@@ -127,16 +99,17 @@ main {
 
 .agent-brief {
   max-width: var(--measure);
-  margin: 0 auto 3rem;
+  margin: 0 0 3rem;
   border: 1px solid color-mix(in srgb, var(--accent-2) 55%, transparent);
   border-radius: 12px;
   background: color-mix(in srgb, var(--accent-2) 6%, var(--void-2));
   box-shadow: 0 0 28px color-mix(in srgb, var(--accent-2) 16%, transparent);
 }
 .agent-brief summary {
-  display: flex;
-  align-items: baseline;
-  gap: 0.75rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 0.75rem;
+  align-items: start;
   padding: 1rem 1.25rem;
   cursor: pointer;
   list-style: none;
@@ -161,7 +134,9 @@ main {
   color: transparent;
 }
 .agent-cta {
-  margin-left: auto;
+  grid-column: 2;
+  justify-self: end;
+  margin-top: 0.3rem;
   font-family: var(--font-mono);
   font-size: 0.72rem;
   letter-spacing: 0.18em;

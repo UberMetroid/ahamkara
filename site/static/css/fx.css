@@ -3,7 +3,6 @@
 
 body.tripping .hero-title,
 body.tripping .page-head h1,
-body.tripping .wordmark,
 body.tripping .hero-addr {
   animation: rgb-split 0.75s ease-in-out infinite;
 }
@@ -95,10 +94,6 @@ body.tripping .hero-addr {
 /* ---------- responsive ---------- */
 
 @media (max-width: 720px) {
-  .site-head { flex-direction: column; align-items: stretch; gap: 0.5rem; padding: 0.75rem 1rem; }
-  .wordmark { justify-content: center; }
-  .site-nav ul { justify-content: flex-start; }
-  .site-nav a { padding: 0.5rem 0.6rem; }
   .entry summary { flex-direction: column; gap: 0.4rem; }
   .wish-row { flex-direction: column; }
   .wish-row button { padding: 0.8rem; }
