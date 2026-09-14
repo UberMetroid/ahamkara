@@ -20,10 +20,17 @@
 .hero-desc { max-width: var(--measure); margin: 0 auto 1.75rem; color: var(--bone); font-size: 1.08em; }
 .gone .hero-title { background: none; color: var(--bone-dim); }
 
-/* The rotating whisper under the masthead — "o bearer mine." is one of them. */
-.hero .featured { max-width: var(--measure); margin: 0 auto 0.5rem; text-align: center; }
-.hero .featured blockquote p { font-size: 1.25rem; line-height: 1.5; color: var(--accent); }
-.hero .featured figcaption { margin-top: 0.5rem; }
+/* The rotating whisper under the masthead — types out, pulls back,
+   walks the whole chorus. "o bearer mine." is one of them. */
+.hero .featured { max-width: var(--measure); margin: 0 auto 0.5rem; text-align: center; min-height: 7rem; }
+.hero .featured blockquote p { font-size: 1.25rem; line-height: 1.5; color: var(--accent); min-height: 3.6em; margin: 0; }
+.hero .featured blockquote p::after {
+  content: "▍";
+  color: var(--accent-2);
+  animation: caret-blink 1.1s steps(2) infinite;
+}
+@keyframes caret-blink { 50% { opacity: 0; } }
+.hero .featured figcaption { margin-top: 0.5rem; transition: opacity 0.5s; }
 
 .back { font-family: var(--font-mono); }
 

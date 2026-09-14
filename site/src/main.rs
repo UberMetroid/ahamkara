@@ -27,6 +27,27 @@ fn json_str(s: &str) -> String {
     serde_json::to_string(s).unwrap()
 }
 
+/// Some transcripts arrive wearing their own quotes and a baked-in
+/// " —Speaker" tail. Strip both — the display layer adds its own
+/// quotes and renders the speaker separately.
+fn clean_whisper(t: &str) -> &str {
+    let q = t.trim().trim_matches('"').trim();
+    let q = match q.rsplit_once(" —") {
+        Some((a, tail))
+            if tail.split_whitespace().count() <= 6
+                && tail.chars().next().is_some_and(|c| c.is_uppercase()) =>
+        {
+            a.trim().trim_matches('"').trim()
+        }
+        _ => q,
+    };
+    if q.len() == t.len() {
+        t
+    } else {
+        Box::leak(q.to_string().into_boxed_str())
+    }
+}
+
 /// Recursively copy a directory tree (static assets may nest, e.g. css/).
 fn copy_dir(src: &Path, dest: &Path) {
     for entry in fs::read_dir(src).unwrap_or_else(|e| panic!("read {}: {e}", src.display())) {
@@ -52,7 +73,7 @@ fn main() {
     let mut whispers: Vec<(&str, &str)> = records
         .iter()
         .filter(|r| (20..=140).contains(&r.transcript.len()))
-        .map(|r| (r.transcript.as_str(), r.speaker.as_deref().unwrap_or("the archive")))
+        .map(|r| (clean_whisper(r.transcript.as_str()), r.speaker.as_deref().unwrap_or("the archive")))
         .collect();
     if whispers.is_empty() {
         whispers.push(("Reality is the finest flesh, oh bearer mine.", "Skull of Dire Ahamkara"));
