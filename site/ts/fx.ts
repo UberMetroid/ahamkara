@@ -19,6 +19,10 @@ interface Particle {
 interface Ring {
   x: number; y: number; r: number; life: number; max: number;
 }
+interface Tear {
+  pts: { x: number; y: number }[];
+  life: number; max: number;
+}
 
 /* Shared hooks other modules call; no-ops until initFx wires them. */
 export let fxBurst: (x: number, y: number, n?: number) => void = () => {};
@@ -32,8 +36,10 @@ export function initFx(): void {
 
   const particles: Particle[] = [];
   const rings: Ring[] = [];
+  const tears: Tear[] = [];
   const MAXP = 384;
   const MAXR = 10;
+  const MAXT = 2;
 
   const resize = (): void => {
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -109,6 +115,25 @@ export function initFx(): void {
   };
   window.setTimeout(spontaneous, 6000);
 
+  /* Reality tears — the world is thinner here; cracks show it. */
+  const tear = (): void => {
+    if (!document.hidden && tears.length < MAXT) {
+      const pts: { x: number; y: number }[] = [];
+      let x = window.innerWidth * (0.1 + Math.random() * 0.8);
+      let y = window.innerHeight * (0.1 + Math.random() * 0.6);
+      const drift = (Math.random() - 0.5) * 1.4;
+      const n = 8 + Math.floor(Math.random() * 10);
+      for (let i = 0; i < n; i++) {
+        pts.push({ x, y });
+        x += (Math.random() - 0.5 + drift) * 60;
+        y += 18 + Math.random() * 34;
+      }
+      tears.push({ pts, life: 0, max: 60 + Math.random() * 40 });
+    }
+    window.setTimeout(tear, 15000 + Math.random() * 20000);
+  };
+  window.setTimeout(tear, 10000);
+
   /* Render loop — parks itself while the tab is hidden. */
   let running = true;
   const frame = (): void => {
@@ -150,6 +175,27 @@ export function initFx(): void {
       ctx.strokeStyle = "rgb(199,125,255)";
       ctx.beginPath();
       ctx.arc(r.x, r.y, r.r * 0.8, 0, Math.PI * 2);
+      ctx.stroke();
+    }
+    for (let i = tears.length - 1; i >= 0; i--) {
+      const tr = tears[i];
+      tr.life++;
+      const t = 1 - tr.life / tr.max;
+      if (t <= 0) {
+        tears.splice(i, 1);
+        continue;
+      }
+      const shown = Math.floor(tr.pts.length * Math.min(1, tr.life / 12));
+      ctx.globalAlpha = Math.min(0.85, t * 2);
+      ctx.lineWidth = 1.4;
+      ctx.strokeStyle = "rgb(236,229,211)";
+      ctx.beginPath();
+      ctx.moveTo(tr.pts[0].x, tr.pts[0].y);
+      for (let j = 1; j < shown; j++) ctx.lineTo(tr.pts[j].x, tr.pts[j].y);
+      ctx.stroke();
+      ctx.globalAlpha = t * 0.3;
+      ctx.lineWidth = 4;
+      ctx.strokeStyle = "rgb(199,125,255)";
       ctx.stroke();
     }
     ctx.globalAlpha = 1;

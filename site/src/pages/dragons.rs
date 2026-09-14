@@ -103,7 +103,7 @@ pub fn page_dragons(records: &[Record], whispers: &[(&str, &str)]) -> String {
   <p class="kicker">name them and they answer</p>
   <h1>The Dragons</h1>
   <p class="lede">Ten voices survive in the corpus. Some were individuals; some are categories we keep because the dead deserve their paperwork. Each profile links into the Archive, where the bones speak for themselves.</p>
-  <img class="dragon-img head" src="ahamkara-gaze.webp" width="1024" height="578" loading="lazy" alt="A wish-dragon's skull face turned toward the reader, red eyes bright among dark feathered spines.">
+  <canvas class="watcher head-eye" aria-hidden="true"></canvas>
 </header>
 {sections}
 "##

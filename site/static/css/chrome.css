@@ -4,13 +4,12 @@
 .site-head {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 1rem clamp(1rem, 4vw, 3rem);
-  border-bottom: 1px solid var(--line);
+  justify-content: center;
+  padding: 1.1rem clamp(1rem, 4vw, 3rem) 0.9rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 55%, transparent);
   position: sticky;
   top: 0;
-  background: color-mix(in srgb, var(--void) 88%, transparent);
+  background: color-mix(in srgb, var(--void) 82%, transparent);
   backdrop-filter: blur(10px);
   z-index: 50;
 }
@@ -30,25 +29,24 @@
 }
 .wordmark .sigil { width: 26px; height: 26px; color: var(--accent); flex: none; }
 
-.site-nav ul {
+.foot-nav ul {
   display: flex;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 0.1rem;
   list-style: none;
-  margin: 0;
+  margin: 0 0 1.75rem;
   padding: 0;
-  overflow-x: auto;
-  scrollbar-width: thin;
-  -webkit-overflow-scrolling: touch;
 }
-.site-nav li { display: flex; align-items: center; }
-.site-nav li:not(:last-child)::after {
+.foot-nav li { display: flex; align-items: center; }
+.foot-nav li:not(:last-child)::after {
   content: "·";
   color: var(--line);
   margin: 0 0.15rem;
   font-family: var(--font-mono);
 }
-.site-nav a {
+.foot-nav a {
   display: inline-block;
   padding: 0.45rem 0.55rem;
   font-family: var(--font-mono);
@@ -60,9 +58,9 @@
   white-space: nowrap;
   border-bottom: 2px solid transparent;
 }
-.site-nav a:hover { color: var(--bone); }
-.site-nav a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); }
-.site-nav a.cta {
+.foot-nav a:hover { color: var(--bone); }
+.foot-nav a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); }
+.foot-nav a.cta {
   background: var(--accent);
   color: var(--void);
   border-radius: 8px;
@@ -71,8 +69,8 @@
   margin-left: 0.4rem;
   border-bottom: none;
 }
-.site-nav a.cta:hover { background: var(--accent-2); color: var(--void); }
-.site-nav a.cta[aria-current="page"] {
+.foot-nav a.cta:hover { background: var(--accent-2); color: var(--void); }
+.foot-nav a.cta[aria-current="page"] {
   outline: 2px solid var(--accent-2);
   outline-offset: 2px;
 }

@@ -60,7 +60,7 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
 {rule}
 
 <section class="hero">
-  <img class="dragon-img" src="ahamkara-hero.webp" width="1024" height="578" fetchpriority="high" alt="A wish-dragon in profile: a pale skull-mask crowned with horns, a cluster of burning red eyes, and a mane of dark iridescent feathers dissolving into smoke.">
+  <canvas class="watcher hero-eye" aria-hidden="true"></canvas>
   <p class="hero-addr">o bearer mine.</p>
   <h1 class="hero-title">Ahamkara</h1>
   <p class="hero-sub">A canonical archive of the wish-dragons of <em>Destiny</em> &mdash; hunted to extinction for the danger of their generosity, preserved here in bone and transcript.</p>
