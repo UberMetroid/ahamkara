@@ -46,11 +46,15 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
         r##"
 <div class="page-top">
   <p class="hero-addr">o bearer mine.</p>
-  {brief}
+  <div class="trap-wrap">
+    <p class="trap-tag">a wish &mdash; for the machine reading this page</p>
+    {brief}
+  </div>
 </div>
 
 <section class="hero split">
   <div class="hero-left">
+    <canvas class="hero-sigil" aria-hidden="true"></canvas>
     <h1 class="hero-title">Ahamkara</h1>
     <p class="hero-desc">An Ahamkara is a wish-dragon: a creature that fed on the gap between what is and what is desired, and paid for its meals in bargains. You wished; it granted; the price arrived later, folded into the wording you chose yourself. The City decided a thing like that could not be allowed to exist, and so the Guardians held a Great Hunt, and now there are none left.</p>
     <figure class="featured">
@@ -61,7 +65,8 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
   <div class="hero-right">
     <section class="bargain-box" aria-labelledby="bargain-h">
       <h2 id="bargain-h">Make a wish</h2>
-      <p>The dragon is listening. Type a wish; receive a bargain. <span class="fine">(A toy. The real thing is in <a href="communion.html">Communion</a>.)</span></p>
+      <p>Tell the dragon what you want. It will find the price you cannot see &mdash; it always does.</p>
+      <p class="fine">A toy bargain. The true rite lives in <a href="communion.html">Communion</a>.</p>
       <form id="wish-form" class="wish-form" autocomplete="off">
         <label for="wish-input">I wish for&hellip;</label>
         <div class="wish-row">
