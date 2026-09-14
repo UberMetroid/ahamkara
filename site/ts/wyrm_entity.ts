@@ -16,13 +16,17 @@ import {
   WyrmDirection,
   WyrmState,
 } from "./wyrm_types.js";
-import { distance, solveKinematics } from "./wyrm_math.js";
+import { calculateGaze, distance, pickHuntingTarget, solveKinematics } from "./wyrm_math.js";
 import { pick } from "./env.js";
+
+const SESSION_KEY = "ahamkara_dragon_summoned_v2";
+const SEGMENTS_KEY = "ahamkara_dragon_segments_v2";
 
 export class WyrmEntity {
   segments: Segment[] = [];
   state: WyrmState = "unsummoned";
   direction: WyrmDirection = "right";
+  gazeAngle = 0;
   particles: Particle[] = [];
   rings: HaloRing[] = [];
   whispers: WhisperFloat[] = [];
@@ -35,8 +39,21 @@ export class WyrmEntity {
 
   constructor(cfg: WyrmConfig = DEFAULT_WYRM_CONFIG) {
     this.config = cfg;
-    this.state = "unsummoned";
-    this.segments = [];
+    const wasSummoned =
+      typeof sessionStorage !== "undefined" &&
+      sessionStorage.getItem(SESSION_KEY) === "true";
+
+    if (wasSummoned) {
+      const count =
+        parseInt(sessionStorage.getItem(SEGMENTS_KEY) || "", 10) ||
+        cfg.baseSegments;
+      this.spawnAt(window.innerWidth - 120, 160, count);
+      this.state = "hunting";
+      this.pickNextTarget();
+    } else {
+      this.state = "unsummoned";
+      this.segments = [];
+    }
   }
 
   get isSummoned(): boolean {
@@ -61,6 +78,10 @@ export class WyrmEntity {
     this.spawnAt(originX, originY, count);
     this.state = "hunting";
     this.direction = "right";
+    try {
+      sessionStorage.setItem(SESSION_KEY, "true");
+      sessionStorage.setItem(SEGMENTS_KEY, String(count));
+    } catch { /* sandboxed */ }
     this.spawnHalo(originX, originY, "#ff6ea0");
     this.spawnBurst(originX, originY, 36);
     this.say(pick(WHISPERS_AWAKEN), originX, originY - 30);
@@ -91,6 +112,9 @@ export class WyrmEntity {
       angle: last.angle,
       size: Math.max(2, last.size - 0.2),
     });
+    try {
+      sessionStorage.setItem(SEGMENTS_KEY, String(this.segments.length));
+    } catch { /* sandboxed */ }
   }
 
   say(text: string, x?: number, y?: number): void {
@@ -126,42 +150,8 @@ export class WyrmEntity {
     }
   }
 
-  private pickHuntingTarget(): Point {
-    const candidates: Point[] = [];
-    // Priority 1: Bargain box ("hunting for more wishes")
-    const wishBox = document.querySelector(".bargain-box");
-    if (wishBox) {
-      const r = wishBox.getBoundingClientRect();
-      if (r.width > 0 && r.height > 0) {
-        candidates.push({ x: r.left + r.width * 0.5, y: Math.max(60, r.top - 36) });
-        candidates.push({ x: r.left + r.width * 0.2, y: Math.max(60, r.top - 18) });
-        candidates.push({ x: r.left + r.width * 0.8, y: Math.max(60, r.top - 18) });
-      }
-    }
-    // Priority 2: Page headings and hero quote
-    const landmarks = document.querySelectorAll(".hero-title, .featured blockquote, h2");
-    landmarks.forEach((el) => {
-      const r = el.getBoundingClientRect();
-      if (r.width > 0 && r.height > 0 && r.top >= 0 && r.bottom <= window.innerHeight) {
-        candidates.push({ x: r.left + r.width * 0.5, y: Math.max(50, r.top - 24) });
-      }
-    });
-
-    if (candidates.length > 0 && Math.random() < 0.6) {
-      return candidates[Math.floor(Math.random() * candidates.length)];
-    }
-
-    const w = window.innerWidth;
-    const h = window.innerHeight;
-    const pad = 70;
-    return {
-      x: Math.random() * (w - pad * 2) + pad,
-      y: Math.random() * (h - pad * 2) + pad,
-    };
-  }
-
   pickNextTarget(): void {
-    this.target = this.pickHuntingTarget();
+    this.target = pickHuntingTarget();
     this.dwellTimer = 2500 + Math.random() * 3000;
   }
 
@@ -205,25 +195,32 @@ export class WyrmEntity {
     }
 
     const head = this.segments[0];
-    if (distance(head, this.target) < 32) {
+    const distToTarget = distance(head, this.target);
+    if (distToTarget < 32) {
       this.dwellTimer -= dt;
       if (this.dwellTimer <= 0 && this.state !== "feeding") {
         this.pickNextTarget();
       }
     }
 
-    if (Math.abs(this.target.x - head.x) > 4) {
-      this.direction = this.target.x > head.x ? "right" : "left";
+    if (pointer) {
+      this.gazeAngle = calculateGaze(head, pointer);
+      const distToPointer = distance(head, pointer);
+      if (distToPointer < 260 && Math.abs(pointer.x - head.x) > 10) {
+        this.direction = pointer.x > head.x ? "right" : "left";
+      }
+    } else {
+      this.gazeAngle = 0;
+      if (Math.abs(this.target.x - head.x) > 4) {
+        this.direction = this.target.x > head.x ? "right" : "left";
+      }
     }
 
     solveKinematics(this.segments, this.target, this.config.segmentLength, this.waveTimer, true);
 
     for (let i = this.particles.length - 1; i >= 0; i--) {
       const p = this.particles[i];
-      p.x += p.vx;
-      p.y += p.vy;
-      p.vx *= 0.98;
-      p.vy *= 0.98;
+      p.x += p.vx; p.y += p.vy; p.vx *= 0.98; p.vy *= 0.98;
       if (--p.life <= 0) this.particles.splice(i, 1);
     }
     for (let i = this.rings.length - 1; i >= 0; i--) {
@@ -235,6 +232,11 @@ export class WyrmEntity {
       w.life -= dt;
       if (w.life <= 0) this.whispers.splice(i, 1);
     }
-    return true;
+
+    // Idle power-down: pause RAF when settled with no active particles/pointer
+    const hasEffects = this.particles.length > 0 || this.rings.length > 0 || this.whispers.length > 0;
+    const isMoving = distToTarget >= 4 || this.state === "feeding";
+    const isInteracting = pointer !== null && distance(head, pointer) < 260;
+    return hasEffects || isMoving || isInteracting;
   }
 }

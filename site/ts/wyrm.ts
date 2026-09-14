@@ -38,7 +38,8 @@ function renderStaticFrame(): void {
       entity.state,
       entity.direction,
       entity.animTime,
-      entity.config.pixelScale
+      entity.config.pixelScale,
+      entity.gazeAngle
     );
   }
   updateHitbox();
@@ -66,7 +67,8 @@ function loop(now: number): void {
     entity.state,
     entity.direction,
     entity.animTime,
-    entity.config.pixelScale
+    entity.config.pixelScale,
+    entity.gazeAngle
   );
   renderHaloRings(ctx, entity.rings);
   renderParticles(ctx, entity.particles);
@@ -210,4 +212,8 @@ export function initWyrm(): void {
   });
 
   resize();
+  if (entity.isSummoned) {
+    updateHitbox();
+    wake();
+  }
 }

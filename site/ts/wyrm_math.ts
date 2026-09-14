@@ -115,3 +115,39 @@ export function isPointInWyrm(
   }
   return false;
 }
+
+/**
+ * Selects a landmark or roaming target for the wyrm.
+ */
+export function pickHuntingTarget(): Point {
+  const candidates: Point[] = [];
+  const wishBox = typeof document !== "undefined" ? document.querySelector(".bargain-box") : null;
+  if (wishBox) {
+    const r = wishBox.getBoundingClientRect();
+    if (r.width > 0 && r.height > 0) {
+      candidates.push({ x: r.left + r.width * 0.5, y: Math.max(60, r.top - 36) });
+      candidates.push({ x: r.left + r.width * 0.2, y: Math.max(60, r.top - 18) });
+      candidates.push({ x: r.left + r.width * 0.8, y: Math.max(60, r.top - 18) });
+    }
+  }
+  const landmarks = typeof document !== "undefined" ? document.querySelectorAll(".hero-title, .featured blockquote, h2") : [];
+  landmarks.forEach((el) => {
+    const r = el.getBoundingClientRect();
+    if (r.width > 0 && r.height > 0 && r.top >= 0 && r.bottom <= (typeof window !== "undefined" ? window.innerHeight : 800)) {
+      candidates.push({ x: r.left + r.width * 0.5, y: Math.max(50, r.top - 24) });
+    }
+  });
+
+  if (candidates.length > 0 && Math.random() < 0.6) {
+    return candidates[Math.floor(Math.random() * candidates.length)];
+  }
+
+  const w = typeof window !== "undefined" ? window.innerWidth : 1000;
+  const h = typeof window !== "undefined" ? window.innerHeight : 800;
+  const pad = 70;
+  return {
+    x: Math.random() * (w - pad * 2) + pad,
+    y: Math.random() * (h - pad * 2) + pad,
+  };
+}
+

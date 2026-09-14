@@ -54,7 +54,8 @@ export function renderWyrm(
   state: string,
   direction: WyrmDirection,
   animTime: number,
-  scale = 3
+  scale = 3,
+  gazeAngle = 0
 ): void {
   if (segments.length === 0 || state === "unsummoned") return;
 
@@ -105,6 +106,16 @@ export function renderWyrm(
   const hx = flip ? head.x - 18 * scale : head.x - 4 * scale;
   const hy = head.y - 7 * scale;
   drawPixelMatrix(ctx, headMatrix, hx, hy, scale, flip);
+
+  // 5. Ocular Gaze Tracking
+  if (Math.abs(gazeAngle) > 0.04) {
+    const gazeDx = Math.round(Math.cos(gazeAngle) * scale);
+    const gazeDy = Math.round(Math.sin(gazeAngle) * scale);
+    const glintX = flip ? hx + 10 * scale + gazeDx : hx + 11 * scale + gazeDx;
+    const glintY = hy + 5 * scale + gazeDy;
+    ctx.fillStyle = "#ffffff";
+    ctx.fillRect(glintX, glintY, scale, scale);
+  }
 }
 
 /**
