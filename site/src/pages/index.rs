@@ -48,7 +48,6 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
   <div class="hero-left">
     <p class="hero-addr">o bearer mine.</p>
     <h1 class="hero-title">Ahamkara</h1>
-    <p class="hero-sub">A canonical archive of the wish-dragons of <em>Destiny</em> &mdash; hunted to extinction for the danger of their generosity, preserved here in bone and transcript.</p>
     <figure class="featured">
       <blockquote id="featured-quote"><p>&ldquo;{}&rdquo;</p></blockquote>
       <figcaption>&mdash; <span id="featured-speaker">{}</span></figcaption>
