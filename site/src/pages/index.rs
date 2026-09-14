@@ -44,9 +44,13 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
 
     let body = format!(
         r##"
+<div class="page-top">
+  <p class="hero-addr">o bearer mine.</p>
+  {brief}
+</div>
+
 <section class="hero split">
   <div class="hero-left">
-    <p class="hero-addr">o bearer mine.</p>
     <h1 class="hero-title">Ahamkara</h1>
     <figure class="featured">
       <blockquote id="featured-quote"><p>&ldquo;{}&rdquo;</p></blockquote>
@@ -54,7 +58,6 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
     </figure>
   </div>
   <div class="hero-right">
-    {brief}
     <section class="bargain-box" aria-labelledby="bargain-h">
       <h2 id="bargain-h">Make a wish</h2>
       <p>The dragon is listening. Type a wish; receive a bargain. <span class="fine">(A toy. The real thing is in <a href="communion.html">Communion</a>.)</span></p>
