@@ -1,21 +1,7 @@
 /* content.css — hero, rules, bargain widget, featured quote, tiles */
 /* ---------- hero ---------- */
 
-.hero { text-align: left; padding: clamp(1.5rem, 5vw, 3.5rem) 0 2rem; position: relative; }
-
-/* A wish-plate sigil smoldering beside the title — the living
-   wall leaking into the masthead. */
-.hero-sigil {
-  position: absolute;
-  right: clamp(0rem, 6vw, 6rem);
-  top: -2rem;
-  width: clamp(11rem, 22vw, 18rem);
-  aspect-ratio: 1;
-  height: auto;
-  opacity: 0.3;
-  pointer-events: none;
-  filter: drop-shadow(0 0 14px color-mix(in srgb, var(--accent) 55%, transparent));
-}
+.hero { text-align: center; padding: clamp(1.5rem, 5vw, 3.5rem) 0 2rem; }
 
 .hero-title { filter: url(#warp); position: relative; } /* reality breathes */
 .hero-title {
@@ -31,13 +17,11 @@
   background-clip: text;
   color: transparent;
 }
-.hero-desc { max-width: var(--measure); margin: 0 0 1.75rem; color: var(--bone); position: relative; font-size: 1.08em; }
-.gone { text-align: center; }
+.hero-desc { max-width: var(--measure); margin: 0 auto 1.75rem; color: var(--bone); font-size: 1.08em; }
 .gone .hero-title { background: none; color: var(--bone-dim); }
-.gone .hero-desc { margin-left: auto; margin-right: auto; }
 
 /* The rotating whisper under the masthead — "o bearer mine." is one of them. */
-.hero .featured { max-width: var(--measure); margin: 0 0 0.5rem; text-align: left; }
+.hero .featured { max-width: var(--measure); margin: 0 auto 0.5rem; text-align: center; }
 .hero .featured blockquote p { font-size: 1.25rem; line-height: 1.5; color: var(--accent); }
 .hero .featured figcaption { margin-top: 0.5rem; }
 
@@ -59,7 +43,7 @@
 
 .bargain-box {
   max-width: var(--measure);
-  margin: 0 0 1rem;
+  margin: 0 auto 1rem;
   border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line));
   border-radius: 12px;
   padding: clamp(1.25rem, 3vw, 2rem);

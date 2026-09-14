@@ -4,7 +4,7 @@
  */
 
 import { initFx, initTrip } from "./fx.js";
-import { initSigils, initHeroSigil } from "./sigils.js";
+import { initSigils } from "./sigils.js";
 import { initFeatured, initWhispers } from "./whispers.js";
 import { initFilters } from "./archive.js";
 import { initCopy } from "./copy.js";
@@ -13,7 +13,6 @@ import { initBargain } from "./bargain.js";
 initFx();
 initTrip();
 initSigils();
-initHeroSigil();
 initWhispers();
 initFeatured();
 initFilters();

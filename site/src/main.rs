@@ -58,7 +58,15 @@ fn main() {
         whispers.push(("Reality is the finest flesh, oh bearer mine.", "Skull of Dire Ahamkara"));
     }
     // The address itself belongs to the chorus — it surfaces like any other whisper.
-    whispers.push(("o bearer mine.", "every Ahamkara"));
+    // So do the archive's own lines, attributed to the voices that keep them.
+    whispers.extend([
+        ("o bearer mine.", "every Ahamkara"),
+        ("I am not gone. I am between words.", "the chorus"),
+        ("Ask. The price arrives folded into the wording.", "a wish, granted"),
+        ("Everything you want is a door. We are the hinge.", "the Ahamkara"),
+        ("Hunger is the only honest noun.", "the bones"),
+        ("Reality is negotiable. The price is not.", "the bargain"),
+    ]);
 
     fs::create_dir_all(&out_dir).expect("create dist/");
 

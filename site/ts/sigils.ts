@@ -30,37 +30,6 @@ const PRIMS: Prim[] = [
   (c, u, r) => { for (let i = 0; i < 3; i++) { c.beginPath(); c.arc((i - 1) * 7 * u, 0, 2 * u, 0, Math.PI * 2); c.stroke(); } }, // triad
 ];
 
-/* Draw one wish plate's sigil at (x, y) — used by the wall and the
-   hero flame. `f` is the flare amount (0..1), `size` the plate box. */
-function drawSigil(
-  ctx: CanvasRenderingContext2D,
-  x: number, y: number, size: number,
-  seed: number, f: number, accents: string[], border = true,
-): void {
-  const rnd = seeded(seed);
-  const u = size / 34;
-  ctx.save();
-  ctx.translate(x, y);
-  if (border) {
-    ctx.globalAlpha = 0.16 + f * 0.7;
-    ctx.strokeStyle = accents[0];
-    ctx.lineWidth = u * (0.9 + f * 0.6);
-    ctx.strokeRect(-size / 2 + 2 * u, -size / 2 + 2 * u, size - 4 * u, size - 4 * u);
-  }
-  ctx.globalAlpha = 0.5 + f * 0.5;
-  ctx.strokeStyle = f > 0.35 ? accents[1] : accents[0];
-  ctx.fillStyle = accents[1];
-  ctx.lineWidth = u * (1 + f);
-  for (let k = 0; k < 3; k++) {
-    ctx.save();
-    ctx.rotate(rnd() * Math.PI * 2);
-    ctx.scale(0.5 + rnd() * 0.5, 0.5 + rnd() * 0.5);
-    pick(PRIMS)(ctx, u, rnd);
-    ctx.restore();
-  }
-  ctx.restore();
-}
-
 /* Read the live accent palette (it hue-drifts) via a probe element. */
 function accentProbe(): () => string[] {
   let accents = ["rgb(143,227,208)", "rgb(199,125,255)"];
@@ -79,40 +48,6 @@ function accentProbe(): () => string[] {
   sample();
   window.setInterval(sample, 400);
   return () => accents;
-}
-
-/* One plate burning behind the masthead — the wish-magic hook.
-   The sigil cycles to a new pattern every few seconds, flaring
-   through the change. */
-export function initHeroSigil(): void {
-  const canvas = document.querySelector<HTMLCanvasElement>("canvas.hero-sigil");
-  const ctx = canvas?.getContext("2d");
-  if (!canvas || !ctx) return;
-  const getAccents = accentProbe();
-  const fit = (): void => {
-    const dpr = Math.min(window.devicePixelRatio || 1, 2);
-    const r = canvas.getBoundingClientRect();
-    canvas.width = Math.max(1, r.width * dpr);
-    canvas.height = Math.max(1, r.height * dpr);
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-  };
-  fit();
-  window.addEventListener("resize", fit);
-  const CYCLE = 7;
-  const draw = (t: number): void => {
-    const r = canvas.getBoundingClientRect();
-    ctx.clearRect(0, 0, r.width, r.height);
-    const phase = (t % CYCLE) / CYCLE;
-    /* Fade out at cycle end, flare in at cycle start. */
-    const f = phase < 0.14 ? 1 - phase / 0.14 : phase > 0.9 ? (phase - 0.9) / 0.1 : 0;
-    const seed = 0x51f7 + Math.floor(t / CYCLE) * 104729;
-    ctx.globalAlpha = phase > 0.9 ? 1 - (phase - 0.9) * 6 : 1;
-    drawSigil(ctx, r.width / 2, r.height / 2, Math.min(r.width, r.height) * 0.82,
-      seed, f * 0.6, getAccents(), false);
-  };
-  if (reducedMotion()) { draw(0); return; }
-  const loop = (now: number): void => { draw(now / 1000); window.requestAnimationFrame(loop); };
-  window.requestAnimationFrame(loop);
 }
 
 export function initSigils(): void {
