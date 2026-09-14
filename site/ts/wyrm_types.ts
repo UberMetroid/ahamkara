@@ -66,9 +66,9 @@ export interface WyrmConfig {
 export const DEFAULT_WYRM_CONFIG: WyrmConfig = {
   baseSegments: 7,
   maxSegments: 24,
-  segmentLength: 14,
-  roamSpeed: 2.2,
-  perchDwellMs: 4500,
+  segmentLength: 15,
+  roamSpeed: 1.6,
+  perchDwellMs: 250,
   pixelScale: 3,
 };
 

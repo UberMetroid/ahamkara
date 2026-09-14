@@ -1,5 +1,5 @@
 /**
- * wyrm_math.ts — Sinuous inverse kinematics, gaze math, and collision detection.
+ * wyrm_math.ts — Sinuous inverse kinematics, gaze math, and target hunting.
  */
 
 import { Point, Segment } from "./wyrm_types.js";
@@ -25,16 +25,15 @@ export function angleLerp(a: number, b: number, t: number): number {
 }
 
 /**
- * Serpentine inverse kinematics with transverse sine wave displacement.
- * Head smoothly follows target while trailing vertebrae maintain distance constraints
- * and undulate with natural lateral sine wave swimming motion.
+ * Serpentine inverse kinematics with steady prowling velocity and lateral undulation.
  */
 export function solveKinematics(
   segments: Segment[],
   target: Point,
   segLength: number,
   waveTimer: number,
-  isSwimming: boolean
+  isSwimming: boolean,
+  prowlSpeed = 1.6
 ): void {
   if (segments.length === 0) return;
 
@@ -43,11 +42,12 @@ export function solveKinematics(
   const dy = target.y - head.y;
   const dist = Math.hypot(dx, dy);
 
-  if (dist > 0.05) {
-    head.x += dx * 0.12;
-    head.y += dy * 0.12;
+  if (dist > 0.1) {
+    const step = Math.min(dist, prowlSpeed);
+    head.x += (dx / dist) * step;
+    head.y += (dy / dist) * step;
     const targetAngle = Math.atan2(dy, dx);
-    head.angle = angleLerp(head.angle, targetAngle, 0.16);
+    head.angle = angleLerp(head.angle, targetAngle, 0.08);
   }
 
   // Trailing segment distance constraints + transverse undulation
@@ -68,14 +68,13 @@ export function solveKinematics(
     const angle = Math.atan2(segDy, segDx);
     curr.angle = angle;
 
-    // Normal perpendicular vector to segment direction
     const normX = -Math.sin(angle);
     const normY = Math.cos(angle);
 
     let waveOffset = 0;
     if (isSwimming) {
       const taper = Math.sin((i / segments.length) * Math.PI);
-      waveOffset = Math.sin(waveTimer * 0.008 - i * 0.55) * 3.5 * taper;
+      waveOffset = Math.sin(waveTimer * 0.004 - i * 0.45) * 4.2 * taper;
     }
 
     curr.x = prev.x + (segDx / curDist) * segLength + normX * waveOffset;
@@ -85,7 +84,6 @@ export function solveKinematics(
 
 /**
  * Calculates gaze angle of the head toward the pointer.
- * Returns relative angle offset clamped to [-maxGaze, maxGaze].
  */
 export function calculateGaze(head: Segment, pointer: Point | null, maxGaze = 0.75): number {
   if (!pointer) return 0;
@@ -117,7 +115,7 @@ export function isPointInWyrm(
 }
 
 /**
- * Selects a landmark or roaming target for the wyrm.
+ * Selects targets widely across the entire web page to hunt for wishes.
  */
 export function pickHuntingTarget(): Point {
   const candidates: Point[] = [];
@@ -125,29 +123,34 @@ export function pickHuntingTarget(): Point {
   if (wishBox) {
     const r = wishBox.getBoundingClientRect();
     if (r.width > 0 && r.height > 0) {
-      candidates.push({ x: r.left + r.width * 0.5, y: Math.max(60, r.top - 36) });
-      candidates.push({ x: r.left + r.width * 0.2, y: Math.max(60, r.top - 18) });
-      candidates.push({ x: r.left + r.width * 0.8, y: Math.max(60, r.top - 18) });
+      candidates.push({ x: r.left + r.width * 0.5, y: Math.max(50, r.top - 40) });
+      candidates.push({ x: r.left + r.width * 0.15, y: Math.max(50, r.top - 20) });
+      candidates.push({ x: r.left + r.width * 0.85, y: Math.max(50, r.top - 20) });
+      candidates.push({ x: r.left + r.width * 0.5, y: Math.min((typeof window !== "undefined" ? window.innerHeight : 800) - 50, r.bottom + 25) });
     }
   }
-  const landmarks = typeof document !== "undefined" ? document.querySelectorAll(".hero-title, .featured blockquote, h2") : [];
+  const landmarks = typeof document !== "undefined" ? document.querySelectorAll(".hero-title, .featured blockquote, h2, footer, .archive-controls") : [];
   landmarks.forEach((el) => {
     const r = el.getBoundingClientRect();
-    if (r.width > 0 && r.height > 0 && r.top >= 0 && r.bottom <= (typeof window !== "undefined" ? window.innerHeight : 800)) {
-      candidates.push({ x: r.left + r.width * 0.5, y: Math.max(50, r.top - 24) });
+    const winH = typeof window !== "undefined" ? window.innerHeight : 800;
+    const winW = typeof window !== "undefined" ? window.innerWidth : 1000;
+    if (r.width > 0 && r.height > 0 && r.top >= -100 && r.bottom <= winH + 100) {
+      candidates.push({
+        x: Math.max(50, Math.min(winW - 50, r.left + r.width * 0.5)),
+        y: Math.max(50, Math.min(winH - 50, r.top - 20)),
+      });
     }
   });
 
-  if (candidates.length > 0 && Math.random() < 0.6) {
+  if (candidates.length > 0 && Math.random() < 0.4) {
     return candidates[Math.floor(Math.random() * candidates.length)];
   }
 
   const w = typeof window !== "undefined" ? window.innerWidth : 1000;
   const h = typeof window !== "undefined" ? window.innerHeight : 800;
-  const pad = 70;
+  const pad = 60;
   return {
     x: Math.random() * (w - pad * 2) + pad,
     y: Math.random() * (h - pad * 2) + pad,
   };
 }
-

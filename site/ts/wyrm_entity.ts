@@ -152,7 +152,7 @@ export class WyrmEntity {
 
   pickNextTarget(): void {
     this.target = pickHuntingTarget();
-    this.dwellTimer = 2500 + Math.random() * 3000;
+    this.dwellTimer = this.config.perchDwellMs;
   }
 
   spawnBurst(x: number, y: number, n = 20): void {
@@ -216,7 +216,14 @@ export class WyrmEntity {
       }
     }
 
-    solveKinematics(this.segments, this.target, this.config.segmentLength, this.waveTimer, true);
+    solveKinematics(
+      this.segments,
+      this.target,
+      this.config.segmentLength,
+      this.waveTimer,
+      true,
+      this.config.roamSpeed
+    );
 
     for (let i = this.particles.length - 1; i >= 0; i--) {
       const p = this.particles[i];
@@ -233,10 +240,9 @@ export class WyrmEntity {
       if (w.life <= 0) this.whispers.splice(i, 1);
     }
 
-    // Idle power-down: pause RAF when settled with no active particles/pointer
     const hasEffects = this.particles.length > 0 || this.rings.length > 0 || this.whispers.length > 0;
-    const isMoving = distToTarget >= 4 || this.state === "feeding";
+    const isProwling = this.state === "hunting" || this.state === "feeding";
     const isInteracting = pointer !== null && distance(head, pointer) < 260;
-    return hasEffects || isMoving || isInteracting;
+    return hasEffects || isProwling || isInteracting;
   }
 }

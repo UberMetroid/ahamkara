@@ -1,5 +1,5 @@
 /**
- * wyrm_sprites.ts — Handcrafted 2D pixel-art sprite matrices for the Ahamkara Dragon.
+ * wyrm_sprites.ts — Handcrafted 2D pixel-art sprite matrices for the Ahamkara Wyrm.
  * Authentic discrete pixel grids rendered with integer block scaling.
  */
 
@@ -49,54 +49,6 @@ export const SPRITE_HEAD_FEED: string[] = [
   "     DBKK  V V T T    ",
   "      DBBBBW W WBBBD  ",
   "       DBBBBBBBBBD    ",
-];
-
-// 16x12 Skeletal Dragon Wing (Frame 0: Upstroke)
-export const SPRITE_WING_UP: string[] = [
-  "      DBDD      ",
-  "    DBBBBBBD    ",
-  "   DBBTTTTVBBD  ",
-  "  DBTTTVVVTVBBD ",
-  " DBTTTVVVVVTTVBD",
-  "DBTTVVVVVVVVTVBD",
-  " BTVVVVVVVVTBD  ",
-  "  BTVVVVVVTBD   ",
-  "   BTVVVVTBD    ",
-  "    BTVVTBD     ",
-  "     BTBD       ",
-  "      BD        ",
-];
-
-// 16x12 Skeletal Dragon Wing (Frame 1: Glide)
-export const SPRITE_WING_MID: string[] = [
-  "                ",
-  "                ",
-  "DBBBBBBBBBBBBD  ",
-  " DBTTTTTTTTVBBD ",
-  "  BTTTVVVVVTVTB ",
-  "   BTVVVVVVVVTB ",
-  "    BVVVVVVVVB  ",
-  "     BTTTTVTB   ",
-  "      BTTTVB    ",
-  "       BTB      ",
-  "        B       ",
-  "                ",
-];
-
-// 16x12 Skeletal Dragon Wing (Frame 2: Downstroke)
-export const SPRITE_WING_DOWN: string[] = [
-  "      BD        ",
-  "     BTBD       ",
-  "    BTVVTBD     ",
-  "   BTVVVVTBD    ",
-  "  BTVVVVVVTBD   ",
-  " BTVVVVVVVVTBD  ",
-  "DBTTVVVVVVVVTVBD",
-  " DBTTTVVVVVTTVBD",
-  "  DBTTTVVVTVBBD ",
-  "   DBBTTTTVBBD  ",
-  "    DBBBBBBD    ",
-  "      DBDD      ",
 ];
 
 // 8x8 Dorsal Crest Vertebra

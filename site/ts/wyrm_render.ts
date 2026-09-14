@@ -10,9 +10,6 @@ import {
   SPRITE_HEAD_RIGHT,
   SPRITE_TAIL_FLAME,
   SPRITE_TAIL_SEGMENT,
-  SPRITE_WING_DOWN,
-  SPRITE_WING_MID,
-  SPRITE_WING_UP,
 } from "./wyrm_sprites.js";
 import { HaloRing, Particle, Segment, WhisperFloat, WyrmDirection } from "./wyrm_types.js";
 
@@ -86,28 +83,15 @@ export function renderWyrm(
     }
   }
 
-  // 3. Draw Flapping Wings (attached near shoulders behind head)
+  // 3. Draw Ahamkara Head (Facing left or right, normal or feeding)
   const head = segments[0];
-  const wingCycle = Math.floor((animTime * 8) % 4);
-  const wingMatrix =
-    wingCycle === 0
-      ? SPRITE_WING_UP
-      : wingCycle === 2
-      ? SPRITE_WING_DOWN
-      : SPRITE_WING_MID;
-
-  const wingX = flip ? head.x - 4 * scale : head.x - 12 * scale;
-  const wingY = head.y - 10 * scale;
-  drawPixelMatrix(ctx, wingMatrix, wingX, wingY, scale, flip);
-
-  // 4. Draw Ahamkara Head (Facing left or right, normal or feeding)
   const isFeeding = state === "feeding";
   const headMatrix = isFeeding ? SPRITE_HEAD_FEED : SPRITE_HEAD_RIGHT;
   const hx = flip ? head.x - 18 * scale : head.x - 4 * scale;
   const hy = head.y - 7 * scale;
   drawPixelMatrix(ctx, headMatrix, hx, hy, scale, flip);
 
-  // 5. Ocular Gaze Tracking
+  // 4. Ocular Gaze Tracking
   if (Math.abs(gazeAngle) > 0.04) {
     const gazeDx = Math.round(Math.cos(gazeAngle) * scale);
     const gazeDy = Math.round(Math.sin(gazeAngle) * scale);
