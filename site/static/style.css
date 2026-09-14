@@ -4,14 +4,23 @@
    Weird, but the weirdness is decoration — the structure stays accessible.
    ========================================================================== */
 
+@property --ahue {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0;
+}
+
 :root {
   --void: #0b0a10;
   --void-2: #14121c;
   --bone: #ece5d3;
   --bone-dim: #b7b0a0;
-  --accent: #8fe3d0;         /* taken-teal */
-  --accent-2: #c77dff;       /* riven-violet */
+  --ahue: 0;
+  /* Accents live in oklch so their hue can wander — the palette trips slowly. */
+  --accent: oklch(0.86 0.11 calc(173 + var(--ahue)));
+  --accent-2: oklch(0.74 0.17 calc(295 - var(--ahue)));
   --line: #35304a;
+  animation: hue-drift 150s steps(48) infinite;
   --font-display: "Cormorant Garamond", "Iowan Old Style", Palatino, serif;
   --font-body: Georgia, "Iowan Old Style", Palatino, serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
@@ -36,6 +45,84 @@ body {
 }
 
 ::selection { background: var(--accent); color: var(--void); }
+
+@keyframes hue-drift {
+  to { --ahue: 360; }
+}
+
+/* ---------- the trip — chromatic aberration pulses ---------- */
+
+body.tripping .hero-title,
+body.tripping .page-head h1,
+body.tripping .wordmark,
+body.tripping .hero-addr {
+  animation: rgb-split 0.75s ease-in-out infinite;
+}
+@keyframes rgb-split {
+  0%, 100% { text-shadow: none; }
+  35% {
+    text-shadow:
+      -3px 0 rgba(143, 227, 208, 0.9),
+      3px 0 rgba(199, 125, 255, 0.9),
+      0 2px rgba(255, 110, 160, 0.55);
+  }
+  70% {
+    text-shadow:
+      2px -1px rgba(143, 227, 208, 0.85),
+      -2px 1px rgba(199, 125, 255, 0.85),
+      -1px -2px rgba(255, 110, 160, 0.45);
+  }
+}
+
+/* ---------- wish-magic overlays ---------- */
+
+.fx-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+
+#fx {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 78;
+}
+
+.scanlines {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 80;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent 0 3px,
+    rgba(236, 229, 211, 0.022) 3px 4px
+  );
+}
+.scanlines::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    125% 100% at 50% 50%,
+    transparent 55%,
+    rgba(11, 10, 16, 0.55) 100%
+  );
+}
+
+.grant-flash {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 79;
+  opacity: 0;
+  transition: opacity 0.7s ease-out;
+  background: radial-gradient(
+    circle at var(--gx, 50%) var(--gy, 60%),
+    color-mix(in srgb, var(--accent) 38%, transparent),
+    transparent 45%
+  );
+}
+.grant-flash.on { opacity: 1; }
 
 /* ---------- accessibility scaffolding ---------- */
 
@@ -151,6 +238,7 @@ main {
 
 .hero { text-align: center; padding: clamp(2rem, 8vw, 6rem) 0 2rem; }
 .hero .sigil { width: clamp(64px, 12vw, 96px); height: auto; color: var(--accent); animation: sigil-turn 40s linear infinite; }
+.hero-title { filter: url(#warp); } /* reality breathes */
 @keyframes sigil-turn { to { transform: rotate(360deg); } }
 .hero-addr {
   font-family: var(--font-display);
@@ -597,4 +685,6 @@ main {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+  .hero-title { filter: none; }
+  #fx, .grant-flash { display: none; }
 }

@@ -133,6 +133,17 @@ fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, &str
   <p class="fine">A fan-made lore archive. Not affiliated with Bungie. Primary sources linked to the Ishtar Collective where available.</p>
   <p class="fine">archive v{ver} &middot; licensed under <a href="https://github.com/studio2201/Ahamkara/blob/main/LICENSE" target="_blank" rel="noopener noreferrer">the Bargain License</a> &mdash; you get a wish, the dragon feeds on the wish</p>
 </footer>
+<svg class="fx-defs" width="0" height="0" aria-hidden="true" focusable="false"><defs>
+<filter id="warp" x="-15%" y="-15%" width="130%" height="130%">
+<feTurbulence type="fractalNoise" baseFrequency="0 0.11" numOctaves="2" seed="7" result="n">
+<animate attributeName="baseFrequency" dur="13s" values="0 0.11;0.025 0.08;0 0.11" repeatCount="indefinite"/>
+</feTurbulence>
+<feDisplacementMap in="SourceGraphic" in2="n" scale="11" xChannelSelector="R" yChannelSelector="G"/>
+</filter>
+</defs></svg>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div class="scanlines" aria-hidden="true"></div>
+<div class="grant-flash" id="grant-flash" aria-hidden="true"></div>
 <script id="whisper-data" type="application/json">{{}}</script>
 <script defer src="app.js"></script>
 </body>
