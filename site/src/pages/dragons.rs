@@ -103,7 +103,6 @@ pub fn page_dragons(records: &[Record], whispers: &[(&str, &str)]) -> String {
   <p class="kicker">name them and they answer</p>
   <h1>The Dragons</h1>
   <p class="lede">Ten voices survive in the corpus. Some were individuals; some are categories we keep because the dead deserve their paperwork. Each profile links into the Archive, where the bones speak for themselves.</p>
-  <canvas class="watcher head-eye" aria-hidden="true"></canvas>
 </header>
 {sections}
 "##

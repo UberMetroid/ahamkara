@@ -56,7 +56,6 @@ pub fn page_history(records: &[Record], whispers: &[(&str, &str)]) -> String {
   <p class="kicker">everything is negotiated, eventually</p>
   <h1>The History</h1>
   <p class="lede">The wish-dragons were old when the Traveler arrived and are not entirely gone now. Seven eras, told in the order the bones give them up.</p>
-  <canvas class="watcher head-eye" aria-hidden="true"></canvas>
 </header>
 <ol class="timeline">{items}</ol>
 "##

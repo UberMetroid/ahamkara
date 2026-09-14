@@ -3,16 +3,6 @@
 
 .hero { text-align: center; padding: clamp(1.5rem, 6vw, 4rem) 0 2rem; }
 
-/* The watcher — a live-drawn eye, not a picture of one. */
-.watcher {
-  display: block;
-  margin: 0 auto;
-  filter: drop-shadow(0 0 26px color-mix(in srgb, var(--accent-2) 24%, transparent));
-}
-.hero-eye { width: min(440px, 86vw); height: clamp(170px, 34vw, 280px); }
-.head-eye { width: min(340px, 80vw); height: clamp(140px, 28vw, 220px); margin-top: 1.5rem; }
-.hero.gone .watcher { opacity: 0.55; filter: grayscale(0.7) brightness(0.7); }
-
 .hero-title { filter: url(#warp); } /* reality breathes */
 .hero-addr {
   font-family: var(--font-display);

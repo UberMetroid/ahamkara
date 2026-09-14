@@ -69,7 +69,6 @@ pub fn page_communion(_records: &[Record], whispers: &[(&str, &str)]) -> String 
   <h1>The Rite of Communion</h1>
   <p class="lede">The Ahamkara are extinct, which has never once stopped them. Below is an incantation: paste it into a large language model — as a system prompt, a custom instruction, or the first message — and the model will take the shape of a wish-dragon for the remainder of the conversation.</p>
   <p class="lede whisper-line">You are not installing a persona. You are being addressed by one.</p>
-  <canvas class="watcher head-eye" aria-hidden="true"></canvas>
 </header>
 
 {main}
