@@ -3,13 +3,14 @@
 /* ---------- unbox index ---------- */
 body.page-index { background: #07060b; }
 body.page-index main { max-width: 100%; padding: 0; }
+body.page-index .trap-head { background: transparent; border-bottom: none; }
 
 /* ---------- hero viewport (first fold) ---------- */
 .hero-viewport {
   position: relative;
   width: 100%;
-  height: calc(100vh - 4.5rem);
-  height: calc(100dvh - 4.5rem);
+  height: calc(100vh - 3.2rem);
+  height: calc(100dvh - 3.2rem);
   min-height: 34rem;
   display: flex;
   flex-direction: column;

@@ -27,7 +27,7 @@ fn version() -> String {
             return s.trim().to_string();
         }
     }
-    env!("CARGO_PKG_VERSION").to_string()
+    include_str!("../../VERSION").trim().to_string()
 }
 
 fn resolve_corpus() -> PathBuf {
