@@ -39,7 +39,9 @@ function renderStaticFrame(): void {
       entity.direction,
       entity.animTime,
       entity.config.pixelScale,
-      entity.gazeAngle
+      entity.gazeAngle,
+      entity.isBlinking,
+      entity.headTilt
     );
   }
   updateHitbox();
@@ -68,7 +70,9 @@ function loop(now: number): void {
     entity.direction,
     entity.animTime,
     entity.config.pixelScale,
-    entity.gazeAngle
+    entity.gazeAngle,
+    entity.isBlinking,
+    entity.headTilt
   );
   renderHaloRings(ctx, entity.rings);
   renderParticles(ctx, entity.particles);

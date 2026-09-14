@@ -1,15 +1,17 @@
 /**
- * wyrm_render.ts — True 2D Pixel-Art Renderer for the Ahamkara Wish Dragon.
- * Uses discrete pixel matrices, integer block scaling, and zero vector rotation.
+ * wyrm_render.ts — True 2D Pixel-Art Renderer for the Quadruped Ahamkara Stalker.
+ * Renders articulated walk-cycle legs, dorsal spine, tail flame, and predatory skull.
  */
 
 import {
   PALETTE,
-  SPRITE_BODY_SEGMENT,
-  SPRITE_HEAD_FEED,
-  SPRITE_HEAD_RIGHT,
-  SPRITE_TAIL_FLAME,
-  SPRITE_TAIL_SEGMENT,
+  SPRITE_HATCHLING_BODY,
+  SPRITE_HATCHLING_FEED,
+  SPRITE_HATCHLING_HEAD,
+  SPRITE_HATCHLING_BLINK,
+  SPRITE_HATCHLING_LEG_FRAMES,
+  SPRITE_HATCHLING_FLAME,
+  SPRITE_HATCHLING_TAIL,
 } from "./wyrm_sprites.js";
 import { HaloRing, Particle, Segment, WhisperFloat, WyrmDirection } from "./wyrm_types.js";
 
@@ -22,7 +24,8 @@ export function drawPixelMatrix(
   x: number,
   y: number,
   scale = 3,
-  flipX = false
+  flipX = false,
+  isShadow = false
 ): void {
   const height = matrix.length;
   if (height === 0) return;
@@ -36,14 +39,18 @@ export function drawPixelMatrix(
       const col = flipX ? width - 1 - c : c;
       const px = Math.round(x + col * scale);
       const py = Math.round(y + r * scale);
-      ctx.fillStyle = PALETTE[char] || "#ece5d3";
+      let color = PALETTE[char] || "#ece5d3";
+      if (isShadow && (char === "B" || char === "S")) {
+        color = "#5a526b";
+      }
+      ctx.fillStyle = color;
       ctx.fillRect(px, py, scale, scale);
     }
   }
 }
 
 /**
- * Renders the 2D pixel art Ahamkara dragon entity.
+ * Renders the 2D pixel art Inquisitive Hatchling Ahamkara entity.
  */
 export function renderWyrm(
   ctx: CanvasRenderingContext2D,
@@ -52,51 +59,70 @@ export function renderWyrm(
   direction: WyrmDirection,
   animTime: number,
   scale = 3,
-  gazeAngle = 0
+  gazeAngle = 0,
+  isBlinking = false,
+  headTilt = 0
 ): void {
   if (segments.length === 0 || state === "unsummoned") return;
 
   const flip = direction === "left";
   const total = segments.length;
+  const head = segments[0];
 
   // 1. Draw Tail Tip Flame (Frame animated 0-2)
   if (total > 2) {
     const tail = segments[total - 1];
-    const flameFrame = Math.floor((animTime * 6) % 3);
-    const flameSprite = SPRITE_TAIL_FLAME[flameFrame];
-    const fx = tail.x - 4 * scale;
-    const fy = tail.y - 5 * scale;
-    drawPixelMatrix(ctx, flameSprite, fx, fy, scale, flip);
+    const flameFrame = Math.floor((animTime * 8) % 3);
+    const fx = tail.x - 3 * scale;
+    const fy = tail.y - 4 * scale;
+    drawPixelMatrix(ctx, SPRITE_HATCHLING_FLAME[flameFrame], fx, fy, scale, flip);
   }
 
-  // 2. Draw Trailing Sinuous Body Segments (tail to neck)
+  // 2. Far-side scamper legs (shadowed behind body, phase offset +2)
+  const walkFrame = Math.floor((animTime * 10) % 4);
+  const farFrame = (walkFrame + 2) % 4;
+  const foreX = flip ? head.x + 6 * scale : head.x - 2 * scale;
+  const hindX = flip ? head.x + 16 * scale : head.x - 12 * scale;
+  const legY = head.y + 2 * scale;
+
+  drawPixelMatrix(ctx, SPRITE_HATCHLING_LEG_FRAMES[farFrame], foreX - scale, legY, scale, flip, true);
+  drawPixelMatrix(ctx, SPRITE_HATCHLING_LEG_FRAMES[walkFrame], hindX - scale, legY, scale, flip, true);
+
+  // 3. Torso and tail vertebrae
   for (let i = total - 2; i >= 1; i--) {
     const seg = segments[i];
-    if (i >= total - 3) {
+    if (i >= total - 2) {
+      const sx = seg.x - 2 * scale;
+      const sy = seg.y - 2 * scale;
+      drawPixelMatrix(ctx, SPRITE_HATCHLING_TAIL, sx, sy, scale, flip);
+    } else {
       const sx = seg.x - 3 * scale;
       const sy = seg.y - 3 * scale;
-      drawPixelMatrix(ctx, SPRITE_TAIL_SEGMENT, sx, sy, scale, flip);
-    } else {
-      const sx = seg.x - 4 * scale;
-      const sy = seg.y - 4 * scale;
-      drawPixelMatrix(ctx, SPRITE_BODY_SEGMENT, sx, sy, scale, flip);
+      drawPixelMatrix(ctx, SPRITE_HATCHLING_BODY, sx, sy, scale, flip);
     }
   }
 
-  // 3. Draw Ahamkara Head (Facing left or right, normal or feeding)
-  const head = segments[0];
+  // 4. Near-side scamper legs (bright bone in foreground)
+  drawPixelMatrix(ctx, SPRITE_HATCHLING_LEG_FRAMES[walkFrame], foreX, legY, scale, flip, false);
+  drawPixelMatrix(ctx, SPRITE_HATCHLING_LEG_FRAMES[farFrame], hindX, legY, scale, flip, false);
+
+  // 5. Inquisitive Hatchling Skull
   const isFeeding = state === "feeding";
-  const headMatrix = isFeeding ? SPRITE_HEAD_FEED : SPRITE_HEAD_RIGHT;
-  const hx = flip ? head.x - 18 * scale : head.x - 4 * scale;
-  const hy = head.y - 7 * scale;
+  const headMatrix = isFeeding
+    ? SPRITE_HATCHLING_FEED
+    : isBlinking
+    ? SPRITE_HATCHLING_BLINK
+    : SPRITE_HATCHLING_HEAD;
+  const hx = flip ? head.x - 14 * scale : head.x - 4 * scale;
+  const hy = head.y - 6 * scale + Math.round(headTilt * 3);
   drawPixelMatrix(ctx, headMatrix, hx, hy, scale, flip);
 
-  // 4. Ocular Gaze Tracking
-  if (Math.abs(gazeAngle) > 0.04) {
+  // 6. Ocular Gaze Tracking
+  if (!isBlinking && !isFeeding && Math.abs(gazeAngle) > 0.04) {
     const gazeDx = Math.round(Math.cos(gazeAngle) * scale);
     const gazeDy = Math.round(Math.sin(gazeAngle) * scale);
-    const glintX = flip ? hx + 10 * scale + gazeDx : hx + 11 * scale + gazeDx;
-    const glintY = hy + 5 * scale + gazeDy;
+    const glintX = (flip ? hx + 8 * scale : hx + 9 * scale) + gazeDx;
+    const glintY = hy + 4 * scale + gazeDy;
     ctx.fillStyle = "#ffffff";
     ctx.fillRect(glintX, glintY, scale, scale);
   }

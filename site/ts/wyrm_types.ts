@@ -6,7 +6,7 @@ export const BONE = "#ece5d3";
 export const RIVEN_VIOLET = "#c77dff";
 export const TAKEN_TEAL = "#8fe3d0";
 export const WISH_PINK = "#ff6ea0";
-export const BONE_DARK = "#9d9482";
+export const BONE_DARK = "#5a526b";
 export const VOID_BLACK = "#0b0a10";
 
 export interface Point {
@@ -19,6 +19,13 @@ export interface Segment {
   y: number;
   angle: number;
   size: number;
+}
+
+export interface Platform {
+  left: number;
+  right: number;
+  y: number;
+  isWishBox?: boolean;
 }
 
 export interface Particle {
@@ -51,46 +58,48 @@ export interface WhisperFloat {
   vy: number;
 }
 
-export type WyrmState = "unsummoned" | "awakening" | "hunting" | "feeding" | "perched" | "docked";
+export type WyrmState = "unsummoned" | "awakening" | "pacing" | "leaping" | "feeding" | "docked";
 export type WyrmDirection = "left" | "right";
 
 export interface WyrmConfig {
   baseSegments: number;
   maxSegments: number;
   segmentLength: number;
-  roamSpeed: number;
-  perchDwellMs: number;
+  walkSpeed: number;
+  gravity: number;
+  jumpPower: number;
   pixelScale: number;
 }
 
 export const DEFAULT_WYRM_CONFIG: WyrmConfig = {
-  baseSegments: 7,
-  maxSegments: 24,
-  segmentLength: 15,
-  roamSpeed: 1.6,
-  perchDwellMs: 250,
+  baseSegments: 5,
+  maxSegments: 12,
+  segmentLength: 10,
+  walkSpeed: 2.2,
+  gravity: 0.42,
+  jumpPower: 7.8,
   pixelScale: 3,
 };
 
 export const WHISPERS_AWAKEN = [
-  "You wished, and I have answered.",
-  "I hear you, o bearer mine.",
-  "Reality smells like hunger.",
-  "The bargain begins.",
+  "*scamper* Did someone wish, o bearer mine?",
+  "A freshly hatched bargain begins!",
+  "I smell warm desires, o bearer mine.",
+  "*peeks out* Your wishes call to me.",
 ];
 
 export const WHISPERS_FEED = [
-  "Delicious, o bearer mine.",
-  "Granted — and devoured.",
-  "The gap tastes of sweet want.",
-  "More desires. I am still hungry.",
-  "A fine wish. Keep speaking.",
+  "*nom nom* Delicious reality, o bearer mine!",
+  "Crunchy desire... feed me another!",
+  "Granted and swallowed whole!",
+  "*purrs* The gap between is so tasty.",
+  "More! More wishes, o bearer mine!",
 ];
 
 export const WHISPERS_PET = [
-  "Mind the edges, o bearer mine.",
-  "Hunger is the only honest noun.",
-  "Feed me another wish.",
-  "Reality is the finest flesh.",
-  "We are the hinge of the world.",
+  "*happy chirp* Mind the claws, o bearer mine!",
+  "*tilts head* Are you wishing, or just petting?",
+  "Reality tickles, o bearer mine.",
+  "*pounces* You cannot catch a wish dragon!",
+  "One day I will swallow a whole mountain.",
 ];

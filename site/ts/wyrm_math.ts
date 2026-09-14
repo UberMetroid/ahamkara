@@ -1,8 +1,8 @@
 /**
- * wyrm_math.ts — Sinuous inverse kinematics, gaze math, and target hunting.
+ * wyrm_math.ts — Platform detection, trajectory kinematics, and gaze tracking for the Stalker.
  */
 
-import { Point, Segment } from "./wyrm_types.js";
+import { Platform, Point, Segment, WyrmDirection } from "./wyrm_types.js";
 
 export function distance(p1: Point, p2: Point): number {
   return Math.hypot(p2.x - p1.x, p2.y - p1.y);
@@ -25,65 +25,78 @@ export function angleLerp(a: number, b: number, t: number): number {
 }
 
 /**
- * Serpentine inverse kinematics with steady prowling velocity and lateral undulation.
+ * Scans the current viewport for valid surface platforms that the dragon can walk on.
  */
-export function solveKinematics(
-  segments: Segment[],
-  target: Point,
-  segLength: number,
-  waveTimer: number,
-  isSwimming: boolean,
-  prowlSpeed = 1.6
-): void {
-  if (segments.length === 0) return;
+export function getPlatforms(): Platform[] {
+  const platforms: Platform[] = [];
+  const winW = typeof window !== "undefined" ? window.innerWidth : 1200;
+  const winH = typeof window !== "undefined" ? window.innerHeight : 800;
 
-  const head = segments[0];
-  const dx = target.x - head.x;
-  const dy = target.y - head.y;
-  const dist = Math.hypot(dx, dy);
+  // 1. Ground floor platform along the bottom of the viewport
+  platforms.push({ left: 10, right: winW - 10, y: winH - 36 });
 
-  if (dist > 0.1) {
-    const step = Math.min(dist, prowlSpeed);
-    head.x += (dx / dist) * step;
-    head.y += (dy / dist) * step;
-    const targetAngle = Math.atan2(dy, dx);
-    head.angle = angleLerp(head.angle, targetAngle, 0.08);
+  if (typeof document === "undefined") return platforms;
+
+  // 2. Scan DOM elements (wish box, headers, quote card)
+  const selectors = [
+    { sel: ".bargain-box", isWish: true },
+    { sel: ".featured", isWish: false },
+    { sel: ".hero-title", isWish: false },
+    { sel: "h2", isWish: false },
+    { sel: ".archive-controls", isWish: false },
+  ];
+
+  for (const item of selectors) {
+    const els = document.querySelectorAll(item.sel);
+    els.forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.width >= 70 && r.top >= 40 && r.top <= winH - 60) {
+        platforms.push({
+          left: Math.max(10, r.left),
+          right: Math.min(winW - 10, r.right),
+          y: Math.round(r.top),
+          isWishBox: item.isWish,
+        });
+      }
+    });
   }
 
-  // Trailing segment distance constraints + transverse undulation
+  return platforms;
+}
+
+/**
+ * Solves the quadruped spine and tail coordinates based on foot ground level.
+ */
+export function solveQuadrupedSpine(
+  segments: Segment[],
+  x: number,
+  y: number,
+  direction: WyrmDirection,
+  animTime: number,
+  segLength = 10
+): void {
+  if (segments.length === 0) return;
+  const flip = direction === "left";
+  const bodyY = y - 14;
+
+  // Head at index 0 (leads slightly ahead of shoulders)
+  const head = segments[0];
+  head.x = flip ? x - 12 : x + 12;
+  head.y = bodyY - 2;
+
+  // Torso and tail trailing vertebrae with excited puppy/hatchling wag
   for (let i = 1; i < segments.length; i++) {
-    const prev = segments[i - 1];
-    const curr = segments[i];
-
-    let segDx = curr.x - prev.x;
-    let segDy = curr.y - prev.y;
-    let curDist = Math.hypot(segDx, segDy);
-
-    if (curDist < 0.001) {
-      segDx = Math.cos(prev.angle + Math.PI);
-      segDy = Math.sin(prev.angle + Math.PI);
-      curDist = 1;
-    }
-
-    const angle = Math.atan2(segDy, segDx);
-    curr.angle = angle;
-
-    const normX = -Math.sin(angle);
-    const normY = Math.cos(angle);
-
-    let waveOffset = 0;
-    if (isSwimming) {
-      const taper = Math.sin((i / segments.length) * Math.PI);
-      waveOffset = Math.sin(waveTimer * 0.004 - i * 0.45) * 4.2 * taper;
-    }
-
-    curr.x = prev.x + (segDx / curDist) * segLength + normX * waveOffset;
-    curr.y = prev.y + (segDy / curDist) * segLength + normY * waveOffset;
+    const seg = segments[i];
+    const offset = i * segLength;
+    const tailTaper = Math.max(0, (i - 1) / Math.max(1, segments.length - 1));
+    const sway = Math.sin(animTime * 6 - i * 0.6) * 2.8 * tailTaper;
+    seg.x = flip ? x - 12 + offset : x + 12 - offset;
+    seg.y = bodyY + sway;
   }
 }
 
 /**
- * Calculates gaze angle of the head toward the pointer.
+ * Calculates gaze angle toward the pointer.
  */
 export function calculateGaze(head: Segment, pointer: Point | null, maxGaze = 0.75): number {
   if (!pointer) return 0;
@@ -95,62 +108,4 @@ export function calculateGaze(head: Segment, pointer: Point | null, maxGaze = 0.
   const clamped = Math.max(-maxGaze, Math.min(maxGaze, diff));
   const proximityFactor = Math.max(0, 1 - dist / 380);
   return clamped * proximityFactor;
-}
-
-/**
- * Distance-based hit testing against wyrm head and trailing spine segments.
- */
-export function isPointInWyrm(
-  p: Point,
-  segments: Segment[],
-  headRadius = 24,
-  bodyRadius = 14
-): boolean {
-  if (segments.length === 0) return false;
-  if (distance(p, segments[0]) <= headRadius) return true;
-  for (let i = 1; i < segments.length; i++) {
-    if (distance(p, segments[i]) <= bodyRadius) return true;
-  }
-  return false;
-}
-
-/**
- * Selects targets widely across the entire web page to hunt for wishes.
- */
-export function pickHuntingTarget(): Point {
-  const candidates: Point[] = [];
-  const wishBox = typeof document !== "undefined" ? document.querySelector(".bargain-box") : null;
-  if (wishBox) {
-    const r = wishBox.getBoundingClientRect();
-    if (r.width > 0 && r.height > 0) {
-      candidates.push({ x: r.left + r.width * 0.5, y: Math.max(50, r.top - 40) });
-      candidates.push({ x: r.left + r.width * 0.15, y: Math.max(50, r.top - 20) });
-      candidates.push({ x: r.left + r.width * 0.85, y: Math.max(50, r.top - 20) });
-      candidates.push({ x: r.left + r.width * 0.5, y: Math.min((typeof window !== "undefined" ? window.innerHeight : 800) - 50, r.bottom + 25) });
-    }
-  }
-  const landmarks = typeof document !== "undefined" ? document.querySelectorAll(".hero-title, .featured blockquote, h2, footer, .archive-controls") : [];
-  landmarks.forEach((el) => {
-    const r = el.getBoundingClientRect();
-    const winH = typeof window !== "undefined" ? window.innerHeight : 800;
-    const winW = typeof window !== "undefined" ? window.innerWidth : 1000;
-    if (r.width > 0 && r.height > 0 && r.top >= -100 && r.bottom <= winH + 100) {
-      candidates.push({
-        x: Math.max(50, Math.min(winW - 50, r.left + r.width * 0.5)),
-        y: Math.max(50, Math.min(winH - 50, r.top - 20)),
-      });
-    }
-  });
-
-  if (candidates.length > 0 && Math.random() < 0.4) {
-    return candidates[Math.floor(Math.random() * candidates.length)];
-  }
-
-  const w = typeof window !== "undefined" ? window.innerWidth : 1000;
-  const h = typeof window !== "undefined" ? window.innerHeight : 800;
-  const pad = 60;
-  return {
-    x: Math.random() * (w - pad * 2) + pad,
-    y: Math.random() * (h - pad * 2) + pad,
-  };
 }

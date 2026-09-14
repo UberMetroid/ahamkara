@@ -1,5 +1,5 @@
 /**
- * wyrm_sprites.ts — Handcrafted 2D pixel-art sprite matrices for the Ahamkara Wyrm.
+ * wyrm_sprites.ts — Handcrafted 2D pixel-art sprite matrices for the Inquisitive Hatchling.
  * Authentic discrete pixel grids rendered with integer block scaling.
  */
 
@@ -11,60 +11,59 @@ export const PALETTE: Record<string, string> = {
   V: "#c77dff", // Riven Violet
   P: "#ff6ea0", // Wish Pink
   K: "#0b0a10", // Void Black
-  W: "#ffffff", // Pure White glint / fang tip
+  W: "#ffffff", // Pure White glint / highlight
 };
 
-// 22x14 Ahamkara Dragon Head (Facing Right)
-// Antler horns, dual glowing eyes (Teal & Violet), bared fangs, chin spur
-export const SPRITE_HEAD_RIGHT: string[] = [
-  "   D                  ",
-  "  DB   D              ",
-  " D B  DBB             ",
-  "DB B DB B             ",
-  " D BDB  B  DDDDD      ",
-  "  DBBBBBBBBB T WDDD   ",
-  "   DBBBBB B V W B BBD ",
-  "   DBBBBBBBBBBBBBBBBBD",
-  "   DBBBK W K W K W K W",
-  "    DBBK W K W KBBBBBD",
-  "    DBBBBBBBBBBBBBBD  ",
-  "     DBB B   DDD      ",
-  "      D  D            ",
-  "                      ",
+// 18x12 Inquisitive Hatchling Skull (Facing Right)
+export const SPRITE_HATCHLING_HEAD: string[] = [
+  "   D              ",
+  "  DB   D          ",
+  "  DBB DBB  DDDDD  ",
+  "  DBBBBBBBBBBBBD  ",
+  "  DBBBBB T T WBD  ",
+  "  DBBBBB V V WBD  ",
+  "  DBBBBBBBBBBBBD  ",
+  "  DBBK W K W KBD  ",
+  "   DBBBBBBBBBBD   ",
+  "    DDDDDDDDDD    ",
+  "                  ",
+  "                  ",
 ];
 
-// 22x14 Ahamkara Dragon Head Open Maw (Devouring a Wish)
-export const SPRITE_HEAD_FEED: string[] = [
-  "   D                  ",
-  "  DB   D              ",
-  " D B  DBB             ",
-  "DB B DB B             ",
-  " D BDB  B  DDDDD      ",
-  "  DBBBBBBBBB T WDDD   ",
-  "   DBBBBB B V W B BBD ",
-  "   DBBBBBBBBBBBBBBBBBD",
-  "   DBBBK W K W K W K W",
-  "    DBKK  P P W P P   ",
-  "    DBKK P P W W P P  ",
-  "     DBKK  V V T T    ",
-  "      DBBBBW W WBBBD  ",
-  "       DBBBBBBBBBD    ",
+// 18x12 Inquisitive Hatchling Blinking Skull
+export const SPRITE_HATCHLING_BLINK: string[] = [
+  "   D              ",
+  "  DB   D          ",
+  "  DBB DBB  DDDDD  ",
+  "  DBBBBBBBBBBBBD  ",
+  "  DBBBBBBBBBBBBD  ",
+  "  DBBBBB D D D D  ",
+  "  DBBBBBBBBBBBBD  ",
+  "  DBBK W K W KBD  ",
+  "   DBBBBBBBBBBD   ",
+  "    DDDDDDDDDD    ",
+  "                  ",
+  "                  ",
 ];
 
-// 8x8 Dorsal Crest Vertebra
-export const SPRITE_BODY_SEGMENT: string[] = [
-  "   DB   ",
-  "  DBBD  ",
-  " DBBBBD ",
-  "DBTVVTBD",
-  "DBVTTVBD",
-  " DBBBBD ",
-  "  DBBD  ",
-  "   DD   ",
+// 18x12 Inquisitive Hatchling Open Feeding Maw
+export const SPRITE_HATCHLING_FEED: string[] = [
+  "   D              ",
+  "  DB   D          ",
+  "  DBB DBB  DDDDD  ",
+  "  DBBBBBBBBBBBBD  ",
+  "  DBBBBB T T WBD  ",
+  "  DBBBBB V V WBD  ",
+  "  DBBBKKKKKKKKBD  ",
+  "   DBKK P P W P   ",
+  "   DBKK  P P V    ",
+  "    DBBBBW W WBD  ",
+  "     DBBBBBBBBBD  ",
+  "      DDDDDDDDD   ",
 ];
 
-// 6x6 Tapering Tail Vertebra
-export const SPRITE_TAIL_SEGMENT: string[] = [
+// 6x6 Compact Dorsal Segment
+export const SPRITE_HATCHLING_BODY: string[] = [
   "  DB  ",
   " DBBD ",
   "DBTVBD",
@@ -73,42 +72,80 @@ export const SPRITE_TAIL_SEGMENT: string[] = [
   "  DD  ",
 ];
 
-// 8x10 Animated Tail Flame Wisps (3 frames)
-export const SPRITE_TAIL_FLAME: string[][] = [
+// 4x4 Tapering Tail Vertebra
+export const SPRITE_HATCHLING_TAIL: string[] = [
+  " DB ",
+  "DBBD",
+  "DBTD",
+  " DD ",
+];
+
+// 5x6 Articulated Scamper Leg Frames (0: forward plant, 1: stance, 2: push, 3: lift)
+export const SPRITE_HATCHLING_LEG_FRAMES: string[][] = [
   [
-    "   T    ",
-    "  TWT   ",
-    "  TVT   ",
-    " TTVTT  ",
-    "TVPVVTT ",
-    "TVPPPVT ",
-    " TVPVT  ",
-    "  TVT   ",
-    "   T    ",
-    "        ",
+    " DB  ",
+    " DBB ",
+    "  DB ",
+    "  DB ",
+    " DBWW",
+    "     ",
   ],
   [
-    "    T   ",
-    "   TWT  ",
-    "  TVVT  ",
-    "  TPPVT ",
-    " TPPPVT ",
-    "TVPVVT  ",
-    " TVVT   ",
-    "  TVT   ",
-    "   T    ",
-    "        ",
+    " DB  ",
+    " DBBD",
+    "  DBB",
+    "  DBB",
+    " DBWW",
+    "     ",
   ],
   [
-    "   T    ",
-    "  TWT   ",
-    " TVVT   ",
-    "TVPPVT  ",
-    " TVPPVT ",
-    "  TVPVT ",
-    "   TVT  ",
-    "    T   ",
-    "        ",
-    "        ",
+    "  DB ",
+    " DBB ",
+    "DB   ",
+    "DB   ",
+    "WWD  ",
+    "     ",
+  ],
+  [
+    " DB  ",
+    " DBBD",
+    "  DBB",
+    "  DBW",
+    "     ",
+    "     ",
+  ],
+];
+
+// 6x8 Bouncy Tail Flame Wisps (3 frames)
+export const SPRITE_HATCHLING_FLAME: string[][] = [
+  [
+    "  T   ",
+    " TWT  ",
+    " TVT  ",
+    "TTVTT ",
+    "TVPVT ",
+    " TVT  ",
+    "  T   ",
+    "      ",
+  ],
+  [
+    "   T  ",
+    "  TWT ",
+    " TPVT ",
+    "TPPVT ",
+    "TVVT  ",
+    " TVT  ",
+    "  T   ",
+    "      ",
+  ],
+  [
+    "  T   ",
+    " TWT  ",
+    " TVVT ",
+    "TVPVT ",
+    " TPVT ",
+    "  TVT ",
+    "   T  ",
+    "      ",
   ],
 ];
