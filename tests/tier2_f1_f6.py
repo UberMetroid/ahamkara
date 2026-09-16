@@ -105,7 +105,7 @@ def run(ctx: TestContext, dist: Path):
     ctx.record(2, 4, "discovery <link> tag relative paths resolve to dist/ files",
                pages_loaded and all(
                    all(
-                       (dist / l["href"]).is_file()
+                       (dist / l["href"].split("?")[0].split("#")[0]).is_file()
                        for l in extract_links(h)
                        if l.get("href") and not l["href"].startswith("http") and not l["href"].startswith("//")
                    )

@@ -1,6 +1,6 @@
 //! sigils — the Wall of Wishes, drawn live.
 //! A 4x4 grid of procedurally generated wish plates on
-//! `canvas.wish-wall`; plates flare on a timer and detonate on click.
+//! `canvas.wish-wall`; plates flare on a timer and on click.
 //! Each sigil is seeded per cell — the wall never rearranges.
 
 use crate::env::{document, set_interval, window};
@@ -101,12 +101,10 @@ pub(crate) fn accent_probe() {
         for v in ["--accent", "--accent-2"] {
             let he: web_sys::HtmlElement = probe.clone().unchecked_into();
             let _ = he.style().set_property("color", &format!("var({v})"));
-            if let Ok(cs) = window().get_computed_style(&he) {
-                if let Some(cs) = cs {
-                    if let Ok(c) = cs.get_property_value("color") {
-                        if !c.is_empty() {
-                            a.push(c);
-                        }
+            if let Ok(Some(cs)) = window().get_computed_style(&he) {
+                if let Ok(c) = cs.get_property_value("color") {
+                    if !c.is_empty() {
+                        a.push(c);
                     }
                 }
             }

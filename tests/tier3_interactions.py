@@ -70,7 +70,7 @@ def run(ctx: TestContext, dist: Path, repo_root: Path):
         for link in extract_links(html):
             href = link.get("href", "")
             if href and not href.startswith("http") and not href.startswith("//"):
-                if not (dist / href).is_file():
+                if not (dist / href.split("?")[0].split("#")[0]).is_file():
                     broken_links.append((p, href))
     ctx.record(3, 4, "all discovery <link> tags in page heads resolve to valid files in dist/",
                len(broken_links) == 0, f"broken links: {broken_links[:5]}")

@@ -25,7 +25,7 @@ fn version_ignores_foreign_version_file() {
     std::fs::create_dir_all(&tmp).expect("create temp dir");
     std::fs::write(tmp.join("VERSION"), "99.99.99\n").expect("write foreign VERSION");
     let out = Command::new(env!("CARGO_BIN_EXE_ahamkara"))
-        .args(&["--version"])
+        .args(["--version"])
         .current_dir(&tmp)
         .output()
         .expect("spawn ahamkara");

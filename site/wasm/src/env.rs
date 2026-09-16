@@ -184,12 +184,14 @@ pub fn set_interval<F: FnMut() + 'static>(ms: i32, f: F) {
     cb.forget();
 }
 
+type Frame = Closure<dyn FnMut(f64)>;
+
 /// rAF loop: `f(now_ms)` each frame while `keep()` is true.
 /// Re-arms itself; the closure owns itself via the Rc cycle.
 pub fn raf_loop<F: FnMut(f64) + 'static>(mut f: F) {
     use std::cell::RefCell;
     use std::rc::Rc;
-    let hold: Rc<RefCell<Option<Closure<dyn FnMut(f64)>>>> = Rc::new(RefCell::new(None));
+    let hold: Rc<RefCell<Option<Frame>>> = Rc::new(RefCell::new(None));
     let g = hold.clone();
     *g.borrow_mut() = Some(Closure::new(move |ts: f64| {
         f(ts);

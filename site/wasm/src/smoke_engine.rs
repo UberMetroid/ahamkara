@@ -161,8 +161,8 @@ pub fn update_and_render(
         let pulse = 1.0 + p.amp_r * (p.freq_r * time_sec + p.phase_r).sin();
         let rad = (p.radius_base * scale_ref.max(0.65) * pulse).max(50.0);
 
-        let fade_x = (px / edge_x).min(1.0).max(0.0).min(((width - px) / edge_x).max(0.0));
-        let fade_y = (py / edge_y).min(1.0).max(0.0).min(((height - py) / edge_y).max(0.0));
+        let fade_x = (px / edge_x).clamp(0.0, 1.0).min(((width - px) / edge_x).max(0.0));
+        let fade_y = (py / edge_y).clamp(0.0, 1.0).min(((height - py) / edge_y).max(0.0));
         let edge_fade = fade_x * fade_y;
         if edge_fade <= 0.002 {
             continue;
