@@ -105,6 +105,7 @@ main {
 .foot-whisper cite { font-style: normal; font-family: var(--font-mono); font-size: 0.75rem; }
 .extinction { font-family: var(--font-mono); font-size: 0.8rem; margin: 0 0 0.5rem; }
 .extinction .lie {
+  opacity: var(--lie-glow, 0);
   color: color-mix(in srgb, var(--bone-dim), var(--accent) calc(var(--lie-glow, 0) * 100%));
   text-shadow:
     0 0 calc(var(--lie-glow, 0) * 0.9rem) color-mix(in srgb, var(--accent) calc(var(--lie-glow, 0) * 90%), transparent),
