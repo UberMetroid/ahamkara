@@ -36,7 +36,8 @@ fn build_emits_all_pages() {
         assert!(dist().join(&p).is_file(), "missing {p}");
     }
     assert!(dist().join("llms.txt").is_file());
-    assert!(dist().join("js/main.js").is_file());
+    assert!(dist().join("js/ahamkara_fx.js").is_file());
+    assert!(dist().join("js/ahamkara_fx_bg.wasm").is_file());
     for css in ["base", "chrome", "content", "pages", "fx"] {
         assert!(dist().join(format!("css/{css}.css")).is_file());
     }

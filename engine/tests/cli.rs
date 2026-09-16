@@ -33,7 +33,11 @@ fn version_ignores_foreign_version_file() {
     assert!(out.status.success());
     let s = String::from_utf8_lossy(&out.stdout);
     assert!(!s.contains("99.99.99"), "ahamkara --version must not read local ./VERSION file");
-    assert!(s.trim().starts_with("ahamkara 2.1."));
+    let want = std::fs::read_to_string(
+        std::path::Path::new(env!("CARGO_MANIFEST_DIR")).join("../VERSION"),
+    )
+    .expect("read repo VERSION");
+    assert_eq!(s.trim(), format!("ahamkara {}", want.trim()));
 }
 
 #[test]

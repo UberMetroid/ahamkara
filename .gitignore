@@ -22,7 +22,8 @@ std
 # Site build output
 # ==========================================
 dist/
-site/ts/out/
+site/wasm/pkg/
+site/wasm/target/
 node_modules/
 
 # ==========================================

@@ -164,12 +164,22 @@ fn main() {
     // Copy static assets (recursive — css/, etc.).
     copy_dir(&root.join("site/static"), &out_dir);
 
-    // Copy compiled client JS modules if present.
-    let js_out = root.join("site/ts/out");
+    // Copy the wasm-pack browser bundle (glue .js + .wasm) if present.
+    let js_out = root.join("site/wasm/pkg");
     if js_out.is_dir() {
         let js_dest = out_dir.join("js");
         fs::create_dir_all(&js_dest).expect("create dist/js");
-        copy_dir(&js_out, &js_dest);
+        for entry in fs::read_dir(&js_out).expect("read wasm pkg") {
+            let path = entry.expect("pkg entry").path();
+            let keep = matches!(
+                path.extension().and_then(|e| e.to_str()),
+                Some("js") | Some("wasm")
+            );
+            if keep {
+                fs::copy(&path, js_dest.join(path.file_name().unwrap()))
+                    .expect("copy wasm pkg");
+            }
+        }
     } else {
         eprintln!("  warning: no compiled client at {}", js_out.display());
     }

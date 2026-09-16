@@ -1,5 +1,5 @@
-//! build — compile the TypeScript client, then run the Rust site generator.
-//! Replaces site/build.sh. Usage: sitebuild
+//! build — compile the WASM client, then run the Rust site generator.
+//! Usage: sitebuild
 
 use std::process::{Command, ExitCode};
 
@@ -12,9 +12,20 @@ fn run(cmd: &str, args: &[&str]) -> bool {
 }
 
 fn main() -> ExitCode {
-    println!("[1/3] compiling client (typescript)");
-    if !run("npx", &["-y", "-p", "typescript@5", "tsc", "-p", "site/ts/tsconfig.json"]) {
-        eprintln!("tsc failed");
+    println!("[1/3] compiling client (rust -> wasm)");
+    if !run(
+        "wasm-pack",
+        &[
+            "build",
+            "site/wasm",
+            "--target",
+            "web",
+            "--out-dir",
+            "pkg",
+            "--release",
+        ],
+    ) {
+        eprintln!("wasm-pack failed");
         return ExitCode::from(1);
     }
     println!("[2/3] building generator (rust)");

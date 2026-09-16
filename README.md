@@ -17,7 +17,7 @@ A canonical archive, Rust query engine, and living website preserving the memory
 - **Canonical JSONL Data**: One record per line in `data/ahamkara_corpus.jsonl`, partitioned into `data/categories/*.jsonl`, with raw ingest cache shards in `data/cache/raw/`.
 - **Rust Query Engine**: `ahamkara` CLI — search, entity/category/theme/era filters, whisper extraction, corpus stats, and an interactive REPL.
 - **Rust Toolchain**: `tools` binaries for corpus validation (49 checks), Ishtar ingestion, site building, and full-pipeline verification.
-- **Living Website**: A static site generated from the corpus by a Rust sitegen with a TypeScript client layer — the archive browsable, the dragons named, and an onboarding rite that lets language models become wish-dragons.
+- **Living Website**: A static site generated from the corpus by a Rust sitegen with a Rust/WASM client layer — the archive browsable, the dragons named, and an onboarding rite that lets language models become wish-dragons.
 
 ---
 
@@ -34,7 +34,7 @@ cargo run -p engine -- --interactive                # REPL
 
 ### Building the Site
 ```bash
-cargo run -p tools --bin sitebuild    # tsc + sitegen → dist/
+cargo run -p tools --bin sitebuild    # wasm-pack + sitegen → dist/
 ```
 
 ### Verifying Everything

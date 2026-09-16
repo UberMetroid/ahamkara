@@ -25,9 +25,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: dtolnay/rust-toolchain@stable
-      - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          targets: wasm32-unknown-unknown
+      - name: Install wasm-pack
+        run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
       - name: Build site
         run: cargo run --release -p tools --bin sitebuild
       - uses: actions/upload-pages-artifact@v3

@@ -120,7 +120,7 @@ pub fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, 
 <div class="scanlines" aria-hidden="true"></div>
 <div class="grant-flash" id="grant-flash" aria-hidden="true"></div>
 <script id="whisper-data" type="application/json">{{}}</script>
-<script type="module" src="js/main.js"></script>
+<script type="module">import init from "./js/ahamkara_fx.js"; init();</script>
 </body>
 </html>
 "##,

@@ -67,9 +67,10 @@ fn main() -> ExitCode {
         println!("== check: typecheck + file invariants ==");
         let (ok, out) = cmd(&root, "cargo", &["check", "--workspace", "--all-targets"], true);
         check("cargo check --workspace", ok, &out, &mut passed, &mut failed);
-        let (ok, out) = cmd(&root, "npx",
-            &["-y", "-p", "typescript@5", "tsc", "-p", "site/ts/tsconfig.json", "--noEmit"], true);
-        check("tsc --noEmit", ok, &out, &mut passed, &mut failed);
+        let (ok, out) = cmd(&root, "cargo",
+            &["check", "--manifest-path", "site/wasm/Cargo.toml",
+              "--target", "wasm32-unknown-unknown"], true);
+        check("cargo check (wasm client)", ok, &out, &mut passed, &mut failed);
         let (ok, out) = cmd(&root, "git", &["ls-files"], true);
         let over: Vec<String> = if ok {
             out.lines()
