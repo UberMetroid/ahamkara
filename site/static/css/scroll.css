@@ -138,6 +138,30 @@ main > .entries,
   scroll-snap-align: start;
 }
 
+/* ---------- wish-gap transitions between snap stops ---------- */
+.wish-gap {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  max-width: var(--measure);
+  margin: clamp(3rem, 9vh, 6rem) auto;
+  padding: 0 1.5rem;
+}
+.wish-gap-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--line), transparent);
+}
+.wish-gap-voice {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: clamp(0.9rem, 1.5vw, 1.02rem);
+  color: var(--bone-dim);
+  text-align: center;
+  margin: 0;
+}
+li.wish-gap { max-width: none; margin: clamp(2rem, 5vh, 3.5rem) 0; }
+
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; scroll-snap-type: none; }
   .scroll-cue { transition: none; }
