@@ -84,12 +84,12 @@ pub fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/base.css">
-<link rel="stylesheet" href="css/chrome.css">
-<link rel="stylesheet" href="css/content.css">
-<link rel="stylesheet" href="css/pages.css">
-<link rel="stylesheet" href="css/fx.css">
-<link rel="stylesheet" href="css/scroll.css">
+<link rel="stylesheet" href="css/base.css?v={ver}">
+<link rel="stylesheet" href="css/chrome.css?v={ver}">
+<link rel="stylesheet" href="css/content.css?v={ver}">
+<link rel="stylesheet" href="css/pages.css?v={ver}">
+<link rel="stylesheet" href="css/fx.css?v={ver}">
+<link rel="stylesheet" href="css/scroll.css?v={ver}">
 </head>
 <body class="page-{page}">
 <a class="skip" href="#main">Skip to content</a>
@@ -128,7 +128,7 @@ pub fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, 
 <canvas id="fx" aria-hidden="true"></canvas>
 <div class="scanlines" aria-hidden="true"></div>
 <script id="whisper-data" type="application/json">{{}}</script>
-<script type="module">import init from "./js/ahamkara_fx.js"; init();</script>
+<script type="module">import init from "./js/ahamkara_fx.js?v={ver}"; init("./js/ahamkara_fx_bg.wasm?v={ver}");</script>
 </body>
 </html>
 "##,
