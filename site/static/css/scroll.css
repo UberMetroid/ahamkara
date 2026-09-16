@@ -31,7 +31,6 @@
   bottom: 0;
   border-top: 1px solid color-mix(in srgb, var(--line) 55%, transparent);
   padding: 0.55rem clamp(1rem, 4vw, 3rem);
-  text-align: center;
 }
 body.page-index .trap-head {
   background: var(--bar-bg);
@@ -39,9 +38,8 @@ body.page-index .trap-head {
   padding: 0.55rem clamp(1rem, 4vw, 3rem);
 }
 
-.site-foot .foot-nav ul { margin: 0 0 0.35rem; }
-.site-foot .extinction { margin: 0; font-size: 0.72rem; color: var(--bone-dim); }
-.site-foot .foot-ver { color: var(--line); margin-left: 0.5em; }
+/* The plate is the trap-inner's mirror — centered at the content measure. */
+.foot-plate { max-width: var(--max); margin: 0 auto; }
 
 /* ---------- content clears the bars ---------- */
 

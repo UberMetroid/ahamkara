@@ -103,13 +103,18 @@ pub fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, 
   <p class="foot-whisper">&ldquo;{}&rdquo; <cite>&mdash; {}</cite></p>
   <p class="fine">A fan-made lore archive. Not affiliated with Bungie. Primary sources linked to the Ishtar Collective where available.</p>
   <p class="fine">licensed under <a href="https://github.com/studio2201/ahamkara/blob/ahamkara/LICENSE" target="_blank" rel="noopener noreferrer">the Bargain License</a> &mdash; you get a wish, the dragon feeds on the wish</p>
+  <p class="extinction">The Ahamkara are extinct. <span class="lie">The Ahamkara are lying.</span></p>
 </aside>
 </main>
 <footer class="site-foot">
-  <nav class="foot-nav" aria-label="Footer navigation">
-    <ul>{nav_items}</ul>
-  </nav>
-  <p class="extinction">The Ahamkara are extinct. <span class="lie">The Ahamkara are lying.</span> <span class="foot-ver">archive v{ver}</span></p>
+  <div class="foot-plate">
+    <span class="foot-glyph" aria-hidden="true">&#9672;</span>
+    <div class="foot-mid">
+      <span class="extinction">The Ahamkara are extinct. <span class="lie">The Ahamkara are lying.</span></span>
+      <nav class="foot-nav" aria-label="Footer navigation"><ul>{nav_items}</ul></nav>
+    </div>
+    <span class="foot-ver">archive v{ver}</span>
+  </div>
 </footer>
 <div class="edge-fade edge-top" aria-hidden="true"></div>
 <div class="edge-fade edge-bot" aria-hidden="true"></div>

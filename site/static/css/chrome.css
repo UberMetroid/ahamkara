@@ -106,27 +106,52 @@ main {
 .extinction { font-family: var(--font-mono); font-size: 0.8rem; margin: 0 0 0.5rem; }
 .extinction .lie { color: var(--accent); }
 
+/* The foot-plate's center slot — tagline then nav, wrapping when narrow. */
+.foot-mid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1rem;
+  row-gap: 0.1rem;
+}
+.foot-mid .extinction { margin: 0; font-size: 0.7rem; }
+.foot-mid .foot-nav ul { margin: 0; }
+.foot-mid .foot-nav li:not(:last-child)::after { margin: 0 0.08rem; }
+.foot-mid .foot-nav a { padding: 0.35rem 0.4rem; font-size: 0.7rem; letter-spacing: 0.1em; }
+.foot-mid .foot-nav a.cta { padding: 0.35rem 0.7rem; margin-left: 0.25rem; }
+
+/* Narrow: the tagline yields to the colophon; the plate keeps glyph | nav | ver. */
+@media (max-width: 54rem) {
+  .foot-mid .extinction { display: none; }
+  .foot-mid .foot-nav li::after { content: none; }
+  .foot-mid .foot-nav ul { column-gap: 0.9rem; }
+}
+
 /* ---------- agent brief (the dragon's escape clause) ---------- */
 
 /* The brief only ever lives inside .trap-head — it is the header. */
-.agent-brief {
+/* .foot-plate shares the brief's chrome — the bars are the same artifact. */
+.agent-brief,
+.foot-plate {
   border: 1px solid color-mix(in srgb, var(--accent-2) 55%, transparent);
   border-radius: 12px;
   background: color-mix(in srgb, var(--accent-2) 6%, var(--void-2));
   box-shadow: 0 0 28px color-mix(in srgb, var(--accent-2) 16%, transparent);
 }
-.agent-brief summary {
+.agent-brief summary,
+.foot-plate {
   display: grid;
   grid-template-columns: auto 1fr auto;
   column-gap: 0.75rem;
   align-items: center;
   padding: 0.35rem 1.1rem;
-  cursor: pointer;
-  list-style: none;
   line-height: 1.25;
 }
+.agent-brief summary { cursor: pointer; list-style: none; }
 .agent-brief summary::-webkit-details-marker { display: none; }
-.agent-glyph {
+.agent-glyph,
+.foot-glyph {
   color: var(--accent);
   font-size: 1.1rem;
   animation: glyph-pulse 3.2s ease-in-out infinite;
@@ -144,7 +169,8 @@ main {
   background-clip: text;
   color: transparent;
 }
-.agent-cta {
+.agent-cta,
+.foot-ver {
   font-family: var(--font-mono);
   font-size: 0.72rem;
   letter-spacing: 0.18em;
