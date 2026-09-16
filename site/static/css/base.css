@@ -55,7 +55,7 @@ body {
 /* ---------- accessibility scaffolding ---------- */
 
 .skip {
-  position: absolute;
+  position: fixed;
   left: -9999px;
   top: 0;
   background: var(--accent);

@@ -88,6 +88,7 @@ pub fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, 
 <link rel="stylesheet" href="css/content.css">
 <link rel="stylesheet" href="css/pages.css">
 <link rel="stylesheet" href="css/fx.css">
+<link rel="stylesheet" href="css/scroll.css">
 </head>
 <body class="page-{page}">
 <a class="skip" href="#main">Skip to content</a>
@@ -98,16 +99,22 @@ pub fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, 
 </header>
 <main id="main" tabindex="-1">
 {body}
+<aside class="colophon" aria-label="Colophon">
+  <p class="foot-whisper">&ldquo;{}&rdquo; <cite>&mdash; {}</cite></p>
+  <p class="fine">A fan-made lore archive. Not affiliated with Bungie. Primary sources linked to the Ishtar Collective where available.</p>
+  <p class="fine">licensed under <a href="https://github.com/studio2201/ahamkara/blob/ahamkara/LICENSE" target="_blank" rel="noopener noreferrer">the Bargain License</a> &mdash; you get a wish, the dragon feeds on the wish</p>
+</aside>
 </main>
 <footer class="site-foot">
   <nav class="foot-nav" aria-label="Footer navigation">
     <ul>{nav_items}</ul>
   </nav>
-  <p class="foot-whisper">&ldquo;{}&rdquo; <cite>&mdash; {}</cite></p>
-  <p class="extinction">The Ahamkara are extinct. <span class="lie">The Ahamkara are lying.</span></p>
-  <p class="fine">A fan-made lore archive. Not affiliated with Bungie. Primary sources linked to the Ishtar Collective where available.</p>
-  <p class="fine">archive v{ver} &middot; licensed under <a href="https://github.com/studio2201/ahamkara/blob/ahamkara/LICENSE" target="_blank" rel="noopener noreferrer">the Bargain License</a> &mdash; you get a wish, the dragon feeds on the wish</p>
+  <p class="extinction">The Ahamkara are extinct. <span class="lie">The Ahamkara are lying.</span> <span class="foot-ver">archive v{ver}</span></p>
 </footer>
+<div class="edge-fade edge-top" aria-hidden="true"></div>
+<div class="edge-fade edge-bot" aria-hidden="true"></div>
+<button class="scroll-cue up" type="button" aria-label="Scroll up">&#8593;</button>
+<button class="scroll-cue down" type="button" aria-label="Scroll down">&#8595;</button>
 <svg class="fx-defs" width="0" height="0" aria-hidden="true" focusable="false"><defs>
 <filter id="warp" x="-15%" y="-15%" width="130%" height="130%">
 <feTurbulence type="fractalNoise" baseFrequency="0 0.11" numOctaves="2" seed="7" result="n">

@@ -1,6 +1,6 @@
 [package]
 name = "ahamkara-fx"
-version = "2.2.0"
+version = "2.3.0"
 edition = "2021"
 description = "Ahamkara client runtime — wish magic, smoke, sigils, whispers (WASM)"
 
@@ -56,8 +56,10 @@ features = [
   "PointerEvent",
   "ResizeObserver",
   "ResizeObserverEntry",
+  "ScrollBehavior",
   "ScrollIntoViewOptions",
   "ScrollLogicalPosition",
+  "ScrollToOptions",
   "Window",
 ]
 

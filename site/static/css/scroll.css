@@ -1,0 +1,131 @@
+/* scroll.css — fixed chrome: header/footer bars, edge fades, scroll
+   cues, and section snapping. --head-h/--foot-h are measured live by
+   the WASM scroll module; the fallbacks cover the pre-boot frame. */
+
+:root {
+  --head-h: 3.4rem;
+  --foot-h: 4.6rem;
+  --bar-bg: color-mix(in srgb, var(--void-2) 82%, transparent);
+}
+
+/* ---------- fixed bars (same skin, mirrored) ---------- */
+
+.trap-head,
+.site-foot {
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 70;
+  background: var(--bar-bg);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  font-family: var(--font-mono);
+}
+.trap-head {
+  top: 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 55%, transparent);
+  max-height: 72vh;
+  overflow-y: auto;
+}
+.site-foot {
+  bottom: 0;
+  border-top: 1px solid color-mix(in srgb, var(--line) 55%, transparent);
+  padding: 0.55rem clamp(1rem, 4vw, 3rem);
+  text-align: center;
+}
+body.page-index .trap-head {
+  background: var(--bar-bg);
+  border-bottom: 1px solid color-mix(in srgb, var(--line) 55%, transparent);
+  padding: 0.55rem clamp(1rem, 4vw, 3rem);
+}
+
+.site-foot .foot-nav ul { margin: 0 0 0.35rem; }
+.site-foot .extinction { margin: 0; font-size: 0.72rem; color: var(--bone-dim); }
+.site-foot .foot-ver { color: var(--line); margin-left: 0.5em; }
+
+/* ---------- content clears the bars ---------- */
+
+main {
+  padding-top: calc(var(--head-h) + clamp(1.5rem, 4vw, 3rem));
+  padding-bottom: calc(var(--foot-h) + clamp(2rem, 4vw, 3rem));
+}
+
+.colophon {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid color-mix(in srgb, var(--line) 40%, transparent);
+  text-align: center;
+}
+.colophon .foot-whisper { margin: 0 0 1rem; }
+.colophon .fine { margin: 0 0 0.4rem; }
+
+/* ---------- edge fades — content dissolves before the bars ---------- */
+
+.edge-fade {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 4.5rem;
+  z-index: 30;
+  pointer-events: none;
+}
+.edge-top {
+  top: var(--head-h);
+  background: linear-gradient(to bottom, var(--void), transparent);
+}
+.edge-bot {
+  bottom: var(--foot-h);
+  background: linear-gradient(to top, var(--void), transparent);
+}
+
+/* ---------- scroll cues ---------- */
+
+.scroll-cue {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 75;
+  width: 2.4rem;
+  height: 2.4rem;
+  border: 1px solid color-mix(in srgb, var(--accent-2) 45%, transparent);
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--void-2) 88%, transparent);
+  color: var(--accent);
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  line-height: 1;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+.scroll-cue.up { top: calc(var(--head-h) + 0.6rem); }
+.scroll-cue.down { bottom: calc(var(--foot-h) + 0.6rem); }
+body.can-up .scroll-cue.up,
+body.can-down .scroll-cue.down { opacity: 0.75; pointer-events: auto; }
+.scroll-cue:hover { opacity: 1; border-color: var(--accent); }
+.scroll-cue:focus-visible { opacity: 1; }
+
+/* The live cue replaces the hero's static scroll hint when WASM is up. */
+body.can-down .scroll-hint { opacity: 0; }
+
+/* ---------- snapping ---------- */
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+  scroll-padding-top: calc(var(--head-h) + 4.5rem);
+  scroll-padding-bottom: calc(var(--foot-h) + 4.5rem);
+}
+main > .page-head,
+main > section,
+main > .entries,
+.page-index-wrap > section,
+.colophon {
+  scroll-snap-align: start;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; scroll-snap-type: none; }
+  .scroll-cue { transition: none; }
+}

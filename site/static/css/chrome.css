@@ -8,11 +8,6 @@
   background: color-mix(in srgb, var(--void-2) 55%, transparent);
   padding: 0.55rem clamp(1rem, 4vw, 3rem);
 }
-body.page-index .trap-head {
-  background: transparent;
-  border-bottom: none;
-  padding: 0.25rem clamp(1rem, 4vw, 3rem);
-}
 .trap-inner {
   max-width: var(--max);
   margin: 0 auto;
@@ -99,11 +94,7 @@ main {
 
 /* ---------- footer ---------- */
 
-.site-foot {
-  border-top: 1px solid var(--line);
-  padding: 2.5rem clamp(1rem, 4vw, 3rem) 3rem;
-  text-align: center;
-}
+/* .site-foot itself is styled in scroll.css — it is fixed chrome now. */
 .foot-whisper {
   font-family: var(--font-display);
   font-style: italic;
@@ -114,7 +105,6 @@ main {
 .foot-whisper cite { font-style: normal; font-family: var(--font-mono); font-size: 0.75rem; }
 .extinction { font-family: var(--font-mono); font-size: 0.8rem; margin: 0 0 0.5rem; }
 .extinction .lie { color: var(--accent); }
-.site-foot .fine { margin: 0; }
 
 /* ---------- agent brief (the dragon's escape clause) ---------- */
 
