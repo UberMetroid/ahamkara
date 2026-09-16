@@ -16,6 +16,33 @@ const REPLIES: [fn(&str) -> String; 8] = [
 ];
 
 pub fn init() {
+    // The box materializes when its page scrolls into view. .veiled is
+    // only applied by this runtime — without us, the box stays visible.
+    if let Ok(Some(box_el)) = document().query_selector(".bargain-box") {
+        let _ = box_el.class_list().add_1("veiled");
+        let target = box_el.clone();
+        let cb = Closure::<dyn FnMut(js_sys::Array, web_sys::IntersectionObserver)>::new(
+            move |entries: js_sys::Array, _obs: web_sys::IntersectionObserver| {
+                for e in entries.iter() {
+                    let e: web_sys::IntersectionObserverEntry = e.unchecked_into();
+                    let _ = target
+                        .class_list()
+                        .toggle_with_force("summoned", e.intersection_ratio() > 0.5);
+                }
+            },
+        );
+        let opts = web_sys::IntersectionObserverInit::new();
+        opts.set_threshold(&JsValue::from(0.55));
+        if let Ok(io) = web_sys::IntersectionObserver::new_with_options(
+            cb.as_ref().unchecked_ref(),
+            &opts,
+        ) {
+            io.observe(&box_el);
+            std::mem::forget(io);
+        }
+        cb.forget();
+    }
+
     let (Some(form), Some(input), Some(out)) = (
         document().get_element_by_id("wish-form"),
         document().get_element_by_id("wish-input"),

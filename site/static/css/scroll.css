@@ -130,20 +130,98 @@ main > .page-head,
 main > section,
 main > .entries,
 .hero-viewport,
-.hero-title,
-.hero-desc,
-.bargain-box,
+.lore-page,
+.bargain-page,
 .tiles,
+.license-page,
 .colophon {
   scroll-snap-align: start;
 }
 
-/* ---------- snap-gap: a full page of void between stops ---------- */
-.snap-gap {
-  height: calc(100vh - var(--head-h) - var(--foot-h));
-  height: calc(100dvh - var(--head-h) - var(--foot-h));
-  min-height: 12rem;
+/* ---------- index pages — each stop is a full stage ---------- */
+.lore-page,
+.bargain-page,
+.tiles,
+.license-page {
+  min-height: calc(100vh - var(--head-h) - var(--foot-h));
+  min-height: calc(100dvh - var(--head-h) - var(--foot-h));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* content centers on the visible region between the bars: the page
+     lands at scroll-padding-top (+4.5rem of fade), so the extra pad
+     below pushes its flex-center up onto the true middle. */
+  padding: 2rem clamp(1rem, 4vw, 3rem) calc(2rem + 9rem);
+  box-sizing: border-box;
 }
+/* Centered top-to-bottom; equal space from the left edge and the
+   cue rail on the right. */
+.bargain-page {
+  padding-left: 0;
+  padding-right: max(2.75rem, calc(50vw - var(--max) / 2 + 3.3rem));
+}
+
+/* The bargain materializes when its page arrives. .veiled is only
+   ever set by the runtime — without it the box is always shown. */
+.bargain-box {
+  transition: opacity 1.1s ease, transform 1.1s ease, filter 1.1s ease;
+}
+.bargain-box.veiled {
+  opacity: 0;
+  transform: translateY(1.75rem) scale(0.96);
+  filter: blur(9px);
+}
+.bargain-box.summoned {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+/* ---------- the Bargain License page ---------- */
+.license-title {
+  font-family: var(--font-display);
+  font-size: clamp(1.7rem, 4.5vw, 2.8rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--bone);
+  margin: 0 0 0.75rem;
+}
+.license-lead {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--accent);
+  margin: 0 0 1.75rem;
+}
+.license-terms {
+  max-width: 38rem;
+  text-align: left;
+  border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--line));
+  border-radius: 12px;
+  padding: 1.25rem clamp(1rem, 3vw, 1.75rem);
+  background: color-mix(in srgb, var(--void-2) 55%, transparent);
+}
+.license-terms p {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  line-height: 1.55;
+  color: var(--bone-dim);
+  margin: 0.55rem 0;
+}
+.license-terms strong { color: var(--bone); font-weight: 600; }
+.license-terms .t-num { color: var(--accent); margin-right: 0.5rem; }
+.license-link {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-top: 1.75rem;
+}
+.license-link:hover { color: var(--accent-2); }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; scroll-snap-type: none; }

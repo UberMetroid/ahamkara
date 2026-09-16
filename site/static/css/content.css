@@ -96,14 +96,6 @@ body.page-index .trap-head { background: transparent; border-bottom: none; paddi
   50% { transform: translate(-50%, 6px); opacity: 0.7; }
 }
 
-/* ---------- progressive scroll core lore ---------- */
-.core-lore {
-  max-width: var(--max);
-  margin: 0 auto;
-  padding: clamp(3rem, 6vw, 5rem) clamp(1rem, 4vw, 3rem) 2rem;
-}
-.core-lore .lore-header { text-align: center; margin-bottom: 2.5rem; }
-
 .hero { text-align: center; padding: clamp(1rem, 3vw, 2rem) 0 0; }
 .hero-title {
   filter: url(#warp);
@@ -208,32 +200,43 @@ body.page-index .trap-head { background: transparent; border-bottom: none; paddi
   margin: 0;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 8.5rem));
+  justify-content: center;
+  gap: 0.9rem;
 }
 .tile { aspect-ratio: 1 / 1; }
 .tile:last-child {
   grid-column: 1 / -1;
   justify-self: center;
-  width: calc(50% - 0.5rem);
+  width: calc(50% - 0.45rem);
 }
 .tile a {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  justify-content: center;
+  gap: 0.45rem;
   height: 100%;
   border: 1px solid var(--line);
   border-radius: 12px;
-  padding: 1.25rem;
+  padding: 0.7rem;
   text-decoration: none;
+  text-align: center;
   color: var(--bone);
   background: color-mix(in srgb, var(--void-2) 55%, transparent);
   transition: border-color 0.25s, transform 0.25s;
 }
 .tile a:hover { border-color: var(--accent); transform: translateY(-2px); }
-.tile-name { font-family: var(--font-display); font-size: 1.4rem; font-weight: 600; }
-.tile-blurb { color: var(--bone-dim); font-size: 0.95rem; flex: 1; }
-.tile-cta { font-family: var(--font-mono); font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); }
+.tile-name { font-family: var(--font-display); font-size: 1.05rem; font-weight: 600; }
+.tile-blurb {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.tile-cta { font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); }
 
 @media (prefers-reduced-motion: reduce) {
   .scroll-hint { animation: none; opacity: 0.5; }

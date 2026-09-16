@@ -22,7 +22,7 @@ fn measure() {
 /// the entries list, and the index's fine-grained stops: the welcome
 /// quote, title, description, the wish box, the nav grid, the colophon.
 const SNAP_SEL: &str = "main > .page-head, main > section, main > .entries, .colophon, \
-    .hero-viewport, .hero-title, .hero-desc, .bargain-box, .tiles";
+    .hero-viewport, .lore-page, .bargain-page, .tiles, .license-page";
 
 fn cues() {
     let (Some(body), Some(el)) = (document().body(), document().document_element()) else {
