@@ -129,7 +129,11 @@ html {
 main > .page-head,
 main > section,
 main > .entries,
-.page-index-wrap > section,
+.hero-viewport,
+.hero-title,
+.hero-desc,
+.bargain-box,
+.tiles .tile,
 .colophon {
   scroll-snap-align: start;
 }
