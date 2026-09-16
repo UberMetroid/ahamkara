@@ -31,15 +31,18 @@
   bottom: 0;
   border-top: 1px solid color-mix(in srgb, var(--line) 55%, transparent);
   padding: 0.55rem clamp(1rem, 4vw, 3rem);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.1rem;
+  row-gap: 0.15rem;
 }
 body.page-index .trap-head {
   background: var(--bar-bg);
   border-bottom: 1px solid color-mix(in srgb, var(--line) 55%, transparent);
   padding: 0.55rem clamp(1rem, 4vw, 3rem);
 }
-
-/* The plate is the trap-inner's mirror — centered at the content measure. */
-.foot-plate { max-width: var(--max); margin: 0 auto; }
 
 /* ---------- content clears the bars ---------- */
 
