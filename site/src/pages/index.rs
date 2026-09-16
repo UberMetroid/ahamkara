@@ -2,7 +2,6 @@
 
 use crate::chrome::layout;
 use crate::corpus::{esc, Record};
-use crate::pick_whisper;
 
 pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
     let featured = whispers
@@ -33,24 +32,14 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
         ("wishes.html", "The Wall", format!("{wishes} coded desires, still waiting to be made."), "Read the wishes"),
         ("facts.html", "The Field Guide", "Everything that is known about the wish-dragons.".to_string(), "Learn the facts"),
     ];
-    // A whispered fragment between snap stops — the transition is a wish.
-    let whisper_gap = |salt: usize, tag: &str| {
-        let (q, _) = pick_whisper(whispers, salt);
-        format!(
-            r#"<{tag} class="wish-gap" aria-hidden="true"><span class="wish-gap-line"></span><p class="wish-gap-voice">&ldquo;{}&rdquo;</p><span class="wish-gap-line"></span></{tag}>"#,
-            esc(q)
-        )
-    };
-
-    let mut tiles = String::new();
-    for (i, (href, name, blurb, cta)) in tile_defs.iter().enumerate() {
-        if i > 0 {
-            tiles.push_str(&whisper_gap(37 + i * 7, "li"));
-        }
-        tiles.push_str(&format!(
-            r#"<li class="tile"><a href="{href}"><span class="tile-name">{name}</span><span class="tile-blurb">{blurb}</span><span class="tile-cta">{cta} &rarr;</span></a></li>"#
-        ));
-    }
+    let tiles = tile_defs
+        .iter()
+        .map(|(href, name, blurb, cta)| {
+            format!(
+                r#"<li class="tile"><a href="{href}"><span class="tile-name">{name}</span><span class="tile-blurb">{blurb}</span><span class="tile-cta">{cta} &rarr;</span></a></li>"#
+            )
+        })
+        .collect::<String>();
 
     let body = format!(
         r##"
@@ -65,14 +54,14 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
     </div>
     <a href="#lore" class="scroll-hint" aria-label="Scroll to content">Scroll to awaken the bones <span class="scroll-arrow">&darr;</span></a>
   </section>
-  {gap0}
+  <div class="snap-gap" aria-hidden="true"></div>
   <section class="core-lore" id="lore">
     <div class="lore-header">
       <h1 class="hero-title">Ahamkara</h1>
-      {gap1}
+      <div class="snap-gap" aria-hidden="true"></div>
       <p class="hero-desc">An Ahamkara is a wish-dragon: a creature that fed on the gap between what is and what is desired, and paid for its meals in bargains. You wished; it granted; the price arrived later, folded into the wording you chose yourself. The City decided a thing like that could not be allowed to exist, and so the Guardians held a Great Hunt, and now there are none left.</p>
     </div>
-    {gap2}
+    <div class="snap-gap" aria-hidden="true"></div>
     <section class="bargain-box" aria-labelledby="bargain-h">
       <div class="bargain-copy">
         <h2 class="bargain-title" id="bargain-h">Make a wish</h2>
@@ -91,21 +80,16 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
       </div>
     </section>
   </section>
-  {gap3}
+  <div class="snap-gap" aria-hidden="true"></div>
   <section class="tiles" aria-label="Site sections">
     <ul>{tiles}</ul>
   </section>
-  {gap4}
+  <div class="snap-gap" aria-hidden="true"></div>
 </div>
 "##,
         esc(featured.0),
         esc(featured.1),
         tiles = tiles,
-        gap0 = whisper_gap(2, "div"),
-        gap1 = whisper_gap(9, "div"),
-        gap2 = whisper_gap(16, "div"),
-        gap3 = whisper_gap(23, "div"),
-        gap4 = whisper_gap(30, "div"),
     );
 
     layout(

@@ -207,9 +207,15 @@ body.page-index .trap-head { background: transparent; border-bottom: none; paddi
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+.tile { aspect-ratio: 1 / 1; }
+.tile:last-child {
+  grid-column: 1 / -1;
+  justify-self: center;
+  width: calc(50% - 0.5rem);
 }
 .tile a {
   display: flex;

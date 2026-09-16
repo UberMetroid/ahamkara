@@ -20,9 +20,9 @@ fn measure() {
 
 /// The snap-aligned blocks cues step between — page heads, sections,
 /// the entries list, and the index's fine-grained stops: the welcome
-/// quote, title, description, the wish box, each nav tile, the colophon.
+/// quote, title, description, the wish box, the nav grid, the colophon.
 const SNAP_SEL: &str = "main > .page-head, main > section, main > .entries, .colophon, \
-    .hero-viewport, .hero-title, .hero-desc, .bargain-box, .tiles .tile";
+    .hero-viewport, .hero-title, .hero-desc, .bargain-box, .tiles";
 
 fn cues() {
     let (Some(body), Some(el)) = (document().body(), document().document_element()) else {
