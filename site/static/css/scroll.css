@@ -109,8 +109,14 @@ main {
 .scroll-cue:focus-visible { opacity: 1; }
 .scroll-cue.off { opacity: 0.15; pointer-events: none; }
 
-/* The live rail replaces the hero's static scroll hint when WASM is up. */
-body.can-down .scroll-hint { opacity: 0; }
+/* The live rail replaces the hero's static scroll hint when WASM is up.
+   scroll-bob animates opacity, so the animation must die with the fade. */
+body.can-down .scroll-hint { opacity: 0; animation: none; pointer-events: none; }
+
+@media (max-width: 40rem) {
+  .cue-rail { right: 0.5rem; gap: 0.45rem; }
+  .scroll-cue { width: 2rem; height: 2rem; font-size: 0.7rem; }
+}
 
 /* ---------- snapping ---------- */
 
