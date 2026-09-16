@@ -9,7 +9,10 @@
 }
 .trap-inner {
   max-width: var(--max);
-  margin: 0 auto;
+  /* auto margins center the brief while it's short, but collapse to
+     top-aligned once it overflows — align-items:center would clip the
+     first lines above the header's own scroll area. */
+  margin: auto;
   flex: 1;
 }
 .trap-head .agent-brief { margin: 0; }
