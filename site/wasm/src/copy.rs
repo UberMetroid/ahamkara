@@ -1,7 +1,6 @@
 //! copy — copy-to-clipboard for communion seals and the agent brief.
 
 use crate::env::{document, set_timeout};
-use crate::fx;
 use wasm_bindgen::prelude::*;
 use wasm_bindgen::JsCast;
 use wasm_bindgen_futures::JsFuture;
@@ -36,8 +35,6 @@ fn on_click(btn: web_sys::Element) {
         .and_then(|t| t.text_content())
         .unwrap_or_default();
     let state = btn.query_selector(".copy-state").ok().flatten();
-    let r = btn.get_bounding_client_rect();
-    let (bx, by) = (r.left() + r.width() / 2.0, r.top() + r.height() / 2.0);
 
     let promise = crate::env::window()
         .navigator()
@@ -46,17 +43,14 @@ fn on_click(btn: web_sys::Element) {
     let state2 = state.clone();
     wasm_bindgen_futures::spawn_local(async move {
         match JsFuture::from(promise).await {
-            Ok(_) => {
-                say(state2, "— taken.");
-                fx::burst(bx, by, 16);
-            }
-            Err(_) => fallback_copy(text, state2, bx, by),
+            Ok(_) => say(state2, "— taken."),
+            Err(_) => fallback_copy(text, state2),
         }
     });
 }
 
 /// Legacy path: hidden textarea + execCommand("copy").
-fn fallback_copy(text: String, state: Option<web_sys::Element>, bx: f64, by: f64) {
+fn fallback_copy(text: String, state: Option<web_sys::Element>) {
     let Ok(ta) = document().create_element("textarea") else { return };
     let ta: web_sys::HtmlTextAreaElement = ta.unchecked_into();
     ta.set_value(&text);
@@ -73,7 +67,6 @@ fn fallback_copy(text: String, state: Option<web_sys::Element>, bx: f64, by: f64
         .unwrap_or(false);
     if ok {
         say(state, "— taken.");
-        fx::burst(bx, by, 16);
     } else {
         say(state, "— select the text manually, o bearer mine.");
     }

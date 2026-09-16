@@ -43,6 +43,10 @@ fn cues() {
             let _ = b.class_list().toggle_with_force("off", off);
         }
     }
+    // The lie brightens the deeper you read.
+    let glow = if max > 0.0 { (y / max).clamp(0.0, 1.0) } else { 0.0 };
+    let root: web_sys::HtmlElement = el.clone().unchecked_into();
+    let _ = root.style().set_property("--lie-glow", &format!("{glow:.3}"));
 }
 
 /// The scroll-padding top as px — where a snapped section rests.

@@ -2,7 +2,7 @@
 //! and the featured-quote cycler on the index.
 
 use crate::env::{document, pick_idx, rand, reduced_motion, set_timeout, whispers, Whisper};
-use crate::fx;
+
 use std::cell::{Cell, RefCell};
 use std::rc::Rc;
 use wasm_bindgen::prelude::*;
@@ -34,12 +34,10 @@ pub fn init_whispers() {
         let _ = document().body().unwrap().append_child(&el);
         active.set(active.get() + 1);
 
-        // Next frame: fade in + a halo answers the whisper.
+        // Next frame: fade the whisper in.
         let el2 = el.clone();
         let cb = Closure::<dyn FnMut(f64)>::new(move |_| {
             let _ = el2.class_list().add_1("show");
-            let r = el2.get_bounding_client_rect();
-            fx::ring(r.left() + r.width() / 2.0, r.top() + r.height() / 2.0);
         });
         let _ = crate::env::window().request_animation_frame(cb.as_ref().unchecked_ref());
         cb.forget();

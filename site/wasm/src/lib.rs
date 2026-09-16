@@ -6,9 +6,7 @@ mod archive;
 mod bargain;
 mod copy;
 mod env;
-mod flash;
-mod fx;
-mod fx_frame;
+mod fog;
 mod scroll;
 mod sigils;
 mod sigils_wall;
@@ -22,7 +20,7 @@ use wasm_bindgen::prelude::*;
 #[wasm_bindgen(start)]
 pub fn init() {
     scroll::init();
-    fx::init();
+    fog::init();
     smoke::init();
     trip::init();
     sigils_wall::init();

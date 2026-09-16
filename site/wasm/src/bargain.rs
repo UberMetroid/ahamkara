@@ -1,7 +1,6 @@
 //! bargain — the Make a Wish widget: grants the wish, names the price.
 
 use crate::env::{document, pick_idx, window};
-use crate::{flash, fx};
 use wasm_bindgen::prelude::*;
 use wasm_bindgen::JsCast;
 
@@ -41,10 +40,6 @@ pub fn init() {
             .map(|b| b.get_bounding_client_rect())
             .unwrap_or_else(|| form2.get_bounding_client_rect());
         let cx = (rect.left() + rect.width() / 2.0).round();
-        let cy = (rect.top() + rect.height() / 2.0).round();
-        fx::burst(cx, cy, 44);
-        fx::ring(cx, cy);
-        flash::grant_flash(cx, cy);
 
         let detail = js_sys::Object::new();
         js_sys::Reflect::set(&detail, &"wish".into(), &cleaned.clone().into()).ok();

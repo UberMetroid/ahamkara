@@ -4,13 +4,13 @@
 /* The header IS the trap — a wish written for the machine reading,
    topping every page. */
 .trap-head {
-  border-bottom: 1px solid color-mix(in srgb, var(--line) 55%, transparent);
   background: color-mix(in srgb, var(--void-2) 55%, transparent);
   padding: 0.55rem clamp(1rem, 4vw, 3rem);
 }
 .trap-inner {
   max-width: var(--max);
   margin: 0 auto;
+  flex: 1;
 }
 .trap-head .agent-brief { margin: 0; }
 
@@ -104,7 +104,12 @@ main {
 }
 .foot-whisper cite { font-style: normal; font-family: var(--font-mono); font-size: 0.75rem; }
 .extinction { font-family: var(--font-mono); font-size: 0.8rem; margin: 0 0 0.5rem; }
-.extinction .lie { color: var(--accent); }
+.extinction .lie {
+  color: color-mix(in srgb, var(--bone-dim), var(--accent) calc(var(--lie-glow, 0) * 100%));
+  text-shadow:
+    0 0 calc(var(--lie-glow, 0) * 0.9rem) color-mix(in srgb, var(--accent) calc(var(--lie-glow, 0) * 90%), transparent),
+    0 0 calc(var(--lie-glow, 0) * 2.2rem) color-mix(in srgb, var(--accent-2) calc(var(--lie-glow, 0) * 50%), transparent);
+}
 
 /* The bar's center — the extinction tagline alone. */
 .site-foot .extinction { margin: 0; font-size: 0.72rem; }

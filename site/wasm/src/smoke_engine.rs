@@ -79,6 +79,45 @@ pub fn create_puffs(count: usize) -> Vec<WispPuff> {
     puffs
 }
 
+/// Rolling dream-fog for the full-page overlay: broader, slower,
+/// lower-banked puffs than the hero smoke.
+pub fn create_fog_puffs(count: usize) -> Vec<WispPuff> {
+    let mut puffs = Vec::with_capacity(count);
+    for _ in 0..count {
+        let roll = rand();
+        let c = if roll < 0.38 {
+            &PALETTE[0]
+        } else if roll < 0.68 {
+            &PALETTE[1]
+        } else if roll < 0.90 {
+            &PALETTE[2]
+        } else {
+            &PALETTE[3]
+        };
+        puffs.push(WispPuff {
+            base_x: rand(),
+            base_y: 0.15 + rand() * 0.95,
+            radius_base: rand_range(240.0, 430.0),
+            vx: rand_range(-0.016, 0.016),
+            vy: rand_range(0.003, 0.010),
+            amp_x: rand_range(0.05, 0.14),
+            amp_y: rand_range(0.03, 0.08),
+            freq_x: rand_range(0.10, 0.30),
+            freq_y: rand_range(0.14, 0.34),
+            phase_x: rand() * TAU,
+            phase_y: rand() * TAU,
+            amp_r: rand_range(0.10, 0.22),
+            freq_r: rand_range(0.16, 0.40),
+            phase_r: rand() * TAU,
+            r: c.r,
+            g: c.g,
+            b: c.b,
+            alpha: rand_range(c.min_a, c.max_a) * 0.85,
+        });
+    }
+    puffs
+}
+
 pub fn update_and_render(
     ctx: &CanvasRenderingContext2d,
     puffs: &mut [WispPuff],
@@ -86,9 +125,14 @@ pub fn update_and_render(
     height: f64,
     time_sec: f64,
     dt: f64,
+    paint_bg: bool,
 ) {
-    ctx.set_fill_style_str("#07060b");
-    ctx.fill_rect(0.0, 0.0, width, height);
+    if paint_bg {
+        ctx.set_fill_style_str("#07060b");
+        ctx.fill_rect(0.0, 0.0, width, height);
+    } else {
+        ctx.clear_rect(0.0, 0.0, width, height);
+    }
     ctx.set_global_composite_operation("screen").ok();
 
     let scale_ref = width.min(height) / 800.0;

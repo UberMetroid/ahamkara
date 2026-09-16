@@ -56,7 +56,7 @@ pub fn init() {
         let i = (((e.client_y() as f64 - r.top()) / (r.height() / 4.0)) as i32) * 4
             + ((e.client_x() as f64 - r.left()) / (r.width() / 4.0)) as i32;
         if i >= 0 && (i as usize) < CELLS {
-            trigger(&mut g, i as usize, e.client_x() as f64, e.client_y() as f64);
+            trigger(&mut g, i as usize);
         }
     });
     let _ = canvas.add_event_listener_with_callback("pointerdown", cb.as_ref().unchecked_ref());
@@ -68,16 +68,8 @@ pub fn init() {
         match e.key().as_str() {
             "Enter" | " " => {
                 e.prevent_default();
-                let r = g.canvas.get_bounding_client_rect();
-                let (cw, ch) = (r.width() / 4.0, r.height() / 4.0);
                 let fi = g.focus;
-                let (col, row) = (fi % 4, fi / 4);
-                trigger(
-                    &mut g,
-                    fi,
-                    r.left() + col as f64 * cw + cw / 2.0,
-                    r.top() + row as f64 * ch + ch / 2.0,
-                );
+                trigger(&mut g, fi);
                 g.focus = (fi + 1) % CELLS;
             }
             "ArrowRight" => {

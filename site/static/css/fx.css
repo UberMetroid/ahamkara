@@ -56,23 +56,6 @@ body.tripping .page-head h1 {
   );
 }
 
-.grant-flash {
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 79;
-  opacity: 0;
-  transition: opacity 0.7s ease-out;
-  background: radial-gradient(
-    circle at var(--gx, 50%) var(--gy, 60%),
-    color-mix(in srgb, var(--accent) 38%, transparent),
-    transparent 45%
-  );
-}
-.grant-flash.on { opacity: 1; }
-
-
-
 /* ---------- ambient whispers (JS enhancement) ---------- */
 
 .whisper-bit {
@@ -111,5 +94,5 @@ body.tripping .page-head h1 {
     scroll-behavior: auto !important;
   }
   .hero-title { filter: none; }
-  #fx, .grant-flash { display: none; }
+  #fx { display: none; }
 }

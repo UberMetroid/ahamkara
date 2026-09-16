@@ -4,7 +4,7 @@
 //! Each sigil is seeded per cell — the wall never rearranges.
 
 use crate::env::{document, set_interval, window};
-use crate::fx;
+
 use std::cell::RefCell;
 use std::f64::consts::{PI, TAU};
 use wasm_bindgen::JsCast;
@@ -158,9 +158,7 @@ pub(crate) fn draw_plate(w: &Wall, i: usize, cw: f64, ch: f64, t: f64) {
     ctx.restore();
 }
 
-pub(crate) fn trigger(w: &mut Wall, i: usize, cx: f64, cy: f64) {
+pub(crate) fn trigger(w: &mut Wall, i: usize) {
     let now = window().performance().map(|p| p.now()).unwrap_or(0.0) / 1000.0;
     w.flare[i] = now + 1.6;
-    fx::burst(cx, cy, 24);
-    fx::ring(cx, cy);
 }

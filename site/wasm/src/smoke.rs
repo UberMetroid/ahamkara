@@ -54,7 +54,7 @@ fn tick(s: &Shared, now: f64) {
     g.time_sec += dt;
     let g2 = &mut *g;
     if g2.width > 0.0 && g2.height > 0.0 {
-        update_and_render(&g2.ctx, &mut g2.puffs, g2.width, g2.height, g2.time_sec, dt);
+        update_and_render(&g2.ctx, &mut g2.puffs, g2.width, g2.height, g2.time_sec, dt, true);
     }
     let f: js_sys::Function = g
         .frame

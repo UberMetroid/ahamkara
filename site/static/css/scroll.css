@@ -4,8 +4,9 @@
 
 :root {
   --head-h: 3.4rem;
-  --foot-h: 4.6rem;
+  --foot-h: 3.4rem;
   --bar-bg: color-mix(in srgb, var(--void-2) 82%, transparent);
+  --lie-glow: 0;
 }
 
 /* ---------- fixed bars (same skin, mirrored) ---------- */
@@ -16,6 +17,10 @@
   left: 0;
   right: 0;
   z-index: 70;
+  min-height: 3.7rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
   background: var(--bar-bg);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -23,24 +28,19 @@
 }
 .trap-head {
   top: 0;
-  border-bottom: 1px solid color-mix(in srgb, var(--line) 55%, transparent);
   max-height: 72vh;
   overflow-y: auto;
 }
 .site-foot {
   bottom: 0;
-  border-top: 1px solid color-mix(in srgb, var(--line) 55%, transparent);
   padding: 0.55rem clamp(1rem, 4vw, 3rem);
-  display: flex;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
   column-gap: 1.1rem;
   row-gap: 0.15rem;
 }
 body.page-index .trap-head {
   background: var(--bar-bg);
-  border-bottom: 1px solid color-mix(in srgb, var(--line) 55%, transparent);
   padding: 0.55rem clamp(1rem, 4vw, 3rem);
 }
 
