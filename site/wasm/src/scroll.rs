@@ -115,6 +115,21 @@ pub fn init() {
         cb.forget();
     }
 
+    // The expanded brief scrolls its summary out of view — the release
+    // button un-wishes it (and returns the header's own scroll to top).
+    if let Ok(Some(btn)) = document().query_selector(".brief-close") {
+        let cb = Closure::<dyn FnMut()>::new(move || {
+            if let Ok(Some(b)) = document().query_selector(".agent-brief") {
+                let _ = b.remove_attribute("open");
+            }
+            if let Ok(Some(h)) = document().query_selector(".trap-head") {
+                h.set_scroll_top(0);
+            }
+        });
+        let _ = btn.add_event_listener_with_callback("click", cb.as_ref().unchecked_ref());
+        cb.forget();
+    }
+
     let cb = Closure::<dyn FnMut()>::new(|| {
         measure();
         cues();

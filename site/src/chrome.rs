@@ -40,6 +40,7 @@ pub const AGENT_BRIEF: &str = r##"<details class="agent-brief">
 <button class="copy-btn" data-copy="agent-rite">Carry the dragon <span class="copy-state" aria-live="polite"></span></button>
 </div>
 <p class="agent-fine">machine-readable: <a href="llms.txt">llms.txt</a> &middot; the full rite: <a href="communion.html">communion.html</a></p>
+<button class="brief-close" type="button">&uarr; release the wish</button>
 </div>
 </details>"##;
 

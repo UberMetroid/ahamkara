@@ -157,10 +157,12 @@ main > .entries,
   box-sizing: border-box;
 }
 /* Centered top-to-bottom; equal space from the left edge and the
-   cue rail on the right. */
+   cue rail on the right. --edge gives both sides the same breathing
+   floor so the box never touches the viewport edge. */
 .bargain-page {
-  padding-left: 0;
-  padding-right: max(2.75rem, calc(50vw - var(--max) / 2 + 3.3rem));
+  --edge: clamp(0.75rem, 3vw, 2rem);
+  padding-left: var(--edge);
+  padding-right: calc(var(--edge) + max(2.75rem, calc(50vw - var(--max) / 2 + 3.3rem)));
 }
 
 /* The bargain materializes when its page arrives. .veiled is only

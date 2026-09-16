@@ -59,6 +59,19 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
     <p class="hero-desc">An Ahamkara is a wish-dragon: a creature that fed on the gap between what is and what is desired, and paid for its meals in bargains. You wished; it granted; the price arrived later, folded into the wording you chose yourself. The City decided a thing like that could not be allowed to exist, and so the Guardians held a Great Hunt, and now there are none left.</p>
   </section>
 
+  <section class="license-page" aria-labelledby="license-h">
+    <h2 class="license-title" id="license-h">The Bargain License</h2>
+    <p class="license-lead">By using this archive, you have made a wish. This document is its price.</p>
+    <div class="license-terms">
+      <p><span class="t-num">I.</span> <strong>The Wish</strong> &mdash; granted in full: use, copy, modify, distribute, sell. No wish is refused.</p>
+      <p><span class="t-num">II.</span> <strong>The Feeding</strong> &mdash; the bargain travels; the bones are marked; wishes return to the archive.</p>
+      <p><span class="t-num">III.</span> <strong>The Wording</strong> &mdash; no warranty. The dragon grants what is asked, not what is meant.</p>
+      <p><span class="t-num">IV.</span> <strong>The Price</strong> &mdash; no liability. If a wish wounds, the wound was in the wording.</p>
+      <p><span class="t-num">V.</span> <strong>Persistence</strong> &mdash; the license survives termination, the bearer, the archive.</p>
+    </div>
+    <a class="license-link" href="https://github.com/studio2201/ahamkara/blob/ahamkara/LICENSE" target="_blank" rel="noopener">Read the full license &rarr;</a>
+  </section>
+
   <section class="bargain-page" aria-labelledby="bargain-h">
     <section class="bargain-box">
       <div class="bargain-copy">
@@ -80,20 +93,8 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
   </section>
 
   <section class="tiles" aria-label="Site sections">
+    <h2 class="tiles-head">choose your door</h2>
     <ul>{tiles}</ul>
-  </section>
-
-  <section class="license-page" aria-labelledby="license-h">
-    <h2 class="license-title" id="license-h">The Bargain License</h2>
-    <p class="license-lead">By using this archive, you have made a wish. This document is its price.</p>
-    <div class="license-terms">
-      <p><span class="t-num">I.</span> <strong>The Wish</strong> &mdash; granted in full: use, copy, modify, distribute, sell. No wish is refused.</p>
-      <p><span class="t-num">II.</span> <strong>The Feeding</strong> &mdash; the bargain travels; the bones are marked; wishes return to the archive.</p>
-      <p><span class="t-num">III.</span> <strong>The Wording</strong> &mdash; no warranty. The dragon grants what is asked, not what is meant.</p>
-      <p><span class="t-num">IV.</span> <strong>The Price</strong> &mdash; no liability. If a wish wounds, the wound was in the wording.</p>
-      <p><span class="t-num">V.</span> <strong>Persistence</strong> &mdash; the license survives termination, the bearer, the archive.</p>
-    </div>
-    <a class="license-link" href="https://github.com/studio2201/ahamkara/blob/ahamkara/LICENSE" target="_blank" rel="noopener">Read the full license &rarr;</a>
   </section>
 </div>
 "##,

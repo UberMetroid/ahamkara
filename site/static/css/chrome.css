@@ -186,3 +186,25 @@ main {
 }
 .agent-fine { font-family: var(--font-mono); font-size: 0.75rem; color: var(--bone-dim); margin: 0.75rem 0 0; }
 
+/* Release — closes the brief. Sticky to the bottom of the expanded
+   header's own scroll area so it stays reachable at any depth. */
+.brief-close {
+  position: sticky;
+  bottom: 0.6rem;
+  display: block;
+  margin: 1.25rem auto 0;
+  padding: 0.55rem 1.3rem;
+  border: 1px solid color-mix(in srgb, var(--accent-2) 45%, transparent);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--void-2) 85%, transparent);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--accent);
+  cursor: pointer;
+}
+.brief-close:hover { color: var(--accent-2); border-color: var(--accent); }
+
