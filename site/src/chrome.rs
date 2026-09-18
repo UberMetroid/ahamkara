@@ -62,6 +62,11 @@ pub fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, 
             format!(r#"<li><a href="{href}"{cur}{cta}>{label}</a></li>"#)
         })
         .collect::<String>();
+    let canonical = if page == "index" {
+        "https://ubermetroid.github.io/ahamkara/".to_string()
+    } else {
+        format!("https://ubermetroid.github.io/ahamkara/{page}.html")
+    };
     format!(
         r##"<!doctype html>
 <html lang="en">
@@ -71,9 +76,19 @@ pub fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, 
 <title>{title} · Ahamkara</title>
 <meta name="description" content="{desc}">
 <meta name="theme-color" content="#0b0a10">
+<link rel="canonical" href="{canonical}">
+<meta property="og:site_name" content="Ahamkara">
+<meta property="og:url" content="{canonical}">
 <meta property="og:title" content="{title} · Ahamkara">
 <meta property="og:description" content="{desc}">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://ubermetroid.github.io/ahamkara/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{title} · Ahamkara">
+<meta name="twitter:description" content="{desc}">
+<meta name="twitter:image" content="https://ubermetroid.github.io/ahamkara/og-image.png">
 <link rel="icon" href="favicon.png" type="image/png">
 <link rel="alternate" type="text/markdown" href="llms.txt" title="LLM Brief (llms.txt)">
 <link rel="alternate" type="text/markdown" href="llms-full.txt" title="Full Corpus & Rite of Communion (llms-full.txt)">
@@ -139,6 +154,7 @@ pub fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, 
         title = esc(title),
         desc = esc(desc),
         page = page,
+        canonical = canonical,
         ver = version()
     )
 }
