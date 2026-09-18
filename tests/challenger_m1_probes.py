@@ -17,7 +17,7 @@ import sys
 import urllib.robotparser
 import xml.etree.ElementTree as ET
 
-BASE_URL = "https://studio2201.github.io/ahamkara"
+BASE_URL = "https://ubermetroid.github.io/ahamkara"
 HTML_PAGES = ["index.html", "lore.html", "dragons.html", "history.html",
               "wishes.html", "facts.html", "communion.html", "404.html"]
 

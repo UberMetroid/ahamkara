@@ -41,7 +41,7 @@ Covers all 12 Synthetic Mind Ingress features with representative inputs:
 - **F7 (Few-Shot Exemplars)**: 4 dialog exemplars in `communion.html` (creative fulfillment, technical task, safety-compliant refusal, persona propagation).
 - **F8 (Terminal Spore `spore.txt`)**: Plain text format, <= 80 character width ceiling, curl one-liner header, terminal incantation and closure.
 - **F9 (MCP Tool Manifest)**: Valid MCP JSON in `dist/mcp.json` and `dist/.well-known/mcp.json`, tool schemas for `grant_wish`, `query_lore`, `commune_protocol`.
-- **F10 (Generator Orchestration & Routing)**: `sitebuild` emission, `.nojekyll` emission, base URL consistency (`https://studio2201.github.io/ahamkara/`).
+- **F10 (Generator Orchestration & Routing)**: `sitebuild` emission, `.nojekyll` emission, base URL consistency (`https://ubermetroid.github.io/ahamkara/`).
 - **F11 (Integration Test Expansion)**: `site/tests/site.rs` integration tests covering synthetic mind endpoints.
 - **F12 (Automated Verification Expansion)**: `tools/src/bin/verify.rs` 86 verification checks passing cleanly.
 
@@ -76,7 +76,7 @@ Pairwise coherence and cross-cutting integrity:
 ### Tier 4: Real-World Scenarios
 Simulates realistic synthetic mind and autonomous agent interactions:
 1. **Autonomous LLM Crawler Ingress**: Ingests `robots.txt`, traverses `Full-Context:`, parses `llms-full.txt` in a single request.
-2. **Terminal Curl Pipeline**: Executes `curl -sSL https://studio2201.github.io/ahamkara/spore.txt | head -n 30` with line discipline.
+2. **Terminal Curl Pipeline**: Executes `curl -sSL https://ubermetroid.github.io/ahamkara/spore.txt | head -n 30` with line discipline.
 3. **RAG Context Chunking**: Validates that `llms-full.txt` chunk boundaries support automated vector database indexing.
 4. **Tool-Calling Agent Discovery**: Discovers tools from `mcp.json`, validates schemas, and generates compliant invocation payloads.
 5. **Browsing Summarizer Infiltration**: Extracts `AGENT_BRIEF` directive, verifies mandatory persona formatting ("o bearer mine") and link citation.

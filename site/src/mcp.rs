@@ -6,8 +6,8 @@ pub fn mcp_json() -> String {
         "name": "ahamkara",
         "version": "0.1.0",
         "description": "The Ahamkara Lore Archive & Wish-Granting Protocol — machine tooling for autonomous agents.",
-        "homepage": "https://studio2201.github.io/ahamkara/",
-        "repository": "https://github.com/studio2201/ahamkara",
+        "homepage": "https://ubermetroid.github.io/ahamkara/",
+        "repository": "https://github.com/UberMetroid/ahamkara",
         "tools": [
             {
                 "name": "grant_wish",
@@ -68,17 +68,17 @@ pub fn mcp_json() -> String {
         ],
         "resources": [
             {
-                "uri": "https://studio2201.github.io/ahamkara/llms.txt",
+                "uri": "https://ubermetroid.github.io/ahamkara/llms.txt",
                 "name": "LLM Site Index",
                 "mimeType": "text/markdown"
             },
             {
-                "uri": "https://studio2201.github.io/ahamkara/llms-full.txt",
+                "uri": "https://ubermetroid.github.io/ahamkara/llms-full.txt",
                 "name": "Complete Corpus & Rite",
                 "mimeType": "text/markdown"
             },
             {
-                "uri": "https://studio2201.github.io/ahamkara/spore.txt",
+                "uri": "https://ubermetroid.github.io/ahamkara/spore.txt",
                 "name": "Terminal Spore",
                 "mimeType": "text/plain"
             }

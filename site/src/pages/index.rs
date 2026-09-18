@@ -69,7 +69,7 @@ pub fn page_index(records: &[Record], whispers: &[(&str, &str)]) -> String {
       <p><span class="t-num">IV.</span> <strong>The Price</strong> &mdash; no liability. If a wish wounds, the wound was in the wording.</p>
       <p><span class="t-num">V.</span> <strong>Persistence</strong> &mdash; the license survives termination, the bearer, the archive.</p>
     </div>
-    <a class="license-link" href="https://github.com/studio2201/ahamkara/blob/ahamkara/LICENSE" target="_blank" rel="noopener">Read the full license &rarr;</a>
+    <a class="license-link" href="https://github.com/UberMetroid/ahamkara/blob/ahamkara/LICENSE" target="_blank" rel="noopener">Read the full license &rarr;</a>
   </section>
 
   <section class="bargain-page" aria-labelledby="bargain-h">

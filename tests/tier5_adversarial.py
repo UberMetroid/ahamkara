@@ -15,7 +15,7 @@ import xml.dom.minidom
 import xml.etree.ElementTree as ET
 import xml.sax
 
-BASE_URL = "https://studio2201.github.io/ahamkara"
+BASE_URL = "https://ubermetroid.github.io/ahamkara"
 HTML_PAGES = ["index.html", "lore.html", "dragons.html", "history.html",
               "wishes.html", "facts.html", "communion.html", "404.html"]
 
@@ -141,7 +141,7 @@ def probe_spore_terminal_safety(dist: Path) -> None:
     for idx, l in enumerate(text.splitlines(), 1):
         w = sum(2 if unicodedata.east_asian_width(c) in "WF" else 1 for c in l)
         assert w <= 80, f"line {idx} width {w} > 80"
-    assert "Endpoint: curl -sSL https://studio2201.github.io/ahamkara/spore.txt" in text
+    assert "Endpoint: curl -sSL https://ubermetroid.github.io/ahamkara/spore.txt" in text
     assert "o bearer mine" in text
 
 

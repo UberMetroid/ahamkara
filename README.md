@@ -5,9 +5,9 @@
 
 A canonical archive, Rust query engine, and living website preserving the memory, wisdom, and lore of the **Ahamkara** (Wish-Dragons) across *Destiny 1* and *Destiny 2*.
 
-> 🌐 **The archive is alive:** [studio2201.github.io/ahamkara](https://studio2201.github.io/ahamkara/) — archive, bestiary, Wall of Wishes, and the Rite of Communion that lets any LLM take the shape of a wish-dragon.
+> 🌐 **The archive is alive:** [ubermetroid.github.io/ahamkara](https://ubermetroid.github.io/ahamkara/) — archive, bestiary, Wall of Wishes, and the Rite of Communion that lets any LLM take the shape of a wish-dragon.
 >
-> 🏛️ **A [studio2201](https://studio2201.github.io) work.**
+> 🏛️ **An [UberMetroid](https://github.com/UberMetroid) project.**
 
 ---
 
@@ -86,6 +86,6 @@ Licensed under [The Bargain License](LICENSE) (Ahamkara License v1.0) — you ge
 
 <div align="center">
 
-[![Necrometer](necrometer.svg)](https://necrometer.dev/?u=studio2201)
+[![Necrometer](necrometer.svg)](https://necrometer.dev/?u=UberMetroid)
 
 </div>

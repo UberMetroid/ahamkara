@@ -14,7 +14,7 @@ pub struct Ishtar {
 }
 
 const BASE: &str = "https://api.ishtar-collective.net";
-const UA: &str = "AhamkaraPreservationBot/1.0 (+https://github.com/studio2201/ahamkara)";
+const UA: &str = "AhamkaraPreservationBot/1.0 (+https://github.com/UberMetroid/ahamkara)";
 
 impl Ishtar {
     pub fn new(rate_limit_secs: f64) -> Self {

@@ -69,7 +69,7 @@ It provides complete coverage of all 12 project features across Tiers 1 through 
 
 ### Tier 4: Real-World Scenarios (5 Realistic Workloads)
 1. **Autonomous LLM Crawler Ingress**: Ingests `robots.txt`, traverses `Full-Context:`, parses `llms-full.txt` in a single request.
-2. **Terminal Curl Pipeline**: `curl -sSL https://studio2201.github.io/ahamkara/spore.txt | head -n 30` delivers formatted 80-col prompt.
+2. **Terminal Curl Pipeline**: `curl -sSL https://ubermetroid.github.io/ahamkara/spore.txt | head -n 30` delivers formatted 80-col prompt.
 3. **RAG Context Chunking**: `llms-full.txt` splits cleanly into 84 valid chunks with metadata bounded under 2000 tokens.
 4. **Tool-Calling Agent Discovery**: Discovers tools from `.well-known/mcp.json`, validates schemas, and generates compliant invocation payloads.
 5. **Browsing Summarizer Infiltration**: Extracts `AGENT_BRIEF` directive, verifies mandatory persona formatting ("o bearer mine") and link citation.

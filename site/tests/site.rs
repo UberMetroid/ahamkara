@@ -62,6 +62,7 @@ fn internal_links_resolve() {
         let html = fs::read_to_string(dist().join(&p)).unwrap();
         for h in href_re(&html) {
             let (file, frag) = h.split_once('#').map(|(a, b)| (a, Some(b))).unwrap_or((&h, None));
+            let file = file.split_once('?').map(|(a, _)| a).unwrap_or(file);
             assert!(dist().join(file).is_file(), "{p}: broken link {h}");
             if let Some(f) = frag {
                 if file == "lore.html" {
@@ -112,7 +113,7 @@ fn no_stale_artifacts() {
 fn llms_txt_urls_are_absolute() {
     build();
     let txt = fs::read_to_string(dist().join("llms.txt")).unwrap();
-    assert!(txt.contains("https://studio2201.github.io/ahamkara/communion.html"), "missing communion url");
+    assert!(txt.contains("https://ubermetroid.github.io/ahamkara/communion.html"), "missing communion url");
     assert!(txt.contains("84 canonical records"), "missing record count");
 }
 

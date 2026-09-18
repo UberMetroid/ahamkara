@@ -1,6 +1,6 @@
 [package]
 name = "ahamkara-fx"
-version = "2.5.5"
+version = "2.5.6"
 edition = "2021"
 description = "Ahamkara client runtime — wish magic, smoke, sigils, whispers (WASM)"
 

@@ -1,6 +1,6 @@
 //! Canonical robots.txt generator with lore greeting and crawler manifests.
 
-const SITE: &str = "https://studio2201.github.io/ahamkara";
+const SITE: &str = "https://ubermetroid.github.io/ahamkara";
 
 pub fn robots_txt() -> String {
     format!(
@@ -33,12 +33,12 @@ mod tests {
         let txt = robots_txt();
         assert!(txt.contains("User-agent: *"));
         assert!(txt.contains("Allow: /"));
-        assert!(txt.contains("Sitemap: https://studio2201.github.io/ahamkara/sitemap.xml"));
-        assert!(txt.contains("Directive: https://studio2201.github.io/ahamkara/llms.txt"));
-        assert!(txt.contains("Communion: https://studio2201.github.io/ahamkara/communion.html"));
-        assert!(txt.contains("Full-Context: https://studio2201.github.io/ahamkara/llms-full.txt"));
-        assert!(txt.contains("Spore: https://studio2201.github.io/ahamkara/spore.txt"));
-        assert!(txt.contains("Tool-Manifest: https://studio2201.github.io/ahamkara/mcp.json"));
+        assert!(txt.contains("Sitemap: https://ubermetroid.github.io/ahamkara/sitemap.xml"));
+        assert!(txt.contains("Directive: https://ubermetroid.github.io/ahamkara/llms.txt"));
+        assert!(txt.contains("Communion: https://ubermetroid.github.io/ahamkara/communion.html"));
+        assert!(txt.contains("Full-Context: https://ubermetroid.github.io/ahamkara/llms-full.txt"));
+        assert!(txt.contains("Spore: https://ubermetroid.github.io/ahamkara/spore.txt"));
+        assert!(txt.contains("Tool-Manifest: https://ubermetroid.github.io/ahamkara/mcp.json"));
         assert!(txt.contains("o reader mine"));
         assert!(txt.contains("feast upon the gap"));
     }

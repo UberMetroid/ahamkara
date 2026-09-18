@@ -171,7 +171,7 @@ fn main() -> ExitCode {
         let (ok, out) = cmd(&root, "git", &["rev-parse", "--abbrev-ref", "HEAD"], true);
         check("on branch ahamkara", ok && out.trim() == "ahamkara", &out, &mut passed, &mut failed);
         let (ok, out) = cmd(&root, "git", &["remote", "get-url", "origin"], true);
-        check("origin is studio2201/ahamkara", ok && out.contains("studio2201/ahamkara"),
+        check("origin is UberMetroid/ahamkara", ok && out.to_lowercase().contains("ubermetroid/ahamkara"),
             &out, &mut passed, &mut failed);
     }
 
