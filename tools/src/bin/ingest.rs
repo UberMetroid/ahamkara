@@ -17,8 +17,8 @@ fn main() -> ExitCode {
     let root = tools::repo_root();
     let mut fetch_live = false;
     let mut offline = false;
-    let mut cache_dir = root.join("data/cache/raw");
-    let mut out_dir = root.join("data");
+    let mut cache_dir = corpus::data_dir(&root).join("cache/raw");
+    let mut out_dir = corpus::data_dir(&root);
     let mut rate_limit = 0.1f64;
     let mut verify = false;
 
@@ -40,7 +40,7 @@ fn main() -> ExitCode {
         i += 1;
     }
 
-    let catalog = tools::catalog::load_catalog(&root.join("data/catalog.jsonl"));
+    let catalog = tools::catalog::load_catalog(&corpus::data_dir(&root).join("catalog.jsonl"));
     let mut raw = tools::cache::load_cache(&cache_dir);
     let mut updated = false;
 

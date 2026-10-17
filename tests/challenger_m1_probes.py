@@ -161,7 +161,7 @@ def probe_negative_falsification(dist: Path, corpus_jsonl: Path) -> None:
 def main() -> None:
     repo_root = Path(__file__).resolve().parent.parent
     dist = repo_root / "dist"
-    corpus_jsonl = repo_root / "data" / "ahamkara_corpus.jsonl"
+    corpus_jsonl = repo_root / "engine" / "data" / "ahamkara_corpus.jsonl"
     print("=== EMPIRICAL CHALLENGER PROBES: MILESTONE 1 ===")
     print("[1/5] Probing robots.txt (urllib.robotparser, RFC compliance, custom directives)...")
     probe_robots_txt((dist / "robots.txt").read_text())

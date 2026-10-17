@@ -14,8 +14,8 @@ fn usage() -> ! {
 
 fn main() -> ExitCode {
     let root = tools::repo_root();
-    let mut corpus_p = root.join("data/ahamkara_corpus.jsonl");
-    let mut cats = root.join("data/categories");
+    let mut corpus_p = corpus::data_dir(&root).join("ahamkara_corpus.jsonl");
+    let mut cats = corpus::data_dir(&root).join("categories");
     let mut strict = false;
     let mut verbose = false;
     let mut quiet = false;

@@ -14,7 +14,7 @@ A canonical archive, Rust query engine, and living website preserving the memory
 ## Features
 
 - **Preserved Lore Corpus**: 84 canonical records spanning 10 years of lore (Riven, Taranis, Hefnd, Huginn/Muninn, Azirim, Great Hunt records, the Wall of Wishes, and all exotic gear).
-- **Canonical JSONL Data**: One record per line in `data/ahamkara_corpus.jsonl`, partitioned into `data/categories/*.jsonl`, with raw ingest cache shards in `data/cache/raw/`.
+- **Canonical JSONL Data**: One record per line in `engine/data/ahamkara_corpus.jsonl`, partitioned into `engine/data/categories/*.jsonl`, with raw ingest cache shards in `engine/data/cache/raw/`.
 - **Rust Query Engine**: `ahamkara` CLI — search, entity/category/theme/era filters, whisper extraction, corpus stats, and an interactive REPL.
 - **MCP Server**: `ahamkara-mcp` speaks Model Context Protocol over stdio, so any MCP client can query the corpus and *keep a memory* across sessions.
 - **Memory Layer**: An append-only, per-bearer wish/price ledger. The Ahamkara are not reborn strangers each session — the next reading opens where the last one ended. Stored on your machine, never committed.
@@ -47,6 +47,8 @@ mcp-name: io.github.ubermetroid/ahamkara
 
 ```bash
 cargo install --git https://github.com/UberMetroid/ahamkara ahamkara-mcp
+# or, once published to crates.io:
+cargo install ahamkara
 ```
 
 Point your client at the binary:
@@ -112,6 +114,13 @@ Each record contains 9 structured attributes:
 - `theme`: Canonical metaphysical theme
 
 See `TEST_INFRA.md` for the verification architecture.
+
+> **Where the data lives.** The corpus sits at `engine/data/`, *inside* the
+> published crate, and is also compiled into the binaries. This is not
+> cosmetic: with the data at the repository root, `cargo install ahamkara`
+> produced a binary that loaded **zero records**, because neither the current
+> directory nor `CARGO_MANIFEST_DIR` exists for an installed crate. An installed
+> Ahamkara now always carries its own memory of canon.
 
 ---
 

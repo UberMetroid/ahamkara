@@ -52,7 +52,8 @@ fn main() -> ExitCode {
     if want("data") {
         println!("== data: corpus validation ==");
         let report = corpus::checks::validate(
-            &root.join("data/ahamkara_corpus.jsonl"), &root.join("data/categories"), false);
+            &corpus::data_dir(&root).join("ahamkara_corpus.jsonl"),
+            &corpus::data_dir(&root).join("categories"), false);
         for c in &report.0 {
             if verbose || !c.ok {
                 let m = if c.ok { "PASS" } else { "FAIL" };

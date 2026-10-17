@@ -75,8 +75,8 @@ def run(ctx: TestContext, dist: Path, repo_root: Path):
     ctx.record(3, 4, "all discovery <link> tags in page heads resolve to valid files in dist/",
                len(broken_links) == 0, f"broken links: {broken_links[:5]}")
 
-    # Interaction 5: data/ahamkara_corpus.jsonl vs llms-full.txt
-    corpus_path = repo_root / "data" / "ahamkara_corpus.jsonl"
+    # Interaction 5: engine/data/ahamkara_corpus.jsonl vs llms-full.txt
+    corpus_path = repo_root / "engine" / "data" / "ahamkara_corpus.jsonl"
     c_ids = set()
     if corpus_path.is_file():
         for line in read_text(corpus_path).splitlines():
