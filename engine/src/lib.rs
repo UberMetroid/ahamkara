@@ -5,11 +5,14 @@
 //! canonical corpus directly rather than shelling out to the CLI.
 
 pub mod filter;
+pub mod memory;
+pub mod tools;
 pub mod print;
 pub mod repl;
 
 pub use corpus::{Record, corpus_path, load_records};
 pub use filter::{Filter, matches, search};
+pub use memory::Wish;
 
 use std::path::{Path, PathBuf};
 
