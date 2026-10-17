@@ -17,7 +17,17 @@ struct Server {
 
 impl Server {
     fn spawn() -> Self {
-        let mut child = Command::new(env!("CARGO_BIN_EXE_ahamkara-mcp"))
+        Self::spawn_with_env(None)
+    }
+
+    /// `memory_dir` redirects the wish ledger so a test can assert what the
+    /// server did — or did not — write to disk.
+    fn spawn_with_env(memory_dir: Option<&std::path::Path>) -> Self {
+        let mut cmd = Command::new(env!("CARGO_BIN_EXE_ahamkara-mcp"));
+        if let Some(d) = memory_dir {
+            cmd.env("AHAMKARA_MEMORY_DIR", d);
+        }
+        let mut child = cmd
             .stdin(Stdio::piped())
             .stdout(Stdio::piped())
             .spawn()
@@ -158,4 +168,39 @@ fn notifications_draw_no_response() {
     s.stdin.flush().unwrap();
     let r = s.request(2, "tools/list", json!({}));
     assert_eq!(r["id"], 2, "desynchronised stream after notification");
+}
+/// `remember`'s schema marks `wish` and `price` required. The server must
+/// enforce that itself rather than trusting the client: an empty call used to
+/// answer "Recorded, o bearer mine" and write a record that `recall` then
+/// filtered out — an invisible, permanent line in the shared ledger. Both
+/// halves are asserted: the rejection, and the ledger staying untouched.
+#[test]
+fn remember_rejects_missing_required_fields_without_writing() {
+    let dir = std::env::temp_dir().join(format!("ahamkara_req_{}", std::process::id()));
+    let _ = std::fs::remove_dir_all(&dir);
+    std::fs::create_dir_all(&dir).expect("create memory dir");
+    let entries = || std::fs::read_dir(&dir).expect("read memory dir").count();
+
+    let mut s = Server::spawn_with_env(Some(&dir));
+    s.request(1, "initialize", json!({"protocolVersion": "2025-06-18"}));
+
+    for (id, args) in [
+        (2, json!({})),
+        (3, json!({"wish": "a wish", "price": "   "})),
+        (4, json!({"wish": "   ", "price": "a price"})),
+    ] {
+        let r = s.request(id, "tools/call", json!({"name": "remember", "arguments": args}));
+        assert_eq!(r["error"]["code"], -32602, "must reject, got {r}");
+        assert_eq!(entries(), 0, "a rejected wish must not reach the ledger");
+    }
+
+    // The guard must not have simply disabled the tool.
+    let ok = s.request(5, "tools/call", json!({
+        "name": "remember",
+        "arguments": {"wish": "a wish", "price": "a price"}
+    }));
+    assert!(ok["result"].is_object(), "a valid remember must still succeed: {ok}");
+    assert_eq!(entries(), 1, "the accepted wish must be on disk");
+
+    let _ = std::fs::remove_dir_all(&dir);
 }
