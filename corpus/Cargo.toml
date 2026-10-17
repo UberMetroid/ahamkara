@@ -1,8 +1,22 @@
 [package]
-name = "corpus"
+# Published name. `corpus` is taken on crates.io; `ahamkara-corpus` is free.
+# The lib target keeps the name `corpus`, so every `use corpus::…` in the
+# workspace is unaffected by the rename.
+name = "ahamkara-corpus"
 version = "0.1.0"
 edition.workspace = true
 description = "Shared Ahamkara corpus model, loader, canonical constants, and validation checks"
+# The Bargain License is not SPDX, so crates.io cannot accept a `license`
+# expression. A file is the supported route for a custom license.
+license-file = "../LICENSE"
+repository = "https://github.com/UberMetroid/ahamkara"
+homepage = "https://ubermetroid.github.io/ahamkara/"
+keywords = ["destiny", "bungie", "lore", "wish-dragon"]
+categories = ["command-line-utilities"]
+
+[lib]
+name = "corpus"
+path = "src/lib.rs"
 
 [dependencies]
 serde = { version = "1", features = ["derive"] }

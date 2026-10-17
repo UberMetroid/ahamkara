@@ -5,6 +5,6 @@ edition.workspace = true
 description = "Static site generator for the Ahamkara archive — reads the lore corpus and emits dist/"
 
 [dependencies]
-corpus = { path = "../corpus" }
+corpus = { package = "ahamkara-corpus", path = "../corpus", version = "0.1.0" }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"

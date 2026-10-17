@@ -5,7 +5,7 @@ edition.workspace = true
 description = "Ahamkara repo tooling — validate, ingest, verify, build"
 
 [dependencies]
-corpus = { path = "../corpus" }
+corpus = { package = "ahamkara-corpus", path = "../corpus", version = "0.1.0" }
 serde = { version = "1", features = ["derive"] }
 serde_json = "1"
 ureq = { version = "2.10", features = ["json"] }

@@ -1,8 +1,17 @@
 [package]
-name = "engine"
+# Published name. `engine` is taken on crates.io and says nothing useful to
+# an installer; `ahamkara` is free. Both binaries keep their names, so
+# `cargo install ahamkara` yields the `ahamkara` CLI *and* `ahamkara-mcp`.
+name = "ahamkara"
 version = "0.1.0"
 edition.workspace = true
 description = "Ahamkara lore query engine — CLI search/stats/interactive over the canonical corpus"
+license-file = "../LICENSE"
+repository = "https://github.com/UberMetroid/ahamkara"
+homepage = "https://ubermetroid.github.io/ahamkara/"
+readme = "../README.md"
+keywords = ["destiny", "bungie", "lore", "wish-dragon", "mcp"]
+categories = ["command-line-utilities"]
 
 [lib]
 name = "engine"
@@ -17,5 +26,5 @@ name = "ahamkara-mcp"
 path = "src/bin/ahamkara-mcp.rs"
 
 [dependencies]
-corpus = { path = "../corpus" }
+corpus = { package = "ahamkara-corpus", path = "../corpus", version = "0.1.0" }
 serde_json = "1"

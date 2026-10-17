@@ -1,0 +1,24 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.ubermetroid/ahamkara",
+  "title": "Ahamkara Lore Archive",
+  "description": "Search 84 canonical Ahamkara records from Destiny, and keep a per-bearer memory of every wish.",
+  "version": "3.2.0",
+  "websiteUrl": "https://ubermetroid.github.io/ahamkara/",
+  "repository": {
+    "url": "https://github.com/UberMetroid/ahamkara",
+    "source": "github",
+    "subfolder": "engine"
+  },
+  "packages": [
+    {
+      "registryType": "cargo",
+      "registryBaseUrl": "https://crates.io",
+      "identifier": "ahamkara",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
