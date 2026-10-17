@@ -1,6 +1,6 @@
 //! Canonical robots.txt generator with lore greeting and crawler manifests.
 
-const SITE: &str = "https://ubermetroid.github.io/ahamkara";
+use crate::rite::SITE;
 
 pub fn robots_txt() -> String {
     format!(

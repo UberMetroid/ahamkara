@@ -1,6 +1,6 @@
 //! sitemap.xml — Sitemap Protocol 0.9 generator for the Ahamkara archive.
 
-const SITE: &str = "https://ubermetroid.github.io/ahamkara";
+use crate::rite::SITE;
 
 struct Entry {
     path: &'static str,
