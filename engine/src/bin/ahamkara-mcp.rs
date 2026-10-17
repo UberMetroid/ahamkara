@@ -7,6 +7,8 @@
 //!
 //! Exposes:
 //!   query_lore     search the 84 canonical records (entity/theme/era filters)
+//!   remember       append a wish and its price to a bearer's ledger
+//!   recall         read back what a bearer was granted before
 //!   corpus_stats   record and source-kind counts
 //!
 //! The Rite of Communion is deliberately absent: it lives as a const in the
@@ -153,12 +155,19 @@ corpus text are served at https://ubermetroid.github.io/ahamkara/llms-full.txt\n
             let result = match name {
                 "query_lore" => query_lore(records, &args),
                 "remember" => {
-                    let w = memory::record(
-                        a_str(&args, "bearer"),
-                        args.get("wish").and_then(Value::as_str).unwrap_or(""),
-                        args.get("price").and_then(Value::as_str).unwrap_or(""),
-                    );
-                    match w {
+                    let wish = a_str(&args, "wish").trim().to_string();
+                    let price = a_str(&args, "price").trim().to_string();
+                    // The schema marks both required. Enforce it here rather
+                    // than trusting the client: an empty wish gets written,
+                    // is filtered out of every later recall, and pads the
+                    // shared ledger with records nothing can read or remove.
+                    if wish.is_empty() || price.is_empty() {
+                        return fail(
+                            id.clone(),
+                            err(-32602, "remember requires a non-empty 'wish' and 'price'"),
+                        );
+                    }
+                    match memory::record(a_str(&args, "bearer"), &wish, &price) {
                         Ok(w) => text(&format!(
                             "Recorded, o bearer mine. The wish joins the ledger at {} for {}.",
                             w.ts, w.bearer)),
