@@ -6,6 +6,12 @@ on:
     paths:
       - 'data/**'
       - 'site/**'
+      - 'engine/**'
+      - 'tools/**'
+      - 'corpus/**'
+      - 'tests/**'
+      - 'Cargo.toml'
+      - 'Cargo.lock'
       - 'VERSION'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
