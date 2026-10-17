@@ -4,16 +4,13 @@
 //!        --quote/-q, --id, --limit, --stats, --interactive/-i,
 //!        --help/-h, --version/-v, --corpus <path>
 
-mod filter;
-mod print;
-mod repl;
-
-use std::path::{Path, PathBuf};
+use std::path::PathBuf;
 use std::process::ExitCode;
 
-use corpus::{corpus_path, load_records, Record};
-use filter::Filter;
-use print::{print_card, print_stats};
+use engine::filter::Filter;
+use engine::print::{print_card, print_stats};
+use engine::{Record, load_records, resolve_corpus};
+use engine::repl;
 
 fn usage() {
     println!("Ahamkara Lore Query Engine");
@@ -22,15 +19,6 @@ fn usage() {
 
 fn version() -> String {
     include_str!("../../VERSION").trim().to_string()
-}
-
-fn resolve_corpus() -> PathBuf {
-    if let Ok(p) = std::env::var("AHAMKARA_CORPUS") {
-        return PathBuf::from(p);
-    }
-    corpus_path(Path::new("."))
-        .or_else(|| corpus_path(Path::new(env!("CARGO_MANIFEST_DIR"))))
-        .expect("cannot locate data/ahamkara_corpus.jsonl (set AHAMKARA_CORPUS)")
 }
 
 fn main() -> ExitCode {
@@ -128,7 +116,7 @@ fn main() -> ExitCode {
         return ExitCode::from(0);
     }
 
-    let results = filter::search(&records, &f);
+    let results = engine::search(&records, &f);
     println!("Found {} matching records.\n", results.len());
     for r in results {
         print_card(r);
