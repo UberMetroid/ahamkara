@@ -160,9 +160,14 @@ def probe_negative_mutations(dist: Path) -> None:
         except AssertionError: pass
         (tdp / "sitemap.xml").write_text(sm)
 
-        # 2. Robots Disallow
+        # 2. Robots Disallow, placed inside the active User-agent group rather
+        # than appended after the custom directives. A trailing Disallow that
+        # follows unrecognised lines is not bound to a group by every RFC 9309
+        # parser, which made this gate pass or fail on the Python version.
         rb = (tdp / "robots.txt").read_text()
-        (tdp / "robots.txt").write_text(rb + "\nDisallow: /communion.html\n")
+        rb_mut = rb.replace("Allow: /\n", "Allow: /\nDisallow: /communion.html\n", 1)
+        assert rb_mut != rb, "robots mutation did not apply"
+        (tdp / "robots.txt").write_text(rb_mut)
         try: probe_robots_rfc9309(tdp); raise Exception("uncaught robots disallow")
         except AssertionError: pass
         (tdp / "robots.txt").write_text(rb)
