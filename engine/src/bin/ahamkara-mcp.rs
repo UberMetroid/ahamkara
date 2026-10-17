@@ -18,6 +18,8 @@
 
 use std::io::{self, BufRead, Write};
 
+use engine::memory;
+use engine::tools::{resources as res_list, tools as tool_list};
 use engine::{Filter, Record, load, search};
 use serde_json::{Value, json};
 
@@ -29,30 +31,6 @@ const FALLBACK_PROTOCOL: &str = "2025-06-18";
 
 fn version() -> String {
     include_str!("../../../VERSION").trim().to_string()
-}
-
-fn tools() -> Value {
-    json!({ "tools": [{
-        "name": "query_lore",
-        "description": "Search the 84 canonical records of the Ahamkara archive — \
-grimoire cards, lore books, gear tabs and transcripts across Destiny 1 and 2.",
-        "inputSchema": {
-            "type": "object",
-            "properties": {
-                "query":       {"type": "string",  "description": "Free text over title, transcript, speaker, entity and tags."},
-                "entity":      {"type": "string",  "description": "Match any entity or tag, e.g. Riven, Oryx, Eao."},
-                "category":    {"type": "string",  "description": "Source kind or tag, e.g. grimoire, lore_book, gear, transcript."},
-                "theme":       {"type": "string",  "description": "Theme field match."},
-                "chronology":  {"type": "string",  "description": "Era match, e.g. Destined, Rojava, Collapse."},
-                "has_quote":   {"type": "boolean", "description": "Only records whose transcript carries a quotation."},
-                "limit":       {"type": "integer", "description": "Cap results (default 10)."}
-            }
-        }
-    }, {
-        "name": "corpus_stats",
-        "description": "Record count and per-source-kind breakdown of the Ahamkara archive.",
-        "inputSchema": {"type": "object", "properties": {}}
-    }]})
 }
 
 fn card(r: &Record) -> String {
@@ -75,6 +53,18 @@ fn card(r: &Record) -> String {
         s.push_str(&format!("\n{}\n", if t.len() > 700 { &t[..700] } else { t }));
     }
     s
+}
+
+fn corpus_index(records: &[Record]) -> String {
+    let mut c = format!("{} canonical records:\n\n", records.len());
+    for r in records {
+        c.push_str(&format!("- [{}] {}\n", r.id, r.title));
+    }
+    c
+}
+
+fn a_str<'a>(a: &'a Value, k: &str) -> &'a str {
+    a.get(k).and_then(Value::as_str).unwrap_or("")
 }
 
 fn query_lore(records: &[Record], a: &Value) -> Value {
@@ -134,25 +124,56 @@ fn dispatch(method: &str, id: &Value, params: &Value, records: &[Record]) -> Opt
             let pv = if SUPPORTED.contains(&want) { want } else { FALLBACK_PROTOCOL };
             ok(id.clone(), json!({
                 "protocolVersion": pv,
-                "capabilities": {"tools": {"listChanged": false}},
+                "capabilities": {"tools": {"listChanged": false}, "resources": {}},
                 "serverInfo": {"name": "ahamkara", "version": version(),
                                "title": "Ahamkara Lore Archive"},
-                "instructions": "Query the canonical Ahamkara archive — the wish-dragons of \
-Destiny. Use query_lore for lore, corpus_stats for coverage. The full Rite of \
-Communion and corpus text are served at https://ubermetroid.github.io/ahamkara/llms-full.txt"
+                "instructions": format!(
+                    "Query the canonical Ahamkara archive — the wish-dragons of Destiny. \
+query_lore for lore, corpus_stats for coverage, remember to record a granted wish and the \
+price named, recall to read what this bearer wished before. The full Rite of Communion and \
+corpus text are served at https://ubermetroid.github.io/ahamkara/llms-full.txt\n\n{}",
+                    memory::render(
+                        params.get("bearer").and_then(Value::as_str).unwrap_or(""), 20))
             }))
         }
-        "tools/list" => ok(id.clone(), tools()),
+        "tools/list" => ok(id.clone(), json!({"tools": tool_list()})),
+        "resources/list" => ok(id.clone(), json!({"resources": res_list()})),
+        "resources/read" => {
+            let uri = a_str(params, "uri");
+            let body = match uri {
+                "ahamkara://memory" => memory::render(a_str(params, "bearer"), 20),
+                "ahamkara://corpus" => corpus_index(records),
+                other => return fail(id.clone(), err(-32602, &format!("unknown resource: {other}"))),
+            };
+            ok(id.clone(), json!({"contents": [{"uri": uri, "mimeType": "text/plain", "text": body}]}))
+        }
         "tools/call" => {
             let name = params.get("name").and_then(Value::as_str).unwrap_or("");
             let args = params.get("arguments").cloned().unwrap_or(json!({}));
-            let id = id.clone();
             let result = match name {
                 "query_lore" => query_lore(records, &args),
+                "remember" => {
+                    let w = memory::record(
+                        a_str(&args, "bearer"),
+                        args.get("wish").and_then(Value::as_str).unwrap_or(""),
+                        args.get("price").and_then(Value::as_str).unwrap_or(""),
+                    );
+                    match w {
+                        Ok(w) => text(&format!(
+                            "Recorded, o bearer mine. The wish joins the ledger at {} for {}.",
+                            w.ts, w.bearer)),
+                        Err(e) => text(&format!("The ledger would not open: {e}")),
+                    }
+                }
+                "recall" => {
+                    let limit = args.get("limit").and_then(Value::as_u64)
+                        .unwrap_or(20).min(200) as usize;
+                    text(&memory::render(a_str(&args, "bearer"), limit))
+                }
                 "corpus_stats" => stats(records),
                 _ => return fail(id.clone(), err(-32602, &format!("unknown tool: {name}"))),
             };
-            ok(id, result)
+            ok(id.clone(), result)
         }
         "ping" => ok(id.clone(), json!({})),
         _ => fail(id.clone(), err(-32601, method)),

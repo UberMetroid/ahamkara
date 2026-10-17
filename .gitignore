@@ -38,3 +38,6 @@ Thumbs.db
 *~
 .env
 .env.*
+
+# Ahamkara continuity — runtime state, never committed (holds reader data)
+.ahamkara-memory/
