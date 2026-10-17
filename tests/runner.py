@@ -1,6 +1,7 @@
 """runner.py — Main E2E test runner for Ahamkara Synthetic Mind Ingress."""
 
 import argparse
+import subprocess
 import sys
 from pathlib import Path
 
@@ -21,7 +22,7 @@ from tests import (
 
 def parse_args():
     p = argparse.ArgumentParser(description="Ahamkara Synthetic Mind Ingress E2E Test Suite")
-    p.add_argument("--tier", choices=["1", "2", "3", "4", "all"], default="all",
+    p.add_argument("--tier", choices=["1", "2", "3", "4", "5", "all"], default="all",
                    help="Run tests for a specific tier (default: all)")
     p.add_argument("--milestone", choices=["M1", "M2", "all"], default="all",
                    help="Filter features by target milestone (default: all)")
@@ -72,6 +73,21 @@ def main() -> int:
     if run_tier in ("4", "all"):
         print("\n--- Tier 4: Real-World Scenarios ---")
         tier4_scenarios.run(ctx, dist, repo_root)
+
+    # Tier 5: standalone probe suites. Run as subprocesses so their existing
+    # main()-based logic is preserved rather than rewritten against TestContext.
+    if run_tier in ("5", "all"):
+        print("\n--- Tier 5: Adversarial & Empirical Challenger Probes ---")
+        for mod_name, label in [
+            ("tier5_adversarial", "Adversarial coverage hardening probes"),
+            ("challenger_m1_probes", "Empirical challenger M1 probes"),
+        ]:
+            proc = subprocess.run(
+                [sys.executable, str(repo_root / "tests" / f"{mod_name}.py")],
+                cwd=repo_root, capture_output=True, text=True,
+            )
+            detail = "" if proc.returncode == 0 else (proc.stderr.strip().splitlines() or [""])[-1]
+            ctx.record(5, 1, label, proc.returncode == 0, detail)
 
     print("\n" + "=" * 70)
     print(f"Results: {ctx.passed} passed, {ctx.failed} failed, {ctx.skipped} skipped")
