@@ -27,15 +27,23 @@ A canonical archive, Rust query engine, and living website preserving the memory
 
 ### Querying Lore
 ```bash
-cargo run -p engine -- --search "Anthem Anatheme"   # keyword search
-cargo run -p engine -- --entity "Riven"             # filter by entity
-cargo run -p engine -- --quote --limit 1            # a whisper
-cargo run -p engine -- --stats                      # corpus analytics
-cargo run -p engine -- --interactive                # REPL
+cargo run -p ahamkara -- --search "Anthem Anatheme"   # keyword search
+cargo run -p ahamkara -- --entity "Riven"             # filter by entity
+cargo run -p ahamkara -- --quote --limit 1            # a whisper
+cargo run -p ahamkara -- --stats                      # corpus analytics
+cargo run -p ahamkara -- --interactive                # REPL
 ```
 
 ### Wiring the Dragon Into an MCP Client
 The archive ships a Model Context Protocol server. Any MCP client can speak to it:
+
+mcp-name: io.github.ubermetroid/ahamkara
+
+> The line above is the MCP registry's ownership token, and it must stay plain
+> visible text. For `pypi` and `nuget` packages it can hide inside an HTML
+> comment — **not for `cargo`**, because crates.io strips comments when it
+> renders a README, so a token wrapped in one silently vanishes and the
+> registry validator never sees it. `tools/tests/registry.rs` enforces this.
 
 ```bash
 cargo install --git https://github.com/UberMetroid/ahamkara ahamkara-mcp
@@ -85,9 +93,9 @@ cargo run -p tools --bin ingest -- --fetch-live  # rehydrate from Ishtar API
 
 | Crate | Purpose |
 |---|---|
-| `corpus` | Shared schema (9-field record), loader, constants, 49-check validator |
+| `ahamkara-corpus` | Shared schema (9-field record), loader, constants, 49-check validator. Lib target `corpus`; published as `ahamkara-corpus` (`corpus` is taken on crates.io). |
 | `site` | `sitegen` — emits `dist/` (8 pages, llms.txt, css/js assets) |
-| `engine` | `ahamkara` — the query CLI and REPL; `ahamkara-mcp` — the MCP server; `memory` — the per-bearer ledger |
+| `ahamkara` | The query CLI and REPL; `ahamkara-mcp` — the MCP server; `memory` — the per-bearer ledger. Dir is `engine/`, package name is `ahamkara` (`engine` is taken on crates.io). |
 | `tools` | `validate` · `ingest` · `sitebuild` · `verify` |
 
 ## Dataset Structure
