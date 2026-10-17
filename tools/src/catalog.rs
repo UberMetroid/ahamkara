@@ -1,4 +1,4 @@
-//! Ingest catalog — the canonical record specification (data/catalog.jsonl).
+//! Ingest catalog — the canonical record specification (engine/data/catalog.jsonl).
 //! Each spec pins a record's identity plus the Ishtar API path to hydrate.
 
 use corpus::{Record, Source};

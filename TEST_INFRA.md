@@ -66,7 +66,7 @@ Pairwise coherence and cross-cutting integrity:
 2. **Sitemap vs Filesystem**: All `<loc>` URLs in `sitemap.xml` resolve to real files in `dist/`.
 3. **Filesystem vs Sitemap**: All public pages and machine endpoints in `dist/` are declared in `sitemap.xml`.
 4. **Chrome `<link>` Tags vs Dist**: Every relative link in page `<head>` resolves to an emitted file.
-5. **Corpus Parity**: Record count and IDs in `llms-full.txt` match `data/ahamkara_corpus.jsonl` exactly.
+5. **Corpus Parity**: Record count and IDs in `llms-full.txt` match `engine/data/ahamkara_corpus.jsonl` exactly.
 6. **MCP vs Communion & Corpus**: MCP protocol variants match `communion.html`; query parameters align with corpus fields.
 7. **JSON-LD vs Communion**: 5 steps in JSON-LD reflect the 5 sections/rules of the Communion rite.
 8. **Spore vs Directives**: `spore.txt` header URL matches `robots.txt` `Spore:` directive and sitemap `<loc>`.
@@ -115,5 +115,5 @@ cargo run -p tools --bin verify
 ## 5. Invariants
 
 - Every source, test, script, and markdown file must strictly adhere to `<= 256 lines`.
-- `data/ahamkara_corpus.jsonl` is the single source of truth for corpus records.
+- `engine/data/ahamkara_corpus.jsonl` is the single source of truth for corpus records.
 - All tests must pass with exit code `0`. Any failure exits with nonzero status.

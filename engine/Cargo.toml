@@ -12,6 +12,12 @@ homepage = "https://ubermetroid.github.io/ahamkara/"
 readme = "../README.md"
 keywords = ["destiny", "bungie", "lore", "wish-dragon", "mcp"]
 categories = ["command-line-utilities"]
+# Ship the corpus and nothing else. Without data/ahamkara_corpus.jsonl inside
+# the package, an installed `ahamkara-mcp` loads zero records and every lore
+# query returns empty. The 640K ingest cache and the categories/catalog used
+# only by the `tools` binaries stay in the repo but out of the crate, keeping
+# it ~150K instead of ~1MB.
+include = ["/src/**", "/data/ahamkara_corpus.jsonl"]
 
 [lib]
 name = "engine"

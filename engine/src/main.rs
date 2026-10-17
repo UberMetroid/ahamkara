@@ -9,7 +9,7 @@ use std::process::ExitCode;
 
 use engine::filter::Filter;
 use engine::print::{print_card, print_stats};
-use engine::{Record, load_records, resolve_corpus};
+use engine::{Record, load_records};
 use engine::repl;
 
 fn usage() {
@@ -91,8 +91,13 @@ fn main() -> ExitCode {
         }
     }
 
-    let path = corpus.unwrap_or_else(resolve_corpus);
-    let records: Vec<Record> = load_records(&path);
+    // Route through engine::load() so the CLI gets the same embedded-corpus
+    // fallback as the MCP server. Calling load_records() here meant an
+    // installed binary with no reachable data/ panicked instead of answering.
+    let records: Vec<Record> = match corpus {
+        Some(p) => load_records(&p),
+        None => engine::load(),
+    };
 
     if args.is_empty() {
         usage();

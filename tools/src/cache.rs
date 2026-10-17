@@ -1,4 +1,4 @@
-//! Raw fetch cache — one JSON shard per record id under data/cache/raw/.
+//! Raw fetch cache — one JSON shard per record id under engine/data/cache/raw/.
 
 use serde_json::Value;
 use std::collections::BTreeMap;

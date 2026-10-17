@@ -81,7 +81,7 @@ fn main() {
     let root = Path::new(env!("CARGO_MANIFEST_DIR")).join("..");
     let out_dir = root.join("dist");
 
-    let corpus_file = corpus_path(&root).expect("data/ahamkara_corpus.jsonl not found");
+    let corpus_file = corpus_path(&root).expect("engine/data/ahamkara_corpus.jsonl not found");
     let records = load_records(&corpus_file);
 
     // Ambient whisper pool: short, punchy transcripts.

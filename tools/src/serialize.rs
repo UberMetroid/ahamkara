@@ -46,7 +46,7 @@ fn has_entity(r: &Record, name: &str) -> bool {
     r.entity.iter().any(|e| e == name)
 }
 
-/// Write data/ahamkara_corpus.jsonl and data/categories/*.jsonl.
+/// Write engine/data/ahamkara_corpus.jsonl and engine/data/categories/*.jsonl.
 pub fn write_corpus(records: &[Record], out_dir: &Path) -> (PathBuf, PathBuf) {
     fs::create_dir_all(out_dir).expect("create output dir");
     let cats = out_dir.join("categories");

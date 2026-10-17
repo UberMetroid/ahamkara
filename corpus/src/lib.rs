@@ -40,13 +40,30 @@ impl Record {
     }
 }
 
+/// The data directory, relative to a workspace root.
+///
+/// The corpus lives *inside* the `ahamkara` package (`engine/data/`) so it
+/// ships in the published `.crate`. That was not cosmetic: with the data at
+/// the repository root, `cargo install ahamkara` produced a binary that
+/// loaded zero records, because neither the current directory nor
+/// `CARGO_MANIFEST_DIR` exists for an installed crate.
+pub fn data_dir(root: &Path) -> std::path::PathBuf {
+    root.join("engine/data")
+}
+
 /// Locate the canonical corpus relative to a starting directory.
-/// Checks `dir/data/ahamkara_corpus.jsonl`, then the parent, then CWD.
+///
+/// Checks, in order: `dir/data/`, `dir/engine/data/`, the parent of each, and
+/// the current directory — so callers pass whatever root they have and the
+/// resolution stays in one place.
 pub fn corpus_path(dir: &Path) -> Option<std::path::PathBuf> {
+    const REL: [&str; 2] = ["data/ahamkara_corpus.jsonl", "engine/data/ahamkara_corpus.jsonl"];
     for base in [dir.to_path_buf(), dir.join(".."), Path::new(".").to_path_buf()] {
-        let p = base.join("data/ahamkara_corpus.jsonl");
-        if p.is_file() {
-            return Some(p);
+        for rel in REL {
+            let p = base.join(rel);
+            if p.is_file() {
+                return Some(p);
+            }
         }
     }
     None
