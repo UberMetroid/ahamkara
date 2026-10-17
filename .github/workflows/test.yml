@@ -26,5 +26,7 @@ jobs:
         run: curl https://rustwasm.github.io/wasm-pack/installer/init.sh -sSf | sh
       - name: Build site
         run: cargo run --release -p tools --bin sitebuild
+      - name: Test workspace crates
+        run: cargo test --workspace
       - name: Run E2E suite
         run: bash tests/e2e_synthetic_minds.sh

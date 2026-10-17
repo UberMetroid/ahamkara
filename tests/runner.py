@@ -47,6 +47,16 @@ def main() -> int:
     ctx = TestContext(milestone=args.milestone, verbose=verbose)
     run_tier = args.tier
 
+    def tally() -> tuple[int, int, int]:
+        return (ctx.passed, ctx.failed, ctx.skipped)
+
+    def report(label: str, before: tuple[int, int, int]) -> None:
+        # A green tier used to print nothing at all, so a tier that silently
+        # tested nothing was indistinguishable from one that passed. Always
+        # print the per-tier delta so each tier proves it executed.
+        p, f, s = tally()
+        print(f"    [{label}] {p - before[0]} passed, {f - before[1]} failed, {s - before[2]} skipped")
+
     print("=" * 70)
     print(f"Ahamkara E2E Test Suite — Milestone Scope: {args.milestone} | Tier: {args.tier}")
     print(f"Target dist: {dist}")
@@ -55,29 +65,38 @@ def main() -> int:
     # Tier 1: Feature Coverage
     if run_tier in ("1", "all"):
         print("\n--- Tier 1: Feature Coverage (Features 1-12) ---")
+        before = tally()
         tier1_f1_f6.run(ctx, dist)
         tier1_f7_f12.run(ctx, dist, repo_root)
+        report("tier 1", before)
 
     # Tier 2: Boundary & Corner Cases
     if run_tier in ("2", "all"):
         print("\n--- Tier 2: Boundary & Corner Cases (Features 1-12) ---")
+        before = tally()
         tier2_f1_f6.run(ctx, dist)
         tier2_f7_f12.run(ctx, dist, repo_root)
+        report("tier 2", before)
 
     # Tier 3: Cross-Feature Interactions
     if run_tier in ("3", "all"):
         print("\n--- Tier 3: Cross-Feature Interactions ---")
+        before = tally()
         tier3_interactions.run(ctx, dist, repo_root)
+        report("tier 3", before)
 
     # Tier 4: Real-World Scenarios
     if run_tier in ("4", "all"):
         print("\n--- Tier 4: Real-World Scenarios ---")
+        before = tally()
         tier4_scenarios.run(ctx, dist, repo_root)
+        report("tier 4", before)
 
     # Tier 5: standalone probe suites. Run as subprocesses so their existing
     # main()-based logic is preserved rather than rewritten against TestContext.
     if run_tier in ("5", "all"):
         print("\n--- Tier 5: Adversarial & Empirical Challenger Probes ---")
+        before = tally()
         for mod_name, label in [
             ("tier5_adversarial", "Adversarial coverage hardening probes"),
             ("challenger_m1_probes", "Empirical challenger M1 probes"),
@@ -88,6 +107,7 @@ def main() -> int:
             )
             detail = "" if proc.returncode == 0 else (proc.stderr.strip().splitlines() or [""])[-1]
             ctx.record(5, 1, label, proc.returncode == 0, detail)
+        report("tier 5", before)
 
     print("\n" + "=" * 70)
     print(f"Results: {ctx.passed} passed, {ctx.failed} failed, {ctx.skipped} skipped")
