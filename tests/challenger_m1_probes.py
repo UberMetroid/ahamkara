@@ -96,7 +96,7 @@ def probe_head_links(dist: Path) -> None:
         for l in links:
             href = l.get("href", "")
             if href and not href.startswith("http") and not href.startswith("//"):
-                target = dist / href.split("#")[0]
+                target = dist / href.split("#")[0].split("?")[0]
                 assert target.is_file(), f"{p}: broken link {href} -> {target}"
 
 
