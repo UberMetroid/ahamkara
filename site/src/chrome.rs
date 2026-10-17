@@ -67,26 +67,48 @@ pub fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, 
     } else {
         format!("https://ubermetroid.github.io/ahamkara/{page}.html")
     };
+    // The in-universe page name reads well but carries no searchable topic —
+    // none of "The Bargain", "The Archive", "The Dragons" says Destiny, lore or
+    // wish-dragon. Append the subject so the pages are findable, and let the
+    // H1 and meta description keep doing the atmospheric work.
+    let doc_title = format!("{title} · Ahamkara — Destiny Wish-Dragon Lore Archive");
+    // lore.html binds its corpus search to the wasm archive module on start, so
+    // its client stays on the critical path. The other seven pages use it only
+    // as progressive enhancement, so they take it off the critical path and
+    // pull it forward on first interaction, keeping any bound control live.
+    let eager = r#"<script type="module">import init from "./js/ahamkara_fx.js?v=VER"; init("./js/ahamkara_fx_bg.wasm?v=VER");</script>"#
+        .replace("VER", &version());
+    let deferred = r#"<script type="module">
+const boot = async () => {
+  const { default: init } = await import("./js/ahamkara_fx.js?v=VER");
+  await init("./js/ahamkara_fx_bg.wasm?v=VER");
+};
+if ("requestIdleCallback" in window) requestIdleCallback(boot, { timeout: 1500 });
+else setTimeout(boot, 1000);
+for (const ev of ["pointerdown", "keydown", "scroll"]) addEventListener(ev, boot, { once: true, passive: true });
+</script>"#
+        .replace("VER", &version());
+    let fx_boot = if page == "lore" { eager } else { deferred };
     format!(
         r##"<!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{title} · Ahamkara</title>
+<title>{doc_title}</title>
 <meta name="description" content="{desc}">
 <meta name="theme-color" content="#0b0a10">
 <link rel="canonical" href="{canonical}">
 <meta property="og:site_name" content="Ahamkara">
 <meta property="og:url" content="{canonical}">
-<meta property="og:title" content="{title} · Ahamkara">
+<meta property="og:title" content="{doc_title}">
 <meta property="og:description" content="{desc}">
 <meta property="og:type" content="website">
 <meta property="og:image" content="https://ubermetroid.github.io/ahamkara/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="{title} · Ahamkara">
+<meta name="twitter:title" content="{doc_title}">
 <meta name="twitter:description" content="{desc}">
 <meta name="twitter:image" content="https://ubermetroid.github.io/ahamkara/og-image.png">
 <link rel="icon" href="favicon.png" type="image/png">
@@ -108,13 +130,13 @@ pub fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, 
 </head>
 <body class="page-{page}">
 <a class="skip" href="#main">Skip to content</a>
+<main id="main" tabindex="-1">
+{body}
 <header class="trap-head">
   <div class="trap-inner">
     {brief}
   </div>
 </header>
-<main id="main" tabindex="-1">
-{body}
 <aside class="colophon" aria-label="Colophon">
   <p class="foot-whisper">&ldquo;{}&rdquo; <cite>&mdash; {}</cite></p>
   <nav class="foot-nav" aria-label="Site navigation"><ul>{nav_items}</ul></nav>
@@ -143,7 +165,7 @@ pub fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, 
 <canvas id="fx" aria-hidden="true"></canvas>
 <div class="scanlines" aria-hidden="true"></div>
 <script id="whisper-data" type="application/json">{{}}</script>
-<script type="module">import init from "./js/ahamkara_fx.js?v={ver}"; init("./js/ahamkara_fx_bg.wasm?v={ver}");</script>
+{fx_boot}
 </body>
 </html>
 "##,
@@ -151,7 +173,8 @@ pub fn layout(page: &str, title: &str, desc: &str, body: &str, whisper: &(&str, 
         esc(whisper.1),
         brief = AGENT_BRIEF,
         schema = crate::schema::rite_json_ld(),
-        title = esc(title),
+        doc_title = esc(&doc_title),
+        fx_boot = fx_boot,
         desc = esc(desc),
         page = page,
         canonical = canonical,
