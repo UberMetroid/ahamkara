@@ -11,6 +11,7 @@ mod corpus;
 mod llms;
 mod mcp;
 mod pages;
+mod rite;
 mod robots;
 mod schema;
 mod sitemap;
@@ -28,8 +29,17 @@ use sitemap::sitemap_xml;
 use spore::spore_txt;
 
 /// Deterministic-ish per-page footer whisper so each page feels different.
+/// Fallback for an empty pool. Previously `pool.len().max(1)` guarded the
+/// modulus and then indexed the empty slice anyway, so a pool of zero
+/// panicked at `pool[0]`. Every real call site has whispers, so this never
+/// fired in production — but the empty case was clearly intended to work.
+const NO_WHISPER: (&str, &str) = ("", "");
+
 pub fn pick_whisper<'a>(pool: &'a [(&'a str, &'a str)], salt: usize) -> &'a (&'a str, &'a str) {
-    &pool[salt % pool.len().max(1)]
+    match pool.len() {
+        0 => &NO_WHISPER,
+        n => &pool[salt % n],
+    }
 }
 
 fn json_str(s: &str) -> String {
